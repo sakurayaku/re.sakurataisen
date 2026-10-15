@@ -1,0 +1,9 @@
+[project]
+name = "re.sakurataisen"
+manifest = "re.sakurataisen.ludared"
+
+[paths]
+sources = "sources"
+workspace = "workspace"
+builds = "builds"
+cache = "builds/cache"
