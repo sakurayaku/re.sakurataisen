@@ -1,6 +1,6 @@
 # Ludared
 
-Ce projet **SakuraYaku** utilise [ludared](https://github.com/joshleaves/ludared) comme système de build afin de décomposer l'iso original en un ensemble de fichiers qu'il est plus simple de modifier.
+Ce projet **SakuraYaku** utilise [ludared](https://github.com/joshleaves/ludared) comme système de build afin de décomposer l'ISO original en un ensemble de fichiers qu'il est plus simple de modifier.
 
 Les instructions qui suivent partent du principe que vous êtes à peu près habitués aux lignes de commande Linux/Mac.
 
@@ -32,6 +32,14 @@ SakTaiCD1_Track1.bin
   SHA256: 98892052bc069767171e2db2fc2bce45760163b11412f35037a22ed398d9ea58
 ```
 
+Vous pouvez utiliser `ludared doctor` pour vérifier que les sources sont les bonnes:
+
+```bash
+~/sakurayaku/ $ ludared doctor
+✓ All sources OK
+✓ Doctor check passed
+```
+
 Une fois les fichiers sources au bon endroit, vous pourrez lancer la recette de décomposition:
 
 ```bash
@@ -39,7 +47,7 @@ Une fois les fichiers sources au bon endroit, vous pourrez lancer la recette de 
 ✓ Restored 1792 artifact(s) from 8 decode(s)
 ```
 
-Cette commande permet de décomposer totalement l'iso en sous-fichier.
+Cette commande permet de décomposer totalement l'iso en arbre de sous-fichiers sur lesquels vous pourrez travailler
 
 ## Travailler sur le projet ludared
 

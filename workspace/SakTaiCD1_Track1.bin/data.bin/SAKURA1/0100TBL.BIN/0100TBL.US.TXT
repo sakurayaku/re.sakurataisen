@@ -1,0 +1,605 @@
+0001:﻿It's a photo of Sakura. She's looking right at me. I wonder what she's thinking… 
+0002:It's a photo of Sumire. This is a side of her you don't see too often. 
+0003:It's a photo of Maria. She's lost in thought and looks kind of sad… 
+0004:It's a photo of Kanna. She looks strong and reliable. I can't wait to meet her. 
+0005:It's a photo of Iris. She's surrounded by flowers and flashing a radiant smile. 
+0006:It's a photo of Kohran. She looks good in her traditional outfit. What kind of person is she? 
+0007:A letter given to me by a customer. I was asked to give it to Sumire. I have a bad feeling about this… 
+0008:Maria's pistol. This may help me escape from here… 
+0009:A hair ornament. It's decorated with flowers and looks very elegant. 
+0010:A brooch. It's a beautiful piece of delicate craftsmanship. 
+0011:A hairpin for use in a traditional bun hairstyle. It would complement a formal outfit well. 
+0012:Jean-Paul the teddy bear. Iris's best friend. She always carries him with her and takes good care of him. 
+0013:This key will allow me to enter rooms I couldn't get into before. 
+0014:I found this in a bedroom on the second floor. Now I can get into the room at the back. 
+0015:A set of cups Iris asked me to get for her. They have a very stylish design. 
+0016:A matchbox Iris asked me to get for her. The brand logo is very colorful. 
+0017:Some knives Iris asked me to get for her. Just a normal utensil you'd use during a meal. 
+0018:A prop sword and shield used onstage. They're well made and look just like the real thing. 
+0019:A prop crown used onstage. It's well constructed and incredibly detailed. 
+0020:A wig and costume used onstage. I wonder what kind of act could use a flashy outfit like this? 
+0021:It's a photo of Sakura in her swimsuit. Wow, this is really something. I'm gonna treasure this. 
+0022:It's a photo of Sumire in her stage costume. Her distinctive makeup really makes an impact. 
+0023:It's a photo of Maria during a performance of "For Love." Even in a man's uniform, her beauty shines through. 
+0024:It's a photo of Kanna in her training gear. Catching her in a private moment like this feels surprisingly intimate. 
+0025:It's a photo of Iris in her swimsuit. She's holding a rubber ring and looks ready to have some fun. How cute. 
+0026:It's a photo of Kohran. I don't get to see her with her braids undone very often. It's a nice look. 
+0027:It's a photo of Ayame in a traditional outfit. I hope she'll always be as happy and carefree as she is here. 
+0028:Ayame's gun. Why…? Why did it have to turn out like this…? 
+0029:Nothing I can do here. I'd better check somewhere else… 
+0030:There's no one here. I'd better check somewhere else… 
+0031:I'd better check somewhere else… 
+0032:This is getting me nowhere. I should go to the manager's office and talk to Mr. Yoneda. 
+0033:But… No matter how I look at it, this seems to be nothing more than a theater. 
+0034:To Imperial Navy Ensign, Ichiro Ogami. 
+0035:As a special assignment, I appoint you captain of the following outfit. 
+0036:‘The Imperial Assault Troop’ <br> ‘Anti-Demon Corps, Flower Division’. 
+0037:You are on a secret assignment to defend our Imperial capital. 
+0038:Proceed to Ueno Park to meet up with your squad. 
+0039:Imperial Army Lt. General <br> Ikki Yoneda
+0040:Ichiro Ogami. Starting today, you will be transferred to the Flower Division of the Imperial Assault Troop.
+0041:Yes, sir! I am going to give it my absolute best! 
+0042:Good. That's what I like to hear. 
+0043:My position as a politician doesn't allow me to talk about a military secret like the Assault Troop here and now. 
+0044:For more information you will have to ask the officer in command, Lieutenant General Yoneda. 
+0045:Now, go to Ueno Park. Don't make me regret recommending you for this position! 
+0046:Yes, sir! I will be on my way immediately! 
+0047:The safety of the capital lies in your hands. Good Luck! 
+0048:Yes, sir! 
+0049:Ahh, what a wonderful day. The cherry blossoms are in full bloom. 
+0050:Now then, where is this meet-up point…? Maybe I should look around a bit more. 
+0051:Now that I think about it, that recent monster appearance also took place in this park… 
+0052:I heard a young girl got rid of the monster with only a sword… 
+0053:… 
+0054:I was told someone from the Imperial Assault Troop would meet me here. I wonder how long he'll keep me waiting? 
+0055:Wait a second, that girl… 
+0056:She's coming this way…! 
+0057:Y-Yes. I’m Ogami… 
+0058:Ahem… Excuse me, but you are…? 
+0059:…From Lt. General Yoneda? 
+0060:(I was told someone would meet me here… but who would have thought it would be a girl!) 
+0061:You, uh… Are you a member of the Imperial Assault Troop!? 
+0062:Ah… I'm Imperial Navy Ensign Ichiro Ogami. 
+0063:But… to be honest, I'm surprised that a young woman such as yourself is a squad member. 
+0064:N-No. That's not what I meant… 
+0065:(It's a top-secret unit after all… Maybe it's not so strange that there are female members.) 
+0066:What?! A theater…!? 
+0067:I'm on duty! <br> Tell me about yourself. 
+0068:I'm on duty! Sadly, I don't have time for such diversions. 
+0069:What?! You're telling me there's a secret base inside the theater?! Wait a second… 
+0070:I get it! In order to hide from the enemy, we must also hide from our own people, right? 
+0071:First, tell me more about yourself. 
+0072:I see, that's the right attitude! Happy to hear that. No wonder you're a member of the secret squad. 
+0073:…So the Imperial Assault Troop has something like a secret weapon, right? 
+0074:(Koubu? Ah, that's what the secret weapon is called. I wonder what it is.) 
+0075:Y-Yes! Thank you very much! 
+0076:(Why do we have to go to the theater…?) 
+0077:(Is she really a member of the Imperial Assault Troop?) 
+0078:N-No… it's nothing! 
+0079:(No, I'm worrying too much. She knew my name, after all.) 
+0080:Y-Yes! Thank you very much! 
+0081:The Imperial Theater that was built last year. Impressive… It's right in the middle of Ginza. 
+0082:That's one big building… 
+0083:No one would guess that in reality this theater is a secret military headquarters… 
+0084:Whoa… What an extraordinary lobby. But not a single guard in sight. That's rather careless… 
+0085:At any rate… It's really quiet here. 
+0086:(Night performance…? Is that supposed to be a night-time drill?) 
+0087:Waah!? 
+0088:(Who is this child…!?) 
+0089:Ah… I'm… Imperial Navy Ensign Ichiro Ogami. 
+0090:(Don't tell me this child is a member of the secret unit.) 
+0091:What is the deal with that girl…? 
+0092:Sakura has gone as well… Damn. 
+0093:I guess I'll have to find Lt. General Yoneda on my own… 
+0094:…Who was that? I think it came from the dining hall… 
+0095:(What the…! Isn't that get-up a bit too revealing…?) 
+0096:…Are you talking to me!? 
+0097:Y-Yes, ma'am… 
+0098:Why should I? <br> Yes, right away! 
+0099:Why should I have to do such a thing? I refuse! 
+0100:And in any case, is that any way to ask for someone's help? 
+0101:…I'm Imperial Navy Ensign Ichiro Ogami. I was transferred to the Assault Troop, effective today. 
+0102:Try and have me fired all you want, but without an order from the Navy headquarters, I'm not leaving. 
+0103:…! 
+0104:…It's Ogami. Can you tell me where I might find Lt. General Yoneda? 
+0105:Through this way? Thank you very much. 
+0106:Yes, right away! …Here, there you go. 
+0107:(Phew…) 
+0108:…I'm Imperial Navy Ensign Ichiro Ogami. I was transferred to the Assault Troop, effective today. 
+0109:I'd like to report to Lt. General Yoneda… 
+0110:…! 
+0111:Waah! Wh-What are you doing all of a sudden!?! 
+0112:Ahem… Where might I find Lt. General Yoneda? 
+0113:…My name is Ogami. 
+0114:Y-Yes, ma'am… 
+0115:Why should I have to do such a thing…? I refuse! 
+0116:And in any case, is that any way to ask for someone's help? 
+0117:(Huh?) 
+0118:(What was that about? What a strange person!)
+0119:I’m Imperial Navy Ensign Ichiro Ogami. I transferred to the Imperial Assault Troop, effective today.
+0120:Try and have me fired all you want, but without a written order from the Navy headquarters, I'm not leaving. 
+0121:…! 
+0122:…It's Ogami. Can you tell me where I might find Lt. General Yoneda? 
+0123:Through this way? Thank you very much. 
+0124:…So this is Lt. General Yoneda's room, commanding officer of the Imperial Assault Troop… 
+0125:Lieutenant General Ikki Yoneda, the great strategist from the Russo-Japanese War. I wonder what kind of man he is. 
+0126:Ah… Excuse me. I'm Imperial Navy Ensign Ichiro Ogami. 
+0127:I would like to see Lt. General Yoneda… 
+0128:Miss Maria Tachibana… 
+0129:What a rigid person… but finally someone who looks a bit like a soldier. 
+0130:But what type of practice was she talking about? 
+0131:Well then… I'll finally meet Lt. General Yoneda. 
+0132:(What a speckless display of uniform and posture.) 
+0133:(…She's in good shape.) 
+0134:(I guess you call this color platinum blonde.) 
+0135:(A beautiful blonde.) 
+0136:(Huh? A foreigner? But she was speaking Japanese just now.) 
+0137:(I wonder what country she's from.) 
+0138:Huh? …No! 
+0139:(What brilliant green eyes…) 
+0140:(What a stern gaze…) 
+0141:(Nice…) 
+0142:(So big…) 
+0143:… 
+0144:…Excuse me!! 
+0145:I’m Imperial Navy Ensign Ichiro Ogami. Starting today at 12:00, I am part of the Imperial Assault Troop. 
+0146:Reporting for duty! 
+0147:(What the… Who is this drunkard?) 
+0148:(Don't tell me this is…) 
+0149:Are you really Yoneda? <br> Are you drinking midday?  
+0150:Are you really… Lieutenant General Yoneda? 
+0151:I… I'm sorry! 
+0152:How can you drink sake in the middle of the day!? 
+0153:Are you really Lieutenant General Yoneda? You're different from the stories I heard… 
+0154:You are supposed to be a hero from the Russo-Japanese War, a master strategist of the Army. 
+0155:I… That's not what I meant. 
+0156:I understand. But since I was transferred here… 
+0157:I intend to give my everything to protect the people of the Imperial capital! 
+0158:… 
+0159:I see… so we operate in disguise. Par for the course for a secret unit! 
+0160:Yes, sir! Ichiro Ogami, ready for duty! 
+0161:Yes, sir! 
+0162:Ah, Ogami… 
+0163:Oooh… Busted. 
+0164:Sakura and… Iris, was it? What are you doing here? 
+0165:See, Sakura! I told you we should run away! 
+0166:Hey, weren't you the one saying we should “check things out” in the first place? 
+0167:Yes, and you said it was a great idea! 
+0168:(These two… Looks like they were eavesdropping.) 
+0169:You shouldn't eavesdrop! <br> Where’s the reception desk? 
+0170:Hey! You shouldn't eavesdrop! 
+0171:…Sorry. 
+0172:What? We just wanted to see if you needed help! 
+0173:I don't want anything to do with you anymore! Bye-bye! 
+0174:Iris! Wait! 
+0175:Call after Iris. <br> Have Sakura lead the way. 
+0176:Iris, please wait! I didn't mean it. I'm sorry! 
+0177:*sob*… Aren't you angry with me? 
+0178:Jeez… Iris, please don't cry. I'm not mad at you… 
+0179:Really? Teehee. You're really nice. 
+0180:Oh, Iris… again with the crocodile tears. Of all the nerve. 
+0181:By the way, I thought one of you two might know this… 
+0182:Where's the reception desk? I'm to go there for my first assignment. 
+0183:I may have been a little too harsh, but I can't let a thing like that slide… 
+0184:I'm sorry, I should have kept an eye on her…   
+0185:No need to apologize, Sakura. Would you mind showing me the way to the reception? 
+0186:I have to go there because… Well, I guess you already heard, right? 
+0187:Hmph! Please stop being mean, Ogami. 
+0188:Yeah, your first assignment awaits you at the reception. How about we go together? 
+0189:I'm sorry, I should have kept an eye on her. 
+0190:Please excuse me. But I'm a bit worried about Iris… Sorry. 
+0191:Hey, wait a sec… She's gone. 
+0192:…Damn. My first official assignment and I have no idea where to go. 
+0193:Ensign Ogami, is everything all right? 
+0194:You're… Miss Maria Tachibana… <br> Right? 
+0195:Yes, that's correct. You have met with Mr. Yoneda, I presume. 
+0196:Yes. I also received my first order. I am to wear this and report to the reception. 
+0197:I still need a little warming up until I'm used to things around here. 
+0198:Is that so? That's a fine attitude! 
+0199:By the way, do you know how to get to the reception? 
+0200:Oh… Right! I had hoped you could tell me that… 
+0201:…Well, then I'll show you the way. 
+0202:Really? Thanks a lot. 
+0203:…It's nothing. Follow me please. It is right this way. 
+0204:Anyways… Could you two tell me where the reception is? 
+0205:It's my first assignment here. I’d like to go there immediately. 
+0206:Hey! Why are you making such a ruckus in front of the manager’s office!? 
+0207:Ah… You're the one from earlier… 
+0208:Mariaaa! It's all Sakura's fault. She… 
+0209:I just said that I wanted to go and help Ogami, but Iris… 
+0210:Cut it out, you two! Isn't practice about to start soon? 
+0211:…As for the Ensign, I'll show him the way. You two, go to the dressing room. 
+0212:B-But… That's not fair. 
+0213:Well then, Ogami… Please do your best. 
+0214:Now then, Ensign Ogami. Please follow me to the reception. 
+0215:…Y-Yes. Thank you. 
+0216:OK, I'll show you the way. Let's go, Ogami. 
+0217:No! He's going with me! Let's go, Mon Frère! 
+0218:Ask Iris to show the way. <br> Ask Sakura to show the way. <br> Ask both to show the way. 
+0219:Sakura escorted me to the theater… so I guess it’s Iris's turn now. 
+0220:Yay! Let's go! Let's go! Bye-bye, Sakura. 
+0221:Oh… I see. Well, I'm off then. See you later, Iris… 
+0222:C'mon, Mon Frère! Follow me! 
+0223:Sakura, would you mind showing me the way once more? 
+0224:Not at all, it would be my pleasure. Let's go. 
+0225:Bah! I don't want anything to do with you anyway. Bye-bye! 
+0226:Ogami… Iris came here all alone. Her family is back in France. 
+0227:She's doing her best, but she really is a bit lonely 
+0228:So… Please be nice to her? 
+0229:I hadn't realized… 
+0230:I'll show you the way to the reception. Let's go. 
+0231:Hey, stop fighting, you two. How about we all go together, hm? 
+0232:…All right. 
+0233:I'm sorry, Iris. I guess I was also being a bit childish. 
+0234:It's OK. Let's all go together. I like that! 
+0235:Hahaha, looks like I've got a lady on each arm. Must be my lucky day. Shall we? 
+0236:(If I say something wrong, things might get ugly… I better keep my mouth shut.) 
+0237:Here, now! What are you making a fuss about in front of the manager's office!? 
+0238:Aah… You're the one from earlier… 
+0239:Mariaaa! It's all Sakura's fault. She… 
+0240:I just said that I wanted to go and help Ogami, but Iris… 
+0241:Cut it out, you two! Isn't practice about to start soon? 
+0242:…As for the Ensign, I'll show him the way. You two, go to the dressing room. 
+0243:B-But… That's not fair. 
+0244:Well then, Ogami… Please do your best. 
+0245:Now then, Ensign Ogami. Please follow me to the reception. 
+0246:…Y-Yes. Thank you. 
+0247:Ogami, this is the reception. 
+0248:Thank you for your help, Sakura. You're a lifesaver. 
+0249:The clipper should be inside the desk. I have practice, so I'll be going now… 
+0250:Hey… Sakura. Wait a second. 
+0251:What am I supposed to do? <br> Clipper? <br> Good luck with practice! 
+0252:…By the way, what kind of work am I supposed to be doing here? 
+0253:Huh? Didn't you hear from Manager Yoneda? 
+0254:Our new captain will work as a ticket puncher. That's what Manager Yoneda told us. 
+0255:Ticket punching? What is that supposed to mean? 
+0256:Well, you punch the admission tickets of the guests, of course. 
+0257:What? Punching tickets? How is that supposed to be a "special mission"? 
+0258:Well… I don't have an answer for that, sorry. 
+0259:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0260:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0261:Ah… Ogami. I'm sorry, but I have to go. Do your best! 
+0262:(What the… This must be a misunderstanding!) 
+0263:Clipper…? What am I supposed to do with it?  
+0264:It basically works like a pair of scissors, even though it looks a little different. 
+0265:OK, practice is about to start so I have to excuse myself. Do your best, Ogami. 
+0266:…Aaaand she’s gone. 
+0267:…But I really wanted to know what I'm supposed to use the clipper for. 
+0268:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0269:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0270:What do you mean? I'm not responsible for tickets. 
+0271:But… that's the ticket puncher’s uniform you’re wearing. And don't you have a clipper as well? 
+0272:Whaaa…!? Does that mean… My secret mission is just… 
+0273:Punching tickets!? You gotta be kidding me! 
+0274:You do your best at practice, Sakura! …Even if I don't know what kind of practice we're talking about. 
+0275:Thank you! I hope your ticket punching goes well too, Ogami! 
+0276:(…Ticket punching?) 
+0277:…Aaaand she’s gone. 
+0278:Here we are, Mon Frère! 
+0279:Thank you for showing me the way. 
+0280:OK, I'm off to practice. Here's your clipper. See ya! 
+0281:Iris, w-wait…! 
+0282:What am I supposed to do? <br> Clipper? <br> Good luck with practice! 
+0283:…By the way, what kind of work am I supposed to be doing here? 
+0284:No clue! Mr. Yoneda said something about punching tickets. 
+0285:I guess you punch the guests' tickets with that clipper. 
+0286:What? Punching tickets? How is that supposed to be a "special mission"? 
+0287:Aren't you glad you have such a nice job? Well, I'm off then. 
+0288:…What is the meaning of this? I thought I came here to be captain of the Imperial Assault Troop… 
+0289:Clipper…? What am I supposed to do with those? 
+0290:What!? You don't know how to use a clipper? Hahaha, that's funny. 
+0291:You hold it in your hand and go snippety snip like this, and it'll cut holes. 
+0292:Yeah, but… Cut holes in what, specifically? 
+0293:Ah, if I don't show up to practice, Maria’s going to be really mad. See ya, Mon Frère! 
+0294:…This uniform, a clipper… What am I supposed to be doing? 
+0295:Have fun at practice, Iris! …Even if I don't know what kind of practice we're talking about. 
+0296:Thanks, Mon Frère. You're such a nice guy! Bye-bye! 
+0297:…Haha, that carefreeness is kind of cute. 
+0298:…Aaaand she’s gone. 
+0299:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0300:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0301:What do you mean? I'm not responsible for tickets. 
+0302:But… that's the ticket puncher’s uniform you’re wearing. And don't you have a clipper as well? 
+0303:Whaaa…!? Does that mean… My secret mission is just… 
+0304:Punching tickets!? You gotta be kidding me! 
+0305:Ogami, this is the reception. 
+0306:I see. Thank you for showing me the way. 
+0307:Mon Frère, the clipper is inside the desk! Come on, Sakura, let's go! 
+0308:You're right, Iris. Ogami, we have practice, so… please excuse us. 
+0309:H-Hey you two, wait a second… 
+0310:What am I supposed to do? <br> Clipper? <br> Good luck with practice! 
+0311:…Aaaaand they're gone. 
+0312:…By the way, what kind of work am I supposed to be doing here? 
+0313:Huh? Didn't the manager tell you? 
+0314:Mr. Yoneda said he was gonna have you punch the tickets. 
+0315:Punch tickets? What tickets? 
+0316:Well, the admission tickets of the guests, of course. 
+0317:What? …What’s that supposed to mean? This is my "secret mission"? 
+0318:Well, I don't know anything about that, sorry. 
+0319:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0320:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0321:Sakura, if we don't get going, practice is gonna start without us. 
+0322:Ah… You're right. W-Well, Ogami, please excuse us. 
+0323:(What the… This must be a misunderstanding!) 
+0324:Clipper…? What am I supposed to do with those? 
+0325:What!? You don't know how to use a clipper? Hahaha, that's funny. 
+0326:You hold it in your hand and go snippety snip like this, and it'll cut holes. 
+0327:Hey, Iris. If we're not off to practice soon… 
+0328:Oh, right. Bye-bye! 
+0329:…But I really wanted to know what I'm supposed to use the clipper for. 
+0330:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0331:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait!
+0332:What do you mean? I'm not responsible for tickets. 
+0333:But… that's the ticket puncher’s uniform you’re wearing. And don't you have a clipper as well? 
+0334:Whaaa…!? Does that mean… My secret mission is just… 
+0335:Punching tickets!? You gotta be kidding me! 
+0336:Have fun at practice, you two! …Even if I don't know what kind of practice we're talking about. 
+0337:Thanks, Mon Frère. You should come by later and see, too! 
+0338:Thank you! I hope your ticket punching goes well too, Ogami! 
+0339:(Ticket punching…?) 
+0340:Hey, Iris. If we're not off to practice soon… 
+0341:You're right. Well, Mon Frère, bye-bye! 
+0342:…Aaaaand they're gone. 
+0343:This is the reception. 
+0344:Thank you, Miss Maria. 
+0345:…Since you are my superior, just “Maria” is fine. 
+0346:The clipper should be in the desk. OK, I have to be at the practice. Please excuse me. 
+0347:Hey, Miss Mar… I mean, Maria. Please wait a moment! 
+0348:What am I supposed to do? <br> Clipper? <br> Good luck with practice! 
+0349:…By the way, what kind of work am I supposed to be doing here? 
+0350:…Aaaand she’s gone. 
+0351:Ensign Ogami… hasn't the manager told you? 
+0352:He said you’re supposed to work as a ticket puncher… 
+0353:Ticket puncher? What is that supposed to mean? 
+0354:You just punch the tickets of our guests. 
+0355:What…? Punching tickets? This is my "secret mission"? 
+0356:…Ensign, the guests are already lining up. 
+0357:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0358:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0359:Working with the audience directly is a very important job. I expect you to do your best. 
+0360:(What the… This must be a misunderstanding!) 
+0361:Clipper…? What am I supposed to do with those? 
+0362:It's a clipper to punch tickets. I'm sure you can figure out how it works. 
+0363:What? A clipper for punching tickets? What would I need that for? 
+0364:Thank you, Maria. And later I'll join the training, of course. 
+0365:…Training? 
+0366:Huh…? Maybe I'm wrong, but when you talked about practice I thought it would be some kind of training session. 
+0367:Well, yes… if you want to put it like that. 
+0368:Right now for instance, we’ll be practicing our lines. 
+0369:(Lines? Maybe they practice some military code?) 
+0370:Now, if you'll excuse me, Ensign. Do your best. 
+0371:Th-Thank you. 
+0372:…By the way. This work… What am I supposed to do? 
+0373:Excuse me, young man. How long do you expect us to wait? Punch our tickets! 
+0374:Today Sumire is starring in "The Eve of Lady Camellia." I can't wait! 
+0375:What do you mean? I'm not responsible for tickets. 
+0376:But… that's the ticket puncher’s uniform you’re wearing. And don't you have a clipper as well? 
+0377:Whaaa…!? Does that mean… My secret mission is just… 
+0378:Punching tickets!? You gotta be kidding me! 
+0379:Hey, ticket guy. Get going and punch those tickets! 
+0380:Y-Yes. Uh… Where do I punch the hole? 
+0381:Huh? Are you new here? Jeez, don't dilly-dally. 
+0382:Y-Yes! Just a moment, please! 
+0383:(Wasn't my assignment to be captain of a secret squad…?) 
+0384:Listen, at the moment I'm punching tickets here, but in reality… 
+0385:I'm captain of the Troop! <br> I'm just a ticket puncher. 
+0386:In reality, I'm the captain of the Imperial Assault Troop’s Flower Division! 
+0387:Huh?? 
+0388:The Flower Division doesn't have a captain. 
+0389:And anyway, a man has no business in the Flower Division! 
+0390:(What on earth?! She doesn't believe me at all!) 
+0391:(No way! The Imperial Assault Troop is a secret unit. I can't just blow their cover like this!) 
+0392:…At the moment I'm punching tickets here, but in reality… just kidding! I really am just a ticket puncher. 
+0393:Is everything all right with you? Oh! Look at the time. The Flower Division's show is about to start! 
+0394:(Did she just say Flower Division…? How does a civilian know the name of this secret unit?) 
+0395:(…No! I can’t brag about being the leader of a secret unit out in the open.) 
+0396:What a rude ticket puncher! Oh! Look at the time. The Flower Division’s show is about to start! 
+0397:(Did she just say Flower Division…? How does a civilian know the name of this secret unit?)  
+0398:Ahem… 
+0399:Ah, sorry. Where is that clipper…? Ah! Here it is! There you go. 
+0400:Um… Do you happen to like Sumire Kanzaki? 
+0401:She's just my type. <br> I don't care much for her… 
+0402:Yeah, I haven't talked to her all that much, but she sure is my type. 
+0403:Whaaa…! You’ve talked to Sumire?! Man, I'm so jealous… 
+0404:Oh, right… Ahem. Would you mind giving this letter to her? 
+0405:Please tell her it is from her most passionate fan. 
+0406:Y-Yes, sir… Understood. 
+0407:No, I don't care for her very much… 
+0408:Whaaaat? How can you not appreciate such grace and charm? 
+0409:A guy like you really has no business working in this theater. How pathetic! 
+0410:(An Imperial Navy Ensign punching tickets… I guess that IS kind of pathetic.) 
+0411:I'm sorry, but I can't answer a question like that. 
+0412:Oh, I see. I’m sorry… 
+0413:Ahem… You see, I'm a big fan of Sumire. P-Please give her this letter! 
+0414:W-Well, I've got to be going… I'm counting on you! 
+0415:H-Hey! Wait a moment! 
+0416:(What am I going to do with this letter?) 
+0417:Hey! Ticket puncher guy, here's my ticket! 
+0418:Y-Yes! Ahem… Where do I punch a child's ticket? 
+0419:This guy's new here! He doesn't even know how to punch tickets! 
+0420:Handle the situation calmly. <br> Glare at the boy. 
+0421:There you go, boy. Here's your ticket back. 
+0422:Keep up the "good" work. 
+0423:(Wh-What's the matter with that obnoxious child!?) 
+0424:Are you sure you should glare at the guests like that? 
+0425:(This brat… I wish he'd just get lost.) 
+0426:What? You've got something to say? 
+0427:(Stupid brat! Just because I didn't say anything, he thinks he can treat me like this.) 
+0428:…No matter how I look at it, this is weird. How does punching tickets connect to my secret mission!? 
+0429:…OK! I'm gonna have a talk with the squad. Maybe then I'll get some sort of explanation. 
+0430:If I'm still not convinced, I'll have to ask Lt. General Yoneda! 
+0431:So… Where should I go first? 
+0432:Y-Yes. What is it? 
+0433:Miss Tsubaki, is it? 
+0434:Hmm… She works here at the gift shop. Seems full of energy. 
+0435:…OK. Where to next? 
+0436:Excuse me… are you Ensign Ichiro Ogami? 
+0437:My name is Sakura Shinguji. 
+0438:I received orders from Lieutenant General Yoneda to pick you up. 
+0439:Yes! 
+0440:Imperial Assault Troop, Flower Division, Sakura Shinguji. 
+0441:Nice to meet you. 
+0442:Is that a problem for you? 
+0443:OK. Let's go to the Imperial Theater. 
+0444:You misunderstand. The Imperial Assault Troop's headquarters is located in the Imperial Theater. 
+0445:An ingenious ruse, isn't it? 
+0446:So, let's get going. 
+0447:About me…? 
+0448:Unused
+0449:I still feel like I'm causing everybody nothing but trouble. 
+0450:But I'd give my life in order to protect the capital. 
+0451:Operating a “Koubu” can be pretty difficult. So we newbies should stick together and do our best. 
+0452:But we shouldn't keep Lt. General Yoneda waiting! Let's go! 
+0453:Since it’s your first time, let's enter through the main lobby. 
+0454:Unused
+0455:That's because today there is only a night performance. 
+0456:He he…! Hey Mon Frère, are you Sakura's lover? 
+0457:Iris! Haven't I told you already that you shouldn't speak that way to a grown-up? 
+0458:This is Ensign Ichiro Ogami, newly transferred to the Imperial Assault Troop. 
+0459:Imperial Assault Troop, Flower Division, Iris. 
+0460:And this is Jean-Paul, the bear. He’s my best friend. I hope you two get along. 
+0461:Sakura… 
+0462:What is it? 
+0463:He has Spirit Power too… Does that mean he’s going to fight in a "Koubu" as well? 
+0464:That's right. 
+0465:I… hate fighting. 
+0466:Unused
+0467:Oh, don’t worry, Iris. Let’s go back to your room and I'll read you stories from that Mother Goose book. 
+0468:OK. 
+0469:Ah, Ensign Ogami. Lt. General Yoneda is in the manager's office. 
+0470:Please excuse me for now. 
+0471:Can someone lend me a hand over here?! 
+0472:Ah! You there! 
+0473:Do you see anyone else? Wipe that stupid look off your face and get over here! 
+0474:Pick up that fork I dropped over there and go get me a new one.  
+0475:What? You want me to pick it up myself?! 
+0476:The only daughter of Kanzaki Heavy Industries, the star actress of this theater, and, and… 
+0477:…the top lady of Japanese high society! I, Sumire Kanzaki, should pick up a fork from the floor!? 
+0478:Fine. You're fired! I'll go to the manager right away and have you fired.
+0479:Ah… Oh my. Hohohohohoho… 
+0480:And I was wondering if we had a new waiter… forgive me. 
+0481:Let's see… Ensign Ogawa, was it? 
+0482:Unused
+0483:Unused
+0484:Unused
+0485:Mr. Yoneda is in the manager's office within. 
+0486:Thank you. Oh, by the way. What do you think about how that Maria just came out of nowhere… 
+0487:…and replaced me, top star Sumire Kanzaki, as the leader of the troop? 
+0488:That old geezer Yoneda… He couldn't spot a star if you hit him over the head with it. 
+0489:Oh my, what shall I do! How rude of me. Hohohohoho… 
+0490:Oh, and be so nice not to mention what I just said to Yoneda, OK? *kiss* 
+0491:There, there, no need to turn all red. Just a little revenge… er, reward, is what I mean. 
+0492:Mr. Yoneda is in the manager's room. But remember, don't mention our little talk. 
+0493:Do you understand, Ensign Ogawa? 
+0494:If that is all, please be on your way. 
+0495:Who might you be? 
+0496:So you're Ichiro Ogami, newly transferred to the Troop. 
+0497:Nice to meet you. My name is Maria Tachibana. 
+0498:Do I have something on my face? 
+0499:Lt. General Yoneda is in the manager's office. I have training, so I must leave you… 
+0500:But I have one piece of advice for you. Don't stare at women like that! And now excuse me. 
+0501:Hey, come on in! 
+0502:I've ‘eard about you from Count ‘anakoji. No need for formalities, hic. 
+0503:Remember, dis is the Great Imperial Theater, hic. Cut da military talk! 
+0504:How 'bout a drink? 
+0505:What the…! What do you mean, "really”? 
+0506:Can't you recognize people without a badge of rank? Hic! I'm Army Lieutenant General Ikki Yoneda! 
+0507:Idiot! 
+0508:Good! Glad we cleared that up. So, let me give you ya’ first assignment. 
+0509:Stories… What stories? Come on, out with it! 
+0510:The greatest strategist the Army had… working as manager of the Imperial Theater. 
+0511:A shameless drunkard to boot… Hic!
+0512:You've got a problem with that? 
+0513:Of course it is. But let me tell you something… 
+0514:All my heroics from the war, all the medals on my chest… They don't change the fact that I killed many people. 
+0515:Enemies and allies alike… I've caused countless deaths. 
+0516:And compared to that… It's mighty fine to be the manager of a theater. Hic! 
+0517:Great! No, excellent! Good, here is your first mission! 
+0518:Hmph. Party pooper, are we? Here's your first mission, anyway. 
+0519:Unused
+0520:Unused
+0521:Unused
+0522:Remember, this is a secret unit. 
+0523:I said no saluting and stuff. Now go already! 
+0524:Unused
+0525:Unused
+0526:Unused
+0527:Unused
+0528:Unused
+0529:Unused
+0530:Unused
+0531:Unused
+0532:Unused
+0533:Unused
+0534:Unused
+0535:Unused
+0536:Unused
+0537:Unused
+0538:Unused
+0539:Unused
+0540:Unused
+0541:Unused
+0542:Unused
+0543:Unused
+0544:Unused
+0545:Unused
+0546:Unused
+0547:Unused
+0548:Unused
+0549:Unused
+0550:Unused
+0551:Unused
+0552:Unused
+0553:Unused
+0554:Unused
+0555:Unused
+0556:Unused
+0557:Unused
+0558:Unused
+0559:Unused
+0560:Unused
+0561:Unused
+0562:Unused
+0563:Unused
+0564:Unused
+0565:Unused
+0566:Unused
+0567:Unused
+0568:Unused
+0569:Unused
+0570:Unused
+0571:Unused
+0572:Unused
+0573:What is it? You seem distracted. 
+0574:Unused
+0575:Now then, let's go. Lt. General Yoneda is waiting. 
+0576:But we're opening soon. There'll be loads of guests here in a minute. 
+0577:Hey, you! Didn't you hear what I said? 
+0578:Don't dilly-dally and pick up that fork! 
+0579:Change into this and go to the reception! You'll raise eyebrows in that military uniform. 
+0580:Hello? Excuuuse me! 
+0581:You arrived today, didn't you? Nice to meet you. I heard about you. 
+0582:I'm Tsubaki Takamura. I'm always working at the gift shop here. 
+0583:I've got photos of all the group members here, so please stop by to visit anytime! 
+0584:Unused
+0585:Unused
+0586:Unused
+0587:Unused
+0588:Unused
+0589:Unused
+0590:Unused
+0591:Unused
+0592:Unused
+0593:Unused
+0594:Unused
+0595:Unused
+0596:Unused
+0597:Unused
+0598:Unused
+0599:Unused
+0600:Unused
+0601:Unused
+0602:Unused
+0603:Unused
+0604:Unused
+0605:My name is Sakura Shinguji. I just arrived from Sendai and newly joined the troop.

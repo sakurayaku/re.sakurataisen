@@ -1812,7 +1812,30 @@
                 "SAKURA3/HANAAYM.SND",
                 "SAKURA3/HANATTL.SND"
               ],
+              "overrides": [
+                "SAKURA1/0100KNJ.BIN"
+              ],
               "decodes": {
+                "SAKURA": [
+                  {
+                    "name": "vwf_font",
+                    "codec": {
+                      "id": "scripts/SAKURA/patch_vwf_font.lua",
+                      "version": 1
+                    },
+                    "outputs": [],
+                    "decodes": {}
+                  },
+                  {
+                    "name": "palette",
+                    "codec": {
+                      "id": "scripts/SAKURA/patch_font_palette.lua",
+                      "version": 1
+                    },
+                    "outputs": [],
+                    "decodes": {}
+                  }
+                ],
                 "SAKURA1/TITLE1.BIN": [
                   {
                     "name": "TITLE.bmp",
@@ -1825,6 +1848,23 @@
                     ],
                     "overrides": [
                       "TITLE.bmp"
+                    ],
+                    "decodes": {}
+                  }
+                ],
+                "SAKURA1/0100TBL.BIN": [
+                  {
+                    "name": "0100TBL.TXT",
+                    "codec": {
+                      "id": "scripts/dialogues.lua",
+                      "version": 1,
+                      "args": "0100KNJ"
+                    },
+                    "outputs": [
+                      "0100TBL.TXT"
+                    ],
+                    "overrides": [
+                      "0100TBL.TXT"
                     ],
                     "decodes": {}
                   }

@@ -1,3 +1,13 @@
 sources
 builds
 builds/cache
+research/FONT_OCR/glyph-work/fonts
+research/FONT_OCR/glyph-work/glyphs
+
+# Those should go in releases
+*.xdelta
+
+# Ghidra is working on those
+SAKURA
+0SLG.BIN
+SLG.BIN

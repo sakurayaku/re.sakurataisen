@@ -1,0 +1,679 @@
+C'est une photo de Sakura. Son regard est si intense. Je me demande à quoi elle pense ?
+C'est une photo de Sumire. Elle montre une facette qu'elle cache habituellement.
+C'est une photo de Maria. Elle est perdue dans ses pensées et semble un peu triste...
+C'est une photo de Kanna. Là dessus, elle à l'air plus énergique et confiante que jamais.
+C'est une photo d'Iris. Une jolie fleur entourée de beaucoup d'autres.
+C'est une photo de Kohran. Elle est baignée dans un magnifique couché de soleil.
+Un spectateur m'a donné cette lettre et m'a demandé de la remetttre à Sumire... Hmm.
+C'est le pistolet de Maria. Je me demande si je peux l'utiliser pour m'échapper ?
+C'est une jolie épingle à cheveux en forme de fleur.
+C'est une belle broche finement travaillée.
+C'est une épingle à cheveux qui s'accorde mieux avec les habits et coupes de cheveux traditionnels japonais.
+C'est Jean-Paul, l'ours en peluche adoré d'Iris.
+Cette clé me permet d'entrer dans des pièces auxquelles je ne pouvais pas accéder auparavant.
+Je l'ai trouvé dans une chambre au deuxième étage. Je peux l'utiliser pour accéder à l'arrière-salle.
+C'est la tasse qu'Iris m'a demandé. C'est une jolie tasse.
+C'est la boîte d'allumettes qu'Iris a demandé. Le logo est assez coloré.
+C'est le couteau qu'Iris a demandé. C'est une pièce d'argenterie ordinaire.
+Ce sont une épée et un bouclier factice utilisés lors des pièces de théâtre. Ca à l'air fait main.
+C'est une fausse couronne très détaillée, utilisée lors des représentations théâtrales.
+C'est une perruque criarde. Dans quel genre de pièce pourrait-on bien s'en servir ?
+C'est une photo de Sakura en maillot de bain ? Ouah, c'est assez osé... Je ne peux pas laisser quelqu'un d'autre la voir.
+C'est une photo de Sumire en costiume. Son maquillage élaboré est plutôt impressionnant.
+C'est une photo de Maria sur scène dans son uniforme tiré de "Pour l'Amour"... C'est une belle femme déguisée en homme.
+C'est une des rares photos d'antraînement. Ca m'a l'air tout à fait privé. 
+C'est une photo d'Iris en maillot de bain. Elle est mignonne avec sa bouée.
+C'est Kohran en tenue de servante. Elle est superbe avec les cheveux détachés.
+C'est Ayame en tenue traditionnelle japonaise. J'aimerais qu'elle sourit comme ça tout le temps.
+C'est le pistolet d'Ayame. Que suis-je supposé en faire ?
+Ah... J'ai bien dormi.
+J'ai fait un rêve intéressant aussi. Enfin, je devrais aller rejoindre les autres.
+Merci Ôgami ! Vous avez été d'une grande aide !
+J'espère que vous m'aiderez encore.
+Oh, ça me rappelle des souvenirs...
+Oui, je sais. Ces gosses m'ont envoyés une photo.
+Je suppose que les bons souvenirs ne s'estompent jamais, hein ?
+Mais... Que comptez-vous faire avec ce borscht ?
+Je pensais le servir au dîner ce soir.
+Tout le monde aimerait goûter la cuisine du Capitaine !
+C'était sympa, Lieutenant ! Rejouons ensemble un de ces jours.
+Désolé, Iris. Je crois que je n'ai pas choisi le bon costume...
+Non, non, non ! Je l'aime parce que c'est Monsieur Ôgami qui l'a choisi !
+La prochaine fois, essayez d'en choisir un qui soit un peu plus mignon ! D'accord ?
+Whaou ! C'est génial d'aller nager de nouveau !
+Les mines étaient-elles à votre goût ?
+Hein ? C'est toi qui as disposé ces mines là, Sumire ?
+Bien sûr que c'est moi. Après tout, nager en soit est affreusement ennuyeux.
+(*Soupir*. Je te supplie de reporter...).
+Comme il n'y a pas de représentation aujourd'hui, je peux me détendre.
+Quitter la pièce ? Faire autre chose ?
+Enfin un jour de repos ! Je vais rejoindre les autres.
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Sakura...
+Bonjour, Ôgami !
+On a enfin un jour de repos. Vous ne devriez pas le passer seul.
+Oui, je suppose...
+Il n'y a pas de répétition aujourd'hui non plus, alors nous nous détendons dans nos chambres.
+Ne viendriez-vous pas me voir dans la mienne ? Alors, on se vois plus tard...
+Que devrais-je faire aujourd'hui ?
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Sumire...
+Bonjour, Lieutenant.
+Jour de repos ou pas, ne pensez-vous pas qu'il est impoli de m'ignorer ?
+Oh, désolé...
+Il n'y a pas de répétition aujourd'hui non plus, alors nous nous détendons dans nos chambres.
+Venez donc me rendre visite dans la mienne. Maintenant, si vous voulez bien m'excuser...
+Que devrais-je faire aujourd'hui ?
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Maria...
+Bonjour, Lieutenant.
+Pardonnez mon intrusion...
+C'est simplement que tout le monde souhaite passer le jour de repos avec vous.
+Et je... Euh... Laissez tomber.
+Ah ! Je parie que tout le monde est content d'enfin avoir un jour de repos.
+Hem ! Je serai dans ma chambre. J'espère que vous viendrez me voir.
+Que devrais-je faire aujourd'hui ?
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Kanna...
+Réveillez-vous, Chef ! Il fait un temps magnifique dehors !
+C'est peut-être un jour de congé, mais c'est pas une raison pour se prélasser !
+Oui, je suppose...
+Vous avez tout à fait raison ! Alors bougez-vous et venez dans ma chambre !
+Que devrais-je faire aujourd'hui ?
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Iris... ?
+Wouhou ! Vous êtes réveillé, Monsieur Ôgami ?
+C'est un jour de congé aujourd'hui ! Venez jouer avec moi !
+J'avais prévu de passer du temps avec tout le monde, en réalité.
+Vraiment ? Ouais ! Je me demande à quel jeu on va bien pouvoir jouer ?
+J'attendrai dans ma chambre. S'il vous plaît, venez me voir !
+Que devrais-je faire aujourd'hui ?
+Ah ! Il fait un temps superbe dehors. Un magnifique journée pour me rafraîchir les idées dans ma chambre.
+Oui ?
+Kohran...
+Lieutenant, espèce de fainéant...
+On a enfin un jour de congé ! Vous voudriez pas le passer avec nous ?
+Oui, je suppose...
+Super ! Fêtons ça pendant notre jour de congé !
+Si vous me cherchez, je serais dans ma chambre. Venez me rendre visite, d'ac ?
+Que devrais-je faire aujourd'hui ?
+Ô-Ôgami !
+Salut, Kasumi. Que faites-vous ici, un jour de congé ?
+Je regarde la scène en me remémorant des souvenirs.
+Voulez-vous vous asseoir et vous remémorer avec moi, Ôgami ?
+Oh ! Voulez-vous vous asseoir et vous remémorer avec moi, Ôgami ?
+S'asseoir et se remémorer ? Peut-être une autre fois.
+Je ne me sens guère nostalgique pour le moment. Peut-être une autre fois.
+Je vois. Enfin... Revenez ici quand vous voulez.
+Bien sûr. Il n'y a rien de mal à réflechir au passé de temps en temps.
+Maintenant, fermez les yeux et remémorez-vous le passé...
+Vous vous sentez bien, Ôgami ?
+Se souvenir d'avantage ? Revenir plus tard ?
+Je ne me sens guère nostalgique pour le moment. Peut-être une autre fois.
+Je vois. Enfin... Revenez ici quand vous voulez.
+Je me sens très nostalgique... J'aimerais me souvenir encore un peu.
+Les souvenirs sont de véritables trésors. Bon, maintenant, fermez les yeux de nouveau...
+Bonjour, Ôgami !
+Salut, Yuri ! Aucun de nous deux n'est en service aujourd'hui, alors nous pouvons nous détendre.
+Ouais ! Les jours de repos sont parfaits pour se mettre au courant des derniers potins.
+Dites, Ôgami, j'ai un super disque...
+Vous voulez l'écouter avec moi ?
+Hé, Ôgami ! Vous voulez écouter de la musique ?
+Ecouter de la musique ? Peut-être une autre fois.
+Je n'ai pas envie d'écouter de la musique. Peut-être une autre fois.
+Pas de problème. Revenez me voir si jamais il vous en prend l'envie.
+Bien sûr, j'adorerais.
+Génial ! Quelle chanson voulez-vous écouter ?
+Ca vous a plu, Ôgami ?
+Ouais, c'était sympa d'écouter différentes chansons.
+Voulez-vous en écouter d'autres ? Vraiment, ça m'est égal.
+En écouter d'autres ? Revenir plus tard.
+Euh, peut-être une autre fois.
+Je comprends. Revenez me voir quand vous voulez.
+Oui, j'aimerais écouter d'avantage de musique.
+Super ! Choisissez quelle chanson vous voulez écouter.
+Bonjour, Ôgami !
+Bonjour, Tsubaki ! Qu'est-ce que vous faites ici aujourd'hui ? Le théâtre est fermé et ce n'est pas la boutique de souvenirs.
+Oh... Vous avez raison. Je suppose que je suis venu ici par habitude... Ah, ah, ah.
+Au fait, Ôgami, j'ai des clichés grand format...
+Ce sont des clichés que vous avez déjà achetées. Vous voulez les voir ?
+Hé, Ôgami ! j'ai des clichés grand format. Vous voulez les voir ?
+J'adorerais les voir ! Peut-être une autre fois.
+Je vends six clichés standard à la boutique de souvenirs, mais aussi sept clichés spéciaux.
+Collectionnez les six clichés standard et vous pourrez acheter un des clichés spéciaux durant les vacances du Nouvel An.
+Soyez bien sûr d'acheter un cliché chaque mois, d'accord ?
+J'adorerais les voir !
+Certainement ! Voici tous les clichés que vous avez achetés pour le moment.
+Génial, non ?
+Voulez-vous les regarder encore une fois ? Ca m'est égal.
+Je vais les regarder encore une fois. Peut-être plus tard.
+Il y une collection spéciale de clichés en plus des six vendus normalement à la boutique de souvenirs.
+Ces sept clichés spéciaux sont disponibles uniquement pendant la période des congés du Nouvel An.
+Je crois que je vais encore les regarder.
+Certainement ! Voici les clichés que vous avez achetés pour le moment.
+C'est vide. Peut-être que tout le monde est dans sa chambre.
+Rester ici serait une perte de temps. Je vais essayer dans une autre pièce.
+Hey, Ôgami ! Vous voulez jouer au hanafuda, le jeu de cartes aux motifs de fleurs, avec nous ?
+Pardonnez-moi, Lieutenant. Daignerez-vous jouer au hanafuda, le jeu de cartes aux motifs de fleurs, avec nous ?
+Lieutenant, aimeriez-vous jouer au Hanafuda, le jeu de cartes à motifs de fleurs, durant notre jour de congé ?
+Hé, Chef ? Vous voulez jouer au hanafuda, le jeu de cartes à motifs de fleurs, avec nous ?
+Hé, Monsieur Ôgami ! Venez jouer au hanafuda, le jeu de cartes à motifs de fleurs, avec nous !
+Hé, Lieutenant ! Venez jouer au hanafuda, le jeu de cartes à motifs de fleurs, avec nous ! Je sais que vous en mourrez d'envie !
+Bien sûr ! Pas maintenant.
+Bien sûr ! Mais attention, car je prévois de gagner !
+Hum, pas maintenant...
+Oh, eh bien, s'il vous plaît, revenez nous voir si jamais vous changez d'avis.
+Quel dommage. Quand bien même, nous jouerons volontiers si toutefois vous changez d'avis.
+Oh... Peut-être une autre fois, alors.
+Pfff ! Vous êtes pas drôle. Revenez si vous changez d'avis, Chef.
+Vous êtes trop nul ! Allez, Monsieur Ôgami, jouez avec nous !
+Mmmh ! C'est pas sympa, Ôgami. Revenez si jamais vous changez d'avis.
+P...Pourquoi tout le monde est là ?
+Je vous ai ramené Ôgami.
+Ouais ! Monsieur Ôgami !
+Vous avez réussi le quizz d'Ayame ? Impressionnant, Chef.
+Ayame... Qu'est-ce que vous fabriquez ?
+On a décidé d'organiser un tournoi d'hanafuda pour occuper notre jour de congé.
+C'est un tournoi à élimination directe. J'y participe, bien entendu.
+Je ne vais pas y aller de main morte avec vous, Ôgami.
+Moi, Sumire Kanzaki, jure d'user de cette opportunité pour démontrer les capacités supérieures de mon intellect de génie.
+L'hanafuda, c'est comme le combat. C'est un jeu de stratégie durant duquel soit on avance, soit on bat en retraite.
+Whaou ! Quelle chouette manière de passer un jour de congé !
+Très bien, Ôgami. Voyons si vous pouvez nous battre tous les sept...
+...à l'hanafuda !
+Bonjour, Ôgami. Que faites vous ici ?
+Commandant Yoneda ? Qu'est-ce que vous, vous faites ici ?
+Ah, mais tout comme vous... Je souhaitais seulement un changement de décor.
+Quel genre de décor vous fait envie ?
+Bonjour, Ôgami. Encore envie d'un changement de décor ?
+Quel genre de décor vous fait envie ?
+Brigade des Fleurs ? Enfantin ? Kôbu ?
+Hum... Je crois que je vais choisir Brigade des Fleurs.
+Brigade des Fleurs, hein ? Je comprends. Maintenant, fermez les yeux !
+Hum... Je crois que je vais choisir Brigade des Fleurs.
+*Soupir* Ôgami, il s'agit votre décor actuel.
+Nous avons peut-être un jour de congé, mais ce n'est pas une raison pour rêvasser.
+Hum... Je crois que je vais choisir Enfantin.
+Enfantin, hein ? Je comprends. Maintenant, fermez les yeux !
+Hum... Je crois que je vais choisir Enfantin.
+*Soupir* Ôgami, il s'agit de votre décor actuel.
+Nous avons peut-être un jour de congé, mais ce n'est pas une raison pour rêvasser.
+Hum... Je crois que je vais choisir Kôbu.
+Kôbu, hein ? Je comprends. Maintenant, fermez les yeux !
+Hum... Je crois que je vais choisir Kôbu.
+*Soupir* Ôgami, il s'agit de votre décor actuel.
+Nous avons peut-être un jour de congé, mais ce n'est pas une raison pour rêvasser.
+Hé, Oh ! Allô la Terre !
+Prenez une respiration profonde et rassemblez vos pensées.
+Hé, Oh ! Allô la Terre !
+Je vous le demande encore une fois. Est-ce que le décor actuel vous convient ?
+Au fait Ôgami ? Vous n'aimeriez pas un petit changement de décor ?
+Voulez-vous encore changer le décor, Ôgami ?
+Changer le décor ? Ne pas le changer ?
+Je pense que j'aimerais le changer.
+Très bien, Monsieur l'indécis. Quel décor souhaitez-vous ?
+Merci, mais je vais m'en tenir à mon décor actuel pour le moment.
+Pas de problème. Revenez me voir si jamais vous avez envie de le changer.
+Bonjour, Ôgami. Vous appréciez notre jour de congé ?
+Oui, Madame. Je me détends et je suis tranquille.
+Parfait ! Dites, vous voulez faire un quiz ?
+Je vais vous poser dix questions, et vous me donnez les bonnes réponses.
+Si vous répondez juste aux dix questions, je vous direz un secret...
+Bonjour, Ôgami. Vous voulez réessayer de répondre au quizz ?
+Absolument ! Niveau avancé, s'il vous plaît ! ...Peut-être plus tard.
+Absolument ! ...Peut-être plus tard.
+Absolument ! Je vais vous montrer pourquoi j'étais en tête de classe à l'académie militaire !
+Très bien. Commençons !
+Niveau avancé, s'il vous plaît !
+Je vois. Donc, vous avez battu Kohran à l'hanafuda, hein ?
+Bien. Ces questions sont plus dures. Répondez-y correctement et je vous direz un secret.
+Il y a dix questions au total. Commençons !
+...Bien joué, Ôgami ! Vous avez bien répondu à toutes les questions.
+Alors, quel est ce secret dont vous parliez, Ayame ?
+Pas si vite. Ce n'était qu'un échauffement.
+Réussissez à répondre correctement à une seconde salve de questions plus difficile et ensuite, je vous le direz.
+Mince ! Je savais que ça avait l'air trop simple.
+Battez Kohran à l'hanafuda and apportez-moi une photo comme preuve. Ensuite, vous pourrez tenter le niveau avancé.
+Alors, Ôgami, vous voulez continuer le quizz ?
+Quel dommage ! Peut-être une autre fois.
+...Voulez-vous arrêter, Ôgami ?
+Continuer ? Abandonner ?
+Je ne peux pas abandonner maintenant ! Ce serait lâche !
+Mmm... Bon esprit, Ôgami. Commençons !
+J'abandonne. Ces questions sont vraiment dures.
+...Je vois. Très bien, revenez me voir si vous voulez retenter votre chance.
+Bien joué, Ôgami ! Vous avez remporté la manche des questions avancées !
+Votre intelligence et votre ténacité sont excellentes.
+Maintenant, comme promis, je vais vous confiez le secret.
+Venez avec moi au salon, Ôgami.
+J'imagine que les questions étaient trop difficiles pour vous.
+...Voulez-vous arrêter, Ôgami ?
+Continuer ? Abandonner ?
+Je ne peux pas abandonner maintenant ! Ce serait lâche !
+Bien dis, Ögami ! Si vous réussissez aux questions de niveau avancé, vous serez un excellent Lieutenant !
+Maintenant, prenez une profonde respiration et préparez-vous ! Commençons !
+...J'abandonne. Ces questions sont vraiment dures.
+...Je vois. Peut-être devriez-vous étudier un peu avant de vous lancer dans le quizz.
+Revenez me voir si vous voulez retenter votre chance.
+Que devrais-je faire maintenant ?
+Entrez !
+Ôgami... Vous allez déjà vous coucher ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+Oh, très bien ! Pendant un court instant, je me suis inquiétée.
+Eh bien, continuez de vous amuser ! On se voit plus tard.
+Où devrais-je aller maintenant ?
+Je pensais que je ferai bien une petite sieste...
+Je vois. C'est un jour parfait pour une sieste.
+Venez me voir ensuite, d'accord ?
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Oh... Bonne nuit, alors.
+Demain est un autre jour très chargé, Ôgami. Faisons de notre mieux.
+Ce serait génial si l'on pouvait se rencontrer dans vos rêves...
+Pardonnez-moi, Lieutenant... Allez-vous déjà vous coucher ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+Alors, ça va. Pendant un court instant, je me suis inquiétée.
+Nous avons rarement un jour de congé, Lieutenant. Essayez vraiment d'en profiter.
+Très bien, je vais flâner encore un peu.
+Je pensais faire une petite sieste...
+En effet... C'est une belle journée pour faire une sieste.
+Venez me voir ensuite.
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Oh... Je vous souhaite donc bonne nuit, Lieutenant.
+...Je vous verrai dans mes rêves.
+Lieutenant, vous allez déjà au lit ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+Je suis heureuse d'entendre ça. On ne sait jamais quand nous pourrions être appelés au combat.
+Donc c'est important de s'amuser quand on le peut.
+Hum ! Excusez-moi, s'il vous plaît.
+Où devrais-je aller maintenant ?
+Je pensais faire une petite sieste...
+Oh ? Hé bien, faites donc.
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Je vois...
+Reposez-vous bien, Lieutenant. Demain, nous avons une journée chargée.
+Chef, ne me dites pas que vous êtes déjà fatigué ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+Vous avez bien raison ! La clef d'une vie heureuse, c'est de la bonne nourriture, un bon sommeil et de bons divertissements !
+Je serai dans ma chambre. Passez me voir, Chef. A plus tard !
+Où devrais-je aller maintenant ?
+Je pensais que je ferai bien une petite sieste...
+Ah... Ce n'est pas une mauvaise idée. Je crois que je vais en faire une aussi !
+A plus tard, Chef !
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Oh... On se voit demain, alors.
+Bonne nuit, Lieutenant.
+Monsieur Ôgami, vous allez déjà vous coucher ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+Ouais ! J'étais inquiète pendant un instant.
+Je serai dans ma chambre, donc venez jouer avec moi, d'accord ?
+Où devrais-je aller maintenant ?
+Je pensais que je ferai bien une petite sieste...
+Roh... D'accord. Venez me voir après votre sieste, alors !
+A plus !
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Vraiment !? Vous êtes si ennuyeux !
+Très bien ! Mais tu devras jouer avec moi durant le prochain jour de congé !
+Ôgami, vous êtes déjà fatigué ?
+Non, bien sûr que non ! Je pensais faire une sieste. Evidemment que je vais dormir.
+Non, bien sûr que non ! Il est encore tôt.
+C'est ce que je voulais entendre ! Le soleil n'est pas encore couché !
+Je serai dans ma chambre ! Venez me rendre visite, d'accord ?
+Où devrais-je aller maintenant ?
+Je pensais que je ferai bien une petite sieste...
+Une sieste, hein ? Venez me voir après votre sieste, d'accord ?
+Mince, je suis vraiment fatigué...
+J'espère que je vais *baille* faire de beaux rêves...
+Oui. Je suis épuisé...
+Vraiment ? Vous êtes vraiment un rabat-joie...
+Je suppose que ce n'est que partie remise pour notre prochain jour de congé.
+Bonne nuit, Ôgami.
+Oh, Ôgami...
+Bonjour, Sakura. Je suis venu pour passer du temps avec toi.
+...Je crains que je ne sois un petit peu occupé pour le moment.
+Je viens de recevoir le texte de notre prochaine pièce.
+et je dois me concentrer sur sa lecture. Je suis vraiment désolé.
+Oh ? C'est vraiment dommage.
+Mais le travail passe en premier. Je reviendrai plus tard.
+Désolé ! Je vous promets que vous pourrez m'aider à nettoyer la prochaine fois.
+Hum ! C'est moi...
+Désolé, mais je suis occupé à relire le texte pour le moment.
+Oh... D'accord. J'arrête de t'embêter.
+(Je devrais essayer de frapper à la porte d'une autre chambre).
+Bonjour, Sakura.
+Oh ! Bonjour, Ôgami.
+Il n'y a pas de représentation aujoud'hui, alors je vais nettoyer la scène et la grande salle des accessoires.
+Je déteste demandais, mais pourriez-vous me donner un coup de main ?
+Bonjour, Sakura.
+Ôgami... Je suis heureuse que vous soyez venu.
+Ecoutez, j'ai une faveur à vous demander...
+Il n'y a pas de représentation aujoud'hui, alors je vais nettoyer la scène et la grande salle des accessoires.
+Pourriez-vous m'aider ?
+Oh, Ôgami ! Pourriez-vous encore m'aider à nettoyer la grande salle des accessoires ?
+Bien sûr que je vais t'aider ! Peut-être plus tard.
+L'aider à nettoyer ? La regarder ? Aller dans une autre chambre ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

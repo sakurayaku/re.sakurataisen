@@ -1,0 +1,891 @@
+C'est une photo de Sakura. Son regard est si intense. Je me demande à quoi elle pense.
+C'est une photo de Sumire. Elle montre une facette qu'elle cache habituellement.
+C'est une photo de Maria. Elle est perdue dans ses pensées et semble un peu triste...
+C'est une photo de Kanna. Elle a l'air énergique et confiante. J'ai hâte de la rencontrer.
+C'est une photo d'Iris. Une jolie fleur entourée de beaucoup d'autres.
+C'est une photo de Kohran. Elle a l'air jolie dans sa tenue traditionnelle. Quel genre de personne est-ce ?
+Un client m'a donné cette lettre et m'a demandé de la transmettre à Sumire. Hmm...
+C'est l'arme de Maria. Je me demande si je peux l'utiliser pour m'échapper.
+C'est une jolie épingle à cheveux en forme de fleur.
+Une broche. C'est une belle pièce d'artisanat délicat.
+Une épingle à cheveux qui se marie parfaitement avec les vêtements et les coiffures traditionnels japonais.
+C'est Jean-Paul, l'ours en peluche adoré d'Iris.
+Cette clé me permettra d'entrer dans des pièces où je ne pouvais pas aller avant.
+J'ai trouvé ça dans une chambre au deuxième étage. Je peux l'utiliser pour accéder à la pièce du fond.
+C'est la tasse qu'Iris a demandée. Son motif est très mignon.
+C'est la boîte d'allumettes qu'Iris a demandée. Son logo est assez coloré.
+C'est le couteau qu'Iris a demandé. C'est juste une pièce d'argenterie ordinaire.
+C'est un ensemble d'épée et de bouclier utilisé dans les pièces de théâtre. Je pense qu'il est fait à la main.
+C'est une couronne extrêmement détaillée utilisée dans les pièces de théâtre.
+C'est une perruque assez criarde. Dans quelle pièce de théâtre pourrait-elle être utilisée ?
+C'est une photo de Sakura en maillot de bain. Woah, c'est assez embarrassant... Je ne dois pas laisser quelqu'un d'autre voir ça.
+C'est une photo de Sumire en tenue traditionnelle. Son maquillage élaboré est assez impressionnant.
+C'est une photo de Maria dans l'uniforme de la pièce "Pour l'Amour". C'est une belle femme déguisée en homme.
+C'est une photo d'entraînement rare et absolument privée.
+C'est une photo d'Iris en maillot de bain. Elle est si mignonne avec sa bouée.
+C'est Kohran dans une tenue de soubrette. Elle est superbe avec ses cheveux détachés.
+C'est Ayame dans des vêtements traditionnels japonais. J'aimerais qu'elle sourie comme ça tout le temps.
+C'est le pistolet d'Ayame. Qu'est-ce que je suis censé faire avec ?
+Je ne peux rien faire ici. Je ferais mieux d'aller voir ailleurs...
+Il n'y a personne ici. Je ferais mieux d'aller voir ailleurs...
+Je ferais mieux d'aller voir ailleurs...
+Je ne fais aucun progrès. Il vaut mieux que j'aille au bureau du directeur pour en parler au Commandant Yoneda.
+Tout ce que j'ai vu jusqu'à présent me fait penser que cet endroit est juste un théâtre...
+Aller sur la scène. Retrouver le Commandant Yoneda. Se rendre à la réception.
+(... Il est déjà bien tard.)
+(Je suis fatigué, mais je n'arrive pas à m'endormir... C'est peut-être parce que je ne suis pas habitué à mon nouveau lit...)
+(Il est déjà presque minuit...)
+...
+(Qu... ? Qui cela peut-il être à cette heure tardive ?)
+Ogami... ? C'est moi, Sakura...
+Sakura ? Attends une seconde, j'ouvre la porte.
+(Que vient-elle faire à cette heure-ci ?)
+Hey, Sakura. Comment s'est passée la pièce ?
+C'était un grand succès.
+Mais... je suis désolé pour tout à l'heure. Je ne voulais pas faire autant de bruit...
+Non non, ne t'en fais pas, tout va bien maintenant. Plus important encore... Que viens-tu faire à cette heure tardive ?
+Ogami ? C'est moi Sakura. Je suis désolée de vous déranger à cette heure-ci.
+Sakura ? Attends une seconde, j'ouvre la porte.
+(Que vient-elle faire à cette heure-ci ?)
+Hey, Sakura. Comment s'est passée la pièce ?
+Grâce à vous, ce fut un grand succès. Oh, et merci pour votre hospitalité tout à l'heure.
+C'est moi qui devrait te remercier. Après tout, c'était bien d'avoir quelqu'un à qui parler...
+Plus important... que viens-tu faire à cette heure tardive ?
+Ogami... ? C'est moi, Sakura...
+Sakura ? Attends une seconde, j'ouvre la porte.
+(Que vient-elle faire à cette heure-ci ?)
+Hey, Sakura. Comment s'est passée la pièce ?
+C'était un grand succès.
+Par ailleurs... que viens-tu faire à cette heure tardive ?
+Eh bien, Ôgami...
+Le directeur Yoneda m'a demandé...
+... que vous fassiez des rondes de nuit dans le théâtre.
+Des rondes de nuit... ?
+Oui. Je sais que c'est un peu tard pour vous le dire, mais j'espère que vous comprenez...
+Vous pouvez compter sur moi ! Bien, je vais faire le tour. Euh, je vais dormir.
+Euh, j'allais m'endormir. Il n'y a pas moyen que je puisse gérer les rondes de nuit après avoir passé la journée à déchirer des tickets.
+Ôgami... Vous comptez vraiment dormir maintenant ?
+... très bien, je vais faire le tour. Oui, je vais dormir.
+Oui, je vais vraiment y aller.
+... bien. Si vous y tenez tant que ça, alors je vais faire la ronde moi-même.
+Ôgami...
+Vous aviez l'air si enthousiaste lors de notre première rencontre au parc Ueno. Que s'est-il passé pour que vous répondiez de la sorte ?
+Je ne peux pas supporter de vous voir comme ça !
+Sakura... Oups, je crois que j'ai été un peu trop têtue.
+... je ne peux rien faire pour l'instant à part dormir.
+Bien sûr ! Tu peux compter sur moi !
+J'avais du mal à m'endormir de toute façon. Faire de l'exercice va peut-être m'aider à résoudre mes insomnies.
+Vraiment... ? Merci d'être si attentionné !
+Eh bien alors, on y va ?
+Hein ?! Tu viens avec moi ?
+Bien sûr ! Après tout, vous ne connaissez pas encore toutes les pièces du théâtre.
+C'est pourquoi je vous accompagne !
+Merci. Je compte sur toi.
+Moi aussi je compte sur vous. Maintenant allons-y !
+Bien bien. Par contre, je suis un peu épuisé après avoir déchiré des tickets...
+Arrêtez de faire des histoires Ôgami ! Je viens avec vous.
+Hein ?! Tu viens avec moi ?
+Bien sûr ! Après tout, vous ne connaissez pas encore toutes les pièces du théâtre.
+C'est pourquoi je vous accompagne !
+... très bien, je compte sur toi alors.
+Moi aussi je compte sur vous. Maintenant allons-y !
+...
+Tss ! Arrêtez de tergiverser Ôgami, je viens avec vous !
+Hein ?! Tu viens avec moi ?
+Bien sûr ! Après tout, vous ne connaissez pas encore toutes les pièces du théâtre.
+C'est pourquoi je vous accompagne !
+... très bien, je compte sur toi alors.
+Moi aussi je compte sur vous. Maintenant allons-y !
+Aaaah, il est déjà minuit passé...
+La nuit est déjà bien tombée, je ferais mieux de dormir un peu.
+Waaah... déjà le matin ?
+Je crois me souvenir qu'aujourd'hui c'est congé. Autrement dit, je n'ai pas à m'occuper des tickets.
+Mais du coup... qu'est-ce que que je vais bien pouvoir faire aujourd'hui ?
+Bien qu'on ne travaille pas, je vais peut-être quand même aller voir la scène, pour le plaisir.
+J'aimerai bien voir l'endroit où s'exerce la Troupe.
+Bien ! Je vais parler au Commandant Yoneda.
+C'est vrai ?... La Force d'Assaut secrète n'existe pas réellement ?
+Je... je ne peux pas le croire. Non, je ne veux pas y croire.
+J'ai besoin de l'entendre directement du Commandant Yoneda lui-même !
+Oh Ôgami. Qu'y a-t-il ?
+(Il boit même à l'extérieur... ?)
+Commandant, il y a quelque chose que j'aimerais vous demander...
+C'est "Directeur" ! DI-REC-TEUR ! Ne m'appelle pas "Commandant" dans ce théâtre.
+Alors, que me veux-tu ?
+Bon, dans un premier temps...
+Attend ! .. je viens de me souvenir de quelque chose !
+Qu-quoi donc Comman- euh, Directeur ?
+C'est à propos de la Troupe impériale ? Vous avez enfin dessoûlé ?
+Non, je devais aller aux toilettes ! Je file !
+... Monsieur, s'il vous plaît, cessez de plaisanter.
+Écoute, une fois que je serai de retour, tu pourras me demander tout ce que tu veux.
+En attendant, pourquoi n'iriez-vous pas assister à la répétition de la Troupe ?
+Super, il est vraiment parti aux toilettes. Qu'est-ce que je fais ?
+Aller à la répétition. L'attendre.
+... je ne vais quand même pas rester là à me tourner les pouces.
+Allons voir les filles.
+Bon, je vais plutôt l'attendre dans son bureau.
+Je vais attendre un peu ici.
+Bon, je pense que je vais attendre un peu ici.
+...
+... ...
+... ... ...
+Ça fait déjà un petit moment là.
+Il ne s'est quand même pas retrouvé ivre-mort dans les toilettes ?
+Se tourner les pouces ne me fera pas avancer. Je vais aller voir la répétition générale de la Troupe.
+... ... ...
+Ça fait déjà un petit moment là.
+Il ne s'est quand même pas retrouvé ivre-mort dans les toilettes ?
+Se tourner les pouces ici ne me fera pas avancer. Je vais aller voir la répétition générale de la Troupe.
+... ça ne sert à rien de se tourner les pouces ici. Je vais aller voir la comment la Troupe répète.
+... Hein ? Qu'est-ce que c'est que ça ?
+Ce type qui fait le clown ressemble étrangement au Directeur Yoneda.
+Mais qui sont ces trois autres personnes autour de lui ?
+Quelle curieuse photo...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Je vois...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
+Non utilisé
