@@ -115,15 +115,20 @@ assert(not ok and tostring(err):find("read beyond text buffer", 1, true),
   "the old index-advance bug must fail")
 
 -- Producer/consumer contract with the actual font table, including newline,
--- metadata, terminator, footer and the unpatched SLG encoding.
+-- metadata, terminator, footer and the unpatched SLG encoding.  TXT lines are
+-- numbered (NNNN:); 0x0A0D would be a valid packed word, so the newline code is
+-- the assertion that tells the two layouts apart.
 ACTIVATE_VWF, ENCODE_FONT = true, "I18N_FONT"
 local dialogues = dofile(root .. "/scripts/dialogues.lua")
 local input = string.pack(">I2I2I2I2I2I2I2I2", 4, 8, 0x2716, 0, 0xABCD, 2, 0x41, 0) .. "footer"
-local output = dialogues.encode(input, { { name = "0100TBL.TXT", data = "A<br>B<br>C<br>4\n" } }, "0100KNJ")
+local output = dialogues.encode(input, { { name = "0100TBL.TXT", data = "0001:A<br>B<br>C<br>4\n" } }, "0100KNJ")
 assert(output:sub(9, 12) == "\xAB\xCD\x00\x02")
 assert(output:sub(13, 28) == "\x41\x09\x00\x0D\x42\x09\x00\x0D\x43\x09\x00\x0D\x34\x09\x00\x00")
 assert(output:sub(29) == "footer")
-assert(dialogues.decode(output, "I18N_FONT")[1].data == "A<br>B<br>C<br>4\n")
-local slg = dialogues.encode(input, { { name = "M01MES.TXT", data = "A<br>B\n" } }, "M01MES")
+assert(dialogues.decode(output, "I18N_FONT")[1].data == "0001:A<br>B<br>C<br>4\n")
+assert(dialogues.encode(output, dialogues.decode(output, "I18N_FONT"), "I18N_FONT") == output)
+
+-- The unpatched SLG engine keeps the plain-ID layout, whatever ACTIVATE_VWF is.
+local slg = dialogues.encode(input, { { name = "M01MES.TXT", data = "0001:A<br>B\n" } }, "M01MES")
 assert(slg:sub(13, 20) == "\x00\x41\x0A\x0D\x00\x42\x00\x00")
-print("VWF: 12 renderer cases, original-bug reproduction, patch idempotence and dialogue ABI passed")
+print("VWF: 4 renderer cases per count, original-bug reproduction, patch idempotence and dialogue ABI passed")

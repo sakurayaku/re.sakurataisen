@@ -1816,26 +1816,6 @@
                 "SAKURA1/0100KNJ.BIN"
               ],
               "decodes": {
-                "SAKURA": [
-                  {
-                    "name": "vwf_font",
-                    "codec": {
-                      "id": "scripts/SAKURA/patch_vwf_font.lua",
-                      "version": 1
-                    },
-                    "outputs": [],
-                    "decodes": {}
-                  },
-                  {
-                    "name": "palette",
-                    "codec": {
-                      "id": "scripts/SAKURA/patch_font_palette.lua",
-                      "version": 1
-                    },
-                    "outputs": [],
-                    "decodes": {}
-                  }
-                ],
                 "SAKURA1/TITLE1.BIN": [
                   {
                     "name": "TITLE.bmp",
@@ -1865,6 +1845,83 @@
                     ],
                     "overrides": [
                       "0100TBL.TXT"
+                    ],
+                    "decodes": {}
+                  }
+                ],
+                "SAKURA": [
+                  {
+                    "name": "vwf_font",
+                    "codec": {
+                      "id": "scripts/SAKURA/patch_vwf_font.lua",
+                      "version": 1
+                    },
+                    "outputs": [],
+                    "decodes": {}
+                  },
+                  {
+                    "name": "palette",
+                    "codec": {
+                      "id": "scripts/SAKURA/patch_font_palette.lua",
+                      "version": 1
+                    },
+                    "outputs": [],
+                    "decodes": {}
+                  },
+                  {
+                    "name": "subtitles_metadata.bin",
+                    "codec": {
+                      "id": "scripts/subtitles_metadata.lua",
+                      "version": 2
+                    },
+                    "outputs": [],
+                    "decodes": {}
+                  }
+                ],
+                "SAKURA1/LOGO.SH2": [
+                  {
+                    "name": "SUBTITLES",
+                    "codec": {
+                      "id": "scripts/subtitles_gfx.lua",
+                      "version": 4
+                    },
+                    "outputs": [
+                      "SUBTITLES_00.bmp",
+                      "SUBTITLES_01.bmp",
+                      "SUBTITLES_02.bmp",
+                      "SUBTITLES_03.bmp",
+                      "SUBTITLES_04.bmp",
+                      "SUBTITLES_05.bmp",
+                      "SUBTITLES_06.bmp",
+                      "SUBTITLES_07.bmp",
+                      "SUBTITLES_08.bmp",
+                      "SUBTITLES_09.bmp",
+                      "SUBTITLES_10.bmp",
+                      "SUBTITLES_11.bmp",
+                      "SUBTITLES_12.bmp",
+                      "SUBTITLES_13.bmp",
+                      "SUBTITLES_14.bmp",
+                      "SUBTITLES_15.bmp",
+                      "SUBTITLES_16.bmp"
+                    ],
+                    "overrides": [
+                      "SUBTITLES_10.bmp",
+                      "SUBTITLES_11.bmp",
+                      "SUBTITLES_12.bmp",
+                      "SUBTITLES_13.bmp",
+                      "SUBTITLES_14.bmp",
+                      "SUBTITLES_15.bmp",
+                      "SUBTITLES_16.bmp",
+                      "SUBTITLES_00.bmp",
+                      "SUBTITLES_01.bmp",
+                      "SUBTITLES_02.bmp",
+                      "SUBTITLES_03.bmp",
+                      "SUBTITLES_04.bmp",
+                      "SUBTITLES_05.bmp",
+                      "SUBTITLES_06.bmp",
+                      "SUBTITLES_07.bmp",
+                      "SUBTITLES_08.bmp",
+                      "SUBTITLES_09.bmp"
                     ],
                     "decodes": {}
                   }

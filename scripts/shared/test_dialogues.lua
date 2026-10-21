@@ -157,6 +157,12 @@ end
 
 local HAVE_TABLE = file_exists(TABLE_0100)
 
+-- This harness pins the historical plain-ID layout: ACTIVATE_VWF is a host
+-- global read at call time, and most sections below encode Japanese text from
+-- the 629-glyph KNJ table, which cannot be packed into one byte.  The packed
+-- (VWF) layout is covered by its own section at the end.
+ACTIVATE_VWF = false
+
 -- ---------------------------------------------------------------------------
 
 print("dialogues.lua test harness")
@@ -187,6 +193,16 @@ do
   reloaded = dofile(codecPath)
   check_eq("externally defined ENCODE_FONT survives a reload", _G.ENCODE_FONT, "0100KNJ")
   ENCODE_FONT = saved
+
+  -- The VWF switch defaults on, but an explicit `false` is sticky: the module
+  -- must test for nil rather than using `X = X or true`.
+  ACTIVATE_VWF = nil
+  reloaded = dofile(codecPath)
+  check_eq("ACTIVATE_VWF defaults to true", _G.ACTIVATE_VWF, true)
+  ACTIVATE_VWF = false
+  reloaded = dofile(codecPath)
+  check_eq("explicit ACTIVATE_VWF=false survives a reload", _G.ACTIVATE_VWF, false)
+
   codec = dofile(codecPath)
 end
 
@@ -264,7 +280,7 @@ else
   local arts = codec.decode(structured, "0100KNJ")
   check_eq("one artifact", #arts, 1)
   check_eq("artifact name", arts[1].name, "0100TBL.TXT")
-  check_eq("two empty lines, stable indices", arts[1].data, "\n\n")
+  check_eq("two empty lines, stable indices", arts[1].data, "0001:\n0002:\n")
 end
 
 print("")
@@ -288,21 +304,29 @@ else
   local lines = {}
   for line in arts[1].data:gmatch("([^\n]*)\n") do lines[#lines + 1] = line end
   check_eq("one line per entry", #lines, 3)
-  check_eq("glyphs + <br> newline", lines[1], "さく<br>ら、")
-  check_eq("plain glyph", lines[2], "ら")
-  check_eq("empty entry keeps its index", lines[3], "")
+  check_eq("glyphs + <br> newline", lines[1], "0001:さく<br>ら、")
+  check_eq("plain glyph", lines[2], "0002:ら")
+  check_eq("empty entry keeps its index", lines[3], "0003:")
 
-  check_err("unknown glyph is reported with context", function()
-    codec.decode(build_tbl({
+  -- decode() falls back from one layout to the other, so a probe with a single
+  -- unreadable word proves nothing: above 0x0276 the plain ID is unknown but the
+  -- packed glyph ID (word >> 8) is a real entry.  Entry #1's 0x000A has packed
+  -- glyph ID 0, which no table has, so both layouts fail and the legacy read
+  -- (tried first here) is what gets reported.
+  local function probe_unknown()
+    return build_tbl({
       { id = 0x9C41, codes = { 0x000A } },
-      { id = 0x9C42, codes = { 0xFFFF } },
-    }, ""), "0100KNJ")
+      { id = 0x9C42, codes = { 0x7FFE } },
+    }, "")
+  end
+  check_err("unknown glyph is reported with context", function()
+    codec.decode(probe_unknown(), "0100KNJ")
   end, "dialogue #2")
   check_err("unknown glyph reports the code", function()
-    codec.decode(build_tbl({ { id = 1, codes = { 0x7FFE } } }, ""), "0100KNJ")
+    codec.decode(probe_unknown(), "0100KNJ")
   end, "0x7FFE")
   check_err("unknown glyph reports a byte offset", function()
-    codec.decode(build_tbl({ { id = 1, codes = { 0x7FFE } } }, ""), "0100KNJ")
+    codec.decode(probe_unknown(), "0100KNJ")
   end, "byte offset 0x")
 end
 
@@ -335,7 +359,7 @@ else
     { id = 0x9C41, prefix0 = 0xABCD, prefix1 = 0x0009, codes = { 0x000A } },
   }, "FOOTERBYTES")
   local pArts = codec.decode(preserved, "0100KNJ")
-  pArts[1].data = "ら\n"                -- 0x000C
+  pArts[1].data = "0001:ら\n"          -- 0x000C
   local pOut = codec.encode(preserved, pArts, "0100KNJ")
   check_eq("id preserved", u16be_at(pOut, 4), 0x9C41)
   local headerEnd = u16be_at(pOut, 0) * 2
@@ -346,14 +370,14 @@ else
 
   -- <br> is an explicit break and is re-encoded as 0x0A0D.
   local br = build_tbl({ { id = 1, codes = { 0x000A } } }, "")
-  local brArts = { { name = "0100TBL.TXT", data = "さ<br>ら\n" } }
+  local brArts = { { name = "0100TBL.TXT", data = "0001:さ<br>ら\n" } }
   check("explicit <br> becomes 0x0A0D",
         codes_equal(entry_codes(codec.encode(br, brArts, "0100KNJ"), 1),
                     { 0x000A, 0x0A0D, 0x000C }))
 
   -- 240px at the default 16px per glyph -> 15 glyphs per line.
   local wrap = build_tbl({ { id = 1, codes = { 0x000A } } }, "")
-  local wrapArts = { { name = "0100TBL.TXT", data = string.rep("さ", 16) .. "\n" } }
+  local wrapArts = { { name = "0100TBL.TXT", data = "0001:" .. string.rep("さ", 16) .. "\n" } }
   local want = {}
   for _ = 1, 15 do want[#want + 1] = 0x000A end
   want[#want + 1] = 0x0A0D
@@ -373,13 +397,13 @@ else
   end
 
   check_err("unknown text character is reported", function()
-    local arts = { { name = "0100TBL.TXT", data = "€\n" } }
+    local arts = { { name = "0100TBL.TXT", data = "0001:€\n" } }
     codec.encode(wrap, arts, "0100KNJ")
   end, "has no glyph for")
   check_err("line/entry count mismatch is reported", function()
-    local arts = { { name = "0100TBL.TXT", data = "さ\nら\n" } }
+    local arts = { { name = "0100TBL.TXT", data = "0001:さ\n0002:ら\n" } }
     codec.encode(wrap, arts, "0100KNJ")
-  end, "stable line-to-entry mapping")
+  end, "has 2 dialogue(s)")
 end
 
 print("")
@@ -426,17 +450,17 @@ do
     for line in codec.decode(probe, WIDTH_FONT)[1].data:gmatch("([^\n]*)\n") do
       probeLines[#probeLines + 1] = line
     end
-    check_eq("explicit-width glyph decodes", probeLines[1], "ABC")
-    check_eq("empty value is valid, not missing", probeLines[2], "")
-    check_eq("multi-character tile decodes whole", probeLines[3], "XY")
-    check_eq("value after an explicit width decodes", probeLines[4], "Z")
+    check_eq("explicit-width glyph decodes", probeLines[1], "0001:ABC")
+    check_eq("empty value is valid, not missing", probeLines[2], "0002:")
+    check_eq("multi-character tile decodes whole", probeLines[3], "0003:XY")
+    check_eq("value after an explicit width decodes", probeLines[4], "0004:Z")
     check_err("id absent from the table is an error", function()
       codec.decode(build_tbl({ { id = 1, codes = { 0x9999 } } }, ""), WIDTH_FONT)
     end, "unknown glyph")
 
     local function wrap_codes(text)
       local data = build_tbl({ { id = 1, codes = { 1 } } }, "")
-      local arts = { { name = "0100TBL.TXT", data = text .. "\n" } }
+      local arts = { { name = "0100TBL.TXT", data = "0001:" .. text .. "\n" } }
       return entry_codes(codec.encode(data, arts, "0100KNJ"), 1)
     end
 
@@ -478,7 +502,7 @@ else
   -- The US font is a CP1252 identity table: 'A' is glyph 0x0041, ' ' is 0x0020.
   local data = build_tbl({ { id = 0x1234, codes = { 0x0041, 0x0020, 0x00E9, 0x0085 } } }, "")
   local arts = codec.decode(data, "I18N_FONT")
-  check_eq("default font decodes", arts[1].data, "A \195\169\226\128\166\n")
+  check_eq("default font decodes", arts[1].data, "0001:A \195\169\226\128\166\n")
   local ok, out = pcall(codec.encode, data, arts, "I18N_FONT")
   check("default font round-trips", ok and out == data,
         ok and "bytes differ" or tostring(out))
@@ -491,6 +515,43 @@ else
     codec.encode(d, a, "I18N_FONT")
     ENCODE_FONT = saved
   end, "cannot open font table")
+end
+
+print("")
+print("encode (VWF packed contract)")
+-- The packed layout: word = (glyph ID << 8) | advance, 0x000D is the newline and
+-- widths come from the font table.  This is the format SAKURA's patched
+-- renderer reads, and it is lossless as long as the font has <= 255 glyphs.
+if not file_exists(PROJECT_ROOT .. "/workspace/tables/I18N_FONT.tbl") then
+  check_skip("packed round-trip", "workspace/tables/I18N_FONT.tbl not found")
+else
+  local savedFont, savedVwf = ENCODE_FONT, ACTIVATE_VWF
+  ENCODE_FONT, ACTIVATE_VWF = "I18N_FONT", true
+
+  -- 'A' = 0x0041 (9px), ' ' = 0x0020 (5px) in I18N_FONT.tbl, so the packed
+  -- words are 0x4109 / 0x2005 and the break is 0x000D.
+  local source = build_tbl({ { id = 0x1234, codes = { 0x4109, 0x2005, 0x0A0D, 0x4109 } } }, "")
+  local packed = { { name = "0100TBL.TXT", data = "0001:A <br>A\n" } }
+  local out = codec.encode(source, packed, "0100KNJ")
+  check("packed words are (id << 8) | width",
+        codes_to_string(entry_codes(out, 1)) == "{0x4109,0x2005,0x000D,0x4109}",
+        codes_to_string(entry_codes(out, 1)))
+
+  -- Decoding its own output, then re-encoding it, is bit-exact.
+  local roundTripped = codec.decode(out, "I18N_FONT")
+  check_eq("packed output decodes to the same text", roundTripped[1].data,
+           packed[1].data)
+  check("packed output round-trips bit-exact",
+        codec.encode(out, roundTripped, "I18N_FONT") == out)
+
+  -- A font wider than one byte cannot use the packed layout; that is reported,
+  -- not silently truncated.  0x0100 (流) is the first KNJ glyph above the limit.
+  ENCODE_FONT = "0100KNJ"
+  check_err("glyph ID above 0xFF is rejected", function()
+    codec.encode(source, { { name = "0100TBL.TXT", data = "0001:流\n" } }, "0100KNJ")
+  end, "does not fit the VWF packed word")
+
+  ENCODE_FONT, ACTIVATE_VWF = savedFont, savedVwf
 end
 
 -- ---------------------------------------------------------------------------

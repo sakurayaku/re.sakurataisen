@@ -656,8 +656,6 @@ function codec.encode(original, artifacts, args)
   end
 
   local entries = parsed.entries
-
-  local entries = parsed.entries
   local ordered = {}
   local expectedIndex = 1
 
