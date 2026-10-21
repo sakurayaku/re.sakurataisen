@@ -42,11 +42,28 @@ Les annotations `CHOICE` et `RESULT` sont totalement arbitraires pour faciliter 
 
 ## Images
 
+### SAKURA1/LOGO.SH2/SUBTITLES/{nn.bmp}
+
+Ces images correspondent aux sous-titres de la séquence d'introduction du jeu. Les 11 à 16 semblent ne pas être utilisées par le jeu, l'équipe US ne les ayant même pas remplacées.
+
+Les images sont en [BMP](https://fr.wikipedia.org/wiki/Windows_bitmap) indexé, avec une palette figée. La couleur d'index 0 (ce joli jaune criard) indique la transparence. Tout le reste sera visible.
+
+Il y a des limites sur la quantité d'espace disponible en VRAM pour la totalité de ces images. Pour y pallier, les images 11 à 16 sont remplacées par un _placeholder_ (une image totalement transparente de `8×2px`). De plus, un hack "safe" permet d’exploiter une zone de VRAM supplémentaire, qui semble inutilisée pendant l’introduction.
+
+En pratique, pour modifier ces sous-titres:
+- la largeur de chaque image DOIT être un multiple de `8px`.
+- la hauteur de chaque image (à part les _placeholder_) doit être de `8px` ou de `16px`. Une tentative à `24px` a donné du _garbage_, et des tentatives intermédiaires n'ont pas été essayées car jugées sans intérêt.
+- au total, les 17 images doivent tenir dans une surface cumulée équivalente à `2 224×16px` de base, et à `2 560×16px` avec le hack "safe".
+
+À noter: une fonctionnalité a été ajoutée à l'encoder qui lui permet d'utiliser une image à la place d'une autre. Ainsi, lorsqu’une image de `8×2px` est rencontrée, l’encoder réutilise automatiquement l’image précédente. Le patch s'en sert pour `10.bmp`, qui réutilise donc `09.bmp` en jeu sans avoir à dupliquer ses données.
+
+C'est notamment utile car la ligne finale "Rugis\nPuissant corps d'élite impérial !" est séparée en deux sous-titres dans la version japonaise, alors qu'elle fonctionne mieux sur un sous-titre de deux lignes (mais elle occupe aussi plus d'espace, d'où le hack "safe").
+
 ### SAKURA1/TITLE{nn}.BIN/TITLE{nn}.BMP
 
 Ces images correspondent aux titres d'épisodes.
 
-Les images sont en [BMP](https://fr.wikipedia.org/wiki/Windows_bitmap) indéxé, avec une palette figée. Vous pouvez modifier les couleurs de la palette, mais vous devez faire attention à enregistrer le fichier en BMP indéxé, sinon vous aurez une erreur.
+Les images sont en [BMP](https://fr.wikipedia.org/wiki/Windows_bitmap) indexé, avec une palette figée. Vous pouvez modifier les couleurs de la palette, mais vous devez faire attention à enregistrer le fichier en BMP indexé, sinon vous aurez une erreur.
 
 En revanche, vous ne pouvez pas modifier ses dimension.
 

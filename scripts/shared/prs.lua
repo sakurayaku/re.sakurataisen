@@ -19,6 +19,11 @@ local M = {}
 local MAX_DISTANCE = 8191
 local MAX_LENGTH   = 256
 
+-- Candidates examined per position.  Longer chains buy a few bytes at a
+-- quadratic cost: the main-menu background goes from 3,781 bytes at 256 to
+-- 3,763 at 384, but the pair takes 14 seconds instead of 10.
+local SAME_CHAIN   = 256
+
 local function make_reader(data)
   local pos, len = 1, #data
   local flags, bits = 0, 0
@@ -194,28 +199,46 @@ function M.compress(data)
       end
     end
 
-    -- Longest match for p, searching the most recent candidates first.
-    local function find(p)
-      local best_len, best_dist = 0, 0
+    -- Two passes.  The first walks forward and records, for every position,
+    -- the longest match available and the longest one a short reference can
+    -- carry; the second walks backward choosing the cheapest encoding of the
+    -- suffix.  Greedy parsing left roughly 1% on the table versus the shipping
+    -- encoder, which matters here: the main-menu blocks sit in a fixed budget
+    -- and the original art already fills it.
+    --
+    -- Bit costs: literal 9 (1 flag + 8), short reference 10 (2 + 8), long
+    -- reference 18 (2 + 16) for lengths 3..9 and 26 (2 + 16 + 8) from length 10
+    -- up.  Within a flat-cost class a longer match is always at least as good,
+    -- because the cost of the remaining suffix never grows with a later start,
+    -- so only one candidate per class has to be tried.
+    local max_long, dist_long, max_short, dist_short = {}, {}, {}, {}
+
+    for p = 1, n do
+      local best_len, best_dist, short_len, short_dist = 0, 0, 0, 0
 
       if p + 1 <= n then
-        local max_len = math.min(MAX_LENGTH, n - p + 1)
+        local limit = math.min(MAX_LENGTH, n - p + 1)
         local candidate = head[key_at(p)]
         local chain = 0
 
-        while candidate and (p - candidate) <= MAX_DISTANCE and chain < 1024 do
-          local length = 0
-          while length < max_len
+        while candidate and (p - candidate) <= MAX_DISTANCE and chain < SAME_CHAIN do
+          local distance = p - candidate
+          -- The hash key already established that the first two bytes match.
+          local length = 2
+          while length < limit
             and string.byte(data, candidate + length) == string.byte(data, p + length) do
             length = length + 1
           end
 
           if length > best_len then
-            best_len = length
-            best_dist = p - candidate
-            if best_len == max_len then
-              break
-            end
+            best_len, best_dist = length, distance
+          end
+          if length > short_len and distance <= 256 then
+            short_len, short_dist = length, distance
+          end
+
+          if best_len == limit and short_len >= math.min(5, limit) then
+            break
           end
 
           candidate = prev[candidate]
@@ -223,66 +246,75 @@ function M.compress(data)
         end
       end
 
-      return best_len, best_dist
+      max_long[p], dist_long[p] = best_len, best_dist
+      if short_len >= 2 then
+        -- A short reference carries at most five bytes.
+        max_short[p], dist_short[p] = math.min(short_len, 5), short_dist
+      end
+      insert(p)
+    end
+
+    local cost, kind, length, distance = {}, {}, {}, {}
+    cost[n + 1] = 0
+
+    for p = n, 1, -1 do
+      local best_bits = 9 + cost[p + 1]
+      local best_kind, best_len, best_dist = "lit", 1, 0
+
+      local short = max_short[p]
+      if short then
+        local bits = 10 + cost[p + short]
+        if bits < best_bits then
+          best_bits, best_kind, best_len, best_dist = bits, "short", short, dist_short[p]
+        end
+      end
+
+      local long = max_long[p]
+      if long >= 3 then
+        local mid = math.min(9, long)
+        local bits = 18 + cost[p + mid]
+        if bits < best_bits then
+          best_bits, best_kind, best_len, best_dist = bits, "long", mid, dist_long[p]
+        end
+
+        if long >= 10 then
+          bits = 26 + cost[p + long]
+          if bits < best_bits then
+            best_bits, best_kind, best_len, best_dist = bits, "long", long, dist_long[p]
+          end
+        end
+      end
+
+      cost[p], kind[p], length[p], distance[p] = best_bits, best_kind, best_len, best_dist
     end
 
     local pos = 1
     while pos <= n do
-      local best_len, best_dist = find(pos)
+      local len = length[pos]
 
-      -- Lazy matching: if the next byte starts a longer match, emit a literal.
-      if best_len >= 2 and pos < n and find(pos + 1) > best_len then
-        best_len = 0
-      end
-
-      local emitted = 1
-
-      if best_len >= 2 then
-        local encoded = false
-
-        if best_dist <= 256 and best_len <= 5 then
-          -- Short back-reference: 00 + 2 size bits + offset byte
-          local size_bits = best_len - 2
-          local high = (size_bits >> 1) & 1
-          local low = size_bits & 1
-          add("00" .. (high == 1 and "1" or "0") .. (low == 1 and "1" or "0"),
-              string.char(256 - best_dist))
-          encoded = true
+      if kind[pos] == "short" then
+        local size_bits = len - 2
+        add("00" .. (size_bits >> 1 == 1 and "1" or "0") .. (size_bits & 1 == 1 and "1" or "0"),
+            string.char(256 - distance[pos]))
+      elseif kind[pos] == "long" then
+        local size_bits, extra = 0, nil
+        if len <= 9 then
+          size_bits = len - 2
+        else
+          extra = len - 1
         end
-
-        if not encoded and best_len >= 3 then
-          -- Long back-reference: 01 + 16-bit word (+ size byte for len >= 10)
-          local size_bits = 0
-          local extra = nil
-          if best_len <= 9 then
-            size_bits = best_len - 2
-          else
-            extra = best_len - 1
-          end
-
-          local value = ((8192 - best_dist) << 3) | size_bits
-          local bytes = string.char(value & 0xFF, (value >> 8) & 0xFF)
-          if extra then
-            bytes = bytes .. string.char(extra)
-          end
-
-          add("01", bytes)
-          encoded = true
+        local value = ((8192 - distance[pos]) << 3) | size_bits
+        local bytes = string.char(value & 0xFF, (value >> 8) & 0xFF)
+        if extra then
+          bytes = bytes .. string.char(extra)
         end
-
-        if encoded then
-          emitted = best_len
-        end
-      end
-
-      if emitted == 1 then
+        add("01", bytes)
+      else
         add("1", string.sub(data, pos, pos))
+        len = 1
       end
 
-      for p = pos, pos + emitted - 1 do
-        insert(p)
-      end
-      pos = pos + emitted
+      pos = pos + len
     end
 
     add("01", "\0\0")

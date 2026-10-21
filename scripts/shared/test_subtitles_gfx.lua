@@ -44,6 +44,8 @@ end
 
 local PRS_OFFSET  = 0x000196d8
 local PAL_OFFSET  = 0x00019578
+local DMA_OFFSET  = 0x00000c06
+local SHIPPED_DMA = 0x4580
 local BLOCK_SIZE  = 12673
 local FILE_SIZE   = 243200
 
@@ -98,6 +100,9 @@ local function make_logo(block)
   local data = string.rep("\x00", FILE_SIZE)
   data = data:sub(1, PAL_OFFSET) .. make_palette() .. data:sub(PAL_OFFSET + 33)
   data = data:sub(1, PRS_OFFSET) .. compressed .. data:sub(PRS_OFFSET + BLOCK_SIZE + 1)
+  -- The shipped transfer length, sitting in export #6's literal pool.
+  data = data:sub(1, DMA_OFFSET) .. string.pack(">I2", SHIPPED_DMA)
+    .. data:sub(DMA_OFFSET + 3)
   return data
 end
 
@@ -169,7 +174,7 @@ for i = 1, #DIMS do
   offset = offset + size
 
   local artifact = artifacts[i]
-  local name = string.format("SUBTITLES_%02d.bmp", i - 1)
+  local name = string.format("SUBTITLES/%02d.bmp", i - 1)
   if artifact.name ~= name then
     names_ok = false
   end
@@ -181,7 +186,7 @@ for i = 1, #DIMS do
     pixels_ok = false
   end
 end
-check("artifact names are SUBTITLES_00..16", names_ok)
+check("artifact names are SUBTITLES/00..16", names_ok)
 check("decoded BMPs are top-down 4bpp with the block's pixels", pixels_ok)
 
 -- palette must be the Saturn palette, converted to BGRA
@@ -437,6 +442,102 @@ check_err("oversized block is an error", function()
   end
   codec.encode(logo, noisy)
 end, "over the")
+
+-- ---------------------------------------------------------------------------
+-- grow_dma: the transfer length is a u16 in this file's own export #6
+
+print("")
+print("encode: grow_dma")
+
+local function dma_word(data)
+  return string.unpack(">I2", data, DMA_OFFSET + 1)
+end
+
+local function copy_artifacts(arts)
+  local out = {}
+  for i = 1, #arts do out[i] = { name = arts[i].name, data = arts[i].data } end
+  return out
+end
+
+-- The fixture block is the disc's 17,792 bytes, so a build that fits stays
+-- byte-identical whatever the mode says.
+check("grow_dma=safe on an unchanged block is a no-op",
+  codec.encode(logo, artifacts, "grow_dma=safe") == logo)
+check("an empty argument means grow_dma=none",
+  codec.encode(logo, artifacts, "") == logo)
+
+-- Two lines in slot 1: 192x32 instead of 112x16, i.e. +2,176 bytes, which lands
+-- between the shipped 0x4580 and the 0x5000 the atlas may own.
+local grown = copy_artifacts(artifacts)
+grown[2].data = make_bmp(192, 32, paint_span(192, 32, 0, 191),
+  bmp_fields(artifacts[1].data).pal)
+local grown_bytes = 17792 - 112 * 16 // 2 + 192 * 32 // 2
+check("the grown artwork is past the default window",
+  grown_bytes > 0x4800 and grown_bytes <= 0x5000, tostring(grown_bytes))
+
+check_err("grow_dma=none refuses artwork past its window", function()
+  codec.encode(logo, grown)
+end, "only stages")
+check_err("grow_dma=none is the same when spelled out", function()
+  codec.encode(logo, grown, "grow_dma=none")
+end, "only stages")
+
+local safe_out = codec.encode(logo, grown, "grow_dma=safe")
+check("grow_dma=safe builds that artwork", #safe_out == #logo)
+check("it raises the transfer to the block's own size",
+  dma_word(safe_out) == grown_bytes, string.format("0x%04x", dma_word(safe_out)))
+check("only the two transfer bytes change outside the image block",
+  safe_out:sub(1, DMA_OFFSET) == logo:sub(1, DMA_OFFSET)
+    and safe_out:sub(DMA_OFFSET + 3, PRS_OFFSET) == logo:sub(DMA_OFFSET + 3, PRS_OFFSET)
+    and safe_out:sub(PRS_OFFSET + BLOCK_SIZE + 1) == logo:sub(PRS_OFFSET + BLOCK_SIZE + 1))
+check("the raised pixels are what was asked for",
+  prs.decompress(safe_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+    :sub(1280 + 1, 1280 + 192 * 32 // 2) == paint_span(192, 32, 0, 191))
+check("re-encoding a raised build is a no-op",
+  codec.encode(safe_out, grown, "grow_dma=safe") == safe_out)
+
+-- Shrinking must leave the shipped length alone: never lower, so a build that
+-- fits copies exactly what the disc copied.
+local short = with_stub(artifacts)
+local short_out = codec.encode(logo, short, "grow_dma=safe")
+check("a smaller block never lowers the transfer",
+  dma_word(short_out) == SHIPPED_DMA, string.format("0x%04x", dma_word(short_out)))
+
+-- The region ends at the next overlay; "safe" means exactly that much.
+check_err("grow_dma=safe stops at the next overlay", function()
+  local too_big = copy_artifacts(artifacts)
+  too_big[2].data = make_bmp(232, 32, paint_span(232, 32, 0, 231),
+    bmp_fields(artifacts[1].data).pal)
+  codec.encode(logo, too_big, "grow_dma=safe")
+end, "0x25c07280")
+
+check_err("an unknown mode is an error", function()
+  codec.encode(logo, grown, "grow_dma=maybe")
+end, "must be")
+check_err("a bare token is an error", function()
+  codec.encode(logo, grown, "grow_dma")
+end, "key=value")
+check_err("an unknown key is an error", function()
+  codec.encode(logo, grown, "dma=0x5000")
+end, "unknown argument")
+
+-- ludared hands the same string to both passes, so a value a rebuild would
+-- refuse must not decode silently.
+check_err("decoding with a bad argument is refused too", function()
+  codec.decode(logo, "grow_dma=maybe")
+end, "must be")
+
+local function decode_bytes(args)
+  local parts = {}
+  for i, artifact in ipairs(codec.decode(logo, args)) do
+    parts[i] = artifact.name .. "\0" .. artifact.data
+  end
+  return table.concat(parts)
+end
+
+check("decoding accepts a good argument and yields the same canvases",
+  decode_bytes("grow_dma=safe") == decode_bytes(nil))
+
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))

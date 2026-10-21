@@ -44,11 +44,26 @@
        wider than the original slot is therefore fine, and the only width limit
        is the 320-pixel screen.
 
-    2. Staging.  The engine only reaches the first 0x4800 (18,432) bytes of the
-       decompressed block -- the original block is 17,792 bytes and fits.  Every
-       image that starts past that point shows stale VRAM instead of its own
-       pixels, which is what produced the garbage subtitles.  The budget is on
-       the *decompressed* size, so compressing better does not buy any room.
+    2. Staging.  VDP1 VRAM is partitioned by convention, not by an allocator: the
+       atlas is DMA'd to 0x25c02280 and the next upload claims 0x25c07280, so
+       0x5000 (20,480) bytes is the whole region the atlas can ever own.  The
+       *transfer length* is a u16 immediate in this file's own export #6
+       (offset 0xc06), which is why it is budgeted here and not in
+       subtitles_metadata.lua: the shipped value is 0x4580 = 17,792 bytes, i.e.
+       exactly the original block, and anything past it stays in the decoder's
+       scratch and never reaches VRAM.
+
+       `args` is the single string ludared passes through.  It accepts one
+       comma-separated key=value pair:
+
+           grow_dma=none    (default) keep the shipped 0x4580 transfer and the
+                            staged window this codec has always enforced
+           grow_dma=safe    raise the transfer to the block's own size, up to
+                            0x5000, by rewriting that u16
+
+       "safe" only ever raises the length, and only when the block needs it, so
+       a build that fits stays byte-identical and a hand-raised value survives.
+       Anything else in `args` is an error rather than a silent default.
 
   Each artifact is an indexed 4bpp BMP whose palette is the in-game palette,
   so the transparent colour (index 0) is visible while editing.
@@ -78,8 +93,79 @@ end
 local codec = {}
 
 codec.name        = "Sakura Taisen Subtitle Graphics"
-codec.description = "PATCH plugin for the PRS-compressed subtitle images in LOGO.SH2"
-codec.version     = 6
+codec.description = [[Sakura Taisen (Saturn) subtitle graphics: the PRS block in LOGO.SH2
+
+Patches the 12,673-byte PRS-compressed image block at 0x000196d8 with the 17
+SUBTITLES/nn.bmp canvases of the workspace, and returns the file untouched when
+none of them changed, so an unchanged decode and rebuild is byte for byte the
+disc's own file.
+
+The block is the 17 images concatenated in id order, 4bpp, row-major, high
+nibble left. Nothing separates them and nothing inside the block records their
+sizes: those are entries of the table at SAKURA:0x000a20c, which
+subtitles_metadata.lua writes. This codec reads the layout from the canvases
+instead, so the two agree by construction as long as both are in the manifest
+for the file pair -- and a manifest that pairs the block with a table written
+from different canvases builds a disc whose images contradict their own sizes.
+
+A canvas must be an indexed 4bpp BMP with an uncompressed 40-byte
+BITMAPINFOHEADER, bottom-up or top-down, its width in whole 8-pixel tiles, an
+even height, at most 320 pixels wide. Index 0 is the transparent colour, and
+the palette the decoded canvases carry is the one the file already holds at
+0x00019578: the colours are read out for editing, never written back, so a
+palette change belongs to a palette codec. A canvas whose every pixel is index
+0 is blank, which subtitles_metadata.lua answers by lending it the previous
+visible subtitle's records -- but the blank canvas still owns its bytes here,
+and 8x2, one 8-byte unit, is the cheapest placeholder.
+
+Budget. The compressed block is fixed at 12,673 bytes and padded with zeroes,
+and the images inside it are uncompressed: an image costs width x height / 2
+whatever the artwork looks like, so the budget applies to the canvases and
+nothing is gained by drawing something simpler.
+
+Getting the block into VRAM is a second, tighter budget. VDP1 VRAM is
+partitioned by convention, not by an allocator: the atlas is DMA'd to
+0x25c02280 and the upload that follows claims 0x25c07280, leaving 0x5000 bytes
+for it. The transfer length is a u16 in this file's own export #6, at offset
+0x00000c06, and the shipped disc sets it to 0x4580 -- exactly the original
+block's size, so anything past that stays in the decoder's scratch and shows
+whatever VRAM held before. `grow_dma` decides what this codec may do with it.
+
+Arguments (string):
+  grow_dma (default: "none")
+    What the transfer length may become when the canvases outgrow the one the
+    disc shipped. It has no effect on decoding, which reads the same canvases
+    out of the block either way, and a malformed value is refused in both
+    passes rather than only where it would have been used.
+
+    none       Refuse a block past 0x4800 and never touch the word. 0x4800 is
+               the window this codec checked before the transfer length was
+               located, and it is 640 bytes more lenient than the 0x4580 the
+               game moves, so a block between the two builds and loses its tail
+               on screen (default)
+    safe       Allow the 0x5000 the atlas owns, and raise the word to the
+               block's own size when the block needs it. The word is only ever
+               raised: a build that still fits leaves it alone, and a value
+               already raised by hand survives, so a rebuild of the same art is
+               a no-op.
+
+    The whole argument is one string of comma-separated key=value pairs, which
+    is what ludared hands a codec. Anything unrecognised -- another key,
+    another value, a token without "=" -- is refused rather than defaulted.
+
+Example:
+  grow_dma=safe
+
+Not supported, and refused rather than written wrongly:
+
+  * canvases that are not 4bpp indexed BMPs, that are compressed, or whose DIB
+    header is not the 40-byte BITMAPINFOHEADER
+  * odd heights, widths that are not multiples of 8, and widths past the
+    320-pixel screen: the table counts width in tiles and the block offset in
+    8-byte units, so rounding either would move the artwork's centre
+  * a block that compresses past 12,673 bytes, or whose images pass the
+    transfer limit in force]]
+codec.version     = 7
 codec.kind        = "patch"
 
 local LOGO_SUBTITLE_PRS_OFFSET = 0x000196d8
@@ -118,7 +204,13 @@ local MAX_BLOCK_BYTES = 0xFFFF * 8
 
 -- Game limits, not file-format limits.  See the header comment.
 local SCREEN_WIDTH       = 320
-local ENGINE_STAGE_BYTES = 0x4800
+local ENGINE_STAGE_BYTES = 0x4800   -- staged window enforced by default
+local VDP1_ATLAS_CEILING = 0x5000   -- 0x25c07280 - 0x25c02280: the atlas's region
+
+-- The transfer length itself: a bare u16 in export #6's literal pool, read by
+-- exactly one instruction (0x00204bba, mov.w @(pc),r6).  Raising it is a
+-- two-byte edit; see SAKTAI_SUBTITLES.md 5.4.
+local LOGO_DMA_LENGTH_OFFSET = 0x00000c06
 
 
 local BMP_FILE_HEADER  = 14
@@ -262,6 +354,42 @@ local function image_block_size(dims)
   return total
 end
 
+-- ludared hands a codec a single optional string (`Option<&str>`), so the
+-- argument carries its own name: comma-separated key=value pairs.  Unknown
+-- keys, unknown values and bare tokens are errors -- a typo in the manifest
+-- must not quietly build a disc with the wrong transfer length.
+local GROW_DMA_MODES = { none = true, safe = true }
+
+local function parse_args(args)
+  local opts = { grow_dma = "none" }
+  if args == nil or args == "" then
+    return opts
+  end
+  if type(args) ~= "string" then
+    error("encode: args must be a string, got " .. type(args), 0)
+  end
+  for pair in args:gmatch("[^,]+") do
+    local key, value = pair:match("^%s*([%w_]+)%s*=%s*(.-)%s*$")
+    if not key then
+      error(string.format(
+        "encode: cannot read argument %q; args are comma-separated key=value "
+        .. "pairs, the only one supported being grow_dma=none|safe", pair), 0)
+    end
+    if key ~= "grow_dma" then
+      error(string.format(
+        "encode: unknown argument %q; the only one supported is "
+        .. "grow_dma=none|safe", key), 0)
+    end
+    local mode = value:lower()
+    if not GROW_DMA_MODES[mode] then
+      error(string.format(
+        "encode: grow_dma must be \"none\" or \"safe\", got %q", value), 0)
+    end
+    opts.grow_dma = mode
+  end
+  return opts
+end
+
 function codec.can_handle(data)
   if type(data) ~= "string" then
     return "no"
@@ -277,6 +405,9 @@ function codec.decode_name(args)
 end
 
 function codec.decode(data, args)
+  -- Validated here as well: ludared hands the same string to both passes, and an
+  -- argument a rebuild would refuse should not decode silently.
+  parse_args(args)
   if type(data) ~= "string" then
     error("decode: expected binary string", 0)
   end
@@ -307,7 +438,7 @@ function codec.decode(data, args)
     offset = offset + size
 
     artifacts[i] = {
-      name = string.format("SUBTITLES_%02d.bmp", i - 1),
+      name = string.format("SUBTITLES/%02d.bmp", i - 1),
       data = build_bmp(pixels, dims.w, dims.h, pal_bgra),
     }
   end
@@ -329,7 +460,7 @@ function codec.encode(original, artifacts, args)
   local by_index = {}
   for _, artifact in ipairs(artifacts) do
     if type(artifact) == "table" and type(artifact.name) == "string" then
-      local index = artifact.name:match("^SUBTITLES_(%d+)%.bmp$")
+      local index = artifact.name:match("^SUBTITLES/(%d+)%.bmp$")
       if index then
         by_index[tonumber(index) + 1] = artifact.data
       end
@@ -343,7 +474,7 @@ function codec.encode(original, artifacts, args)
   local block_size = 0
   for i = 1, NUM_SUBTITLES do
     local bmp = by_index[i]
-    local stage = string.format("SUBTITLES_%02d.bmp", i - 1)
+    local stage = string.format("SUBTITLES/%02d.bmp", i - 1)
     if type(bmp) ~= "string" then
       error(stage .. ": missing", 0)
     end
@@ -368,27 +499,43 @@ function codec.encode(original, artifacts, args)
       block_size, MAX_BLOCK_BYTES), 0)
   end
 
-  -- The engine only stages the head of the block (see the header comment).
+  -- The transfer only reaches the head of the block (see the header comment).
   -- Name the exact images that land outside it: they still build and the disc
   -- still boots, the game just shows stale VRAM where they should be.
+  local opts = parse_args(args)
+  local dma_length = string.unpack(">I2", original, LOGO_DMA_LENGTH_OFFSET + 1)
+  local stage_limit = ENGINE_STAGE_BYTES
+  if opts.grow_dma == "safe" then
+    stage_limit = VDP1_ATLAS_CEILING
+  end
+
   local staged = nil
-  if block_size > ENGINE_STAGE_BYTES then
+  if block_size > stage_limit then
     local lost = {}
     for i = 1, NUM_SUBTITLES do
-      if offsets[i] >= ENGINE_STAGE_BYTES then
+      if offsets[i] >= stage_limit then
         lost[#lost + 1] = string.format("%s (starts at %d)", names[i], offsets[i])
-      elseif offsets[i] + sizes[i] > ENGINE_STAGE_BYTES then
-        lost[#lost + 1] = string.format("%s (cut off at %d)", names[i], ENGINE_STAGE_BYTES)
+      elseif offsets[i] + sizes[i] > stage_limit then
+        lost[#lost + 1] = string.format("%s (cut off at %d)", names[i], stage_limit)
       end
     end
+    local reaches
+    if opts.grow_dma == "safe" then
+      reaches = string.format(
+        "VDP1 VRAM gives the atlas only the %d (0x%04X) bytes between its base "
+        .. "0x25c02280 and the next overlay at 0x25c07280",
+        stage_limit, stage_limit)
+    else
+      reaches = string.format(
+        "the engine only stages the first %d (0x%04X) bytes of it",
+        stage_limit, stage_limit)
+    end
     staged = string.format(
-      "The block is %d bytes, but the engine only stages the first %d (0x%04X) "
-      .. "bytes of it, so %d bytes would show stale VRAM instead of art (%s). "
-      .. "Free %d bytes: the budget is on the decompressed block, so compressing "
-      .. "better does not help -- an image costs width x height / 2.",
-      block_size, ENGINE_STAGE_BYTES, ENGINE_STAGE_BYTES,
-      block_size - ENGINE_STAGE_BYTES, table.concat(lost, ", "),
-      block_size - ENGINE_STAGE_BYTES)
+      "The block is %d bytes, but %s, so %d bytes would show stale VRAM instead "
+      .. "of art (%s). Free %d bytes: the budget is on the decompressed block, so "
+      .. "compressing better does not help -- an image costs width x height / 2.",
+      block_size, reaches, block_size - stage_limit, table.concat(lost, ", "),
+      block_size - stage_limit)
   end
 
   if staged then
@@ -413,9 +560,20 @@ function codec.encode(original, artifacts, args)
 
   compressed = compressed .. string.rep("\x00", ORIGINAL_COMPRESSED_SIZE - #compressed)
 
-  return original:sub(1, LOGO_SUBTITLE_PRS_OFFSET)
+  local out = original:sub(1, LOGO_SUBTITLE_PRS_OFFSET)
     .. compressed
     .. original:sub(LOGO_SUBTITLE_PRS_OFFSET + ORIGINAL_COMPRESSED_SIZE + 1)
+
+  -- Raise the transfer length only when the block needs it.  Never lowering it
+  -- keeps a build that fits byte-identical, preserves a value that was already
+  -- raised by hand, and makes a second build of the same art a no-op.
+  if opts.grow_dma == "safe" and block_size > dma_length then
+    out = out:sub(1, LOGO_DMA_LENGTH_OFFSET)
+      .. string.pack(">I2", block_size)
+      .. out:sub(LOGO_DMA_LENGTH_OFFSET + 3)
+  end
+
+  return out
 end
 
 return codec
