@@ -1,0 +1,892 @@
+0001:C'est une photo de Sakura. Son<br>regard est si intense. Je me<br>demande à quoi elle pense.
+0002:C'est une photo de Sumire. Elle<br>montre une facette qu'elle cache<br>habituellement.
+0003:C'est une photo de Maria. Elle est<br>perdue dans ses pensées et<br>semble un peu triste...
+0004:C'est une photo de Kanna. Elle a<br>l'air énergique et confiante. J'ai<br>hâte de la rencontrer.
+0005:C'est une photo d'Iris. Une jolie<br>fleur entourée de beaucoup<br>d'autres.
+0006:C'est une photo de Kohran. Elle a<br>l'air jolie dans sa tenue<br>traditionnelle. Quel genre de<br>personne est-ce ?
+0007:Un client m'a donné cette lettre<br>et m'a demandé de la transmettre<br>à Sumire. Hmm...
+0008:C'est l'arme de Maria. Je me<br>demande si je peux l'utiliser pour<br>m'échapper.
+0009:C'est une jolie épingle à cheveux<br>en forme de fleur.
+0010:Une broche. C'est une belle pièce<br>d'artisanat délicat.
+0011:Une épingle à cheveux qui se<br>marie parfaitement avec les<br>vêtements et les coiffures<br>traditionnels japonais.
+0012:C'est Jean-Paul, l'ours en peluche<br>adoré d'Iris.
+0013:Cette clé me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0014:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0015:C'est la tasse qu'Iris a demandée.<br>Son motif est très mignon.
+0016:C'est la boîte d'allumettes qu'Iris<br>a demandée. Son logo est assez<br>coloré.
+0017:C'est le couteau qu'Iris a<br>demandé. C'est juste une pièce<br>d'argenterie ordinaire.
+0018:C'est un ensemble d'épée et de<br>bouclier utilisé dans les pièces de<br>théâtre. Je pense qu'il est fait à la<br>main.
+0019:C'est une couronne extrêmement<br>détaillée utilisée dans les pièces<br>de théâtre.
+0020:C'est une perruque assez criarde.<br>Dans quelle pièce de théâtre<br>pourrait-elle être utilisée ?
+0021:C'est une photo de Sakura en<br>maillot de bain. Woah, c'est assez<br>embarrassant... Je ne dois pas<br>laisser quelqu'un d'autre voir ça.
+0022:C'est une photo de Sumire en<br>tenue traditionnelle. Son<br>maquillage élaboré est assez<br>impressionnant.
+0023:C'est une photo de Maria dans<br>l'uniforme de la pièce "Pour<br>l'Amour". C'est une belle femme<br>déguisée en homme.
+0024:C'est une photo d'entraînement<br>rare et absolument privée.
+0025:C'est une photo d'Iris en maillot<br>de bain. Elle est si mignonne avec<br>sa bouée.
+0026:C'est Kohran dans une tenue de<br>soubrette. Elle est superbe avec<br>ses cheveux détachés.
+0027:C'est Ayame dans des vêtements<br>traditionnels japonais. J'aimerais<br>qu'elle sourie comme ça tout le<br>temps.
+0028:C'est le pistolet d'Ayame.<br>Qu'est-ce que je suis censé faire<br>avec ?
+0029:Je ne peux rien faire ici. Je ferais<br>mieux d'aller voir ailleurs...
+0030:Il n'y a personne ici. Je ferais<br>mieux d'aller voir ailleurs...
+0031:Je ferais mieux d'aller voir<br>ailleurs...
+0032:Je ne fais aucun progrès. Il vaut<br>mieux que j'aille au bureau du<br>directeur pour en parler au<br>Commandant Yoneda.
+0033:Tout ce que j'ai vu jusqu'à<br>présent me fait penser que cet<br>endroit est juste un théâtre...
+0034:Aller sur la scène. Retrouver le<br>Commandant Yoneda. Se rendre à<br>la réception.
+0035:(... Il est déjà bien tard.)
+0036:(Je suis fatigué, mais je n'arrive<br>pas à m'endormir... C'est<br>peut-être parce que je ne suis pas<br>habitué à mon nouveau lit...)
+0037:(Il est déjà presque minuit...)
+0038:...
+0039:(Qu... ? Qui cela peut-il être à<br>cette heure tardive ?)
+0040:Ogami... ? C'est moi, Sakura...
+0041:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0042:(Que vient-elle faire à cette<br>heure-ci ?)
+0043:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0044:C'était un grand succès.
+0045:Mais... je suis désolé pour tout à<br>l'heure. Je ne voulais pas faire<br>autant de bruit...
+0046:Non non, ne t'en fais pas, tout va<br>bien maintenant. Plus important<br>encore... Que viens-tu faire à<br>cette heure tardive ?
+0047:Ogami ? C'est moi Sakura. Je suis<br>désolée de vous déranger à cette<br>heure-ci.
+0048:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0049:(Que vient-elle faire à cette<br>heure-ci ?)
+0050:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0051:Grâce à vous, ce fut un grand<br>succès. Oh, et merci pour votre<br>hospitalité tout à l'heure.
+0052:C'est moi qui devrait te<br>remercier. Après tout, c'était bien<br>d'avoir quelqu'un à qui parler...
+0053:Plus important... que viens-tu<br>faire à cette heure tardive ?
+0054:Ogami... ? C'est moi, Sakura...
+0055:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0056:(Que vient-elle faire à cette<br>heure-ci ?)
+0057:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0058:C'était un grand succès.
+0059:Par ailleurs... que viens-tu faire à<br>cette heure tardive ?
+0060:Eh bien, Ôgami...
+0061:Le directeur Yoneda m'a<br>demandé...
+0062:... que vous fassiez des rondes de<br>nuit dans le théâtre.
+0063:Des rondes de nuit... ?
+0064:Oui. Je sais que c'est un peu tard<br>pour vous le dire, mais j'espère<br>que vous comprenez...
+0065:Vous pouvez compter sur moi !<br>Bien, je vais faire le tour.<br>Euh, je vais dormir.
+0066:Euh, j'allais m'endormir. Il n'y a<br>pas moyen que je puisse gérer les<br>rondes de nuit après avoir passé<br>la journée à déchirer des tickets.
+0067:Ôgami... Vous comptez vraiment<br>dormir maintenant ?
+0068:... très bien, je vais faire le tour.<br>Oui, je vais dormir.
+0069:Oui, je vais vraiment y aller.
+0070:... bien. Si vous y tenez tant que<br>ça, alors je vais faire la ronde<br>moi-même.
+0071:Ôgami...
+# OVERFLOW
+0072:Vous aviez l'air si enthousiaste<br>lors de notre première rencontre<br>au parc Ueno. Que s'est-il passé<br>pour que vous répondiez de la<br>sorte ?
+0073:Je ne peux pas supporter de vous<br>voir comme ça !
+0074:Sakura... Oups, je crois que j'ai<br>été un peu trop têtue.
+0075:... je ne peux rien faire pour<br>l'instant à part dormir.
+0076:Bien sûr ! Tu peux compter sur<br>moi !
+0077:J'avais du mal à m'endormir de<br>toute façon. Faire de l'exercice va<br>peut-être m'aider à résoudre mes<br>insomnies.
+0078:Vraiment... ? Merci d'être si<br>attentionné !
+0079:Eh bien alors, on y va ?
+0080:Hein ?! Tu viens avec moi ?
+0081:Bien sûr ! Après tout, vous ne<br>connaissez pas encore toutes les<br>pièces du théâtre.
+0082:C'est pourquoi je vous<br>accompagne !
+0083:Merci. Je compte sur toi.
+0084:Moi aussi je compte sur vous.<br>Maintenant allons-y !
+0085:Bien bien. Par contre, je suis un<br>peu épuisé après avoir déchiré<br>des tickets...
+0086:Arrêtez de faire des histoires<br>Ôgami ! Je viens avec vous.
+0087:Hein ?! Tu viens avec moi ?
+0088:Bien sûr ! Après tout, vous ne<br>connaissez pas encore toutes les<br>pièces du théâtre.
+0089:C'est pourquoi je vous<br>accompagne !
+0090:... très bien, je compte sur toi<br>alors.
+0091:Moi aussi je compte sur vous.<br>Maintenant allons-y !
+0092:...
+0093:Tss ! Arrêtez de tergiverser<br>Ôgami, je viens avec vous !
+0094:Hein ?! Tu viens avec moi ?
+0095:Bien sûr ! Après tout, vous ne<br>connaissez pas encore toutes les<br>pièces du théâtre.
+0096:C'est pourquoi je vous<br>accompagne !
+0097:... très bien, je compte sur toi<br>alors.
+0098:Moi aussi je compte sur vous.<br>Maintenant allons-y !
+0099:Aaaah, il est déjà minuit passé...
+0100:La nuit est déjà bien tombée, je<br>ferais mieux de dormir un peu.
+0101:Waaah... déjà le matin ?
+0102:Je crois me souvenir<br>qu'aujourd'hui c'est congé.<br>Autrement dit, je n'ai pas à<br>m'occuper des tickets.
+0103:Mais du coup... qu'est-ce que que<br>je vais bien pouvoir faire<br>aujourd'hui ?
+0104:Bien qu'on ne travaille pas, je vais<br>peut-être quand même aller voir<br>la scène, pour le plaisir.
+0105:J'aimerai bien voir l'endroit où<br>s'exerce la Troupe.
+0106:Bien ! Je vais parler au<br>Commandant Yoneda.
+0107:C'est vrai ?... La Force d'Assaut<br>secrète n'existe pas réellement ?
+0108:Je... je ne peux pas le croire. Non,<br>je ne veux pas y croire.
+0109:J'ai besoin de l'entendre<br>directement du Commandant<br>Yoneda lui-même !
+0110:Oh Ôgami. Qu'y a-t-il ?
+0111:(Il boit même à l'extérieur... ?)
+0112:Commandant, il y a quelque<br>chose que j'aimerais vous<br>demander...
+0113:C'est "Directeur" ! DI-REC-TEUR !<br>Ne m'appelle pas "Commandant"<br>dans ce théâtre.
+0114:Alors, que me veux-tu ?
+0115:Bon, dans un premier temps...
+0116:Attend ! .. je viens de me<br>souvenir de quelque chose !
+0117:Qu-quoi donc Comman- euh,<br>Directeur ?
+0118:C'est à propos de la Troupe<br>impériale ? Vous avez enfin<br>dessoûlé ?
+0119:Non, je devais aller aux toilettes !<br>Je file !
+0120:... Monsieur, s'il vous plaît, cessez<br>de plaisanter.
+0121:Écoute, une fois que je serai de<br>retour, tu pourras me demander<br>tout ce que tu veux.
+0122:En attendant, pourquoi<br>n'iriez-vous pas assister à la<br>répétition de la Troupe ?
+0123:Super, il est vraiment parti aux<br>toilettes. Qu'est-ce que je fais ?
+0124:Aller à la répétition.<br>L'attendre.
+0125:... je ne vais quand même pas<br>rester là à me tourner les pouces.
+0126:Allons voir les filles.
+0127:Bon, je vais plutôt l'attendre dans<br>son bureau.
+0128:Je vais attendre un peu ici.
+0129:Bon, je pense que je vais attendre<br>un peu ici.
+0130:...
+0131:... ...
+0132:... ... ...
+0133:Ça fait déjà un petit moment là.
+0134:Il ne s'est quand même pas<br>retrouvé ivre-mort dans les<br>toilettes ?
+0135:Se tourner les pouces ne me fera<br>pas avancer. Je vais aller voir la<br>répétition générale de la Troupe.
+0136:... ... ...
+0137:Ça fait déjà un petit moment là.
+0138:Il ne s'est quand même pas<br>retrouvé ivre-mort dans les<br>toilettes ?
+0139:Se tourner les pouces ici ne me<br>fera pas avancer. Je vais aller voir<br>la répétition générale de la<br>Troupe.
+0140:... ça ne sert à rien de se tourner<br>les pouces ici. Je vais aller voir la<br>comment la Troupe répète.
+0141:... Hein ? Qu'est-ce que c'est que<br>ça ?
+0142:Ce type qui fait le clown<br>ressemble étrangement au<br>Directeur Yoneda.
+0143:Mais qui sont ces trois autres<br>personnes autour de lui ?
+0144:Quelle curieuse photo...
+0145:
+0146:
+0147:
+0148:
+0149:
+0150:
+0151:
+0152:
+0153:
+0154:
+0155:
+0156:
+0157:
+0158:
+0159:
+0160:
+0161:
+0162:
+0163:
+0164:
+0165:
+0166:
+0167:
+0168:
+0169:
+0170:
+0171:
+0172:
+0173:
+0174:
+0175:
+0176:
+0177:
+0178:
+0179:
+0180:
+0181:
+0182:
+0183:
+0184:
+0185:
+0186:
+0187:
+0188:
+0189:
+0190:
+0191:
+0192:
+0193:
+0194:
+0195:
+0196:
+0197:
+0198:
+0199:
+0200:
+0201:
+0202:
+0203:
+0204:
+0205:
+0206:
+0207:
+0208:
+0209:
+0210:
+0211:
+0212:
+0213:
+0214:
+0215:
+0216:
+0217:
+0218:
+0219:
+0220:
+0221:
+0222:
+0223:
+0224:
+0225:
+0226:
+0227:
+0228:
+0229:
+0230:
+0231:
+0232:
+0233:
+0234:
+0235:
+0236:
+0237:
+0238:
+0239:
+0240:
+0241:
+0242:
+0243:
+0244:
+0245:
+0246:
+0247:
+0248:
+0249:
+0250:
+0251:
+0252:
+0253:
+0254:
+0255:
+0256:
+0257:
+0258:
+0259:
+0260:
+0261:
+0262:
+0263:
+0264:
+0265:
+0266:
+0267:
+0268:
+0269:
+0270:
+0271:
+0272:
+0273:
+0274:
+0275:
+0276:
+0277:
+0278:
+0279:
+0280:
+0281:
+0282:
+0283:
+0284:
+0285:
+0286:
+0287:
+0288:
+0289:
+0290:
+0291:
+0292:
+0293:
+0294:
+0295:
+0296:
+0297:
+0298:
+0299:
+0300:
+0301:
+0302:
+0303:
+0304:
+0305:
+0306:
+0307:
+0308:
+0309:
+0310:
+0311:
+0312:
+0313:
+0314:
+0315:
+0316:
+0317:
+0318:
+0319:
+0320:
+0321:
+0322:
+0323:
+0324:
+0325:
+0326:
+0327:
+0328:
+0329:
+0330:
+0331:
+0332:
+0333:
+0334:
+0335:
+0336:
+0337:
+0338:
+0339:
+0340:
+0341:
+0342:
+0343:
+0344:
+0345:
+0346:
+0347:
+0348:
+0349:
+0350:
+0351:
+0352:
+0353:
+0354:
+0355:
+0356:
+0357:
+0358:
+0359:
+0360:
+0361:
+0362:
+0363:
+0364:
+0365:
+0366:
+0367:
+0368:
+0369:
+0370:
+0371:
+0372:
+0373:
+0374:
+0375:
+0376:
+0377:
+0378:
+0379:
+0380:
+0381:
+0382:
+0383:
+0384:
+0385:
+0386:
+0387:
+0388:
+0389:
+0390:
+0391:
+0392:
+0393:
+0394:
+0395:
+0396:
+0397:
+0398:
+0399:
+0400:
+0401:
+0402:
+0403:
+0404:
+0405:
+0406:
+0407:
+0408:
+0409:
+0410:
+0411:
+0412:
+0413:
+0414:
+0415:
+0416:
+0417:
+0418:
+0419:
+0420:
+0421:
+0422:
+0423:
+0424:
+0425:
+0426:
+0427:
+0428:
+0429:
+0430:
+0431:
+0432:
+0433:
+0434:
+0435:
+0436:
+0437:
+0438:
+0439:
+0440:
+0441:
+0442:
+0443:
+0444:
+0445:
+0446:
+0447:
+0448:
+0449:
+0450:
+0451:
+0452:
+0453:
+0454:
+0455:
+0456:
+0457:
+0458:
+0459:
+0460:
+0461:
+0462:
+0463:
+0464:
+0465:
+0466:
+0467:
+0468:
+0469:
+0470:
+0471:
+0472:
+0473:
+0474:
+0475:
+0476:
+0477:
+0478:
+0479:
+0480:
+0481:
+0482:
+0483:
+0484:
+0485:
+0486:
+0487:
+0488:
+0489:
+0490:
+0491:
+0492:
+0493:
+0494:
+0495:
+0496:
+0497:
+0498:
+0499:
+0500:
+0501:
+0502:
+0503:
+0504:
+0505:
+0506:
+0507:
+0508:
+0509:
+0510:
+0511:
+0512:
+0513:
+0514:
+0515:
+0516:
+0517:
+0518:
+0519:
+0520:
+0521:
+0522:
+0523:
+0524:
+0525:
+0526:
+0527:
+0528:
+0529:
+0530:
+0531:
+0532:
+0533:
+0534:
+0535:
+0536:
+0537:
+0538:
+0539:
+0540:
+0541:
+0542:
+0543:
+0544:
+0545:
+0546:
+0547:
+0548:
+0549:
+0550:
+0551:
+0552:
+0553:
+0554:
+0555:
+0556:
+0557:
+0558:
+0559:
+0560:
+0561:
+0562:
+0563:
+0564:
+0565:
+0566:
+0567:
+0568:
+0569:
+0570:
+0571:
+0572:
+0573:
+0574:
+0575:
+0576:
+0577:
+0578:
+0579:
+0580:
+0581:
+0582:
+0583:
+0584:
+0585:
+0586:
+0587:
+0588:
+0589:
+0590:
+0591:
+0592:
+0593:
+0594:
+0595:
+0596:
+0597:
+0598:
+0599:
+0600:
+0601:
+0602:
+0603:
+0604:
+0605:
+0606:
+0607:
+0608:
+0609:
+0610:
+0611:
+0612:
+0613:
+0614:
+0615:
+0616:
+0617:
+0618:
+0619:
+0620:
+0621:
+0622:
+0623:
+0624:
+0625:
+0626:
+0627:
+0628:
+0629:
+0630:
+0631:
+0632:
+0633:
+0634:
+0635:
+0636:
+0637:
+0638:
+0639:
+0640:
+0641:
+0642:
+0643:
+0644:
+0645:
+0646:
+0647:
+0648:
+0649:
+0650:
+0651:
+0652:
+0653:
+0654:
+0655:
+0656:
+0657:
+0658:
+0659:
+0660:
+0661:
+0662:
+0663:
+0664:
+0665:
+0666:
+0667:
+0668:
+0669:
+0670:
+0671:
+0672:Je vois...
+0673:
+0674:
+0675:
+0676:
+0677:
+0678:
+0679:
+0680:
+0681:
+0682:
+0683:
+0684:
+0685:
+0686:
+0687:
+0688:
+0689:
+0690:
+0691:
+0692:
+0693:
+0694:
+0695:
+0696:
+0697:
+0698:
+0699:
+0700:
+0701:
+0702:
+0703:
+0704:
+0705:
+0706:
+0707:
+0708:
+0709:
+0710:
+0711:
+0712:
+0713:
+0714:
+0715:
+0716:
+0717:
+0718:
+0719:
+0720:
+0721:
+0722:Non utilisé
+0723:Non utilisé
+0724:Non utilisé
+0725:Non utilisé
+0726:Non utilisé
+0727:Non utilisé
+0728:Non utilisé
+0729:Non utilisé
+0730:Non utilisé
+0731:Non utilisé
+0732:Non utilisé
+0733:Non utilisé
+0734:Non utilisé
+0735:Non utilisé
+0736:Non utilisé
+0737:Non utilisé
+0738:Non utilisé
+0739:Non utilisé
+0740:Non utilisé
+0741:Non utilisé
+0742:Non utilisé
+0743:Non utilisé
+0744:Non utilisé
+0745:Non utilisé
+0746:Non utilisé
+0747:Non utilisé
+0748:Non utilisé
+0749:Non utilisé
+0750:Non utilisé
+0751:Non utilisé
+0752:Non utilisé
+0753:Non utilisé
+0754:Non utilisé
+0755:Non utilisé
+0756:Non utilisé
+0757:Non utilisé
+0758:Non utilisé
+0759:Non utilisé
+0760:Non utilisé
+0761:Non utilisé
+0762:Non utilisé
+0763:Non utilisé
+0764:Non utilisé
+0765:Non utilisé
+0766:Non utilisé
+0767:Non utilisé
+0768:Non utilisé
+0769:Non utilisé
+0770:Non utilisé
+0771:Non utilisé
+0772:Non utilisé
+0773:Non utilisé
+0774:Non utilisé
+0775:Non utilisé
+0776:Non utilisé
+0777:Non utilisé
+0778:Non utilisé
+0779:Non utilisé
+0780:Non utilisé
+0781:Non utilisé
+0782:Non utilisé
+0783:Non utilisé
+0784:Non utilisé
+0785:Non utilisé
+0786:Non utilisé
+0787:Non utilisé
+0788:Non utilisé
+0789:Non utilisé
+0790:Non utilisé
+0791:Non utilisé
+0792:Non utilisé
+0793:Non utilisé
+0794:Non utilisé
+0795:Non utilisé
+0796:Non utilisé
+0797:Non utilisé
+0798:Non utilisé
+0799:Non utilisé
+0800:Non utilisé
+0801:Non utilisé
+0802:Non utilisé
+0803:Non utilisé
+0804:Non utilisé
+0805:Non utilisé
+0806:Non utilisé
+0807:Non utilisé
+0808:Non utilisé
+0809:Non utilisé
+0810:Non utilisé
+0811:Non utilisé
+0812:Non utilisé
+0813:Non utilisé
+0814:
+0815:Non utilisé
+0816:Non utilisé
+0817:Non utilisé
+0818:Non utilisé
+0819:Non utilisé
+0820:Non utilisé
+0821:Non utilisé
+0822:Non utilisé
+0823:Non utilisé
+0824:Non utilisé
+0825:Non utilisé
+0826:Non utilisé
+0827:Non utilisé
+0828:Non utilisé
+0829:Non utilisé
+0830:Non utilisé
+0831:Non utilisé
+0832:Non utilisé
+0833:Non utilisé
+0834:Non utilisé
+0835:Non utilisé
+0836:Non utilisé
+0837:Non utilisé
+0838:Non utilisé
+0839:Non utilisé
+0840:Non utilisé
+0841:Non utilisé
+0842:Non utilisé
+0843:Non utilisé
+0844:Non utilisé
+0845:Non utilisé
+0846:Non utilisé
+0847:Non utilisé
+0848:Non utilisé
+0849:Non utilisé
+0850:Non utilisé
+0851:Non utilisé
+0852:Non utilisé
+0853:Non utilisé
+0854:Non utilisé
+0855:Non utilisé
+0856:Non utilisé
+0857:Non utilisé
+0858:Non utilisé
+0859:Non utilisé
+0860:Non utilisé
+0861:Non utilisé
+0862:Non utilisé
+0863:Non utilisé
+0864:Non utilisé
+0865:Non utilisé
+0866:Non utilisé
+0867:Non utilisé
+0868:Non utilisé
+0869:Non utilisé
+0870:Non utilisé
+0871:Non utilisé
+0872:Non utilisé
+0873:Non utilisé
+0874:Non utilisé
+0875:Non utilisé
+0876:Non utilisé
+0877:Non utilisé
+0878:Non utilisé
+0879:Non utilisé
+0880:Non utilisé
+0881:Non utilisé
+0882:Non utilisé
+0883:Non utilisé
+0884:Non utilisé
+0885:Non utilisé
+0886:Non utilisé
+0887:Non utilisé
+0888:Non utilisé
+0889:Non utilisé
+0890:Non utilisé
+0891:Non utilisé

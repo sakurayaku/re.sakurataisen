@@ -1,0 +1,194 @@
+0001:C'est un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense...
+0002:C'est un cliché de Sumire. Voilà<br>un aspect d'elle que je ne<br>connaissais pas.
+0003:C'est un cliché de Maria. Elle<br>semble pensive, voire un peu<br>triste...
+0004:Un cliché de Kanna. Sa force<br>caractéristique ressort vraiment.
+0005:Un cliché d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Un cliché de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs
+0010:Un joli pendentif. Il a été<br>raffinement travaillé.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0013:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont un<br>motif très élégant.
+0015:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0018:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+# OVERFLOW
+0019:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy.
+0020:Un cliché de Sakura en maillot de<br>bain. Wow, c'est vraiment<br>quelque chose... Je vais le garder<br>précieusement.
+0021:Un cliché de Sumire dans son<br>costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0022:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle femme<br>déguisée en homme.
+0023:Un cliché de Kanna dans sa tenue<br>d'entraînement. La photographier<br>dans un moment privé comme<br>celui-ci est vraiment intime.
+0024:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:Un cliché de Kohran. Je n'ai pas<br>souvent l'occasion de la voir avec<br>ses tresses détachées. C'est très<br>joli aussi comme ça aussi.
+# OVERFLOW
+0026:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0027:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:Je me demande bien ce que<br>Setsuna voulait dire...
+0030:Toutes ces choses qu'il a dites sur<br>Maria... où voulait-il en venir ?
+0031:Capitaine, Capitaine ! Ouvrez !<br>C'est une urgence !
+0032:Kanna, qu'est-ce qui se passe ?
+0033:C'est Maria... elle vient de s'enfuir<br>avec son Kôbu !
+0034:Quoi ?! Tu es sûre de toi ?
+0035:Ne me dis pas... qu'elle part<br>combattre Setsuna seule... ?
+0036:On parlera de ça plus tard, allons<br>vite à la salle de commandement<br>!
+0037:Oui !
+0038:À l'exception de Sakura, tout le<br>monde semble être là.
+0039:Que s'est-il passé exactement ?
+0040:Kohran a essayé de la stopper,<br>mais elle n'est pas arrivée à<br>temps.
+0041:J'étais en pleine maintenance sur<br>un Kôbu quand elle est arrivée.
+0042:Je l'ai appelée, mais elle ne m'a<br>pas répondu. Elle a juste sauté<br>dans son Kôbu et est partie en<br>trombe.
+0043:(Je le savais... Elle va affronter<br>Setsuna toute seule.)
+0044:Ôgami, qu'est-ce qui lui a pris<br>selon toi ?
+0045:Euh, eh bien... Je pense que se<br>faire appeller "Casoar" par<br>Setsuna l'a vraiment mise en<br>rogne.
+0046:Ah... !
+0047:Mais c'est quoi un Casaura... un<br>Casar... un Casoar ?
+0048:Mmh, ce nom n'a pas été<br>prononcé au hasard.
+0049:Ça date de l'époque où Maria<br>vivait en Russie.
+0050:Plus précisément il y a 5 ans, lors<br>de la révolution russe durant<br>laquelle le régime tsariste a été<br>renversé.
+0051:Parmi les révolutionnaires se<br>trouvait une jeune fille solitaire<br>de 14 ans...
+0052:Elle avait un nom de code :<br>"Kazoar". Oui, c'était Maria.
+0053:Au Japon, on appelle cette espèce<br>"l'oiseau cracheur de feu".
+0054:Maria a gagné ce surnom en<br>référence à son style de combat.<br>Elle fendait les champs de bataille<br>tel un brasier.
+0055:Elle considérait son supérieur<br>comme un frère.
+0056:Malheureusemement il perdit la<br>vie lors d'un affrontement. Les<br>soutiens sont arrivés trop tard.
+# OVERFLOW
+0057:Maria aurait pu le sauver mais elle<br>a trop hésité à tirer sur les<br>ennemis pour le couvrir. Elle avait<br>peur des coups de feu.<br>Aujourd'hui encore, ce tragique<br>évènement la hante.
+0058:Depuis cet instant, elle regrette<br>l'erreur qu'elle a faite. Et si elle<br>avait tiré à temps ?
+0059:Ôgami, je pense qu'elle entretient<br>avec toi la même relation qu'elle<br>avait avec son ancien capitaine.
+0060:C'est donc pour ça qu'elle est<br>toujours particulièrement stricte<br>avec lui... Elle essaie d'éviter une<br>autre tragédie.
+0061:S-Sakura ?! Mais tu devrais être<br>en train de te reposer !
+# OVERFLOW
+0062:J'ai entendu l'alarme retentir alors<br>je suis venu. Un membre de la<br>Brigade des Fleurs ne peut pas se<br>permettre de rester au lit pour ça<br>!
+0063:Sakura...
+0064:Je comprend l'intention de Maria,<br>mais quand même, de là à vouloir<br>en découdre toute seule...
+0065:En fait, je pense qu'elle ne voulait<br>probablement pas qu'on le sache.
+0066:Elle a toujours été comme ça,<br>c'est dans sa nature.
+0067:Elle ne parle jamais à personne de<br>son lourd passé.
+0068:Et surtout pas à vous je pense,<br>Capitaine...
+0069:...
+0070:Je ne pensais pas que Maria<br>portait tout ce poids à elle toute<br>seule.
+0071:Après tout ce temps passé<br>ensemble, elle arrive encore à me<br>cacher des choses ! Elle essaie de<br>jouer les martyrs.
+0072:Je n'aime pas trop mettre mon<br>nez dans les affaires des autres<br>mais...
+0073:Maintenant que je sais ce qu'elle<br>ressent et ce qu'elle a vécu, je ne<br>peux pas la laisser régler ça toute<br>seule !
+0074:Monsieur Ôgami, protégez Maria,<br>d'accord ?
+0075:Allons-y Ôgami !
+0076:Oui ! Troupe impériale, en scène !
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Non utilisé
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Non utilisé
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:Non utilisé
+0115:Non utilisé
+0116:Non utilisé
+0117:Non utilisé
+0118:Non utilisé
+0119:Non utilisé
+0120:Non utilisé
+0121:Non utilisé
+0122:Non utilisé
+0123:Non utilisé
+0124:Non utilisé
+0125:Non utilisé
+0126:Non utilisé
+0127:Non utilisé
+0128:Non utilisé
+0129:Non utilisé
+0130:Non utilisé
+0131:Non utilisé
+0132:Non utilisé
+0133:Non utilisé
+0134:Non utilisé
+0135:Non utilisé
+0136:Non utilisé
+0137:Non utilisé
+0138:Non utilisé
+0139:Non utilisé
+0140:Non utilisé
+0141:Non utilisé
+0142:Non utilisé
+0143:Non utilisé
+0144:Non utilisé
+0145:Non utilisé
+0146:Non utilisé
+0147:Non utilisé
+0148:Non utilisé
+0149:Non utilisé
+0150:Non utilisé
+0151:Non utilisé
+0152:Non utilisé
+0153:Non utilisé
+0154:Non utilisé
+0155:Non utilisé
+0156:Non utilisé
+0157:Non utilisé
+0158:Non utilisé
+0159:Non utilisé
+0160:Non utilisé
+0161:Non utilisé
+0162:Non utilisé
+0163:Non utilisé
+0164:Non utilisé
+0165:Non utilisé
+0166:Non utilisé
+0167:Non utilisé
+0168:Non utilisé
+0169:Non utilisé
+0170:Non utilisé
+0171:Non utilisé
+0172:Non utilisé
+0173:Non utilisé
+0174:Non utilisé
+0175:Non utilisé
+0176:Non utilisé
+0177:Non utilisé
+0178:Non utilisé
+0179:Non utilisé
+0180:Non utilisé
+0181:Non utilisé
+0182:Non utilisé
+0183:Non utilisé
+0184:Non utilisé
+0185:Non utilisé
+0186:Non utilisé
+0187:Non utilisé
+0188:Non utilisé
+0189:Non utilisé
+0190:Non utilisé

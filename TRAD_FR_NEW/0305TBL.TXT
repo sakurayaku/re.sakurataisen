@@ -1,0 +1,149 @@
+0001:C'est un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense...
+0002:C'est un cliché de Sumire. Voilà<br>un aspect d'elle que je ne<br>connaissais pas.
+0003:C'est un cliché de Maria. Elle<br>semble pensive, voire un peu<br>triste...
+0004:Un cliché de Kanna. Sa force<br>caractéristique ressort vraiment.
+0005:Un cliché d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Un cliché de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Un joli pendentif. Il a été<br>raffinement travaillé.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0013:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont un<br>motif très élégant.
+0015:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0018:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+# OVERFLOW
+0019:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy.
+0020:Un cliché de Sakura en maillot de<br>bain. Wow, c'est vraiment<br>quelque chose... Je vais le garder<br>précieusement.
+0021:Un cliché de Sumire dans son<br>costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0022:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle femme<br>déguisée en homme.
+0023:Un cliché de Kanna dans sa tenue<br>d'entraînement. La photographier<br>dans un moment privé comme<br>celui-ci est vraiment intime.
+0024:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:Un cliché de Kohran. Je n'ai pas<br>souvent l'occasion de la voir avec<br>ses tresses détachées. C'est très<br>joli aussi comme ça aussi.
+# OVERFLOW
+0026:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0027:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:C'est bon, Maria.
+0030:Ne t'inquiètes plus pour ça, s'il te<br>plaît.
+0031:Oh c'est vrai ! Je dois te rendre<br>ça...
+0032:... Non, absolument pas.
+0033:Mais calme-toi enfin, ce n'est<br>vraiment pas ce que tu crois.
+0034:Non utilisé
+0035:Non utilisé
+0036:Non utilisé
+0037:Non utilisé
+0038:Non utilisé
+0039:Non utilisé
+0040:Non utilisé
+0041:Non utilisé
+0042:Non utilisé
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Non utilisé
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Non utilisé
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:Non utilisé
+0115:Non utilisé
+0116:Non utilisé
+0117:Non utilisé
+0118:Je ne pensais pas que vous<br>viendriez pour moi... Merci,<br>Capitaine.
+0119:Pardonnez-moi. Ces derniers<br>temps j'ai été...
+0120:Mais c'est... mon médaillon...
+0121:Vous ne l'avez pas ouvert,<br>n'est-ce pas ?
+0122:Je vois. Je vous remercie<br>infiniment Capitaine.
+0123:Hmph... Qu'est-ce qu'il se passe<br>ici ? On dirait qu'il y a du<br>romantisme dans l'air !
+0124:Non utilisé
+0125:Dites donc Ôgami, c'est votre<br>passe-temps de regarder les filles<br>comme ça ?
+0126:Gardez vos excuses pour vous.
+0127:Lieutenant Ôgami, vous êtes<br>vraiment un homme capable de<br>diriger la Brigade des Fleurs !
+0128:Tout le monde, allons-y !
+0129:Oui !
+0130:Non utilisé
+0131:Non utilisé
+0132:Non utilisé
+0133:Non utilisé
+0134:Non utilisé
+0135:Non utilisé
+0136:Non utilisé
+0137:Non utilisé
+0138:Hey ! Il est à MOI !
+0139:Woah ! T'es sacrément fort Ôgami<br>!
+0140:Non utilisé
+0141:Capitaine...
+0142:Non utilisé
+0143:Non utilisé
+0144:Non utilisé
+0145:Non utilisé
+0146:Non utilisé
+0147:Non utilisé

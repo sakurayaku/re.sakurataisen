@@ -1,0 +1,446 @@
+0001:Un cliché de Sakura. Elle regarde<br>intensément l'objectif. Je me<br>demande à quoi elle pense...
+0002:Un cliché de Sumire. C'est une<br>facette d'elle qu'on ne voit pas<br>souvent.
+0003:Un cliché de Maria. Elle semble<br>pensive, voire un peu triste...
+0004:Un cliché de Kanna. Sa force<br>caractéristique ressort vraiment.
+0005:Un cliché d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Un cliché de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Un joli pendentif. Il a été<br>raffinement travaillé.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Jean Paul l'ours en peluche. C'est<br>le meilleur ami d'Iris. Elle le porte<br>toujours sur elle et en prend bien<br>soin.
+0013:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui prendre. Elles ont<br>un style très élégant.
+0015:Une boîte d'allumettes qu'Iris m'a<br>demandé de lui acheter. Le logo<br>de la marque est très coloré.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+# OVERFLOW
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>tellement bien faits qu'on<br>pourrait les confondre avec de<br>vrais armes.
+# OVERFLOW
+0018:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>tellement bien faits qu'on<br>pourrait les confondre avec de<br>vrais armes.
+0019:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+0020:Un cliché de Sakura en maillot de<br>bain. Wow, c'est vraiment<br>quelque chose... Je vais le garder<br>précieusement.
+0021:Un cliché de Sakura en maillot de<br>bain. Wow, c'est vraiment<br>quelque chose... Je vais le garder<br>précieusement.
+0022:Un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". C'est une belle<br>femme déguisée en homme.
+0023:Un cliché de Kanna dans sa tenue<br>d'entraînement. La photographier<br>dans un moment privé comme<br>celui-ci est vraiment intime.
+0024:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:Un cliché de Kohran. Je n'ai pas<br>souvent l'occasion de la voir avec<br>ses tresses détachées. C'est très<br>joli aussi comme ça aussi.
+# OVERFLOW
+0026:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+# OVERFLOW
+0027:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:Merci d'être venu au Tokyo Game<br>Show, et bienvenue dans Sakura<br>Wars !
+0030:Nous avons le plaisir de vous<br>présenter Sakura Wars, en<br>exclusivité sur notre chaine.
+# OVERFLOW
+0031:Notre histoire commence dans la<br>12e année de l'ère Taishô (1923).<br>C'est le printemps, la saison où<br>les pétales de cerisiers dansent et<br>se dispersent au vent.
+0032:La scène se déroule dans un<br>Tokyo impérial, où l'esprit<br>aventureux d'une ville en plein<br>essor flotte dans les airs.
+0033:Calèche tractée, machines à<br>vapeur, avions... Tokyo est le<br>sommet de la civilisation, où<br>l'Orient rencontre l'Occident.
+0034:Le héros de cette histoire se<br>nomme Ichiro Ôgami.
+0035:Un jeune lieutenant de la marine,<br>nommé capitaine de la Brigade<br>des Fleurs, un division secrète de<br>la Troupe impériale.
+0036:Notre aventure commence alors<br>que Ichiro Ôgami -en d'autres<br>termes, vous- rencontre une<br>jeune femme...
+0037:... sous les cerisiers en fleurs du<br>parc Ueno.
+0038:Maintenant, asseyez-vous,<br>détendez-vous et profitez de<br>Sakura Wars.
+0039:Eh bien me voilà arrivé au parc<br>de Ueno... mais on va vraiment<br>venir me chercher ici ? Dans un<br>endroit si fréquenté ?
+0040:O-Oui, c'est bien moi.
+0041:Ahem... Excusez-moi mais vous<br>êtes... ?
+0042:Hein ? Un théâtre ?!
+# OVERFLOW
+0043:Je suis en service !<br>D'abord, parlez-moi un peu de<br>vous.
+0044:Je suis en service !<br>Malheureusement, je n'ai pas le<br>temps pour ça.
+0045:Parlez-moi d'abord un peu de<br>vous.
+0046:N-Non... J'étais juste dans mes<br>pensées.
+0047:C'est un bâtiment vraiment<br>immense...
+0048:Voici le hall principal du Théâtre<br>impérial.
+0049:Puisque c'est la première fois que<br>vous venez ici, je vais vous faire<br>une petite visite.
+0050:Vous pouvez choisir la pièce où<br>vous souhaitez vous rendre à<br>l'aide de la carte sur l'écran<br>suivant.
+# OVERFLOW
+0051:Oh j'oubliais ! Le sous-sol et le<br>deuxième étage sont en train<br>d'être nettoyés, c'est pourquoi ils<br>ne sont pas accessible pour le<br>moment.
+0052:Hein... Ce bruit...
+0053:... Woah ! C'était quoi ce vacarme<br>?
+0054:Hum...
+0055:Vous allez bien ? Qu'est-ce que<br>c'est que cette carcasse ?
+0056:Est-ce que ça va ? Qui êtes-vous ?
+0057:Qu'est ce qui s'est passé avec<br>cette épave... ?
+0058:Euh, bien Mademoiselle...
+0059:Je, je m'excuse.
+0060:Euh...
+0061:Je suis le Lieutenant de la Marine<br>impériale, Ichiro Ôgami.
+0062:Je suis le nouveau capitaine de la<br>Troupe impériale.
+0063:Ôgami, Kohran est elle-aussi un<br>membre de la Brigade des Fleurs.
+0064:C'est une brillante scientifique<br>venue de Chine, et  comme vous<br>avez pu l'entendre, elle a l'accent<br>du Kansai.
+0065:Mais parfois... ses inventions<br>provoquent des explosions<br>comme celle de tout à l'heure,<br>alors faites attention.
+0066:Maintenant, allons visiter les<br>autres pièces.
+0067:C'est donc ici que le public<br>s'assoit pour regarder vos<br>représentations.
+0068:La troupe de théâtre n'est qu'une<br>façade pour dissimuler la Troupe<br>d'assaut impériale.
+0069:Habituellement, nous faisons<br>toutes sortes de représentations<br>sur cette scène.
+0070:Le spectacle d'aujourd'hui, "Pour<br>l'Amour", est un peu particulier<br>car c'est la suite directe d'une<br>précédence pièce.
+0071:... Je, je suis désolé. Je n'aurais<br>pas dû choisir une scène gênante<br>comme exemple...
+0072:Tout le monde fait des erreurs.<br>Ahahah, tu as vraiment gaffé !
+0073:Tout le monde fait des erreurs, ne<br>t'en fais pas Sakura.
+0074:Oh, merci. Vous êtes si gentil,<br>Ôgami...
+0075:Bien, allons voir une autre pièce !
+0076:Ahahah, tu as bien gaffé sur ce<br>coup-là !
+0077:... Hmph ! Oui, je sais, je suis une<br>idiote.
+0078:Dans ce cas je vous laisse<br>continuer la visite tout seul.<br>Allez-y et laissez-moi tranquille.
+0079:H-Hey Sakura, attends !
+0080:Ôgami... Je suis si désespérée...
+0081:Ce n'est pas vrai ! Tu as fait de<br>ton mieux et donné le maximum !
+0082:Vous le pensez vraiment ? Je suis<br>contente. D'habitude je ne suis<br>pas aussi empoté que ça.
+0083:Continuons la visite.
+0084:Alors voilà donc la boutique de<br>souvenirs.
+0085:Non, ce n'est rien, vraiment...
+0086:C'est Tsubaki qui gère le stand.
+0087:C'est ici que vous pouvez acheter<br>différents clichés.
+0088:Il semble qu'il n'y ait pas encore<br>de clients pour le moment.
+0089:Ah... Je suis Ichiro Ôgami,<br>lieutenant de la Marine impériale.
+0090:
+0091:(Ses cheveux blonds sont si<br>beaux... Je me demande d'où elle<br>vient.)
+0092:Oh... N-Non !
+0093:Enchanté de vous rencontrer. J'ai<br>hâte de travailler avec vous.
+0094:Maria est le vice-capitaine de la<br>Troupe impériale.
+0095:Elle est née en Russie. Elle est<br>d'un calme olympien et vraiment<br>digne de confiance.
+0096:Mais... qu'est-ce qui ne va pas<br>chez vous ?!
+0097:
+0098:Ichiro Ôgami, lieutenant de la<br>Marine impériale japonaise.
+0099:Voici Kanna Kirishima, elle aussi<br>membre de la Brigade des Fleurs.
+0100:Elle maîtrise le karaté, ce qui la<br>rend très utile en combat<br>rapproché.
+0101:(Woah ! Cette tenue est assez<br>subjective...)
+0102:Pourquoi devrais-je faire ça ?<br>Oui, tout de suite !
+0103:Pourquoi devrais-je faire ça ? Je<br>refuse !
+0104:Je suis le lieutenant de la Marine<br>impériale, Ichiro Ôgami. J'ai été<br>transféré à la Troupe d'assaut<br>aujourd'hui.
+0105:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier général,<br>je ne pars pas.
+0106:... !
+0107:Certainement. ... Et voilà.
+0108:Pourquoi devrais-je faire une<br>chose pareille... ? Je refuse !
+0109:Je suis Ichiro Ôgami de la Marine<br>impériale japonaise. À compter<br>d'aujourd'hui, je suis transféré à<br>la Troupe d'assaut impériale.
+0110:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier général,<br>je ne pars pas.
+0111:... !
+0112:Sa famille dirige les Industries<br>Kanzaki.
+0113:Elle peut sembler stricte et<br>hautaine au premier abord, mais<br>c'est une personne attentionnée.
+0114:(Ah, quelqu'un vient par ici.)
+0115:Moi de même, enchanté de vous<br>rencontrer.
+0116:Kasumi et Yuri s'occupent toutes<br>les deux du secrétariat du théâtre
+0117:Vous pouvez vous adresser à elles<br>si vous avez la moindre question<br>à propos du théâtre.
+0118:Voici le bureau du directeur de la<br>Troupe, Monsieur Yoneda.
+0119:C'est exact. Passons à la suite.
+0120:Zzz... Zzz...
+0121:... On dirait bien qu'il dort.
+0122:Nous devrions le laisser<br>tranquille, qui sait comment il<br>pourrait réagir si nous le<br>réveillons.
+0123:Excusez-moi.
+0124:Je suis le Lieutenant Ichiro Ôgami<br>de la Marine impériale. À compter<br>de ce jour à midi, je fais partie de<br>la Troupe d'assaut impériale.
+0125:Au rapport !
+0126:Le directeur Yoneda est toujours<br>émoustillé...
+0127:Malgré tout, c'est un excellent<br>commandant qui est toujours à<br>notre écoute.
+0128:À quoi sert cette pièce ?
+0129:Auparavant, le gardien de nuit<br>dormait ici.
+0130:Mais aujourd'hui, elle a été vidée<br>et ne sert plus vraiment à grand<br>chose.
+0131:Huh ? Qui êtes-vous ?
+0132:Voici Ayame Fujieda, le<br>commandant en second de la<br>Troupe impériale.
+0133:Le plaisir est pour moi !
+0134:Ayame possède une grande<br>culture et une excellente<br>mémoire. C'est quelqu'un sur qui<br>on peut vraiment compter.
+0135:Je pense que c'est le genre de<br>personne que vous aimez bien,<br>Ôgami.
+0136:Oui, tout à fait.<br>Je t'aime encore plus, Sakura.
+0137:Oui c'est vrai. J'admire les<br>femmes plus matures.
+0138:... Ah oui ? Dans ce cas vous<br>n'avez qu'à demander à Ayame de<br>vous faire visiter le théâtre à ma<br>place.
+0139:Hey Sakura ! A-Attends !
+0140:Je te préfère toi, Sakura.
+0141:O-Oh... Vraiment ...?
+0142:Oui bien sûr, c'est très aimable à<br>toi de me guider à travers le<br>théâtre.
+0143:M-Merci beaucoup... C'est<br>vraiment gentil.
+0144:Bien, euh, on continue ?
+0145:Hum, je suis vraiment désolé, je<br>ne sais pas si qui m'a pris de<br>demander ça...
+0146:Bon, euh, allons voir les autres<br>pièces...
+0147:Quoiiiii ? Mais que fait un enfant<br>ici ?
+0148:Ah, je... Je suis le lieutenant<br>Ichiro Ôgami, de la Marine<br>impériale.
+0149:Iris fait elle aussi partie de la<br>Troupe.
+0150:Bien qu'elle soit encore très<br>jeune, on dit qu'en elle sommeille<br>un pouvoir incommensurable.
+0151:Oh, c'est une loge.
+0152:Généralement nous venons ici<br>pour nous réposer un peu.
+0153:Parfois nous en profitons pour se<br>réunir afin de préparer la<br>représentation ou pour faire le<br>bilan.
+0154:De temps en temps, ils nous<br>arrive même de se disputer<br>violemment...
+0155:Nous trinquons aussi après le<br>spectacle.
+0156:Ôgami, si vous avez le temps,<br>n'hésitez pas à passer nous voir.
+0157:Ah, voilà les coulisses.
+0158:C'est ici que les comédiens<br>patientent avant d'entrer en<br>scène.
+0159:Oh...
+0160:Lorsque nous sommes fermés ou<br>qu'il n'y a pas de représentation<br>de prévue, nous répétons.
+0161:Même si parfois, certaines choses<br>ne se passent pas comme on le<br>souhaiterait...
+0162:Continuons, j'aimerais vous<br>montrer comment nous<br>répétons...
+0163:Je... je suis désolé. C'est<br>embarrassant de vous avoir fait<br>subir ça...
+0164:C'est un peu de ta faute, Sakura.<br>C'est la faute de Sumire.<br>Que va-t-il se passer maintenant ?
+0165:Il faut dire que c'est un peu de ta<br>faute, Sakura !
+0166:... Ah vraiment ? Il est vrai que<br>j'ai perdu patience...
+0167:... Mais ce n'était pas une raison<br>pour que Sumire sorte ça !
+0168:Bon, oui c'est vrai... Reprend-toi,<br>ça ne nous amènera à rien de se<br>disputer tout les deux aussi.
+0169:Allons plutôt voir les autres<br>pièces du théâtre.
+0170:Sumire n'aurait pas dû te parler<br>comme ça, elle est fautive.
+0171:O-Oui, vous avez sans doute<br>raison.
+0172:Mais maintenant, avec le recul, je<br>pense que j'ai un peu exagéré<br>moi aussi...
+0173:En tant que membre de la Troupe<br>impériale, j'aurais peut-être dû<br>prendre un peu sur moi et faire<br>preuve de sang-froid.
+0174:Que va-t-il se passer ensuite ? J'ai<br>hâte de voir comment ce combat<br>va se conclure.
+0175:Honnêtement M. Ôgami, vous<br>vous tracassez pour bien peu.
+0176:La suite de l'histoire sortira cet<br>automne avec notre nouvelle<br>pièce !
+0177:Fort heureusement, on ne se<br>dispute pas souvent comme ça...
+0178:Je n'aurais peut-être pas dû vous<br>infliger ça.
+0179:... !
+0180:... une alarme ?!
+0181:La Troupe impériale doit<br>immédiatement se rendre à son<br>poste. Allons-y Ôgami !
+0182:Mais... qu'est-ce qui se passe ?
+0183:Ôgami, la Brigade des Fleurs a été<br>appelée en renfort !
+0184:... Tiens ? Kanna n'est pas encore<br>arrivée.
+0185:C'est vrai, où est-ce qu'elle est ?
+0186:Me voilà me voilà ! Désolé pour le<br>retard !
+0187:Kanna ! Je te l'ai déjà dit maintes<br>et maintes fois, on ne peut pas se<br>permettre d'être en retard, en<br>aucun cas !
+0188:Je.. je suis vraiment désolé, j'ai<br>manqué de temps.
+0189:Laisse-moi deviner, tu étais<br>tellement occupé à manger que<br>tu n'as même pas entendu<br>l'alerte.
+0190:... Tss. Tu ne perd jamais une<br>occasion de te taire.
+0191:Cessez donc de vous disputer<br>toutes les deux. Le Commandant<br>Yoneda va vous expliquer la<br>mission.
+0192:Très bien. Ôgami, je vais aller<br>droit au but, notre ennemi est<br>une organisation que l'on nomme<br>"L'Antre des Ténèbres".
+0193:... L'antre des ténèbres ?
+0194:Il ont pour objectif de détruire la<br>capitale et de restaurer le<br>shogunat Tokugawa.
+0195:Leur chef se nomme Tenkai, un<br>démon dont on dit qu'il<br>transcende le temps.
+0196:
+0197:La méfiance est de mise, il<br>peuvent être redoutable en<br>combat.
+0198:Tout ira bien, Ôgami. La Brigade<br>des Fleurs ne peut pas perdre<br>face à eux !
+0199:Vous êtes notre capitaine, nous<br>sommes toutes là... et nous avons<br>les Kôbu !
+0200:... les Kôbu ?
+0201:Ôgami, viens par ici. Je vais te<br>montrer.
+0202:Voici l'arme secrète de la Brigade<br>des Fleurs !
+0203:Tu es assigné au Kôbu blanc.<br>Maintenant c'est à toi de jouer<br>Ôgami !
+0204:C'est toi qui dirige la Brigade des<br>Fleurs sur le champ de bataille !
+0205:Oui Commandant !
+0206:Très bien, enfin un peu d'action !
+0207:Ôgami, donnez l'ordre d'attaquer<br>!
+0208:
+0209:Brigade des Fleurs, à l'attaque !
+0210:Reçu !
+0211:L'Antre des Ténèbres...
+0212:C'est pas ça qui va nous faire<br>peur !
+0213:Tant que nous serons là...
+0214:... on ne les laissera pas faire<br>n'importe quoi !
+0215:Allons-y Ôgami ! C'est notre<br>devoir de protéger la capitale !
+0216:Brigade des Fleurs, admirons<br>ensemble cette floraison<br>éphémère !
+0217:Boissons, c'est bon !
+0218:Rations, c'est bon !
+0219:Tatami, c'est b-
+0220:Assez perdu de temps, en avant !
+0221:B-Bien Commandant !
+0222:Mais... Où va-t-on se battre ?
+0223:Maintenant que vous le dites...
+0224:Oh, mes excuses, ça m'a échappé<br>de la tête.
+0225:A-Ayame...
+0226:Bref, c'est l'heure ! Mettez en<br>marche les Kôbu !
+0227:Idiot, tu es le capitaine ! Ne reste<br>pas là à te tourner les pouces !
+0228:C'est peut-être ton premier<br>combat, mais tu dois coordonner<br>l'équipe !
+0229:R-Reçu !
+0230:Troupe impériale, à l'assaut !
+0231:Alors, qu'avez-vous pensé de<br>cette démo de Sakura Wars ?
+0232:Avez-vous eu l'occasion d'en<br>apprendre davantage sur son<br>histoire ?
+0233:Eh bien ce n'était qu'un petit<br>aperçu !
+0234:Des rebondissements et plein de<br>surprises vous attendent dans<br>l'histoire complète du jeu !
+0235:De l'amitié...
+0236:De la comédie...
+0237:De l'action...
+0238:Et... de la romance !
+0239:Un récit émouvant...
+0240:... pendant l'ère Taishô !
+0241:Le 27 septembre arrive bientôt...
+0242:On va enfin monter sur scène !
+0243:On vous attend avec impatiente !
+0244:Nous avons hâte de vous revoir<br>cet automne !
+0245:C'est le bureau du directeur... et<br>il n'a pas l'air d'être là.
+0246:La porte est bien verouillée. Rien<br>à signaler ici. Continuons la<br>ronde.
+0247:... Le directeur Yoneda doit<br>encore être bien éméché.
+0248:Ôgami, je pense que nous<br>sommes déjà passés par là un peu<br>plus tôt.
+0249:Maintenant que nous sommes<br>allés voir l'extérieur, pourquoi ne<br>pas visiter une autre pièce ?
+0250:Excusez-moi... Seriez-vous le<br>Lieutenant Ichiro Ôgami ?
+0251:Je suis Sakura Shinguji.
+0252:Le Commandant Yoneda m'a<br>demandé de venir vous chercher.
+0253:Non utilisé
+0254:Non utilisé
+0255:Non utilisé
+0256:Non utilisé
+0257:Bien, en route pour le Théâtre.
+0258:Pas exactement. En fait, le siège<br>de la Troupe impériale est au sein<br>même du Théâtre.
+0259:Non utilisé
+0260:Allons-y.
+0261:De... moi ?
+0262:Non utilisé
+0263:Je me sens toujours comme un<br>fardeau vis-à-vis des autres.
+0264:Mais je serai prête à donner ma<br>vie pour protéger la capitale.
+0265:Non utilisé
+0266:Maintenant allons-y ! Le<br>Commandant Yoneda nous<br>attend.
+0267:C'est la première fois que vous<br>venez ici, non ? Alors entrons par<br>le hall principal.
+0268:Non utilisé
+0269:Non utilisé
+0270:Hihihi. Dites Monsieuuuuur, c'est<br>ton amoureuse ?
+0271:Iris ! Je t'ai déjà dit de ne pas<br>t'adresser comme ça aux adultes.
+0272:Voici le Lieutenant Ichiro Ôgami,<br>il vient d'être transféré à la<br>Troupe impériale.
+0273:Troupe d'assaut impériale,<br>Brigade des Fleurs, Iris.
+0274:Et lui c'est Jean-Paul, l'ours. C'est<br>mon meilleur amis. J'espère que<br>vous vous entendrez bien.
+0275:Non utilisé
+0276:Non utilisé
+0277:Non utilisé
+0278:Non utilisé
+0279:Non utilisé
+0280:Non utilisé
+0281:Non utilisé
+0282:Non utilisé
+0283:Non utilisé
+0284:Non utilisé
+0285:Non utilisé
+0286:Ah ! Vous êtes là !
+0287:Non utilisé
+0288:J'ai fait tomber ma fourchette,<br>allez la ramasser en m'en<br>apporter une nouvelle.
+0289:Alors comme ça, vous voulez que<br>j'aille la ramasser moi-même ?
+0290:Sachez que vous vous adressez à<br>l'unique héritière des Industries<br>Kanzaki, la vedette de ce théâtre,<br>et par dessus tout...
+0291:... la reine de la haute société<br>japonaise, Sumire Kanzaki ! Alors<br>maintenant, exécutez-vous !
+0292:Comment osez-vous ! Vous êtes<br>viré ! Je vais faire un rapport<br>auprès du directeur !
+0293:Oh.. Oh mon...<br>Ohohohohohohoh...
+0294:Et moi qui pensais que notre<br>nouveau serveur se comportait<br>bizarrement... Je suis<br>terriblement désolé.
+0295:Non utilisé
+0296:Non utilisé
+0297:Non utilisé
+0298:Non utilisé
+0299:Non utilisé
+0300:Je vous remercie. Oh j'oublie mes<br>bonnes manières, mon nom est<br>Sumire Kanzaki. C'est moi, la star<br>de ce théâtre...
+0301:... bien que Maria ait obtenu le<br>poste de leader de notre troupe.<br>Franchement, qu'est-ce que vous<br>en pensez, vous ?
+0302:Franchement, ce vieux schnock<br>de Yoneda n'a vraiment pas l'œil<br>pour dénicher les vrais talents !
+0303:Non utilisé
+0304:Non utilisé
+0305:Non utilisé
+0306:Non utilisé
+0307:Non utilisé
+0308:Non utilisé
+0309:Et qui êtes-vous ?
+0310:Seriez-vous le récemment<br>transféré Lieutenant Ôgami ?
+0311:Enchanté de vous rencontrer. Je<br>suis Maria Tachibana.
+0312:... Est-ce que j'ai quelque chose<br>sur le visage ?
+0313:Le Commandant Yoneda se trouve<br>dans le bureau du directeur. Je<br>dois partir m'entraîner, alors je<br>vous laisse.
+0314:Mais un conseil pour vous : ne<br>fixez pas les femmes de la sorte !<br>Sur ce, veuillez m'excuser.
+0315:Oui entrez entrez !
+0316:Ah j'ai entendu parler de toi par<br>l'comte Hanakoji. Hey, pas b'soin<br>d'être aussi formel, hic.
+0317:On est dans le Théâtre impérial,<br>pas la peine de parler comme un<br>militaire.
+0318:Non utilisé
+0319:Non utilisé
+0320:Non utilisé
+0321:Non utilisé
+0322:Non utilisé
+0323:Non utilisé
+0324:Non utilisé
+0325:Non utilisé
+0326:Non utilisé
+0327:Non utilisé
+0328:Non utilisé
+0329:Non utilisé
+0330:Non utilisé
+0331:Non utilisé
+0332:Non utilisé
+0333:Non utilisé
+0334:Non utilisé
+0335:Non utilisé
+0336:Non utilisé
+0337:Non utilisé
+0338:Bonjour, bienvenue à la boutique<br>de souvenirs ! Que puis-je faire<br>pour vous ?
+0339:Non utilisé
+0340:Non utilisé
+0341:Non utilisé
+0342:Non utilisé
+0343:Non utilisé
+0344:Non utilisé
+0345:Non utilisé
+0346:Non utilisé
+0347:Non utilisé
+0348:Non utilisé
+0349:Non utilisé
+0350:Non utilisé
+0351:Ah, bonjour. Ne seriez-vous pas<br>Ôgami ? Enchanté, je suis Yuri<br>Sakakibara !
+0352:Je travaille au secrétariat du<br>théâtre. J'ai hâte de travailler<br>avec vous !
+0353:Non utilisé
+0354:Non utilisé
+0355:Non utilisé
+0356:Enchantée de vous rencontrer,<br>Ôgami. Je suis Kasumi Fujii.
+0357:Je suis la responsable secrétariat<br>du théâtre.
+0358:Non utilisé
+0359:Non utilisé
+0360:Non utilisé
+0361:Non utilisé
+0362:Non utilisé
+0363:Non utilisé
+0364:Non utilisé
+0365:Non utilisé
+0366:Non utilisé
+0367:Non utilisé
+0368:Non utilisé
+0369:Non utilisé
+0370:Non utilisé
+0371:Non utilisé
+0372:Non utilisé
+0373:Non utilisé
+0374:Non utilisé
+0375:Non utilisé
+0376:Non utilisé
+0377:Non utilisé
+0378:Non utilisé
+0379:Non utilisé
+0380:Non utilisé
+0381:Non utilisé
+0382:Non utilisé
+0383:Non utilisé
+0384:Non utilisé
+0385:Non utilisé
+0386:Non utilisé
+0387:Non utilisé
+0388:Qu'y a-t-il ? Vous avez l'air...<br>évasif.
+0389:Dans ce cas allons-y. Le<br>Commandant Yoneda nous<br>attend.
+0390:Non utilisé
+0391:Hey, vous ! Vous m'écoutez ?
+0392:Ne restez pas planter là et allez<br>ramasser ma fourchette tout de<br>suite !
+0393:Non utilisé
+0394:Non utilisé
+# OVERFLOW
+0395:Êtes-vous la personne qui vient<br>tout juste d'arriver ici ? Enchanté<br>de vous rencontrer ! Je suis<br>contente de pouvoir travailler<br>avec vous.
+0396:Mon nom est Tsubaki Takamura.<br>Je travaille ici, à la boutique de<br>souvenirs.
+0397:Nous recevons chaque jour de<br>nouveaux clichés des membres de<br>la troupe, alors n'hésitez pas à<br>repasser de temps en temps !
+0398:Non utilisé
+0399:Non utilisé
+0400:Non utilisé
+0401:Non utilisé
+0402:Non utilisé
+0403:Non utilisé
+0404:Non utilisé
+0405:Non utilisé
+0406:Non utilisé
+0407:Non utilisé
+0408:Non utilisé
+0409:Non utilisé
+0410:Non utilisé
+0411:Non utilisé
+0412:Non utilisé
+0413:Non utilisé
+0414:Non utilisé
+0415:Non utilisé
+0416:Non utilisé
+0417:Non utilisé
+0418:Non utilisé
+0419:Je suis Sakura Shinguji. Je viens<br>de Sendai et j'ai rejoins la Troupe<br>il y a peu.
+0420:*kof  kof* Hmm, c'est bien ici le<br>Théâtre impérial ?
+0421:*kof* Aaaah, ma moto à vapeur<br>est en pièce...
+0422:Kohran Li. J'ai été transféré au<br>quartier général de Ginza depuis<br>la branche de Hanayashiki.
+0423:
+0424:Ma moto possède pas moins de 4<br>cylindres et 5 soupapes ! Un petit<br>bijou de 100 chevaux pour 200<br>km/h !
+0425:Une épave ? Tu ferais mieux de<br>faire attention à ce que tu dis<br>mon gars...
+0426:... ou gare à ton nez !
+0427:Y a intérêt, sinon on va pas être<br>potes ! Je suis Kohran Li, une<br>scientifique de génie.
+0428:À partir d'aujourd'hui je m'installe<br>ici. Ravi de vous rencontrer !
+0429:Et vous, qui êtes-vous ?
+0430:Hmm, je suppose que ça fait de<br>toi mon chef.
+0431:Je suis Kohran Li, je viens d'être<br>transféré ici depuis la branche du<br>parc floral d'Asakusa !
+0432:Woah, c'est vous le lieutenant ?<br>Pas de doute quand on voit votre<br>allure ! J'aime ça !
+0433:Hey !
+0434:Oh pas de soucis... Je suis Kanna<br>Kirishima. Et toi ?
+0435:Félicitation.
+0436:Je suis Ayame Fujieda. C'est un<br>plaisir de travailler avec vous,<br>Lieutenant Ôgami.
+# OVERFLOW
+0437:Un capitaine doit être capable de<br>prendre les bonnes décisions<br>dans le feu de l'action. J'ai de<br>grands espoirs en vous. Faites de<br>votre mieux, Ôgami.

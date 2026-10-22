@@ -1,0 +1,218 @@
+0001:C'est une photo de Sakura. Elle<br>me regarde droit dans les yeux. À<br>quoi peut-elle bien penser...
+0002:C'est une photo de Sumire. C'est<br>une de ses facettes qu'on ne voit<br>pas souvent.
+0003:C'est une photo de Maria. Elle est<br>perdue dans ses pensées et a l'air<br>plutôt triste...
+0004:Une photo de Kanna. Elle a l'air<br>plutôt forte et robuste. J'espère la<br>rencontrer prochainement.
+0005:C'est une photo d'Iris, entourée<br>de fleurs elle a l'aire d'en être<br>une elle-même.
+0006:C'est une photo de Kohran. Les<br>robes chinoises lui vont bien. Je<br>me demande bien de quel type de<br>fille il s'agit.
+0007:C'est une lettre qu'on laissé. Je<br>devrais la remettre à Sumire,<br>mais... Hmmm.
+0008:C'est le revolver de Maria. Y a-t-il<br>y moyen de s'échapper en<br>l'utilisant ?
+0009:C'est une parure de cheveux. Elle<br>est en forme de fleur et est assez<br>jolie.
+0010:C'est une broche sublime dont le<br>savoir-faire magnifique.
+0011:C'est une épingle à cheveux. Elle<br>irait mieux avec des vêtements<br>japonais et une coiffure<br>traditionnelle de femme mariée.
+0012:C'est le meilleur ami d'Iris,<br>Jean-Paul l'ours en peluche, elle<br>l'adore.
+0013:Avec cette clé, je devrais pouvoir<br>entrer dans des pièces<br>auparavant inaccessibles.
+0014:J'ai trouvé ça dans la chambre du<br>deuxième étage, je devrais<br>maintenant pouvoir entrer dans<br>les pièces intérieures.
+0015:C'est la tasse qu'Iris m'a demandé<br>d'apporter. Ce genre de tasse est<br>un peu à la mode.
+0016:C'est la boîte d'allumettes qu'Iris<br>m'a demandé d'apporter. Pour ce<br>qui de la boîte, sa couverture est<br>assez colorée.
+0017:C'est le couteau iris m'a demandé<br>d'apporter. C'est un couteau de<br>table parfaitement ordinaire.
+# OVERFLOW
+0018:Cette fausse épée et bouclier ont<br>servis pour des pièces de théâtre.<br>Les accessoires ont été réalisés<br>avec soins dans les moindres<br>détails.
+# OVERFLOW
+0019:Cette fausse couronne a été<br>utilisée dans des pièces de<br>théâtre. Les détails complexes<br>ont été réalisés avec une grande<br>habileté.
+# OVERFLOW
+0020:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy.
+0021:C'est un cliché de Sakura en<br>maillot de bain. Wow, c'est<br>vraiment quelque chose... Je vais<br>le garder précieusement.
+0022:C'est un cliché de Sumire dans<br>son costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0023:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour".  Ce costume pour<br>homme lui va à ravir.
+# OVERFLOW
+0024:C'est un cliché de Kanna dans sa<br>tenue d'entraînement. La<br>photographier dans un moment<br>privé comme celui-ci est vraiment<br>intime.
+0025:C'est un cliché d'Iris en maillot de<br>bain. Elle est mignonne avec sa<br>bouée.
+0026:C'est un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. C'est<br>très joli aussi comme ça aussi.
+# OVERFLOW
+0027:C'est un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0028:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0029:Rien à faire par ici. Je devrais<br>peut-être aller voir ailleurs...
+0030:Il n'y a personne ici. Je ferais<br>peut-être mieux d'aller voir<br>ailleurs...
+0031:Je ferais mieux d'aller voir<br>ailleurs...
+0032:Je ne fais aucun progrès. Il vaut<br>mieux que j'aille au bureau du<br>directeur pour en parler au<br>Commandant Yoneda.
+0033:Mais... J'ai beau regarder un peu<br>partout autour de moi, ça m'a<br>tout l'air de n'être qu'un banal<br>théâtre.
+# OVERFLOW
+0034:... Donc, aller regarder les<br>cerisiers en fleur au parc d'Ueno<br>après la bataille ? Ils sont  plutôt<br>pas mal la nuit quand ils sont en<br>fleur.
+0035:... Mais monsieur, pourquoi<br>gardez-vous tout sur<br>L'Organisation des Ténèbres<br>top-secret ?
+0036:Je vois. C'est donc ce qui en fait<br>un escadron secret.
+0037:Pas de soucis. Merci à toi aussi,<br>Sakura.
+0038:Tu peux toujours compter sur moi<br>!
+0039:B-Bien reçu.
+0040:Hahahaha, merci.
+0041:(Comment pouvez-vous vous boire<br>avec du saké Amazake ? C'est<br>juste un saké léger !)
+0042:Hein ?!
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Non utilisé
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Non utilisé
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:Non utilisé
+0115:Non utilisé
+0116:Non utilisé
+0117:Non utilisé
+0118:Non utilisé
+0119:Non utilisé
+0120:Non utilisé
+0121:Non utilisé
+0122:Non utilisé
+0123:Non utilisé
+0124:Non utilisé
+0125:Non utilisé
+0126:Non utilisé
+0127:Non utilisé
+0128:Non utilisé
+0129:Non utilisé
+0130:Non utilisé
+0131:Non utilisé
+0132:Non utilisé
+0133:Non utilisé
+0134:Non utilisé
+0135:Non utilisé
+0136:Non utilisé
+0137:Non utilisé
+0138:Non utilisé
+0139:Non utilisé
+0140:Non utilisé
+0141:Non utilisé
+0142:Non utilisé
+0143:Non utilisé
+0144:Non utilisé
+0145:Non utilisé
+0146:Non utilisé
+0147:Non utilisé
+0148:Non utilisé
+0149:Non utilisé
+0150:Non utilisé
+0151:Non utilisé
+0152:Non utilisé
+0153:Non utilisé
+0154:Non utilisé
+0155:Non utilisé
+0156:Non utilisé
+0157:Non utilisé
+0158:Non utilisé
+0159:Non utilisé
+0160:Non utilisé
+0161:Non utilisé
+0162:Allez, Ôgami. Que pensez-vous<br>qu'il se passerait si nous ne le<br>faisons pas ? Des émeutes !
+0163:Nous jouerions ainsi leur jeu. Quoi<br>qu'il en coûte nous devons les<br>combattre dans le secret le plus<br>absolu !
+0164:Merci beaucoup pour aujourd'hui.
+0165:C'est une bonne chose que vous<br>soyez là Ôgami.
+0166:Meuh, pourquoi chi chérieux ?<br>Relâche-toi un peu tu veux ?
+0167:Hmmm... Pluche près,<br>vous-chêtes vraiment beau ! Hips<br>! Vous-chêtes vraiiiment mon<br>genre, vous chavez ?
+0168:Le combat contre ces ennemis ne<br>fait que commencer. Ne vous<br>emballez pas trop...
+0169:Non utilisé
+0170:Non utilisé
+0171:Non utilisé
+0172:Vous savez... Je vous aime<br>énormément, Monsieur Ôgami.
+0173:Je vous laisserez être mon<br>petit-ami, alors ne me trompez<br>pas !
+0174:Avalez, cul sec Ôgami ! Vous êtes<br>de nouveau au service de<br>billetterie demain !
+0175:Ahahahah...
+0176:Non utilisé
+0177:Non utilisé
+0178:Ahahahah...
+0179:Non utilisé
+0180:Non utilisé
+0181:Non utilisé
+0182:Non utilisé
+0183:Non utilisé
+0184:Non utilisé
+0185:Non utilisé
+0186:Non utilisé
+0187:Non utilisé
+0188:Non utilisé
+0189:Non utilisé
+0190:Non utilisé
+0191:Non utilisé
+0192:Non utilisé
+0193:Non utilisé
+0194:Non utilisé
+0195:Non utilisé
+0196:Non utilisé
+0197:Non utilisé
+0198:Non utilisé
+0199:Non utilisé
+0200:Non utilisé
+0201:Non utilisé
+0202:Non utilisé
+0203:Non utilisé
+0204:Non utilisé
+0205:Non utilisé
+0206:Non utilisé
+0207:Non utilisé
+0208:Non utilisé
+0209:Ravie de pouvoir re-travailler avec<br>vous, Ôgami !
+0210:Uh, uhuhuh... Allez Capitaiiiiine,<br>continuons à boire !
+0211:Non utilisé
+0212:Non utilisé

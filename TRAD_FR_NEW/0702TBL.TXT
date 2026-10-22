@@ -1,0 +1,126 @@
+0001:C'est une photo de Sakura. Elle<br>me regarde droit dans les yeux. À<br>quoi peut-elle bien penser...
+0002:C'est une photo de Sumire. C'est<br>une facette d'elle qu'on ne voit<br>pas souvent.
+0003:C'est une photo de Maria. ... Elle<br>est perdue dans ses pensées et a<br>l'air triste...
+0004:Une photo de Kanna. On ressent<br>vraiment sa force caractéristique.
+0005:Une photo d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Une photo de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Une broche. C'est une belle pièce<br>d'artisanat délicat.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0013:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0014:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0015:Un ensemble de tasses qu'Iris m'a<br>demandé de lui acheter. Elles ont<br>un motif très élégant.
+0016:C'est la boîte d'allumettes qu'Iris<br>m'a demandée. Son logo est assez<br>coloré.
+0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Juste un ustensile normal qu'on<br>utilise pour les repas.
+0018:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0019:Une couronne utilisée sur scène.<br>Elle est incroyablement détaillée.
+# OVERFLOW
+0020:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy ?
+0021:C'est une photo de Sakura en<br>maillot de bain. Wow, c'est<br>vraiment quelque chose... Je vais<br>la garder précieusement.
+0022:C'est ne photo de Sumire dans<br>son costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0023:C'est une photo de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". C'est une belle<br>femme déguisée en homme.
+# OVERFLOW
+0024:C'est une photo de Kanna dans sa<br>tenue d'entraînement. La<br>photographier dans un moment<br>privé comme celui-ci est vraiment<br>intime.
+0025:C'est une photo d'Iris en maillot<br>de bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0026:C'est une photo de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. C'est<br>très joli comme ça aussi.
+# OVERFLOW
+0027:C'est une photo d'Ayame dans<br>une tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0028:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0029:Quelle était cette étrange lumière<br>qui nous a sauvés quand nous<br>étions sous terre ? Elle semblait si<br>surnaturelle...
+0030:... Le pouvoir spirituel des filles ?<br>Mais alors ça voudrait dire...
+0031:Hein ? Moi ?
+0032:Parce que je suis en capacité de<br>piloter le Kôbu moi-même...
+0033:Hmm...
+0034:Un... catalyseur ?
+0035:...
+0036:Hein ?!
+0037:...
+0038:...
+0039:Non utilisé
+0040:Non utilisé
+0041:Non utilisé
+0042:Non utilisé
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:C'est ce pour quoi ces filles ont<br>été engagées dans la Troupe...
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:On dirait que vous êtes redevenu<br>un collectionneur de tickets,<br>Monsieur Ôgami ! Hihi.
+0085:Nous devons réparer les Kôbu<br>endommagés afin d'être prêts<br>pour la prochaine bataille !
+0086:C'est pas l'moment de se reposer<br>sur nos lauriers !
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Et ce n'est pas tout. Vous<br>possédez chacune un pouvoir qui<br>vous est propre.
+0091:Ôgami, comprenez-vous pourquoi<br>on vous a confié la direction de<br>cette Troupe ?
+0092:C'est tout ?
+0093:Vous êtes le catalyseur.
+0094:En effet. Les pouvoirs spirituels<br>qu'elles possèdent dépassent de<br>loin ceux des humains normaux.
+0095:Toutefois, cette force mystique ne<br>sert à rien si elles ne peuvent pas<br>toutes la canaliser pour un<br>objectif commun.
+# OVERFLOW
+0096:Il se peut même que leurs<br>pouvoirs puissent se retourner<br>contre elles. Nous avons besoin<br>de quelqu'un pour structurer le<br>groupe, afin qu'elles œuvrent<br>toutes vers un but commun, en<br>harmonie.
+0097:Grâce à vous et à vos ordres, la<br>Troupe a pu, pour la première<br>fois, exercer pleinement l'étendu<br>de ses talents.
+0098:Bon, j'en fais peut-être un peu<br>des caisses, alors ne commencez<br>pas non plus à vous sentir<br>pousser des ailes ! Ahahah.
+0099:Hey, patron, Commandant !<br>Qu'est-ce que vous racontez tous<br>les deux dans votre coin ? Une<br>discussion secrète entre mecs ?
+0100:Maintenant qu'on a battu l'Antre<br>des ténèbres, on peut à nouveau<br>reprendre l'entraînement !
+0101:Non utilisé
+0102:Oh, mais... OH !
+0103:Whoah ! Qu'est-ce qui te prend<br>de crier comme ça tout d'un coup<br>?
+0104:Excusez-moi, mais je viens de<br>réaliser... vous ne croyez pas que<br>nous avons oublié quelque chose<br>?
+0105:... oh ! Tu veux dire... ça ?
+0106:Maintenant que vous le dites,<br>c'est vrai qu'on ne l'a pas encore<br>fait.
+0107:Et c'est le meilleur moment pour<br>ça, allons-y !
+0108:Très bien, alors que tout le<br>monde se mette en ligne ! C'est<br>parti...
+0109:Brigade des Fleurs... À notre<br>victoire !
+0110:Yay !
+0111:C-Commandant ?!
+0112:Mais euh, je voulais le dire moi !
+0113:J'ai juste pensé que ça serait à<br>moi de le faire, pour changer.
+0114:Ahahah, qu'est-ce qu'on va bien<br>faire de vous...
+0115:Allons allons les filles, il fallait<br>bien que j'essaye un jour non ?<br>Allez ce n'est pas si grave pour<br>cette fois non ? Ahahah !
+0116:Ahahah !
+0117:Non utilisé
+0118:Non utilisé
+0119:Non utilisé
+0120:Non utilisé
+0121:Non utilisé
+0122:Non utilisé

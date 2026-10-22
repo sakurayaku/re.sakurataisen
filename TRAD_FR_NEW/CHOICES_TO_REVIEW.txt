@@ -1,0 +1,1534 @@
+# 0203TBL
+US:0031:Continue patrol. <br> Go to sleep. 
+FR:0031:
+
+US:0131:I could use the help. <br> I can manage, don't worry. 
+FR:0131:
+
+US:0144:Thanks. <br> I'm not that responsible. 
+FR:0144:
+
+US:0145:Thanks. <br> I'm not that responsible. <br> I saw you rehearsing. 
+FR:0145:
+
+US:0165:Wonder what it's like there? <br> We should go see it together. <br> They have a workshop there. 
+FR:0165:
+
+US:0203:Go to your room. <br> Go to Sakura's room. <br> Continue working. 
+FR:0203:
+
+US:0212:Talk to her right now. <br> Should wait until tomorrow. 
+FR:0212:
+
+US:0216:Can I get your autograph? <br> It's Ogami… 
+FR:0216:
+
+US:0262:Thanks for the bento. <br> Why don't we do more work? <br> Who was that woman before? 
+FR:0262:
+
+
+# 0309TBL
+US:0031:I'm Ichiro Ogami. <br> …Who are YOU? 
+FR:0031:
+
+US:0048:Come with you where? <br> Sure thing. 
+FR:0048:
+
+US:0069:A lower kick! <br> An upper kick! <br> A flying two-step kick! 
+FR:0069:
+
+US:0073:I'll guard my head! <br> I'll guard my back! <br> I'll guard my stomach! 
+FR:0073:
+
+US:0077:An upper two-step kick! <br> A middle roundhouse kick! <br> An upper roundhouse kick! 
+FR:0077:
+
+US:0106:I could eat a cow! <br> What IS your specialty? <br> Nah, thank you. 
+FR:0106:
+
+US:0152:What does karate mean to you? <br> How did you end up here? <br> Has the theater changed much? 
+FR:0152:
+
+US:0221:It's a beautiful locket. <br> Is there anything inside? <br> Is it your good luck charm? 
+FR:0221:
+
+
+# 0901TBL
+US:0174:Let's use a bucket of water! <br> Let's spray them with steam! <br> Let's dig a pitfall! 
+FR:0174:
+
+
+# 0806TBL
+US:0046:Ready to move out! <br> Show them our training! 
+FR:0046:
+
+
+# 0801TBL
+US:0108:It looks great on you! <br> Don't get so angry… 
+FR:0108:
+
+US:0128:Wanna go together? <br> I'm busy unfortunately… 
+FR:0128:
+
+US:0137:OK, let's go! <br> Sorry, I can't. 
+FR:0137:
+
+US:0145:Sure, let's go together. <br> I'm kind of busy… 
+FR:0145:
+
+US:0162:I'd love to. <br> No time, sorry… 
+FR:0162:
+
+US:0168:Sure, let's go together! <br> Sorry, I have other plans. 
+FR:0168:
+
+US:0176:Great! Let's go together! <br> I'm busy unfortunately… 
+FR:0176:
+
+US:0188:Cheers! <br> …I'll have to decline. <br> Please tell me why I'm here. 
+FR:0188:
+
+US:0220:Come to the shrine with me? <br> So, see you around. 
+FR:0220:
+
+US:0236:Yes, of course. <br> No, I was talking about you. 
+FR:0236:
+
+US:0252:Visit the shrine with me? <br> …It's nothing. 
+FR:0252:
+
+US:0282:You're right. <br> I liked the other one better. <br> …You'll still stand out. 
+FR:0282:
+
+US:0308:Visit the shrine with me? <br> …It's nothing. 
+FR:0308:
+
+US:0337:Let's leave soon. <br> …What is it? 
+FR:0337:
+
+US:0363:Come visit the shrine with me. <br> …Never mind. 
+FR:0363:
+
+US:0397:Of a peaceful Tokyo. <br> Of you, Kanna. <br> I’ll surely have a nightmare. 
+FR:0397:
+
+US:0428:Come visit the shrine with me. <br> …Never mind. 
+FR:0428:
+
+US:0458:We go there to make wishes. <br> We go there to draw omikuji. <br> To have fun at the stalls. 
+FR:0458:
+
+US:0488:Come visit the shrine with me. <br> …Never mind. 
+FR:0488:
+
+US:0520:That sounds fun! <br> …Are you sure it's safe? 
+FR:0520:
+
+US:0539:Come visit the shrine with me. <br> …Never mind. 
+FR:0539:
+
+
+# 0401TBL
+US:0036:I take full responsibility. <br> Iris, apologize too! 
+FR:0036:
+
+US:0054:Go after Iris. <br> Go back inside. <br> Help these three. 
+FR:0054:
+
+US:0097:Ask Sumire. <br> Ask Kanna. <br> Ask Kohran. 
+FR:0097:
+
+US:0196:Go back to your room. <br> Talk to her one more time. 
+FR:0196:
+
+US:0213:I think Maria is right. <br> Sumire and them are right. <br> I think they're both wrong. 
+FR:0213:
+
+US:0214:I think Maria is right. <br> Kanna and them are right. <br> I think they're both wrong. 
+FR:0214:
+
+US:0215:I think Maria is right. <br> Kohran and them are right. <br> I think they're both wrong. 
+FR:0215:
+
+
+# 0904TBL
+US:0065:No… <br> That may be it. 
+FR:0065:
+
+US:0105:You're not yourself! <br> You should get some rest. 
+FR:0105:
+
+US:0217:Let's take a look… <br> Let's leave it. 
+FR:0217:
+
+US:0218:Kouma War, 1917 <br> Reporting Journal <br> January 1, 1924 
+FR:0218:
+
+US:0221:“Kouma War Documents” <br> Taisho 7, Imperial Infantry <br>TOP SECRET 
+FR:0221:
+
+US:0258:Read on. <br> Put the book back. 
+FR:0258:
+
+
+# 0501TBL
+US:0211:Cut it out, you two! <br> Stay out of it. <br> Let them get it out. 
+FR:0211:
+
+US:0272:I was worried about you… <br> Nothing in particular. <br> We need to talk. 
+FR:0272:
+
+US:0299:Come to the War Room? <br> Want us to go somewhere? <br> I'm going to the War Room. 
+FR:0299:
+
+US:0341:I was worried about you… <br> Nothing in particular. <br> We need to talk. 
+FR:0341:
+
+US:0369:Come to the War Room? <br> Want us to go somewhere? <br> I'm going to the War Room. 
+FR:0369:
+
+
+# 0504TBL
+US:0180:Did you say… sorcery? <br> Why investigate Fukagawa? <br> What's their motive? 
+FR:0180:
+
+US:0181:Why investigate Fukagawa? <br> What's their motive? 
+FR:0181:
+
+US:0184:Did you say… sorcery? <br> What's their motive? 
+FR:0184:
+
+US:0187:Did you say… sorcery? <br> Why investigate Fukagawa? 
+FR:0187:
+
+US:0220:Sumire and Kanna?! <br> Understood! <br> I'd prefer Sakura though… 
+FR:0220:
+
+US:0221:Sumire and Kanna?! <br> Understood! <br> I'd prefer Maria though… 
+FR:0221:
+
+US:0222:Sumire and Kanna?! <br> Understood! <br> I'd prefer Iris though… 
+FR:0222:
+
+US:0223:Sumire and Kanna?! <br> Understood! <br> I'd prefer Kohran though… 
+FR:0223:
+
+US:0270:This is a misunderstanding! <br> It doesn't mean anything… <br> Don't say things like that! 
+FR:0270:
+
+US:0317:This is a misunderstanding! <br> This isn't what it… <br> Don't say things like that! 
+FR:0317:
+
+US:0374:Sumire and Kanna… <br> The Hive’s objective… 
+FR:0374:
+
+US:0397:Situation Report <br> Member Report <br> It's nothing. 
+FR:0397:
+
+US:0466:"The Monkey and the Crab" <br> The Western "Cinderella" <br> "Stories of my Past" 
+FR:0466:
+
+US:0473:Bee, Chestnut, Mortar <br> Bee, Demon, Mortar <br> Sparrow, Chestnut, Mortar 
+FR:0473:
+
+US:0658:Ramp up the offenses! <br> Beef up the defenses! 
+FR:0658:
+
+US:0663:Let's go with offensive. <br> Make it defensive. 
+FR:0663:
+
+US:0668:Let's make it offensive. <br> Defensive would be best. 
+FR:0668:
+
+US:0673:Offensive, I suppose. <br> How about defensive? 
+FR:0673:
+
+US:0678:Offensive. <br> How about defensive? 
+FR:0678:
+
+US:0683:Let's make it offensive. <br> How about defensive? 
+FR:0683:
+
+US:0686:That sounds good to me. <br> Yours should be defensive. 
+FR:0686:
+
+US:0696:…Is it 2,120? <br> Uh… 2,200. <br> No, 2,320. 
+FR:0696:
+
+US:0725:Ancient China? <br> Shingen Takeda? <br> Napoleon? 
+FR:0725:
+
+US:0747:We've gained a reliable ally. <br> She's doing well, for a child. <br> We have to protect her. 
+FR:0747:
+
+
+# 0605TBL
+US:0084:Hug her tightly. <br> Speak to her gently. 
+FR:0084:
+
+
+# 0900TBL
+US:0051:Ask Maria about the contents. <br> Ask Ayame about the contents. 
+FR:0051:
+
+US:0067:Stop Iris from falling. <br> Protect the priceless book. 
+FR:0067:
+
+US:0077:Iris, be more careful! <br> Are you hurt, Iris? <br> Are you all right, Maria? 
+FR:0077:
+
+US:0132:Take Sakura's. <br> Take Sumire's. <br> Use my own. 
+FR:0132:
+
+US:0398:Peek in the shower room. <br> Go back to the corridor. 
+FR:0398:
+
+US:0445:It looks great on you. <br> I prefer your normal clothes. <br> I prefer a different costume. 
+FR:0445:
+
+US:0464:In the shower room, I think? <br> No idea. 
+FR:0464:
+
+US:0492:I heard the shower running… <br> Of course not! 
+FR:0492:
+
+US:0546:We're already finished. <br> I'm worried about the show… <br> Aren't you in the play? 
+FR:0546:
+
+US:0622:I'm a little busy right now… <br> How might I be of service? 
+FR:0622:
+
+
+# 0102TBL
+US:0034:Go to the Stage <br> Go to Yoneda's Room <br> Go to the Reception Desk 
+FR:0034:Aller sur la scène. Retrouver le<br>Commandant Yoneda. Se rendre à<br>la réception.
+
+US:0065:You can count on me! <br> Fine, I'll do the rounds. <br> Uh, I'm going to sleep. 
+FR:0065:Vous pouvez compter sur moi !<br>Bien, je vais faire le tour.<br>Euh, je vais dormir.
+
+US:0068:…Fine, I'll do the rounds. <br> Yeah, I'm going to sleep. 
+FR:0068:... très bien, je vais faire le tour.<br>Oui, je vais dormir.
+
+US:0124:Go watch the rehearsal <br> Wait for Yoneda 
+FR:0124:Aller à la répétition.<br>L'attendre.
+
+US:0198:Very unhappy. <br> Not exactly, no… <br> I'm happy with it. 
+FR:0198:
+
+US:0202:I guess I did. <br> Of course not! 
+FR:0202:
+
+US:0251:Stop them. <br> Leave them alone. 
+FR:0251:
+
+US:0286:Sure. What is it? <br> No! I'll talk and you listen! 
+FR:0286:
+
+US:0379:Flower Division, move out! <br> Prepare for flower-viewing! 
+FR:0379:
+
+US:0408:Yeah, OK. Good night. <br> I'll walk you to your room. <br> Let's keep doing rounds. 
+FR:0408:
+
+US:0409:Yeah, OK. Good night. <br> I'll walk you to your room. 
+FR:0409:
+
+US:0510:Tolstoy, right? <br> Dostoevsky, right? <br> Gorky, right? 
+FR:0510:
+
+
+# 0602TBL
+US:0069:Respond humbly. <br> Show honest gratitude. <br> Joke as camouflage. 
+FR:0069:
+
+US:0091:Why don't you play a spider? <br> You'd make a good snake. <br> I'd love to be prey myself… 
+FR:0091:
+
+US:0114:18? <br> 20? <br> 22? 
+FR:0114:
+
+US:0155:Sorry, shouldn't have said it. <br> Let's see a smile! 
+FR:0155:
+
+US:0170:I'm really, really sorry! <br> I'll buy you something nice? 
+FR:0170:
+
+US:0198:Be my partner for a day. <br> That's my job! <br> …It's no walk in the park. 
+FR:0198:
+
+US:0244:Sounds fun, I'm in. <br> Hey, no alcohol. <br> Let's get drunk and sing! 
+FR:0244:
+
+
+# 0604TBL
+US:0046:Applaud. <br> Give a level-headed critique. <br> Break into laughter. 
+FR:0046:
+
+US:0109:Great idea! Let's do it! <br> That's a bit much… 
+FR:0109:
+
+US:0138:Go help Sakura. <br> Keep waiting. 
+FR:0138:
+
+US:0145:I'll leave it to you! <br> I can't leave Sakura… 
+FR:0145:
+
+US:0153:What?! <br> What's a steam processor? 
+FR:0153:
+
+
+# 0903TBL
+US:0041:Yell. <br> Shoot her. 
+FR:0041:
+
+
+# 0301TBL
+US:0261:Ask for a battle report. <br> Ask for a casualty report. <br> No, thanks. 
+FR:0261:
+
+US:0459:Sure… all the time. <br> Not really. <br> I dream about girls… 
+FR:0459:
+
+US:0488:I wonder what's wrong… <br> Do you know anything? <br> Everyone makes mistakes. 
+FR:0488:
+
+US:0532:Ask about Maria. <br> Ask about the enemy. <br> Chat. 
+FR:0532:
+
+US:0595:Tell me what's going on? <br> Talk to me anytime. <br> You don't need to tell me. 
+FR:0595:
+
+US:0621:Ayame, right? <br> Maria, right? <br> Me, right? 
+FR:0621:
+
+US:0666:For the story to work, right? <br> That's how magic is. 
+FR:0666:
+
+US:0712:If only I got here sooner… <br> Want me to oil you up? <br> Where'd you put your glasses? 
+FR:0712:
+
+US:0749:I'm outta here! <br> I'm drawn to the shower… 
+FR:0749:
+
+US:0780:…the June rainy season. <br> …when the rain stagnates. 
+FR:0780:
+
+US:0814:Pretend it's nothing. <br> Call for help. 
+FR:0814:
+
+
+# 0603TBL
+US:0248:Situation Report <br> Member Report <br> It's nothing 
+FR:0248:
+
+US:0431:Call out to her. <br> Go after her. 
+FR:0431:
+
+US:0497:Help Sakura with the shopping. <br> Help someone else. <br> Wait in my room. 
+FR:0497:
+
+US:0615:I sorta saw her in the shower… <br> Huh!? <br> I wasn't peeping, I swear! 
+FR:0615:
+
+US:0694:Leave it to me! <br> Sorry, I'm a little busy… 
+FR:0694:
+
+US:0723:Oh come on, show me! <br> I look forward to seeing it. <br> Gonna do a striptease? 
+FR:0723:
+
+US:0751:I thought I'd lend a hand. <br> Oh, never mind. 
+FR:0751:
+
+US:0908:Sorry, I'm busy. <br> Sure, I'll help you! 
+FR:0908:
+
+US:0931:Well, you're just so cute… <br> You've got it all wrong! 
+FR:0931:
+
+US:0998:Borscht…? <br> That's a Russian stew, right? <br> That's a Russian bread, right? 
+FR:0998:
+
+US:1052:Want me to help out? <br> I'm looking forward to it. 
+FR:1052:
+
+US:1078:Want some help? <br> Well, good luck. <br> Want me to call someone? 
+FR:1078:
+
+US:1119:Y-Yes please. <br> No, I don't think so. <br> No… I'm… fine… 
+FR:1119:
+
+
+# 0902TBL
+US:0031:The Regalia and the Kouma. <br> The Power of Purification. <br> The Sacred Demon Castle. 
+FR:0031:
+
+US:0059:Think about it some more. <br> Don't think about it. 
+FR:0059:
+
+US:0061:The effect of the Power. <br> Why the Regalial is here. <br> The Kouma War. 
+FR:0061:
+
+US:0132:Tell the truth. <br> Tell a lie. 
+FR:0132:
+
+US:0530:Resist. <br> Call out to her. 
+FR:0530:
+
+US:0544:Ask her what happened. <br> Put your arms around her. 
+FR:0544:
+
+
+# 0307TBL
+US:0118:A long-lasting cactus. <br> Chrysanthemums. <br> Bouquet of roses. 
+FR:0118:
+
+US:0154:Sorry you got hurt… <br> How are your injuries? <br> Maria is angry at me. 
+FR:0154:
+
+US:0240:Encourage Sakura. <br> Stop Iris. 
+FR:0240:
+
+US:0278:You'll be like her soon. <br> She really is great. <br> Much different from them. 
+FR:0278:
+
+US:0309:Was Sumire picking on you? <br> You shouldn't be playing. <br> Playing house with Sumire? 
+FR:0309:
+
+US:0336:Sumire, please help her. <br> Iris, let her help you. <br> I'll help. 
+FR:0336:
+
+US:0361:It's about Sakura. <br> It's about Maria. <br> It's about you. 
+FR:0361:
+
+US:0387:No thanks. <br> Sure. 
+FR:0387:
+
+US:0431:Carry Kohran to her room. <br> Speak to her. <br> Leave quietly. 
+FR:0431:
+
+US:0464:Take Kohran to her room. <br> Take her to my room. 
+FR:0464:
+
+US:0525:Ask about Maria. <br> Get on her good side. 
+FR:0525:
+
+US:0613:I'm outta here! <br> I'm moving to the shower… 
+FR:0613:
+
+US:0626:Run away. <br> Act natural. 
+FR:0626:
+
+US:0676:I'm outta here! <br> I'm moving to the shower… 
+FR:0676:
+
+US:0689:Run away. <br> Act natural. 
+FR:0689:
+
+US:0724:Listen. <br> Go inside. <br> Leave. 
+FR:0724:
+
+US:0742:Make an excuse. <br> Apologize. 
+FR:0742:
+
+US:0752:Go after her. <br> Talk to Yoneda. 
+FR:0752:
+
+US:0779:What…was that about? <br> "Cassowary"…? 
+FR:0779:
+
+
+# 0306TBL
+US:0129:What happened to that kid? <br> What…happened to me? 
+FR:0129:
+
+US:0136:I'm just fine. <br> Only a little… 
+FR:0136:
+
+US:0201:Thank you for the medicine. <br> I had a dream about you. <br> Could you let me sleep? 
+FR:0201:
+
+US:0240:…That makes me happy. <br> Sorry I worried you. <br> It was a nice break. 
+FR:0240:
+
+US:0316:You're wrong! <br> …You're absolutely right. 
+FR:0316:
+
+US:0324:…Maria has a point, too. <br> I can't be wrong! 
+FR:0324:
+
+US:0443:Am I… unfit to be captain? <br> I'm…worried about Maria. <br> No… It's nothing. 
+FR:0443:
+
+US:0503:Carry Kohran to her room. <br> Speak to her. <br> Leave quietly. 
+FR:0503:
+
+US:0535:Take Kohran to her room. <br> Take her to my room. 
+FR:0535:
+
+US:0596:Ask about Maria. <br> Get on her good side. 
+FR:0596:
+
+US:0698:I'm outta here! <br> I'm moving to the shower… 
+FR:0698:
+
+US:0711:Run away. <br> Act natural. 
+FR:0711:
+
+US:0758:What… was that about? <br> "Cassowary"…? 
+FR:0758:
+
+
+# 0201TBL
+US:0035:What's her name? <br> What's she like? <br> Is she cute? 
+FR:0035:Comment s'appelle-t-elle ?<br>Comment est-elle ?<br>Mignonne ?
+
+US:0055:The new member <br> Punching tickets <br> Tonight's dinner 
+FR:0055:À la nouvelle recrue. \n Au<br>poinçonnage de tickets. \n Au<br>dîner de ce soir.
+
+US:0080:Who's that? <br> What about the play? 
+FR:0080:
+
+US:0108:Are you OK? <br> What's with that messy bike? 
+FR:0108:
+
+US:0116:I'll be happy to escort you. <br> I'm rather busy right now… 
+FR:0116:
+
+
+# 0701TBL
+US:0047:What kind of a dream? <br> Weren't you cold? 
+FR:0047:
+
+US:0076:The Anti-Kouma Corps? <br> An ancient spell? <br> Kazuma Shinguji? 
+FR:0076:
+
+US:0077:The Anti-Kouma Corps? <br> An ancient spell? 
+FR:0077:
+
+US:0078:The Anti-Kouma Corps? <br> Kazuma Shinguji? 
+FR:0078:
+
+US:0080:An ancient spell? <br> Kazuma Shinguji? 
+FR:0080:
+
+US:0113:Flower Division, to battle! <br> We'll return, no matter what! 
+FR:0113:
+
+
+# 0109TBL
+US:0049:Leave the room <br> Zone out 
+FR:0049:Quitter la pièce ?<br>Faire autre chose ?
+
+US:0110:Sit and reminisce <br> Maybe another time 
+FR:0110:S'asseoir et se remémorer ?<br>Peut-être une autre fois.
+
+US:0116:Reminisce more <br> Come back later 
+FR:0116:Se souvenir d'avantage ?<br>Revenir plus tard ?
+
+US:0127:Listen to music <br> Maybe another time 
+FR:0127:Ecouter de la musique ?<br>Peut-être une autre fois.
+
+US:0135:Listen to more <br> Come back later 
+FR:0135:En écouter d'autres ?<br>Revenir plus tard.
+
+US:0146:I'd love to see them! <br> Maybe another time. 
+FR:0146:J'adorerais les voir !<br>Peut-être une autre fois.
+
+US:0154:I'll have another look. <br> Maybe later. 
+FR:0154:Je vais les regarder encore une<br>fois. Peut-être plus tard.
+
+US:0195:Flower Division <br> Childish <br> Koubu 
+FR:0195:Brigade des Fleurs ?<br>Enfantin ?<br>Kôbu ?
+
+US:0217:Change background <br> Don't change 
+FR:0217:Changer le décor ?<br>Ne pas le changer ?
+
+US:0228:Absolutely! <br> Advanced Round, please! <br> …Maybe later. 
+FR:0228:Absolument ! Niveau avancé, s'il<br>vous plaît ! ...Peut-être plus tard.
+
+US:0229:Absolutely! <br> …Maybe later. 
+FR:0229:Absolument ! ...Peut-être plus<br>tard.
+
+US:0245:Keep going <br> Give up 
+FR:0245:Continuer ?<br>Abandonner ?
+
+US:0256:Keep going <br> Give up 
+FR:0256:Continuer ?<br>Abandonner ?
+
+US:0266:No, of course not! <br> I thought I'd take a nap. <br> Yes, I am. 
+FR:0266:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+
+US:0309:No, of course not! <br> I thought I'd take a nap. <br> Yes, I am. 
+FR:0309:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+
+US:0323:No, of course not! <br> I thought I'd take a nap. <br> Yes, I am. 
+FR:0323:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+
+US:0337:No, of course not! <br> I thought I'd take a nap. <br> Yes, I am. 
+FR:0337:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+
+US:0372:Of course I'll help! <br> Maybe later. 
+FR:0372:Bien sûr que je vais t'aider !<br>Peut-être plus tard.
+
+US:0373:Help her clean <br> Gaze at her <br> Go to another room 
+FR:0373:L'aider à nettoyer ?<br>La regarder ?<br>Aller dans une autre chambre ?
+
+US:0374:Help her clean again <br> Go to another room 
+FR:0374:
+
+US:0375:Help her clean again <br> Gaze at her <br> Go to another room 
+FR:0375:
+
+US:0408:Recall <br> Go to another room 
+FR:0408:
+
+US:0409:Recall <br> Look at the photo <br> Go to another room 
+FR:0409:
+
+US:0410:Recall again <br> Go to another room 
+FR:0410:
+
+US:0411:Recall again <br> Look at the photo <br> Go to another room 
+FR:0411:
+
+US:0436:Help her cook <br> Go to another room 
+FR:0436:
+
+US:0437:Help her cook <br> Reminisce <br> Go to another room 
+FR:0437:
+
+US:0438:Help her cook again <br> Go to another room 
+FR:0438:
+
+US:0439:Help her cook again <br> Reminisce <br> Go to another room 
+FR:0439:
+
+US:0466:Play Hanafuda <br> Maybe later 
+FR:0466:
+
+US:0467:Play Hanafuda <br> Reminisce <br> Maybe later 
+FR:0467:
+
+US:0468:Play Hanafuda again <br> Come back later 
+FR:0468:
+
+US:0469:Play Hanafuda again <br> Reminisce <br> Come back later 
+FR:0469:
+
+US:0498:Pick an outfit <br> Go to another room 
+FR:0498:
+
+US:0499:Pick an outfit <br> Picture Iris in costume <br> Go to another room 
+FR:0499:
+
+US:0500:Pick an outfit again <br> Go to another room 
+FR:0500:
+
+US:0501:Pick an outfit <br> Picture Iris in costume <br> Go to another room 
+FR:0501:
+
+US:0531:I'd love to! <br> Maybe later. 
+FR:0531:
+
+US:0532:Go swimming <br> Picture Sumire in her swimsuit <br> Go to another room 
+FR:0532:
+
+US:0533:Swim a bit more <br> Go to another room 
+FR:0533:
+
+US:0534:Swim a bit more <br> Ogle Sumire <br> Go to another room 
+FR:0534:
+
+US:0552:Shiba Park <br> Ueno Park <br> Hibiya Park 
+FR:0552:
+
+US:0554:Lily <br> Lily of the Valley <br> Morning Glory 
+FR:0554:
+
+US:0556:Floral Divinity <br> Floral Fatality <br> Floral Divider 
+FR:0556:
+
+US:0558:Accessory <br> Calamity Jane <br> Cassowary 
+FR:0558:
+
+US:0560:Ryoma Shinguji <br> Kozuma Shinguji <br> Kazuma Shinguji 
+FR:0560:
+
+US:0562:Silver Horn <br> Peafowl <br> Amaterasu 
+FR:0562:
+
+US:0564:Introducing a Rare Creature <br> A Yeti Emerges <br> A Slime Approaches 
+FR:0564:
+
+US:0566:Inventing <br> Rehearsing <br> Modifying the Koubu 
+FR:0566:
+
+US:0568:30 zeni <br> 50 zeni <br> 70 zeni
+FR:0568:
+
+US:0570:Takeshi <br> Takashi <br> Tsuyoshi 
+FR:0570:
+
+US:0572:Snakes <br> Spiders <br> Mice 
+FR:0572:
+
+US:0574:Andre <br> Madam Youki <br> Son Goku 
+FR:0574:
+
+US:0576:Major General <br> Lieutenant General <br> Admiral 
+FR:0576:
+
+US:0578:Hexagram of Infernal Calling <br> Heptagram of Infernal Calling <br> Octogram of Infernal Calling 
+FR:0578:
+
+US:0580:Champagne <br> Chateaubriand <br> Jardin 
+FR:0580:
+
+US:0582:Tsukiji <br> Fukagawa <br> Asakusa 
+FR:0582:
+
+US:0584:100 million yen <br> 1 billion yen <br> 10 billion yen 
+FR:0584:
+
+US:0586:Night Watchman's Room <br> Infirmary <br> Large Prop Room 
+FR:0586:
+
+US:0588:Infantry <br> Matchlock <br> Cannon 
+FR:0588:
+
+US:0590:Kasumi <br> Tsubaki <br> Yuri 
+FR:0590:
+
+US:0593:Soaring Whale <br> Aerial Footage <br> Shooting Star 
+FR:0593:
+
+US:0596:Iris <br> Ogami <br> Maria 
+FR:0596:
+
+US:0599:The train chasing them <br> Miroku’s Hex Mech <br> The Fukagawa house in flames 
+FR:0599:
+
+US:0602:Maria <br> Iris <br> Sakura 
+FR:0602:
+
+US:0604:Sumire <br> Maria <br> Ayame 
+FR:0604:
+
+US:0606:Shiba Park <br> Nihonbashi <br> Kudanshita 
+FR:0606:
+
+US:0608:Count Fukurokoji <br> Count Hanakoji <br> Count Umekoji 
+FR:0608:
+
+US:0610:Kudanshita <br> Asakusa <br> Ginza 
+FR:0610:
+
+US:0612:Black Hornets <br> Crimson Hornets <br> Honey Bees 
+FR:0612:
+
+US:0614:Ogami <br> Captain <br> Ensign 
+FR:0614:
+
+US:0616:Crimson Miroku <br> Azure Setsuna <br> Sable Satan 
+FR:0616:
+
+US:0618:Maria <br> Kohran <br> Sakura 
+FR:0618:
+
+US:0620:Living Room <br> Dining Room <br> Parlor 
+FR:0620:
+
+US:0622:Double High Kick <br> Triple Aerial Kick <br> Upper Roundhouse Kick 
+FR:0622:
+
+US:0624:Reiken-Arataka <br> Reiken-Arawashi <br> Reiken-Arauma 
+FR:0624:
+
+US:0626:80 meters <br> 800 meters <br> 8000 meters 
+FR:0626:
+
+US:0628:Iris <br> Kohran <br> Sumire 
+FR:0628:
+
+US:0630:Sumire <br> Kanna <br> Kohran 
+FR:0630:
+
+US:0632:The Capital's Flying Fish <br> Taisho’s Flying Fish <br> The Flying Fish of Fujiyama 
+FR:0632:
+
+US:0634:Salon <br> Night Watchman's Room <br> Backstage 
+FR:0634:
+
+US:0636:Mr. Bomb <br> Mr. Truth <br> Party Boy 
+FR:0636:
+
+US:0639:"For Love" <br> "Journey to the West" <br> "Adventure Island" 
+FR:0639:
+
+US:0641:Ayame's <br> Yoneda's <br> Maria's 
+FR:0641:
+
+US:0644:Party preparation <br> A play <br> A meal 
+FR:0644:
+
+US:0647:Sakura's <br> Sumire's <br> Iris's 
+FR:0647:
+
+US:0649:Om khili khili basara um datta <br> Om khili khili vajra hum phat <br> Om khili khili vajra hum tatta 
+FR:0649:
+
+US:0651:Asakusa <br> Ginza <br> Nihonbashi 
+FR:0651:
+
+US:0654:Hurt trying to save a child <br> Went into a trance <br> Caught a cold 
+FR:0654:
+
+US:0656:50 <br> 100 <br> 200 
+FR:0656:
+
+US:0658:August 7th <br> September 7th <br> October 7th 
+FR:0658:
+
+US:0660:Nagoya Castle <br> Kumamoto Castle <br> Aoba Castle 
+FR:0660:
+
+US:0662:Anti-Kouma Corps photo <br> Armor <br> Clock 
+FR:0662:
+
+US:0664:Sumire <br> Kanna <br> Kohran 
+FR:0664:
+
+US:0666:Sakura <br> Sumire <br> Iris 
+FR:0666:
+
+US:0668:Stage lighting <br> Sorting vouchers <br> Buying groceries 
+FR:0668:
+
+US:0670:Fukagawa <br> Shiba Park <br> Nihonbashi 
+FR:0670:
+
+US:0672:Piercing rounds <br> Double turns <br> Summon allies 
+FR:0672:
+
+US:0674:Sumire <br> Iris <br> Kohran 
+FR:0674:
+
+US:0676:Moved a table <br> Cleaned up the green room <br> Cooked a meal 
+FR:0676:
+
+US:0679:Underwent cyborg surgery <br> Cried and begged for mercy <br> Awoke from a dream 
+FR:0679:
+
+
+# 0202TBL
+US:0031:Continue patrol. <br> Go to sleep. 
+FR:0031:
+
+US:0125:Come on in! I'm free now. <br> Ogami isn't in right now! 
+FR:0125:
+
+US:0144:I was too busy to make it. <br> I-I saw it. <br> You were lovely, Kohran. 
+FR:0144:
+
+US:0159:Kandre? <br> Andre? <br> Andora? 
+FR:0159:
+
+US:0187:…Not really. <br> I'm tired, I'm going to bed. <br> I'd like to see your room. 
+FR:0187:
+
+US:0201:Stay up a little longer. <br> Go to bed. 
+FR:0201:
+
+US:0207:Stay up a little longer. <br> Go to bed. 
+FR:0207:
+
+US:0214:I'm on patrol. <br> What about you, Maria? 
+FR:0214:
+
+US:0322:Sure, I'm up for it! <br> Teach me the rules. <br> I'm not really in the mood. 
+FR:0322:
+
+US:0335:Sure. Let's go. <br> I'm on patrol… 
+FR:0335:
+
+US:0391:Listen in silence. <br> Get back on patrol. <br> Ask Kohran about herself. 
+FR:0391:
+
+US:0467:It looks good on you. <br> What an unusual design. <br> Isn't it too revealing? 
+FR:0467:
+
+US:0496:I'm still on patrol… <br> Sure, let's swim! <br> …I can't swim. 
+FR:0496:
+
+US:0519:Hold on, I'm coming! <br> I'm going to get help! 
+FR:0519:
+
+US:0536:Are you all right? <br> Be more careful, you idiot! 
+FR:0536:
+
+US:0559:Sure thing. <br> I'm on patrol… 
+FR:0559:
+
+US:0580:Back to the training room! <br> I'm…going to the showers… 
+FR:0580:
+
+US:0610:I would, thank you… <br> Sorry, but I'm on patrol. 
+FR:0610:
+
+US:0623:Get flustered. <br> Make excuses. <br> Tell the truth. 
+FR:0623:
+
+US:0686:Get back on patrol! <br> I'm…going to the showers… 
+FR:0686:
+
+US:0744:They look good on you. <br> That's an unusual design. <br> I prefer a negligee. 
+FR:0744:
+
+US:0781:Ask about battle tactics. <br> Ask about troupe members. <br> Nothing, really. 
+FR:0781:
+
+US:0841:Stop Sumire. <br> Stop Sakura. 
+FR:0841:
+
+US:0894:All right. I'll do it. <br> Why should I have to…? 
+FR:0894:
+
+
+# 0802TBL
+US:0042:Yes, of course. <br> No, I was talking about you. 
+FR:0042:
+
+US:0143:That this peace is eternal. <br> That Sakura likes me. 
+FR:0143:
+
+US:0151:That this peace is eternal. <br> That Sumire likes me. 
+FR:0151:
+
+US:0159:That this peace is eternal. <br> That Maria likes me. 
+FR:0159:
+
+US:0168:That this peace is eternal. <br> That Kohran likes me. 
+FR:0168:
+
+US:0176:That this peace is eternal. <br> That Iris likes me. 
+FR:0176:
+
+US:0184:That this peace is eternal.. <br> That Kanna likes me. 
+FR:0184:
+
+US:0194:Not as cute as you. <br> Yeah, he's really cute. 
+FR:0194:
+
+US:0207:Haven't you seen one before? <br> Isn't it cute? 
+FR:0207:
+
+US:0221:Explain what it is. <br> Tell her a fib. 
+FR:0221:
+
+US:0240:In China, you mean? <br> Looks just like you, Kohran! 
+FR:0240:
+
+US:0259:Are they in France, too? <br> Looks just like you, Iris! 
+FR:0259:
+
+US:0277:Who's more agile, him or you? <br> Know monkey-style kung fu? 
+FR:0277:
+
+US:0297:OK, bring it on! <br> …I'd rather not. 
+FR:0297:
+
+US:0399:Used to play with them a lot. <br> Never really tried it before. 
+FR:0399:
+
+US:0413:Have you never seen one? <br> You cut out shapes. 
+FR:0413:
+
+US:0429:It's something to eat. <br> You cut out shapes. <br> First to destroy it wins. 
+FR:0429:
+
+US:0453:What did you play as a kid? <br> This takes me back… 
+FR:0453:
+
+US:0470:It's like a relief, I guess. <br> It's cake. 
+FR:0470:
+
+US:0490:This takes me back… <br> Should we get the biggest one? 
+FR:0490:
+
+US:0518:OK, let's go! <br> We can't leave it unattended… 
+FR:0518:
+
+US:0536:Of course… I like you. <br> Hahaha! Sure, I like you! 
+FR:0536:
+
+US:0545:Ahaha… Yes, you're right. <br> It's fun once in a while. 
+FR:0545:
+
+
+# 0700TBL
+US:0081:What happens to Sakura now? <br> What's a state of trance? 
+FR:0081:
+
+US:0105:Tell the truth. <br> Dodge the question. <br> Act cheerfully. 
+FR:0105:
+
+US:0143:Smile. <br> Confess your worries. 
+FR:0143:
+
+US:0165:Smile. <br> Confess your worries. 
+FR:0165:
+
+US:0204:Is that you, Kohran? <br> Is that you, Maria? <br> Is that you, Sumire? 
+FR:0204:
+
+US:0220:Thank her. <br> Act nonchalantly. 
+FR:0220:
+
+US:0238:Is that you, Kanna? <br> Is that you, Iris? <br> Is that you, Sakura? 
+FR:0238:
+
+US:0261:Scold her. <br> Play along. 
+FR:0261:
+
+US:0298:Smile. <br> Confess your worries. 
+FR:0298:
+
+US:0327:I won't budge! <br> Calm down, Commander! 
+FR:0327:
+
+US:0352:We can't give up! <br> Calm down, everyone! 
+FR:0352:
+
+US:0375:If we attack their base… <br> Strengthen Tokyo's defenses. 
+FR:0375:
+
+US:0417:I think that's Tenkai. <br> I don't think it's Tenkai. 
+FR:0417:
+
+
+# 1003TBL
+US:0029:The Mikasa! <br> Commander Yoneda… <br> Did we do it? 
+FR:0029:
+
+
+# 0101TBL
+US:0040:Please explain my assignment. <br> Were you on the phone? 
+FR:0040:Expliquez-moi ce qu'il se passe !<br>Vous étiez au téléphone ?
+
+US:0071:Yes, please do. <br> Sorry, I want to be alone. 
+FR:0071:
+
+US:0092:Would you like to come in? <br> OK, see you later. 
+FR:0092:Veux-tu entrer ?<br>OK, à plus tard.
+
+US:0145:Ask about the theater <br> Ask Sakura about herself <br> Ask about the Troupe 
+FR:0145:
+
+US:0184:Come in, it's open. <br> Ogami's not here right now! 
+FR:0184:
+
+US:0301:Ahahaha! <br> …What was THAT? 
+FR:0301:
+
+US:0421:Could you show me your room? <br> Ask about the Troop. <br> Give her the letter. 
+FR:0421:
+
+US:0422:Could you show me your room? <br> Ask about the Troop. 
+FR:0422:
+
+US:0506:Ask about the Troop. <br> Ask Sumire about herself. 
+FR:0506:
+
+US:0507:Ask about the Troop. <br> Ask Sumire about herself. <br> Hand her the letter. 
+FR:0507:
+
+US:0542:Girls like Sumire. <br> Girls like Sakura. 
+FR:0542:
+
+US:0592:I came by to see you. <br> There's no particular reason. 
+FR:0592:
+
+US:0626:Of course. <br> I'm a little busy… 
+FR:0626:
+
+US:0633:Sumire? <br> Sakura? <br> Maria? 
+FR:0633:
+
+US:0675:Tell me about the Troop! <br> Where are you headed? <br> …Do you have a boyfriend? 
+FR:0675:
+
+US:0809:Ask about the Troop. <br> Ask Iris about herself. 
+FR:0809:
+
+US:0831:Jean Pierre? <br> Jumper? <br> Jean-Paul? 
+FR:0831:
+
+US:0902:Tell me about the Troop. <br> Tell me about yourself, Maria. 
+FR:0902:
+
+
+# 0502TBL
+US:0256:Stop the fighting. <br> Listen to Kanna. 
+FR:0256:
+
+US:0281:Let's do that. <br> We should all go. <br> I'll go with Sumire. 
+FR:0281:
+
+US:0346:Stop Kanna. <br> Ask Sumire to continue. 
+FR:0346:
+
+US:0375:Let's do that. <br> All of us should go. <br> No, I'll go with Kanna. 
+FR:0375:
+
+US:0450:Of course not. <br> …N-No, I'm not scared. <br> …Terrified. 
+FR:0450:
+
+US:0485:Wait, Sumire! <br> Wait, Kanna! <br> Wait, both of you! 
+FR:0485:
+
+US:0499:I suppose… <br> Please patch things up? <br> No, this was your fault! 
+FR:0499:
+
+US:0523:I suppose… <br> Please patch things up? <br> No, this was your fault! 
+FR:0523:
+
+US:0577:Help Kanna. <br> Chase Sumire. 
+FR:0577:
+
+US:0591:Give her first aid. <br> Suck the poison out. 
+FR:0591:
+
+US:0664:That's not true. <br> I'm here with you! 
+FR:0664:
+
+US:0697:Don't talk like that! <br> …Understood. 
+FR:0697:
+
+US:0757:I'm the captain, after all. <br> Just did what anyone would do. 
+FR:0757:
+
+US:0806:Help Sumire. <br> Chase after Kanna. 
+FR:0806:
+
+US:0840:Try to cheer her up. <br> Suck the poison out. 
+FR:0840:
+
+US:0893:It's not funny. <br> I'm here with you! 
+FR:0893:
+
+US:0927:Don't talk like that! <br> …Understood. 
+FR:0927:
+
+US:0962:I'm the captain, after all. <br> Just did what anyone would do. 
+FR:0962:
+
+US:1117:Shove Sumire and Kanna away. <br> Shoot the spider and snake. <br> Whack them away by hand. 
+FR:1117:
+
+US:1215:Stall for time. <br> Bluff. <br> Pray. 
+FR:1215:
+
+
+# 0108TBL
+US:0043:I'm on duty! <br> I'd like to know about you. 
+FR:0043:Je suis en service !<br>D'abord, parlez-moi un peu de<br>vous.
+
+US:0044:I'm on duty! <br> Sorry, but I don't have time to see a play right now. 
+FR:0044:Je suis en service !<br>Malheureusement, je n'ai pas le<br>temps pour ça.
+
+US:0055:Are you OK? <br> What's with that messy bike? 
+FR:0055:Vous allez bien ? Qu'est-ce que<br>c'est que cette carcasse ?
+
+US:0072:Everyone makes mistakes. <br> You really goofed that one! 
+FR:0072:Tout le monde fait des erreurs.<br>Ahahah, tu as vraiment gaffé !
+
+US:0090:Stare. <br> Introduce yourself. 
+FR:0090:
+
+US:0102:Why should I do that…? <br> All right. 
+FR:0102:Pourquoi devrais-je faire ça ?<br>Oui, tout de suite !
+
+US:0136:Yes, I like her. <br> I like you better, Sakura. 
+FR:0136:Oui, tout à fait.<br>Je t'aime encore plus, Sakura.
+
+US:0164:It was your fault, Sakura! <br> It was Sumire's fault! <br> What's going to happen now? 
+FR:0164:C'est un peu de ta faute, Sakura.<br>C'est la faute de Sumire.<br>Que va-t-il se passer maintenant ?
+
+US:0208:Flower Division, attack! <br> Time for the flower party! <br> …uh, where are we fighting? 
+FR:0208:
+
+
+# 0400TBL
+US:0055:Yeah, I did. <br> No… I haven't. 
+FR:0055:
+
+US:0072:I'll think about it. <br> Sure thing, I'll help you. <br> Sounds like a pain… 
+FR:0072:
+
+US:0087:OK, let's do it. <br> What to do… <br> Sorry, I can't go tomorrow. 
+FR:0087:
+
+US:0107:OK, let's go! <br> I really can't make it. <br> Sakura, do you mind? 
+FR:0107:
+
+US:0172:It's late, call it a day. <br> I'm not sure… <br> Leave it to me! 
+FR:0172:
+
+US:0247:…You saw right through me. <br> Not really? <br> Can't you leave him here? 
+FR:0247:
+
+US:0274:It's very cute. <br> It's pretty nice, I guess. <br> Your usual outfit is better. 
+FR:0274:
+
+US:0299:Shopping at the Dept. Store <br> See a movie in Asakusa <br> Ueno Zoo 
+FR:0299:
+
+US:0336:Let's take a walk in the park. <br> Let's go to the movie theater. <br> Let's go shopping. 
+FR:0336:
+
+US:0337:Let's take a walk in the park. <br> Let's go to the movie theater. 
+FR:0337:
+
+US:0338:Let's take a walk in the park. <br> Let's go shopping. 
+FR:0338:
+
+US:0340:Let's go to the movie theater. <br> Let's go shopping. 
+FR:0340:
+
+US:0350:Hold her hand. <br> Link arms with her. <br> Give her a piggyback ride. 
+FR:0350:
+
+US:0385:8 years old? <br> 10 years old? <br> 12 years old? 
+FR:0385:
+
+US:0439:She's my daughter. <br> She's my coworker. <br> She's my girlfriend. 
+FR:0439:
+
+US:0497:Grasp her hand. <br> Speak to her. 
+FR:0497:
+
+US:0519:Sure, I'll help. <br> But I wanted to sleep in… 
+FR:0519:
+
+US:0563:I know. <br> I don't know! 
+FR:0563:
+
+US:0597:Yes! <br> No! 
+FR:0597:
+
+US:0617:Yes! <br> No! 
+FR:0617:
+
+US:0649:Yes! <br> No! 
+FR:0649:
+
+US:0794:Keep up the good work. <br> Need any help? 
+FR:0794:
+
+US:0828:I'm outta here! <br> I'm drawn to the shower… 
+FR:0828:
+
+US:1038:Ask for a battle report. <br> Ask for a casualty report. <br> No, thanks. 
+FR:1038:
+
+US:1191:A-Are you OK? <br> What are you making? 
+FR:1191:
+
+US:1217:Yours faithfully <br> Best regards <br> Yours eternally 
+FR:1217:
+
+US:1244:We decorate dolls. <br> We write wishes on paper. <br> We put up pine trees. 
+FR:1244:
+
+US:1255:Wishes for the Division. <br> Wishes for Maria. <br> Wishes for myself. 
+FR:1255:
+
+US:1297:Rice and miso soup. <br> Lots of bread. <br> I don't eat breakfast. 
+FR:1297:
+
+US:1377:Stupid Mon Frère! <br>- Iris
+FR:1377:
+
+
+# 0601TBL
+US:0164:Speak with Tsubaki. <br> Go back to my room. <br> Go meet up with everyone. 
+FR:0164:
+
+US:0176:Go back to your room. <br> Invite Tsubaki out. <br> Meet up with everyone. 
+FR:0176:
+
+US:0210:She didn't accept my invite! <br> That was just a joke! <br> Hey, listen for a second! 
+FR:0210:
+
+US:0239:There's no ulterior motives! <br> …I've been caught. <br> I came to check up on you! 
+FR:0239:
+
+US:0287:That's not it at all. <br> …You're right. <br> Leave it to your imagination. 
+FR:0287:
+
+US:0322:Hurry to the dressing room. <br> Shout "What's wrong!?" 
+FR:0322:
+
+US:0325:Hurry to the shower room. <br> Shout "What's wrong!?" 
+FR:0325:
+
+US:0362:All right! Let's do it. <br> Kanna… you're so kind. <br> I'm in a bit of a rush… 
+FR:0362:
+
+US:0403:Memories are key, right? <br> Fighting is important too. <br> That's just like you, Kanna. 
+FR:0403:
+
+US:0448:What's the hurry? <br> …Your kids? <br> Well, I'll see you later. 
+FR:0448:
+
+US:0454:Give it your all, OK? <br> Well, I'll see you later. <br> Mind if I give you a hand? 
+FR:0454:
+
+US:0481:Sure, I'll come along. <br> I've got plans… Sorry. <br> I can go on my own. 
+FR:0481:
+
+US:0501:About Kanna? <br> About the play? <br> About me? 
+FR:0501:
+
+US:0511:How dare he! <br> I don't think that's true. 
+FR:0511:
+
+US:0587:It really suits you. <br> You startled me. <br> It's a bit small… 
+FR:0587:
+
+US:0615:Hmmm, but what if I did? <br> It's our secret. <br> It'll make for good gossip! 
+FR:0615:
+
+US:0657:What kind of robot? <br> I'm not going to say a word. <br> You're building noses? 
+FR:0657:
+
+US:0711:I didn't do it on purpose. <br> Kohran, are you hurt? <br> Party Boy? 
+FR:0711:
+
+US:0893:Situation Report <br> Member Report <br> It's nothing 
+FR:0893:
+
+
+# 0308TBL
+US:0038:Talk to Kanna. <br> Talk to Maria. 
+FR:0038:
+
+
+# 0402TBL
+US:0040:Let's try the date again. <br> Cut this out! 
+FR:0040:
+
+US:0101:Assault Troupe, launch! <br> We'll bring Iris back! 
+FR:0101:
+
+
+# 1001TBL
+US:0139:That's not true! <br> What do you think? 
+FR:0139:
+
+US:0164:Let's just move out! <br> We have to think this over. 
+FR:0164:
+
+US:0176:We must attack! <br> Doesn't anyone have an idea? 
+FR:0176:
+
+US:0188:That might just work. <br> That's too risky. 
+FR:0188:
+
+US:0220:Yes… <br> What do you think, Iris? 
+FR:0220:
+
+US:0223:Yeah, that just might work. <br> It's not going to be easy… 
+FR:0223:
+
+
+# 0805TBL
+US:0211:I'm here to see you. <br> I'm here to see Iris. <br> Why are YOU here? 
+FR:0211:
+
+US:0268:How are the Koubu? <br> I wanted to see you, Kohran. 
+FR:0268:
+
+US:0300:Leave the room. <br> Talk to Kohran. 
+FR:0300:
+
+US:0328:To develop better planes? <br> So you loved him… 
+FR:0328:
+
+US:0372:You're unbelievable! <br> I don't know what to say… <br> It looks like you succeeded. 
+FR:0372:
+
+US:0502:What about the Koubu? <br> How are the girls doing? <br> Any news about the Kouma? 
+FR:0502:
+
+US:0531:Nah, I'll eat anything. <br> Some things I don't like… <br> I like masculine women. 
+FR:0531:
+
+US:0566:Sakura's please! <br> Sumire's please! <br> Maria's please! 
+FR:0566:
+
+US:0567:Iris' please! <br> Kanna's please! <br> Kohran's please! 
+FR:0567:
+
+US:0586:Really like the stage, huh? <br> Hope the shows start soon. 
+FR:0586:
+
+US:0622:Just great! <br> So-so… <br> It was a catastrophe. 
+FR:0622:
+
+US:0664:Leave right now! <br> I'm drawn towards the showers… 
+FR:0664:
+
+US:0673:Lalala~… <br> For what~ are~ people born? <br> For what~ do~ people live? 
+FR:0673:
+
+
+# 0804TBL
+US:0035:With all due respect… <br> It's my responsibility… 
+FR:0035:
+
+US:0091:Go and talk to Yoneda. <br> Go and talk to Ayame. 
+FR:0091:
+
+US:0145:Go back to training. <br> Get more powerful weapons. 
+FR:0145:
+
+US:0177:Time for special training! <br> Leave it to their judgment. 
+FR:0177:
+
+
+# 0204TBL
+US:0067:Assault Troupe, move out! <br> Kohran, do your best! 
+FR:0067:
+
+
+# 0206TBL
+US:0095:Just sort of caught my eye… <br> I thought you looked cute… <br> I needed some change… 
+FR:0095:
+
+US:0178:It was no trouble at all. <br> It was a bit rough. 
+FR:0178:
+
+US:0192:I was looking for you! <br> Just strolling around… <br> I snuck away from work. 
+FR:0192:
+
+US:0317:It really suits you. <br> A bit racy, isn't it? <br> I like your normal outfit. 
+FR:0317:
+
+US:0341:Very well! <br> Normal, I guess. <br> Not so good, I'm afraid. 
+FR:0341:
+
+US:0354:Of course. <br> No way! <br> Call me “lover boy”. 
+FR:0354:
+
+US:0383:It was no trouble at all. <br> It was a bit rough. 
+FR:0383:
+
+US:0409:My duty as a leader. <br> My duty as a man. 
+FR:0409:
+
+US:0434:She's a bit strange. <br> She's cute! <br> I think she's funny. 
+FR:0434:
+
+US:0456:Of course! <br> Hard to say. <br> No way. 
+FR:0456:

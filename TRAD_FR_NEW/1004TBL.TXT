@@ -1,0 +1,201 @@
+0001:C'est un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense...
+0002:C'est un cliché de Sumire. Voilà<br>un aspect d'elle que je ne<br>connaissais pas.
+0003:C'est un cliché de Maria. Elle<br>semble pensive, voire un peu<br>triste...
+0004:C'est un cliché de Kanna. On<br>ressent clairement sa force qui la<br>caractérise tant.
+0005:Un cliché d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:C'est un cliché de Kohran. Son<br>visage teint en rouge par le<br>coucher de soleil rend son profil<br>encore plus joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Une broche. Elle a été<br>confectionnée dans les règles de<br>l'art.
+0011:Une épingle à cheveux. Elle irait<br>bien avec une tenue<br>traditionnelle japonaise, pour<br>tenir un chignon.
+0012:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0013:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont un<br>motif très élégant.
+0015:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0018:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+# OVERFLOW
+0019:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy.
+0020:C'est un cliché de Sakura en<br>maillot de bain. Wow, c'est<br>vraiment quelque chose... Je vais<br>le garder précieusement.
+0021:Un cliché de Sumire dans son<br>costume de scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0022:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle femme<br>déguisée en homme.
+0023:Un cliché de Kanna dans sa tenue<br>d'entraînement. La photographier<br>dans un moment privé comme<br>celui-ci est vraiment intime.
+0024:C'est un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:C'est un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. C'est<br>très joli aussi comme ça aussi.
+# OVERFLOW
+0026:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0027:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:... Oui !
+0030:... Non...
+0031:... Oui !
+0032:Et ainsi, au terme de la grande<br>bataille, le rideau se baissa pour<br>nos héroïnes.
+0033:Depuis ce jour, aucun incident<br>majeur ne fût à déplorer...
+0034:... et la Brigade des Fleurs est à<br>l'heure actuelle en attente d'une<br>nouvelle mission.
+0035:Entre-temps, la Troupe impériale<br>s'est produite à guichet fermé de<br>manière quotidienne...
+0036:... et les filles se donnent corps et<br>âme à la vie théâtrale.
+0037:Le Commandant Yoneda exerce<br>toujours ses fonctions...
+0038:... et tout le monde travaille<br>assidûment au sein du théâtre.
+0039:La paix est revenue dans la<br>capitale impériale.
+0040:Les jours et les mois ont passés.
+0041:L'an passé, nous avons perdu<br>quelqu'un de cher à nos yeux...
+0042:... mais nous continuons d'aller<br>de l'avant malgré tout.
+0043:Le printemps est revenu.
+0044:La paix règne sur Terre.
+0045:C'est dans ce contexte que nous<br>avons décidé de nous accorder un<br>peu de repos.
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Non utilisé
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Non utilisé
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:Non utilisé
+0115:Non utilisé
+0116:Non utilisé
+0117:Non utilisé
+0118:Non utilisé
+0119:Non utilisé
+0120:Non utilisé
+0121:Non utilisé
+0122:Non utilisé
+0123:Aaah... Gh... Ghhh... Aaargh...
+0124:Aaaargh... Mi... chael...
+0125:Viens avec moi, Seigneur Satan.<br>Notre Père t'attend, là-haut.
+0126:Michael... Ça veut dire que tu...<br>me pardonnes ?
+0127:Le temps de Dieu, tout comme<br>son amour, est éternel.
+0128:Il n'y a pas de péché si grand<br>qu'il ne puisse être lavé.
+0129:Michael...
+0130:Tu n'es plus seul. Approche...
+0131:Nooon ! Stop !
+0132:Je ne regrette absolument rien !<br>Ni ma rébellion contre Père, ni ma<br>chue en enfer !
+0133:L'amour de Dieu n'est qu'un<br>mensonge ! Jamais je ne<br>comprendrai la tolérance de notre<br>Père pour les humains !
+0134:C'est pour cette raison que je tue<br>et que je répands la misère ! Je<br>vais anéantir ce monde !
+0135:Vous ne pensez qu'à l'instant<br>présent !
+0136:Mais maintenant c'est terminé,<br>plus aucun amour ne naîtra, il n'y<br>aura plus de paradis !
+0137:Les humains seront plus aptes à<br>vivre dans la peur des ténèbres, à<br>trembler de désespoir !<br>Ahahahahah !
+0138:Vous avez gagné ce coup-ci, je<br>me retire. Mais aussi longtemps<br>que le genre humain existera, je<br>renaîtrai, encore et encore !
+0139:Seigneur Satan ! Non !
+0140:Je n'ai que faire de la gloire<br>céleste ! J'ai vécu par l'épée et je<br>mourrai par l'épée !
+0141:Seigneur Satan...
+0142:Merci à vous, la Troupe impériale.
+0143:Mais malheureusement, cela ne<br>signifie pas la fin de la bataille.
+0144:Votre vrai combat commence<br>maintenant.
+0145:Non utilisé
+0146:Non utilisé
+0147:Adieu, tout le monde.
+0148:Hey ! Ce n'est pas la réaction que<br>j'attendais venant de toi.<br>Ressaisis-toi un peu.
+0149:C'est déjà plus acceptable.
+0150:Adieu, Ôgami.
+0151:Non utilisé
+0152:Non utilisé
+0153:Non utilisé
+0154:Non utilisé
+0155:Non utilisé
+0156:Non utilisé
+0157:Non utilisé
+0158:Non utilisé
+0159:Non utilisé
+0160:Non utilisé
+0161:Non utilisé
+0162:Non utilisé
+0163:Non utilisé
+0164:Non utilisé
+0165:Non utilisé
+0166:Non utilisé
+0167:Non utilisé
+0168:Non utilisé
+0169:Non utilisé
+0170:Non utilisé
+0171:Non utilisé
+0172:Non utilisé
+0173:Non utilisé
+0174:Non utilisé
+0175:Non utilisé
+0176:Non utilisé
+0177:Non utilisé
+0178:Non utilisé
+0179:Non utilisé
+0180:Non utilisé
+0181:Non utilisé
+0182:Non utilisé
+0183:Non utilisé
+0184:Non utilisé
+0185:Non utilisé
+0186:Non utilisé
+0187:Non utilisé
+0188:Non utilisé
+0189:Non utilisé
+0190:Non utilisé
+0191:Non utilisé
+0192:Non utilisé
+0193:Non utilisé
+0194:Non utilisé
+0195:Non utilisé
+0196:Non utilisé
+0197:Non utilisé
+0198:Non utilisé
+0199:Non utilisé

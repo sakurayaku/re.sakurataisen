@@ -1,0 +1,151 @@
+0001:C'est un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense...
+0002:C'est un cliché de Sumire. Voilà<br>un aspect d'elle que je ne<br>connaissais pas.
+0003:C'est un cliché de Maria. Elle<br>semble pensive, voire un peu<br>triste...
+0004:C'est un cliché de Kanna. Sa force<br>caractéristique ressort vraiment.
+0005:C'est un cliché d'Iris. Elle est<br>entourée de fleurs et affiche un<br>sourire radieux.
+0006:C'est un cliché de Kohran. Son<br>visage teint en rouge par le<br>coucher de soleil rend son profil<br>encore plus joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Une broche. Elle a été<br>confectionnée dans les règles de<br>l'art.
+0011:Une épingle à cheveux. Elle irait<br>bien avec une tenue<br>traditionnelle japonaise, pour<br>tenir un chignon.
+0012:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0013:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0014:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0015:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont un<br>motif très élégant.
+0016:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+0018:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0019:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+# OVERFLOW
+0020:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy.
+0021:C'est un cliché de Sakura en<br>maillot de bain. Wow, c'est<br>vraiment quelque chose... Je vais<br>le garder précieusement.
+0022:C'est un cliché de Sumire dans<br>son costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0023:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle femme<br>déguisée en homme.
+# OVERFLOW
+0024:C'est un cliché de Kanna dans sa<br>tenue d'entraînement. La<br>photographier dans un moment<br>privé comme celui-ci est vraiment<br>intime.
+0025:C'est un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0026:C'est un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. C'est<br>très joli aussi comme ça aussi.
+# OVERFLOW
+0027:C'est un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0028:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0029:...
+0030:...
+0031:...
+0032:Quoi... Vous ne vous souvenez de<br>rien ?
+0033:Euh... bien, tant mieux...
+0034:Fiou... Ah ah ah ah...
+0035:Non utilisé
+0036:Non utilisé
+0037:Non utilisé
+0038:Non utilisé
+0039:Non utilisé
+0040:Non utilisé
+0041:Non utilisé
+0042:Non utilisé
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Non utilisé
+0087:Non utilisé
+0088:Non utilisé
+0089:Non utilisé
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Non utilisé
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:... Ah ah ah, hi hi...
+0115:Dis-moi Iris, puis-je te poser une<br>question ?
+0116:Hmm ?
+0117:Lorsque tu as sauté dans les bras<br>d'Ôgami, qu'as-tu ressenti ?
+0118:Iris.
+0119:Non utilisé
+0120:Le Commandant vous demande.
+0121:O.K. !
+0122:On dirait bien que ça vous rend<br>heureux.
+0123:Non utilisé
+0124:Monsieur Ôgami et moi il faut<br>qu'on refasse notre rendez-vous !<br>À plus tard !
+0125:Oh, à propos de ce que tu m'as<br>demandé tout à l'heure, quand<br>j'ai sauté dans les bras de<br>Monsieur Ôgami...
+0126:Je me suis senti apaisé, il<br>dégageait un doux parfum , et...
+0127:Et ?
+0128:Le reste c'est un secret ! Hi hi hi.<br>Bye bye !
+0129:Comment peut-on s'imaginer un<br>instant qu'ils feraient ça à une<br>dame aussi belle et raffinée que<br>moi...
+0130:Tss, je n'y crois pas, ils me<br>laissent tout le sale boulot...<br>Ont-ils oublié QUI est responsable<br>de tout ça ?
+0131:Mmmh...
+0132:*Gasp !*
+0133:Hein ? Où suis-je ? Que c'est-il<br>passé ?
+0134:... je me souviens que je pleurais<br>dans ma chambre...
+0135:Mais... j'ai l'impression que tous<br>ces mauvais sentiments ont<br>disparu maintenant. Je me sens<br>mieux.
+0136:Uh ? Qu'est-ce que qu'il y a<br>Monsieur Ôgami ? Tu as l'air<br>bizarre.
+0137:Non utilisé
+0138:Non utilisé
+0139:Non utilisé
+0140:Non utilisé
+0141:Non utilisé
+0142:Non utilisé
+0143:Non utilisé
+0144:Non utilisé
+0145:Non utilisé
+0146:Non utilisé
+0147:Non utilisé
+0148:Non utilisé

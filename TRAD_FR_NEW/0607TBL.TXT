@@ -1,0 +1,104 @@
+0001:C'est une photo de Sakura. Elle<br>me regarde droit dans les yeux. À<br>quoi peut-elle bien penser...
+0002:C'est une photo de Sumire. C'est<br>une facette d'elle qu'on ne voit<br>pas souvent.
+0003:C'est une photo de Maria. Elle est<br>perdue dans ses pensées et a l'air<br>plutôt triste...
+0004:Une photo de Kanna. On ressent<br>vraiment sa force caractéristique.
+0005:Une photo d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Une photo de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Un joli pendentif. Il a été<br>raffinement travaillé.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0013:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui acheter. Elles ont<br>un motif très élégant.
+0015:C'est la boîte d'allumettes qu'Iris<br>m'a demandée. Son logo est assez<br>coloré.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Juste un ustensile normal qu'on<br>utilise pour les repas.
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0018:Une couronne utilisée sur scène.<br>Elle est incroyablement détaillée.
+# OVERFLOW
+0019:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy ?
+0020:Une photo de Sakura en maillot<br>de bain. Wow, c'est vraiment<br>quelque chose... Je vais la garder<br>précieusement.
+0021:Une photo de Sumire dans son<br>costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0022:C'est une photo de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". C'est une belle<br>femme déguisée en homme.
+# OVERFLOW
+0023:Une photo de Kanna dans sa<br>tenue d'entraînement. La<br>photographier dans un moment<br>privé comme celui-ci est vraiment<br>intime.
+0024:Une photo d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:Une photo de Kohran. Je n'ai pas<br>souvent l'occasion de la voir avec<br>ses tresses détachées. C'est très<br>joli aussi comme ça aussi.
+# OVERFLOW
+0026:Une photo d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0027:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:Waaaaah !!
+0030:... Sakura ?!
+0031:Sakura ! Qu'est-ce qu'il se passe ?<br>Parle-moi, Sakura !
+0032:Ugh... Aaaaaah !
+0033:Sakura !
+0034:Capitaine ! C'est Sakura...
+0035:Sakura...
+0036:Sakura ! Qu'est-ce qui se passe ?
+0037:Non utilisé
+0038:Non utilisé
+0039:Non utilisé
+0040:Non utilisé
+0041:Non utilisé
+0042:Non utilisé
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Il est enfin complet, eheheh...
+0087:Bien joué seigneur Satan ! Les<br>dernières lignes ley ont<br>finalement cédées !
+0088:L'heure est venue ! Que les cieux<br>hurlent ! Que la terre se mette à<br>crier !
+0089:Nous ferons connaître à tous la<br>célèbre résurrection de notre<br>magnifique souverain !
+0090:Non utilisé
+0091:Non utilisé
+0092:Non utilisé
+0093:Non utilisé
+0094:Non utilisé
+0095:Non utilisé
+0096:Non utilisé
+0097:Non utilisé
+0098:Non utilisé
+0099:Non utilisé
+0100:Non utilisé
+0101:Non utilisé

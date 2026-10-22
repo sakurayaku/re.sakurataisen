@@ -1,0 +1,743 @@
+0001:C'est une photo de Sakura. Son<br>regard est si intense. Je me<br>demande à quoi elle pense ?
+0002:C'est une photo de Sumire. Elle<br>montre une facette qu'elle cache<br>habituellement.
+0003:C'est une photo de Maria. Elle est<br>perdue dans ses pensées et<br>semble un peu triste...
+0004:C'est une photo de Kanna. Là<br>dessus, elle à l'air plus énergique<br>et confiante que jamais.
+0005:C'est une photo d'Iris. Une jolie<br>fleur entourée de beaucoup<br>d'autres.
+0006:C'est une photo de Kohran. Elle<br>est baignée dans un magnifique<br>couché de soleil.
+0007:Un spectateur m'a donné cette<br>lettre et m'a demandé de la<br>remetttre à Sumire... Hmm.
+0008:C'est le pistolet de Maria. Je me<br>demande si je peux l'utiliser pour<br>m'échapper ?
+0009:C'est une jolie épingle à cheveux<br>en forme de fleur.
+0010:C'est une belle broche finement<br>travaillée.
+0011:C'est une épingle à cheveux qui<br>s'accorde mieux avec les habits<br>et coupes de cheveux<br>traditionnels japonais.
+0012:C'est Jean-Paul, l'ours en peluche<br>adoré d'Iris.
+0013:Cette clé me permet d'entrer<br>dans des pièces auxquelles je ne<br>pouvais pas accéder auparavant.
+0014:Je l'ai trouvé dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à<br>l'arrière-salle.
+0015:C'est la tasse qu'Iris m'a<br>demandé. C'est une jolie tasse.
+0016:C'est la boîte d'allumettes qu'Iris<br>a demandé. Le logo est assez<br>coloré.
+0017:C'est le couteau qu'Iris a<br>demandé. C'est une pièce<br>d'argenterie ordinaire.
+0018:Ce sont une épée et un bouclier<br>factice utilisés lors des pièces de<br>théâtre. Ca à l'air fait main.
+0019:C'est une fausse couronne très<br>détaillée, utilisée lors des<br>représentations théâtrales.
+0020:C'est une perruque criarde. Dans<br>quel genre de pièce pourrait-on<br>bien s'en servir ?
+0021:C'est une photo de Sakura en<br>maillot de bain ? Ouah, c'est<br>assez osé... Je ne peux pas laisser<br>quelqu'un d'autre la voir.
+0022:C'est une photo de Sumire en<br>costiume. Son maquillage élaboré<br>est plutôt impressionnant.
+0023:C'est une photo de Maria sur<br>scène dans son uniforme tiré de<br>"Pour l'Amour"... C'est une belle<br>femme déguisée en homme.
+0024:C'est une des rares photos<br>d'antraînement. Ca m'a l'air tout<br>à fait privé.
+0025:C'est une photo d'Iris en maillot<br>de bain. Elle est mignonne avec<br>sa bouée.
+0026:C'est Kohran en tenue de<br>servante. Elle est superbe avec<br>les cheveux détachés.
+0027:C'est Ayame en tenue<br>traditionnelle japonaise. J'aimerais<br>qu'elle sourit comme ça tout le<br>temps.
+0028:C'est le pistolet d'Ayame. Que<br>suis-je supposé en faire ?
+0029:Ah... J'ai bien dormi.
+0030:J'ai fait un rêve intéressant aussi.<br>Enfin, je devrais aller rejoindre les<br>autres.
+0031:Merci Ôgami ! Vous avez été<br>d'une grande aide !
+0032:J'espère que vous m'aiderez<br>encore.
+0033:Oh, ça me rappelle des<br>souvenirs...
+0034:Oui, je sais. Ces gosses m'ont<br>envoyés une photo.
+0035:Je suppose que les bons souvenirs<br>ne s'estompent jamais, hein ?
+0036:Mais... Que comptez-vous faire<br>avec ce borscht ?
+0037:Je pensais le servir au dîner ce<br>soir.
+0038:Tout le monde aimerait goûter la<br>cuisine du Capitaine !
+0039:C'était sympa, Lieutenant !<br>Rejouons ensemble un de ces<br>jours.
+0040:Désolé, Iris. Je crois que je n'ai<br>pas choisi le bon costume...
+0041:Non, non, non ! Je l'aime parce<br>que c'est Monsieur Ôgami qui l'a<br>choisi !
+0042:La prochaine fois, essayez d'en<br>choisir un qui soit un peu plus<br>mignon ! D'accord ?
+0043:Whaou ! C'est génial d'aller nager<br>de nouveau !
+0044:Les mines étaient-elles à votre<br>goût ?
+0045:Hein ? C'est toi qui as disposé ces<br>mines là, Sumire ?
+0046:Bien sûr que c'est moi. Après<br>tout, nager en soit est<br>affreusement ennuyeux.
+0047:(*Soupir*. Je te supplie de<br>reporter...).
+0048:Comme il n'y a pas de<br>représentation aujourd'hui, je<br>peux me détendre.
+
+# CHOICE => 050 => 059
+0049:Quitter la pièce ?<br>Faire autre chose ?
+
+# RESULT <= 049
+0050:Enfin un jour de repos ! Je vais<br>rejoindre les autres.
+0051:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0052:Oui ?
+0053:Sakura...
+0054:Bonjour, Ôgami !
+0055:On a enfin un jour de repos. Vous<br>ne devriez pas le passer seul.
+0056:Oui, je suppose...
+0057:Il n'y a pas de répétition<br>aujourd'hui non plus, alors nous<br>nous détendons dans nos<br>chambres.
+0058:Ne viendriez-vous pas me voir<br>dans la mienne ? Alors, on se voit<br>plus tard...
+
+# RESULT <= 049
+0059:Que devrais-je faire aujourd'hui ?
+0060:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0061:Oui ?
+0062:Sumire...
+0063:Bonjour, Lieutenant.
+0064:Jour de repos ou pas, ne<br>pensez-vous pas qu'il est impoli<br>de m'ignorer ?
+0065:Oh, désolé...
+0066:Il n'y a pas de répétition<br>aujourd'hui non plus, alors nous<br>nous détendons dans nos<br>chambres.
+0067:Venez donc me rendre visite dans<br>la mienne. Maintenant, si vous<br>voulez bien m'excuser...
+0068:Que devrais-je faire aujourd'hui ?
+0069:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0070:Oui ?
+0071:Maria...
+0072:Bonjour, Lieutenant.
+0073:Pardonnez mon intrusion...
+0074:C'est simplement que tout le<br>monde souhaite passer le jour de<br>repos avec vous.
+0075:Et je... Euh... Laissez tomber.
+0076:Ah ! Je parie que tout le monde<br>est content d'enfin avoir un jour<br>de repos.
+0077:Hem ! Je serai dans ma chambre.<br>J'espère que vous viendrez me<br>voir.
+0078:Que devrais-je faire aujourd'hui ?
+0079:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0080:Oui ?
+0081:Kanna...
+0082:Réveillez-vous, Chef ! Il fait un<br>temps magnifique dehors !
+0083:C'est peut-être un jour de congé,<br>mais c'est pas une raison pour se<br>prélasser !
+0084:Oui, je suppose...
+0085:Vous avez tout à fait raison !<br>Alors bougez-vous et venez dans<br>ma chambre !
+0086:Que devrais-je faire aujourd'hui ?
+0087:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0088:Oui ?
+0089:Iris... ?
+0090:Wouhou ! Vous êtes réveillé,<br>Monsieur Ôgami ?
+0091:C'est un jour de congé<br>aujourd'hui ! Venez jouer avec<br>moi !
+0092:J'avais prévu de passer du temps<br>avec tout le monde, en réalité.
+0093:Vraiment ? Ouais ! Je me<br>demande à quel jeu on va bien<br>pouvoir jouer ?
+0094:J'attendrai dans ma chambre. S'il<br>vous plaît, venez me voir !
+0095:Que devrais-je faire aujourd'hui ?
+0096:Ah ! Il fait un temps superbe<br>dehors. Un magnifique journée<br>pour me rafraîchir les idées dans<br>ma chambre.
+0097:Oui ?
+0098:Kohran...
+0099:Lieutenant, espèce de fainéant...
+0100:On a enfin un jour de congé !<br>Vous voudriez pas le passer avec<br>nous ?
+0101:Oui, je suppose...
+0102:Super ! Fêtons ça pendant notre<br>jour de congé !
+0103:Si vous me cherchez, je serais<br>dans ma chambre. Venez me<br>rendre visite, d'ac ?
+0104:Que devrais-je faire aujourd'hui ?
+0105:Ô-Ôgami !
+0106:Salut, Kasumi. Que faites-vous ici,<br>un jour de congé ?
+0107:Je regarde la scène en me<br>remémorant des souvenirs.
+0108:Voulez-vous vous asseoir et vous<br>remémorer avec moi, Ôgami ?
+0109:Oh ! Voulez-vous vous asseoir et<br>vous remémorer avec moi, Ôgami<br>?
+
+# CHOICE => 111 => 114
+0110:S'asseoir et se remémorer ?<br>Peut-être une autre fois.
+# RESULT <= 110
+0111:Je ne me sens guère nostalgique<br>pour le moment. Peut-être une<br>autre fois.
+0112:Je vois. Enfin... Revenez ici quand<br>vous voulez.
+0113:Bien sûr. Il n'y a rien de mal à<br>réflechir au passé de temps en<br>temps.
+# RESULT <= 110
+0114:Maintenant, fermez les yeux et<br>remémorez-vous le passé...
+0115:Vous vous sentez bien, Ôgami ?
+
+# CHOICE => 117 => 119
+0116:Se souvenir d'avantage ?<br>Revenir plus tard ?
+# RESULT <= 116
+0117:Je ne me sens guère nostalgique<br>pour le moment. Peut-être une<br>autre fois.
+0118:Je vois. Enfin... Revenez ici quand<br>vous voulez.
+# RESULT <= 116
+0119:Je me sens très nostalgique...<br>J'aimerais me souvenir encore un<br>peu.
+0120:Les souvenirs sont de véritables<br>trésors. Bon, maintenant, fermez<br>les yeux de nouveau...
+0121:Bonjour, Ôgami !
+0122:Salut, Yuri ! Aucun de nous deux<br>n'est en service aujourd'hui, alors<br>nous pouvons nous détendre.
+0123:Ouais ! Les jours de repos sont<br>parfaits pour se mettre au<br>courant des derniers potins.
+0124:Dites, Ôgami, j'ai un super<br>disque...
+0125:Vous voulez l'écouter avec moi ?
+0126:Hé, Ôgami ! Vous voulez écouter<br>de la musique ?
+
+# CHOICE => 128 => 130
+0127:Ecouter de la musique ?<br>Peut-être une autre fois.
+
+# RESULT <= 128
+0128:Je n'ai pas envie d'écouter de la<br>musique. Peut-être une autre fois.
+0129:Pas de problème. Revenez me voir<br>si jamais il vous en prend l'envie.
+
+# RESULT <= 128
+0130:Bien sûr, j'adorerais.
+0131:Génial ! Quelle chanson<br>voulez-vous écouter ?
+0132:Ca vous a plu, Ôgami ?
+0133:Ouais, c'était sympa d'écouter<br>différentes chansons.
+0134:Voulez-vous en écouter d'autres ?<br>Vraiment, ça m'est égal.
+
+# CHOICE => 136 => 138
+0135:En écouter d'autres ?<br>Revenir plus tard.
+
+# RESULT <= 135
+0136:Euh, peut-être une autre fois.
+0137:Je comprends. Revenez me voir<br>quand vous voulez.
+
+# RESULT <= 135
+0138:Oui, j'aimerais écouter d'avantage<br>de musique.
+0139:Super ! Choisissez quelle chanson<br>vous voulez écouter.
+0140:Bonjour, Ôgami !
+0141:Bonjour, Tsubaki ! Qu'est-ce que<br>vous faites ici aujourd'hui ? Le<br>théâtre est fermé et ce n'est pas<br>la boutique de souvenirs.
+0142:Oh... Vous avez raison. Je suppose<br>que je suis venu ici par<br>habitude... Ah, ah, ah.
+0143:Au fait, Ôgami, j'ai des clichés<br>grand format...
+0144:Ce sont des clichés que vous avez<br>déjà achetées. Vous voulez les<br>voir ?
+0145:Hé, Ôgami ! j'ai des clichés grand<br>format. Vous voulez les voir ?
+0146:J'adorerais les voir !<br>Peut-être une autre fois.
+0147:Je vends six clichés standard à la<br>boutique de souvenirs, mais aussi<br>sept clichés spéciaux.
+0148:Collectionnez les six clichés<br>standard et vous pourrez acheter<br>un des clichés spéciaux durant<br>les vacances du Nouvel An.
+0149:Soyez bien sûr d'acheter un<br>cliché chaque mois, d'accord ?
+0150:J'adorerais les voir !
+0151:Certainement ! Voici tous les<br>clichés que vous avez achetés<br>pour le moment.
+0152:Génial, non ?
+0153:Voulez-vous les regarder encore<br>une fois ? Ca m'est égal.
+
+# CHOICE => 155
+0154:Je vais encore les regarder.<br>Peut-être plus tard.
+
+# RESULT <= 154
+0155:Il y une collection spéciale de<br>clichés en plus des six vendus<br>normalement à la boutique de<br>souvenirs.
+0156:Ces sept clichés spéciaux sont<br>disponibles uniquement pendant<br>la période des congés du Nouvel<br>An.
+0157:Je crois que je vais encore les<br>regarder.
+0158:Certainement ! Voici les clichés<br>que vous avez achetés pour le<br>moment.
+0159:C'est vide. Peut-être que tout le<br>monde est dans sa chambre.
+0160:Rester ici serait une perte de<br>temps. Je vais essayer dans une<br>autre pièce.
+0161:Hey, Ôgami ! Vous voulez jouer au<br>hanafuda, le jeu de cartes aux<br>motifs de fleurs, avec nous ?
+0162:Pardonnez-moi, Lieutenant.<br>Daignerez-vous jouer au<br>hanafuda, le jeu de cartes aux<br>motifs de fleurs, avec nous ?
+0163:Lieutenant, aimeriez-vous jouer<br>au Hanafuda, le jeu de cartes à<br>motifs de fleurs, durant notre jour<br>de congé ?
+0164:Hé, Chef ? Vous voulez jouer au<br>hanafuda, le jeu de cartes à<br>motifs de fleurs, avec nous ?
+0165:Hé, Monsieur Ôgami ! Venez jouer<br>au hanafuda, le jeu de cartes à<br>motifs de fleurs, avec nous !
+# OVERFLOW
+0166:Hé, Lieutenant ! Venez jouer au<br>hanafuda, le jeu de cartes à<br>motifs de fleurs, avec nous ! Je<br>sais que vous en mourrez d'envie<br>!
+# CHOICE: => 0168 => 0169
+0167:Bien sûr !<br>Pas maintenant.
+# RESULT: <= 0167
+0168:Bien sûr ! Mais attention, car je<br>prévois de gagner !
+# RESULT: <= 0167
+0169:Hum, pas maintenant...
+0170:Oh, eh bien, s'il vous plaît,<br>revenez nous voir si jamais vous<br>changez d'avis.
+0171:Quel dommage. Quand bien<br>même, nous jouerons volontiers si<br>toutefois vous changez d'avis.
+0172:Oh... Peut-être une autre fois,<br>alors.
+0173:Pfff ! Vous êtes pas drôle.<br>Revenez si vous changez d'avis,<br>Chef.
+0174:Vous êtes trop nul ! Allez,<br>Monsieur Ôgami, jouez avec nous<br>!
+0175:Mmmh ! C'est pas sympa, Ôgami.<br>Revenez si jamais vous changez<br>d'avis.
+0176:P...Pourquoi tout le monde est là<br>?
+0177:Je vous ai ramené Ôgami.
+0178:Ouais ! Monsieur Ôgami !
+0179:Vous avez réussi le quizz d'Ayame<br>? Impressionnant, Chef.
+0180:Ayame... Qu'est-ce que vous<br>fabriquez ?
+0181:On a décidé d'organiser un<br>tournoi d'hanafuda pour occuper<br>notre jour de congé.
+0182:C'est un tournoi à élimination<br>directe. J'y participe, bien<br>entendu.
+0183:Je ne vais pas y aller de main<br>morte avec vous, Ôgami.
+# OVERFLOW
+0184:Moi, Sumire Kanzaki, jure d'user<br>de cette opportunité pour<br>démontrer les capacités<br>supérieures de mon intellect de<br>génie.
+0185:L'hanafuda, c'est comme le<br>combat. C'est un jeu de stratégie<br>durant duquel soit on avance,<br>soit on bat en retraite.
+0186:Whaou ! Quelle chouette manière<br>de passer un jour de congé !
+0187:Très bien, Ôgami. Voyons si vous<br>pouvez nous battre tous les<br>sept...
+0188:...à l'hanafuda !
+0189:Bonjour, Ôgami. Que faites vous<br>ici ?
+0190:Commandant Yoneda ? Qu'est-ce<br>que vous, vous faites ici ?
+0191:Ah, mais tout comme vous... Je<br>souhaitais seulement un<br>changement de décor.
+0192:Quel genre de décor vous fait<br>envie ?
+0193:Bonjour, Ôgami. Encore envie<br>d'un changement de décor ?
+0194:Quel genre de décor vous fait<br>envie ?
+# CHOICE => 196 => 201 => 206
+0195:Brigade des Fleurs ?<br>Enfantin ?<br>Kôbu ?
+# RESULT <= 195
+0196:Hum... Je crois que je vais choisir<br>Brigade des Fleurs.
+0197:Brigade des Fleurs, hein ? Je<br>comprends. Maintenant, fermez<br>les yeux !
+0198:Hum... Je crois que je vais choisir<br>Brigade des Fleurs.
+0199:*Soupir* Ôgami, il s'agit votre<br>décor actuel.
+0200:Nous avons peut-être un jour de<br>congé, mais ce n'est pas une<br>raison pour rêvasser.
+
+# RESULT <= 195
+0201:Hum... Je crois que je vais choisir<br>Enfantin.
+0202:Enfantin, hein ? Je comprends.<br>Maintenant, fermez les yeux !
+0203:Hum... Je crois que je vais choisir<br>Enfantin.
+0204:*Soupir* Ôgami, il s'agit de votre<br>décor actuel.
+0205:Nous avons peut-être un jour de<br>congé, mais ce n'est pas une<br>raison pour rêvasser.
+
+# RESULT <= 195
+0206:Hum... Je crois que je vais choisir<br>Kôbu.
+0207:Kôbu, hein ? Je comprends.<br>Maintenant, fermez les yeux !
+0208:Hum... Je crois que je vais choisir<br>Kôbu.
+0209:*Soupir* Ôgami, il s'agit de votre<br>décor actuel.
+0210:Nous avons peut-être un jour de<br>congé, mais ce n'est pas une<br>raison pour rêvasser.
+0211:Hé, Oh ! Allô la Terre !
+0212:Prenez une respiration profonde<br>et rassemblez vos pensées.
+0213:Hé, Oh ! Allô la Terre !
+0214:Je vous le demande encore une<br>fois. Est-ce que le décor actuel<br>vous convient ?
+0215:Au fait Ôgami ? Vous n'aimeriez<br>pas un petit changement de<br>décor ?
+0216:Voulez-vous encore changer le<br>décor, Ôgami ?
+# CHOISE => 218 => 220
+0217:Changer le décor ?<br>Ne pas le changer ?
+# RESULT <= 217
+0218:Je pense que j'aimerais le<br>changer.
+0219:Très bien, Monsieur l'indécis. Quel<br>décor souhaitez-vous ?
+# RESULT <= 217
+0220:Merci, mais je vais m'en tenir à<br>mon décor actuel pour le<br>moment.
+0221:Pas de problème. Revenez me voir<br>si jamais vous avez envie de le<br>changer.
+0222:Bonjour, Ôgami. Vous appréciez<br>notre jour de congé ?
+0223:Oui, Madame. Je me détends et je<br>suis tranquille.
+0224:Parfait ! Dites, vous voulez faire<br>un quiz ?
+0225:Je vais vous poser dix questions,<br>et vous me donnez les bonnes<br>réponses.
+0226:Si vous répondez juste aux dix<br>questions, je vous direz un<br>secret...
+0227:Bonjour, Ôgami. Vous voulez<br>réessayer de répondre au quizz ?
+# CHOICE  => 230
+0228:Absolument !<br>Niveau avancé !<br>...Peut-être plus tard.
+0229:Absolument !<br>...Peut-être plus tard.
+0230:Absolument ! Je vais vous<br>montrer pourquoi j'étais en tête<br>de classe à l'académie militaire !
+0231:Très bien. Commençons !
+0232:Niveau avancé, s'il vous plaît !
+0233:Je vois. Donc, vous avez battu<br>Kohran à l'hanafuda, hein ?
+0234:Bien. Ces questions sont plus<br>dures. Répondez-y correctement<br>et je vous direz un secret.
+0235:Il y a dix questions au total.<br>Commençons !
+0236:...Bien joué, Ôgami ! Vous avez<br>bien répondu à toutes les<br>questions.
+0237:Alors, quel est ce secret dont<br>vous parliez, Ayame ?
+0238:Pas si vite. Ce n'était qu'un<br>échauffement.
+0239:Réussissez à répondre<br>correctement à une seconde salve<br>de questions plus difficile et<br>ensuite, je vous le direz.
+0240:Mince ! Je savais que ça avait l'air<br>trop simple.
+0241:Battez Kohran à l'hanafuda and<br>apportez-moi une photo comme<br>preuve. Ensuite, vous pourrez<br>tenter le niveau avancé.
+0242:Alors, Ôgami, vous voulez<br>continuer le quizz ?
+0243:Quel dommage ! Peut-être une<br>autre fois.
+0244:...Voulez-vous arrêter, Ôgami ?
+# CHOICE => 246 => 248
+0245:Continuer ?<br>Abandonner ?
+# RESULT <= 245
+0246:Je ne peux pas abandonner<br>maintenant ! Ce serait lâche !
+0247:Mmm... Bon esprit, Ôgami.<br>Commençons !
+# RESULT <= 245
+0248:J'abandonne. Ces questions sont<br>vraiment dures.
+0249:...Je vois. Très bien, revenez me<br>voir si vous voulez retenter votre<br>chance.
+0250:Bien joué, Ôgami ! Vous avez<br>remporté la manche des<br>questions avancées !
+0251:Votre intelligence et votre<br>ténacité sont excellentes.
+0252:Maintenant, comme promis, je<br>vais vous confiez le secret.
+0253:Venez avec moi au salon, Ôgami.
+0254:J'imagine que les questions<br>étaient trop difficiles pour vous.
+0255:...Voulez-vous arrêter, Ôgami ?
+# CHOICE => 257 => 260
+0256:Continuer ?<br>Abandonner ?
+# RESULT <= 256
+0257:Je ne peux pas abandonner<br>maintenant ! Ce serait lâche !
+0258:Bien dit, Ögami ! Si vous<br>réussissez aux questions de<br>niveau avancé, vous serez un<br>excellent Lieutenant !
+0259:Maintenant, prenez une profonde<br>respiration et préparez-vous !<br>Commençons !
+# RESULT <= 256
+0260:...J'abandonne. Ces questions<br>sont vraiment dures.
+0261:...Je vois. Peut-être devriez-vous<br>étudier un peu avant de vous<br>lancer dans le quizz.
+0262:Revenez me voir si vous voulez<br>retenter votre chance.
+0263:Que devrais-je faire maintenant ?
+0264:Entrez !
+0265:Ôgami... Vous allez déjà vous<br>coucher ?
+# CHOICE => 267 =>
+0266:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+# RESULT <= 266
+0267:Non, bien sûr que non ! Il est<br>encore tôt.
+0268:Oh, très bien ! Pendant un court<br>instant, je me suis inquiétée.
+0269:Eh bien, continuez de vous<br>amuser ! On se voit plus tard.
+0270:Où devrais-je aller maintenant ?
+0271:Je pensais que je ferai bien une<br>petite sieste...
+0272:Je vois. C'est un jour parfait pour<br>une sieste.
+0273:Venez me voir ensuite, d'accord ?
+# RESULT <=  266
+0274:Mince, je suis vraiment fatigué...
+0275:J'espère que je vais *baille* faire<br>de beaux rêves...
+0276:Oui. Je suis épuisé...
+0277:Oh... Bonne nuit, alors.
+0278:Demain est un autre jour très<br>chargé, Ôgami. Faisons de notre<br>mieux.
+0279:Ce serait génial si l'on pouvait se<br>rencontrer dans vos rêves...
+0280:Pardonnez-moi, Lieutenant...<br>Allez-vous déjà vous coucher ?
+# CHOICE: => 0282 => 0286 => 0295
+0281:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+# RESULT: <= 0281
+0282:Non, bien sûr que non ! Il est<br>encore tôt.
+0283:Alors, ça va. Pendant un court<br>instant, je me suis inquiétée.
+0284:Nous avons rarement un jour de<br>congé, Lieutenant. Essayez<br>vraiment d'en profiter.
+0285:Très bien, je vais flâner encore un<br>peu.
+# RESULT: <= 0281
+0286:Je pensais faire une petite<br>sieste...
+0287:En effet... C'est une belle journée<br>pour faire une sieste.
+0288:Venez me voir ensuite.
+0289:Mince, je suis vraiment fatigué...
+0290:J'espère que je vais *baille* faire<br>de beaux rêves...
+0291:Oui. Je suis épuisé...
+0292:Oh... Je vous souhaite donc bonne<br>nuit, Lieutenant.
+0293:...Je vous verrai dans mes rêves.
+0294:Lieutenant, vous allez déjà au lit ?
+# CHOICE: => 0296 => 0301 => 0309
+# RESULT: <= 0281
+0295:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+# RESULT: <= 0295
+0296:Non, bien sûr que non ! Il est<br>encore tôt.
+0297:Je suis heureuse d'entendre ça.<br>On ne sait jamais quand nous<br>pourrions être appelés au<br>combat.
+0298:Donc c'est important de s'amuser<br>quand on le peut.
+0299:Hum ! Excusez-moi, s'il vous<br>plaît.
+0300:Où devrais-je aller maintenant ?
+# RESULT: <= 0295
+0301:Je pensais faire une petite<br>sieste...
+0302:Oh ? Hé bien, faites donc.
+0303:Mince, je suis vraiment fatigué...
+0304:J'espère que je vais *baille* faire<br>de beaux rêves...
+0305:Oui. Je suis épuisé...
+0306:Je vois...
+0307:Reposez-vous bien, Lieutenant.<br>Demain, nous avons une journée<br>chargée.
+0308:Chef, ne me dites pas que vous<br>êtes déjà fatigué ?
+# RESULT: <= 0295
+0309:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+0310:Non, bien sûr que non ! Il est<br>encore tôt.
+0311:Vous avez bien raison ! La clef<br>d'une vie heureuse, c'est de la<br>bonne nourriture, un bon sommeil<br>et de bons divertissements !
+0312:Je serai dans ma chambre. Passez<br>me voir, Chef. A plus tard !
+0313:Où devrais-je aller maintenant ?
+0314:Je pensais que je ferai bien une<br>petite sieste...
+0315:Ah... Ce n'est pas une mauvaise<br>idée. Je crois que je vais en faire<br>une aussi !
+0316:A plus tard, Chef !
+0317:Mince, je suis vraiment fatigué...
+0318:J'espère que je vais *baille* faire<br>de beaux rêves...
+0319:Oui. Je suis épuisé...
+0320:Oh... On se voit demain, alors.
+0321:Bonne nuit, Lieutenant.
+0322:Monsieur Ôgami, vous allez déjà<br>vous coucher ?
+0323:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+0324:Non, bien sûr que non ! Il est<br>encore tôt.
+0325:Ouais ! J'étais inquiète pendant<br>un instant.
+0326:Je serai dans ma chambre, donc<br>venez jouer avec moi, d'accord ?
+0327:Où devrais-je aller maintenant ?
+0328:Je pensais que je ferai bien une<br>petite sieste...
+0329:Roh... D'accord. Venez me voir<br>après votre sieste, alors !
+0330:A plus !
+0331:Mince, je suis vraiment fatigué...
+0332:J'espère que je vais *baille* faire<br>de beaux rêves...
+0333:Oui. Je suis épuisé...
+0334:Vraiment !? Vous êtes si<br>ennuyeux !
+0335:Très bien ! Mais tu devras jouer<br>avec moi durant le prochain jour<br>de congé !
+0336:Ôgami, vous êtes déjà fatigué ?
+0337:Non, bien sûr que non !<br>Je pensais faire une sieste.<br>Evidemment que je vais dormir.
+0338:Non, bien sûr que non ! Il est<br>encore tôt.
+0339:C'est ce que je voulais entendre !<br>Le soleil n'est pas encore couché<br>!
+0340:Je serai dans ma chambre ! Venez<br>me rendre visite, d'accord ?
+0341:Où devrais-je aller maintenant ?
+0342:Je pensais que je ferai bien une<br>petite sieste...
+0343:Une sieste, hein ? Venez me voir<br>après votre sieste, d'accord ?
+0344:Mince, je suis vraiment fatigué...
+0345:J'espère que je vais *baille* faire<br>de beaux rêves...
+0346:Oui. Je suis épuisé...
+0347:Vraiment ? Vous êtes vraiment un<br>rabat-joie...
+0348:Je suppose que ce n'est que<br>partie remise pour notre prochain<br>jour de congé.
+0349:Bonne nuit, Ôgami.
+0350:Oh, Ôgami...
+0351:Bonjour, Sakura. Je suis venu<br>pour passer du temps avec toi.
+0352:...Je crains que je ne sois un petit<br>peu occupé pour le moment.
+0353:Je viens de recevoir le texte de<br>notre prochaine pièce.
+0354:et je dois me concentrer sur sa<br>lecture. Je suis vraiment désolé.
+0355:Oh ? C'est vraiment dommage.
+0356:Mais le travail passe en premier.<br>Je reviendrai plus tard.
+0357:Désolé ! Je vous promets que<br>vous pourrez m'aider à nettoyer<br>la prochaine fois.
+0358:Hum ! C'est moi...
+0359:Désolé, mais je suis occupé à<br>relire le texte pour le moment.
+0360:Oh... D'accord. J'arrête de<br>t'embêter.
+0361:(Je devrais essayer de frapper à la<br>porte d'une autre chambre).
+0362:Bonjour, Sakura.
+0363:Oh ! Bonjour, Ôgami.
+0364:Il n'y a pas de représentation<br>aujoud'hui, alors je vais nettoyer<br>la scène et la grande salle des<br>accessoires.
+0365:Je déteste demandais, mais<br>pourriez-vous me donner un coup<br>de main ?
+0366:Bonjour, Sakura.
+0367:Ôgami... Je suis heureuse que<br>vous soyez venu.
+0368:Ecoutez, j'ai une faveur à vous<br>demander...
+0369:Il n'y a pas de représentation<br>aujoud'hui, alors je vais nettoyer<br>la scène et la grande salle des<br>accessoires.
+0370:Pourriez-vous m'aider ?
+0371:Oh, Ôgami ! Pourriez-vous encore<br>m'aider à nettoyer la grande salle<br>des accessoires ?
+# CHOICE
+0372:Bien sûr que je vais t'aider !<br>Peut-être plus tard.
+# CHOICE
+0373:L'aider à nettoyer ?<br>La regarder ?<br>Aller dans une autre chambre ?
+0374:
+0375:
+0376:
+0377:
+0378:
+0379:
+0380:
+0381:
+0382:
+0383:
+0384:
+0385:
+0386:
+0387:
+0388:
+0389:
+0390:
+0391:
+0392:
+0393:
+0394:
+0395:
+0396:
+0397:
+0398:
+0399:
+0400:
+0401:
+0402:
+0403:
+0404:
+0405:
+0406:
+0407:
+0408:
+0409:
+0410:
+0411:
+0412:
+0413:
+0414:
+0415:
+0416:
+0417:
+0418:
+0419:
+0420:
+0421:
+0422:
+0423:
+0424:
+0425:
+0426:
+0427:
+0428:
+0429:
+0430:
+0431:
+0432:
+0433:
+0434:
+0435:
+0436:
+0437:
+0438:
+0439:
+0440:
+0441:
+0442:
+0443:
+0444:
+0445:
+0446:
+0447:
+0448:
+0449:
+0450:
+0451:
+0452:
+0453:
+0454:
+0455:
+0456:
+0457:
+0458:
+0459:
+0460:
+0461:
+0462:
+0463:
+0464:
+0465:
+0466:
+0467:
+0468:
+0469:
+0470:
+0471:
+0472:
+0473:
+0474:
+0475:
+0476:
+0477:
+0478:
+0479:
+0480:
+0481:
+0482:
+0483:
+0484:
+0485:
+0486:
+0487:
+0488:
+0489:
+0490:
+0491:
+0492:
+0493:
+0494:
+0495:
+0496:
+0497:
+0498:
+0499:
+0500:
+0501:
+0502:
+0503:
+0504:
+0505:
+0506:
+0507:
+0508:
+0509:
+0510:
+0511:
+0512:
+0513:
+0514:
+0515:
+0516:
+0517:
+0518:
+0519:
+0520:
+0521:
+0522:
+0523:
+0524:
+0525:
+0526:
+0527:
+0528:
+0529:
+0530:
+0531:
+0532:
+0533:
+0534:
+0535:
+0536:
+0537:
+0538:
+0539:
+0540:
+0541:
+0542:
+0543:
+0544:
+0545:
+0546:
+0547:
+0548:
+0549:
+0550:
+0551:
+0552:
+0553:
+0554:
+0555:
+0556:
+0557:
+0558:
+0559:
+0560:
+0561:
+0562:
+0563:
+0564:
+0565:
+0566:
+0567:
+0568:
+0569:
+0570:
+0571:
+0572:
+0573:
+0574:
+0575:
+0576:
+0577:
+0578:
+0579:
+0580:
+0581:
+0582:
+0583:
+0584:
+0585:
+0586:
+0587:
+0588:
+0589:
+0590:
+0591:
+0592:
+0593:
+0594:
+0595:
+0596:
+0597:
+0598:
+0599:
+0600:
+0601:
+0602:
+0603:
+0604:
+0605:
+0606:
+0607:
+0608:
+0609:
+0610:
+0611:
+0612:
+0613:
+0614:
+0615:
+0616:
+0617:
+0618:
+0619:
+0620:
+0621:
+0622:
+0623:
+0624:
+0625:
+0626:
+0627:
+0628:
+0629:
+0630:
+0631:
+0632:
+0633:
+0634:
+0635:
+0636:
+0637:
+0638:
+0639:
+0640:
+0641:
+0642:
+0643:
+0644:
+0645:
+0646:
+0647:
+0648:
+0649:
+0650:
+0651:
+0652:
+0653:
+0654:
+0655:
+0656:
+0657:
+0658:
+0659:
+0660:
+0661:
+0662:
+0663:
+0664:
+0665:
+0666:
+0667:
+0668:
+0669:
+0670:
+0671:
+0672:
+0673:
+0674:
+0675:
+0676:
+0677:
+0678:
+0679:

@@ -1,0 +1,142 @@
+0001:C'est un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense...
+0002:C'est un cliché de Sumire. Voilà<br>un aspect d'elle que je ne<br>connaissais pas.
+0003:C'est un cliché de Maria. Elle<br>semble pensive, voire un peu<br>triste...
+0004:Un cliché de Kanna. Sa force<br>caractéristique ressort vraiment.
+0005:Un cliché d'Iris. Elle est entourée<br>de fleurs et affiche un sourire<br>radieux.
+0006:Un cliché de Kohran. Son visage<br>teint en rouge par le coucher de<br>soleil rend son profil encore plus<br>joli.
+0007:Une lettre qui m'a été donnée par<br>un client. On m'a demandé de la<br>remettre à Sumire. J'ai un<br>mauvais pressentiment...
+0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici...
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Un joli pendentif. Il a été<br>raffinement travaillé.
+0011:Une épingle à cheveux à utiliser<br>pour une coiffure traditionnelle<br>en chignon. Elle compléterait<br>bien une tenue de soirée.
+0012:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0013:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0014:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont un<br>motif très élégant.
+0015:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0016:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle. Une<br>pièce de ménagère tout à fait<br>ordinaire.
+0017:Une épée et un bouclier fait pour<br>être utilisés sur scène. Ils sont<br>bien faits et ressemblent à de<br>vrais armes.
+0018:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+# OVERFLOW
+0019:Une perruque et un costume<br>utilisés pour la scène. Je me<br>demande quel genre d'acte<br>pourrait justifier une tenue aussi<br>flashy ?
+0020:Un cliché de Sakura en maillot de<br>bain. Wow, c'est vraiment<br>quelque chose... Je vais le garder<br>précieusement.
+0021:Un cliché de Sumire dans son<br>costume pour la scène. Son<br>maquillage distinctif fait vraiment<br>de l'effet.
+0022:C'est un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". C'est une belle<br>femme déguisée en homme.
+0023:Un cliché de Kanna dans sa tenue<br>d'entraînement. La photographier<br>dans un moment privé comme<br>celui-ci est vraiment intime.
+0024:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser. Comme<br>c'est mignon.
+0025:Un cliché de Kohran. Je n'ai pas<br>souvent l'occasion de la voir avec<br>ses tresses détachées. C'est très<br>joli aussi comme ça aussi.
+# OVERFLOW
+0026:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle sera toujours aussi<br>heureuse et satisfaite qu'elle le<br>laisse paraître ici.
+0027:Le pistolet d'Ayame. Pourquoi... ?<br>Pourquoi fallait-il que ça se passe<br>comme ça... ?
+0028:Jean-Paul l'ours en peluche. Le<br>meilleur ami d'Iris. Elle le porte<br>toujours sur elle et prend bien<br>soin de lui.
+0029:Fiou... C'était une bataille très<br>difficile aujourd'hui.
+0030:Mais... Sumire et Kanna, vous<br>vous êtes bien battues toutes les<br>deux.
+0031:Tout est bien qui finit bien<br>maintenant que vous vous êtes<br>réconciliés toutes les deux.
+0032:Aaah... Qu'est-ce que j'ai fait pour<br>mériter ça ? Mon estomac hurle à<br>la mort.
+0033:M-merci. On dirait bien que<br>Sakura l'a chassé, mais...
+0034:Oooh... Mon estomac. Oooooooh...<br>Est-ce que quelqu'un peut<br>m'aider ?
+0035:Non utilisé
+0036:Non utilisé
+0037:Non utilisé
+0038:Non utilisé
+0039:Non utilisé
+0040:Non utilisé
+0041:Non utilisé
+0042:Non utilisé
+0043:Non utilisé
+0044:Non utilisé
+0045:Non utilisé
+0046:Non utilisé
+0047:Non utilisé
+0048:Non utilisé
+0049:Non utilisé
+0050:Non utilisé
+0051:Non utilisé
+0052:Non utilisé
+0053:Non utilisé
+0054:Non utilisé
+0055:Non utilisé
+0056:Non utilisé
+0057:Non utilisé
+0058:Non utilisé
+0059:Non utilisé
+0060:Non utilisé
+0061:Non utilisé
+0062:Non utilisé
+0063:Non utilisé
+0064:Non utilisé
+0065:Non utilisé
+0066:Non utilisé
+0067:Non utilisé
+0068:Non utilisé
+0069:Non utilisé
+0070:Non utilisé
+0071:Non utilisé
+0072:Non utilisé
+0073:Non utilisé
+0074:Non utilisé
+0075:Non utilisé
+0076:Non utilisé
+0077:Non utilisé
+0078:Non utilisé
+0079:Non utilisé
+0080:Non utilisé
+0081:Non utilisé
+0082:Non utilisé
+0083:Non utilisé
+0084:Non utilisé
+0085:Non utilisé
+0086:Sumire...
+0087:Qu'y a-t-il ?
+0088:Tu... C'est toi qui l'as fait, en<br>quelque sorte.
+0089:C'est aussi grâce à toi ! Même si<br>tu n'a pas été aussi efficace que<br>moi...
+0090:Pfff... Fais gaffe à ce que tu dis,<br>tête de linotte !
+0091:Non utilisé
+0092:C'est pas bon ! Il faut que je<br>l'aide ! Aaah !
+0093:Vous allez bien Capitaine ?
+0094:Ça serait très gentil de votre part<br>si vous le laissiez tranquille !<br>C'est à moi de lui apporter une<br>attention toute particulière.
+0095:Comme si tu pouvais te soucier et<br>t'occuper des autres !
+0096:Je peux dire la même chose de toi<br>!
+0097:Franchement, me faire traiter de<br>la sorte par quelqu'un comme<br>toi... Ohohoh, cela me rend<br>malade rien que d'y penser.
+0098:C'est quoi ton problème ?!
+0099:Non, TOI qu'est-ce que tu as<br>contre moi ?!
+0100:Non utilisé
+0101:Non utilisé
+0102:Non utilisé
+0103:Non utilisé
+0104:Eheheh, bientôt, le banquet des<br>idiots va commencer...
+0105:Non utilisé
+0106:Non utilisé
+0107:Non utilisé
+0108:Non utilisé
+0109:Non utilisé
+0110:Non utilisé
+0111:Non utilisé
+0112:Non utilisé
+0113:Non utilisé
+0114:Non utilisé
+0115:Non utilisé
+0116:Non utilisé
+0117:Non utilisé
+0118:Non utilisé
+0119:Non utilisé
+0120:Non utilisé
+0121:Non utilisé
+0122:Non utilisé
+0123:Non utilisé
+0124:Bref, Sumire... tu n'as pas été<br>mordue par une araignée ?
+0125:Aaah ! J'avais complètement<br>oublié ! Nous devons vite rentrer<br>et traiter la blessure, s-sinon le<br>venin va... !
+0126:Attendez... en parlant de ça... tu<br>n'as pas aussi été mordu par un<br>serpent, Kanna ?
+0127:Hein ? Aaaah ! Moi aussi j'avais<br>complètement oublié ! C'est pas<br>bon ça !
+0128:Laissez-moi faire, j'm'en charge !<br>Par chance j'ai avec moi un<br>détecteur de poison !
+0129:... Pourquoi Kohran a toujours<br>tout ce qu'il faut sur elle, même<br>les choses les plus incongrues ?
+0130:Il suffit juste d'approcher le<br>détecteur près de la blessure... et<br>d'attendre le résultat.
+0131:Vous n'avez pas l'air infectées<br>toutes les deux ! Pas de venin de<br>serpent, pas de venin d'araignée,<br>aucune réaction corporelle !
+0132:Je le savais ! Oh Oh Oh. Comme si<br>moi, Sumire Kanzaki, j'allais me<br>faire avoir par une simple bête.<br>Aucune chance !
+0133:Sérieusement, si tu le savais,<br>alors pourquoi tu paniquais<br>autant ?
+0134:Aaah. On dirait bien que le duo<br>est de retour.
+0135:C'est dans l'ordre des choses, je<br>suppose. Mais elles se chamaillent<br>toujours comme de bonnes amies,<br>si je peux me permettre.
+0136:En fait, je pense qu'elles sont sur<br>la même longueur d'onde.
+0137:Elles ont toutes les deux<br>combattu l'Antre des ténèbres,<br>c'est suffisant non ?
+0138:Non utilisé
+0139:Non utilisé
+0140:Non utilisé

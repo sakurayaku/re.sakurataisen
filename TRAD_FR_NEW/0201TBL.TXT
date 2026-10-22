@@ -1,0 +1,260 @@
+0001:Un cliché de Sakura. Elle regarde<br>intensément l'objectif. Je me<br>demande à quoi elle pense...
+0002:Un cliché de Sumire. Voilà un<br>aspect d'elle que je ne<br>connaissais pas.
+0003:Un cliché de Maria. Elle semble<br>pensive, voire un peu triste...
+0004:Un cliché de Kanna. Elle semble<br>énergique et sûre d'elle. J'ai hâte<br>de la rencontrer.
+0005:Un cliché d'Iris. Un iris mis en<br>valeur par les autres fleurs qui<br>l'entourent.
+0006:Un cliché de Kohran. Les<br>vêtements traditionnels lui siéent<br>bien. Je me demande quel genre<br>de personne elle est.
+0007:Un simple pli déposé par un<br>visiteur que je devais transmettre<br>à Sumire... Hmm.
+0008:Le pistolet de Maria. Vais-je<br>trouver un moyen de m'en servir<br>pour m'enfuir ?
+0009:Un très beau peigne ornemental<br>en forme de fleur.
+0010:Un joli pendentif. Le travail<br>méticuleux de l'artisan est<br>ravissant.
+0011:Une épingle à cheveux. Elle irait<br>bien avec une tenue<br>traditionnelle japonaise, pour<br>tenir un chignon.
+0012:Avec cette clef, je vais pouvoir<br>me rendre dans des endroits<br>inaccessibles jusqu'alors.
+0013:Je l'ai trouvé(e) dans une<br>chambre du deuxième étage.<br>Avec, je devrais accéder aux<br>coulisses.
+0014:C'est le verre demandé par Iris. Il<br>est plutôt raffiné.
+0015:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est plutôt colorée.
+0016:C'est le couteau demandé par<br>Iris. Une pièce de ménagère tout<br>à fait ordinaire.
+0017:Un bouclier et une épée factices<br>utilisés sur scène. Malgré tout, les<br>détails en sont finement<br>travaillés.
+0018:Une copie de couronne utilisée<br>sur scène. Ses détails sont<br>finement ouvragés.
+0019:Une perruque utilisée sur scène.<br>Je me demande bien quel genre<br>de pièce nécessite un accessoire<br>aussi criard.
+0020:Un cliché de Sakura en tenue de<br>bain ? D'où vient-il... Je ne peux<br>décemment pas laisser quelqu'un<br>d'autre le voir.
+0021:Sumire en tenue de scène. Son<br>maquillage est très<br>impressionnant.
+# OVERFLOW
+0022:Un cliché de Maria sur scène,<br>dans le costume militaire de<br>"Pour l'amour de..."... Ainsi<br>vêtue, on dirait vraiment un<br>homme.
+0023:Un cliché de répétition, c'est<br>assez rare. Une ambiance intime<br>s'en dégage.
+0024:Iris en tenue de bain. Sa façon de<br>se cramponner à sa bouée, c'est<br>trop mignon !
+0025:Kohran en tenue de soubrette.<br>Elle a défait ses tresses et laché<br>ses cheveux, ce qui lui va très<br>bien aussi.
+0026:Ayame en kimono. J'aimerais la<br>voir sourire ainsi plus souvent.
+0027:C'est le pistolet d'Ayame. Que<br>pourrais-je bien en faire...
+0028:C'est Jean-Paul, l'ours en peluche<br>d'Iris. Elle l'aime vraiment<br>beaucoup.
+0029:Pfiou... La pièce va bientôt<br>débuter. Préparez vos tickets.
+0030:Pourtant... Je ne m'attendais pas<br>à devenir un jour poinçonneur.
+0031:Bonsoir Lieutenant, et merci pour<br>votre aide.
+0032:Bonsoir, Sumire. Qu'y a-t-il ?
+0033:Une nouvelle recrue doit arriver<br>aujourd'hui.
+0034:La pièce débute bientôt alors je<br>suis venue aux nouvelles, mais il<br>semblerait qu'elle ne soit pas<br>encore là.
+
+# CHOICE => 036 => 042 => 049
+0035:Comment s'appelle-t-elle ?<br>Comment est-elle ?<br>Mignonne ?
+
+# RESULT <= 035
+0036:Comment s'appelle-t-elle ?
+0037:Kohran Li. Cependant, tout le<br>monde l'appelle Kohran.
+0038:Kohran... Li ?
+0039:C'est cela. Bien qu'elle soit née en<br>Chine, elle parle avec un accent<br>du Kansai.
+0040:Je vois...
+0041:Mince, c'est l'heure ! Je dois y<br>aller, je suis attendue sur scène.
+
+# RESULT <= 035
+0042:Oh ! Quel genre de personne<br>est-ce ?
+0043:Elle a un étrange accent du<br>Kansai.Il semblerait qu'elle ait un<br>talent inventif et aime bricoler<br>divers engins.
+0044:Avant d'être mutée ici, elle<br>travaillait pour la division du Parc<br>Hanayashiki.
+0045:La division du Parc Hanayashiki ?
+# OVERFLOW
+0046:Oui. C'est une division de la<br>Troupe d'Assaut Impériale, basée<br>à Asakusa. Le parc d'attractions<br>leur permet de dissimuler leurs<br>activités.
+0047:Hmmm...
+0048:Mince, c'est l'heure ! Je dois y<br>aller, je suis attendue sur scène.
+
+# RESULT <= 035
+0049:Je vois... Et elle est mignonne ?
+0050:Je vous laisserai en juger par<br>vous-même. Maintenant, si vous<br>voulez bien m'excuser !
+0051:Sumire... Quelle mouche l'a<br>piquée ?
+0052:Lieutenant, qu'avez-vous fait ?<br>Quelle négligence...
+0053:Oh... Pardon, j'étais perdu dans<br>mes pensées...
+0054:Dans vos pensées ? Et à quel<br>sujet, je vous prie ?
+
+# CHOICE => 056 => 061 => 065
+0055:À la nouvelle recrue. \n Au<br>poinçonnage de tickets. \n Au<br>dîner de ce soir.
+
+# RESULT <= 055
+0056:Non... Je pensais à la nouvelle<br>recrue.
+0057:Evidemment, j'imagine qu'en tant<br>que Sous-lieutenant de la<br>Brigade, vous vous demandez<br>quel genre de recrue elle est.
+0058:Vous commencez à être à la<br>hauteur de vos responsabilités,<br>Lieutenant Ôgami.
+0059:Hahaha, merci.
+0060:Mince, c'est l'heure ! Je dois y<br>aller, je suis attendue sur scène.
+
+# RESULT <= 055
+0061:Je pensais à ce travail et à quel<br>point il était déplaisant de<br>poinçonner des tickets...
+0062:Ah... Bien que je ne puisse<br>qu'imaginer ce que vous<br>ressentez, Lieutenant...
+0063:... je suis bien trop occupée pour<br>en discuter avec vous maintenant<br>! Si vous voulez bien m'excuser.
+0064:Ah... J'aurais peut-être dû garder<br>mes réflexions pour moi.
+
+# RESULT <= 055
+0065:Ah, je pensais juste au dîner de<br>ce soir.
+0066:Pardon ?! Comment osez-vous<br>m'entretenir d'un sujet si trivial ?
+0067:Je suis profondément outrée !<br>Maintenant, si vous me permettez<br>!
+0068:*soupir*... J'aurais sans doute dû<br>ne rien dire.
+0069:... Lieutenant ? Vous sembliez<br>ailleurs... Est-ce que ça va ?
+0070:... Oh, désolé. J'étais de nouveau<br>perdu dans mes pensées...
+0071:Lieutenant... Allons, ce n'est pas<br>si simple.
+0072:En tant que capitaine de la<br>Brigade des Fleurs, vous devez<br>rester sur le qui-vive.
+0073:Dé-Désolé...
+0074:Maintenant, si vous me<br>permettez, mais je suis attendue<br>sur scène.
+0075:Je vois... Ainsi, notre brigade<br>accueille une nouvelle recrue...
+0076:A priori elle a déjà travaillé ici...<br>Je me demande comment elle est<br>?
+0077:
+0078:
+0079:
+0080:
+0081:
+0082:
+0083:
+0084:
+0085:
+0086:
+0087:
+0088:
+0089:
+0090:
+0091:
+0092:
+0093:
+0094:
+0095:
+0096:
+0097:
+0098:
+0099:
+0100:
+0101:
+0102:
+0103:
+0104:
+0105:
+0106:
+0107:
+0108:
+0109:
+0110:
+0111:
+0112:
+0113:
+0114:
+0115:
+0116:
+0117:
+0118:
+0119:
+0120:
+0121:
+0122:
+0123:
+0124:
+0125:
+0126:
+0127:
+0128:
+0129:
+0130:
+0131:
+0132:
+0133:
+0134:
+0135:
+0136:
+0137:
+0138:
+0139:
+0140:
+0141:
+0142:
+0143:
+0144:
+0145:
+0146:
+0147:
+0148:
+0149:Non utilisé
+0150:
+0151:
+0152:
+0153:Non utilisé
+0154:Non utilisé
+0155:
+0156:
+0157:
+0158:
+0159:
+0160:
+0161:
+0162:
+0163:
+0164:
+0165:
+0166:
+0167:Non utilisé
+0168:Non utilisé
+0169:Non utilisé
+0170:Non utilisé
+0171:Non utilisé
+0172:Non utilisé
+0173:Non utilisé
+0174:Non utilisé
+0175:Non utilisé
+0176:Non utilisé
+0177:Non utilisé
+0178:Non utilisé
+0179:Non utilisé
+0180:Non utilisé
+0181:Non utilisé
+0182:Non utilisé
+0183:Non utilisé
+0184:Non utilisé
+0185:Non utilisé
+0186:Non utilisé
+0187:Non utilisé
+0188:Non utilisé
+0189:Non utilisé
+0190:Non utilisé
+0191:Non utilisé
+0192:Non utilisé
+0193:Non utilisé
+0194:Non utilisé
+0195:Non utilisé
+0196:Non utilisé
+0197:Non utilisé
+0198:Non utilisé
+0199:Non utilisé
+0200:Non utilisé
+0201:Non utilisé
+0202:Non utilisé
+0203:Non utilisé
+0204:Non utilisé
+0205:Non utilisé
+0206:Non utilisé
+0207:Non utilisé
+0208:Non utilisé
+0209:Non utilisé
+0210:Non utilisé
+0211:Non utilisé
+0212:Non utilisé
+0213:Non utilisé
+0214:Non utilisé
+0215:Non utilisé
+0216:Non utilisé
+0217:Non utilisé
+0218:Non utilisé
+0219:Non utilisé
+0220:
+0221:
+0222:Non utilisé
+0223:Non utilisé
+0224:Non utilisé
+0225:Non utilisé
+0226:Non utilisé
+0227:Non utilisé
+0228:Non utilisé
+0229:Non utilisé
+0230:Non utilisé
+0231:Non utilisé
+0232:Non utilisé
+0233:Non utilisé
+0234:Non utilisé
+0235:Non utilisé
+0236:Non utilisé
+0237:Non utilisé
+0238:Non utilisé
+0239:Non utilisé
+0240:Non utilisé
+0241:Non utilisé
+0242:Non utilisé
