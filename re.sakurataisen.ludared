@@ -1816,22 +1816,6 @@
                 "SAKURA1/0100KNJ.BIN"
               ],
               "decodes": {
-                "SAKURA1/TITLE1.BIN": [
-                  {
-                    "name": "TITLE.bmp",
-                    "codec": {
-                      "id": "scripts/title.lua",
-                      "version": 1
-                    },
-                    "outputs": [
-                      "TITLE.bmp"
-                    ],
-                    "overrides": [
-                      "TITLE.bmp"
-                    ],
-                    "decodes": {}
-                  }
-                ],
                 "SAKURA1/0100TBL.BIN": [
                   {
                     "name": "0100TBL.TXT",
@@ -1863,7 +1847,8 @@
                     "name": "palette",
                     "codec": {
                       "id": "scripts/SAKURA/patch_font_palette.lua",
-                      "version": 1
+                      "version": 1,
+                      "args": "cd=1"
                     },
                     "outputs": [],
                     "decodes": {}
@@ -1875,6 +1860,52 @@
                       "version": 2
                     },
                     "outputs": [],
+                    "decodes": {}
+                  },
+                  {
+                    "name": "options",
+                    "codec": {
+                      "id": "scripts/options_menu_gfx.lua",
+                      "version": 3
+                    },
+                    "outputs": [
+                      "OPTIONS/CURSOR_SPEED.bmp",
+                      "OPTIONS/SOUND.bmp",
+                      "OPTIONS/VOICE.bmp",
+                      "OPTIONS/CONTROLS.bmp",
+                      "OPTIONS/EXIT.bmp",
+                      "OPTIONS/BACKGROUND.bmp",
+                      "OPTIONS/BRACKET_LEFT.bmp",
+                      "OPTIONS/BRACKET_RIGHT.bmp",
+                      "OPTIONS/BRACKET_POSITIONS.json"
+                    ],
+                    "overrides": [
+                      "OPTIONS/CURSOR_SPEED.bmp",
+                      "OPTIONS/SOUND.bmp",
+                      "OPTIONS/VOICE.bmp",
+                      "OPTIONS/CONTROLS.bmp",
+                      "OPTIONS/EXIT.bmp",
+                      "OPTIONS/BACKGROUND.bmp",
+                      "OPTIONS/BRACKET_LEFT.bmp",
+                      "OPTIONS/BRACKET_RIGHT.bmp",
+                      "OPTIONS/BRACKET_POSITIONS.json"
+                    ],
+                    "decodes": {}
+                  }
+                ],
+                "SAKURA1/TITLE1.BIN": [
+                  {
+                    "name": "TITLE.bmp",
+                    "codec": {
+                      "id": "scripts/title.lua",
+                      "version": 1
+                    },
+                    "outputs": [
+                      "TITLE.bmp"
+                    ],
+                    "overrides": [
+                      "TITLE.bmp"
+                    ],
                     "decodes": {}
                   }
                 ],
@@ -1923,6 +1954,32 @@
                       "SUBTITLES/14.bmp",
                       "SUBTITLES/15.bmp",
                       "SUBTITLES/16.bmp"
+                    ],
+                    "decodes": {}
+                  },
+                  {
+                    "name": "MAINMENU",
+                    "codec": {
+                      "id": "scripts/main_menu_gfx.lua",
+                      "version": 3
+                    },
+                    "outputs": [
+                      "MAINMENU/00_NEW_GAME.bmp",
+                      "MAINMENU/01_OPTIONS.bmp",
+                      "MAINMENU/02_CONTINUE.bmp",
+                      "MAINMENU/03_RESUME.bmp",
+                      "MAINMENU/04_THEATER.bmp",
+                      "MAINMENU/05_BATTLE_TRIAL.bmp",
+                      "MAINMENU/BG.bmp"
+                    ],
+                    "overrides": [
+                      "MAINMENU/BG.bmp",
+                      "MAINMENU/00_NEW_GAME.bmp",
+                      "MAINMENU/01_OPTIONS.bmp",
+                      "MAINMENU/02_CONTINUE.bmp",
+                      "MAINMENU/03_RESUME.bmp",
+                      "MAINMENU/04_THEATER.bmp",
+                      "MAINMENU/05_BATTLE_TRIAL.bmp"
                     ],
                     "decodes": {}
                   }

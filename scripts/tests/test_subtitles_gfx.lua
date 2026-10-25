@@ -1,20 +1,11 @@
 --[[
   Test harness for subtitles_gfx.lua
 
-  Run from the project root: lua scripts/shared/test_subtitles_gfx.lua
+  Run from the project root: ludared codecs test tests/test_subtitles_gfx.lua
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
-  end
-  return "."
-end
-
-local dir = script_dir()
-local prs = dofile(dir .. "/prs.lua")
-local codec = dofile(dir .. "/../subtitles_gfx.lua")
+local prs = LUDARED.codec("std/sega/compression/prs")
+local codec = dofile(LUDARED.SCRIPTS .. "/subtitles_gfx.lua")
 
 local pass, fail = 0, 0
 
@@ -93,7 +84,7 @@ local function make_palette()
 end
 
 local function make_logo(block)
-  local compressed = prs.compress(block)
+  local compressed = prs:encode("", { { name = "DECOMPRESSED", data = block } })
   assert(#compressed <= BLOCK_SIZE, "test fixture no longer fits the block")
   compressed = compressed .. string.rep("\x00", BLOCK_SIZE - #compressed)
 
@@ -225,7 +216,7 @@ check("encode keeps the file size", #patched == #logo)
 check("encode leaves the palette untouched",
   patched:sub(PAL_OFFSET + 1, PAL_OFFSET + 32) == palette)
 
-local new_block = prs.decompress(patched:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+local new_block = prs:decode(patched:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))[1].data
 -- replace the 4th byte of row 6
 local expected_block = block:sub(1, 6 * (w // 2) + 3) .. "\xF7" .. block:sub(6 * (w // 2) + 5)
 check("encode writes the edited pixels", new_block == expected_block,
@@ -282,8 +273,8 @@ local big_pixels = table.concat(big_rows)
 resized[2].data = make_bmp(BIG_W, BIG_H, big_pixels, bmp_fields(artifacts[1].data).pal)
 
 local resized_out = codec.encode(logo, resized)
-local resized_block = prs.decompress(
-  resized_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+local resized_block = prs:decode(
+  resized_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))[1].data
 local head = block:sub(1, 160 * 16 // 2)
 local tail = block:sub(160 * 16 // 2 + 112 * 16 // 2 + 1, #block - 112 * 16 // 2)
   .. string.rep("\x00", 8)
@@ -357,8 +348,8 @@ local anchored = with_stub(artifacts)
 anchored[2].data = make_bmp(120, 32, paint_span(120, 32, 0, 99),
   bmp_fields(artifacts[1].data).pal)
 local anchored_out = codec.encode(logo, anchored)
-local anchored_block = prs.decompress(
-  anchored_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+local anchored_block = prs:decode(
+  anchored_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))[1].data
 local s0, s1 = span_of(anchored_block:sub(1280 + 1, 1280 + 120 * 32 // 2), 120, 32)
 -- Art left-flush at canvas x = 0..99 stays exactly there: the canvas is what
 -- gets centred on screen, so the codec must pass the pixels through untouched.
@@ -372,8 +363,8 @@ local wide = with_stub(artifacts)
 wide[2].data = make_bmp(144, 32, paint_span(144, 32, 0, 111),
   bmp_fields(artifacts[1].data).pal)
 local wide_out = codec.encode(logo, wide)
-local wide_block = prs.decompress(
-  wide_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+local wide_block = prs:decode(
+  wide_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))[1].data
 local w0, w1 = span_of(wide_block:sub(1280 + 1, 1280 + 144 * 32 // 2), 144, 32)
 check("a canvas wider than the slot is written unchanged", w0 == 0 and w1 == 111,
   string.format("ink at %d..%d", w0, w1))
@@ -491,7 +482,7 @@ check("only the two transfer bytes change outside the image block",
     and safe_out:sub(DMA_OFFSET + 3, PRS_OFFSET) == logo:sub(DMA_OFFSET + 3, PRS_OFFSET)
     and safe_out:sub(PRS_OFFSET + BLOCK_SIZE + 1) == logo:sub(PRS_OFFSET + BLOCK_SIZE + 1))
 check("the raised pixels are what was asked for",
-  prs.decompress(safe_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))
+  prs:decode(safe_out:sub(PRS_OFFSET + 1, PRS_OFFSET + BLOCK_SIZE))[1].data
     :sub(1280 + 1, 1280 + 192 * 32 // 2) == paint_span(192, 32, 0, 191))
 check("re-encoding a raised build is a no-op",
   codec.encode(safe_out, grown, "grow_dma=safe") == safe_out)
@@ -541,4 +532,4 @@ check("decoding accepts a good argument and yields the same canvases",
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

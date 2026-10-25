@@ -90,19 +90,39 @@ codec.kind        = "patch"
 
 local LABEL = "font palette (ADV)"
 
+local function script_dir()
+  local src = debug.getinfo(1, "S").source
+  if src:sub(1, 1) == "@" then
+    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
+  end
+  return "."
+end
+
+local function load_shared(name)
+  if LUDARED and LUDARED.SCRIPTS then
+    return dofile(LUDARED.SCRIPTS .. "/shared/" .. name .. ".lua")
+  end
+  return dofile(script_dir() .. "/../shared/" .. name .. ".lua")
+end
+
+local palettes = load_shared("palettes")
+local args     = load_shared("args_parser")
+
 -- ---------------------------------------------------------------------------
 -- Palettes, as hex byte strings (Saturn BGR555, big endian per entry)
 -- ---------------------------------------------------------------------------
 
--- What the US 8x12 sheet needs: index 0 = 0x7FFF (white background), a grey
--- ramp, index 15 = 0x0C63 (near-black ink).
-local US_PALETTE = "7fff14a51ce72529294a318c35ad4210463152945ad65ef767396f7b77bd0c63"
+-- What the translated sheet needs: index 0 = 0x7FFF (white background), a grey
+-- ramp, index 15 = 0x0C63 (near-black ink).  Both sites get the same colours
+-- today; the two names keep the doors open for a separate choice palette.
+local I18N_DIALOGUE = palettes.hex("adv_dialogue_i18n")
+local I18N_LIPS     = palettes.hex("adv_lips_i18n")
 
 -- The Japanese dialogue palette: a grey ramp whose last entry is white.
-local JP_DIALOGUE = "7fff0842108418c62108294a318c39ce42104a5252945ad663186b5a739c7fff"
+local JP_DIALOGUE = palettes.hex("adv_dialogue_jp")
 
 -- The Japanese choice (LIPS) palette: pink, sharing the low half of the ramp.
-local JP_LIPS = "7fff08420842108418c62108294a318c39ce3dd041d245d449d64dd851da55dd"
+local JP_LIPS = palettes.hex("adv_lips_jp")
 
 local PALETTE_BYTES = 32
 local STRIDE        = 0x20  -- the two palettes are adjacent
@@ -113,13 +133,21 @@ local function bytes(hex)
   return table.concat(out)
 end
 
--- The two placements, as bases.  { base, base + STRIDE }.
-local PLACEMENTS = { 0x53954, 0x53A8C }
+-- The two placements, as bases.  { base, base + STRIDE }.  The offset shift is
+-- SakuraTaisen.cpp's: FixupSakura picks 0x53954 on disc 1 and 0x53A8C on disc 2,
+-- +0x138, and nothing in the file says which disc it came from -- hence the
+-- required `cd` argument instead of a guess.
+local PLACEMENTS = { ["1"] = 0x53954, ["2"] = 0x53A8C }
+local PLACEMENT_ORDER = { "1", "2" }
+
+local ARG_SPEC = {
+  cd = { values = { "1", "2" }, required = true },
+}
 
 local function sites_for(base)
   return {
-    { base,              bytes(JP_DIALOGUE), bytes(US_PALETTE), "dialogue text palette" },
-    { base + STRIDE,     bytes(JP_LIPS),     bytes(US_PALETTE), "choice (LIPS) text palette" },
+    { base,              bytes(JP_DIALOGUE), bytes(I18N_DIALOGUE), "dialogue text palette" },
+    { base + STRIDE,     bytes(JP_LIPS),     bytes(I18N_LIPS),     "choice (LIPS) text palette" },
   }
 end
 
@@ -159,24 +187,25 @@ end
 -- returns the better one.  score == 0 means no placement is this codec's
 -- business, and the site list is nil.
 local function detect(data)
-  local bestSites, bestScore
+  local bestSites, bestScore, bestDisc
   local scores = {}
 
-  for _, base in ipairs(PLACEMENTS) do
+  for _, disc in ipairs(PLACEMENT_ORDER) do
+    local base = PLACEMENTS[disc]
     local sites = sites_for(base)
     local score = 0
     for _, site in ipairs(sites) do
       if site_state(data, site) then score = score + 1 end
     end
-    scores[#scores + 1] = string.format("0x%06X %d/%d", base, score, #sites)
+    scores[#scores + 1] = string.format("cd=%s 0x%06X %d/%d", disc, base, score, #sites)
     if not bestScore or score > bestScore then
-      bestSites, bestScore = sites, score
+      bestSites, bestScore, bestDisc = sites, score, disc
     end
   end
 
   local detail = table.concat(scores, ", ")
   if bestScore == 0 then return nil, 0, detail end
-  return bestSites, bestScore, detail
+  return bestSites, bestScore, detail, bestDisc
 end
 
 local function apply(data, sites, stage)
@@ -198,15 +227,22 @@ local function apply(data, sites, stage)
   return out
 end
 
-local function fail(stage, data, sites, detail)
-  error(string.format("%s: %s: no placement holds both palettes (%s)\n%s",
-    LABEL, stage, detail, report(data, sites or sites_for(PLACEMENTS[1]))), 0)
+local function fail_disc(stage, data, sites, disc)
+  local _, _, detail, best = detect(data)
+  local hint
+  if best and best ~= disc then
+    hint = string.format("\n  the file looks like cd=%s; check the cd argument", best)
+  elseif not best then
+    hint = "\n  neither placement holds a known palette"
+  end
+  error(string.format(
+    "%s: %s: cd=%s expects the palettes at 0x%06X; found:\n%s%s\n  both placements: %s",
+    LABEL, stage, disc, PLACEMENTS[disc], report(data, sites), hint, detail), 0)
 end
 
-local function check_args(args)
-  if args ~= nil and args ~= "" then
-    error(LABEL .. ": this codec takes no arguments, got '" .. tostring(args) .. "'", 0)
-  end
+local function parse_cd(raw, stage)
+  local opts = args.parse(raw, ARG_SPEC, LABEL .. ": " .. stage)
+  return opts.cd
 end
 
 -- ---------------------------------------------------------------------------
@@ -223,30 +259,32 @@ function codec.can_handle(data)
 end
 
 function codec.decode_name(args)
-  if type(args) == "string" and #args > 0 then return args end
   return "palette"
 end
 
 function codec.decode(data, args)
-  check_args(args)
   if type(data) ~= "string" then error(LABEL .. ": decode: expected binary string", 0) end
 
-  local sites, score, detail = detect(data)
-  if score == 0 then fail("decode", data, nil, detail) end
-  apply(data, sites, "decode")
+  local disc = parse_cd(args, "decode")
+  local sites = sites_for(PLACEMENTS[disc])
+  for _, site in ipairs(sites) do
+    if not site_state(data, site) then fail_disc("decode", data, sites, disc) end
+  end
 
+  apply(data, sites, "decode")
   return {}
 end
 
 function codec.encode(original, artifacts, args)
-  check_args(args)
   if type(original) ~= "string" then
     error(LABEL .. ": encode: expected binary string for `original`", 0)
   end
 
-  local sites, score, detail = detect(original)
-  if score == 0 then fail("encode", original, nil, detail) end
-  if score < #sites then fail("encode", original, sites, detail) end
+  local disc = parse_cd(args, "encode")
+  local sites = sites_for(PLACEMENTS[disc])
+  for _, site in ipairs(sites) do
+    if not site_state(original, site) then fail_disc("encode", original, sites, disc) end
+  end
 
   return apply(original, sites, "encode")
 end

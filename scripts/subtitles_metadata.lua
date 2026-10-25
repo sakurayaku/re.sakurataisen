@@ -9,7 +9,7 @@
 
   The placement table is what puts a subtitle on screen: the renderer draws
   sprite i with its top-left at (x, y) from this record, and the original disc
-  has y = 176 and x = 160 - width/2 for all 17.  A third table at 0x000a31c
+  has y = 176 and x = 160 - width/2 for all 17. A third table at 0x000a31c
   (17 x {u32 0x01000000, u32 -> placement record}) is left alone; it only
   points at the records, which do not move.
 
@@ -39,11 +39,34 @@
   `displaySubtitle(10)` then draws whatever canvas 9 draws.  Consecutive blank
   canvases all borrow from that same last visible subtitle, and the first one
   cannot borrow anything, so it keeps its own metadata.
+  The placeholder still owns its bytes in the image block -- subtitles_gfx.lua
+  encodes all 17 canvases -- so nothing moves for anybody else: aliasing only
+  rewrites this slot's two records.  A build with no blank canvas is byte for
+  byte what it was before aliasing existed.
 
   The placeholder still owns its bytes in the image block -- subtitles_gfx.lua
   encodes all 17 canvases -- so nothing moves for anybody else: aliasing only
   rewrites this slot's two records.  A build with no blank canvas is byte for
   byte what it was before aliasing existed.
+
+  Blankness is a question about the pixel's index, never about its RGB value.
+  Palette entry 0 is 0x03FF, a bright yellow that appears nowhere in the shipped
+  art, so "every pixel yellow" would be a trap and "looks empty in the editor" is
+  not the test. A canvas that cannot be read -- header only, a deeper bit depth,
+  a truncated image -- is not treated as blank; it keeps the metadata it always had
+  and subtitles_gfx.lua is the codec that rejects it.
+
+  Arguments: none; any passed are ignored.
+
+  Not supported, and refused rather than written wrongly:
+
+  * a canvas whose width is not a multiple of 8, whose height is odd, that is
+    wider than 320 pixels, or taller than 255: the table stores width/8 and
+    height in single bytes and the block offset in 8-byte units, and rounding
+    any of them would move the artwork's centre
+  * canvases whose offsets pass the 0xFFFF 8-byte units the image table can
+    address
+  * a SAKURA too short to hold both tables
 ]]
 
 local codec = {}
@@ -65,7 +88,7 @@ move, so this codec leaves it alone.
 
 The canvases are the source of truth. A decode produces no artifacts: the tables
 have no editable text form, and an edit made in them by hand would be
-overwritten by the next rebuild. Instead a rebuild reads every SUBTITLES/nn.bmp
+overwritten by the next rebuild. Instead a rebuild reads every SUBTITLES/NN.bmp
 of the workspace's LOGO.SH2 directory and writes both tables from the canvases.
 Entry i takes the offset the canvases before it add up to, and the canvas's own
 width and height; record i moves to x = (320 - width) / 2 so the sprite stays
@@ -89,21 +112,10 @@ byte what it was before aliasing existed.
 Blankness is a question about the pixel's index, never about its RGB value.
 Palette entry 0 is 0x03FF, a bright yellow that appears nowhere in the shipped
 art, so "every pixel yellow" would be a trap and "looks empty in the editor" is
-not the test. A canvas that cannot be read -- header only, a deeper bit depth, a
-truncated image -- is not treated as blank; it keeps the metadata it always had
+not the test. A canvas that cannot be read -- header only, a deeper bit depth,
+a truncated image -- is not treated as blank; it keeps the metadata it always had
 and subtitles_gfx.lua is the codec that rejects it.
-
-Arguments: none; any passed are ignored.
-
-Not supported, and refused rather than written wrongly:
-
-  * a canvas whose width is not a multiple of 8, whose height is odd, that is
-    wider than 320 pixels, or taller than 255: the table stores width/8 and
-    height in single bytes and the block offset in 8-byte units, and rounding
-    any of them would move the artwork's centre
-  * canvases whose offsets pass the 0xFFFF 8-byte units the image table can
-    address
-  * a SAKURA too short to hold both tables]]
+]]
 codec.version     = 4
 codec.kind        = "patch"
 
@@ -161,7 +173,7 @@ local function list_bmp_files_in_dir(dir)
     local handle = io.popen(cmd)
     if handle then
       for l in handle:lines() do
-        local fname = l:gsub("[\r\n]", "")
+        local fname = l:gsub("[\\r\\n]", "")
         if fname ~= "" and fname:lower():match("%.bmp$") then
           files[#files + 1] = fname
         end
@@ -237,11 +249,13 @@ function codec.encode(original, artifacts, args)
     error("encode: original file too small for the subtitle tables", 0)
   end
 
+  -- Resolve workspace path: LUDARED first, then fallback to default.
+  -- The LUDARED global is provided by the host at runtime; when not available
+  -- we use a default relative path.  This keeps the codec working both under
+  -- Ludared and as a standalone script.
   local workspace = nil
   if LUDARED and LUDARED.WORKSPACE then
     workspace = LUDARED.WORKSPACE
-  elseif PROJECT_ROOT then
-    workspace = PROJECT_ROOT .. "/workspace"
   else
     workspace = "./workspace"
   end
@@ -373,7 +387,7 @@ function codec.encode(original, artifacts, args)
   return original:sub(1, SAKURA_SUBTITLE_TABLE_OFFSET)
     .. table.concat(entries)
     .. original:sub(SAKURA_SUBTITLE_TABLE_OFFSET + TABLE_SIZE + 1,
-                    SAKURA_SUBTITLE_PLACEMENT_OFFSET)
+                      SAKURA_SUBTITLE_PLACEMENT_OFFSET)
     .. table.concat(placements)
     .. original:sub(SAKURA_SUBTITLE_PLACEMENT_OFFSET + TABLE_SIZE + 1)
 end

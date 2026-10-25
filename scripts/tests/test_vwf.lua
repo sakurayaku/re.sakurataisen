@@ -1,16 +1,16 @@
--- Run: lua scripts/shared/test_vwf.lua [pristine-SAKURA]
+-- Run: ludared codecs test tests/test_vwf.lua
+-- Optional fixture: set SAKURA_TEST_INPUT to the pristine SAKURA path.
 -- Executes the real fnC instructions up to its epilogue, with GLYPH stubbed.
 -- This catches cursor/index confusion, delay-slot errors and count overruns.
-local script = debug.getinfo(1, "S").source:sub(2)
-local root = (script:match("^(.*)/scripts/shared/") or ".")
+local root = LUDARED.PROJECT_ROOT
 local function read(path)
   local f = assert(io.open(path, "rb"))
   local data = f:read("*a")
   f:close()
   return data
 end
-local patch = dofile(root .. "/scripts/SAKURA/patch_vwf_font.lua")
-local original = read(arg[1] or root .. "/SAKURA")
+local patch = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_vwf_font.lua")
+local original = read(os.getenv("SAKURA_TEST_INPUT") or root .. "/SAKURA")
 local binary = patch.encode(original, {})
 assert(#binary == #original)
 assert(patch.encode(binary, {}) == binary, "patch must be idempotent")
@@ -119,7 +119,7 @@ assert(not ok and tostring(err):find("read beyond text buffer", 1, true),
 -- numbered (NNNN:); 0x0A0D would be a valid packed word, so the newline code is
 -- the assertion that tells the two layouts apart.
 ACTIVATE_VWF, ENCODE_FONT = true, "I18N_FONT"
-local dialogues = dofile(root .. "/scripts/dialogues.lua")
+local dialogues = dofile(LUDARED.SCRIPTS .. "/dialogues.lua")
 local input = string.pack(">I2I2I2I2I2I2I2I2", 4, 8, 0x2716, 0, 0xABCD, 2, 0x41, 0) .. "footer"
 local output = dialogues.encode(input, { { name = "0100TBL.TXT", data = "0001:A<br>B<br>C<br>4\n" } }, "0100KNJ")
 assert(output:sub(9, 12) == "\xAB\xCD\x00\x02")

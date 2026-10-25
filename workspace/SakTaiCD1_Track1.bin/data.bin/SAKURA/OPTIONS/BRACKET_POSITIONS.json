@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "name": "CURSOR_SPEED",
+      "choices": [
+        { "center": -8, "left": -12, "right": 4 },
+        { "center": 24, "left": -12, "right": 4 },
+        { "center": 56, "left": -12, "right": 4 },
+        { "center": 88, "left": -12, "right": 4 },
+        { "center": 120, "left": -12, "right": 4 }
+      ]
+    },
+    {
+      "name": "SOUND",
+      "choices": [
+        { "center": 16, "left": -40, "right": 32 },
+        { "center": 96, "left": -40, "right": 32 }
+      ]
+    },
+    {
+      "name": "VOICE",
+      "choices": [
+        { "center": 16, "left": -24, "right": 16 },
+        { "center": 88, "left": -32, "right": 24 }
+      ]
+    },
+    {
+      "name": "CONTROLS",
+      "choices": [
+        { "center": 13, "left": -34, "right": 26 },
+        { "center": 95, "left": -40, "right": 32 }
+      ]
+    },
+    {
+      "name": "EXIT",
+      "choices": [
+        { "center": 0, "left": -40, "right": 32 }
+      ]
+    }
+  ]
+}

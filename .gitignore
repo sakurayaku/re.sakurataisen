@@ -8,8 +8,8 @@ research/FONT_OCR/glyph-work/glyphs
 *.xdelta
 
 # Ghidra is working on those
-SAKURA
-0SLG.BIN
-SLG.BIN
-LOGO.SH2
+/SAKURA
+/0SLG.BIN
+/SLG.BIN
+/LOGO.SH2
 

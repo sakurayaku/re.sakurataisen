@@ -1,8 +1,9 @@
 --[[
   Dependency-free test harness for re.sakurataisen/scripts/dialogues.lua
 
-  Run:  lua test_dialogues.lua                     (synthetic + real-table tests)
-        lua test_dialogues.lua <list-file>         (also round-trip a corpus)
+  Run from the project root: ludared codecs test tests/test_dialogues.lua
+  To also round-trip a corpus:
+    DIALOGUES_TEST_CORPUS=<list-file> ludared codecs test tests/test_dialogues.lua
 
   <list-file> has one table per line, "<stem><TAB><path>" (a third leading
   column is tolerated), where <path> is a real NNNNTBL.BIN / M##MES.BIN.
@@ -12,16 +13,7 @@
   absent, so the harness runs on a bare checkout.
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\\\][^/\\\\]*$") or "."
-  end
-  return "."
-end
-
-local scriptDir = script_dir()
-local codecPath = scriptDir .. "/../dialogues.lua"
+local codecPath = LUDARED.SCRIPTS .. "/dialogues.lua"
 local codec = dofile(codecPath)
 
 -- ---------------------------------------------------------------------------
@@ -146,7 +138,7 @@ end
 
 -- ---------------------------------------------------------------------------
 
-local PROJECT_ROOT = "/Users/red/Projects/Hashire/re.sakurataisen"
+local PROJECT_ROOT = LUDARED.PROJECT_ROOT
 local TABLE_0100 = PROJECT_ROOT .. "/workspace/tables/0100KNJ.tbl"
 
 local function file_exists(path)
@@ -558,7 +550,7 @@ end
 -- Optional corpus round-trip.
 -- ---------------------------------------------------------------------------
 
-local listFile = arg and arg[1]
+local listFile = os.getenv("DIALOGUES_TEST_CORPUS")
 if listFile then
   print("")
   print("corpus round-trip (" .. listFile .. ")")
@@ -617,4 +609,4 @@ end
 
 print("")
 print(string.format("%d passed, %d failed, %d skipped", pass, fail, skipped))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

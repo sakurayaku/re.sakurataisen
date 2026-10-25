@@ -54,7 +54,7 @@
        scratch and never reaches VRAM.
 
        `args` is the single string ludared passes through.  It accepts one
-       comma-separated key=value pair:
+       key=value pair (pairs are ';'-separated, values ','-separated):
 
            grow_dma=none    (default) keep the shipped 0x4580 transfer and the
                             staged window this codec has always enforced
@@ -69,26 +69,23 @@
   so the transparent colour (index 0) is visible while editing.
 ]]
 
-local prs
-if LUDARED and LUDARED.SCRIPTS then
-  prs = dofile(LUDARED.SCRIPTS .. "/shared/prs.lua")
-else
-  prs = dofile((function()
-    local paths = {
-      "scripts/shared/prs.lua",
-      "../shared/prs.lua",
-      "./shared/prs.lua"
-    }
-    for _, p in ipairs(paths) do
-      local f = io.open(p, "r")
-      if f then
-        f:close()
-        return p
-      end
-    end
-    return "scripts/shared/prs.lua"
-  end)())
+local function script_dir()
+  local src = debug.getinfo(1, "S").source
+  if src:sub(1, 1) == "@" then
+    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
+  end
+  return "."
 end
+
+local function load_shared(name)
+  if LUDARED and LUDARED.SCRIPTS then
+    return dofile(LUDARED.SCRIPTS .. "/shared/" .. name .. ".lua")
+  end
+  return dofile(script_dir() .. "/shared/" .. name .. ".lua")
+end
+
+local prs         = LUDARED.codec("std/sega/compression/prs")
+local args_parser = load_shared("args_parser")
 
 local codec = {}
 
@@ -149,7 +146,7 @@ Arguments (string):
                already raised by hand survives, so a rebuild of the same art is
                a no-op.
 
-    The whole argument is one string of comma-separated key=value pairs, which
+    The whole argument is one string of ';'-separated key=value pairs, which
     is what ludared hands a codec. Anything unrecognised -- another key,
     another value, a token without "=" -- is refused rather than defaulted.
 
@@ -354,40 +351,16 @@ local function image_block_size(dims)
   return total
 end
 
--- ludared hands a codec a single optional string (`Option<&str>`), so the
--- argument carries its own name: comma-separated key=value pairs.  Unknown
--- keys, unknown values and bare tokens are errors -- a typo in the manifest
--- must not quietly build a disc with the wrong transfer length.
-local GROW_DMA_MODES = { none = true, safe = true }
+-- Arguments arrive as one opaque string, parsed by shared/args_parser.lua:
+-- ';'-separated key=value pairs.  Unknown keys, unknown values and bare
+-- tokens are errors -- a typo in the manifest must not quietly build a disc
+-- with the wrong transfer length.
+local ARG_SPEC = {
+  grow_dma = { values = { "none", "safe" }, default = "none", lower = true },
+}
 
 local function parse_args(args)
-  local opts = { grow_dma = "none" }
-  if args == nil or args == "" then
-    return opts
-  end
-  if type(args) ~= "string" then
-    error("encode: args must be a string, got " .. type(args), 0)
-  end
-  for pair in args:gmatch("[^,]+") do
-    local key, value = pair:match("^%s*([%w_]+)%s*=%s*(.-)%s*$")
-    if not key then
-      error(string.format(
-        "encode: cannot read argument %q; args are comma-separated key=value "
-        .. "pairs, the only one supported being grow_dma=none|safe", pair), 0)
-    end
-    if key ~= "grow_dma" then
-      error(string.format(
-        "encode: unknown argument %q; the only one supported is "
-        .. "grow_dma=none|safe", key), 0)
-    end
-    local mode = value:lower()
-    if not GROW_DMA_MODES[mode] then
-      error(string.format(
-        "encode: grow_dma must be \"none\" or \"safe\", got %q", value), 0)
-    end
-    opts.grow_dma = mode
-  end
-  return opts
+  return args_parser.parse(args, ARG_SPEC, "subtitles gfx")
 end
 
 function codec.can_handle(data)
@@ -420,7 +393,7 @@ function codec.decode(data, args)
 
   local compressed = data:sub(LOGO_SUBTITLE_PRS_OFFSET + 1,
                              LOGO_SUBTITLE_PRS_OFFSET + ORIGINAL_COMPRESSED_SIZE)
-  local unpacked = prs.decompress(compressed)
+  local unpacked = prs:decode(compressed)[1].data
 
   local expected = image_block_size(SUBTITLE_DIMS)
   if #unpacked < expected then
@@ -547,11 +520,11 @@ function codec.encode(original, artifacts, args)
   -- Unmodified artifacts: keep the original block byte for byte.
   local compressed_original = original:sub(LOGO_SUBTITLE_PRS_OFFSET + 1,
                                            LOGO_SUBTITLE_PRS_OFFSET + ORIGINAL_COMPRESSED_SIZE)
-  if prs.decompress(compressed_original) == image_block then
+  if prs:decode(compressed_original)[1].data == image_block then
     return original
   end
 
-  local compressed = prs.compress(image_block)
+  local compressed = prs:encode("", { { name = "DECOMPRESSED", data = image_block } })
   if #compressed > ORIGINAL_COMPRESSED_SIZE then
     error(string.format(
       "encode: subtitle block compresses to %d bytes, %d over the %d-byte budget; shorten the subtitles",

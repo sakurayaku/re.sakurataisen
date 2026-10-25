@@ -1,7 +1,7 @@
 --[[
   Test harness for subtitles_metadata.lua
 
-  Run: lua test_subtitles_metadata.lua
+  Run: ludared codecs test tests/test_subtitles_metadata.lua
 
   The plugin's job is to write each subtitle's size, block offset and screen
   position from the BMPs in the workspace, so the tests build a throwaway
@@ -12,15 +12,7 @@
   rule the encode tests below cover.
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
-  end
-  return "."
-end
-
-local codec = dofile(script_dir() .. "/../subtitles_metadata.lua")
+local codec = dofile(LUDARED.SCRIPTS .. "/subtitles_metadata.lua")
 
 local pass, fail = 0, 0
 
@@ -160,15 +152,14 @@ end
 
 local function reset_workspace(dims, overrides)
   os.execute("rm -rf '" .. TMP .. "'")
-  os.execute("mkdir -p '" .. SUBTITLE_DIR .. "'")
+  os.execute("mkdir -p '" .. SUBTITLE_DIR .. "/SUBTITLES'")
   for i, d in ipairs(dims) do
     write_bmp(string.format("%s/SUBTITLES/%02d.bmp", SUBTITLE_DIR, i - 1),
       d[1], d[2], overrides and overrides[i])
   end
 end
 
-PROJECT_ROOT = TMP
-LUDARED = nil
+LUDARED.WORKSPACE = TMP .. "/workspace"
 
 print("subtitles_metadata.lua test harness")
 print("")
@@ -419,4 +410,4 @@ os.execute("rm -rf '" .. TMP .. "'")
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

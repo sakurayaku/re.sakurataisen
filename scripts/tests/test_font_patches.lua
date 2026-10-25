@@ -6,7 +6,7 @@
       scripts/SLG/patch_8px_font.lua          SLG glyph layout
       scripts/SLG/patch_palette.lua           SLG text palettes
 
-  Run:  lua test_font_patches.lua
+  Run:  ludared codecs test tests/test_font_patches.lua
 
   The pristine SAKURA / SLG.BIN / 0SLG.BIN are the inputs under test; when they
   are absent the real-file section is skipped (not failed), so the harness
@@ -19,24 +19,17 @@
   overlapping.
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
-  end
-  return "."
-end
-
 -- ---------------------------------------------------------------------------
 
-local PROJECT_ROOT = "/Users/red/Projects/Hashire/re.sakurataisen"
+-- Project paths are provided by the Ludared test runner.
+
+local PROJECT_ROOT = LUDARED.PROJECT_ROOT
 local US_ROOT      = "/Users/red/Projects/Hashire/RomHackingTools/SakuraTaisen/Data/FromTrekkies"
 
-local scriptDir = script_dir()
-local sakuraLayout  = dofile(scriptDir .. "/../SAKURA/patch_8px_font.lua")
-local sakuraPalette = dofile(scriptDir .. "/../SAKURA/patch_font_palette.lua")
-local slgLayout     = dofile(scriptDir .. "/../SLG/patch_8px_font.lua")
-local slgPalette    = dofile(scriptDir .. "/../SLG/patch_palette.lua")
+local sakuraLayout  = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_8px_font.lua")
+local sakuraPalette = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_font_palette.lua")
+local slgLayout     = dofile(LUDARED.SCRIPTS .. "/SLG/patch_8px_font.lua")
+local slgPalette    = dofile(LUDARED.SCRIPTS .. "/SLG/patch_palette.lua")
 
 -- ---------------------------------------------------------------------------
 
@@ -96,9 +89,6 @@ local function splice(data, offset, repl)
 end
 
 -- ---------------------------------------------------------------------------
--- Write lists, spelled out independently of the codecs so a silent change to
--- either one is caught here.
--- ---------------------------------------------------------------------------
 
 local SAKURA_LAYOUT = {
   { 0x0104D7, 0x10, 0x0C }, { 0x0104E5, 0x10, 0x08 }, { 0x0105FB, 0xCC, 0xCE },
@@ -143,8 +133,6 @@ local SLG_PALETTE_SITES = {
 }
 
 -- ---------------------------------------------------------------------------
--- Shared checks
--- ---------------------------------------------------------------------------
 
 local function check_takes_no_args(label, codec, data)
   check(label .. ": refuses an unexpected args string",
@@ -164,7 +152,7 @@ local function test_layout(label, codec, data, sites, usData, usData2)
   print("")
   print("layout: " .. label)
 
-  local patched = codec.encode(data, {}, nil)
+  local patched = codec.encode(data, {})
 
   for _, site in ipairs(sites) do
     local offset, pristine, want = site[1], site[2], site[3]
@@ -210,11 +198,14 @@ local function test_layout(label, codec, data, sites, usData, usData2)
   end
 end
 
-local function test_palette(label, codec, data, sites, usData)
+local function test_palette(label, codec, data, sites, usData, disc)
   print("")
   print("palette: " .. label)
 
-  local patched = codec.encode(data, {}, nil)
+  -- The ADV palettes move by 0x138 between discs, so that codec is told which
+  -- disc it is patching; the SLG one takes no arguments.
+  local call_args = disc and ("cd=" .. disc) or nil
+  local patched = codec.encode(data, {}, call_args)
 
   for _, site in ipairs(sites) do
     local offset, pristine, want = site[1], site[2], site[3]
@@ -231,14 +222,21 @@ local function test_palette(label, codec, data, sites, usData)
   local windows = {}
   for _, site in ipairs(sites) do windows[#windows + 1] = { site[1], 32 } end
   check("only the palette windows change", diff_outside(patched, data, windows) == 0)
-  check("re-running is a no-op", codec.encode(patched, {}, nil) == patched)
-  check("decode emits no artifacts", #codec.decode(data, nil) == 0)
+  check("re-running is a no-op", codec.encode(patched, {}, call_args) == patched)
+  check("decode emits no artifacts", #codec.decode(data, call_args) == 0)
   check("can_handle: pristine is certain", codec.can_handle(data) == "certain",
         codec.can_handle(data))
   check("can_handle: patched is certain", codec.can_handle(patched) == "certain",
         codec.can_handle(patched))
   check("can_handle: junk is no", codec.can_handle("not a binary") == "no")
-  check_takes_no_args(label, codec, data)
+  if disc then
+    local ok, err = pcall(codec.encode, data, {}, nil)
+    check(label .. ": cd is required", not ok and tostring(err):find("cd", 1, true) ~= nil, err)
+    check(label .. ": an unknown cd is refused",
+          not pcall(codec.encode, data, {}, "cd=3"))
+  else
+    check_takes_no_args(label, codec, data)
+  end
 end
 
 -- ---------------------------------------------------------------------------
@@ -255,7 +253,7 @@ if not sakura then
 else
   test_layout("SAKURA", sakuraLayout, sakura, SAKURA_LAYOUT, usSakura, usSakura2)
   test_palette("SAKURA placement A", sakuraPalette, sakura,
-               sakura_palette_sites(0x53954, bytes(US_PALETTE)), usSakura)
+               sakura_palette_sites(0x53954, bytes(US_PALETTE)), usSakura, "1")
 
   -- The palette pair sits at two possible placements.  Build a copy whose
   -- placement-A windows are gone and whose placement-B windows hold the
@@ -265,19 +263,22 @@ else
   moved = splice(moved, 0x53AAC, bytes(JP_LIPS))
 
   print("")
-  print("palette: SAKURA placement B (content, not size)")
+  print("palette: SAKURA placement B (cd=2)")
   check("placement B is recognised", sakuraPalette.can_handle(moved) == "certain",
         sakuraPalette.can_handle(moved))
-  local outB = sakuraPalette.encode(moved, {}, nil)
+  local outB = sakuraPalette.encode(moved, {}, "cd=2")
   check("placement B patched",
         outB:sub(0x53A8C + 1, 0x53A8C + 32) == bytes(US_PALETTE))
   check("vacated placement A left alone",
         outB:sub(0x53954 + 1, 0x53954 + 32) == string.rep("\0", 32))
+  local okB, errB = pcall(sakuraPalette.encode, moved, {}, "cd=1")
+  check("cd=1 refuses a disc-2 file and says so",
+        not okB and tostring(errB):find("looks like cd=2", 1, true) ~= nil, errB)
 
   if usSakura2 then
     check("US disc-2 build: palette recognised", sakuraPalette.can_handle(usSakura2) == "certain")
     check("US disc-2 build: palette already applied",
-          sakuraPalette.encode(usSakura2, {}, nil) == usSakura2)
+          sakuraPalette.encode(usSakura2, {}, "cd=2") == usSakura2)
   end
 end
 
@@ -315,4 +316,4 @@ end
 
 print("")
 print(string.format("%d passed, %d failed, %d skipped", pass, fail, skipped))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

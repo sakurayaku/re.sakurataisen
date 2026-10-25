@@ -1,21 +1,12 @@
 --[[
   Dependency-free test harness for re.sakurataisen/scripts/font.lua
 
-  Run:  lua test_font.lua            (from this directory)
-        lua /path/to/test_font.lua   (codec resolved relative to this file)
+  Run from the project root: ludared codecs test tests/test_font.lua
 
   Uses only synthetic binary data — no real KNJ/BIN is required or assumed.
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
-  end
-  return "."
-end
-
-local codec = dofile(script_dir() .. "/../font.lua")
+local codec = dofile(LUDARED.SCRIPTS .. "/font.lua")
 
 local unpack = table.unpack or unpack          -- 5.1/5.2 global vs 5.3+ table.unpack
 
@@ -224,4 +215,4 @@ end, "no metadata artifact found")
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

@@ -76,19 +76,36 @@ codec.kind        = "patch"
 
 local LABEL = "font palette (SLG)"
 
+local function script_dir()
+  local src = debug.getinfo(1, "S").source
+  if src:sub(1, 1) == "@" then
+    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
+  end
+  return "."
+end
+
+local palettes
+if LUDARED and LUDARED.SCRIPTS then
+  palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
+else
+  palettes = dofile(script_dir() .. "/../shared/palettes.lua")
+end
+
 -- ---------------------------------------------------------------------------
 -- Palettes, as hex byte strings (Saturn BGR555, big endian per entry)
 -- ---------------------------------------------------------------------------
 
--- What the US 8x12 sheet needs: index 0 = 0x7FFF (white background), a grey
--- ramp, index 15 = 0x0C63 (near-black ink).
-local US_PALETTE = "7fff14a51ce72529294a318c35ad4210463152945ad65ef767396f7b77bd0c63"
+-- What the translated 8x12 sheet needs: index 0 = 0x7FFF (white background), a
+-- grey ramp, index 15 = 0x0C63 (near-black ink).  Both sites get the same
+-- colours today; the two names keep them independently replaceable.
+local I18N_DIALOGUE = palettes.hex("slg_dialogue_i18n")
+local I18N_LIPS     = palettes.hex("slg_lips_i18n")
 
 -- The Japanese dialogue palette: a grey ramp whose last entry is white.
-local JP_DIALOGUE = "7fff0842108418c62108294a318c39ce42104a5252945ad663186b5a739c7fff"
+local JP_DIALOGUE = palettes.hex("slg_dialogue_jp")
 
 -- The Japanese choice (LIPS) palette: pink, sharing the low half of the ramp.
-local JP_LIPS = "7fff08420842108418c62108294a318c39ce3dd041d245d449d64dd851da55dd"
+local JP_LIPS = palettes.hex("slg_lips_jp")
 
 local PALETTE_BYTES = 32
 
@@ -105,11 +122,9 @@ local function mask_7f(data)
   return table.concat(out)
 end
 
-local US_MASKED = mask_7f(bytes(US_PALETTE))
-
 local SITES = {
-  { 0x0158A4, bytes(JP_DIALOGUE), US_MASKED, "dialogue text palette" },
-  { 0x0158C4, bytes(JP_LIPS),     US_MASKED, "choice (LIPS) text palette" },
+  { 0x0158A4, bytes(JP_DIALOGUE), mask_7f(bytes(I18N_DIALOGUE)), "dialogue text palette" },
+  { 0x0158C4, bytes(JP_LIPS),     mask_7f(bytes(I18N_LIPS)),     "choice (LIPS) text palette" },
 }
 
 -- ---------------------------------------------------------------------------

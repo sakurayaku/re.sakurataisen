@@ -1,21 +1,12 @@
 --[[
   Dependency-free test harness for re.sakurataisen/scripts/title.lua
 
-  Run:  lua test_title.lua            (from this directory)
-        lua /path/to/test_title.lua   (codec resolved relative to this file)
+  Run from the project root: ludared codecs test tests/test_title.lua
 
   Uses only synthetic binary data — no real TITLE1.bin is required or assumed.
 ]]
 
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
-  end
-  return "."
-end
-
-local codec = dofile(script_dir() .. "/../title.lua")
+local codec = dofile(LUDARED.SCRIPTS .. "/title.lua")
 
 local unpack = table.unpack or unpack          -- 5.1/5.2 global vs 5.3+ table.unpack
 
@@ -239,4 +230,4 @@ end, "too short")
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))
-if fail > 0 then os.exit(1) end
+assert(fail == 0, string.format("%d tests failed", fail))

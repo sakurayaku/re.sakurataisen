@@ -97,15 +97,13 @@
 -- ---------------------------------------------------------------------------
 -- Project layout
 --
--- TODO(ludared): Replace this hardcoded project root (and the derived
--- WORKSPACE / SCRIPTS paths) with the runtime-provided global table, i.e.
--- LUDARED.PROJECT_ROOT, LUDARED.WORKSPACE and LUDARED.SCRIPTS.  They are not
--- available in the currently installed ludared build, so the absolute path is
--- pinned here for now.  `args` stays a font identifier; it must never carry a
--- path.
+-- LUDARED globals provided by the host at runtime.  Fall back to pinned paths
+-- when LUDARED is not available (e.g. the currently installed build), so the
+-- absolute path is used for now.  `args` stays a font identifier; it must never
+-- carry a path.
 -- ---------------------------------------------------------------------------
 
-local PROJECT_ROOT = "/Users/red/Projects/Hashire/re.sakurataisen"
+local PROJECT_ROOT = LUDARED and LUDARED.PROJECT_ROOT or "/Users/red/Projects/Hashire/re.sakurataisen"
 local WORKSPACE    = PROJECT_ROOT .. "/workspace"
 local TABLES_DIR   = WORKSPACE .. "/tables"
 
