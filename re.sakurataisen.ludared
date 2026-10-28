@@ -11,9 +11,9 @@
       {
         "name": "mode1",
         "codec": {
-          "id": "std/cdrom/mode1",
+          "id": "std/cdrom/mode/mode1",
           "version": 1,
-          "args": "{\"file_system\":\"iso9660\"}"
+          "args": "{\"filesystem\":\"iso9660\"}"
         },
         "outputs": [
           "ISO9660.json",
@@ -1806,83 +1806,6 @@
           "SAKURA1/0100KNJ.BIN"
         ],
         "decodes": {
-          "SAKURA1/0100TBL.BIN": [
-            {
-              "name": "0100TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0100KNJ"
-              },
-              "outputs": [
-                "0100TBL.TXT"
-              ],
-              "overrides": [
-                "0100TBL.TXT"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA": [
-            {
-              "name": "vwf_font",
-              "codec": {
-                "id": "scripts/SAKURA/patch_vwf_font.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "palette",
-              "codec": {
-                "id": "scripts/SAKURA/patch_font_palette.lua",
-                "version": 1,
-                "args": "cd=1"
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "subtitles_metadata.bin",
-              "codec": {
-                "id": "scripts/subtitles_metadata.lua",
-                "version": 2
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "options",
-              "codec": {
-                "id": "scripts/options_menu_gfx.lua",
-                "version": 3
-              },
-              "outputs": [
-                "OPTIONS/CURSOR_SPEED.bmp",
-                "OPTIONS/SOUND.bmp",
-                "OPTIONS/VOICE.bmp",
-                "OPTIONS/CONTROLS.bmp",
-                "OPTIONS/EXIT.bmp",
-                "OPTIONS/BACKGROUND.bmp",
-                "OPTIONS/BRACKET_LEFT.bmp",
-                "OPTIONS/BRACKET_RIGHT.bmp",
-                "OPTIONS/BRACKET_POSITIONS.json"
-              ],
-              "overrides": [
-                "OPTIONS/CURSOR_SPEED.bmp",
-                "OPTIONS/SOUND.bmp",
-                "OPTIONS/VOICE.bmp",
-                "OPTIONS/CONTROLS.bmp",
-                "OPTIONS/EXIT.bmp",
-                "OPTIONS/BACKGROUND.bmp",
-                "OPTIONS/BRACKET_LEFT.bmp",
-                "OPTIONS/BRACKET_RIGHT.bmp",
-                "OPTIONS/BRACKET_POSITIONS.json"
-              ],
-              "decodes": {}
-            }
-          ],
           "SAKURA1/LOGO.SH2": [
             {
               "name": "SUBTITLES",
@@ -1958,6 +1881,66 @@
               "decodes": {}
             }
           ],
+          "SAKURA": [
+            {
+              "name": "vwf_font",
+              "codec": {
+                "id": "scripts/SAKURA/patch_vwf_font.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "palette",
+              "codec": {
+                "id": "scripts/SAKURA/patch_font_palette.lua",
+                "version": 1,
+                "args": "cd=1"
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "subtitles_metadata.bin",
+              "codec": {
+                "id": "scripts/subtitles_metadata.lua",
+                "version": 2
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "options",
+              "codec": {
+                "id": "scripts/options_menu_gfx.lua",
+                "version": 3
+              },
+              "outputs": [
+                "OPTIONS/CURSOR_SPEED.bmp",
+                "OPTIONS/SOUND.bmp",
+                "OPTIONS/VOICE.bmp",
+                "OPTIONS/CONTROLS.bmp",
+                "OPTIONS/EXIT.bmp",
+                "OPTIONS/BACKGROUND.bmp",
+                "OPTIONS/BRACKET_LEFT.bmp",
+                "OPTIONS/BRACKET_RIGHT.bmp",
+                "OPTIONS/BRACKET_POSITIONS.json"
+              ],
+              "overrides": [
+                "OPTIONS/CURSOR_SPEED.bmp",
+                "OPTIONS/SOUND.bmp",
+                "OPTIONS/VOICE.bmp",
+                "OPTIONS/CONTROLS.bmp",
+                "OPTIONS/EXIT.bmp",
+                "OPTIONS/BACKGROUND.bmp",
+                "OPTIONS/BRACKET_LEFT.bmp",
+                "OPTIONS/BRACKET_RIGHT.bmp",
+                "OPTIONS/BRACKET_POSITIONS.json"
+              ],
+              "decodes": {}
+            }
+          ],
           "SAKURA1/TITLE1.BIN": [
             {
               "name": "TITLE.bmp",
@@ -1970,6 +1953,23 @@
               ],
               "overrides": [
                 "TITLE.bmp"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
               ],
               "decodes": {}
             }
