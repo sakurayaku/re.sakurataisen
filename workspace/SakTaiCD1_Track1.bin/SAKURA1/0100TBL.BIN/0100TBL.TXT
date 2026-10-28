@@ -64,10 +64,10 @@
 0056:Elle vient dans ma direction !
 0057:O-Oui, je suis Ôgami.
 0058:Ahem. Excusez-moi mais vous<br>êtes…?
-0059:Du Commandant Yoneda …?
+0059:Du Commandant Yoneda ?
 0060:(J'ai été prévenu qu'on viendrait<br>me chercher ici… mais qui aurait<br>cru que ce serait une fille !)
-0061:Vous, euh… vous êtres un<br>membre de la Troupe d'assaut<br>impériale ?!
-0062:Ah… Je suis le lieutenant de la<br>Marine impériale, Ichiro Ôgami.
+0061:Êtes-vous... un membre de<br>la Troupe d'assaut impériale ?!
+0062:Lieutenant de la<br>Marine impériale, Ichiro Ôgami.
 0063:Mais… pour être honnête, je<br>suis surpris qu'une jeune femme<br>comme vous fasse partie de<br>l'escouade.
 0064:N-Non. Ce n'est pas ce que je<br>voulais dire…
 0065:(C'est une unité top secrète après<br>tout. Ce n'est peut-être pas si<br>étrange qu'il y ait des membres<br>féminins…)
@@ -78,7 +78,7 @@
 
 # RESULT: <= 0067
 0068:Je suis en service !<br>Malheureusement, je n'ai pas le<br>temps pour ça.
-0069:Quoi ?! Vous êtes en train de me<br>dire qu'il y a une base secrète<br>à l'intérieur du théâtre ?!<br>Attendez…
+0069:Quoi ?! Vous êtes en train de me<br>dire qu'il y a une base secrète<br>à l'intérieur du théâtre ?<br>Attendez…
 0070:J'ai compris ! Pour ne pas être<br>vu par l'ennemi, il faut aussi être<br>invisible pour les nôtres, non ?
 
 # RESULT: <= 0067
@@ -93,7 +93,7 @@
 0079:(Non, je ne devrais pas me poser<br>autant de questions. Elle connaît<br>mon nom après tout.)
 0080:O-Oui ! Merci beaucoup !
 0081:Voilà donc ce fameux théâtre<br>qui fut inaugurée l'an dernier,<br>impressionnant. On est en plein<br>milieu du quartier de Ginza.
-0082:C'est un bâtiment vraiment<br>immense…
+0082:C'est un bâtiment vraiment<br>immense.
 0083:Personne ne pourrait soupçonner<br>le fait qu'il cache en réalité un<br>quartier militaire secret…
 0084:Whoah, quel hall extraordinaire.<br>Mais je ne vois aucun garde. C'est<br>un peu négligé…
 0085:En tout cas, c'est vraiment calme<br>ici.
@@ -116,10 +116,10 @@
 # RESULT: <= 0098
 0099:Pourquoi devrais-je faire ça ? Je<br>refuse !
 0100:Et dans tous les cas, est-ce une<br>façon de demander de l'aide à<br>quelqu'un ?
-0101:… Je suis le Lieutenant de la<br>Marine impériale Ichiro Ôgami. J'ai<br>été transféré à la Troupe d'assaut<br>aujourd'hui.
-0102:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier générale,<br>je ne pars pas.
-0103:… !
-0104:… C'est Ôgami. Pouvez-vous me<br>dire où je pourrais trouver le<br>Commandant Yoneda ?
+0101:Je suis le Lieutenant de la<br>Marine impériale Ichiro Ôgami. J'ai<br>été transféré à la Troupe d'assaut<br>aujourd'hui.
+0102:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier général,<br>je ne pars pas.
+0103:…!
+0104:C'est Ôgami. Pouvez-vous me<br>dire où je pourrais trouver le<br>Commandant Yoneda ?
 0105:Par ici donc ? Je vous remercie.
 
 # RESULT <= 0098
@@ -481,7 +481,7 @@
 0457:Iris ! Je t'ai déjà dit de ne pas<br>t'adresser comme ça aux adultes.
 0458:Voici le Lieutenant Ichiro Ôgami,<br>il vient d'être transféré à la<br>Troupe impériale.
 0459:Troupe d'assaut impériale,<br>Brigade des Fleurs, Iris.
-0460:Et lui c'est Jean-Paul, l'ours. C'est<br>mon meilleur amis. J'espère que<br>vous vous entendrez bien.
+0460:Et lui c'est Jean-Paul, l'ours. C'est<br>mon meilleur ami. J'espère que<br>vous vous entendrez bien.
 0461:Sakura…
 0462:Qu'y a-t-il ?
 0463:Il a aussi un pouvoir spirituel…<br>Cela signifie qu'il va se battre<br>dans un Kôbu, comme nous ?
