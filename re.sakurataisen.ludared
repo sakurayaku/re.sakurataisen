@@ -1881,6 +1881,23 @@
               "decodes": {}
             }
           ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
           "SAKURA": [
             {
               "name": "vwf_font",
@@ -1953,23 +1970,6 @@
               ],
               "overrides": [
                 "TITLE.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/0100TBL.BIN": [
-            {
-              "name": "0100TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0100KNJ"
-              },
-              "outputs": [
-                "0100TBL.TXT"
-              ],
-              "overrides": [
-                "0100TBL.TXT"
               ],
               "decodes": {}
             }

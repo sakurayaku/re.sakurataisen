@@ -257,8 +257,12 @@ end
 -- which is the ramp the SAKURA executable applies to menu text.  It is display
 -- only: the label carries 4bpp indices, these colours never reach LOGO.SH2, and
 -- encode() ignores them.
+-- local function default_label_palette()
+--   return bgr555_to_bmp(palettes.raw("adv_dialogue_i18n"), 16)
+-- end
 local function default_label_palette()
-  return bgr555_to_bmp(palettes.raw("adv_dialogue_i18n"), 16)
+  local pal = bgr555_to_bmp(palettes.raw("adv_dialogue_i18n"), 16)
+  return pal:sub(1, 60) .. "\x00\x00\xFF\x00"
 end
 
 local function build_bmp(pixels, width, height, pal, bpp)
@@ -681,7 +685,7 @@ function codec.encode(original, artifacts, args)
 
   local bgnd_prs
   if bgnd_changed then
-    bgnd_prs = prs:encode("", { { name = "DECOMPRESSED", data = bgnd } })
+    bgnd_prs = prs:encode("", { { name = "DECOMPRESSED", data = bgnd } }, '{"chain": 2048}')
   else
     -- Everything between the font slot and the fixed tail is the background
     -- plus its padding; copying the lot keeps an unchanged block byte for byte.
