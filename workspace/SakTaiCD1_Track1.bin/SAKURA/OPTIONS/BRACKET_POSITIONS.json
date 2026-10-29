@@ -1,40 +1,40 @@
 {
   "rows": [
     {
-      "name": "CURSOR_SPEED",
+      "name": "00_CURSOR_SPEED",
       "choices": [
-        { "center": -8, "left": -12, "right": 4 },
-        { "center": 24, "left": -12, "right": 4 },
-        { "center": 56, "left": -12, "right": 4 },
-        { "center": 88, "left": -12, "right": 4 },
-        { "center": 120, "left": -12, "right": 4 }
+        { "center": 48, "left": 0, "right": 8 },
+        { "center": 64, "left": 0, "right": 8 },
+        { "center": 80, "left": 0, "right": 8 },
+        { "center": 96, "left": 0, "right": 8 },
+        { "center": 112, "left": 0, "right": 8 }
       ]
     },
     {
-      "name": "SOUND",
+      "name": "01_SOUND",
       "choices": [
-        { "center": 16, "left": -40, "right": 32 },
-        { "center": 96, "left": -40, "right": 32 }
+        { "center": 4, "left": 0, "right": 8 },
+        { "center": 74, "left": 0, "right": 8 }
       ]
     },
     {
-      "name": "VOICE",
+      "name": "02_VOICE",
       "choices": [
-        { "center": 16, "left": -24, "right": 16 },
-        { "center": 88, "left": -32, "right": 24 }
+        { "center": 56, "left": 0, "right":8 },
+        { "center": 96, "left": 0, "right":8 }
       ]
     },
     {
-      "name": "CONTROLS",
+      "name": "03_CONTROLS",
       "choices": [
-        { "center": 13, "left": -34, "right": 26 },
-        { "center": 95, "left": -40, "right": 32 }
+        { "center": 22, "left": 0, "right":8 },
+        { "center": 86, "left": 0, "right":8 }
       ]
     },
     {
-      "name": "EXIT",
+      "name": "04_EXIT",
       "choices": [
-        { "center": 0, "left": -40, "right": 32 }
+        { "center": 0, "left": 0, "right":8 }
       ]
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "origins": [
+    { "name": "00_CURSOR_SPEED", "x": -128, "y": -8 },
+    { "name": "01_SOUND", "x": -128, "y": -8 },
+    { "name": "02_VOICE", "x": -128, "y": -8 },
+    { "name": "03_CONTROLS", "x": -128, "y": -8 },
+    { "name": "04_EXIT", "x": -32, "y": -8 },
+    { "name": "SUB_00_NONE", "x": -32, "y": -8 },
+    { "name": "SUB_01_CONFIRM", "x": -32, "y": -8 },
+    { "name": "SUB_02_CANCEL", "x": -32, "y": -8 },
+    { "name": "SUB_04_MAP", "x": -32, "y": -8 },
+    { "name": "SUB_05_CONSULT", "x": -32, "y": -8 },
+    { "name": "SUB_06_DEFEND", "x": -32, "y": -8 },
+    { "name": "SUB_07_WAIT", "x": -32, "y": -8 },
+    { "name": "SUB_08_ATTACK", "x": -32, "y": -8 },
+    { "name": "SUB_09_MOVE", "x": -32, "y": -8 },
+    { "name": "SUB_10_DEFAULT", "x": -32, "y": -8 },
+    { "name": "SUB_11_EXIT", "x": -32, "y": -8 },
+    { "name": "BUTTON_ABC", "x": -48, "y": -80 },
+    { "name": "BUTTON_XYZLR", "x": -48, "y": -24 }
+  ]
+}
