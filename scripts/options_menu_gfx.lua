@@ -1,210 +1,94 @@
---[[
-  Sakura Taisen (Saturn) — Options menu label and selection-mark codec
+--[[ Sakura Taisen Options menu graphics (PATCH codec, version 4)
 
-  PATCH plugin for the five graphical labels and the two selection marks of
-  the Options screen.  They are not in LOGO.SH2: the assets live in the
-  SAKURA executable on disc 1 (391,712 bytes, sha256 1729cd87…), which is
-  what `can_handle` recognises.
+  Covers the whole Options text subsystem, not just the five main rows.  Every
+  text list on the screen reads one PRS atlas at file 0x5B320 (73 retail tiles,
+  VDP1 0x6C300); see research/SAKTAI_OPTIONS_MENU.md sections 5.3 and 7 for the
+  ownership map, the addresses and the model.
 
-  ## Layout
+  Consumers, all rebuilt by this codec (19 lists):
 
-      0x05ad98    64 bytes   options palette, two 16-colour BGR555 banks
-                             (uploaded to CRAM 0x580 by the setup routine)
-      0x05b320    3782 bytes compressed slot for the glyph atlas
-      0x05c1e6               next resource; the slot never grows past this
-      0x05a7e0..  5 x 32     option row descriptors (exit, controls, voice,
-      0x05ab68               sound, cursor — file order, not menu order)
-      0x05a796..  44 x 10    label records, interleaved with the descriptors
+      5   main rows         descriptor +12 count, +16 list, +20 base 0xd860
+      10  action labels     count byte at 0x5ABBC, pointer at 0x5ABC8
+      1   action 11         the submenu EXIT, shared with the main exit row
+      1   button column     12 records at 0x5A5DE (8 button icons + EXIT)
+      1   mini labels       8 records at 0x5ACB0, linked to the button icons
 
-  The five descriptors, in menu (descriptor-table) order, are
+  The main EXIT row and action list 11 originally share one list at 0x5A796.
+  Decode exposes both consumers (OPTIONS/04_EXIT.bmp and OPTIONS/SUB_11_EXIT.bmp,
+  identical in the retail build); encode keeps the shared list while the two
+  images are identical and splits it into its own list as soon as they differ.
 
-      row      descriptor   retail label records   count   composed width
-      cursor   0x05ab68     0x05aa50               11      256
-      sound    0x05aa30     0x05a974               12      256
-      voice    0x05a954     0x05a8c8                7      240
-      controls 0x05a8a8     0x05a800               10      256
-      exit     0x05a7e0     0x05a796                4       64
+  The button column (12 records at 0x5A5DE) is derived, not edited: three icons
+  come from OPTIONS/BUTTON_ABC.bmp, five from OPTIONS/BUTTON_XYZLR.bmp, and the
+  last four spell EXIT out of the four 16-px cells of OPTIONS/SUB_11_EXIT.bmp.
+  The EXIT art is therefore exposed once and edited once; the column and the
+  submenu label share its textures instead of storing them twice.
 
-  ## Descriptor fields (verified by disassembling both consumers)
+  Model: the translator edits complete rendered labels as BMPs.  Encode cuts
+  each image into horizontal bands of at most 16 rows (a 16-px label is one
+  band, blank margins included; the two button boards get one band per icon)
+  and 16-pixel columns measured from the image origin, skips empty cells, and
+  stores each distinct cell once.  Records place those cells back at
+  their exact pixel positions, so the composed image is reproduced pixel for
+  pixel.  Spacing between words costs neither atlas space nor records: it is
+  expressed by the record x.
 
-      +0   u16     unused
-      +2   s16     row y
-      +4   u16     choice count (high half of a BE u32)
-      +8   u32     choice-indicator list pointer
-      +12  u16     label glyph count (high half of a BE u32)   <- encoded here
-      +16  u32     label record list pointer (0x06004000-relative) <- reused
-      +20  u32     texture base, 0x0000D860
-      +24  u32     selection-mark pair list (two 10-byte records per choice)
-      +28  u32     selection-mark centre list (one BE u32 per choice)
+  There is no fixed 16 x 16 glyph grid and no Japanese glyph indices to keep.
+  The atlas holds only the cells the current images use, in first-use order,
+  and the lists are re-pointed at it.
 
-  `+24` and `+28` are read only by the drawer's second pass (rows 0..3; the
-  exit row skips it).  `+4` 10-byte records at `+24` hold the left and right
-  marks; `+28[k]` supplies the choice centre.  The centre is the high s16 of
-  the BE u32 (the low half is preserved, not interpreted).  `+8` is the
-  input-only hit-rectangle list: the mark pass never reads it, which is what
-  lets the codec move a mark without moving its click target.
+  Budgets: decoded sheet <= 11,520 bytes (0x2d00, up to the next texture at
+  VDP1 0x6f000) and the PRS stream <= 3,782 bytes (the fixed slot).  A list
+  keeps its retail slot while its record count fits (cursor 11, sound 12,
+  voice 7, controls 10, exit 4); action lists are packed into the retired pool
+  at 0x5A656 (320 bytes) and then into the unused tail of the atlas slot,
+  whose bytes follow the PRS end marker and are never written by the
+  decompressor at 0x0600A164 (it ends on a zero back-reference word).  That is
+  662 bytes of relocated record storage in retail, 280 of which the 84 retail
+  records use; a translated screen needs more, and overflow is an error.
 
-  The label drawer at 0x0603ec90 walks exactly `+12` 10-byte records starting
-  at `+16`, adding `+20` to each record's `characterOffset`.  There is no end
-  pointer: `+8` is the choice-indicator list, and the five row handlers read
-  only `+4` and `+8`.  A whole label therefore becomes one record by writing
-  `+12 = 0x00010000` and leaving `+16` pointing at that record.
+  Artifacts:
 
-  ## Records
-
-      10 bytes, big-endian: s16 x, s16 y, u16 w, u16 h, u16 characterOffset
-
-  `characterOffset = texture byte offset / 8`, so `co * 8` is the byte offset
-  into the decompressed sheet.  The retail labels are 16 x 16 glyph tiles at
-  `y = -8`; a rebuilt label is one `w x 16` strip placed at the origin of the
-  bounding box it replaces, not centred: the retail rows are left-aligned at
-  `x = -128` except `exit` (a 64-pixel label at `-32`), and `voice` ends at
-  `+112`, so centring a 240-pixel strip would shift that row 8 pixels right and
-  misalign its choice bars.  A label that grows extends to the right.
-
-  ## Atlas
-
-  The 3,782-byte PRS stream decodes to 73 tiles (9,344 bytes) of 16 x 16 4bpp.
-  The options setup routine stages it at 0x060ec300 and uploads the block to
-  VDP1 0x60000, so the sheet maps to 0x6c300 = 0xd860 << 3.  The next texture
-  is staged at 0x060ef000, i.e. VDP1 0x6f000, which leaves
-
-      0x6f000 - 0x6c300 = 0x2d00 = 11,520 bytes       (90 tiles)
-
-  for the sheet.  The retail sheet is 9,344 bytes and recompresses to 3,734,
-  only 48 bytes under the slot, so strips cannot be appended: one real
-  256 x 16 strip already compresses to 4,157 bytes.  This codec therefore
-  replaces the sheet wholesale with one strip per label.
-
-  The first 64 bytes of the retail sheet are copied verbatim as a conservative
-  guard for the sheet's own head.  They are not the selection marks: those are
-  the last 128 bytes of the background stream (see below), not glyphs in this
-  atlas.
-
-  ## Background
-
-      0x05ae38    1,256 bytes   PRS stream (1,255 used at retail) decoding to
-                              49,920 bytes: a 288 x 144 4bpp image (20,736
-                              bytes) followed by 29,184 bytes of other data
-
-The image is the pink Options panel and its `オプション` tab.  It is packed
-row-major, top-down, two pixels per byte (high nibble first), with a 144-byte
-stride.  That is *not* the 144 x 288 sprite geometry: the 288-wide texture is
-drawn rotated, so the BMP is the natural layout the C++ pipeline uses
-(`OptionsBgndPatched.bmp`, 288 x 144, 4bpp).
-
-The first 20,736 bytes are editable through `OPTIONS/BACKGROUND.bmp`.  The
-29,184-byte tail is otherwise opaque engine data and is copied verbatim; the
-only editable part of it is its final 128 bytes, exposed as the two bracket
-BMPs.  The stream is recompressed into the same 1,256-byte slot, so it needs
-the deeper PRS search (`chain = 512`): the retail bytes recompress to 1,271
-with the default 256-entry chain, over the slot, and to 1,245 with 512.  The
-unchanged fast path means an untouched background is never recompressed.
-
-  ## Selection marks
-
-  The 128 bytes at decoded `0xC280..0xC2FF` are two `8 x 16` 4bpp sprites,
-  left then right.  The setup stages the background at `0x060E0000`, so the
-  pair lands at `0x060EC280` and maps to VDP1 texture base `0xD850`; each
-  mark samples 64 bytes (`characterOffset` 0 and 8).  They are not glyphs in
-  the label atlas and not part of `OPTIONS/BACKGROUND.bmp`.
-
-  `OPTIONS/BRACKET_LEFT.bmp` and `OPTIONS/BRACKET_RIGHT.bmp` expose those two
-  sprites.  They share one PRS stream: a background edit, a left edit and a
-  right edit are composed into one tail and recompressed once, so none can
-  overwrite another.  Every other decoded tail byte is preserved.  The BMP
-  palette is display-only and uses the background's `0x05AD98` bank; encode
-  compares pixels only, and a palette-only edit is not a change.
-
-  The textures are **shared by all rows**.  Editing them changes every
-  Options row that draws a mark; it cannot give one row a unique indicator.
-  Per-choice placement is independent, through `BRACKET_POSITIONS.json`.
-
-The mark texture base is the literal `0xD850` at `0x603EFDA`, not
-`descriptor+20 - 0x10`, so changing a row's texture base cannot give its marks
-different art.  Each `+24` record does carry its own `characterOffset`, so a
-future data-only design could point a row at extra 64-byte blocks elsewhere in
-VDP1 memory (for example spare space after the label strips).  Nothing places
-or exposes such blocks today: the only reserved mark art is this shared
-128-byte pair, and the `BRACKET_POSITIONS.json` schema deliberately writes only
-`x` and the centre while preserving `co`.  A unique Cursor Speed slider is
-therefore possible without an SH-2 patch in principle, but not by editing these
-two BMPs alone; it needs a new sprite-slot channel.
-
-## Artifacts
-
-      OPTIONS/CURSOR_SPEED.bmp   4bpp, 256 x 16 at retail
-      OPTIONS/SOUND.bmp          4bpp, 256 x 16
-      OPTIONS/VOICE.bmp          4bpp, 240 x 16
-      OPTIONS/CONTROLS.bmp       4bpp, 256 x 16
-      OPTIONS/EXIT.bmp           4bpp,  64 x 16
-      OPTIONS/BACKGROUND.bmp     4bpp, 288 x 144 (index 0 transparent)
-      OPTIONS/BRACKET_LEFT.bmp   4bpp,   8 x 16
-      OPTIONS/BRACKET_RIGHT.bmp  4bpp,   8 x 16
+      OPTIONS/00_CURSOR_SPEED.bmp        4bpp, 16 px high
+      OPTIONS/01_SOUND.bmp
+      OPTIONS/02_VOICE.bmp
+      OPTIONS/03_CONTROLS.bmp
+      OPTIONS/04_EXIT.bmp                shared with action list 11
+      OPTIONS/SUB_00_NONE.bmp            action list 0
+      OPTIONS/SUB_01_CONFIRM.bmp         action list 1 (決定)
+      OPTIONS/SUB_02_CANCEL.bmp          action list 2 (取り消し)
+      OPTIONS/SUB_04_MAP.bmp             action list 4 (全図)
+      OPTIONS/SUB_05_CONSULT.bmp         action list 5 (相談)
+      OPTIONS/SUB_06_DEFEND.bmp          action list 6 (防御)
+      OPTIONS/SUB_07_WAIT.bmp            action list 7 (ため)
+      OPTIONS/SUB_08_ATTACK.bmp          action list 8 (通常攻撃)
+      OPTIONS/SUB_09_MOVE.bmp            action list 9 (移動)
+      OPTIONS/SUB_10_DEFAULT.bmp         action list 10 (初期設定)
+      OPTIONS/SUB_11_EXIT.bmp            action list 11, shared with 04_EXIT;
+                                         its four 16-px cells are also the
+                                         button column's EXIT
+      OPTIONS/BUTTON_ABC.bmp             A, B, C: three 16-px icons, 16 x 48
+      OPTIONS/BUTTON_XYZLR.bmp           X, Y, Z, L, R: five icons, 16 x 80
+      OPTIONS/TEXT_ORIGINS.json          per-list anchor x/y
+      OPTIONS/BACKGROUND.bmp             288 x 144 panel
+      OPTIONS/BRACKET_LEFT.bmp           8 x 16 selection mark
+      OPTIONS/BRACKET_RIGHT.bmp
       OPTIONS/BRACKET_POSITIONS.json
 
-  Each label BMP is the composed label, not a grid of tiles.  Palette index 0
-  is transparent and stays 0.  Heights are fixed at 16; widths are free
-  positive multiples of 8 up to 2,040 pixels (VDP1's 8-bit width field), and
-  the five widths together must satisfy `64 + 8 * sum(w) <= 11,520`, i.e.
-  sum(w) <= 1,432.
+  Action list 3 has no records in the retail build and has no artifact, so a
+  translation that needs it must first give the list a pointer of its own (the
+  encoder writes one for every artifact it does get).
 
-  `BRACKET_POSITIONS.json` is declarative metadata, one entry per row and one
-  per choice:
-
-      { "center": -8, "left": -16, "right": 8 }
-
-  `center` is the choice centre; `left` and `right` are the mark offsets from
-  the row origin (the same values as the two records at `+24`).  The mark's
-  screen x is `record.x + center`.  `y`, `w`, `h` and `characterOffset` are
-  preserved from the parent; only `x` and the centre can change.  The file is
-  optional: absent means "keep the retail coordinates".
-
-  ## Preview palette
-
-  The BMP palette is the parent's own options palette, not a dialogue ramp:
-  the 64 bytes at 0x05ad98 are two 16-colour banks, the first for the options
-  background (144 x 288, 4bpp) and the second for the label glyphs.  The second
-  bank at 0x05adb8 renders the retail labels as the outlined white text the
-  screen shows; the first bank renders the same pixels as a washed-out pink
-  gradient, and `shared/palettes.lua`'s adv_dialogue_i18n renders them blue.
-  The bracket BMPs use the first (background) bank because their pixels come
-  from the background stream.  The palette is display only: encode() ignores
-  it completely, and a palette-only edit is not a change.
-
-  ## Round-tripping
-
-  If no label's composed pixels or width change, the background and both
-  bracket BMPs are absent or pixel-identical, and the positions metadata is
-  absent or identical to the parent, encode() returns the parent byte for
-  byte — that is what keeps a re-decode from rewriting a retail sheet into
-  strips.  `rebuild=always` (a codec argument, recorded by Ludared at decode
-  time) bypasses that fast path so the same labels are rewritten as strips;
-  it is how the reconstruction path is validated.  The three edit domains are
-  independent: a label edit does not touch 0x05ae38, a background or bracket
-  edit does not rebuild labels, and a positions edit touches neither pixel
-  stream.
-
-  Encode writes only
-
-      * the 1,256-byte background slot at 0x05ae38, when the panel or either
-        bracket sprite changed (all three compose into one stream),
-      * the 3,782-byte atlas slot at 0x05b320, when the labels changed,
-      * `+12..+15` of each of the five descriptors and the first 10 bytes of
-        each label record list (the target of `+16`),
-      * the `+24`/`+28` lists when `BRACKET_POSITIONS.json` changed.
-
-  The `+8` input hit rectangles and the SH-2 rendering routines are never
-  written.  Everything else — the other descriptor fields, the choice-
-  indicator lists, the unused retail records, OptionsSubmenu, SystemMenu,
-  PauseOptions, GameOptions and the LoadMenu block — is copied.  A byte
-  comparison before returning enforces that.
+  The BMP palette is the parent's own options label bank; encode compares
+  pixels only, so a palette edit is not a change.  Encode refuses any write
+  outside the atlas slot, the record lists, the text pointers/counts and the
+  independently optional background/mark/position data.
 ]]
 
 local function script_dir()
   local src = debug.getinfo(1, "S").source
   if src:sub(1, 1) == "@" then
-    return src:sub(2):match("^(.*)[/\\\\][^/\\\\]*$") or "."
+    return src:sub(2):match("^(.*)[/\\][^/\\]*$") or "."
   end
   return "."
 end
@@ -225,16 +109,15 @@ local sha256      = load_shared("sha256")
 local codec = {}
 
 codec.name        = "Sakura Taisen Options Menu Graphics"
-codec.description = "PATCH plugin for the Options-screen labels and selection marks in SAKURA"
+codec.description = "PATCH plugin for every Options-screen text list, the panel and the selection marks in SAKURA"
 codec.kind        = "patch"
-codec.version     = 3
+codec.version     = 4
 
 local FILE_BYTES  = 391712
 local FILE_SHA256 = "1729cd8701fa8da30b203d0bf97e47e2dc9cf06b50ca91589ea760fe0cb8ff87"
 
 local ATLAS_OFFSET  = 0x05b320
 local ATLAS_SLOT    = 3782              -- fixed compressed slot
-local ATLAS_PREFIX  = 64                -- preserved head of the sheet
 local ATLAS_LIMIT   = 0x2d00            -- 11,520 bytes before the next texture
 local TEXTURE_BASE  = 0xd860            -- VDP1 0x6c300 >> 3
 local RAM_BASE      = 0x06004000        -- file offset -> RAM address
@@ -249,11 +132,10 @@ local BACKGROUND_W      = 288
 local BACKGROUND_H      = 144
 local BACKGROUND_PIXELS = BACKGROUND_W * BACKGROUND_H // 2   -- 20,736
 local BACKGROUND_END    = 0xc300        -- 49,920 decoded bytes
-local BACKGROUND_CHAIN  = 512           -- deeper search keeps the slot
+local BACKGROUND_CHAIN  = 1024          -- deeper search keeps the slot
 
 -- The two selection marks are the last 128 bytes of the background stream:
--- 8 x 16 4bpp sprites, left then right.  They are staged at 0x060ec280 and
--- are therefore VDP1 texture base 0xd850, independently of the label atlas.
+-- 8 x 16 4bpp sprites, left then right, texture base 0xd850.
 local BRACKET_OFFSET   = 0xc280
 local BRACKET_BYTES    = 64
 local BRACKET_W        = 8
@@ -264,22 +146,80 @@ local RECORD_BYTES  = 10
 local LABEL_H       = 16
 local LABEL_ALIGN   = 8
 local LABEL_MAX_W   = 255 * 8           -- VDP1 CMDSIZE width field
-local MAX_RECORDS   = 64
+local MAX_RECORDS   = 64                -- per list
+local ATLAS_CHAIN   = 1024              -- PRS match-chain depth
 local MAX_CHOICES   = 32
 
-local DESCRIPTORS = {
-  { name = "CURSOR_SPEED", offset = 0x05ab68 },
-  { name = "SOUND",        offset = 0x05aa30 },
-  { name = "VOICE",        offset = 0x05a954 },
-  { name = "CONTROLS",     offset = 0x05a8a8 },
-  { name = "EXIT",         offset = 0x05a7e0 },
+-- Key-config tables (research/SAKTAI_OPTIONS_MENU.md 5.3).
+local ACTION_TABLE    = 0x05abbc        -- 12 count bytes
+local ACTION_POINTERS = 0x05abc8        -- 12 BE dwords
+local ACTION_COUNT    = 12
+local ACTION_ARENA    = 0x05a656        -- retired action pool, records 12..43
+local ACTION_ARENA_LEN = 0x05a796 - ACTION_ARENA
+local BUTTON_REC      = 0x05a5de        -- 12 records read by the drawer
+local BUTTON_COUNT    = 12
+local MINI_REC        = 0x05acb0        -- 8 records, same icons as the buttons
+local MINI_COUNT      = 8
+
+-- The button column (12 records at 0x5A5DE) is not an artifact: encode derives
+-- it from two button boards and from the submenu's own EXIT label.  Each board
+-- is the bounding box of the icons it carries, so a missing or extra icon is
+-- an error rather than a silently shorter column.
+local BUTTON_ABC_NAME     = "BUTTON_ABC"       -- A, B, C
+local BUTTON_XYZLR_NAME   = "BUTTON_XYZLR"     -- X, Y, Z, L, R
+local BUTTON_ABC_ANCHOR   = { x = -48, y = -80 }
+local BUTTON_XYZLR_ANCHOR = { x = -48, y = -24 }
+local BUTTON_ABC_H        = 48                 -- three 16-px icons
+local BUTTON_XYZLR_H      = 80                 -- five 16-px icons
+local BUTTON_ABC_COUNT    = 3
+local BUTTON_XYZLR_COUNT  = 5
+local EXIT_CELLS          = 4                  -- the column's last four records
+local EXIT_CELL_WIDTH     = 16                 -- spell EXIT, one cell per letter
+local EXIT_COLUMN_X       = -32                -- where those cells sit
+local EXIT_COLUMN_Y       = 64                 -- in the column's own geometry
+
+-- The five main rows.  `cap` is the number of records the retail slot holds;
+-- a longer list is relocated instead of overwriting its neighbours.
+local MAIN = {
+  { name = "00_CURSOR_SPEED", desc = 0x05ab68, slot = 0x05aa50, cap = 11,
+    anchor = { x = -128, y = -8 } },
+  { name = "01_SOUND",        desc = 0x05aa30, slot = 0x05a974, cap = 12,
+    anchor = { x = -128, y = -8 } },
+  { name = "02_VOICE",        desc = 0x05a954, slot = 0x05a8c8, cap = 7,
+    anchor = { x = -128, y = -8 } },
+  { name = "03_CONTROLS",     desc = 0x05a8a8, slot = 0x05a800, cap = 10,
+    anchor = { x = -128, y = -8 } },
+  { name = "04_EXIT",         desc = 0x05a7e0, slot = 0x05a796, cap = 4,
+    anchor = { x = -32,  y = -8 },
+    -- Four 16-px cells, the same four the button column shows: the EXIT label
+    -- is one texture set for both consumers, exactly as in retail.
+    cells = true, icons = EXIT_CELLS },
 }
+
+-- Action lists 0..11 minus list 3, which has no records in the retail build.
+-- List 11 is the shared EXIT and is not an artifact of its own.
+local ACTIONS = {
+  { index = 0,  name = "SUB_00_NONE" },
+  { index = 1,  name = "SUB_01_CONFIRM" },
+  { index = 2,  name = "SUB_02_CANCEL" },
+  { index = 4,  name = "SUB_04_MAP" },
+  { index = 5,  name = "SUB_05_CONSULT" },
+  { index = 6,  name = "SUB_06_DEFEND" },
+  { index = 7,  name = "SUB_07_WAIT" },
+  { index = 8,  name = "SUB_08_ATTACK" },
+  { index = 9,  name = "SUB_09_MOVE" },
+  { index = 10, name = "SUB_10_DEFAULT" },
+}
+local ACTION_ANCHOR = { x = -32, y = -8 }
+
+local SPLIT_EXIT_NAME = "SUB_11_EXIT"
 
 local ARTIFACT_PREFIX    = "OPTIONS/"
 local BACKGROUND_NAME    = ARTIFACT_PREFIX .. "BACKGROUND.bmp"
 local BRACKET_LEFT_NAME  = ARTIFACT_PREFIX .. "BRACKET_LEFT.bmp"
 local BRACKET_RIGHT_NAME = ARTIFACT_PREFIX .. "BRACKET_RIGHT.bmp"
 local POSITIONS_NAME     = ARTIFACT_PREFIX .. "BRACKET_POSITIONS.json"
+local ORIGINS_NAME       = ARTIFACT_PREFIX .. "TEXT_ORIGINS.json"
 
 local BMP_FILE_HEADER = 14
 local BMP_INFO_HEADER = 40
@@ -299,9 +239,21 @@ local function be32(s, off)
     + s:byte(off + 4)
 end
 
+local function ceil8(n)
+  return ((n + 7) // 8) * 8
+end
+
 -- Pack a 10-byte record; x and y are signed, the rest unsigned.
 local function pack_record(x, y, w, h, co)
   return string.pack(">i2i2I2I2I2", x, y, w, h, co)
+end
+
+local function parse_record(data, off)
+  return {
+    x = sbe16(data, off),     y = sbe16(data, off + 2),
+    w = be16(data, off + 4),  h = be16(data, off + 6),
+    co = be16(data, off + 8),
+  }
 end
 
 -- Replace #bytes at a 0-based file offset; the length never changes.
@@ -311,15 +263,15 @@ end
 
 -- True when [pos, pos + len) overlaps one of the five 32-byte descriptors.
 local function overlaps_descriptor(pos, len)
-  for _, desc in ipairs(DESCRIPTORS) do
-    if pos < desc.offset + 32 and desc.offset < pos + len then
-      return desc.name
+  for _, m in ipairs(MAIN) do
+    if pos < m.desc + 32 and m.desc < pos + len then
+      return m.name
     end
   end
   return nil
 end
 
--- string.char(table.unpack(...)) runs out of stack on a 2,040-pixel strip, so
+-- string.char(table.unpack(...)) runs out of stack on a large image, so
 -- convert in chunks.
 local function bytes_to_string(px)
   local out = {}
@@ -417,166 +369,494 @@ local function parse_bmp(bmp, stage, want_bpp)
   return table.concat(rows), width, height, pal, bpp, colours
 end
 
--- The five label records, read through each descriptor's own `+16` pointer.
-local function read_labels(data, stage)
-  local labels = {}
+-- Compose records into one linear 4bpp image.  Index 0 is transparent.
+-- Returns the packed pixels, width, height and the bounding-box origin.
+--
+-- `frame` (optional) is the list's canonical cell: the canvas is the union of
+-- that cell and the records' own box.  Segments are cropped to their ink, so
+-- the records alone would shrink the canvas to the ink height; the union keeps
+-- every BMP the size the screen's layout gives it while the ink still lands on
+-- its exact row.
+local function compose_records(recs, atlas, stage, frame)
+  if #recs == 0 then
+    error(stage .. ": the list has no records", 0)
+  end
+  local x0, y0, x1, y1 = math.huge, math.huge, -math.huge, -math.huge
+  for _, r in ipairs(recs) do
+    x0 = math.min(x0, r.x)
+    y0 = math.min(y0, r.y)
+    x1 = math.max(x1, r.x + r.w)
+    y1 = math.max(y1, r.y + r.h)
+  end
+  if frame then
+    x0 = math.min(x0, frame.x)
+    y0 = math.min(y0, frame.y)
+    y1 = math.max(y1, frame.y + frame.h)
+    x1 = math.max(x1, frame.x + (frame.w or 0))
+    -- Cropped ink can end on any column, but a 4bpp row is whole bytes and the
+    -- sprite width grid is 8 px, so the canvas keeps that grid from the frame.
+    x1 = x0 + ceil8(x1 - x0)
+  end
 
-  for _, desc in ipairs(DESCRIPTORS) do
-    local off = desc.offset
-    if off + 32 > #data then
-      error(string.format("%s: the %s descriptor at 0x%06X is outside the file",
-        stage, desc.name, off), 0)
+  local w, h = x1 - x0, y1 - y0
+  if w <= 0 or h <= 0 then
+    error(stage .. ": the records have an empty bounding box", 0)
+  end
+  if w % 2 ~= 0 then
+    error(string.format("%s: composed width is %d, an odd number of pixels; a 4bpp row is whole bytes",
+      stage, w), 0)
+  end
+
+  local stride = w // 2
+  local px = {}
+  for i = 1, stride * h do px[i] = 0 end
+
+  for _, r in ipairs(recs) do
+    local src_stride = r.w // 2
+    local last = r.co * 8 + (r.h - 1) * src_stride + (r.w - 1) // 2
+    if last >= #atlas then
+      error(string.format(
+        "%s: a record at characterOffset %d reads past the %d-byte sheet",
+        stage, r.co, #atlas), 0)
     end
 
+    for row = 0, r.h - 1 do
+      for col = 0, r.w - 1 do
+        local b = atlas:byte(r.co * 8 + row * src_stride + (col >> 1) + 1)
+        local v = (col & 1) == 0 and (b >> 4) or (b & 0x0F)
+        if v ~= 0 then
+          local dx = r.x - x0 + col
+          local di = (r.y - y0 + row) * stride + (dx >> 1) + 1
+          local db = px[di]
+          if (dx & 1) == 0 then
+            px[di] = (db & 0x0F) | (v << 4)
+          else
+            px[di] = (db & 0xF0) | v
+          end
+        end
+      end
+    end
+  end
+
+  return bytes_to_string(px), w, h, x0, y0
+end
+
+-- One pixel of a 4bpp image; 0 outside it so callers may round widths up.
+local function nibble(px, w, h, x, y)
+  if x < 0 or y < 0 or x >= w or y >= h then return 0 end
+  local b = px:byte(y * (w // 2) + (x // 2) + 1)
+  return (x & 1) == 0 and (b >> 4) or (b & 0x0F)
+end
+
+-- A rectangle as 4bpp bytes, copied pixel by pixel so it may start on any
+-- column (the sprite pixels do not have to share the image's byte grid).
+--
+-- `cw` columns are read and `pw` (>= cw) are stored: the extra columns are
+-- transparent.  They must be, because the segment's identity is its bytes.
+-- Copying the neighbouring pixels into the padding would make two instances of
+-- the same glyph compare unequal whenever their neighbours differ, and the
+-- shared atlas would store the glyph twice.
+local function cut_rect(px, w, h, x, y, cw, ch, pw)
+  pw = pw or cw
+  local out = {}
+  for r = 0, ch - 1 do
+    for c = 0, pw - 1, 2 do
+      local hi = c < cw and nibble(px, w, h, x + c, y + r) or 0
+      local lo = (c + 1) < cw and nibble(px, w, h, x + c + 1, y + r) or 0
+      out[#out + 1] = string.char((hi << 4) | lo)
+    end
+  end
+  return table.concat(out)
+end
+
+--[[ Horizontal bands the segmentation may cut between.
+
+  A 16-px label is one band, so its ink keeps one vertical run and a record may
+  be as tall as the label.  Taller images (the button column) get one band per
+  icon: the first starts at row 0 so the composed image keeps its full frame,
+  the rest start at their first inked row and end before the next icon's ink,
+  so a band can never swallow the icon below it.
+]]
+local function bands_of(px, w, h)
+  local iw = w // 2
+  local blank = string.rep("\0", iw)
+  local row_ink = {}
+  for y = 0, h - 1 do row_ink[y] = px:sub(y * iw + 1, (y + 1) * iw) ~= blank end
+
+  local bands, y, first = {}, 0, true
+  while y < h do
+    local top, bottom
+    if h == LABEL_H then
+      top, bottom = 0, LABEL_H
+    else
+      if first then
+        top = 0
+      else
+        while y < h and not row_ink[y] do y = y + 1 end
+        top = y
+        if top >= h then break end
+      end
+      local limit = math.min(h, top + LABEL_H)
+      local last = top - 1
+      for r = top, limit - 1 do if row_ink[r] then last = r end end
+      if last < top then
+        bottom = limit
+      else
+        local nexty = last + 1
+        while nexty < h and not row_ink[nexty] do nexty = nexty + 1 end
+        bottom = math.min(limit, nexty)
+        if bottom <= last then bottom = last + 1 end
+      end
+    end
+    bands[#bands + 1] = { top = top, bottom = bottom }
+    y = bottom
+    first = false
+  end
+  return bands
+end
+
+-- Maximal runs of columns that hold ink, bridging blank gaps of at most
+-- `gap` columns: a gap narrower than a sprite's padding costs atlas space but
+-- saves a record, which is the scarcer resource.
+local function ink_runs(px, w, h, top, bottom, gap)
+  local function ink(x)
+    for r = top, bottom - 1 do
+      if nibble(px, w, h, x, r) ~= 0 then return true end
+    end
+    return false
+  end
+
+  local runs, x = {}, 0
+  while x < w do
+    while x < w and not ink(x) do x = x + 1 end
+    if x >= w then break end
+    local s, e = x, x
+    while true do
+      while x < w and ink(x) do e = x; x = x + 1 end
+      local blank = x
+      while blank < w and not ink(blank) do blank = blank + 1 end
+      if blank < w and (blank - x) <= gap then
+        e = blank
+        x = blank
+      else
+        break
+      end
+    end
+    runs[#runs + 1] = { s = s, e = e }
+  end
+  return runs
+end
+
+-- The ink box of [x0, x1] x [top, bottom - 1], or nil when it is empty.
+local function ink_box(px, w, h, x0, x1, top, bottom)
+  local left, right, first, last
+  for x = x0, x1 do
+    for r = top, bottom - 1 do
+      if nibble(px, w, h, x, r) ~= 0 then
+        left = left or x
+        right = x
+        break
+      end
+    end
+  end
+  if not left then return nil end
+  for r = top, bottom - 1 do
+    for x = left, right do
+      if nibble(px, w, h, x, r) ~= 0 then
+        first = first or r
+        last = r
+        break
+      end
+    end
+  end
+  return left, first, right - left + 1, last - first + 1
+end
+
+-- Split [s, e] into pieces no wider than `maxw`; every piece but the last is
+-- a multiple of 8 px, the sprite width grid.
+local function split_run(s, e, maxw)
+  local pieces, at = {}, s
+  while at <= e do
+    local remaining = e - at + 1
+    local take = math.min(maxw, remaining)
+    if at + take - 1 < e then take = math.max(LABEL_ALIGN, (take // LABEL_ALIGN) * LABEL_ALIGN) end
+    pieces[#pieces + 1] = { s = at, e = at + take - 1 }
+    at = at + take
+  end
+  return pieces
+end
+
+--[[ Split one image into reusable rectangles.
+
+  `opts` picks the strategy:
+
+    cells = true      16-px columns from the image origin, one record per cell
+                      that holds ink (the button column, whose 12 records the
+                      drawer reads unconditionally)
+    gap, maxw         ink runs, split no wider than `maxw`
+
+  Both crop every rectangle to its own ink box: rows that hold nothing are
+  dropped and the record's y moves down to compensate, and the same happens on
+  the columns.  Cropping never changes which pixel lands where, so the rendered
+  image is exact; it only stops transparent margins from being stored.
+
+  All widths round up to 8 px, the smallest sprite width a 4bpp VDP1 record can
+  address, and the extra columns are transparent.
+]]
+local function segments_of(px, w, h, stage, opts)
+  if w % LABEL_ALIGN ~= 0 then
+    error(string.format("%s: width %d is not a multiple of %d",
+      stage, w, LABEL_ALIGN), 0)
+  end
+  opts = opts or {}
+  local segs = {}
+
+  for _, band in ipairs(bands_of(px, w, h)) do
+    local spans = {}
+    if opts.cells then
+      for x = 0, w - 1, LABEL_H do
+        spans[#spans + 1] = { s = x, e = math.min(x + LABEL_H, w) - 1 }
+      end
+    else
+      for _, run in ipairs(ink_runs(px, w, h, band.top, band.bottom, opts.gap or 0)) do
+        for _, piece in ipairs(split_run(run.s, run.e, opts.maxw or LABEL_H)) do
+          spans[#spans + 1] = piece
+        end
+      end
+    end
+
+    local band_segs = {}
+    for _, span in ipairs(spans) do
+      local x, y, cw, ch = ink_box(px, w, h, span.s, span.e, band.top, band.bottom)
+      if x then
+        band_segs[#band_segs + 1] = { x = x, y = y, cw = cw, w = ceil8(cw), h = ch }
+      end
+    end
+
+    -- The last sprite has to reach the artboard's right edge, or decode would
+    -- compose a narrower canvas than the image the translator saved: the rows
+    -- are cropped to their ink, and a list whose last glyph ends two columns
+    -- short would lose those two columns on every round trip.  So the final
+    -- sprite is shifted left until its padded width lands exactly on the edge
+    -- and re-read from there; the columns it gains are transparent, which costs
+    -- a padded block of zeroes and nothing else.
+    --
+    -- The button column is no exception: its last inked cell lands on column
+    -- 64 of an 80-px artboard, so the widened cell is exactly a 16-px cell and
+    -- the twelve icons keep their one-record-each mapping.
+    if #band_segs > 0 then
+      local last = band_segs[#band_segs]
+      last.w = ceil8(w - last.x)
+      last.x = w - last.w
+      last.cw = last.w
+    end
+
+    for _, s in ipairs(band_segs) do
+      s.data = cut_rect(px, w, h, s.x, s.y, s.cw, s.h, s.w)
+      segs[#segs + 1] = s
+    end
+  end
+
+  return segs
+end
+
+-- Total order for the atlas: same height first (a PRS match can then span a
+-- segment boundary), then width, then the pixels themselves.  The comparator
+-- is total, so the layout is identical on every run.
+local function segment_before(a, b)
+  if a.h ~= b.h then return a.h < b.h end
+  if a.w ~= b.w then return a.w < b.w end
+  if a.data ~= b.data then return a.data < b.data end
+  return a.first < b.first
+end
+
+--[[ Store each distinct rectangle once and turn every segment into a record.
+
+  Deduplication is exact: the key is the pixel bytes plus the size, so two
+  letters share a rectangle only when they are identical.  The sheet is laid
+  out in `segment_before` order, not first-use order: identical and similar
+  shapes end up next to each other, which is what the PRS encoder can match.
+
+  Every rectangle is padded to 8 bytes, the granularity of a VDP1
+  characterOffset, so the padding is transparent and never stored as ink.
+
+  Returns the sheet and the unique rectangles, or nil plus a message when the
+  decoded budget is exceeded (the caller may try another segmentation).
+]]
+local function build_atlas(entries)
+  local index, list = {}, {}
+
+  for _, e in ipairs(entries) do
+    for _, s in ipairs(e.segs) do
+      local key = s.w .. "x" .. s.h .. ":" .. s.data
+      if not index[key] then
+        index[key] = { w = s.w, h = s.h, data = s.data, first = #list + 1 }
+        list[#list + 1] = index[key]
+      end
+    end
+  end
+
+  table.sort(list, segment_before)
+
+  local parts, at = {}, 0
+  for i, s in ipairs(list) do
+    s.offset = at
+    parts[i] = s.data .. string.rep("\0", ceil8(#s.data) - #s.data)
+    at = at + ceil8(#s.data)
+  end
+  local sheet = table.concat(parts)
+
+  if at > ATLAS_LIMIT then
+    return nil, string.format(
+      "the shared atlas needs %d decoded bytes, over the %d-byte limit (0x2d00, the next texture at VDP1 0x6f000)",
+      at, ATLAS_LIMIT)
+  end
+  if at == 0 then
+    return nil, "no text pixels at all; every label is blank"
+  end
+
+  for _, e in ipairs(entries) do
+    e.records = {}
+    for _, s in ipairs(e.segs) do
+      local hit = index[s.w .. "x" .. s.h .. ":" .. s.data]
+      e.records[#e.records + 1] = {
+        x = e.anchor.x + s.x,
+        y = e.anchor.y + s.y,
+        w = s.w,
+        h = s.h,
+        co = hit.offset // 8,
+      }
+    end
+  end
+
+  return sheet, list
+end
+
+-- One list's records, read from the parent (decode) or built from an image.
+local function records_for(recs, name, stage)
+  local out = {}
+  for k, r in ipairs(recs) do
+    if r.w == 0 or r.h == 0 then
+      error(string.format("%s: %s record %d is an empty sprite", stage, name, k), 0)
+    end
+    if r.w % 2 ~= 0 then
+      error(string.format("%s: %s record %d has an odd width %d; a 4bpp row is whole bytes",
+        stage, name, k, r.w), 0)
+    end
+    out[k] = r
+  end
+  return out
+end
+
+-- Read every text list in the parent.  All pointers are 0x06004000-relative in
+-- the shipped file; a raw file offset is accepted too.
+local function read_text(data, stage)
+  local main = {}
+  for _, m in ipairs(MAIN) do
+    local off = m.desc
+    if off + 32 > #data then
+      error(string.format("%s: the %s descriptor at 0x%06X is outside the file",
+        stage, m.name, off), 0)
+    end
     local count = be16(data, off + 12)
     local base  = be32(data, off + 20)
     if base ~= TEXTURE_BASE then
       error(string.format("%s: the %s texture base is 0x%04X, expected 0x%04X",
-        stage, desc.name, base, TEXTURE_BASE), 0)
+        stage, m.name, base, TEXTURE_BASE), 0)
     end
     if count < 1 or count > MAX_RECORDS then
       error(string.format("%s: the %s label count is %d at +12; expected 1..%d",
-        stage, desc.name, count, MAX_RECORDS), 0)
+        stage, m.name, count, MAX_RECORDS), 0)
     end
-
-    -- `+16` is a 0x06004000-relative address in every shipped descriptor; a raw
-    -- file offset is accepted too so a hand-built parent still reads.
     local ptr = be32(data, off + 16)
-    local rec_pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
-    if rec_pos + count * RECORD_BYTES > #data then
+    local pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
+    if pos + count * RECORD_BYTES > #data then
       error(string.format(
         "%s: the %s record list 0x%08X (+16) does not fit: %d bytes from 0x%06X, the file ends at 0x%06X",
-        stage, desc.name, ptr, count * RECORD_BYTES, rec_pos, #data), 0)
+        stage, m.name, ptr, count * RECORD_BYTES, pos, #data), 0)
     end
-
     local recs = {}
-    for k = 0, count - 1 do
-      local ro = rec_pos + k * RECORD_BYTES
-      local x  = sbe16(data, ro)
-      local y  = sbe16(data, ro + 2)
-      local w  = be16(data, ro + 4)
-      local h  = be16(data, ro + 6)
-      local co = be16(data, ro + 8)
-      if w == 0 or h == 0 then
-        error(string.format("%s: %s record %d is an empty sprite",
-          stage, desc.name, k), 0)
-      end
-      if w % 2 ~= 0 then
-        error(string.format("%s: %s record %d has an odd width %d; a 4bpp row is whole bytes",
-          stage, desc.name, k, w), 0)
-      end
-      recs[k + 1] = { x = x, y = y, w = w, h = h, co = co }
-    end
-
-    labels[#labels + 1] = {
-      name      = desc.name,
-      desc_off  = off,
-      rec_pos   = rec_pos,
-      pointer   = ptr,
-      count     = count,
-      recs      = recs,
+    for k = 0, count - 1 do recs[k + 1] = parse_record(data, pos + k * RECORD_BYTES) end
+    main[#main + 1] = {
+      name = m.name, def = m, pos = pos, count = count,
+      recs = records_for(recs, m.name, stage),
     }
   end
 
-  return labels
-end
-
--- The selection-mark geometry: descriptor +4 is the choice count, +24 is a
--- list of 20-byte pairs (left record, right record) per choice and +28 is one
--- BE u32 per choice whose low s16 is the centre.  Unlike the +16 label list,
--- these two lists are read only by the drawer's second pass.
-local function read_positions(data, stage)
-  local rows = {}
-
-  for _, desc in ipairs(DESCRIPTORS) do
-    local off = desc.offset
-    if off + 32 > #data then
-      error(string.format("%s: the %s descriptor at 0x%06X is outside the file",
-        stage, desc.name, off), 0)
+  local actions = {}
+  for i = 0, ACTION_COUNT - 1 do
+    local count = data:byte(ACTION_TABLE + i + 1)
+    local ptr = be32(data, ACTION_POINTERS + i * 4)
+    local pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
+    if count > MAX_RECORDS then
+      error(string.format("%s: action list %d has %d records; expected at most %d",
+        stage, i, count, MAX_RECORDS), 0)
     end
-
-    local count = be16(data, off + 4)
-    if count < 1 or count > MAX_CHOICES then
-      error(string.format("%s: the %s choice count is %d at +4; expected 1..%d",
-        stage, desc.name, count, MAX_CHOICES), 0)
-    end
-
-    local pair_ptr   = be32(data, off + 24)
-    local centre_ptr = be32(data, off + 28)
-    local pair_pos   = pair_ptr >= RAM_BASE and pair_ptr - RAM_BASE or pair_ptr
-    local centre_pos = centre_ptr >= RAM_BASE and centre_ptr - RAM_BASE or centre_ptr
-    local pair_len   = count * 20
-    local centre_len = count * 4
-
-    if pair_pos + pair_len > #data then
+    if count > 0 and pos + count * RECORD_BYTES > #data then
       error(string.format(
-        "%s: the %s +24 list 0x%08X does not fit: %d bytes from 0x%06X, the file ends at 0x%06X",
-        stage, desc.name, pair_ptr, pair_len, pair_pos, #data), 0)
+        "%s: action list %d (0x%08X) does not fit: %d bytes from 0x%06X",
+        stage, i, ptr, count * RECORD_BYTES, pos), 0)
     end
-    if centre_pos + centre_len > #data then
-      error(string.format(
-        "%s: the %s +28 list 0x%08X does not fit: %d bytes from 0x%06X, the file ends at 0x%06X",
-        stage, desc.name, centre_ptr, centre_len, centre_pos, #data), 0)
-    end
-
-    local choices = {}
-    for k = 0, count - 1 do
-      local ro = pair_pos + k * 20
-      local left = {
-        x = sbe16(data, ro), y = sbe16(data, ro + 2),
-        w = be16(data, ro + 4), h = be16(data, ro + 6), co = be16(data, ro + 8),
-      }
-      local right = {
-        x = sbe16(data, ro + 10), y = sbe16(data, ro + 12),
-        w = be16(data, ro + 14), h = be16(data, ro + 16), co = be16(data, ro + 18),
-      }
-      if left.w == 0 or left.h == 0 or right.w == 0 or right.h == 0 then
-        error(string.format("%s: %s choice %d has an empty mark sprite",
-          stage, desc.name, k), 0)
-      end
-
-      local co = centre_pos + k * 4
-      choices[k + 1] = {
-        center  = sbe16(data, co),
-        center2 = be16(data, co + 2),
-        left    = left,
-        right   = right,
-      }
-    end
-
-    rows[#rows + 1] = {
-      name       = desc.name,
-      desc_off   = off,
-      count      = count,
-      pair_ptr   = pair_ptr,
-      centre_ptr = centre_ptr,
-      pair_pos   = pair_pos,
-      centre_pos = centre_pos,
-      choices    = choices,
-    }
+    local recs = {}
+    for k = 0, count - 1 do recs[k + 1] = parse_record(data, pos + k * RECORD_BYTES) end
+    actions[i] = { index = i, pos = pos, count = count, recs = recs }
   end
 
-  return rows
+  local function fixed(pos, count, name)
+    if pos + count * RECORD_BYTES > #data then
+      error(string.format("%s: the %s list at 0x%06X is outside the file",
+        stage, name, pos), 0)
+    end
+    local recs = {}
+    for k = 0, count - 1 do recs[k + 1] = parse_record(data, pos + k * RECORD_BYTES) end
+    return { pos = pos, count = count, recs = recs }
+  end
+
+  return {
+    main = main,
+    actions = actions,
+    button = fixed(BUTTON_REC, BUTTON_COUNT, "button column"),
+    mini = fixed(MINI_REC, MINI_COUNT, "mini label"),
+  }
 end
 
--- Metadata is deliberately small and declarative: one entry per row, one entry
--- per choice, with the three values a layout edit actually needs.  Everything
--- else in the pair records (y, w, h, characterOffset) is preserved.
-local function positions_json(rows)
-  local out = { "{\n  \"rows\": [" }
-  for i, row in ipairs(rows) do
-    out[#out + 1] = string.format(
-      "%s    {\n      \"name\": \"%s\",\n      \"choices\": [",
-      i == 1 and "\n" or ",\n", row.name)
-    for k, choice in ipairs(row.choices) do
-      out[#out + 1] = string.format(
-        "%s        { \"center\": %d, \"left\": %d, \"right\": %d }",
-        k == 1 and "\n" or ",\n", choice.center, choice.left.x, choice.right.x)
-    end
-    out[#out + 1] = "\n      ]\n    }"
+-- The twelve action-list artifacts, by list index; list 3 is empty in retail.
+local ACTION_BY_INDEX = {}
+for _, a in ipairs(ACTIONS) do ACTION_BY_INDEX[a.index] = a end
+local EXIT_INDEX = 11
+
+local function atlas_of(data)
+  return prs:decode(data:sub(ATLAS_OFFSET + 1, ATLAS_OFFSET + ATLAS_SLOT))[1].data
+end
+
+-- The only argument is `rebuild=auto|always`; decode validates it so a typo in
+-- the manifest fails at decode time, and encode consumes it.  An empty table is
+-- treated as "no arguments" because the house test harness passes `{}`.
+local function parse_args(args)
+  if type(args) == "table" and next(args) == nil then args = nil end
+  return args_parser.parse(args, {
+    rebuild = { values = { "auto", "always" }, default = "auto" },
+  }, "options menu gfx")
+end
+
+-- BMP palette from the parent's second 16-colour bank (label glyphs).
+local function preview_palette(data, stage)
+  if #data < PALETTE_TEXT + PALETTE_BANK_BYTES then
+    error(string.format("%s: the options palette at 0x%06X is outside the file",
+      stage, PALETTE_TEXT), 0)
   end
-  out[#out + 1] = "\n  ]\n}\n"
-  return table.concat(out)
+  local pal = bgr555_to_bmp(data:sub(PALETTE_TEXT + 1, PALETTE_TEXT + PALETTE_BANK_BYTES), 16)
+  return pal:sub(1, 60) .. "\x00\x00\xFF\x00"
+end
+
+-- The background uses the *first* bank of the same 64-byte palette block.
+local function background_palette(data, stage)
+  if #data < PALETTE_OFFSET + PALETTE_BANK_BYTES then
+    error(string.format("%s: the options palette at 0x%06X is outside the file",
+      stage, PALETTE_OFFSET), 0)
+  end
+  return bgr555_to_bmp(
+    data:sub(PALETTE_OFFSET + 1, PALETTE_OFFSET + PALETTE_BANK_BYTES), 16)
 end
 
 -- A second, private copy of the project's minimal JSON reader.  font.lua keeps
@@ -657,6 +937,177 @@ local function only_keys(tbl, allowed, where, stage)
   end
 end
 
+-- Every text list's anchor, in a stable order: 5 main rows, 10 action lists,
+-- then the button column.
+local function default_origins()
+  local list = {}
+  for _, m in ipairs(MAIN) do
+    list[#list + 1] = { name = m.name, x = m.anchor.x, y = m.anchor.y }
+  end
+  for _, a in ipairs(ACTIONS) do
+    list[#list + 1] = { name = a.name, x = ACTION_ANCHOR.x, y = ACTION_ANCHOR.y }
+  end
+  list[#list + 1] = { name = SPLIT_EXIT_NAME, x = ACTION_ANCHOR.x, y = ACTION_ANCHOR.y }
+  list[#list + 1] = { name = BUTTON_ABC_NAME, x = BUTTON_ABC_ANCHOR.x, y = BUTTON_ABC_ANCHOR.y }
+  list[#list + 1] = { name = BUTTON_XYZLR_NAME, x = BUTTON_XYZLR_ANCHOR.x, y = BUTTON_XYZLR_ANCHOR.y }
+  return list
+end
+
+local function origins_json(list)
+  local out = { "{\n  \"origins\": [" }
+  for i, entry in ipairs(list) do
+    out[#out + 1] = string.format(
+      "%s    { \"name\": \"%s\", \"x\": %d, \"y\": %d }",
+      i == 1 and "\n" or ",\n", entry.name, entry.x, entry.y)
+  end
+  out[#out + 1] = "\n  ]\n}\n"
+  return table.concat(out)
+end
+
+-- Returns name -> {x, y}.  Absent entries fall back to the retail anchors.
+local function parse_origins(text, stage)
+  local ok, root = pcall(json_decode, text)
+  if not ok then
+    error(stage .. ": invalid JSON: " .. tostring(root), 0)
+  end
+  if type(root) ~= "table" then
+    error(stage .. ": the top level must be an object", 0)
+  end
+  only_keys(root, { origins = true }, "the top level", stage)
+  if type(root.origins) ~= "table" or type(root.origins[1]) ~= "table" then
+    error(stage .. ": expected a non-empty \"origins\" array", 0)
+  end
+
+  local known = {}
+  for _, entry in ipairs(default_origins()) do known[entry.name] = true end
+
+  local out = {}
+  for i, entry in ipairs(root.origins) do
+    local where = "origins[" .. i .. "]"
+    if type(entry) ~= "table" then
+      error(stage .. ": " .. where .. " must be an object", 0)
+    end
+    only_keys(entry, { name = true, x = true, y = true }, where, stage)
+    if type(entry.name) ~= "string" or not known[entry.name] then
+      error(string.format("%s: %s has an unknown name %q", stage, where,
+        tostring(entry.name)), 0)
+    end
+    if out[entry.name] then
+      error(string.format("%s: %q appears twice", stage, entry.name), 0)
+    end
+    for _, key in ipairs({ "x", "y" }) do
+      local value = entry[key]
+      if type(value) ~= "number" or value % 1 ~= 0 then
+        error(string.format("%s: %s.%s must be an integer", stage, where, key), 0)
+      end
+      if value < -32768 or value > 32767 then
+        error(string.format("%s: %s.%s = %d is outside the signed 16-bit range",
+          stage, where, key, value), 0)
+      end
+    end
+    out[entry.name] = { x = entry.x, y = entry.y }
+  end
+
+  for _, entry in ipairs(default_origins()) do
+    if not out[entry.name] then
+      out[entry.name] = { x = entry.x, y = entry.y }
+    end
+  end
+  return out
+end
+
+-- The selection-mark geometry: descriptor +4 is the choice count, +24 is a
+-- list of 20-byte pairs (left record, right record) per choice and +28 is one
+-- BE u32 per choice whose low s16 is the centre.  Unlike the +16 label list,
+-- these two lists are read only by the drawer's second pass.
+local function read_positions(data, stage)
+  local rows = {}
+
+  for _, m in ipairs(MAIN) do
+    local off = m.desc
+    if off + 32 > #data then
+      error(string.format("%s: the %s descriptor at 0x%06X is outside the file",
+        stage, m.name, off), 0)
+    end
+
+    local count = be16(data, off + 4)
+    if count < 1 or count > MAX_CHOICES then
+      error(string.format("%s: the %s choice count is %d at +4; expected 1..%d",
+        stage, m.name, count, MAX_CHOICES), 0)
+    end
+
+    local pair_ptr   = be32(data, off + 24)
+    local centre_ptr = be32(data, off + 28)
+    local pair_pos   = pair_ptr >= RAM_BASE and pair_ptr - RAM_BASE or pair_ptr
+    local centre_pos = centre_ptr >= RAM_BASE and centre_ptr - RAM_BASE or centre_ptr
+    local pair_len   = count * 20
+    local centre_len = count * 4
+
+    if pair_pos + pair_len > #data then
+      error(string.format(
+        "%s: the %s +24 list 0x%08X does not fit: %d bytes from 0x%06X, the file ends at 0x%06X",
+        stage, m.name, pair_ptr, pair_len, pair_pos, #data), 0)
+    end
+    if centre_pos + centre_len > #data then
+      error(string.format(
+        "%s: the %s +28 list 0x%08X does not fit: %d bytes from 0x%06X, the file ends at 0x%06X",
+        stage, m.name, centre_ptr, centre_len, centre_pos, #data), 0)
+    end
+
+    local choices = {}
+    for k = 0, count - 1 do
+      local ro = pair_pos + k * 20
+      local left  = parse_record(data, ro)
+      local right = parse_record(data, ro + 10)
+      if left.w == 0 or left.h == 0 or right.w == 0 or right.h == 0 then
+        error(string.format("%s: %s choice %d has an empty mark sprite",
+          stage, m.name, k), 0)
+      end
+
+      local co = centre_pos + k * 4
+      choices[k + 1] = {
+        center  = sbe16(data, co),
+        center2 = be16(data, co + 2),
+        left    = left,
+        right   = right,
+      }
+    end
+
+    rows[#rows + 1] = {
+      name       = m.name,
+      desc_off   = off,
+      count      = count,
+      pair_ptr   = pair_ptr,
+      centre_ptr = centre_ptr,
+      pair_pos   = pair_pos,
+      centre_pos = centre_pos,
+      choices    = choices,
+    }
+  end
+
+  return rows
+end
+
+-- Metadata is deliberately small and declarative: one entry per row, one entry
+-- per choice, with the three values a layout edit actually needs.  Everything
+-- else in the pair records (y, w, h, characterOffset) is preserved.
+local function positions_json(rows)
+  local out = { "{\n  \"rows\": [" }
+  for i, row in ipairs(rows) do
+    out[#out + 1] = string.format(
+      "%s    {\n      \"name\": \"%s\",\n      \"choices\": [",
+      i == 1 and "\n" or ",\n", row.name)
+    for k, choice in ipairs(row.choices) do
+      out[#out + 1] = string.format(
+        "%s        { \"center\": %d, \"left\": %d, \"right\": %d }",
+        k == 1 and "\n" or ",\n", choice.center, choice.left.x, choice.right.x)
+    end
+    out[#out + 1] = "\n      ]\n    }"
+  end
+  out[#out + 1] = "\n  ]\n}\n"
+  return table.concat(out)
+end
+
 -- Validate the metadata and return { ROW_NAME = { {center,left,right}, ... } }.
 local function parse_positions(text, rows, stage)
   local ok, root = pcall(json_decode, text)
@@ -732,7 +1183,7 @@ end
 
 -- Build the two lists without touching y, w, h or characterOffset.  Returns
 -- whether anything differs and one write per list that differs.
-local function encode_positions(rows, meta, data, stage, labels)
+local function encode_positions(rows, meta, data, stage, protected)
   local writes, changed = {}, false
 
   for _, row in ipairs(rows) do
@@ -765,7 +1216,7 @@ local function encode_positions(rows, meta, data, stage, labels)
   if not changed then return false, {} end
 
   -- Distinct lists, and none may sit inside a descriptor, the atlas, the
-  -- background stream or a label record that the same encode will write.
+  -- background stream or a text record that the same encode will write.
   for _, write in ipairs(writes) do
     if write.offset < 0 or write.offset + #write.data > #data then
       error(string.format("%s: the %s list runs outside the file", stage, write.name), 0)
@@ -784,11 +1235,10 @@ local function encode_positions(rows, meta, data, stage, labels)
           stage, write.name, range[3]), 0)
       end
     end
-    for _, label in ipairs(labels or {}) do
-      if write.offset < label.rec_pos + RECORD_BYTES
-        and label.rec_pos < write.offset + #write.data then
-        error(string.format("%s: the %s list overlaps the %s label record",
-          stage, write.name, label.name), 0)
+    for _, range in ipairs(protected or {}) do
+      if write.offset < range[2] and range[1] < write.offset + #write.data then
+        error(string.format("%s: the %s list overlaps %s",
+          stage, write.name, range[3]), 0)
       end
     end
   end
@@ -806,94 +1256,9 @@ local function encode_positions(rows, meta, data, stage, labels)
   return true, writes
 end
 
--- Compose a label's records into one linear 4bpp strip.  Index 0 is
--- transparent.  Returns the packed pixels, width, height and the origin of the
--- bounding box, which encode reuses so a rebuild keeps the row in place.
-local function compose_label(recs, atlas, stage)
-  local x0, y0, x1, y1 = math.huge, math.huge, -math.huge, -math.huge
-  for _, r in ipairs(recs) do
-    x0 = math.min(x0, r.x)
-    y0 = math.min(y0, r.y)
-    x1 = math.max(x1, r.x + r.w)
-    y1 = math.max(y1, r.y + r.h)
-  end
-
-  local w, h = x1 - x0, y1 - y0
-  if w <= 0 or h <= 0 then
-    error(stage .. ": the records have an empty bounding box", 0)
-  end
-  if w % 2 ~= 0 then
-    error(string.format("%s: composed width is %d, an odd number of pixels; a 4bpp row is whole bytes",
-      stage, w), 0)
-  end
-
-  local stride = w // 2
-  local px = {}
-  for i = 1, stride * h do px[i] = 0 end
-
-  for _, r in ipairs(recs) do
-    local src_stride = r.w // 2
-    local last = r.co * 8 + (r.h - 1) * src_stride + (r.w - 1) // 2
-    if last >= #atlas then
-      error(string.format(
-        "%s: a record at characterOffset %d reads past the %d-byte sheet",
-        stage, r.co, #atlas), 0)
-    end
-
-    for row = 0, r.h - 1 do
-      for col = 0, r.w - 1 do
-        local b = atlas:byte(r.co * 8 + row * src_stride + (col >> 1) + 1)
-        local v = (col & 1) == 0 and (b >> 4) or (b & 0x0F)
-        if v ~= 0 then
-          local dx = r.x - x0 + col
-          local di = (r.y - y0 + row) * stride + (dx >> 1) + 1
-          local db = px[di]
-          if (dx & 1) == 0 then
-            px[di] = (db & 0x0F) | (v << 4)
-          else
-            px[di] = (db & 0xF0) | v
-          end
-        end
-      end
-    end
-  end
-
-  return bytes_to_string(px), w, h, x0, y0
-end
-
-local function atlas_of(data)
-  return prs:decode(data:sub(ATLAS_OFFSET + 1, ATLAS_OFFSET + ATLAS_SLOT))[1].data
-end
-
--- The only argument is `rebuild=auto|always`; decode validates it so a typo in
--- the manifest fails at decode time, and encode consumes it.  An empty table is
--- treated as "no arguments" because the house test harness passes `{}`.
-local function parse_args(args)
-  if type(args) == "table" and next(args) == nil then args = nil end
-  return args_parser.parse(args, {
-    rebuild = { values = { "auto", "always" }, default = "auto" },
-  }, "options menu gfx")
-end
-
--- BMP palette from the parent's second 16-colour bank (label glyphs).
-local function preview_palette(data, stage)
-  if #data < PALETTE_TEXT + PALETTE_BANK_BYTES then
-    error(string.format("%s: the options palette at 0x%06X is outside the file",
-      stage, PALETTE_TEXT), 0)
-  end
-  return bgr555_to_bmp(
-    data:sub(PALETTE_TEXT + 1, PALETTE_TEXT + PALETTE_BANK_BYTES), 16)
-end
-
--- The background uses the *first* bank of the same 64-byte palette block.
-local function background_palette(data, stage)
-  if #data < PALETTE_OFFSET + PALETTE_BANK_BYTES then
-    error(string.format("%s: the options palette at 0x%06X is outside the file",
-      stage, PALETTE_OFFSET), 0)
-  end
-  return bgr555_to_bmp(
-    data:sub(PALETTE_OFFSET + 1, PALETTE_OFFSET + PALETTE_BANK_BYTES), 16)
-end
+-- Statistics of the last encode, for tests and documentation.  Nothing in the
+-- codec depends on it.
+codec.stats = nil
 
 function codec.decode(data, args)
   if type(data) ~= "string" then
@@ -906,9 +1271,8 @@ function codec.decode(data, args)
   end
 
   local atlas = atlas_of(data)
-  if #atlas < ATLAS_PREFIX then
-    error(string.format("decode: the options atlas decompresses to %d bytes, expected at least %d",
-      #atlas, ATLAS_PREFIX), 0)
+  if #atlas < 1 then
+    error("decode: the options atlas decompresses to nothing", 0)
   end
   if #atlas > ATLAS_LIMIT then
     error(string.format("decode: the options atlas decompresses to %d bytes, over the 11,520-byte limit",
@@ -927,23 +1291,96 @@ function codec.decode(data, args)
       #background, BACKGROUND_END), 0)
   end
 
-  local labels = read_labels(data, "decode")
+  local text = read_text(data, "decode")
   local positions = read_positions(data, "decode")
   local pal = preview_palette(data, "decode")
   local bg_pal = background_palette(data, "decode")
 
   local artifacts = {}
-  for _, label in ipairs(labels) do
+  local origins = {}
+
+  -- Every list keeps the canvas its layout gives it: segments are cropped to
+  -- their ink, so the records alone are shorter than the 16-px row the
+  -- translator edits.  The frame is the retail anchor plus that height.
+  local frame_of = {}
+  for _, entry in ipairs(default_origins()) do
+    frame_of[entry.name] = { x = entry.x, y = entry.y }
+  end
+  local function frame_for(name, h)
+    local f = frame_of[name]
+    return { x = f.x, y = f.y, h = h }
+  end
+
+  for _, label in ipairs(text.main) do
     local stage = "decode: " .. label.name
-    local px, w, h = compose_label(label.recs, atlas, stage)
+    local px, w, h, x0, y0 =
+      compose_records(label.recs, atlas, stage, frame_for(label.name, LABEL_H))
     if h ~= LABEL_H then
       error(string.format("%s: composed height %d, expected %d", stage, h, LABEL_H), 0)
     end
     artifacts[#artifacts + 1] = {
       name = ARTIFACT_PREFIX .. label.name .. ".bmp",
-      data = build_bmp(px, w, LABEL_H, pal, 4),
+      data = build_bmp(px, w, h, pal, 4),
     }
+    origins[#origins + 1] = { name = label.name, x = x0, y = y0 }
   end
+
+  for _, action in ipairs(ACTIONS) do
+    local list = text.actions[action.index]
+    if list.count > 0 then
+      local stage = "decode: " .. action.name
+      local px, w, h, x0, y0 =
+        compose_records(list.recs, atlas, stage, frame_for(action.name, LABEL_H))
+      if h ~= LABEL_H then
+        error(string.format("%s: composed height %d, expected %d", stage, h, LABEL_H), 0)
+      end
+      artifacts[#artifacts + 1] = {
+        name = ARTIFACT_PREFIX .. action.name .. ".bmp",
+        data = build_bmp(px, w, h, pal, 4),
+      }
+      origins[#origins + 1] = { name = action.name, x = x0, y = y0 }
+    end
+  end
+
+  -- Action list 11 is the controller screen's EXIT.  In retail it points at
+  -- the main row's list, so the two artifacts start out identical; showing it
+  -- separately is what lets a translation give the submenu its own label.
+  local exit_list = text.actions[EXIT_INDEX]
+  if exit_list.count > 0 then
+    local stage = "decode: " .. SPLIT_EXIT_NAME
+    local px, w, h, x0, y0 =
+      compose_records(exit_list.recs, atlas, stage, frame_for(SPLIT_EXIT_NAME, LABEL_H))
+    artifacts[#artifacts + 1] = {
+      name = ARTIFACT_PREFIX .. SPLIT_EXIT_NAME .. ".bmp",
+      data = build_bmp(px, w, h, pal, 4),
+    }
+    origins[#origins + 1] = { name = SPLIT_EXIT_NAME, x = x0, y = y0 }
+  end
+
+  -- The button column has no artifact of its own.  Its first eight records are
+  -- the two button boards; its last four spell EXIT and are composed from the
+  -- same records as SUB_11_EXIT above, so that art is exposed and edited once.
+  local function push_board(name, recs, anchor, want_h)
+    local stage = "decode: " .. name
+    local px, w, h, x0, y0 = compose_records(recs, atlas, stage,
+      { x = anchor.x, y = anchor.y, w = EXIT_CELL_WIDTH, h = want_h })
+    if h ~= want_h then
+      error(string.format("%s: composes to %d rows, but the button column draws it at %d",
+        stage, h, want_h), 0)
+    end
+    artifacts[#artifacts + 1] = {
+      name = ARTIFACT_PREFIX .. name .. ".bmp",
+      data = build_bmp(px, w, h, pal, 4),
+    }
+    origins[#origins + 1] = { name = name, x = x0, y = y0 }
+  end
+
+  local column = text.button.recs
+  push_board(BUTTON_ABC_NAME,
+    { column[1], column[2], column[3] }, BUTTON_ABC_ANCHOR, BUTTON_ABC_H)
+  push_board(BUTTON_XYZLR_NAME,
+    { column[4], column[5], column[6], column[7], column[8] },
+    BUTTON_XYZLR_ANCHOR, BUTTON_XYZLR_H)
 
   artifacts[#artifacts + 1] = {
     name = BACKGROUND_NAME,
@@ -953,7 +1390,7 @@ function codec.decode(data, args)
   }
 
   -- The mark texture is the last 128 bytes of the same background stream.  It
-  -- is not in the label atlas, so it is exposed separately and previewed with
+  -- is not in the text atlas, so it is exposed separately and previewed with
   -- the background's own bank (0x05ad98).  The BMP palette never reaches the
   -- file; encode compares pixels only.
   artifacts[#artifacts + 1] = {
@@ -973,6 +1410,10 @@ function codec.decode(data, args)
     name = POSITIONS_NAME,
     data = positions_json(positions),
   }
+  artifacts[#artifacts + 1] = {
+    name = ORIGINS_NAME,
+    data = origins_json(origins),
+  }
 
   return artifacts
 end
@@ -987,35 +1428,8 @@ function codec.encode(original, artifacts, args)
 
   local opts = parse_args(args)
 
-  local labels = read_labels(original, "encode")
+  local text = read_text(original, "encode")
   local positions = read_positions(original, "encode")
-
-  -- encode() writes one record into each `+16` target, so those targets must be
-  -- distinct, must not sit inside the descriptor table, and must not sit inside
-  -- the atlas slot that is rewritten first.
-  local seen = {}
-  for _, label in ipairs(labels) do
-    local clash = overlaps_descriptor(label.rec_pos, RECORD_BYTES)
-    if clash then
-      error(string.format("encode: the %s record list 0x%08X overlaps the %s descriptor",
-        label.name, label.rec_pos, clash), 0)
-    end
-    if label.rec_pos < ATLAS_OFFSET + ATLAS_SLOT
-      and ATLAS_OFFSET < label.rec_pos + RECORD_BYTES then
-      error(string.format("encode: the %s record list 0x%08X overlaps the atlas slot",
-        label.name, label.rec_pos), 0)
-    end
-    if label.rec_pos < BACKGROUND_OFFSET + BACKGROUND_SLOT
-      and BACKGROUND_OFFSET < label.rec_pos + RECORD_BYTES then
-      error(string.format("encode: the %s record list 0x%08X overlaps the background slot",
-        label.name, label.rec_pos), 0)
-    end
-    if seen[label.rec_pos] then
-      error(string.format("encode: %s and %s share the record list at 0x%08X",
-        seen[label.rec_pos], label.name, label.rec_pos), 0)
-    end
-    seen[label.rec_pos] = label.name
-  end
 
   local by_name = {}
   for _, artifact in ipairs(artifacts or {}) do
@@ -1025,41 +1439,154 @@ function codec.encode(original, artifacts, args)
     end
   end
 
-  local strip = {}
-  local sum_w = 0
-  for _, label in ipairs(labels) do
-    local name = ARTIFACT_PREFIX .. label.name .. ".bmp"
-    local bmp = by_name[name]
-    if not bmp then
-      error("encode: " .. name .. " is missing", 0)
-    end
-
-    local px, w, h, _, bpp = parse_bmp(bmp, "encode: " .. name, 4)
-    if h ~= LABEL_H then
-      error(string.format("encode: %s is %d pixels high, but an options label is exactly %d",
-        name, h, LABEL_H), 0)
-    end
-    if bpp ~= 4 then
-      error(string.format("encode: %s is %dbpp, but options labels are 4bpp",
-        name, bpp), 0)
-    end
-    if w == 0 or w % LABEL_ALIGN ~= 0 then
-      error(string.format("encode: %s is %d pixels wide, not a positive multiple of %d",
-        name, w, LABEL_ALIGN), 0)
-    end
-    if w > LABEL_MAX_W then
-      error(string.format("encode: %s is %d pixels wide; a VDP1 record can express at most %d",
-        name, w, LABEL_MAX_W), 0)
-    end
-
-    strip[#strip + 1] = { name = name, px = px, w = w }
-    sum_w = sum_w + w
+  -- Origin metadata is optional: absent entries keep the retail anchors.
+  local origins = {}
+  for _, entry in ipairs(default_origins()) do
+    origins[entry.name] = { x = entry.x, y = entry.y }
+  end
+  if by_name[ORIGINS_NAME] then
+    origins = parse_origins(by_name[ORIGINS_NAME], "encode: " .. ORIGINS_NAME)
   end
 
-  -- The background and brackets are optional so a label-only caller keeps
-  -- working: absent means "do not touch 0x05ae38".  Both bracket BMPs share
-  -- that one stream, so they are composed into the parent tail together and
-  -- recompressed once.
+  -- Read one text artifact.  `want_h` is the height the screen's layout gives
+  -- that list: 16 for a label row, 160 for the button column.  Decode rejects a
+  -- parent whose rows do not compose to 16, so an encode that accepted another
+  -- height would produce a file it cannot read.
+  local function load_text(name, anchor, stage, want_h, flags)
+    local bmp = by_name[ARTIFACT_PREFIX .. name .. ".bmp"]
+    if not bmp then
+      error("encode: " .. ARTIFACT_PREFIX .. name .. ".bmp is missing", 0)
+    end
+    local px, w, h = parse_bmp(bmp, stage, 4)
+    if want_h and h ~= want_h then
+      error(string.format("%s: %d pixels high, but the screen draws this list at %d",
+        stage, h, want_h), 0)
+    end
+    if w > LABEL_MAX_W then
+      error(string.format("%s: %d pixels wide; a VDP1 record can express at most %d",
+        stage, w, LABEL_MAX_W), 0)
+    end
+    if w == 0 or w % LABEL_ALIGN ~= 0 then
+      error(string.format("%s: %d pixels wide, not a positive multiple of %d",
+        stage, w, LABEL_ALIGN), 0)
+    end
+    flags = flags or {}
+    return {
+      name = name, anchor = anchor, px = px, w = w, h = h, stage = stage,
+      records = {}, cells = flags.cells, required = flags.required,
+      icons = flags.icons,
+    }
+  end
+
+  local entries = {}
+  for _, m in ipairs(MAIN) do
+    entries[#entries + 1] = load_text(m.name, origins[m.name],
+      "encode: " .. ARTIFACT_PREFIX .. m.name .. ".bmp", LABEL_H,
+      { required = true, cells = m.cells, icons = m.icons })
+  end
+  for _, a in ipairs(ACTIONS) do
+    entries[#entries + 1] = load_text(a.name, origins[a.name],
+      "encode: " .. ARTIFACT_PREFIX .. a.name .. ".bmp", LABEL_H)
+  end
+
+  -- The two button boards keep their 16-px cells: the drawer reads a fixed 12
+  -- records (eight button letters and four EXIT letters), so the cut must not
+  -- merge or split an icon.  Each board is a single column of icons.
+  local abc_board = load_text(BUTTON_ABC_NAME, origins[BUTTON_ABC_NAME],
+    "encode: " .. ARTIFACT_PREFIX .. BUTTON_ABC_NAME .. ".bmp", BUTTON_ABC_H,
+    { cells = true, icons = BUTTON_ABC_COUNT })
+  entries[#entries + 1] = abc_board
+  local xyz_board = load_text(BUTTON_XYZLR_NAME, origins[BUTTON_XYZLR_NAME],
+    "encode: " .. ARTIFACT_PREFIX .. BUTTON_XYZLR_NAME .. ".bmp", BUTTON_XYZLR_H,
+    { cells = true, icons = BUTTON_XYZLR_COUNT })
+  entries[#entries + 1] = xyz_board
+
+  -- The shared EXIT: list 11 keeps aliasing the main row's list while the two
+  -- artifacts are identical, and gets a list of its own as soon as they differ.
+  local exit_entry = entries[5]
+  local split_exit
+  local split_bmp = by_name[ARTIFACT_PREFIX .. SPLIT_EXIT_NAME .. ".bmp"]
+  if not split_bmp then
+    -- The button column's EXIT comes from this image, so it is not optional.
+    error("encode: " .. ARTIFACT_PREFIX .. SPLIT_EXIT_NAME .. ".bmp is missing", 0)
+  end
+  -- Its four 16-px cells are the column's last four records, so it is cut on
+  -- the cell grid and never merged into wider segments.
+  local alt = load_text(SPLIT_EXIT_NAME, origins[SPLIT_EXIT_NAME],
+    "encode: " .. ARTIFACT_PREFIX .. SPLIT_EXIT_NAME .. ".bmp", LABEL_H,
+    { cells = true, icons = EXIT_CELLS })
+  if alt.px ~= exit_entry.px or alt.w ~= exit_entry.w or alt.h ~= exit_entry.h then
+    split_exit = alt
+    entries[#entries + 1] = alt
+  end
+
+  local function has_ink(px)
+    for i = 1, #px do if px:byte(i) ~= 0 then return true end end
+    return false
+  end
+
+  local function records_bytes(recs)
+    local parts = {}
+    for i, r in ipairs(recs) do parts[i] = pack_record(r.x, r.y, r.w, r.h, r.co) end
+    return table.concat(parts)
+  end
+
+  -- Fast path: identical pixels, identical placement, nothing else to write.
+  local changed = opts.rebuild == "always"
+  if not changed then
+    local atlas = atlas_of(original)
+    local parent_text = text
+    -- The composed pixels alone are not enough: moving a label translates it
+    -- without changing a pixel, so the placement has to be compared too.
+    local function same(entry, recs, stage)
+      if #recs == 0 then return not has_ink(entry.px) end
+      local px, w, h, x0, y0 = compose_records(recs, atlas, stage,
+        { x = entry.anchor.x, y = entry.anchor.y, h = entry.h })
+      if h ~= entry.h or x0 ~= entry.anchor.x or y0 ~= entry.anchor.y then
+        return false
+      end
+      if w == entry.w then return px == entry.px end
+      -- The records are ink-tight, so a parent built by this codec composes
+      -- narrower than an artboard that still has blank trailing columns.  That
+      -- is not an edit: the extra columns hold nothing.
+      if w > entry.w then return false end
+      local iw, ew = w // 2, entry.w // 2
+      for y = 0, h - 1 do
+        if px:sub(y * iw + 1, (y + 1) * iw)
+          ~= entry.px:sub(y * ew + 1, y * ew + iw) then
+          return false
+        end
+      end
+      return true
+    end
+    -- The boards are compared against their own slice of the parent column.
+    local board_slice = {
+      [abc_board] = { table.unpack(parent_text.button.recs, 1, BUTTON_ABC_COUNT) },
+      [xyz_board] = { table.unpack(parent_text.button.recs, 1 + BUTTON_ABC_COUNT,
+        BUTTON_ABC_COUNT + BUTTON_XYZLR_COUNT) },
+    }
+    for _, entry in ipairs(entries) do
+      if entry == exit_entry then
+        if not same(entry, parent_text.main[5].recs, "encode: 04_EXIT") then changed = true end
+      elseif board_slice[entry] then
+        if not same(entry, board_slice[entry], "encode: " .. entry.name) then changed = true end
+      else
+        local found
+        for _, m in ipairs(parent_text.main) do
+          if m.name == entry.name then found = m.recs end
+        end
+        for _, a in ipairs(ACTIONS) do
+          if a.name == entry.name then found = parent_text.actions[a.index].recs end
+        end
+        if entry.name == SPLIT_EXIT_NAME then
+          found = parent_text.actions[EXIT_INDEX].recs
+        end
+        if not found or not same(entry, found, "encode: " .. entry.name) then changed = true end
+      end
+    end
+  end
+
+  -- Background and brackets, unchanged from version 3.
   local background_px, background_changed, background_tail
   local background_bmp    = by_name[BACKGROUND_NAME]
   local bracket_left_bmp  = by_name[BRACKET_LEFT_NAME]
@@ -1111,85 +1638,395 @@ function codec.encode(original, artifacts, args)
     end
   end
 
-  -- The positions metadata is independent of the pixels and of the label
-  -- records.  It writes only +24/+28, never the +8 hit rectangles.
+  -- Positions metadata is independent of the pixels and of the text records.
   local positions_changed, position_writes = false, {}
   local positions_bmp = by_name[POSITIONS_NAME]
   if positions_bmp then
     local meta = parse_positions(positions_bmp, positions, "encode: " .. POSITIONS_NAME)
     positions_changed, position_writes = encode_positions(
-      positions, meta, original, "encode: " .. POSITIONS_NAME, labels)
+      positions, meta, original, "encode: " .. POSITIONS_NAME)
   end
 
-  -- The unchanged fast path is a pixel comparison, so it works the same for a
-  -- glyph-based parent and for one this codec already rebuilt as strips.  The
-  -- composed origin is what the replacement strip is anchored on.
-  local atlas = atlas_of(original)
-  if #atlas < ATLAS_PREFIX then
-    error(string.format("encode: the parent atlas decompresses to %d bytes, expected at least %d",
-      #atlas, ATLAS_PREFIX), 0)
-  end
-  local origin = {}
-  local changed = false
-  for i, label in ipairs(labels) do
-    local px, w, _, x0, y0 = compose_label(label.recs, atlas,
-      "encode: " .. label.name)
-    origin[i] = { x = x0, y = y0 }
-    if w ~= strip[i].w or px ~= strip[i].px then
-      changed = true
-    end
-  end
-  -- A background-only edit must not rebuild the label sheet: the retail
-  -- glyphs 42..71 would be replaced by strips for no reason.  Likewise a
-  -- label edit leaves the background bytes alone, and a position-only edit
-  -- leaves both pixel resources alone.
-  local rebuild_labels = changed or opts.rebuild == "always"
-  if not rebuild_labels and not background_changed and not positions_changed then
+  if not changed and not background_changed and not positions_changed then
+    codec.stats = {
+      segments = 0, unique = 0, sheet_bytes = #atlas_of(original),
+      stream_bytes = 0, records = 0, arena_used = 0,
+      arena_capacity = ATLAS_SLOT, unchanged = true, lists = {},
+    }
     return original
   end
 
+  --[[ Segmentation and packing.
+
+    How an image is cut changes both numbers that matter.  Narrow pieces dedupe
+    and compress better but need more records; wide pieces save records but
+    store more transparent padding; and the record arena itself shrinks as the
+    compressed stream grows, because its tail lives in the same fixed slot.
+
+    So try a fixed ladder of cuts, discard the ones whose records cannot be
+    placed, and keep the smallest stream among those that fit both budgets
+    (fewer records on a tie).  When nothing fits, keep the smallest stream so
+    the failure names the real blocker.  The ladder and the tie-break are fixed,
+    so identical inputs always produce the same layout.
+  ]]
+  local CANDIDATES = {
+    { gap = 0,  maxw = 16 },
+    { gap = 0,  maxw = 32 },
+    { gap = 0,  maxw = 64 },
+    { gap = 0,  maxw = 128 },
+    { gap = 0,  maxw = LABEL_MAX_W },
+    { gap = 1,  maxw = LABEL_MAX_W },
+    { gap = 2,  maxw = 16 },
+    { gap = 2,  maxw = 32 },
+    { gap = 2,  maxw = 64 },
+    { gap = 2,  maxw = 128 },
+    { gap = 2,  maxw = LABEL_MAX_W },
+    { gap = 3,  maxw = 16 },
+    { gap = 3,  maxw = 32 },
+    { gap = 4,  maxw = 32 },
+    { gap = 4,  maxw = 64 },
+    { gap = 4,  maxw = 128 },
+    { gap = 4,  maxw = LABEL_MAX_W },
+    { gap = 8,  maxw = 64 },
+    { gap = 8,  maxw = 128 },
+    { gap = 8,  maxw = LABEL_MAX_W },
+    { gap = 16, maxw = 128 },
+    { gap = 16, maxw = LABEL_MAX_W },
+    { gap = 24, maxw = LABEL_MAX_W },
+  }
+
+  -- Cut every image with one candidate.  Returns nil on success or a message.
+  local function segment_all(cfg)
+    for _, entry in ipairs(entries) do
+      local opts = entry.cells and { cells = true } or cfg
+      entry.segs = segments_of(entry.px, entry.w, entry.h, entry.stage, opts)
+      if #entry.segs > MAX_RECORDS then
+        return string.format("%s: the image needs %d records, over the %d-record cap",
+          entry.stage, #entry.segs, MAX_RECORDS)
+      end
+      if entry.required and #entry.segs == 0 then
+        return string.format(
+          "%s: the image is blank; every Options row needs at least one glyph",
+          entry.stage)
+      end
+      if entry.icons and #entry.segs ~= entry.icons then
+        return string.format(
+          "%s: yields %d icons, but the screen reads exactly %d; keep one icon per 16-px cell",
+          entry.stage, #entry.segs, entry.icons)
+      end
+    end
+    return nil
+  end
+
+  -- Two regions, first fit: the retired action pool (320 bytes the retail
+  -- action strings no longer need) and then the dead tail of the atlas slot,
+  -- which follows the PRS end marker.  The decompressor at 0x0600A164 returns
+  -- on a zero back-reference word and never writes there, so relocated lists
+  -- survive.
+  local function make_arena(stream_len)
+    local regions = {
+      { at = ACTION_ARENA, stop = ACTION_ARENA + ACTION_ARENA_LEN },
+      { at = ceil8(ATLAS_OFFSET + stream_len), stop = ATLAS_OFFSET + ATLAS_SLOT },
+    }
+    local used, capacity = 0, 0
+    for _, r in ipairs(regions) do
+      capacity = capacity + math.max(0, r.stop - r.at)
+    end
+    local api = { capacity = capacity }
+    function api.used() return used end
+    function api.free()
+      local free = 0
+      for _, r in ipairs(regions) do free = free + math.max(0, r.stop - r.at) end
+      return free
+    end
+    function api.alloc(bytes)
+      for _, r in ipairs(regions) do
+        if r.at + bytes <= r.stop then
+          local at = r.at
+          r.at = r.at + bytes
+          used = used + bytes
+          return at
+        end
+      end
+      return nil
+    end
+    return api
+  end
+
+  -- Placement of every relocated list.  The write pass below uses these
+  -- offsets verbatim, so a candidate is rejected on exactly the arithmetic the
+  -- final write performs.
+  local function plan_records(arena, stream_len)
+    local by = {}
+    for _, e in ipairs(entries) do by[e.name] = e end
+    local plan = { main = {}, actions = {} }
+
+    local function fail(name, bytes)
+      return string.format(
+        "encode: %s needs %d bytes of relocated record storage, but only %d remain after the %d-byte atlas stream and the action pool; the screen's lists no longer fit the %d-byte slot (shorten the labels or move fewer lists)",
+        name, bytes, arena.free(), stream_len, ATLAS_SLOT)
+    end
+
+    for _, m in ipairs(MAIN) do
+      local n = #by[m.name].records
+      local pos
+      if n <= m.cap then
+        pos = m.slot                       -- stays in its retail slot
+      else
+        pos = arena.alloc(n * RECORD_BYTES)
+        if not pos then return nil, fail(m.name, n * RECORD_BYTES) end
+      end
+      plan.main[m.name] = pos
+    end
+
+    -- Action lists: a list never straddles the two regions.
+    for _, a in ipairs(ACTIONS) do
+      local n = #by[a.name].records
+      local pos
+      if n == 0 then
+        pos = text.actions[a.index].pos    -- empty list keeps the retail pointer
+      else
+        pos = arena.alloc(n * RECORD_BYTES)
+        if not pos then return nil, fail(a.name, n * RECORD_BYTES) end
+      end
+      plan.actions[a.index] = pos
+    end
+
+    if split_exit then
+      local n = #split_exit.records
+      local pos = arena.alloc(n * RECORD_BYTES)
+      if not pos then return nil, fail(SPLIT_EXIT_NAME, n * RECORD_BYTES) end
+      plan.split = pos
+    end
+
+    return plan
+  end
+
+  local function attempt(cfg)
+    local why = segment_all(cfg)
+    if why then return nil, why end
+    local packed, list = build_atlas(entries)
+    if not packed then return nil, "encode: " .. list end
+    local stream = prs:encode("",
+      { { name = "DECOMPRESSED", data = packed } },
+      string.format('{"chain":%d}', ATLAS_CHAIN))
+    local arena = make_arena(#stream)
+    local plan, plan_why = plan_records(arena, #stream)
+    local records = 0
+    for _, e in ipairs(entries) do records = records + #e.records end
+    return {
+      cfg = cfg, sheet = packed, segments = list, stream = stream, plan = plan,
+      records = records, unique = #list, arena_used = arena.used(),
+      arena_capacity = arena.capacity, problem = plan_why,
+      -- How much storage the relocated lists want in total, whatever the bin
+      -- packing succeeds in doing: the number the diagnostic should quote.
+      arena_need = (function()
+        local by = {}
+        for _, e in ipairs(entries) do by[e.name] = e end
+        local need = 0
+        for _, m in ipairs(MAIN) do
+          local n = #by[m.name].records
+          if n > m.cap then need = need + n * RECORD_BYTES end
+        end
+        for _, a in ipairs(ACTIONS) do need = need + #by[a.name].records * RECORD_BYTES end
+        if split_exit then need = need + #split_exit.records * RECORD_BYTES end
+        return need
+      end)(),
+      fits = (#stream <= ATLAS_SLOT) and plan ~= nil,
+    }
+  end
+
+  local tried, best, first_problem = {}, nil, nil
+  for _, cfg in ipairs(CANDIDATES) do
+    local a, why = attempt(cfg)
+    if a then
+      tried[#tried + 1] = {
+        gap = cfg.gap, maxw = cfg.maxw, sheet = #a.sheet, stream = #a.stream,
+        records = a.records, unique = a.unique, arena = a.arena_used, fits = a.fits,
+        problem = a.problem,
+      }
+      local better
+      if not best then
+        better = true
+      elseif a.fits ~= best.fits then
+        better = a.fits
+      elseif a.fits then
+        better = #a.stream < #best.stream
+          or (#a.stream == #best.stream and a.records < best.records)
+      elseif (a.plan ~= nil) ~= (best.plan ~= nil) then
+        -- Nothing fits the slot here: prefer a cut whose records can still be
+        -- placed, so the report describes a layout that only needs shorter
+        -- labels rather than one that also exhausts the arena.
+        better = (a.plan ~= nil)
+      elseif #a.stream ~= #best.stream then
+        better = #a.stream < #best.stream
+      else
+        better = a.records < best.records
+      end
+      if better then best = a end
+    else
+      tried[#tried + 1] = { gap = cfg.gap, maxw = cfg.maxw, rejected = why }
+      first_problem = first_problem or why
+    end
+  end
+
+  if not best then
+    error("encode: no usable segmentation: " .. tostring(first_problem), 0)
+  end
+  -- `attempt` cuts the live entry tables, so the loop above leaves the last
+  -- candidate's segments (and records) in place.  Cut again with the winner and
+  -- check that the result is the one that was scored: the write pass below
+  -- reads the entry tables, not the snapshot.  Doing it before the budget check
+  -- also makes the failure diagnostic describe the layout it names.
+  local recut = segment_all(best.cfg)
+  if recut then error(recut, 0) end
+  local packed, list = build_atlas(entries)
+  if not packed then error("encode: " .. list, 0) end
+  if packed ~= best.sheet or #list ~= #best.segments then
+    error("encode: the chosen cut is not reproducible", 0)
+  end
+
+  if not best.fits then
+    local per_list, segment_bytes = {}, 0
+    for _, entry in ipairs(entries) do
+      per_list[#per_list + 1] = { name = entry.name, records = #entry.records }
+      for _, s in ipairs(entry.segs) do segment_bytes = segment_bytes + ceil8(#s.data) end
+    end
+    codec.stats = {
+      segments = best.records, unique = #list, sheet_bytes = #packed,
+      stream_bytes = #best.stream, records = best.records,
+      dedupe_saved = segment_bytes - #packed,
+      free_decoded = ATLAS_LIMIT - #packed,
+      free_stream = ATLAS_SLOT - #best.stream,
+      arena_used = best.arena_used, arena_capacity = best.arena_capacity,
+      arena_need = best.arena_need,
+      cut = { gap = best.cfg.gap, maxw = best.cfg.maxw },
+      candidates = tried, lists = per_list, unchanged = false, fits = false,
+    }
+    local over_stream = math.max(0, #best.stream - ATLAS_SLOT)
+    local over_records = math.max(0, best.arena_need - best.arena_capacity)
+    if over_stream > 0 then
+      local msg = string.format(
+        "encode: the shared atlas compresses to %d bytes, over the %d-byte slot by %d; its %d records need %d bytes of relocated storage",
+        #best.stream, ATLAS_SLOT, over_stream, best.records, best.arena_need)
+      if over_records > 0 then
+        msg = msg .. string.format(", over the %d-byte arena by %d",
+          best.arena_capacity, over_records)
+      end
+      error(msg .. "; every consumer shares this one atlas, so it holds one language at a time - translate the remaining labels or shorten these", 0)
+    end
+    if over_records > 0 then
+      error(string.format(
+        "encode: the label record lists need %d bytes of relocated record storage, over the %d-byte arena by %d (the %d-byte atlas stream fits); shorten the labels so fewer lists move",
+        best.arena_need, best.arena_capacity, over_records, #best.stream), 0)
+    end
+    error("encode: no cut of these labels fits the slot", 0)
+  end
+
+  local sheet, segments, stream = best.sheet, best.segments, best.stream
+  local plan = best.plan
+  local arena_used, arena_capacity = best.arena_used, best.arena_capacity
+
   local new_data = original
-  local offsets = {}
+  local main_pos = {}
 
-  if rebuild_labels then
-    local sheet_len = ATLAS_PREFIX + 8 * sum_w
-    if sheet_len > ATLAS_LIMIT then
-      error(string.format(
-        "encode: the five labels need %d decoded bytes (64 + 8 * %d pixels), over the 11,520-byte sheet limit (at most 1,432 pixels)",
-        sheet_len, sum_w), 0)
-    end
+  local index = {}
+  for i, entry in ipairs(entries) do index[entry.name] = entry end
 
-    -- Preserved head, then one strip per label in descriptor order.  A w-pixel
-    -- strip is w * 16 / 2 = w * 8 bytes, so every offset stays 8-byte aligned.
-    local parts = { atlas:sub(1, ATLAS_PREFIX) }
-    local at = ATLAS_PREFIX
-    for i = 1, #strip do
-      offsets[i] = at
-      parts[#parts + 1] = strip[i].px
-      at = at + strip[i].w * 8
-    end
-    local sheet = table.concat(parts)
-    if #sheet ~= sheet_len then
-      error(string.format("encode: internal sheet length %d, expected %d", #sheet, sheet_len), 0)
-    end
+  local record_total = 0
+  for _, entry in ipairs(entries) do record_total = record_total + #entry.records end
 
-    local stream = prs:encode("", { { name = "DECOMPRESSED", data = sheet } })
-    if #stream > ATLAS_SLOT then
-      error(string.format(
-        "encode: the rebuilt sheet compresses to %d bytes, over the 3,782-byte slot (shed %d bytes)",
-        #stream, #stream - ATLAS_SLOT), 0)
-    end
+  -- A background-only or position-only edit leaves every text list, the sheet
+  -- and the descriptors byte-identical.
+  if changed then
+  -- 1. The sheet and its arena.
+  local slot = stream .. string.rep("\0", ATLAS_SLOT - #stream)
+  new_data = put(new_data, ATLAS_OFFSET, slot)
 
-    local slot = stream .. string.rep("\0", ATLAS_SLOT - #stream)
-    new_data = put(new_data, ATLAS_OFFSET, slot)
+  -- 2. Main rows.  A list keeps its retail slot while it fits there, so a
+  -- retail round trip rewrites pointers and records in place and nothing else.
+  for i, m in ipairs(MAIN) do
+    local entry = index[m.name]
+    local recs = entry.records
+    local pos = plan.main[m.name]
+    new_data = put(new_data, pos, records_bytes(recs))
+    main_pos[m.name] = pos
 
-    for i, label in ipairs(labels) do
-      local w = strip[i].w
-      new_data = put(new_data, label.rec_pos,
-        pack_record(origin[i].x, origin[i].y, w, LABEL_H, offsets[i] // 8))
-      -- `+12` is the label count in the high half of a BE u32; the low half is 0.
-      new_data = put(new_data, label.desc_off + 12, "\0\1\0\0")
+    -- `+12` is the label count in the high half of a BE u32; the low half is 0.
+    new_data = put(new_data, m.desc + 12, string.pack(">I4", #recs << 16))
+    new_data = put(new_data, m.desc + 16, string.pack(">I4", RAM_BASE + pos))
+  end
+
+  -- 3. Action lists: first fit into the retired pool, then the slot tail.  A
+  -- list never straddles the two regions.
+  local action_pos = {}
+  for _, a in ipairs(ACTIONS) do
+    local entry = index[a.name]
+    local recs = entry.records
+    local pos = plan.actions[a.index]
+    if #recs > 0 then
+      new_data = put(new_data, pos, records_bytes(recs))
     end
+    action_pos[a.index] = pos
+    new_data = put(new_data, ACTION_TABLE + a.index, string.char(#recs))
+    new_data = put(new_data, ACTION_POINTERS + a.index * 4,
+      string.pack(">I4", RAM_BASE + pos))
+  end
+
+  -- 4. The shared EXIT: list 11 keeps the main row's list unless split.
+  do
+    local recs, pos
+    if split_exit then
+      local entry = index[SPLIT_EXIT_NAME]
+      recs, pos = entry.records, plan.split
+      new_data = put(new_data, pos, records_bytes(recs))
+    else
+      recs, pos = exit_entry.records, main_pos["04_EXIT"]
+    end
+    new_data = put(new_data, ACTION_TABLE + EXIT_INDEX, string.char(#recs))
+    new_data = put(new_data, ACTION_POINTERS + EXIT_INDEX * 4,
+      string.pack(">I4", RAM_BASE + pos))
+  end
+
+  -- 5. The button column (fixed 12): the two boards, then the EXIT label's
+  -- four cells moved to the column's own geometry.  The cells keep their
+  -- characterOffset, so the label, the submenu's EXIT and the column's EXIT
+  -- read one set of textures, and the mini icons reuse the button segments.
+  local column = {}
+  for _, board in ipairs({ index[BUTTON_ABC_NAME], index[BUTTON_XYZLR_NAME] }) do
+    for _, r in ipairs(board.records) do column[#column + 1] = r end
+  end
+  local exit_source = index[SPLIT_EXIT_NAME] or exit_entry
+  for _, r in ipairs(exit_source.records) do
+    column[#column + 1] = {
+      x = EXIT_COLUMN_X + (r.x - exit_source.anchor.x),
+      y = EXIT_COLUMN_Y + (r.y - exit_source.anchor.y),
+      w = r.w, h = r.h, co = r.co,
+    }
+  end
+  if #column ~= BUTTON_COUNT then
+    error(string.format(
+      "encode: the button column needs %d records, but the boards and the EXIT label give %d",
+      BUTTON_COUNT, #column), 0)
+  end
+  new_data = put(new_data, BUTTON_REC, records_bytes(column))
+  -- The mini labels sit at their own fixed anchor, one per icon cell; the
+  -- sprite is cropped to its ink, so its box carries the offset the crop
+  -- removed and has to be re-applied against the icon's own 16-px cell, or a
+  -- glyph whose ink does not start at the cell's top-left would shift.
+  local mini = {}
+  for k = 1, MINI_COUNT do
+    local first = k <= BUTTON_ABC_COUNT
+    local board = first and index[BUTTON_ABC_NAME] or index[BUTTON_XYZLR_NAME]
+    local cell_top = board.anchor.y + LABEL_H * (first and (k - 1) or (k - BUTTON_ABC_COUNT - 1))
+    local src = column[k]
+    mini[k] = {
+      x = -8 + (src.x - board.anchor.x),
+      y = -8 + (src.y - cell_top),
+      w = src.w, h = src.h, co = src.co,
+    }
+  end
+  new_data = put(new_data, MINI_REC, records_bytes(mini))
   end
 
   if positions_changed then
@@ -1212,19 +2049,22 @@ function codec.encode(original, artifacts, args)
       bg_stream .. string.rep("\0", BACKGROUND_SLOT - #bg_stream))
   end
 
-  -- Only the slots and the two independent data sets may differ.
+  -- Only the slot, the text lists and the two independent data sets may differ.
   local allowed = {}
-  if rebuild_labels then
+  if changed then
     allowed[#allowed + 1] = { ATLAS_OFFSET, ATLAS_OFFSET + ATLAS_SLOT }
+    allowed[#allowed + 1] = { ACTION_TABLE, ACTION_POINTERS + ACTION_COUNT * 4 }
+    allowed[#allowed + 1] = { ACTION_ARENA, ACTION_ARENA + ACTION_ARENA_LEN }
+    allowed[#allowed + 1] = { BUTTON_REC, BUTTON_REC + BUTTON_COUNT * RECORD_BYTES }
+    allowed[#allowed + 1] = { MINI_REC, MINI_REC + MINI_COUNT * RECORD_BYTES }
+    for i, m in ipairs(MAIN) do
+      allowed[#allowed + 1] = { m.desc + 12, m.desc + 20 }
+      allowed[#allowed + 1] = { main_pos[m.name],
+        main_pos[m.name] + #index[m.name].records * RECORD_BYTES }
+    end
   end
   if background_changed then
     allowed[#allowed + 1] = { BACKGROUND_OFFSET, BACKGROUND_OFFSET + BACKGROUND_SLOT }
-  end
-  if rebuild_labels then
-    for _, label in ipairs(labels) do
-      allowed[#allowed + 1] = { label.desc_off + 12, label.desc_off + 16 }
-      allowed[#allowed + 1] = { label.rec_pos, label.rec_pos + RECORD_BYTES }
-    end
   end
   for _, write in ipairs(position_writes) do
     allowed[#allowed + 1] = { write.offset, write.offset + #write.data }
@@ -1244,6 +2084,29 @@ function codec.encode(original, artifacts, args)
     error(string.format("encode: first unexpected modified byte at 0x%06X", stray), 0)
   end
 
+  local per_list, segment_bytes = {}, 0
+  for _, entry in ipairs(entries) do
+    per_list[#per_list + 1] = { name = entry.name, records = #entry.records }
+    for _, s in ipairs(entry.segs) do segment_bytes = segment_bytes + ceil8(#s.data) end
+  end
+
+  codec.stats = {
+    segments = record_total,
+    unique = #segments,
+    sheet_bytes = #sheet,
+    stream_bytes = #stream,
+    records = record_total,
+    dedupe_saved = segment_bytes - #sheet,
+    free_decoded = ATLAS_LIMIT - #sheet,
+    free_stream = ATLAS_SLOT - #stream,
+    arena_used = arena_used,
+    arena_capacity = arena_capacity,
+    cut = { gap = best.cfg.gap, maxw = best.cfg.maxw },
+    candidates = tried,
+    lists = per_list,
+    unchanged = false,
+  }
+
   return new_data
 end
 
@@ -1262,17 +2125,17 @@ function codec.can_handle(data)
 
   -- Weaker, content-based evidence: the five descriptors must look like option
   -- rows and the atlas must decompress.
-  for _, desc in ipairs(DESCRIPTORS) do
-    if be32(data, desc.offset + 20) ~= TEXTURE_BASE then
+  for _, m in ipairs(MAIN) do
+    if be32(data, m.desc + 20) ~= TEXTURE_BASE then
       return "no"
     end
-    local count = be16(data, desc.offset + 12)
+    local count = be16(data, m.desc + 12)
     if count < 1 or count > MAX_RECORDS then
       return "no"
     end
-    local ptr = be32(data, desc.offset + 16)
-    local rec_pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
-    if rec_pos + count * RECORD_BYTES > #data then
+    local ptr = be32(data, m.desc + 16)
+    local pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
+    if pos + count * RECORD_BYTES > #data then
       return "no"
     end
   end
@@ -1280,7 +2143,7 @@ function codec.can_handle(data)
   local ok, atlas = pcall(function()
     return prs:decode(data:sub(ATLAS_OFFSET + 1, ATLAS_OFFSET + ATLAS_SLOT))[1].data
   end)
-  if not ok or type(atlas) ~= "string" or #atlas < ATLAS_PREFIX then
+  if not ok or type(atlas) ~= "string" or #atlas < 1 then
     return "no"
   end
 
