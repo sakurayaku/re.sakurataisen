@@ -104,7 +104,7 @@ end
 -- Throwaway workspace
 
 local TMP = "/tmp/ludared_metadata_test"
-local SUBTITLE_DIR = TMP .. "/workspace/SakTaiCD1_Track1.bin/data.bin/SAKURA1/LOGO.SH2"
+local SUBTITLE_DIR = TMP .. "/workspace/SakTaiCD1_Track1.bin/SAKURA1/LOGO.SH2"
 
 -- A 4bpp indexed BMP in the game's palette.  `fill` is the palette index
 -- painted everywhere (or a function(x, y) returning one): 0 is the transparent

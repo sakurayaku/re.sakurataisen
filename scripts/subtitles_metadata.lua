@@ -260,7 +260,7 @@ function codec.encode(original, artifacts, args)
     workspace = "./workspace"
   end
 
-  local subtitle_dir = workspace .. "/SakTaiCD1_Track1.bin/data.bin/SAKURA1/LOGO.SH2/SUBTITLES"
+  local subtitle_dir = workspace .. "/SakTaiCD1_Track1.bin/SAKURA1/LOGO.SH2/SUBTITLES"
   local bmp_files = list_bmp_files_in_dir(subtitle_dir)
 
   -- No BMPs extracted: leave the table untouched.

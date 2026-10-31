@@ -44,7 +44,7 @@ Vous avez enfin vos deux fichiers nécessaires: les glyphes (ici: `FONT_DEJA_VU_
 
 TODO: Une fois que `std/magic/replace-with` est dispo, le fichier de glyphes doit avoir un seul emplacement.
 
-Les glyphes doivent remplacer le fichier `./workspace/SakTaiCD1_Track1.bin/data.bin/SAKURA1/0100KNJ.BIN`.
+Les glyphes doivent remplacer le fichier `./workspace/SakTaiCD1_Track1.bin/SAKURA1/0100KNJ.BIN`.
 
 La table doit aller remplacer le fichier `./workspace/tables/I18N_FONT.tbl`.
 
