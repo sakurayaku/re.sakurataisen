@@ -139,9 +139,27 @@ file:close()
 
 ## Discovery and IDs
 
-Script IDs are based on paths relative to the configured scripts root, including `.lua` (for example `scripts/my_codec.lua` in CLI usage). Discovery currently loads codec modules eagerly.
+Codec IDs are `scripts/` plus the path relative to the configured scripts root, including `.lua` (for example `scripts/my_codec.lua` in CLI usage). Discovery loads codec modules eagerly.
 
-The **planned** shared `ScriptDiscovery` will walk `SCRIPTS` once, skip `shared/` subtrees, classify files under `tests/` as tests (including nested directories), and dispatch paths by extension to language engines. **This is a design direction, not confirmation that the refactor has shipped.** Check the current implementation before depending on directory exclusion rules or the future `ludared codecs test` command.
+The shared `ScriptDiscovery` scans `.lua` files recursively, skips `shared/` subtrees at any depth, and classifies files under `tests/` directories as tests, including nested descendants. Other Lua files are codecs; `libraries/` has no special exclusion. Keep Lua fixtures and helpers under `shared/`, including inside test directories, to prevent automatic loading or execution.
+
+## Test runtime
+
+`ludared scripts test [PATH*]` executes discovered test scripts in a project. Selection and command examples are in [the Lua skill](../SKILL.md#lua-test-scripts).
+
+Each test file executes at top level in a fresh Lua VM with `LUDARED.PROJECT_ROOT`, `LUDARED.WORKSPACE`, `LUDARED.SCRIPTS`, `LUDARED.sha256`, and `LUDARED.codec`. A successful script completes without error; a failed assertion or other Lua error stops the command. There is no automatic test-function discovery or required return value.
+
+Load a Lua codec module explicitly and call its callbacks with dot syntax, as ordinary functions:
+
+```lua
+local codec = dofile(LUDARED.SCRIPTS .. "/my_codec.lua")
+local fixture = dofile(LUDARED.SCRIPTS .. "/tests/shared/fixture.lua")
+local artifacts = codec.decode(fixture.data, fixture.args)
+local original = codec.kind == "patch" and fixture.data or ""
+assert(codec.encode(original, artifacts, fixture.args) == fixture.data)
+```
+
+This example assumes a fixture module returning `{ data = ..., args = ... }` for a supported round-trip input. Use `LUDARED.codec(id)` and colon syntax for builtin Rust codecs; it does not look up Lua codecs. `require` needs the same explicit search-path setup as in codec scripts. Use `assert()` and `print()` directly unless the project has configured a test framework.
 
 ## Binary parsing example
 

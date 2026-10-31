@@ -87,6 +87,7 @@ ludared init [--name N] [--manifest P] [--sources D] [--workspace D]
              [--scripts D] [--builds D] [--cache D] [--non-interactive]
 ludared sources add <FILE> | list [--status] | remove <FILE>
 ludared codecs list [--tree] | info <CODEC> | detect <FILE>
+ludared scripts test [PATH*]
 ludared decode add <PATH> <CODEC> [ARGS] [--name NAME] [--force]
 ludared decode remove <PATH> [NAME] [--clean]
 ludared unpack
@@ -103,6 +104,8 @@ ludared completions [SHELL]
 ```
 
 `<PATH>` is a virtual path. `<CODEC>` is a registered codec ID. `[ARGS]` is one opaque string passed verbatim to the codec; absent arguments and an empty string are different. Use `ludared <command> --help` to confirm syntax. `codecs list` and `codecs info` work outside projects for built-ins; inside a project they also show Lua codecs. `codecs detect` requires a project.
+
+`scripts test` also requires a project. Its optional path is relative to `paths.scripts`, **not a virtual path or codec ID**: use `ludared scripts test tests/my_codec.lua`. Omit it to run all discovered tests, or pass one quoted glob such as `'tests/*.lua'`. Tests are `.lua` files under `tests/` directories at any depth; `shared/` subtrees are skipped. For test authoring and runtime details, see `ludared-lua`.
 
 ## Workflows
 

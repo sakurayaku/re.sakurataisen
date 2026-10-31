@@ -7,7 +7,7 @@ description: Implement, modify, review, debug, or test Lua codecs for Ludared pr
 
 Use this skill for **codec development**, not ordinary work on a Ludared project. Read [references/lua-api.md](references/lua-api.md) for the Lua module contract, globals, builtin codec handles, and examples. When source code and documentation disagree, inspect the current Rust implementation and follow it.
 
-Generate a skeleton with `ludared codecs create my_codec.lua` when appropriate. The generated path is relative to `paths.scripts`; check the current CLI for filename restrictions.
+Generate a skeleton with `ludared codecs create my_codec.lua` when appropriate. The generated path is relative to `paths.scripts`; `shared` and `tests` are reserved path components, so create test and helper files directly.
 
 ## Mental model and contracts
 
@@ -34,9 +34,9 @@ Detection must not mutate project state or produce artifacts. `ludared decode ad
 
 ## Discovery and layout
 
-- Lua codec IDs identify script paths relative to the configured scripts root and include `.lua`. A module's `name` is display metadata, not its ID.
-- **Check the current discovery implementation.** The planned shared `ScriptDiscovery` traverses `SCRIPTS` once, excludes `shared/` subtrees, classifies `tests/` subtrees as tests, and dispatches paths to language engines by extension. Do not assume this refactor is already shipped.
-- Keep reusable helpers outside discoverable codec locations according to the current implementation. A malformed eagerly loaded codec can prevent project initialization.
+- Lua codec IDs use `scripts/` followed by the path relative to the configured scripts root, including `.lua` (for example `scripts/my_codec.lua`). A module's `name` is display metadata, not its ID.
+- Shared `ScriptDiscovery` scans the configured scripts root recursively for `.lua` files. It skips every `shared/` subtree and classifies files under any `tests/` directory, including descendants, as tests. Remaining Lua files are codecs.
+- Put reusable helpers and Lua fixtures in `shared/` directories, including `tests/shared/` or deeper nested `shared/` directories. `libraries/` is no longer excluded. A malformed eagerly loaded codec can prevent project initialization.
 - Ludared embeds **Lua 5.5** through **mlua**. Standard Lua 5.3+ binary features such as `string.pack`, `string.unpack`, and bitwise operators are available. Do not assume third-party modules are installed.
 - `require` does not automatically search the scripts root. Use explicit paths or configure `package.path` when needed.
 
@@ -46,7 +46,21 @@ Detection must not mutate project state or produce artifacts. `ludared decode ad
 2. **Define the contract.** Choose `patch` or `rebuild`; define recognition, output names and ordering, reconstruction metadata, argument syntax, and round-trip expectations.
 3. **Implement narrowly.** Validate bounds, lengths, offsets, arguments, and structural assumptions; provide useful errors. Avoid unrelated manifest or project changes.
 4. **Preserve reconstruction information.** If required, emit metadata as an ordinary artifact. A sidecar is optional, not a mandated format or position.
-5. **Test representative inputs.** Cover malformed and boundary cases, untouched round-trips, and intentional edits. Do not commit or redistribute commercial game data as fixtures.
+5. **Test representative inputs.** Write Lua test scripts and run them with `ludared scripts test` as described below. Cover malformed and boundary cases, untouched round-trips, and intentional edits. Do not commit or redistribute commercial game data as fixtures.
+
+## Lua test scripts
+
+Run from the project directory:
+
+```sh
+ludared scripts test                       # all discovered test scripts
+ludared scripts test tests/my_codec.lua    # one script
+ludared scripts test 'tests/*.lua'         # one quoted glob
+```
+
+The optional argument is one path or glob relative to `paths.scripts`, not a codec ID: omit the `scripts/` prefix. Globs match path components at a fixed depth; `**` is not recursive. Only discovered test scripts can be selected. Shell completion offers their relative paths.
+
+Tests are ordinary Lua scripts executed at top level, with no required harness or codec return table. Use `assert()` for failures and `print()` for diagnostics; do not assume LuaUnit or busted is installed or supported without additional setup. Every script gets a fresh Lua VM with the `LUDARED` paths and utility functions. The command stops at the first script error; do not rely on test execution order or state shared between scripts. See [the API reference](references/lua-api.md#test-runtime) for loading codecs under test.
 
 ## CLI validation
 
