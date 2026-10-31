@@ -4,6 +4,9 @@ builds/cache
 research/FONT_OCR/glyph-work/fonts
 research/FONT_OCR/glyph-work/glyphs
 
+# Private config
+.sakurayaku.json
+
 # Those should go in releases
 *.xdelta
 
