@@ -201,10 +201,9 @@ local ATLAS_VRAM = 0x0000a000
 local ATLAS_NEXT = 0x00022800
 
 local LABEL_H       = 16
--- VDP1's CMDSIZE width field is 8 bits of 8-pixel columns.  Anything wider
--- cannot be expressed in a record at all; anything over 320 is clipped by the
--- screen, but that is the artist's call, not the codec's.
-local LABEL_MAX_W   = 255 * 8
+-- We match LABEL_MAX_W with BG.bmp's recorded width, but it'd be trivial
+-- to make it dynamic IF you find out that it can be resized.
+local LABEL_MAX_W   = 208
 local LABEL_ALIGN   = 8
 
 local LABEL_NAMES = {
@@ -572,8 +571,8 @@ function codec.encode(original, artifacts, args)
     end
     if w > LABEL_MAX_W then
       error(string.format(
-        "encode: %s is %d pixels wide; a VDP1 sprite record cannot express "
-        .. "more than %d", name, w, LABEL_MAX_W), 0)
+        "encode: %s is %d pixels wide; only %d are allowed to match BG.bmp",
+        name, w, LABEL_MAX_W), 0)
     end
     labels[i] = { name = name, px = px, w = w }
   end

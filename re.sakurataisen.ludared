@@ -1870,30 +1870,13 @@
                 "MAINMENU/BG.bmp"
               ],
               "overrides": [
-                "MAINMENU/BG.bmp",
                 "MAINMENU/00_NEW_GAME.bmp",
                 "MAINMENU/01_OPTIONS.bmp",
                 "MAINMENU/02_CONTINUE.bmp",
                 "MAINMENU/03_RESUME.bmp",
                 "MAINMENU/04_THEATER.bmp",
-                "MAINMENU/05_BATTLE_TRIAL.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/0100TBL.BIN": [
-            {
-              "name": "0100TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0100KNJ"
-              },
-              "outputs": [
-                "0100TBL.TXT"
-              ],
-              "overrides": [
-                "0100TBL.TXT"
+                "MAINMENU/05_BATTLE_TRIAL.bmp",
+                "MAINMENU/BG.bmp"
               ],
               "decodes": {}
             }
@@ -1998,6 +1981,23 @@
               ],
               "overrides": [
                 "TITLE.bmp"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
               ],
               "decodes": {}
             }

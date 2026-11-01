@@ -3,6 +3,7 @@ builds
 builds/cache
 research/FONT_OCR/glyph-work/fonts
 research/FONT_OCR/glyph-work/glyphs
+.cloud-attachments
 
 # Private config
 .sakurayaku.json
