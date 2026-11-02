@@ -4,7 +4,7 @@
 0004:Un cliché de Kanna.<br>Elle semble énergique et sûre<br>d'elle. J'ai hâte de la rencontrer.
 0005:Un cliché d'Iris.<br>Elle est entourée de fleurs et<br>affiche un sourire radieux.
 0006:Un cliché de Kohran.<br>Les vêtements traditionnels lui<br>siéent bien. Je me demande quel<br>genre de personne est-ce.
-0007:A letter given to me by a customer. I was asked to give it to Sumire. I have a bad feeling about this… 
+0007:0100TBL.TXT:0007:<br>   Traduction manquante!
 0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici…
 0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
 0010:Une broche.<br>Elle a été confectionnée dans les<br>règles de l'art.
@@ -23,7 +23,7 @@
 0023:Un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle<br>femme déguisée en homme.
 0024:Un cliché de Kanna dans sa<br>tenue d'entraînement. C'est une<br>photographie vraiment intime.
 0025:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser.<br>Comme c'est mignon.
-0026:It's a photo of Kohran. I don't get to see her with her braids undone very often. It's a nice look. 
+0026:0100TBL.TXT:0026:<br>   Traduction manquante!
 0027:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle restera aussi heureuse<br>comme elle le laisse paraître ici.
 0028:Le pistolet d'Ayame.<br>Pourquoi…? Pourquoi fallait-il que<br>ça se passe comme ça ?
 0029:Rien à faire par ici. Je devrais<br>peut-être aller voir ailleurs…
@@ -79,7 +79,7 @@
 0079:(Non, je ne devrais pas me poser<br>autant de questions. Elle connaît<br>mon nom après tout.)
 0080:O-Oui ! Merci beaucoup !
 0081:Voilà donc ce fameux théâtre qui<br>fut inauguré l'an dernier,<br>impressionnant. On est en plein<br>milieu du quartier de Ginza.
-0082:That's one big building… 
+0082:C'est un bâtiment vraiment<br>immense!
 0083:Personne ne pourrait soupçonner<br>le fait qu'il cache en réalité un<br>quartier militaire secret…
 0084:Whoah ! Quel hall extraordinaire.<br>Mais je ne vois aucun garde. C'est<br>un peu négligé…
 0085:En tout cas, c'est vraiment calme<br>ici.
@@ -98,7 +98,7 @@
 0098:Pourquoi devrais-je faire ça ?<br>Oui, tout de suite !
 0099:Pourquoi devrais-je faire ça ? Je<br>refuse !
 0100:Et dans tous les cas, est-ce une<br>façon de demander de l'aide à<br>quelqu'un ?
-0101:…I'm Imperial Navy Ensign Ichiro Ogami. I was transferred to the Assault Troop, effective today. 
+0101:0100TBL.TXT:0101:<br>   Traduction manquante!
 0102:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier général,<br>je ne pars pas.
 0103:…!
 0104:C'est Ôgami… Pouvez-vous me<br>dire où je pourrais trouver le<br>Commandant Yoneda ?
@@ -204,7 +204,7 @@
 0204:Plutôt que de vous chamailler<br>toutes les deux, pouvez-vous<br>m'indiquer où se trouve la<br>réception ?
 0205:Je dois m'y rendre dans le cadre<br>de ma première mission.
 0206:Hé vous deux ! Que faites-vous<br>devant le bureau du directeur ?
-0207:Ah… You're the one from earlier… 
+0207:0100TBL.TXT:0207:<br>   Traduction manquante!
 0208:Mariaaa ! C'est de la faute de<br>Sakura, elle…
 0209:J'étais juste en train de proposer<br>mon aide à Ôgami, mais Iris…
 0210:Ça suffit vous deux ! Vous n'avez<br>pas une répétition de prévue ?
@@ -252,7 +252,7 @@
 0252:Euh… mais qu'est-ce que je suis<br>censé faire là au juste ?
 0253:Hein ? Le directeur Yoneda ne<br>vous a pas prévenu ?
 0254:Le nouveau capitaine va travailler<br>comme poinçonneur de billets.<br>C'est ce qu'il nous a dit.
-0255:Ticket punching? What is that supposed to mean? 
+0255:0100TBL.TXT:0255:<br>   Traduction manquante!
 0256:Eh bien, vous devez valider les<br>billet des clients, tout<br>simplement.
 0257:Hein ? Mais en quoi est-ce une<br>"mission spéciale" ?
 0258:Hum… Je n'ai pas de réponse à<br>ça, désolée.
@@ -268,7 +268,7 @@
 0268:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0269:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0270:Q-Que voulez-vous ? Je ne suis<br>pas responsable des entrées.
-0271:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez. Et<br>vous n'avez pas de quoi valider<br>nos réservations ?
+0271:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
 0272:Quoi ? Mais alors… ma vraie<br>mission, c'est vraiment…
 0273:…ça ?! Vous vous moquez<br>de moi !
 0274:Fais de ton mieux ! Même si je<br>n'ai aucune idée de quel genre<br>d'entraînement il s'agit…
@@ -298,8 +298,8 @@
 0298:Eeeeet elle est partie.
 0299:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0300:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
-0301:Q-Que voulez-vous ? Je ne suis<br>pas responsable des tickets.
-0302:Mais... c'est l'uniforme de<br>poinçonneur que vous portez. Et<br>vous n'avez pas de quoi valider<br>nos réservations ?
+0301:Q-Que voulez-vous ? Je ne suis<br>pas responsable des billets.
+0302:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
 0303:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
 0304:... ça ?! Vous vous moquez de moi<br>!
 0305:Nous y sommes, Ôgami.
@@ -330,7 +330,7 @@
 0330:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0331:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0332:Q-Que voulez-vous ? Je ne suis<br>pas responsable des billets.
-0333:Mais... c'est l'uniforme de<br>poinçonneur que vous portez. Et<br>vous n'avez pas de quoi valider<br>nos réservations ?
+0333:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
 0334:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
 0335:... ça ?! Vous vous moquez de moi<br>!
 0336:Faites de votre mieux toutes les<br>deux ! ... Même si je n'ai aucune<br>idée de quel genre<br>d'entraînement il s'agit.
@@ -365,7 +365,7 @@
 0365:L'entraînement ?...
 0366:Heu... ? Je me suis peut-être mal<br>exprimé mais je pensais que vous<br>alliez à un exercice de<br>préparation.
 0367:Hum, oui, on peut dire ça comme<br>ça.
-0368:Right now for instance, we’ll be practicing our lines. 
+0368:0100TBL.TXT:0368:<br>   Traduction manquante!
 0369:(Les lignes ? Elle doit peut-être<br>parler de code militaire.)
 0370:Maintenant, si vous voulez bien<br>m'excuser... Bon courage.
 0371:... Merci.
@@ -373,7 +373,7 @@
 0373:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0374:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0375:Q-Que voulez-vous ? Je ne suis<br>pas responsable des tickets.
-0376:Mais... c'est l'uniforme de<br>poinçonneur que vous portez. Et<br>vous n'avez pas de quoi valider<br>nos réservations ?
+0376:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
 0377:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
 0378:... ça ?! Vous vous moquez de moi<br>!
 0379:Hé, monsieur le poinçonneur,<br>venez par ici et validez nos<br>tickets !
