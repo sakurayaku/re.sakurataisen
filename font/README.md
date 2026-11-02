@@ -12,6 +12,19 @@ En pratique, tant que vous avez un [.bmp](https://fr.wikipedia.org/wiki/Windows_
 
 # Générer sa propre police
 
+Le jeu utilise la police [DejaVu Sans](https://fr.wikipedia.org/wiki/DejaVu). Parmi les autres propositions de police qui ont été retenues, il y a:
+- [Silkscreen](https://www.dafont.com/silkscreen.font)
+- [Liberation Sans](https://www.dafont.com/fr/liberation-sans.font)
+- [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
+- [Trebuchet MS](https://fonts.adobe.com/fonts/trebuchet-ms)
+- [Futura PT](https://fonts.adobe.com/fonts/futura-pt)
+- [Helvetica](https://font.download/font/helvetica-255)
+- [Eurostile](https://font.download/font/eurostile)
+- [Intel Clear](https://font.download/font/intel-clear)
+- [Helvetica 65](https://fontsgeek.com/fonts/helvetica65-medium-medium)
+
+
 ## 1. Étape automatisable
 
 Placez-vous dans ce répertoire, et lancez le script de transformation de police [TrueType](https://fr.wikipedia.org/wiki/TrueType) en atlas de glyphes. Ce script génère ses caractères à partir de la table d'encodage [Windows-1252](https://fr.wikipedia.org/wiki/Windows-1252), qui augmente la [table ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) avec des accents et autres caractères européens.
@@ -101,4 +114,4 @@ But that's a whole other level of pipeline.
 
 ***
 [^unicode]: C'est-à-dire, "tel que votre machine l'affiche".
-[^vwf]: Une _Variable-Width Font_, ou en français "police proportionnelle" est une police où chaque caractère peut avoir sa propre largeur. Ainsi "lili" prendra moins de place à l'affichaque que "mumu".
+[^vwf]: Une _Variable-Width Font_, ou en français "police proportionnelle" est une police où chaque caractère peut avoir sa propre largeur. Ainsi "lili" prendra moins de place à l'affichage que "mumu".
