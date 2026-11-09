@@ -1,11 +1,11 @@
-0001:Un cliché de Sakura.<br>Elle regarde intensément<br>l'objectif. Je me demande à quoi<br>elle pense...
+0001:Un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense…
 0002:Un cliché de Sumire.<br>Voilà un aspect d'elle que je ne<br>connaissais pas.
 0003:Un cliché de Maria.<br>Elle semble pensive, voire un<br>peu triste...
 0004:Un cliché de Kanna.<br>Elle semble énergique et sûre<br>d'elle. J'ai hâte de la rencontrer.
 0005:Un cliché d'Iris.<br>Elle est entourée de fleurs et<br>affiche un sourire radieux.
 0006:Un cliché de Kohran.<br>Les vêtements traditionnels lui<br>siéent bien. Je me demande quel<br>genre de personne est-ce.
-0007:0100TBL.TXT:0007:<br>   Traduction manquante!
-0008:Le pistolet de Maria. Ça pourrait<br>m'aider à m'échapper d'ici…
+0007:Une lettre qui m'a été donnée<br>par un client. On m'a demandé<br>de la remettre à Sumire. J'ai un<br>mauvais pressentiment…
+0008:Le pistolet de Maria.<br>Ça pourrait m'aider à<br>m'échapper d'ici…
 0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
 0010:Une broche.<br>Elle a été confectionnée dans les<br>règles de l'art.
 0011:Une épingle à cheveux.<br>Elle irait bien avec une tenue<br>traditionnelle japonaise pour<br>tenir un chignon.
@@ -17,13 +17,13 @@
 0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Une pièce de ménagère tout à<br>fait ordinaire.
 0018:Une épée et un bouclier fait pour<br>être utilisés sur scène.<br>Ils ressemblent à de vrais armes.
 0019:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
-0020:Une perruque et un costume de<br>scène. Je me demande quel genre<br>de numéro peut avoir besoin de<br>tenues aussi excentriques.
-0021:Un cliché de Sakura en<br>maillot de bain. Wow, c'est<br>vraiment quelque chose… Je vais<br>le garder précieusement.
-0022:Un cliché de Sumire dans<br>son costume pour la scène.<br>Son maquillage distinctif fait<br>vraiment de l'effet.
+0020:Une perruque et un costume<br>utilisés pour la scène. Quel genre<br>de numéro peut avoir besoin<br>de tenues aussi excentriques ?
+0021:Un cliché de Sakura en maillot<br>de bain. Wow, c'est vraiment<br>quelque chose… Je vais le garder<br>précieusement.
+0022:Un cliché de Sumire dans son<br>costume pour la scène.<br>Son maquillage distinctif fait<br>vraiment de l'effet.
 0023:Un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle<br>femme déguisée en homme.
 0024:Un cliché de Kanna dans sa<br>tenue d'entraînement. C'est une<br>photographie vraiment intime.
 0025:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser.<br>Comme c'est mignon.
-0026:0100TBL.TXT:0026:<br>   Traduction manquante!
+0026:Un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. Ça<br>lui va bien comme ça aussi.
 0027:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle restera aussi heureuse<br>comme elle le laisse paraître ici.
 0028:Le pistolet d'Ayame.<br>Pourquoi…? Pourquoi fallait-il que<br>ça se passe comme ça ?
 0029:Rien à faire par ici. Je devrais<br>peut-être aller voir ailleurs…
@@ -249,18 +249,18 @@
 0249:La poinçonneuse doit être dans le<br>bureau. Bien, je vous laisse, je<br>dois aller à la répétition.
 0250:Sakura ! Attends un peu !
 0251:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ?<br>Bonne chance pour l'entraînement !
-0252:Euh… mais qu'est-ce que je suis<br>censé faire là au juste ?
+0252:Euh… qu'est-ce que je suis censé<br>faire là au juste ?
 0253:Hein ? Le directeur Yoneda ne<br>vous a pas prévenu ?
 0254:Le nouveau capitaine va travailler<br>comme poinçonneur de billets.<br>C'est ce qu'il nous a dit.
 0255:0100TBL.TXT:0255:<br>   Traduction manquante!
-0256:Eh bien, vous devez valider les<br>billet des clients, tout<br>simplement.
+0256:Eh bien, les billets des visiteurs<br>bien sûr.
 0257:Hein ? Mais en quoi est-ce une<br>"mission spéciale" ?
-0258:Hum… Je n'ai pas de réponse à<br>ça, désolée.
+0258:Nous n'en savons pas plus que<br>vous, désolé…
 0259:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0260:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0261:Ah… Ôgami, je suis désolée mais<br>je dois y aller. Faites de votre<br>mieux !
-0262:(Mais… Non, pas possible, ça doit<br>être une erreur !)
-0263:Une poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
+0262:(Mais… Pas possible, ça doit être<br>une erreur !)
+0263:Une… poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
 0264:Eh bien hormis une apparence un<br>peu différente, c'est à peu de<br>chose près comme une paire de<br>ciseaux.
 0265:Bon, je dois partir, la répétition<br>va commencer.<br>Faites de votre mieux Ôgami !
 0266:Et la voilà partie.
@@ -270,17 +270,17 @@
 0270:Q-Que voulez-vous ? Je ne suis<br>pas responsable des entrées.
 0271:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
 0272:Quoi ? Mais alors… ma vraie<br>mission, c'est vraiment…
-0273:…ça ?! Vous vous moquez<br>de moi !
+0273:…ça ?! Vous vous moquez de<br>moi !
 0274:Fais de ton mieux ! Même si je<br>n'ai aucune idée de quel genre<br>d'entraînement il s'agit…
 0275:Merci ! J'espère que votre séance<br>de poinçonnage se passera bien.
-0276:(De poinçonnage…?)
+0276:(…De poinçonnage ?)
 0277:Et la voilà partie.
 0278:Et voilà on y est !
 0279:C'est gentil de m'avoir montré le<br>chemin, Iris.
 0280:Hihihi. Bon, il faut que j'aille à la<br>répétition. La poinçonneuse est<br>dans le tiroir. À tout à l'heure !
 0281:Iris, attends !
 0282:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ?<br>Bonne répétition !
-0283:Tu peux me dire ce que je suis<br>censé faire là ?
+0283:Euh… qu'est-ce que je suis censé<br>faire là au juste ?
 0284:Hmm, le directeur Yoneda a parlé<br>de "poinçonner les billets".
 0285:Je crois que ça veut dire que tu<br>dois valider les billets des<br>visiteurs.
 0286:Hein ? C'est ça, ma "mission<br>spéciale" ?
@@ -300,140 +300,140 @@
 0300:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0301:Q-Que voulez-vous ? Je ne suis<br>pas responsable des billets.
 0302:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
-0303:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
-0304:... ça ?! Vous vous moquez de moi<br>!
+0303:Quoi ? Mais alors… ma vraie<br>mission, c'est vraiment…
+0304:…ça ?! Vous vous moquez de<br>moi !
 0305:Nous y sommes, Ôgami.
 0306:Je vois. Merci à vous deux de<br>m'avoir montré le chemin.
 0307:Monsieur, la poinçonneuse est<br>dans le tiroir ! Allez viens Sakura,<br>il faut qu'on se dépêche !
 0308:Tu as raison Iris. Excusez-nous<br>Ôgami, nous devons nous rendre<br>à la répétition.
 0309:Hey, attendez une seconde !
-0310:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ? Bonne chance<br>pour votre entraînement !
-0311:Eeeeet elles sont parties.
-0312:Euh... qu'est-ce que je suis censé<br>faire là au juste ?
+0310:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ?<br>Bon courage !
+0311:…Elles sont parties.
+0312:Euh… qu'est-ce que je suis censé<br>faire là au juste ?
 0313:Quoi ? Le directeur ne vous a pas<br>prévenu ?
-0314:Monsieur Yoneda a parlé de<br>"poinçonner les tickets".
+0314:Monsieur Yoneda a parlé de<br>"poinçonner les billets".
 0315:Poinçonner les billets ? Mais de<br>quels billets vous parlez ?
-0316:Eh bien les billets des visiteurs<br>bien sûr.
-0317:Quoi ? Mais qu'est-ce que ça veut<br>dire ? C'est ça ma "mission<br>secrète" ?
-0318:... Nous n'en savons pas plus que<br>vous, désolé.
+0316:Eh bien, les billets des visiteurs<br>bien sûr.
+0317:Quoi ? Mais qu'est-ce que ça<br>veut dire ? C'est ça, ma "mission<br>secrète" ?
+0318:Nous n'en savons pas plus que<br>vous, désolé…
 0319:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0320:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
-0321:Sakura, si on y va pas tout de<br>suite, la répétition va commencer<br>sans nous...
-0322:Oui tu as bien raison Iris. Si vous<br>voulez bien nous excuser, Ôgami.
-0323:(Mais... Pas possible, ça doit être<br>une erreur !)
-0324:Une... poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
+0321:Sakura, si on y va pas tout de<br>suite, la répétition va commencer<br>sans nous !
+0322:Oui tu as bien raison Iris.<br>Ôgami, si vous voulez bien<br>nous excuser…
+0323:(Mais… Pas possible, ça doit être<br>une erreur !)
+0324:Une… poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
 0325:Quoi ? Vous ne savez pas<br>comment vous en servir ? Hihihi<br>c'est drôle.
 0326:Vous le tenez comme ça dans la<br>main, vous appuyez et pouf ça<br>fait des trous.
-0327:Oh Iris, il ne faut pas qu'on loupe<br>la répétition...
+0327:Oh Iris, il ne faut pas qu'on loupe<br>la répétition…
 0328:C'est vrai ! Au revoir Monsieur !
-0329:... Mais je voulais vraiment savoir<br>à quoi servait la poinçonneuse.
+0329:Mais je voulais vraiment savoir<br>à quoi servait la poinçonneuse…
 0330:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0331:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0332:Q-Que voulez-vous ? Je ne suis<br>pas responsable des billets.
 0333:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
-0334:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
-0335:... ça ?! Vous vous moquez de moi<br>!
-0336:Faites de votre mieux toutes les<br>deux ! ... Même si je n'ai aucune<br>idée de quel genre<br>d'entraînement il s'agit.
+0334:Quoi ? Mais alors… ma vraie<br>mission, c'est vraiment…
+0335:…ça ?! Vous vous moquez de<br>moi !
+0336:Faites de votre mieux toutes les<br>deux ! Même si je n'ai aucune<br>idée de quel entraînement il<br>s'agit…
 0337:Merci Monsieur Ôgami ! Vous<br>pourrez passer tout à l'heure pour<br>nous voir vous aussi !
 0338:Merci ! J'espère que votre séance<br>de poinçonnage se passera bien.
-0339:(... De poinçonnage ?)
-0340:Hé, Iris, si nous n'y allons pas<br>maintenant...
+0339:(…De poinçonnage ?)
+0340:Oh Iris, il ne faut pas qu'on loupe<br>la répétition…
 0341:Tu as raison. Bon Monsieur, au<br>revoir !
-0342:Eeeeet voilà qu'elle sont parties.
+0342:…Et les voilà parties.
 0343:Nous y sommes.
 0344:Merci à vous, Mademoiselle Maria.
-0345:... Vous êtes mon supérieur,<br>appelez-moi juste Maria.
+0345:Vous êtes mon supérieur,<br>appelez-moi juste Maria.
 0346:La poinçonneuse doit être dans le<br>bureau. Bien, je vous laisse, je<br>dois aller à la répétition.
 0347:Oh, Madem- je veux dire Maria,<br>attendez un instant !
-0348:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ? Bonne chance<br>pour l'entraînement !
-0349:Euh... mais qu'est-ce que je suis<br>censé faire là au juste ?
-0350:Eeeeet elle est partie.
-0351:Ôgami... le directeur ne vous a<br>vraiment rien dit ?
+0348:Qu'est-ce que je suis censé faire ?<br>La poinçonneuse ?<br>Bon courage !
+0349:Euh… qu'est-ce que je suis censé<br>faire là au juste ?
+0350:…Elle est partie.
+0351:Ôgami… le directeur ne vous a<br>vraiment rien dit ?
 0352:Votre travail ici consiste à<br>perforer les billets.
-0353:Les billets ? Mais... ?
-0354:Ceci afin de valider les billets des<br>clients.
+0353:Les billets ? Mais…
+0354:Ceci afin de valider les entrées des<br>clients.
 0355:Quoi ? C'est ça ma "mission<br>secrète" ?
-0356:... Lieutenant, les specateurs sont<br>déjà en train de faire la queue.
+0356:Lieutenant, les spectateurs sont<br>déjà en train de faire la queue.
 0357:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0358:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0359:Avoir le sens de la communication<br>est important ici. Faites de votre<br>mieux.
-0360:(Mais... Pas possible, ça doit être<br>une erreur !)
-0361:Une... poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
+0360:(Mais… Pas possible, ça doit être<br>une erreur !)
+0361:Une… poinçonneuse ? Mais<br>qu'est-ce que je dois faire avec ?
 0362:Ça sert à perforer les billets. Je<br>pense que je n'ai pas besoin de<br>vous en dire plus, vous devez<br>avoir compris.
 0363:Hein ? Pour perforer les billets ?<br>Mais pourquoi est-ce que j'aurais<br>besoin de ça ?
 0364:Merci Maria. Je passerai vous voir<br>à l'entraînement après ça.
-0365:L'entraînement ?...
-0366:Heu... ? Je me suis peut-être mal<br>exprimé mais je pensais que vous<br>alliez à un exercice de<br>préparation.
+0365:L'entraînement ?…
+0366:Heu… Je me suis peut-être mal<br>exprimé mais il me semble que<br>vous vous rendiez à un exercice<br>de préparation.
 0367:Hum, oui, on peut dire ça comme<br>ça.
-0368:0100TBL.TXT:0368:<br>   Traduction manquante!
+0368:En fait, nous allons répéter nos<br>lignes.
 0369:(Les lignes ? Elle doit peut-être<br>parler de code militaire.)
-0370:Maintenant, si vous voulez bien<br>m'excuser... Bon courage.
-0371:... Merci.
-0372:Au fait... En quoi consiste mon<br>travail ?
+0370:Maintenant, si vous voulez bien<br>m'excuser. Bon courage.
+0371:M-Merci.
+0372:Au fait… En quoi consiste mon<br>travail ?
 0373:Excusez-moi jeune homme. Nous<br>allons attendre encore longtemps<br>comme ça ?
 0374:Aujourd'hui c'est Sumire qui joue<br>la vedette dans "Le Crépuscule<br>de la Dame aux Camélias".<br>J'ai hâte de la voir !
 0375:Q-Que voulez-vous ? Je ne suis<br>pas responsable des tickets.
 0376:Mais c'est bien l'uniforme de<br>poinçonneur que vous portez.<br>Et vous n'avez pas de quoi<br>valider nos réservations ?
-0377:Quoiiiii... Mais alors... ma vraie<br>mission, c'est vraiment...
-0378:... ça ?! Vous vous moquez de moi<br>!
+0377:Quoi ? Mais alors… ma vraie<br>mission, c'est vraiment…
+0378:…ça ?! Vous vous moquez de<br>moi !
 0379:Hé, monsieur le poinçonneur,<br>venez par ici et validez nos<br>tickets !
-0380:T-Tout de suite ! Euh... où est-ce<br>que je doit percer ?
-0381:Hein ? Vous venez d'arriver ici ou<br>quoi ? Cessez de nous faire perdre<br>du temps.
+0380:T-Tout de suite ! Euh… où est-ce<br>que je doit percer ?
+0381:Hein ? Vous venez d'arriver ici ou<br>quoi ? Cessez de nous faire<br>perdre du temps.
 0382:O-Oui ! Juste un instant s'il vous<br>plaît.
-0383:(Je ne comprend rien... Ma<br>mission ne consistait pas à diriger<br>une escouade secrète ?)
-0384:Hey, écoutez-moi bien, ici je<br>valide les billets, mais en réalité...
-0385:Je suis le capitaine de la Troupe !<br>Je ne suis qu'un simple<br>poinçonneur.
-0386:... je suis le capitaine de la<br>Troupe impériale de la Brigade<br>des Fleurs !
+0383:(Je ne comprend rien… Ma<br>mission ne consistait pas à<br>diriger une escouade secrète ?)
+0384:Hé ! Écoutez-moi bien.<br>Pour le moment je valide les<br>billets, mais en réalité…
+0385:Je suis le capitaine de la Troupe !<br>Je ne suis qu'un simple poinçonneur.
+0386:…je suis le capitaine de la<br>Troupe impériale de la Brigade<br>des Fleurs !
 0387:Hein ?!
-0388:Qu'est-ce que vous racontez ? La<br>Brigade des Fleurs n'a pas de<br>capitaine.
-0389:Et un homme n'a rien à faire<br>dedans !
+0388:Qu'est-ce que vous racontez ?<br>La Brigade des Fleurs n'a pas de<br>chef.
+0389:Et d'ailleurs, les hommes n'y ont pas leur place !
 0390:(Je n'en reviens pas, elle ne me<br>croit pas du tout !)
-0391:(... Non ! La Troupe d'assaut<br>impériale est une unité secrète.<br>Je ne peux pas me permettre de<br>le révéler au grand public.)
-0392:... Je plaisante, je ne suis qu'un<br>poinçonneur bête et méchant.
+0391:(…Non ! La Troupe d'assaut<br>impériale est une unité secrète.<br>Je ne peux pas me permettre de<br>le révéler au grand public.)
+0392:Je plaisante, je ne suis qu'un<br>simple poinçonneur bête et<br>méchant.
 0393:Vous vous sentez bien ? Oh, le<br>temps file ! La représentation de<br>la Brigade des Fleurs est sur le<br>point de commencer !
-0394:(... Elle vient de mentionner la<br>Brigade des Fleurs ? Comment un<br>civil peut-il connaître ce nom?)
-0395:(... Non ! Même si je me suis<br>mépris, je ne peux pas révéler au<br>grand jour l'existence de la<br>Troupe impériale.)
-0396:Vous êtes vraiment bizarre ! Oh,<br>le temps file ! La représentation<br>de la Brigade des Fleurs est sur le<br>point de commencer !
-0397:(... Est-ce qu'elle vient vraiment<br>de mentionner la Brigade des<br>Fleurs ? Comment un civil peut-il<br>connaître son nom si c'est une<br>unité secrète ?)
-0398:Ahem...
-0399:Ah, veuillez m'excuser. Où est ma<br>composteuse... ah la voilà. Et<br>voici monsieur.
+0394:(Elle vient de mentionner la<br>Brigade des Fleurs… Comment<br>un civil peut-il connaître ce<br>nom ?)
+0395:(…Non ! Même si je me suis<br>mépris, je ne peux pas révéler au<br>grand jour l'existence de la<br>Troupe impériale.)
+0396:Vous êtes vraiment bizarre ! Oh,<br>le temps file ! La représentation<br>de la Brigade des Fleurs est sur<br>le point de commencer !
+0397:(Elle vient de mentionner la<br>Brigade des Fleurs… Comment un<br>civil peut-il connaître son nom si<br>c'est une unité secrète ?)
+0398:Ahem.
+0399:Ah, veuillez m'excuser. Où est ma<br>poinçonneuse… ah la voilà. Et<br>voici monsieur.
 0400:Hum, est-ce que vous aimez<br>Sumire Kanzaki ?
-0401:C'est parfaitement mon type. Pas<br>tant que ça.
+0401:C'est parfaitement mon type.<br>Pas tant que ça.
 0402:Oui, je n'ai pas l'occasion de lui<br>parler souvent, mais c'est bien<br>mon genre de femme.
-0403:Quoiiiii ? Vous avez pu parler à<br>Sumire ? Oh je suis tellement<br>jaloux...
-0404:Ah oui... Pourriez-vous lui<br>remettre cette lettre ?
+0403:Quoi ? Vous avez pu parler à<br>Sumire ? Oh je suis tellement<br>jaloux…
+0404:Ah oui… Pourriez-vous lui<br>remettre cette lettre ?
 0405:Et, s'il vous plaît, précisez que<br>c'est de la part de son plus grand<br>fan.
 0406:Heu, très bien monsieur, je m'en<br>charge.
-0407:Non, pas vraiment pour ainsi<br>dire...
-0408:Heiiiiin ? Comment pouvez-vous<br>ne pas apprécier une femme aussi<br>charmante et raffinée ?
-0409:Un type comme vous n'a vraiment<br>rien à faire dans ce théâtre. C'est<br>pathétique !
-0410:(Ce qui est vraiment pathétique,<br>c'est le fait qu'un lieutenant de la<br>marine se retrouver à devoir<br>composter des tickets.)
+0407:Non, pas vraiment pour ainsi<br>dire…
+0408:Hein ? Comment pouvez-vous<br>ne pas apprécier une femme<br>aussi charmante et raffinée ?
+0409:Un type comme vous n'a<br>vraiment rien à faire dans ce<br>théâtre. C'est pathétique !
+0410:(Ce qui est vraiment pathétique,<br>c'est le fait qu'un lieutenant de la<br>marine se retrouver à devoir<br>composter des billets.)
 0411:Je suis désolé mais je ne peux pas<br>vraiment répondre à ce genre de<br>question.
 0412:Oh, je vois. Je suis désolé.
-0413:En fait, vous voyez... je suis un<br>immense fan. Alors si vous<br>pouviez lui remettre cette lettre...
-0414:Bon, il faut que j'y aille... Je<br>compte sur vous !
-0415:Hey, attendez !
+0413:En fait, vous voyez… je suis un<br>immense fan. Alors si vous<br>pouviez lui remettre cette lettre…
+0414:Bon, il faut que j'y aille. Je<br>compte sur vous !
+0415:Hé, attendez !
 0416:(Qu'est-ce que que vais bien faire<br>avec ça ?)
-0417:Hey m'sieur le poinçonneur, voilà<br>mon ticket !
-0418:O-Oui ! Hum... où est-ce que je<br>dois percer le ticket d'un tarif<br>enfant ?
+0417:Hé m'sieur le poinçonneur, voilà<br>mon billet !
+0418:O-Oui ! Hum… où est-ce que je<br>dois percer le billet d'un tarif<br>enfant ?
 0419:Hé le monsieur est nouveau ! Il<br>sait même pas comment on<br>poinçonne !
-0420:Prendre sur soi. Lui jeter un<br>regard menaçant.
-0421:... Voilà mon garçon, c'est bon<br>pour toi.
+0420:Prendre sur soi.<br>Lui jeter un regard menaçant.
+0421:…Voilà mon garçon, c'est bon<br>pour toi.
 0422:Continue de bien travailler.
-0423:(Mais... il a un problème ce petit<br>irrespectueux ?)
+0423:(Mais… Il a un problème ce<br>petit ?)
 0424:Tu es sûr qu'il faut regarder les<br>clients comme ça ?
-0425:(Quel petit morveux... Si<br>seulement il pouvait déguerpir<br>maintenant.)
+0425:(Quel petit morveux… Si<br>seulement il pouvait déguerpir<br>maintenant.)
 0426:Quoi ? Tu veux me dire quelque<br>chose ?
 0427:(Sale gosse ! Il suffit que je ne lui<br>dise rien pour qu'il se croit tout<br>permis.)
-0428:(... Bref, peu importe. Reste que<br>toutes cette histoire ne tient pas<br>debout. En quoi poinçonner des<br>tickets est lié à ma mission<br>secrète ?)
-0429:(J'en parlerai à l'équipe. Je<br>pourrai peut-être enfin avoir un<br>début d'explication)
-0430:(Et si leurs explications me me<br>conviennent pas, j'irai<br>directement demander au<br>Commandant Yoneda !)
-0431:Bon... Où devrais-je aller<br>maintenant ?
+0428:(Bref, peu importe. Reste que<br>cette histoire n'a pas de sens.<br>En quoi poinçonner des billets<br>est lié à ma mission secrète ?)
+0429:(J'en parlerai à l'équipe. Je<br>pourrai peut-être enfin avoir un<br>début d'explication.)
+0430:(Et si leurs explications me me<br>conviennent pas, j'irai<br>directement demander au<br>commandant Yoneda !)
+0431:Bon… Où devrais-je aller<br>maintenant ?
 0432:O-Oui ? Qu'y a-t-il ?
 0433:Tsubaki, c'est bien ça ?
 0434:Elle travaille donc ici à la<br>réception. Elle a l'air d'avoir de<br>l'énergie à revendre.
 0435:Très bien, où vais-je me rendre<br>maintenant ?
-0436:Excusez-moi... Seriez-vous le<br>Lieutenant Ichiro Ôgami ?
+0436:Excusez-moi… Seriez-vous le<br>Lieutenant Ichiro Ôgami ?
 0437:Mon nom est Sakura Shinguji.
 0438:J'ai reçu l'ordre du Commandant<br>Yoneda de venir vous chercher.
 0439:Oui !
@@ -441,10 +441,10 @@
 0441:Heureuse de vous rencontrer.
 0442:Cela vous pose problème ?
 0443:Très bien. Sur ce, rendons-nous<br>au Théâtre impérial.
-0444:Vous vous méprenez. Le quartier<br>général de la Troupe impériale est<br>situé dans le théâtre.
+0444:Vous vous méprenez. Le quartier<br>général de la Troupe impériale<br>est situé dans le théâtre.
 0445:Une brillante idée, n'est-ce pas ?
 0446:Bien, allons-y.
-0447:De... moi ?
+0447:De… moi ?
 0448:Non utilisé: 0100TBL.TXT#0448
 0449:J'ai sans cesse l'impression de<br>causer des problèmes à tout le<br>monde.
 0450:Mais je serai prête à donner ma<br>vie pour protéger la capitale.
@@ -452,20 +452,20 @@
 0452:Nous ne devrions pas faire<br>attendre le Commandant Yoneda<br>plus longtemps ! Allons-y !
 0453:Puisque c'est la première fois que<br>vous venez ici, entrons par le hall<br>principal.
 0454:Non utilisé: 0100TBL.TXT#0454
-0455:C'est parce qu'il n'y a qu'une<br>représentation nocturne,<br>aujourd'hui.
-0456:Hihihi. Dites Monsieuuuuur, c'est<br>ton amoureuse ?
+0455:C'est parce qu'il n'y a qu'une<br>représentation nocturne<br>aujourd'hui.
+0456:Hihihi. Dites Monsieur, c'est<br>ton amoureuse ?
 0457:Iris ! Je t'ai déjà dit de ne pas<br>t'adresser comme ça aux adultes.
 0458:Voici le Lieutenant Ichiro Ôgami,<br>il vient d'être transféré à la<br>Troupe impériale.
 0459:Troupe d'assaut impériale,<br>Brigade des Fleurs, Iris.
-0460:Et lui c'est Jean-Paul, l'ours. C'est<br>mon meilleur amis. J'espère que<br>vous vous entendrez bien.
-0461:Sakura...
+0460:Et lui c'est Jean-Paul, l'ours. C'est<br>mon meilleur ami. J'espère que<br>vous vous entendrez bien.
+0461:Sakura…
 0462:Qu'y a-t-il ?
-0463:Il a aussi un pouvoir spirituel...<br>Cela signifie qu'il va se battre<br>dans un Kôbu, comme nous ?
+0463:Il a aussi un pouvoir spirituel…<br>Cela signifie qu'il va se battre<br>dans un Kôbu, comme nous ?
 0464:C'est exact.
-0465:Je... j'aime pas me battre.
+0465:Je… j'aime pas me battre.
 0466:Non utilisé: 0100TBL.TXT#0466
-0467:Oh, ne te préoccupe pas de ça<br>Iris. Retournons dans ta chambre,<br>je vais te lire les Contes de la<br>mère Oye.
-0468:Oui !...
+0467:Oh, ne te préoccupe pas de ça<br>Iris. Retournons dans ta chambre,<br>je vais te lire les "Contes de ma<br>mère l'Oye".
+0468:Oui !
 0469:Ah, Lieutenant Ogami. Le<br>Commandant Yoneda est<br>actuellement dans son bureau.
 0470:Si vous voulez bien m'excuser<br>maintenant.
 0471:Quelqu'un peut-il me donner un<br>coup de main par ici ?!
@@ -473,47 +473,47 @@
 0473:Vous voyez quelqu'un d'autre à<br>part moi ? Arrêtez de me fixer<br>étrangement du regard et venez<br>par ici !
 0474:Ramassez la fourchette que j'ai<br>laissée tomber là-bas, et allez<br>m'en chercher une nouvelle.
 0475:Comment ? Vous voulez que je la<br>ramasse moi-même ?!
-0476:La fille unique des industries<br>Kanzaki, l'actrice vedette de ce<br>théâtre, ainsi que...
-0477:... la plus grande dame de la<br>haute société ! Moi, Sumire<br>Kanzaki, je devrais ramasser une<br>fourchette par terre ?!
-0478:Très bien. Vous êtes viré ! Je m'en<br>vais de ce pas retrouver le<br>directeur pour vous faire sortir<br>d'ici immédiatement !
-0479:Ah... Oh mon...<br>Ohohohohohohoh...
-0480:Et moi qui pensais que nous<br>avions un nouveau serveur... Je<br>suis désolé.
-0481:Donc... Lieutenant Ogawa, c'est<br>bien ça ?
+0476:La fille unique des industries<br>Kanzaki, l'actrice vedette de ce<br>théâtre, ainsi que…
+0477:…la plus grande dame de la<br>haute société ! Moi, Sumire<br>Kanzaki, je devrais ramasser une<br>fourchette par terre ?!
+0478:Très bien. Vous êtes viré !<br>Je m'en vais de ce pas retrouver<br>le directeur pour vous faire sortir<br>d'ici immédiatement !
+0479:Ah… Oh mon…<br>Ohohohohohohoh…
+0480:Et moi qui pensais que nous<br>avions un nouveau serveur…<br>Je suis désolé.
+0481:Donc… Lieutenant Ogawa, c'est<br>bien ça ?
 0482:Non utilisé: 0100TBL.TXT#0482
 0483:Non utilisé: 0100TBL.TXT#0483
 0484:Non utilisé: 0100TBL.TXT#0484
 0485:M. Yoneda est actuellement dans<br>le bureau du directeur.
-0486:Merci. Oh, au fait. Que<br>pensez-vous de la façon dont<br>cette Maria est arrivée de nulle<br>part...
-0487:... et m'a remplacée, moi, la star<br>Sumire Kanzaki, en tant que chef<br>de la Troupe ?
-0488:Bon sang, ce vieux schnock de<br>Yoneda... Il est incapable de<br>reconnaître une célébrité même<br>avec ses lunettes.
-0489:... Oh là là, qu'est-ce qui me<br>prend ? Quelle impolitesse de ma<br>part. Ohohohohohoh...
-0490:Oh, soyez gentil et n'allez pas<br>rapporter au Commandant ce que<br>je viens de dire, c'est compris ?
-0491:Allons allons, pas besoin de<br>devenir tout rouge. Juste une<br>petite vengeance... euh, je veux<br>dire récompense.
+0486:Merci. Oh, au fait. Que<br>pensez-vous de la façon dont<br>cette Maria est arrivée de nulle<br>part…
+0487:…et m'a remplacée, moi, la star<br>Sumire Kanzaki, en tant que chef<br>de la Troupe ?
+0488:Bon sang, ce vieux schnock de<br>Yoneda… Il est incapable de<br>reconnaître une célébrité même<br>avec ses lunettes.
+0489:…Oh là là, qu'est-ce qui me<br>prend ? Quelle impolitesse de ma<br>part. Ohohohohohoh…
+0490:Oh, soyez gentil et n'allez pas<br>rapporter au Commandant ce que<br>je viens de dire, c'est d'accord ?
+0491:Allons allons, pas besoin de<br>devenir tout rouge. Juste une<br>petite vengeance… euh, je veux<br>dire récompense.
 0492:M. Yoneda est dans la salle du<br>directeur. Mais rappelez-vous, ne<br>mentionnez surtout pas notre<br>petite conversation.
 0493:Vous m'avez bien entendu,<br>Lieutenant Ogawa ?
 0494:Si c'est clair, vous pouvez<br>disposer.
 0495:Qui êtes-vous ?
 0496:Alors c'est vous, Ichiro Ogami,<br>récemment promu Capitaine de<br>la Troupe.
 0497:Ravi de faire votre connaissance.<br>Mon nom est Maria Tachibana.
-0498:Qu'y a-t-il ? J'ai quelque chose sur<br>le visage ?...
+0498:Qu'y a-t-il ? J'ai quelque chose sur<br>le visage ?
 0499:Le Commandant Yoneda est dans<br>le bureau du directeur. Je dois<br>aller m'entraîner, alors je vous<br>laisse.
 0500:Mais un conseil pour vous : ne<br>fixez pas les femmes de la sorte !<br>Sur ce, veuillez m'excuser.
 0501:Entrez, entrez !
-0502:J'ai entendu parler de toi par<br>l'comte 'anakoji. Pas b'soin d'être<br>aussi formel, hic.
-0503:Rappelle-toi, ici c'est le Grand<br>Théâtre impérial, hic. Arrête de<br>parler comme un militaire !
+0502:J'ai entendu parler de toi par<br>l'comte Hanakoji. Pas b'soin<br>d'être aussi formel, hic.
+0503:Rappelle-toi, ici c'est l'Grand<br>Théâtre impérial, hic. Arrête de<br>parler comme un militaire !
 0504:Un p'tit verre ?
-0505:Qu'est-ce que... ! Qu'est-ce que<br>tu veux dire par "vraiment" ?
-0506:Tu es incapable de reconnaître les<br>gradés sans leur galons ? Hic ! Je<br>suis Ikki Yoneda, le lieutenant<br>général de l'armée !
+0505:Qu'est-ce que… ! Qu'est-ce que<br>tu veux dire par "vraiment" ?
+0506:Tu es incapable de reconnaître<br>les gradés sans leur galons ? Hic !<br>Je suis Ikki Yoneda, le lieutenant<br>général de l'armée !
 0507:Idiot !
 0508:Bien ! Content qu'on ait pu<br>éclaircir ce point. Maint'nant,<br>laisse-moi te donner ta première<br>mission.
-0509:Des histoires... Quelles histoires ?<br>Allez, dis-moi tout !
-0510:Hééééé oui, le plus grand<br>stratège de l'Armée travaille ici,<br>en tant que directeur du Théâtre<br>impérial.
-0511:Et un ivrogne éhonté en plus...<br>Hic !
+0509:Des histoires… Quelles histoires ?<br>Allez, dis-moi tout !
+0510:Héééé oui, le plus grand<br>stratège de l'armée travaille ici,<br>en tant que directeur du Théâtre<br>impérial.
+0511:Et un ivrogne éhonté en plus…<br>Hic !
 0512:Y a un problème avec çaaaaa ?
-0513:Bah voyons. Laisse-moi te dire<br>une chose...
-0514:Tous mes actes héroïques durant<br>la guerre, toutes les médailles sur<br>ma poitrine... Rien ne change le<br>fait que j'ai tué beaucoup de<br>gens.
+0513:Bah voyons. Laisse-moi te dire<br>une chose…
+0514:Tous mes actes héroïques durant<br>la guerre, les médailles sur ma<br>poitrine… Rien ne change le fait<br>que j'ai tué beaucoup de gens.
 0515:Ennemis comme alliés, j'ai causé<br>d'innombrables morts.
-0516:Et me voilà maintenant à gérer<br>un magnifique théâtre. Quelle vie<br>! Hic !
+0516:Et me voilà maintenant à gérer<br>un magnifique théâtre.<br>Quelle vie ! Hic !
 0517:Très bien, non, excellent ! Bien,<br>assez parlé, voilà ta première<br>mission.
 0518:Hmpf. Tu ne fais aucun effort.<br>Bref, nous disions donc, ta<br>première mission.
 0519:Non utilisé: 0100TBL.TXT#0519
@@ -578,7 +578,7 @@
 0578:Ne traînez pas et prenez cette<br>fourchette !
 0579:Enfile ça et va à la réception ! Tu<br>vas nous attirer des curieux avec<br>cet attroupement militaire.
 0580:Bonjour ? Excusez-moiii !
-0581:Vous êtes arrivé aujourd'hui,<br>n'est-ce pas ? Ravie de vous ren-<br>contrer. J'ai beaucoup entendu <br>arler de vous.
+0581:Vous êtes arrivé aujourd'hui,<br>n'est-ce pas ? Ravie de vous<br>rencontrer. J'ai beaucoup<br>entendu parler de vous.
 0582:Je suis Tsubaki Takamura. Je<br>travaille ici, à la boutique de<br>souvenirs.
 0583:Je fais souvent des clichés des<br>membres de la Troupe, alors<br>n'hésitez pas à passer me voir de<br>temps en temps !
 0584:Non utilisé: 0100TBL.TXT#0584
