@@ -74,7 +74,7 @@
 0074:(Kôbu ? Ah, c'est le nom de<br>l'arme secrète. Mais qu'est-ce que<br>ça peut bien être…)
 0075:O-Oui ! Merci beaucoup !
 0076:(Pourquoi devons-nous nous<br>rendre au théâtre…?)
-0077:(Est-elle vraiment membre de la<br>Troupe d'assaut impériale?)
+0077:(Est-elle vraiment membre de la<br>Troupe d'assaut impériale ?)
 0078:N-Non… ce n'est rien !
 0079:(Non, je ne devrais pas me poser<br>autant de questions. Elle connaît<br>mon nom après tout.)
 0080:O-Oui ! Merci beaucoup !
