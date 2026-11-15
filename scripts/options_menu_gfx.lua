@@ -104,7 +104,6 @@ end
 
 local prs         = LUDARED.codec("std/sega/compression/prs")
 local args_parser = load_shared("args_parser")
-local sha256      = load_shared("sha256")
 
 local codec = {}
 
@@ -113,8 +112,9 @@ codec.description = "PATCH plugin for every Options-screen text list, the panel 
 codec.kind        = "patch"
 codec.version     = 4
 
-local FILE_BYTES  = 391712
-local FILE_SHA256 = "1729cd8701fa8da30b203d0bf97e47e2dc9cf06b50ca91589ea760fe0cb8ff87"
+local CONST       = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
+local FILE_BYTES  = CONST.CD1_SAKURA_BYTES
+local FILE_SHA256 = CONST.CD1_SAKURA_SHA256
 
 local ATLAS_OFFSET  = 0x05b320
 local ATLAS_SLOT    = 3782              -- fixed compressed slot
@@ -2119,7 +2119,7 @@ function codec.can_handle(data)
   end
   -- Hash only a file of the right size: can_handle also sees whole disc images,
   -- and the codec's offsets are meaningless outside this executable.
-  if #data == FILE_BYTES and sha256.hex(data) == FILE_SHA256 then
+  if #data == FILE_BYTES and LUDARED.sha256(data) == FILE_SHA256 then
     return "certain"
   end
 

@@ -150,7 +150,7 @@ end
 
 local prs      = LUDARED.codec("std/sega/compression/prs")
 local palettes = load_shared("palettes")
-local sha256   = load_shared("sha256")
+local CONST    = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
 
 local codec = {}
 
@@ -180,8 +180,8 @@ local POINTER_BASE   = 0x214808
 local PALETTE_OFFSET = 0x00029324
 local PALETTE_SIZE   = 512
 
-local FILE_BYTES  = 243200
-local FILE_SHA256 = "dbe0c2e777ddbc47a46856e79ee7ccf06b546d3e4a7d7be7dc10d9bb3c32cf1d"
+local FILE_BYTES  = CONST.CD1_LOGO_SH2_BYTES
+local FILE_SHA256 = CONST.CD1_LOGO_SH2_SHA256
 -- md5 8d8a7a4affd6bc2e73ccd5ed4a3592a9
 
 -- Label descriptor tables, as file offsets.  Pointers are RAM addresses and
@@ -480,7 +480,7 @@ end
 function codec.can_handle(data)
   if type(data) ~= "string" then return "no" end
   if not probe(data) then return "no" end
-  if sha256.hex(data) == FILE_SHA256 then return "certain" end
+  if LUDARED.sha256(data) == FILE_SHA256 then return "certain" end
   -- The main menu reads as this codec expects it to, but the file is not the
   -- build these offsets were mapped on: same format, unverified edges.
   return "likely"
