@@ -1806,81 +1806,6 @@
           "SAKURA1/0100KNJ.BIN"
         ],
         "decodes": {
-          "SAKURA1/LOGO.SH2": [
-            {
-              "name": "SUBTITLES",
-              "codec": {
-                "id": "scripts/subtitles_gfx.lua",
-                "version": 4,
-                "args": "grow_dma=safe"
-              },
-              "outputs": [
-                "SUBTITLES/00.bmp",
-                "SUBTITLES/01.bmp",
-                "SUBTITLES/02.bmp",
-                "SUBTITLES/03.bmp",
-                "SUBTITLES/04.bmp",
-                "SUBTITLES/05.bmp",
-                "SUBTITLES/06.bmp",
-                "SUBTITLES/07.bmp",
-                "SUBTITLES/08.bmp",
-                "SUBTITLES/09.bmp",
-                "SUBTITLES/10.bmp",
-                "SUBTITLES/11.bmp",
-                "SUBTITLES/12.bmp",
-                "SUBTITLES/13.bmp",
-                "SUBTITLES/14.bmp",
-                "SUBTITLES/15.bmp",
-                "SUBTITLES/16.bmp"
-              ],
-              "overrides": [
-                "SUBTITLES/00.bmp",
-                "SUBTITLES/01.bmp",
-                "SUBTITLES/02.bmp",
-                "SUBTITLES/03.bmp",
-                "SUBTITLES/04.bmp",
-                "SUBTITLES/05.bmp",
-                "SUBTITLES/06.bmp",
-                "SUBTITLES/07.bmp",
-                "SUBTITLES/08.bmp",
-                "SUBTITLES/09.bmp",
-                "SUBTITLES/10.bmp",
-                "SUBTITLES/11.bmp",
-                "SUBTITLES/12.bmp",
-                "SUBTITLES/13.bmp",
-                "SUBTITLES/14.bmp",
-                "SUBTITLES/15.bmp",
-                "SUBTITLES/16.bmp"
-              ],
-              "decodes": {}
-            },
-            {
-              "name": "MAINMENU",
-              "codec": {
-                "id": "scripts/main_menu_gfx.lua",
-                "version": 3
-              },
-              "outputs": [
-                "MAINMENU/00_NEW_GAME.bmp",
-                "MAINMENU/01_OPTIONS.bmp",
-                "MAINMENU/02_CONTINUE.bmp",
-                "MAINMENU/03_RESUME.bmp",
-                "MAINMENU/04_THEATER.bmp",
-                "MAINMENU/05_BATTLE_TRIAL.bmp",
-                "MAINMENU/BG.bmp"
-              ],
-              "overrides": [
-                "MAINMENU/00_NEW_GAME.bmp",
-                "MAINMENU/01_OPTIONS.bmp",
-                "MAINMENU/02_CONTINUE.bmp",
-                "MAINMENU/03_RESUME.bmp",
-                "MAINMENU/04_THEATER.bmp",
-                "MAINMENU/05_BATTLE_TRIAL.bmp",
-                "MAINMENU/BG.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
           "SAKURA": [
             {
               "name": "vwf_font",
@@ -1981,6 +1906,97 @@
               ],
               "overrides": [
                 "TITLE.bmp"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/LOGO.SH2": [
+            {
+              "name": "SUBTITLES",
+              "codec": {
+                "id": "scripts/subtitles_gfx.lua",
+                "version": 4,
+                "args": "grow_dma=safe"
+              },
+              "outputs": [
+                "SUBTITLES/00.bmp",
+                "SUBTITLES/01.bmp",
+                "SUBTITLES/02.bmp",
+                "SUBTITLES/03.bmp",
+                "SUBTITLES/04.bmp",
+                "SUBTITLES/05.bmp",
+                "SUBTITLES/06.bmp",
+                "SUBTITLES/07.bmp",
+                "SUBTITLES/08.bmp",
+                "SUBTITLES/09.bmp",
+                "SUBTITLES/10.bmp",
+                "SUBTITLES/11.bmp",
+                "SUBTITLES/12.bmp",
+                "SUBTITLES/13.bmp",
+                "SUBTITLES/14.bmp",
+                "SUBTITLES/15.bmp",
+                "SUBTITLES/16.bmp"
+              ],
+              "overrides": [
+                "SUBTITLES/00.bmp",
+                "SUBTITLES/01.bmp",
+                "SUBTITLES/02.bmp",
+                "SUBTITLES/03.bmp",
+                "SUBTITLES/04.bmp",
+                "SUBTITLES/05.bmp",
+                "SUBTITLES/06.bmp",
+                "SUBTITLES/07.bmp",
+                "SUBTITLES/08.bmp",
+                "SUBTITLES/09.bmp",
+                "SUBTITLES/10.bmp",
+                "SUBTITLES/11.bmp",
+                "SUBTITLES/12.bmp",
+                "SUBTITLES/13.bmp",
+                "SUBTITLES/14.bmp",
+                "SUBTITLES/15.bmp",
+                "SUBTITLES/16.bmp"
+              ],
+              "decodes": {}
+            },
+            {
+              "name": "MAINMENU",
+              "codec": {
+                "id": "scripts/main_menu_gfx.lua",
+                "version": 3
+              },
+              "outputs": [
+                "MAINMENU/00_NEW_GAME.bmp",
+                "MAINMENU/01_OPTIONS.bmp",
+                "MAINMENU/02_CONTINUE.bmp",
+                "MAINMENU/03_RESUME.bmp",
+                "MAINMENU/04_THEATER.bmp",
+                "MAINMENU/05_BATTLE_TRIAL.bmp",
+                "MAINMENU/BG.bmp"
+              ],
+              "overrides": [
+                "MAINMENU/00_NEW_GAME.bmp",
+                "MAINMENU/01_OPTIONS.bmp",
+                "MAINMENU/02_CONTINUE.bmp",
+                "MAINMENU/03_RESUME.bmp",
+                "MAINMENU/04_THEATER.bmp",
+                "MAINMENU/05_BATTLE_TRIAL.bmp",
+                "MAINMENU/BG.bmp"
+              ],
+              "decodes": {}
+            },
+            {
+              "name": "INTRO_CREDITS",
+              "codec": {
+                "id": "scripts/intro_credits_gfx.lua",
+                "version": 1
+              },
+              "outputs": [
+                "INTRO_CREDITS/CREDITS.bmp",
+                "INTRO_CREDITS/LOGO.bmp"
+              ],
+              "overrides": [
+                "INTRO_CREDITS/CREDITS.bmp",
+                "INTRO_CREDITS/LOGO.bmp"
               ],
               "decodes": {}
             }
