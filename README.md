@@ -17,10 +17,15 @@ Le projet utilise [ludared](LUDARED-HOWTOUSE.md) comme système de build.
 
 Seuls les fichiers `.bmp` sont importants. Les fichiers `.xcf` (format de travail [GIMP](https://fr.wikipedia.org/wiki/GIMP)) sont conservés pour pouvoir faire diverses éditions à la volée sans tout redessiner, et doivent manuellement être exportés en `.bmp`.
 
+### Introduction & menu principal
+- [Crédits d'introduction](./contenus/INTRO_CREDITS.md)
 - [Sous-titres de la séquence d'introduction](/contenus/SUBTITLES.md)
-- [Écrans de titres des épisodes](/contenus/TITLE.md)
+- [Logo d'introduction](/contenus/INTRO_LOGO.md)
 - [Menu principal du jeu](/contenus/MAIN_MENU.md)
 - [Options du jeu](/contenus/OPTIONS.md)
+
+### Déroulement du jeu
+- [Écrans de titres des épisodes](/contenus/TITLE.md)
 
 # Credits & attributions
 

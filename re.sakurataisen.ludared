@@ -1894,22 +1894,6 @@
               "decodes": {}
             }
           ],
-          "SAKURA1/TITLE1.BIN": [
-            {
-              "name": "TITLE.bmp",
-              "codec": {
-                "id": "scripts/title.lua",
-                "version": 1
-              },
-              "outputs": [
-                "TITLE.bmp"
-              ],
-              "overrides": [
-                "TITLE.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
           "SAKURA1/LOGO.SH2": [
             {
               "name": "SUBTITLES",
@@ -1999,6 +1983,32 @@
                 "INTRO_CREDITS/LOGO.bmp"
               ],
               "decodes": {}
+            },
+            {
+              "name": "INTRO_LOGO",
+              "codec": {
+                "id": "scripts/intro_logo_gfx.lua",
+                "version": 7
+              },
+              "outputs": [
+                "INTRO_LOGO/SWIRL.bmp",
+                "INTRO_LOGO/LAYOUT.csv",
+                "INTRO_LOGO/BACKDROP.bmp",
+                "INTRO_LOGO/EMBLEM.bmp",
+                "INTRO_LOGO/SAKURA.bmp",
+                "INTRO_LOGO/TAI.bmp",
+                "INTRO_LOGO/SEN.bmp",
+                "INTRO_LOGO/MARK.bmp",
+                "INTRO_LOGO/CAPTION.bmp"
+              ],
+              "overrides": [
+                "INTRO_LOGO/LAYOUT.csv",
+                "INTRO_LOGO/SAKURA.bmp",
+                "INTRO_LOGO/SEN.bmp",
+                "INTRO_LOGO/SWIRL.bmp",
+                "INTRO_LOGO/TAI.bmp"
+              ],
+              "decodes": {}
             }
           ],
           "SAKURA1/0100TBL.BIN": [
@@ -2014,6 +2024,22 @@
               ],
               "overrides": [
                 "0100TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/TITLE1.BIN": [
+            {
+              "name": "TITLE.bmp",
+              "codec": {
+                "id": "scripts/title.lua",
+                "version": 1
+              },
+              "outputs": [
+                "TITLE.bmp"
+              ],
+              "overrides": [
+                "TITLE.bmp"
               ],
               "decodes": {}
             }
