@@ -34,7 +34,25 @@ local function can_handle_logo_sh2(data)
   return "no"
 end
 
+local function identify_theater_map(data)
+  if matches(data, constants.CD1_TMAPSP_BYTES, constants.CD1_TMAPSP_SHA256)
+      or matches(data, constants.CD2_TMAPSP_BYTES, constants.CD2_TMAPSP_SHA256) then
+    return "TMAPSP"
+  end
+  if matches(data, constants.CD1_FUKAGAWA_BYTES, constants.CD1_FUKAGAWA_SHA256)
+      or matches(data, constants.CD2_FUKAGAWA_BYTES, constants.CD2_FUKAGAWA_SHA256) then
+    return "FUKAGAWA"
+  end
+  return nil
+end
+
+local function can_handle_theater_map(data)
+  return identify_theater_map(data) and "certain" or "no"
+end
+
 return {
   can_handle_sakura1 = can_handle_sakura1,
   can_handle_logo_sh2 = can_handle_logo_sh2,
+  identify_theater_map = identify_theater_map,
+  can_handle_theater_map = can_handle_theater_map,
 }

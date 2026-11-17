@@ -109,8 +109,8 @@ local JP_DIALOGUE = "7fff0842108418c62108294a318c39ce42104a5252945ad663186b5a739
 local JP_LIPS     = "7fff08420842108418c62108294a318c39ce3dd041d245d449d64dd851da55dd"
 local US_PALETTE  = "7fff14a51ce72529294a318c35ad4210463152945ad65ef767396f7b77bd0c63"
 
--- SAKURA tiles one palette pair per placement; the disc-2 build shifts the pair
--- by 0x138 and both are decided by content, so both bases are listed here.
+-- SAKURA has one palette pair per disc; CD2 shifts it by 0x138. The codec
+-- selects the corresponding pair from the unchanged SAKURA file size.
 local SAKURA_PLACEMENTS = { 0x53954, 0x53A8C }
 
 local function sakura_palette_sites(base, patched)
@@ -198,14 +198,11 @@ local function test_layout(label, codec, data, sites, usData, usData2)
   end
 end
 
-local function test_palette(label, codec, data, sites, usData, disc)
+local function test_palette(label, codec, data, sites, usData, strict_size)
   print("")
   print("palette: " .. label)
 
-  -- The ADV palettes move by 0x138 between discs, so that codec is told which
-  -- disc it is patching; the SLG one takes no arguments.
-  local call_args = disc and ("cd=" .. disc) or nil
-  local patched = codec.encode(data, {}, call_args)
+  local patched = codec.encode(data, {})
 
   for _, site in ipairs(sites) do
     local offset, pristine, want = site[1], site[2], site[3]
@@ -222,18 +219,16 @@ local function test_palette(label, codec, data, sites, usData, disc)
   local windows = {}
   for _, site in ipairs(sites) do windows[#windows + 1] = { site[1], 32 } end
   check("only the palette windows change", diff_outside(patched, data, windows) == 0)
-  check("re-running is a no-op", codec.encode(patched, {}, call_args) == patched)
-  check("decode emits no artifacts", #codec.decode(data, call_args) == 0)
+  check("re-running is a no-op", codec.encode(patched, {}) == patched)
+  check("decode emits no artifacts", #codec.decode(data) == 0)
   check("can_handle: pristine is certain", codec.can_handle(data) == "certain",
         codec.can_handle(data))
   check("can_handle: patched is certain", codec.can_handle(patched) == "certain",
         codec.can_handle(patched))
   check("can_handle: junk is no", codec.can_handle("not a binary") == "no")
-  if disc then
-    local ok, err = pcall(codec.encode, data, {}, nil)
-    check(label .. ": cd is required", not ok and tostring(err):find("cd", 1, true) ~= nil, err)
-    check(label .. ": an unknown cd is refused",
-          not pcall(codec.encode, data, {}, "cd=3"))
+  if strict_size then
+    check(label .. ": unsupported file size is refused",
+      not pcall(codec.encode, data .. "\0", {}))
   else
     check_takes_no_args(label, codec, data)
   end
@@ -253,12 +248,12 @@ if not sakura then
 else
   test_layout("SAKURA", sakuraLayout, sakura, SAKURA_LAYOUT, usSakura, usSakura2)
   test_palette("SAKURA placement A", sakuraPalette, sakura,
-               sakura_palette_sites(0x53954, bytes(US_PALETTE)), usSakura, "1")
+               sakura_palette_sites(0x53954, bytes(US_PALETTE)), usSakura, true)
 
   -- The palette pair sits at two possible placements.  Build a copy whose
   -- placement-A windows are gone and whose placement-B windows hold the
   -- Japanese ramps, and the codec must find B without being told anything.
-  local moved = splice(sakura, 0x53954, string.rep("\0", 0x40))
+  local moved = string.rep("\0", 392024)
   moved = splice(moved, 0x53A8C, bytes(JP_DIALOGUE))
   moved = splice(moved, 0x53AAC, bytes(JP_LIPS))
 
@@ -266,19 +261,19 @@ else
   print("palette: SAKURA placement B (cd=2)")
   check("placement B is recognised", sakuraPalette.can_handle(moved) == "certain",
         sakuraPalette.can_handle(moved))
-  local outB = sakuraPalette.encode(moved, {}, "cd=2")
+  local outB = sakuraPalette.encode(moved, {})
   check("placement B patched",
         outB:sub(0x53A8C + 1, 0x53A8C + 32) == bytes(US_PALETTE))
   check("vacated placement A left alone",
         outB:sub(0x53954 + 1, 0x53954 + 32) == string.rep("\0", 32))
-  local okB, errB = pcall(sakuraPalette.encode, moved, {}, "cd=1")
-  check("cd=1 refuses a disc-2 file and says so",
-        not okB and tostring(errB):find("looks like cd=2", 1, true) ~= nil, errB)
+  local okB, errB = pcall(sakuraPalette.encode, moved .. "\0", {})
+  check("size mismatch is refused", not okB
+    and tostring(errB):find("unsupported SAKURA size", 1, true) ~= nil, errB)
 
   if usSakura2 then
     check("US disc-2 build: palette recognised", sakuraPalette.can_handle(usSakura2) == "certain")
     check("US disc-2 build: palette already applied",
-          sakuraPalette.encode(usSakura2, {}, "cd=2") == usSakura2)
+          sakuraPalette.encode(usSakura2, {}) == usSakura2)
   end
 end
 

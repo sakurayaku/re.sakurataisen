@@ -1,0 +1,212 @@
+0001:Un cliché de Sakura. Elle<br>regarde intensément l'objectif. Je<br>me demande à quoi elle pense…
+0002:Un cliché de Sumire.<br>Voilà un aspect d'elle que je ne<br>connaissais pas.
+0003:Un cliché de Maria.<br>Elle semble pensive, voire un<br>peu triste...
+0004:Un cliché de Kanna.<br>Elle semble énergique et sûre<br>d'elle. J'ai hâte de la rencontrer.
+0005:Un cliché d'Iris.<br>Elle est entourée de fleurs et<br>affiche un sourire radieux.
+0006:Un cliché de Kohran.<br>Les vêtements traditionnels lui<br>siéent bien. Je me demande quel<br>genre de personne est-ce.
+0007:C’est une lettre qu’un client m’a<br>confiée. Il m’a demandé de la<br>remettre à Sumire, mais… Hmm.
+0008:Le pistolet de Maria.<br>Ça pourrait m'aider à<br>m'échapper d'ici…
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Une broche.<br>Elle a été confectionnée dans les<br>règles de l'art.
+0011:Une épingle à cheveux.<br>Elle irait bien avec une tenue<br>traditionnelle japonaise pour<br>tenir un chignon.
+0012:Jean-Paul l'ours en peluche.<br>Le meilleur ami d'Iris. Elle le<br>porte toujours sur elle et prend<br>bien soin de lui.
+0013:Avec cette clé, je devrais pouvoir<br>entrer dans des pièces<br>auparavant inaccessibles.
+0014:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0015:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont<br>un motif très élégant.
+0016:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est très colorée.
+0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Une pièce de ménagère tout à<br>fait ordinaire.
+0018:Une épée et un bouclier fait pour<br>être utilisés sur scène.<br>Ils ressemblent à de vrais armes.
+0019:Cette fausse couronne a été<br>utilisée dans des pièces de<br>théâtre. Les détails complexes<br>ont été réalisés avec une grande<br>habileté.
+0020:Une perruque et un costume<br>utilisés pour la scène. Quel genre<br>de numéro peut avoir besoin<br>de tenues aussi excentriques ?
+0021:Un cliché de Sakura en maillot<br>de bain. Wow, c'est vraiment<br>quelque chose… Je vais le garder<br>précieusement.
+0022:Un cliché de Sumire dans son<br>costume pour la scène.<br>Son maquillage distinctif fait<br>vraiment de l'effet.
+0023:Un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle<br>femme déguisée en homme.
+0024:Un cliché de Kanna dans sa<br>tenue d'entraînement. C'est une<br>photographie vraiment intime.
+0025:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser.<br>Comme c'est mignon.
+0026:Un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. Ça<br>lui va bien comme ça aussi.
+0027:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle restera aussi heureuse<br>comme elle le laisse paraître ici.
+0028:Le pistolet d'Ayame.<br>Pourquoi…? Pourquoi fallait-il que<br>ça se passe comme ça ?
+0029:Rien à faire par ici. Je devrais<br>peut-être aller voir ailleurs…
+0030:Il n'y a personne ici. Je ferais<br>peut-être mieux d'aller voir<br>ailleurs...
+0031:Je ferais mieux d'aller voir<br>ailleurs…
+0032:Ça ne m'avance pas. Je devrais<br>me rendre au bureau du<br>directeur et en parler au<br>Commandant Yoneda.
+0033:Mais… J'ai beau regarder un peu<br>partout autour de moi, ça m'a<br>tout l'air de n'être qu'un banal<br>théâtre.
+0034:…Donc, aller voir les cerisiers en<br>fleur au parc d'Ueno après la<br>bataille? Ils sont plutôt pas mal la<br>nuit quand ils sont en fleur.
+0035:... Mais monsieur, pourquoi<br>gardez-vous tout sur<br>L'Organisation des Ténèbres<br>top-secret ?
+0036:Je vois. C'est donc ce qui en fait<br>un escadron secret.
+0037:Pas de soucis. Merci à toi aussi,<br>Sakura.
+0038:Tu peux toujours compter sur moi<br>!
+0039:B-Bien reçu.
+0040:Hahahaha, merci.
+0041:(Comment peut-on se saouler en<br>buvant de l'amakaze ? C'est un<br>alcool léger !)
+0042:Hein ?!
+0043:Non utilisé: 0103TBL.TXT#0043
+0044:Non utilisé: 0103TBL.TXT#0044
+0045:Non utilisé: 0103TBL.TXT#0045
+0046:Non utilisé: 0103TBL.TXT#0046
+0047:Non utilisé: 0103TBL.TXT#0047
+0048:Non utilisé: 0103TBL.TXT#0048
+0049:Non utilisé: 0103TBL.TXT#0049
+0050:Non utilisé: 0103TBL.TXT#0050
+0051:Non utilisé: 0103TBL.TXT#0051
+0052:Non utilisé: 0103TBL.TXT#0052
+0053:Non utilisé: 0103TBL.TXT#0053
+0054:Non utilisé: 0103TBL.TXT#0054
+0055:Non utilisé: 0103TBL.TXT#0055
+0056:Non utilisé: 0103TBL.TXT#0056
+0057:Non utilisé: 0103TBL.TXT#0057
+0058:Non utilisé: 0103TBL.TXT#0058
+0059:Non utilisé: 0103TBL.TXT#0059
+0060:Non utilisé: 0103TBL.TXT#0060
+0061:Non utilisé: 0103TBL.TXT#0061
+0062:Non utilisé: 0103TBL.TXT#0062
+0063:Non utilisé: 0103TBL.TXT#0063
+0064:Non utilisé: 0103TBL.TXT#0064
+0065:Non utilisé: 0103TBL.TXT#0065
+0066:Non utilisé: 0103TBL.TXT#0066
+0067:Non utilisé: 0103TBL.TXT#0067
+0068:Non utilisé: 0103TBL.TXT#0068
+0069:Non utilisé: 0103TBL.TXT#0069
+0070:Non utilisé: 0103TBL.TXT#0070
+0071:Non utilisé: 0103TBL.TXT#0071
+0072:Non utilisé: 0103TBL.TXT#0072
+0073:Non utilisé: 0103TBL.TXT#0073
+0074:Non utilisé: 0103TBL.TXT#0074
+0075:Non utilisé: 0103TBL.TXT#0075
+0076:Non utilisé: 0103TBL.TXT#0076
+0077:Non utilisé: 0103TBL.TXT#0077
+0078:Non utilisé: 0103TBL.TXT#0078
+0079:Non utilisé: 0103TBL.TXT#0079
+0080:Non utilisé: 0103TBL.TXT#0080
+0081:Non utilisé: 0103TBL.TXT#0081
+0082:Non utilisé: 0103TBL.TXT#0082
+0083:Non utilisé: 0103TBL.TXT#0083
+0084:Non utilisé: 0103TBL.TXT#0084
+0085:Non utilisé: 0103TBL.TXT#0085
+0086:Non utilisé: 0103TBL.TXT#0086
+0087:Non utilisé: 0103TBL.TXT#0087
+0088:Non utilisé: 0103TBL.TXT#0088
+0089:Non utilisé: 0103TBL.TXT#0089
+0090:Non utilisé: 0103TBL.TXT#0090
+0091:Non utilisé: 0103TBL.TXT#0091
+0092:Non utilisé: 0103TBL.TXT#0092
+0093:Non utilisé: 0103TBL.TXT#0093
+0094:Non utilisé: 0103TBL.TXT#0094
+0095:Non utilisé: 0103TBL.TXT#0095
+0096:Non utilisé: 0103TBL.TXT#0096
+0097:Non utilisé: 0103TBL.TXT#0097
+0098:Non utilisé: 0103TBL.TXT#0098
+0099:Non utilisé: 0103TBL.TXT#0099
+0100:Non utilisé: 0103TBL.TXT#0100
+0101:Non utilisé: 0103TBL.TXT#0101
+0102:Non utilisé: 0103TBL.TXT#0102
+0103:Non utilisé: 0103TBL.TXT#0103
+0104:Non utilisé: 0103TBL.TXT#0104
+0105:Non utilisé: 0103TBL.TXT#0105
+0106:Non utilisé: 0103TBL.TXT#0106
+0107:Non utilisé: 0103TBL.TXT#0107
+0108:Non utilisé: 0103TBL.TXT#0108
+0109:Non utilisé: 0103TBL.TXT#0109
+0110:Non utilisé: 0103TBL.TXT#0110
+0111:Non utilisé: 0103TBL.TXT#0111
+0112:Non utilisé: 0103TBL.TXT#0112
+0113:Non utilisé: 0103TBL.TXT#0113
+0114:Non utilisé: 0103TBL.TXT#0114
+0115:Non utilisé: 0103TBL.TXT#0115
+0116:Non utilisé: 0103TBL.TXT#0116
+0117:Non utilisé: 0103TBL.TXT#0117
+0118:Non utilisé: 0103TBL.TXT#0118
+0119:Non utilisé: 0103TBL.TXT#0119
+0120:Non utilisé: 0103TBL.TXT#0120
+0121:Non utilisé: 0103TBL.TXT#0121
+0122:Non utilisé: 0103TBL.TXT#0122
+0123:Non utilisé: 0103TBL.TXT#0123
+0124:Non utilisé: 0103TBL.TXT#0124
+0125:Non utilisé: 0103TBL.TXT#0125
+0126:Non utilisé: 0103TBL.TXT#0126
+0127:Non utilisé: 0103TBL.TXT#0127
+0128:Non utilisé: 0103TBL.TXT#0128
+0129:Non utilisé: 0103TBL.TXT#0129
+0130:Non utilisé: 0103TBL.TXT#0130
+0131:Non utilisé: 0103TBL.TXT#0131
+0132:Non utilisé: 0103TBL.TXT#0132
+0133:Non utilisé: 0103TBL.TXT#0133
+0134:Non utilisé: 0103TBL.TXT#0134
+0135:Non utilisé: 0103TBL.TXT#0135
+0136:Non utilisé: 0103TBL.TXT#0136
+0137:Non utilisé: 0103TBL.TXT#0137
+0138:Non utilisé: 0103TBL.TXT#0138
+0139:Non utilisé: 0103TBL.TXT#0139
+0140:Non utilisé: 0103TBL.TXT#0140
+0141:Non utilisé: 0103TBL.TXT#0141
+0142:Non utilisé: 0103TBL.TXT#0142
+0143:Non utilisé: 0103TBL.TXT#0143
+0144:Non utilisé: 0103TBL.TXT#0144
+0145:Non utilisé: 0103TBL.TXT#0145
+0146:Non utilisé: 0103TBL.TXT#0146
+0147:Non utilisé: 0103TBL.TXT#0147
+0148:Non utilisé: 0103TBL.TXT#0148
+0149:Non utilisé: 0103TBL.TXT#0149
+0150:Non utilisé: 0103TBL.TXT#0150
+0151:Non utilisé: 0103TBL.TXT#0151
+0152:Non utilisé: 0103TBL.TXT#0152
+0153:Non utilisé: 0103TBL.TXT#0153
+0154:Non utilisé: 0103TBL.TXT#0154
+0155:Non utilisé: 0103TBL.TXT#0155
+0156:Non utilisé: 0103TBL.TXT#0156
+0157:Non utilisé: 0103TBL.TXT#0157
+0158:Non utilisé: 0103TBL.TXT#0158
+0159:Non utilisé: 0103TBL.TXT#0159
+0160:Non utilisé: 0103TBL.TXT#0160
+0161:Non utilisé: 0103TBL.TXT#0161
+0162:Allez, Ôgami. Que pensez-vous<br>qu'il se passerait si nous ne le<br>faisons pas ? Des émeutes !
+0163:Nous jouerions ainsi leur jeu. Quoi<br>qu'il en coûte nous devons les<br>combattre dans le secret le plus<br>absolu !
+0164:Merci beaucoup pour aujourd'hui.
+0165:C'est une bonne chose que vous<br>soyez là Ôgami.
+0166:Meuh, pourquoi chi chérieux ?<br>Relâche-toi un peu tu veux ?
+0167:Hmmm... Pluche près,<br>vous-chêtes vraiment beau ! Hips<br>! Vous-chêtes vraiiiment mon<br>genre, vous chavez ?
+0168:Le combat contre ces ennemis ne<br>fait que commencer. Ne vous<br>emballez pas trop...
+0169:Non utilisé: 0103TBL.TXT#0169
+0170:Non utilisé: 0103TBL.TXT#0170
+0171:Non utilisé: 0103TBL.TXT#0171
+0172:Vous savez... Je vous aime<br>énormément, Monsieur Ôgami.
+0173:Je vous laisserez être mon<br>petit-ami, alors ne me trompez<br>pas !
+0174:Avalez, cul sec Ôgami ! Vous êtes<br>de nouveau au service de<br>billetterie demain !
+0175:Ahahahah...
+0176:Non utilisé: 0103TBL.TXT#0176
+0177:Non utilisé: 0103TBL.TXT#0177
+0178:Ahahahah...
+0179:Non utilisé: 0103TBL.TXT#0179
+0180:Non utilisé: 0103TBL.TXT#0180
+0181:Non utilisé: 0103TBL.TXT#0181
+0182:Non utilisé: 0103TBL.TXT#0182
+0183:Non utilisé: 0103TBL.TXT#0183
+0184:Non utilisé: 0103TBL.TXT#0184
+0185:Non utilisé: 0103TBL.TXT#0185
+0186:Non utilisé: 0103TBL.TXT#0186
+0187:Non utilisé: 0103TBL.TXT#0187
+0188:Vous êtes arrivé aujourd'hui,<br>n'est-ce pas ? Ravie de vous ren-<br>contrer. J'ai beaucoup entendu <br>arler de vous.
+0189:Non utilisé: 0103TBL.TXT#0189
+0190:Non utilisé: 0103TBL.TXT#0190
+0191:Non utilisé: 0103TBL.TXT#0191
+0192:Non utilisé: 0103TBL.TXT#0192
+0193:Non utilisé: 0103TBL.TXT#0193
+0194:Non utilisé: 0103TBL.TXT#0194
+0195:Non utilisé: 0103TBL.TXT#0195
+0196:Non utilisé: 0103TBL.TXT#0196
+0197:Non utilisé: 0103TBL.TXT#0197
+0198:Non utilisé: 0103TBL.TXT#0198
+0199:Non utilisé: 0103TBL.TXT#0199
+0200:Non utilisé: 0103TBL.TXT#0200
+0201:Non utilisé: 0103TBL.TXT#0201
+0202:Non utilisé: 0103TBL.TXT#0202
+0203:Non utilisé: 0103TBL.TXT#0203
+0204:Non utilisé: 0103TBL.TXT#0204
+0205:Non utilisé: 0103TBL.TXT#0205
+0206:Non utilisé: 0103TBL.TXT#0206
+0207:Non utilisé: 0103TBL.TXT#0207
+0208:Non utilisé: 0103TBL.TXT#0208
+0209:Ravie de pouvoir re-travailler avec<br>vous, Ôgami !
+0210:Uh, uhuhuh... Allez Capitaiiiiine,<br>continuons à boire !
+0211:Non utilisé: 0103TBL.TXT#0211
+0212:Non utilisé: 0103TBL.TXT#0212

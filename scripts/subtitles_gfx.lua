@@ -192,7 +192,8 @@ local SUBTITLE_DIMS = {
   {w = 112, h = 16},
   {w = 144, h = 16},
   {w = 112, h = 16},
-  {w = 128, h = 16},      {w = 112, h = 16},
+  {w = 128, h = 16},
+  {w = 112, h = 16},
 }
 
 -- The table stores width/8 and height in single bytes, and the block offset in

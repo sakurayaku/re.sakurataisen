@@ -1,0 +1,1147 @@
+0001:Un cliché de Sakura.<br>Elle regarde intensément<br>l'objectif. Je me demande à quoi<br>elle pense…
+0002:Un cliché de Sumire.<br>Voilà un aspect d'elle que je ne<br>connaissais pas.
+0003:Un cliché de Maria.<br>Elle semble pensive, voire un<br>peu triste...
+0004:Un cliché de Kanna.<br>Elle semble énergique et sûre<br>d'elle. J'ai hâte de la rencontrer.
+0005:Un cliché d'Iris.<br>Elle est entourée de fleurs et<br>affiche un sourire radieux.
+0006:Un cliché de Kohran.<br>Les vêtements traditionnels lui<br>siéent bien. Je me demande quel<br>genre de personne est-ce.
+0007:C’est une lettre qu’un client m’a<br>confiée. Il m’a demandé de la<br>remettre à Sumire, mais… Hmm.
+0008:Le pistolet de Maria.<br>Ça pourrait m'aider à<br>m'échapper d'ici…
+0009:Une élégante parure de cheveux.<br>Elle est décoré avec des fleurs.
+0010:Une broche.<br>Elle a été confectionnée dans les<br>règles de l'art.
+0011:Une épingle à cheveux.<br>Elle irait bien avec une tenue<br>traditionnelle japonaise pour<br>tenir un chignon.
+0012:Jean-Paul l'ours en peluche.<br>Le meilleur ami d'Iris. Elle le<br>porte toujours sur elle et prend<br>bien soin de lui.
+0013:Cette clef me permettra d'entrer<br>dans des pièces où je ne pouvais<br>pas aller avant.
+0014:J'ai trouvé ça dans une chambre<br>au deuxième étage. Je peux<br>l'utiliser pour accéder à la pièce<br>du fond.
+0015:Un ensemble de tasses qu'Iris m'a<br>demandé de lui offrir. Elles ont<br>un motif très élégant.
+0016:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est très colorée.
+0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Une pièce de ménagère tout à<br>fait ordinaire.
+0018:Une épée et un bouclier fait pour<br>être utilisés sur scène.<br>Ils ressemblent à de vrais armes.
+0019:Une couronne utilisée pour la<br>scène. Elle est incroyablement<br>détaillée.
+0020:Une perruque et un costume<br>utilisés pour la scène. Quel genre<br>de numéro peut avoir besoin<br>de tenues aussi excentriques ?
+0021:Un cliché de Sakura en maillot<br>de bain. Wow, c'est vraiment<br>quelque chose… Je vais le garder<br>précieusement.
+0022:Un cliché de Sumire dans son<br>costume pour la scène.<br>Son maquillage distinctif fait<br>vraiment de l'effet.
+0023:Un cliché de Maria dans<br>l'uniforme militaire de la pièce<br>"Pour l'Amour". Une belle<br>femme déguisée en homme.
+0024:Un cliché de Kanna dans sa<br>tenue d'entraînement. C'est une<br>photographie vraiment intime.
+0025:Un cliché d'Iris en maillot de<br>bain. Elle porte une bouée et<br>semble prête à s'amuser.<br>Comme c'est mignon.
+0026:Un cliché de Kohran. Je n'ai<br>pas souvent l'occasion de la voir<br>avec ses tresses détachées. Ça<br>lui va bien comme ça aussi.
+0027:Un cliché d'Ayame dans une<br>tenue traditionnelle. J'espère<br>qu'elle restera aussi heureuse<br>comme elle le laisse paraître ici.
+0028:Le pistolet d'Ayame.<br>Pourquoi…? Pourquoi fallait-il que<br>ça se passe comme ça ?
+0029:Rien à faire par ici. Je devrais<br>peut-être aller voir ailleurs…
+0030:Il n'y a personne ici. Je ferais<br>mieux d'aller voir ailleurs...
+0031:Je ferais mieux d'aller voir<br>ailleurs…
+0032:Ça ne m'avance pas. Je devrais<br>me rendre au bureau du<br>directeur et en parler au<br>Commandant Yoneda.
+0033:Mais… J'ai beau regarder un peu<br>partout autour de moi, ça m'a<br>tout l'air de n'être qu'un banal<br>théâtre.
+0034:Le Commandant Yoneda devrait<br>savoir ce qu'il se passe. Je vais<br>lui demander de m'expliquer la<br>situation.
+0035:Il est au téléphone…
+0036:On dirait bien qu'il a terminé son appel.
+0037:Lieutenant Ôgami, au rapport !
+0038:Ah bonjour Ôgami. L'uniforme te<br>va bien.
+0039:Comment ça se passe ?<br>Tu prends tes aises avec la<br>poinçonneuse ?
+0040:Expliquez-moi ce qu'il se passe !<br>Vous étiez au téléphone ?
+0041:Pourriez-vous m'expliquer<br>clairement ma mission ? Personne<br>ne m'a parlé de s'occuper des<br>billets dans un théâtre !
+0042:Aussi, tous les membres de mon<br>équipe sont des femmes ! Et Iris,<br>l'une d'entre elles, n'est encore<br>qu'une enfant !
+0043:Tout ça n'a rien à voir avec le<br>poste de capitaine d'équipe<br>d'intervention secrète que j'avais<br>imaginé en arrivant ici !
+0044:Commandant, à qui parliez-vous à<br>l'instant ?
+0045:Je discutais avec le compte<br>Hanakôji. En l'occurence, la<br>personne qui t'as recommandé<br>pour ce poste.
+0046:Il veut s'assurer que tu ne te<br>soustrait pas à tes nouvelles<br>obligations.
+0047:Je vois. En fait, j'avais une<br>question à vous poser à ce sujet,<br>Commandant.
+0048:Oh ne tire pas cette tête, Ogami. Détends-toi un peu. Et si on<br>prenait un verre ou deux, hein ?
+0049:(Cet homme est réellement le<br>Commandant Yoneda dont on m'a<br>tant parlé ? Il se met à boire en<br>plein milieu de l'après-midi…)
+0050:Alors, ce boulot ? 'm’étais dit<br>que poinçonner des billets, ce<br>s'rait tout à fait ton truc.
+0051:Pas du tout ! Ce boulot n’a rien à<br>voir avec la mission dont on<br>m’avait parlé.
+0052:Je suis bien affecté à la Troupe<br>d'assaut impériale, n'est-ce pas ? Alors quelles sont mes fonctions<br>en tant que capitaine ?
+0053:Non… avant ça, s'agit-il vraiment<br>de la Troupe impériale ? On dirait un théâtre tout à fait ordinaire !
+0054:Ôgami, je crois que tu as<br>mal compris quelque chose…
+0055:Regarde bien la plaque au-dessus de mon bureau.
+0056:"Troupe de shows impériale" ?!
+0057:Une troupe d'acteurs ?<br>Pas possible, ça doit être une<br>erreur !
+0058:Non mon garçon, c'est on ne<br>peut plus sérieux.
+0059:Mais alors… j'aurais mal lu mes<br>documents d'affectation ? Je ne<br>comprend plus rien.
+0060:La Troupe impériale est tout<br>simplement l'unité secrète du<br>Théâtre impérial.
+0061:Tu n'imaginais probablement pas<br>que le gouvernement utiliserait<br>des représentations théâtrales<br>comme couverture, n'est-ce pas ?
+0062:Je n'arrive pas à y croire !
+0063:Ah ah ah !<br>Prend ton temps, ça fait<br>beaucoup de choses à assimiler<br>d'un coup.
+0064:Mais comment… comment est-ce<br>possible…?
+0065:Je n'arrive pas à croire qu'une<br>troupe de théâtre féminine soit<br>en réalité une unité secrète de<br>défense de la capitale.
+0066:C'est du délire ! Je dois être en<br>train de rêver.
+0067:Ôgami, vous allez bien ?<br>Que faites-vous dehors ?
+0068:Ah, Sakura…
+0069:Vous avez l'air pâle…<br>Pourquoi ne pas faire une pause ?
+0070:Vous savez comment vous rendre<br>à votre chambre ? Si besoin, je<br>peux vous accompagner.
+0071:S'il te plaît.<br>Peux-tu me laisser seul ?
+0072:Ce serait super. C'est si confus<br>dans ma tête que je ne sais plus<br>quoi penser.
+0073:Vous êtes sûr que ça va ?
+0074:Vous devriez vous reposer un<br>peu. Allons-y.
+0075:C'est gentil à toi, mais je préfère<br>rester seul pour le moment…
+0076:Très bien, comme vous voulez.
+0077:Je dois me préparer pour une<br>répétition avec la troupe, si vous<br>voulez bien m'excuser…
+0078:Troupe de théâtre, troupe<br>d'assaut… Ce théâtre cache bien<br>son jeu.
+0079:Sakura et les autres semblent<br>parfaitement s'accommoder ici.
+0080:Elles ont toutes un rôle à jouer,<br>un rôle qu'elles seules peuvent<br>interprêter, mais qu'en est-il de<br>moi ?
+0081:Does my position here help protect our nation's peace at all? 
+0082:…
+0083:Ôgami…
+0084:…
+0085:All right, let's go! I'll take you as far as your door. Right this way! 
+0086:Woah ! Ralentis un peu !
+0087:Pas le temps de tergiverser !
+0088:Merci pour ton aide. Désolé de<br>t'avoir inquiété.
+0089:Oh ce n'est rien ! Après tout je...
+0090:... ?
+0091:Non, rien... oubliez. Bon, euh, je<br>dois aller répéter la pièce...
+0092:Veux-tu entrer ?<br>OK, à plus tard.
+0093:If you have some time, would you like to come in? There's something I'd like to discuss with you. 
+0094:…I'm very sorry. The performance is due to start any minute now. 
+0095:I really would like to spend some more time with you, but duty calls. 
+0096:Oh, I see. That's fine, I understand. 
+0097:Break a leg out there. And thanks again for coming this far with me. 
+0098:You're welcome! I'd better get going. 
+0099:…Yeah, I guess I should rest up a little. 
+0100:Ogami… 
+0101:Huh? Oh, Sakura. Did you need something? 
+0102:I… Well… 
+0103:Cheer up, Ogami! That gloomy expression you're wearing doesn't suit you at all. 
+0104:When I think back to the way you were when we first met, back at Ueno Park, that's the way I… 
+0105:Sorry, I've said too much. I should get going. 
+0106:No, I'm the one who should apologize. 
+0107:It's just… You have your roles to play here, parts only you can perform. 
+0108:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0109:I was so happy when I got the news I was being transferred here. 
+0110:Being promoted to captain of my own squad, straight out of the academy… It was like a dream come true. 
+0111:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0112:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0113:Does my position here help protect our nation's peace at all? 
+0114:Ogami… You look so sad… 
+0115:You were so quiet when I called out to you before, too… 
+0116:Oh, I know! Since I'm here already, how about I come in and spend some more time with you? 
+0117:Thanks, Sakura. The place is a bit messy, but come on in. 
+0118:Make yourself at home. 
+0119:Oh, thank you. 
+0120:To tell you the truth, I've never been inside a man's room before. It makes me a little nervous… 
+0121:Well now… 
+0122:Oh, right. Thanks for seeing me back to my room. 
+0123:I'd better get going. I hope you'll feel better soon! 
+0124:…I'm sorry, Sakura. 
+0125:It's just… You have your roles to play here, parts only you can perform. 
+0126:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0127:I was so happy when I got the news I was being transferred here. 
+0128:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0129:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0130:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0131:Does my position here help protect our nation's peace at all? 
+0132:… 
+0133:Ogami, please don't look so gloomy! 
+0134:What happened to that cheerful young man I met in Ueno Park earlier today? 
+0135:Sakura… 
+0136:…Excuse me. 
+0137:…I'm sorry, Sakura. 
+0138:It's just… You have your roles to play here, parts only you can perform. 
+0139:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0140:I was so happy when I got the news I was being transferred here. 
+0141:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0142:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0143:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0144:Does my position here help protect our nation's peace at all? 
+0145:Ask about the theater <br> Ask Sakura about herself <br> Ask about the Troupe 
+0146:Sakura, what do you do here at the theater? 
+0147:The Troupe puts on a new show at the Imperial Theater every month. 
+0148:This month's performance is "The Eve of Lady Camellia," with Sumire in the lead role. 
+0149:We also put on court plays, musicals, sketch comedies, and various other sorts of performances. 
+0150:Wow… Seems like a lot of fun. 
+0151:Onstage, we can dazzle the audience by leading them into a different world. 
+0152:It makes our work feel tremendously rewarding. 
+0153:… 
+0154:I'm sorry… Just listen to me prattling on. 
+0155:No, it's all right. 
+0156:It lifts my spirits to hear you speak with such passion. 
+0157:Ogami… 
+0158:Huh? …Seems like someone's here. 
+0159:Tell me about yourself, Sakura. What's it like living here? 
+0160:About me, you say? To tell the truth, I'm still fairly new here, too. 
+0161:On performance days, I'm up on stage. Our play for this month is "The Eve of Lady Camellia," with Sumire in the lead role. 
+0162:On our days off… Well, I do a lot of rehearsing. 
+0163:Aside from that, there's cleaning, laundry… and my sword training. 
+0164:Sword training? 
+0165:Yes. Before I came to the capital, I would practice at a dojo in Sendai. 
+0166:Actually, there was something of an uproar the day I first arrived here… 
+0167:Wow, so you can use a sword. Not bad for a woman your age. 
+0168:Oh, no… It's not all that impressive. 
+0169:Huh? …Seems like someone's here. 
+0170:…Actually, there's something I'd like to ask you. 
+0171:Oh, of course. What is it? 
+0172:I was assigned the role of captain of a secret squad called the Imperial Assault Troop. 
+0173:…
+0174:But this place is just a theater where the "Imperial Assault Troupe" holds performances… 
+0175:Sakura, tell me the truth. Does the "Imperial Assault Troop"… really exist? 
+0176:Well… 
+0177:Now, who could THAT be? 
+0178:Um, well… S-Sorry. I'm pretty nervous, myself. 
+0179:N-No, I'm the one who should apologize. What a thing for me to say… 
+0180:But I'm relieved… You seem to be such a sincere man. 
+0181:Huh?… 
+0182:N-No, it's nothing. 
+0183:Now, who could THAT be? 
+0184:Come in, it's open. <br> Ogami's not here right now! 
+0185:Come in, it's open. 
+0186:Maria… what is it? 
+0187:Well, the play will be starting shortly… 
+0188:…and Sakura is nowhere to be found. Have you by chance seen her, Ensign? 
+0189:Oh! I completely forgot! 
+0190:S-Sakura… 
+0191:S-Sakura! Why are you in the Ensign's room? 
+0192:Um, well, you see… 
+0193:…No matter! Hurry on backstage! Unless you were intending to play hooky?! 
+0194:Y-Yes ma'am! 
+0195:Well, please excuse me, Ogami. 
+0196:…Uh, yes? 
+0197:…Ensign. 
+0198:Y-Yes? 
+0199:There's nothing wrong with idle talk, but it would be a problem if you disturb the order of the Flower Division. 
+0200:Ah… Understood. I'll take care not to disturb you all. 
+0201:Then if you'll excuse me, the stage is calling. 
+0202:Undoubtedly, you all have your roles to play here… parts only you can perform. 
+0203:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0204:I was so happy when I got the news I was being transferred here. 
+0205:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0206:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0207:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0208:Does my position here help protect our nation's peace at all? 
+0209:Come in, it's open. 
+0210:Sumire… what is it? 
+0211:Ensign, terribly sorry to bother you while you're off-duty. 
+0212:Truthfully, the play I'm to star in, "The Eve of Lady Camellia," is due to begin quite soon, but… 
+0213:…we've been waiting for Sakura to show up backstage. Would you happen to have seen her? 
+0214:Oh! I completely forgot! 
+0215:S-Sakura… 
+0216:S-Sakura? Why in heaven's name are you in the Ensign's room?! 
+0217:Um, well, you see… 
+0218:A-At any rate! Head backstage posthaste! Everyone is awaiting your arrival! 
+0219:U-Understood! 
+0220:Well, please excuse me, Ogami. 
+0221:…Uh, yes? 
+0222:Ensign… 
+0223:…My my, so that's the sort of man you are. 
+0224:Sumire, it's not like that! 
+0225:Now if you'll pardon me, I've a performance to star in. 
+0226:Sumire! Ah… She's gone. 
+0227:Undoubtedly, you all have your roles to play here… parts only you can perform. 
+0228:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0229:I was so happy when I got the news I was being transferred here. 
+0230:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0231:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0232:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0233:Does my position here help protect our nation's peace at all? 
+0234:Come in, it's open. 
+0235:Oh, Iris… What is it? 
+0236:Um, so, the play's gonna start soon. 
+0237:Sakura didn't show up backstage, so we're all looking for her. Have you seen her, Mon Frère? 
+0238:Oh! I completely forgot! 
+0239:S-Sakura… 
+0240:Oh, you're here! Found you, Sakura! 
+0241:I'm so sorry! I'll come right away. 
+0242:Well, please excuse me, Ogami. 
+0243:…Uh, yes? 
+0244:Yaay! I found Sakura! 
+0245:Huh? But… Why was she in your room, Mon Frère? 
+0246:Ehh?! W-Well… 
+0247:…Mon Frère, what were you and Sakura doing together in here? 
+0248:I-It wasn't anything… We were just talking! 
+0249:Huuh? No fair! I wanna talk to you, too! 
+0250:OK, OK. Sorry, Iris. But don't you need to get back to the stage? 
+0251:…Oh, yeah! Then let's talk another time! Pinky promise, OK? 
+0252:The play's starting, so I better go. Bye-bye, Mon Frère! 
+0253:Phew… That was close. 
+0254:So Iris performs as well… I guess that would make her a child actress. 
+0255:Honestly, I'm envious. You all have your roles to play here… parts only you can perform. 
+0256:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0257:I was so happy when I got the news I was being transferred here. 
+0258:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0259:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0260:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0261:Does my position here help protect our nation's peace at all? 
+0262:Sorry, but Ogami's not in at the moment! 
+0263:… 
+0264:That voice… That IS Ensign Ogami, isn't it? 
+0265:O-Ogami! What are you saying?! 
+0266:Pardon me, Ensign. I'm coming in. 
+0267:S-Sakura! Why are you in the Ensign's room? 
+0268:Um, well, you see… 
+0269:…No matter! Hurry on backstage! Unless you were intending to play hooky?! 
+0270:Y-Yes ma'am! I'm so sorry! 
+0271:Well, please excuse me, Ogami. 
+0272:…Uh, yes? 
+0273:…Ensign. 
+0274:…Uh, yes? 
+0275:There's nothing wrong with idle talk, but it would be a problem if you disturb the order of the Flower Division. 
+0276:Ah… Understood. I'll take care not to disturb you all. 
+0277:Pardon my intrusion, Ensign Ogami. If you'll excuse me, the stage is calling. 
+0278:Undoubtedly, you all have your roles to play here… parts only you can perform. 
+0279:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0280:I was so happy when I got the news I was being transferred here. 
+0281:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0282:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0283:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0284:Does my position here help protect our nation's peace at all? 
+0285:Sorry, but Ogami's not in at the moment! 
+0286:Ohohoh! What an amusing jest. 
+0287:If the Ensign is out, then to whom am I speaking now? 
+0288:Uh… 
+0289:Quite a sense of humor you have, Ensign. I approve. 
+0290:I've come in search of Sakura, since she's yet to show up backstage… 
+0291:…but if you are not here, then I suppose I cannot ask for your help. I'll take my leave. 
+0292:…
+0293:She's gone. 
+0294:Phew… Saved by Sumire's sense of humor. 
+0295:Honestly! What a ridiculous way to hide from people! 
+0296:But… 
+0297:That WAS pretty funny, Ogami! I nearly burst out laughing. 
+0298:R-Really? 
+0299:Ohhh heavens, quite a sense of humor you have, Ensign. I approve! 
+0300:Haha! How did you like my impression of Sumire? 
+0301:Ahahaha! <br> …What was THAT? 
+0302:Ahahaha! That was spot-on, Sakura! 
+0303:Really? Thanks! I was afraid it wouldn't hit the mark. 
+0304:Ogami! 
+0305:I hope you'll keep on smiling like this. 
+0306:That gloomy expression you had earlier doesn't suit you at all. 
+0307:Sakura… 
+0308:Well, I should get going. They need me onstage. 
+0309:I'll get out of your way, Ogami. Excuse me. 
+0310:…I'm sorry, Sakura. 
+0311:It's just… You have your roles to play here, parts only you can perform. 
+0312:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0313:I was so happy when I got the news I was being transferred here. 
+0314:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0315:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0316:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0317:Does my position here help protect our nation's peace at all? 
+0318:…What was THAT? Was that really supposed to be Sumire? 
+0319:Uhh… No good, huh? Ohh, that was just pathetic… 
+0320:S-Sakura, there's no need to cry! 
+0321:Eheheh, just kidding. I'm no good at impressions, but my acting's not bad, right? 
+0322:Sheesh… You had me going for a second, there. 
+0323:Feeling a little better, Ogami? 
+0324:Huh? Sakura, were you trying to cheer me up? 
+0325:How did I do? Well, I should get going. They need me onstage. 
+0326:I'll get out of your way, Ogami. Excuse me. 
+0327:…I'm sorry, Sakura. 
+0328:It's just… You have your roles to play here, parts only you can perform. 
+0329:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0330:I was so happy when I got the news I was being transferred here. 
+0331:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0332:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0333:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0334:Does my position here help protect our nation's peace at all? 
+0335:… 
+0336:Ah… Ogami, you look dazed… Don't tell me it's because of my impression? 
+0337:S-Sakura, there's no need to cry! 
+0338:Eheheh, just kidding. I'm no good at impressions, but my acting's not bad, right? 
+0339:Sheesh… You had me going for a second, there. 
+0340:Feeling a little better, Ogami? 
+0341:Huh?! 
+0342:Sakura, were you trying to cheer me up? 
+0343:How did I do? Well, I should get going. They need me onstage. 
+0344:I'll get out of your way, Ogami. Excuse me. 
+0345:Ogami… Chin up, all right? 
+0346:Sakura… You were trying to cheer me up, weren't you? 
+0347:All this is fine for you. You have a role to play here. 
+0348:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0349:I was so happy when I got the news I was being transferred here. 
+0350:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0351:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0352:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0353:Does my position here help protect our nation's peace at all? 
+0354:Sorry, but Ogami's not in at the moment! 
+0355:…
+0356:Huh… Mon Frère's not here? Guess I gotta look somewhere else. 
+0357:Aww, the play's starting soon… Sakura, where did you go? 
+0358:Phew… That was close. 
+0359:Honestly! What a ridiculous way to hide from people! 
+0360:But… 
+0361:That WAS pretty funny, Ogami! I nearly burst out laughing. 
+0362:R-Really? Hahaha, I'm flattered… 
+0363:Feeling a little better, Ogami? 
+0364:Huh? Sakura, were you trying to cheer me up? 
+0365:How did I do? Well, I should get going. They need me onstage. 
+0366:I'll get out of your way now. 
+0367:Ogami… Chin up, all right? 
+0368:…I'm sorry, Sakura. 
+0369:It's just… You have your roles to play here, parts only you can perform. 
+0370:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
+0371:I was so happy when I got the news I was being transferred here. 
+0372:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0373:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0374:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0375:Does my position here help protect our nation's peace at all? 
+0376:…He doesn't appear to be here. 
+0377:At any rate… Where could Sakura be? 
+0378:…He's of no use, then. I shall search elsewhere. 
+0379:But really… Where on Earth could Sakura have wandered off to? 
+0380:…He's not here. Ohhh, the play's gonna start soon! 
+0381:…
+0382:Seems like they left. 
+0383:Oh my goodness…I thought my heart was going to jump out of my chest! 
+0384:Seems like they were looking for you, Sakura. 
+0385:I'll bet they came looking for me since the play's starting soon. 
+0386:Well, I'll get out of your way now, Ogami. 
+0387:Sakura… You were trying to cheer me up, weren't you? 
+0388:All this is fine for you. You have a role to play here. 
+0389:And this is a part only you can perform. But… What about me? 
+0390:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
+0391:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
+0392:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
+0393:Does my position here help protect our nation's peace at all? 
+0394:It looks like this is Sumire's room. 
+0395:Ensign! The door is locked, which means you cannot simply enter as you please! 
+0396:(Sheesh… Doesn't seem like she wants to talk.) 
+0397:Enough of your foolishness. Say something if you want my attention! 
+0398:Sumire! I need to speak with you! 
+0399:I'm terribly sorry, but I'm changing at the moment. 
+0400:…Not here, I guess. 
+0401:…Not here, I guess. 
+0402:Yes? Who's there? 
+0403:Um… It's Ogami. Do you have a minute? 
+0404:I'm right in the middle of changing. Could you wait just one moment, please? 
+0405:Gulp… She's changing? 
+0406:Open the door. 
+0407:…I can't wait any longer. I'm coming inside! 
+0408:E-Ensign! What DO you think you're doing?! 
+0409:S-Sorry… I just got tired of waiting, so - 
+0410:I asked for just one moment, did I not?! 
+0411:How outrageous of you to simply barge into a lady's room! 
+0412:I'm sorry. I got impatient… 
+0413:Had you come in before I'd begun changing, that would be one thing. But… 
+0414:Enough of your excuses! Leave, right this instant! 
+0415:No way around it… I screwed that up. 
+0416:Forget it. I'll go somewhere else. 
+0417:Thank you for waiting, Ensign. 
+0418:Such impeccable patience is nothing less than I'd expect from a military officer. 
+0419:It was nothing, hahaha… 
+0420:By the way… Did you have some need of me? 
+0421:Could you show me your room? <br> Ask about the Troop. <br> Give her the letter. 
+0422:Could you show me your room? <br> Ask about the Troop. 
+0423:Could you show me your room? I'd love to see what it's like in there. 
+0424:Most certainly not. 
+0425:Why, the very thought of allowing a man into my room so casually… 
+0426:Y-Yeah, but - 
+0427:In any case, I refuse. Now, if you will excuse me, I've my own matters to attend to. 
+0428:Ah… She closed the door right in my face. 
+0429:Sumire, please. Can't you tell me more about the Imperial Assault Troop? 
+0430:…This again? You certainly are a persistent fellow, Ensign! 
+0431:I'm begging you! I can't have been sent here just to take tickets all day, right? 
+0432:Aren't I meant to be captain of the Imperial Assault Troop? 
+0433:Gracious me, what a pest you are! I am forbidden to speak of… 
+0434:…!! 
+0435:"Forbidden"? Did you say "forbidden"?! 
+0436:Sumire, what do you mean? What are you forbidden to speak of, and by whom?! 
+0437:…P-Pardon me. There are some pressing matters I must attend to. 
+0438:I hate to leave after you took the time to come and see me, but I must bid you adieu for now. 
+0439:Ah, Sumire, wait! 
+0440:(Hmm… What was all that about?) 
+0441:Sumire, could you tell me about the Imperial Assault Troop? 
+0442:Imperial Assault Troop… 
+0443:By the look of it, this is just an ordinary theater. 
+0444:I have a hard time believing this is the HQ of a secret assault force. Sumire, please tell me what's going on? 
+0445:Well… 
+0446:…Pardon me. There are some pressing matters I must attend to. 
+0447:I hate to leave after you took the time to come and see me, but I must bid you adieu for now. 
+0448:Ah, Sumire, wait! 
+0449:(She seemed awfully flustered… What's going on here?) 
+0450:While taking tickets earlier, I was entrusted this letter by someone calling himself a devoted fan. 
+0451:I figured I should pass it along to you. Here you are. 
+0452:Goodness! You went to such trouble for my sake? 
+0453:You have my deepest thanks, Ensign. 
+0454:Still, why would a member of a secret troop like this receive fan mail? 
+0455:Why, beauty such as mine can hardly be hidden away from the rest of the world. 
+0456:Wherever I go, I have fans. It's not especially surprising. 
+0457:I-I see… 
+0458:I've still some matters of my own to attend to, so I will take my leave. Thank you ever so, Ensign. 
+0459:…I guess that patron ought to be satisfied now. 
+0460:… 
+0461:…Ensign, you grew so silent all of the sudden. Whatever is the matter? 
+0462:Uh… Sorry. I was trying to think of what to say. 
+0463:I'm a busy woman, you know. I simply haven't the time to stroll along at your pace. 
+0464:Now if you will excuse me, I shall take my leave! 
+0465:Ah… She shut the door in my face. 
+0466:This appears to be a salon where the troop members come to relax. 
+0467:Sumire was drinking tea out here earlier… 
+0468:…Seems there's no one here. Better head somewhere else. 
+0469:(Oh! Sumire is here.) 
+0470:Why, Ensign Ogata. What brings you here? 
+0471:…It's Ogami. 
+0472:Oh, pardon me. I know - I'll call you "Ensign" from now on, to simplify things. 
+0473:(This is one daring outfit, all right…) 
+0474:(It's a wonder it hasn't slipped right off her shoulders.) 
+0475:…Is something the matter, Ensign? Your eyes have been fixed upon my body for some time. 
+0476:(This is one daring outfit, all right…) 
+0477:(C-Crap! My eyes are being drawn towards her chest!) 
+0478:(Then again, it's pretty hard NOT to look!) 
+0479:…Ensign, just where do your eyes keep wandering off to? 
+0480:(I'd better quit staring if I don't want to get chewed out again…) 
+0481:(Such silky, perfectly straight hair…) 
+0482:(What would you call this hair color?) 
+0483:(…Looking more closely, there appears to be a beauty mark beneath her eye.) 
+0484:(I think it's called a "tear mark." It's pretty alluring…) 
+0485:Ensign, you've been gazing at my face for some time now. 
+0486:Oh, I, uh… S-Sorry. 
+0487:Not to worry. 
+0488:A man would have to be mad to not be captivated by my beauty. 
+0489:(I'd better stop staring like an idiot.) 
+0490:(…Looking more closely, there appears to be a beauty mark beneath her eye.) 
+0491:What is it, Ensign? Did you wish to speak with me? 
+0492:Drinking tea before a performance is the perfect way to dissolve tension. 
+0493:By the way, Ensign… What was it you needed? 
+0494:(Her hair is gathered back in a hairband.) 
+0495:(…I wonder what her hair would look like without it?) 
+0496:'Scuse me… 
+0497:…! 
+0498:E-Ensign! What on EARTH do you think you're doing, grabbing at a lady's hair?! 
+0499:I-I just wanted to see what your hair is like without the headband… 
+0500:You'd have better luck were you to try such a thing with Iris's ribbon! 
+0501:And here I believed you to be rather mature… How frightfully rude! 
+0502:I'll be going! 
+0503:Guess I pushed Sumire too far… She really let me have it. 
+0504:…Oh well. I'd better go too. 
+0505:Ensign, do you really mean to leave in the middle of our conversation? 
+0506:Ask about the Troop. <br> Ask Sumire about herself. 
+0507:Ask about the Troop. <br> Ask Sumire about herself. <br> Hand her the letter. 
+0508:Sumire, could you tell me about the Imperial Assault Troop? 
+0509:Imperial Assault Troop… 
+0510:By the look of it, this is just an ordinary theater. 
+0511:I have a hard time believing this is the HQ of a secret assault force. Sumire, please tell me what's going on? 
+0512:Well… 
+0513:I hope it's not too forward of me to say, but I'd love to know more about you… 
+0514:My my, Ensign… How unexpectedly straight to the point you are. 
+0515:As I mentioned before, I am the daughter of the Kanzaki family, which controls the Kanzaki Group. 
+0516:Originally, the only stage I stood upon was the stage of high society. 
+0517:Then Kanzaki Heavy Industries and the theater began collaborating with each other, and so I came to live here. 
+0518:Kanzaki Heavy Industries? Why would a theater collaborate with an industrial manufacturing company? 
+0519:Ah, w-well now… 
+0520:While taking tickets earlier, I was entrusted this letter by someone calling himself a devoted fan. 
+0521:I figured I should pass it along to you. Here you are. 
+0522:Goodness! You went to such trouble for my sake? 
+0523:You have my deepest thanks, Ensign. 
+0524:I had been wondering just what sort of man had been assigned to us… 
+0525:…but it puts me at ease to see how attentive you are. 
+0526:I-Is that so… 
+0527:Hang on, there's something strange about this… 
+0528:Why would a member of a secret troop like this receive fan mail? 
+0529:Well, no matter where I go or what I do, I've no shortage of gentleman admirers. 
+0530:I-I see… 
+0531:Whatever is the matter? Has a cat got your tongue? Oh, I do despise an unreliable man. 
+0532:You would do well to straighten up your act, Ensign. 
+0533:Sumireee! …Oh, you're here too, Ogami? 
+0534:Sakura… 
+0535:Sumire, it's almost time for you to go on stage. Please come get ready. 
+0536:How good of you to come for me. I must drop by my room for a moment, then I'll be right there. 
+0537:By the way… May I pose a question to you, Ensign? 
+0538:Eh, to me? 
+0539:Yes. Between myself and Sakura, what sort of woman do you prefer? 
+0540:…! 
+0541:Won't you tell me, Ensign? 
+0542:Girls like Sumire. <br> Girls like Sakura. 
+0543:I suppose… Sumire is my type. 
+0544:…Hmph. 
+0545:Ohohoho! Naturally. You have excellent taste, Ensign. 
+0546:…I'll be going. 
+0547:Oh, Sakura… 
+0548:I don't want to hear it! 
+0549:My, that was rather harsh of her… 
+0550:Well, I shall take my leave now, Ensign. 
+0551:I guess I offended Sakura… 
+0552:I suppose… Sakura is my type. 
+0553:What was that?! Ensign, you simply have no eye for the finer things! 
+0554:How very distasteful! I will be going, now! 
+0555:Ah, Sumire! 
+0556:Ogami, I need to go after her…Please excuse me. 
+0557:I really shouldn't have said anything with both of them there… 
+0558:Oh! …Sakura… 
+0559:Ôgami…
+0560:What you said… It made me happy. 
+0561:Well, see you later, then… 
+0562:Sakura… 
+0563:What sort of woman I prefer… Well… 
+0564:…Ugh, what an indecisive man you are, Ensign! 
+0565:Sumire, don't be like that. You're putting him in an awkward position. 
+0566:I would hardly think there is any room for debate on the matter… 
+0567:I will let it slide for now, I suppose. Well, I must be off. 
+0568:I should go too. See you later, Ogami. 
+0569:Yeah, sure. 
+0570:Ogami… 
+0571:I'm kind of relieved, but also a bit disappointed… What a complicated feeling this is. 
+0572:…Well, I should get going. 
+0573:Sakura… 
+0574:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
+0575:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
+0576:Ensign, you've been restlessly fidgeting during this entire conversation! 
+0577:Oh, I-I'm sorry… 
+0578:Good heavens…I can scarcely believe you'd wish to look away when I'm standing right before you. 
+0579:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
+0580:All right, time to head for the manager's office. 
+0581:This must be the secretary's office. 
+0582:The pleasure's all mine. 
+0583:If you wouldn't mind, please fill out these forms for me. 
+0584:No problem. Let's see… Will this do? 
+0585:Yes, that's fine. Thanks very much. 
+0586:Manager Yoneda is in his office, right next door. 
+0587:Thank you. 
+0588:(Ah…Someone's here!) 
+0589:The pleasure's all mine. 
+0590:It's nice to meet you. I look forward to working with you. 
+0591:(This is the secretary's office. Yuri and Kasumi are here.) 
+0592:I came by to see you. <br> There's no particular reason. 
+0593:Actually, I did come by to see you. There's a few things I wanted to ask about… 
+0594:Y-Yes, but I wasn't… 
+0595:There's no particular reason. 
+0596:I-It's not that I DON'T want to see you or anything… 
+0597:Ah… Well, I just… 
+0598:N-No, it's… I just meant… 
+0599:(Yuri and Kasumi are here.) 
+0600:I'll come by again later. Keep up the good work. 
+0601:I'll come by again later. Keep up the good work. 
+0602:I'll come by again later. Keep up the good work. 
+0603:By the way, Ogami… 
+0604:The stairway to the basement is off-limits, by order of Manager Yoneda. 
+0605:Please take care that you don't wander into the basement, Ogami. 
+0606:There won't be any performances tomorrow. It's so nice to have a day off. 
+0607:Ogami, I'm quite knowledgeable about this theater. 
+0608:If you ever run into a problem, feel free to ask me! 
+0609:Sumire spends a lot of time in the upstairs lounge. 
+0610:By the way, you heard about that mysterious girl who defeated a monster in Ueno Park a while back, right? 
+0611:You know, that was actually - 
+0612:Yuri! 
+0613:Oh… So~rry! 
+0614:Ogami, go ahead and forget what I just said! 
+0615:Hm…? 
+0616:Maria is an avid book reader! 
+0617:Seems like she's in the library every night picking out books to read. 
+0618:Iris is just the cutest thing! She reminds me of a little doll. 
+0619:But you know… She's rumored to be the daughter of a very rich family. 
+0620:The Flower Division has six members in total. 
+0621:Huh? But I've only met four members so far. 
+0622:The other two aren't here right now. Their names are Kanna and Kohran. 
+0623:They'll be returning to the theater before too long. 
+0624:All right, I'm going to ask Commander Yoneda more about my position. 
+0625:Whoa! You startled me. W-Who might you be? 
+0626:Of course. <br> I'm a little busy… 
+0627:Of course. 
+0628:I'm a little busy at the moment… Could it wait until later? 
+0629:I-I understand. 
+0630:Y-Yes, sorry. I just blanked out for a moment… 
+0631:(Someone's coming up behind me…) 
+0632:Whooaa! Wh-Who's covering my eyes?! 
+0633:Sumire? <br> Sakura? <br> Maria? 
+0634:That voice… is that Sumire? 
+0635:Nope! 
+0636:Oh… It was you, Sakura. You sure startled me. 
+0637:Hehe… I'm a little disappointed though, Ogami. 
+0638:I thought you would've remembered my voice by now… 
+0639:I'm… I'm sorry. 
+0640:Oh, it's fine. Just try to remember it from here on. 
+0641:Well, I should get going. 
+0642:Ah - Sakura, hold on! There's something I wanted to ask you. 
+0643:What is it? 
+0644:That voice… is that you, Sakura? 
+0645:Hehe… You got me. 
+0646:…So it was you. Boy, you sure startled me. 
+0647:Even you have a mischievous side, then, huh? 
+0648:Hehe… Sorry about that. 
+0649:But…it makes me so happy that you remembered my voice. 
+0650:Huh?… 
+0651:Uh… S-Sorry. I guess that was a strange thing to say. 
+0652:W-Well, I should get going… 
+0653:Ah - Sakura, hold on! There's something I wanted to ask you. 
+0654:What is it? 
+0655:That voice… is that Maria? 
+0656:…Wrong. 
+0657:…Oh, it was you, Sakura. 
+0658:How could you mistake my voice for Maria's? We sound completely different! 
+0659:We've spent all this time together, and you can't even remember my voice? 
+0660:S-Sakura… 
+0661:I'll be going! Pardon me for saying such an odd thing. 
+0662:Ah… Looks like I offended her. 
+0663:Oh well. I'd better go. 
+0664:Huh? …Um, uh… 
+0665:Come on… You really don't know, Ogami? 
+0666:Oh, it was you, Sakura? You sure startled me. 
+0667:Sorry… You came up behind me so suddenly, I didn't have time to think. 
+0668:No, it's all right. I should be apologizing to you. 
+0669:I mean… It does seem very like you to be startled by someone's touch. 
+0670:Huh?… 
+0671:Uh… I-I'm sorry. What a strange thing for me to say… 
+0672:W-Well, I should get going… 
+0673:Ah - Sakura, hold on! There's something I wanted to ask you. 
+0674:What is it? 
+0675:Tell me about the Troop! <br> Where are you headed? <br> …Do you have a boyfriend? 
+0676:Sakura, could you please tell me about the Imperial Assault Troop? 
+0677:…! 
+0678:This place is just an ordinary theater. Where exactly is the secret squad, the Assault Troop, supposed to be?! 
+0679:W-Well, uh… 
+0680:I'm sorry… I need to find Sumire. Please excuse me. 
+0681:Sakura, wait! 
+0682:…Et les voilà parties.
+0683:Why do I get the feeling… she was running from me? 
+0684:Je ferais mieux d'aller voir<br>ailleurs…
+0685:Where are you headed, Sakura? 
+0686:The performance is due to begin soon, so I'm looking for Sumire. 
+0687:I'm willing to bet she's somewhere on the second floor… Well, I'll be going. 
+0688:…Shoot, I forgot to ask her about the Imperial Assault Troop. 
+0689:…Oh well. I'd better go too. 
+0690:Where are you headed, Sakura? 
+0691:Me? Rehearsal is about to begin, so I need to get going. 
+0692:Well, I'll be on my way! 
+0693:…Rehearsal? Rehearsal for what? 
+0694:…Oh well. I'd better go too. 
+0695:U-Uh… Sakura, do you have a boyfriend? 
+0696:Huh!? 
+0697:Ôgami…
+0698:No, I don't. But… 
+0699:…
+0700:S-Sorry, I need to go. 
+0701:Ah, Sakura… Did I do something wrong? Maybe that was a strange thing to ask. 
+0702:Je ferais mieux d'aller voir<br>ailleurs…
+0703:Uh, never mind. 
+0704:You're an odd one, Ogami. Well, I'll be on my way! 
+0705:…I never did ask her anything. 
+0706:…Oh well. I'd better go too. 
+0707:Well, keep up the good work. 
+0708:Well, keep up the good work. 
+0709:Je ferais mieux d'aller voir<br>ailleurs…
+0710:You'd like to buy a photo? Thank you! 
+0711:Oh, are you done? 
+0712:Ah, Ogami! The photos are extremely popular items. They always sell out right away. 
+0713:For that reason, I'm afraid I can only sell you one at a time. My apologies. 
+0714:Hmm… By the way, just whose photo is this? 
+0715:Wh-What the - ?! 
+0716:(Why are photos of a secret combat squad… being sold to the public?!) 
+0717:(Wouldn't this reveal their true identities?!) 
+0718:Ogami, what's the matter? 
+0719:Uh, n-nothing. 
+0720:(I suppose I could buy one for now.) 
+0721:Ogami, I appreciate your interest, but… 
+0722:…since the photos are meant for our patrons, I'm afraid I can only sell you one at a time. 
+0723:I'll have more stock by next month, so please wait until then. 
+0724:…I understand. 
+0725:That's a photo of Sakura. That'll be 50 zeni. 
+0726:You'd like to buy that? Thank you! 
+0727:Sakura may be new, but her photos are selling like hotcakes! 
+0728:(Sure enough, that's Sakura. Is it really OK to be selling photos of a secret combat squad like this…?) 
+0729:(But, it IS a cute photo… I guess I'll take it.) 
+0730:That's a photo of Sumire. That'll be 50 zeni. 
+0731:You'd like to buy that? Thank you! 
+0732:Her family runs the Kanzaki Group. 
+0733:Meaning, she's a big name in high society, too! How incredible! 
+0734:(That's Sumire, all right. Is it really OK to be selling photos of a secret combat squad like this…?) 
+0735:(But I guess I could get it, since I'm already here.) 
+0736:That's a photo of Maria. That'll be 50 zeni. 
+0737:You'd like to buy that? Thank you! 
+0738:Maria is from Russia, but I've heard her mother is Japanese. 
+0739:She's got that stoic aura about her, and gorgeous blond hair. Wish I was that cool… 
+0740:(Th-There's even a photo of Maria? Is it really OK to be selling photos of a secret combat squad like this?) 
+0741:(Well, I guess I could get it since I'm already here.) 
+0742:That's a photo of Kohran Li. That'll be 50 zeni. 
+0743:Kohran… Li? Is she Chinese? 
+0744:Yes, she was born in China. She's a brilliant scientist. 
+0745:You'd like to buy that? Thank you! 
+0746:Kohran's always joking around. She's so funny! 
+0747:I believe she's at the Hanayashiki Branch in Asakusa right now. 
+0748:(Hmm… She's wearing a Chinese dress.) 
+0749:(Guess I could get it for now.) 
+0750:That's a photo of Kanna Kirishima. That'll be 50 zeni. 
+0751:Kanna… Kirishima? 
+0752:She's very popular with children. Right now, she's in her hometown in Okinawa. 
+0753:Hmm… 
+0754:You'd like to buy that? Thank you! 
+0755:Kanna is an expert in the art of karate. Plus, she's got an amazing figure! 
+0756:I hear she went back home to Okinawa to continue her karate training. 
+0757:(I can tell she must be strong from the photo alone.) 
+0758:(Guess I could get it for now.) 
+0759:That's a photo of Iris. That'll be 50 zeni. 
+0760:You'd like to buy that? Thank you! 
+0761:Apparently, Iris is the daughter of a very wealthy French family. 
+0762:I hear she came to Japan after being scouted from France. 
+0763:(Th-There's even a photo of Iris? Is it really OK to be selling photos of a secret combat squad like this?) 
+0764:(Still… I already paid for it, so I may as well take it.) 
+0765:(Tsubaki porte sa tenue de<br>vendeuse. Elle lui va à ravir.)
+0766:M-mais, Monsieur Ogami ! Qu'est-<br>ce que vous regardez ? Arrêtez !
+0767:Monsieur Ogami… Cessez de me<br>fixer ainsi, ça me gêne.
+0768:(I know. Maybe if I ask casually, I can weasel the truth about this place out of her.) 
+0769:Tsubaki, could I ask you about this theater? 
+0770:Oh? If you want to know something about the theater, then I'm the girl to ask! 
+0771:Its official title is the Grand Imperial Theater, but most people just call it the Imperial Theater for short. 
+0772:We put on a different kind of performance each month! This month is a play called "The Eve of Lady Camellia." 
+0773:My name means "camellia flower," so hearing the play’s title makes me kind of happy! 
+0774:(That's not exactly what I wanted to ask about…) 
+0775:Um, Tsubaki… 
+0776:Ogami! Since you're here, why not buy a photo? 
+0777:S-Sure… 
+0778:I'll have some new photos in stock next month, so I hope you'll be all right with just the one for now. 
+0779:Hey, Iris. Do you know where everyone else went? 
+0780:Sumire is upstairs. Sakura went to go get her. 
+0781:Maria said she was going to the stage. 
+0782:I see. Thanks. 
+0783:(Oh, Iris is here.) 
+0784:… 
+0785:(…Is she angry with me for what happened earlier?) 
+0786:… 
+0787:Mon Frère, sorry about before… 
+0788:…'Cause it's not good to "eavesdrop." 
+0789:Iris… 
+0790:Maria scolded me earlier. 
+0791:Mon Frère… Please don't hate me. 
+0792:Don't worry. I wouldn't hate you because of something like that. 
+0793:You mean it? OK, then let's make up! 
+0794:By the way, Iris, there's something I wanted to ask. 
+0795:Yeeess? 
+0796:(Oh, Iris is here.) 
+0797:Oh, it's you, Mon Frère. Do you need something? 
+0798:Actually, yeah. There's something I wanted to ask you about real quick. 
+0799:Yeeess? 
+0800:(Oh, Iris is here.) 
+0801:Oh, Mon Frère! I had a lot of fun earlier! 
+0802:Yeah. Thanks for before, Iris. 
+0803:By the way, there's something I wanted to ask you. 
+0804:Yeeess? 
+0805:(Oh, Iris is here.) 
+0806:Oh, it's you, Mon Frère. Do you need something? 
+0807:Actually, yeah. There's something I wanted to ask you about real quick. 
+0808:Yeeess? 
+0809:Ask about the Troop. <br> Ask Iris about herself. 
+0810:I was wondering if you could tell me about the Imperial Assault Troop… 
+0811:Sure, OK. 
+0812:Why is the troop headquartered in a theater? 
+0813:We're in a theater, because that's where the "troop" performs. 
+0814:Isn't that obvious? You're pretty strange, Mon Frère. 
+0815:…? 
+0816:(I don't get it. There's nothing obvious about it!) 
+0817:I'd like to know more about you, Iris. 
+0818:About me? OK! Eheheh, gosh, you're making me blush… 
+0819:So, I used to live in France. 
+0820:I was recruited and came to Japan, and now I live here. 
+0821:I hadn't realized… 
+0822:Thank you for sharing that with me, Iris. Now I know a little more about you. 
+0823:Uh-huh! Next time, you should tell me something about yourself, Mon Frère! 
+0824:What is it, Mon Frère? Didn't you want to ask me something? 
+0825:Huh? Oh, sorry… I blanked out for a second. 
+0826:You're acting so odd. Are you OK? 
+0827:(What adorable clothes. She looks like a doll.) 
+0828:Doesn't this dress look good on me? I have lots of fancy clothes. 
+0829:(What adorable clothes. She looks like a doll.) 
+0830:Mon Frère, do you remember my bear's name? 
+0831:Jean Pierre? <br> Jumper? <br> Jean-Paul? 
+0832:Umm… It's Jean Pierre, right? 
+0833:Noo! It's Jean-Paul! Jean-Paul! 
+0834:S-Sorry. I forgot. 
+0835:…You better remember. He's my very best friend. 
+0836:He's a bear, not a sweater! And his name is Jean-Paul! 
+0837:S-Sorry. I forgot. 
+0838:…You better remember. He's my very best friend. 
+0839:I remember. It's Jean-Paul, isn't it? 
+0840:Yaay! Mon Frère, you really remembered! 
+0841:Of course. He's your very best friend. 
+0842:Thank you, Mon Frère… I'm so happy you remembered. 
+0843:Erm… Sorry. I forgot… 
+0844:You forgot? He's Jean-Paul the bear. 
+0845:Make sure you remember his name, OK, Mon Frère? 
+0846:You got it. 
+0847:Hey, Jean-Paul. Mon Frère here is our new friend. 
+0848:(That's an enormous ribbon… but it looks great on her.) 
+0849:Isn't this ribbon sooo cute? It's my favorite! 
+0850:(She has beautiful blond hair.) 
+0851:You know, tying up this ribbon all nice is hard. 
+0852:(Such pretty blue eyes…) 
+0853:Mon Frère… If you keep looking into my eyes like that, I'm gonna get embarrassed… 
+0854:(Such pretty blue eyes…) 
+0855:Do you know where everyone else is? 
+0856:Sumire is upstairs. Sakura went to go get her. 
+0857:Maria said she was going to the stage. 
+0858:I think Mr. Yoneda is in his room? 
+0859:I see. Thanks. 
+0860:I'm waiting here for everybody else. 
+0861:Bye, Iris. 
+0862:Bye-bye, Mon Frère! 
+0863:Mon Frère, what are you looking at? You should talk to me! 
+0864:Mon Frère, what are you looking at? You should talk to me! 
+0865:Mon Frère, what are you looking at? Are you bored of talking to me?! 
+0866:Mon Frère, what are you looking at? You should talk to me! 
+0867:This is… a library? Huh… It sure is cozy. 
+0868:…Seems there's no one here. Better head somewhere else. 
+0869:The library. Maybe I should drop by at night and see what sort of books they have here. 
+0870:…Seems there's no one here. Better head somewhere else. 
+0871:The library. Maybe I should drop by at night and see what sort of books they have here. 
+0872:…Seems there's no one here. Better head somewhere else. 
+0873:This is… a library? Huh… It sure is cozy. 
+0874:Sumireee… Oh, Ogami. 
+0875:Hey, Sakura. Did you find Sumire? 
+0876:No, not yet. Where on Earth could she be…? 
+0877:Well, I need to hurry. Please excuse me, Ogami. 
+0878:Looks like Sakura's having a hard time, too… 
+0879:Hey, Sakura. Are you looking for Sumire? 
+0880:Yes, I am. Where on Earth could she be…? 
+0881:Well, I need to hurry. Please excuse me, Ogami. 
+0882:Looks like Sakura's having a hard time, too… 
+0883:Je ferais mieux d'aller voir<br>ailleurs…
+0884:Hi, Maria. 
+0885:You appear to have a considerable amount of free time, don't you, Ensign. 
+0886:As I mentioned before, the stage is currently off-limits. Your cooperation is appreciated. 
+0887:Oh well. Guess I'll head somewhere else. 
+0888:It's Maria, right? What are you doing here? 
+0889:I could ask the same of you. What business do you have here? 
+0890:(She looks about as tall as me.) 
+0891:(Her clothes are so prim and proper… her demeanor too, for that matter.) 
+0892:(Her hair color is lovely. Platinum blond, I think it's called?) 
+0893:…Is there something stuck in my hair? 
+0894:(She got angry when I stared at her earlier…) 
+0895:Ensign, I believe I previously instructed you not to leer at people. 
+0896:(Her face shows a dignified, guarded expression…) 
+0897:Ensign, do you need me for something? 
+0898:(Her eyes are keen… I get the sense that she can see right through me with a single gaze.) 
+0899:Ensign, I believe I previously instructed you not to leer at people. 
+0900:Ensign, do you need me for something? 
+0901:…Did you need something from me? 
+0902:Tell me about the Troop. <br> Tell me about yourself, Maria. 
+0903:Maria, tell me something. I was assigned here as the captain of a secret combat squad. 
+0904:…Yes. I heard as much from Manager Yoneda. 
+0905:But the only duty I've been given is that of a ticket puncher. What's the meaning of this? 
+0906:Please tell me… What is my true role in the Imperial Assault Troop?! 
+0907:…Forgive me, but I do not have the authority to answer that question. 
+0908:You had best ask Manager Yoneda directly regarding that matter. 
+0909:Maria… 
+0910:Maria, would you tell me a little about yourself? 
+0911:What…? 
+0912:As captain of the Imperial Assault Troop, I'd like to know how a woman such as yourself came to be here. 
+0913:…I don't believe there's any need for me to answer that. 
+0914:In any case, I hardly acknowledge you to be the captain as it is. 
+0915:E-Excuse me?! 
+0916:Ensign, you're interfering with my duties. Please refrain from speaking with me. 
+0917:If you have no business with me, I must ask you to take yourself elsewhere. 
+0918:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
+0919:The stage, prop room, and large prop room are all off-limits. Take care not to enter. 
+0920:G-Got it. 
+0921:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
+0922:The stage, prop room, and large prop room are all off-limits. Take care not to enter. 
+0923:(It's hard to tell through her clothes, but… that's a fine-looking chest.) 
+0924:Just what are you looking at, Ensign? 
+0925:N-Nothing… 
+0926:I had heard that you were an excellent soldier… 
+0927:…but by the way you act, I'd say you still have a long way to go. 
+0928:(If I keep staring, I'll just make her angry again.) 
+0929:Oh well. Guess I'll head somewhere else. 
+0930:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
+0931:Oh well. Guess I'll head somewhere else. 
+0932:Ensign, you ought to look someone in the eye when you're speaking to them. 
+0933:Ensign, you ought to look someone in the eye when you're speaking to them. 
+0934:You'd do well to compose yourself a little more while conversing with someone, Ensign. 
+0935:Ensign, you ought to look someone in the eye when you're speaking to them. 
+0936:C'est quoi, cette pièce ? On dirait<br>qu'il y a un futon entreposé ici.
+0937:Ah, ça doit être la chambre du<br>gardien de nuit. Il y avait ça aussi<br>dans la marine.
+0938:This looks like a night watchman's room. Whoever is on night watch duty stands guard from here. 
+0939:Il y a tellement de tenues ici... Ça<br>doit être la salle des costumes.
+0940:Des tenues pour une escouade<br>secrète ? Non... ce ne sont rien<br>d'autre que des costumes<br>ordinaires.
+0941:C'est la salle des costumes. Tous<br>les vêtements sont entreposés ici.
+0942:Voilà la salle à manger. Elle est<br>surement réservé aux clients.
+0943:The dining hall. 
+0944:Is this the kitchen? Looks like one you’d find in a restaurant. 
+0945:The kitchen. There's an irresistible smell coming from the soup simmering on the stove. 
+0946:This is the lobby. I was taking tickets here a little while ago. 
+0947:It's the theater's entryway. A steady stream of patrons is flooding inside. 
+0948:So this is the theater's auditorium… What a magnificent structure! 
+0949:The auditorium. Patrons are beginning to trickle in. 
+0950:This is the second-floor hallway. There's a fair amount of patrons here, too. 
+0951:Wow… This theater has two floors' worth of audience seating? 
+0952:You can see the entire stage from here. These are some really great seats. 
+0953:These are the second-floor audience seats. What a fantastic view! 
+0954:Wow, this is spacious. It's even got a desk. This is a pretty nice room. 
+0955:So this is my room from today forward… but I still have to punch tickets at the theater's front desk. 
+0956:I'd love to kick back and relax, but that's not gonna happen right now. 
+0957:Wonder whose room this is… 
+0958:It's the mystery room. 
+0959:…No reply. Seems there's no one inside. 
+0960:Looks like this is Sakura's room. 
+0961:This is Sakura's room. Doesn't seem like anyone is here. 
+0962:…Not here, I guess. 
+0963:Looks like this is Maria's room. 
+0964:This is Maria's room. Doesn't seem like anyone is here. 
+0965:…Not here, I guess. 
+0966:Looks like this is Iris's room. 
+0967:This is Iris's room. Doesn't seem like anyone is here. 
+0968:…Not here, I guess. 
+0969:Wonder whose room this is… 
+0970:It's the mystery room. 
+0971:…No reply. Seems there's no one inside. 
+0972:Wonder whose room this is… 
+0973:It's the mystery room. 
+0974:…No reply. Seems there's no one inside. 
+0975:What beautiful weather. Looking out from here, the capital's springtime scenery appears quite tranquil. 
+0976:...
+0977:On dirait qu'il fait bon<br>aujourd'hui.
+0978:Non utilisé: 0101TBL.TXT#0978
+0979:Non utilisé: 0101TBL.TXT#0979
+0980:Non utilisé: 0101TBL.TXT#0980
+0981:Non utilisé: 0101TBL.TXT#0981
+0982:Non utilisé: 0101TBL.TXT#0982
+0983:Non utilisé: 0101TBL.TXT#0983
+0984:Non utilisé: 0101TBL.TXT#0984
+0985:Non utilisé: 0101TBL.TXT#0985
+0986:Non utilisé: 0101TBL.TXT#0986
+0987:Non utilisé: 0101TBL.TXT#0987
+0988:Non utilisé: 0101TBL.TXT#0988
+0989:Non utilisé: 0101TBL.TXT#0989
+0990:Non utilisé: 0101TBL.TXT#0990
+0991:Non utilisé: 0101TBL.TXT#0991
+0992:Non utilisé: 0101TBL.TXT#0992
+0993:Non utilisé: 0101TBL.TXT#0993
+0994:Non utilisé: 0101TBL.TXT#0994
+0995:Non utilisé: 0101TBL.TXT#0995
+0996:Non utilisé: 0101TBL.TXT#0996
+0997:Non utilisé: 0101TBL.TXT#0997
+0998:Non utilisé: 0101TBL.TXT#0998
+0999:Non utilisé: 0101TBL.TXT#0999
+1000:Non utilisé: 0101TBL.TXT#1000
+1001:Non utilisé: 0101TBL.TXT#1001
+1002:Non utilisé: 0101TBL.TXT#1002
+1003:Non utilisé: 0101TBL.TXT#1003
+1004:Non utilisé: 0101TBL.TXT#1004
+1005:Non utilisé: 0101TBL.TXT#1005
+1006:Non utilisé: 0101TBL.TXT#1006
+1007:Non utilisé: 0101TBL.TXT#1007
+1008:Non utilisé: 0101TBL.TXT#1008
+1009:Non utilisé: 0101TBL.TXT#1009
+1010:Non utilisé: 0101TBL.TXT#1010
+1011:Non utilisé: 0101TBL.TXT#1011
+1012:Non utilisé: 0101TBL.TXT#1012
+1013:Non utilisé: 0101TBL.TXT#1013
+1014:Non utilisé: 0101TBL.TXT#1014
+1015:Non utilisé: 0101TBL.TXT#1015
+1016:Non utilisé: 0101TBL.TXT#1016
+1017:Non utilisé: 0101TBL.TXT#1017
+1018:Non utilisé: 0101TBL.TXT#1018
+1019:Non utilisé: 0101TBL.TXT#1019
+1020:Non utilisé: 0101TBL.TXT#1020
+1021:Non utilisé: 0101TBL.TXT#1021
+1022:Non utilisé: 0101TBL.TXT#1022
+1023:Non utilisé: 0101TBL.TXT#1023
+1024:Non utilisé: 0101TBL.TXT#1024
+1025:Non utilisé: 0101TBL.TXT#1025
+1026:Non utilisé: 0101TBL.TXT#1026
+1027:Non utilisé: 0101TBL.TXT#1027
+1028:Non utilisé: 0101TBL.TXT#1028
+1029:Non utilisé: 0101TBL.TXT#1029
+1030:Non utilisé: 0101TBL.TXT#1030
+1031:Non utilisé: 0101TBL.TXT#1031
+1032:Non utilisé: 0101TBL.TXT#1032
+1033:Non utilisé: 0101TBL.TXT#1033
+1034:Non utilisé: 0101TBL.TXT#1034
+1035:Non utilisé: 0101TBL.TXT#1035
+1036:Non utilisé: 0101TBL.TXT#1036
+1037:Non utilisé: 0101TBL.TXT#1037
+1038:Non utilisé: 0101TBL.TXT#1038
+1039:Non utilisé: 0101TBL.TXT#1039
+1040:Non utilisé: 0101TBL.TXT#1040
+1041:Non utilisé: 0101TBL.TXT#1041
+1042:Non utilisé: 0101TBL.TXT#1042
+1043:Non utilisé: 0101TBL.TXT#1043
+1044:Non utilisé: 0101TBL.TXT#1044
+1045:Non utilisé: 0101TBL.TXT#1045
+1046:Non utilisé: 0101TBL.TXT#1046
+1047:Non utilisé: 0101TBL.TXT#1047
+1048:Non utilisé: 0101TBL.TXT#1048
+1049:Non utilisé: 0101TBL.TXT#1049
+1050:Non utilisé: 0101TBL.TXT#1050
+1051:Non utilisé: 0101TBL.TXT#1051
+1052:Non utilisé: 0101TBL.TXT#1052
+1053:Non utilisé: 0101TBL.TXT#1053
+1054:Non utilisé: 0101TBL.TXT#1054
+1055:Non utilisé: 0101TBL.TXT#1055
+1056:Non utilisé: 0101TBL.TXT#1056
+1057:Non utilisé: 0101TBL.TXT#1057
+1058:Non utilisé: 0101TBL.TXT#1058
+1059:Non utilisé: 0101TBL.TXT#1059
+1060:Non utilisé: 0101TBL.TXT#1060
+1061:Non utilisé: 0101TBL.TXT#1061
+1062:Non utilisé: 0101TBL.TXT#1062
+1063:Non utilisé: 0101TBL.TXT#1063
+1064:Non utilisé: 0101TBL.TXT#1064
+1065:Non utilisé: 0101TBL.TXT#1065
+1066:Non utilisé: 0101TBL.TXT#1066
+1067:Non utilisé: 0101TBL.TXT#1067
+1068:Ah, Ogami, bienvenue ! Qu'est-ce<br>que je peux faire pour vous ?
+1069:J'espère avoir pu vous être utile.<br>Merci d'être passé !
+1070:Non utilisé: 0101TBL.TXT#1070
+1071:Allô... ? Oui oui bonjour.
+1072:Yes, he was here… just a little while ago. Well, I'm going to wait a bit longer, see how things shake out… 
+1073:But you know, Hanakoji… the matter of this secret corps is a tough pill to swallow. 
+1074:We force girls onto the battlefield, while all we do is sit back and watch. Frankly… it's humiliating. 
+1075:And yet, right now they are the only ones who can operate the Koubu. 
+1076:That's why I'm making it a point to protect these girls, while giving them as much freedom as possible. 
+1077:If only we could make use of that young one… 
+1078:Oho, looks as though he's come by to complain. Well, goodbye for now… 
+1079:Ah, good morning. You're Ogami, right? I'm Yuri Sakakibara! 
+1080:I do the theater's office work. I'm looking forward to working with you! 
+1081:Oh my, did you come by to see me? Hee hee, only teasing you! 
+1082:Do you need me for anything? 
+1083:Non utilisé: 0101TBL.TXT#1083
+1084:Ravie de vous rencontrer, Ôgami.<br>Je suis Kasumi Fujii.
+1085:I'm the theater's office work manager. 
+1086:Do you need something? 
+1087:Good work today. 
+1088:Non utilisé: 0101TBL.TXT#1088
+1089:Non utilisé: 0101TBL.TXT#1089
+1090:Non utilisé: 0101TBL.TXT#1090
+1091:Non utilisé: 0101TBL.TXT#1091
+1092:Non utilisé: 0101TBL.TXT#1092
+1093:Non utilisé: 0101TBL.TXT#1093
+1094:Non utilisé: 0101TBL.TXT#1094
+1095:Non utilisé: 0101TBL.TXT#1095
+1096:Non utilisé: 0101TBL.TXT#1096
+1097:Non utilisé: 0101TBL.TXT#1097
+1098:Non utilisé: 0101TBL.TXT#1098
+1099:Non utilisé: 0101TBL.TXT#1099
+1100:Non utilisé: 0101TBL.TXT#1100
+1101:Non utilisé: 0101TBL.TXT#1101
+1102:Non utilisé: 0101TBL.TXT#1102
+1103:Non utilisé: 0101TBL.TXT#1103
+1104:Non utilisé: 0101TBL.TXT#1104
+1105:Non utilisé: 0101TBL.TXT#1105
+1106:Non utilisé: 0101TBL.TXT#1106
+1107:Non utilisé: 0101TBL.TXT#1107
+1108:Non utilisé: 0101TBL.TXT#1108
+1109:Non utilisé: 0101TBL.TXT#1109
+1110:Non utilisé: 0101TBL.TXT#1110
+1111:Non utilisé: 0101TBL.TXT#1111
+1112:Non utilisé: 0101TBL.TXT#1112
+1113:Non utilisé: 0101TBL.TXT#1113
+1114:Non utilisé: 0101TBL.TXT#1114
+1115:Non utilisé: 0101TBL.TXT#1115
+1116:Non utilisé: 0101TBL.TXT#1116
+1117:Non utilisé: 0101TBL.TXT#1117
+1118:Non utilisé: 0101TBL.TXT#1118
+1119:Non utilisé: 0101TBL.TXT#1119
+1120:Non utilisé: 0101TBL.TXT#1120
+1121:Non utilisé: 0101TBL.TXT#1121
+1122:Non utilisé: 0101TBL.TXT#1122
+1123:Vous êtes arrivé aujourd'hui,<br>n'est-ce pas ? Ravie de vous ren-<br>contrer. J'ai beaucoup entendu <br>arler de vous.
+1124:Non utilisé: 0101TBL.TXT#1124
+1125:Non utilisé: 0101TBL.TXT#1125
+1126:Non utilisé: 0101TBL.TXT#1126
+1127:Revenez quand vous voulez !
+1128:Ohh goshhh, I was only joking! 
+1129:Uh uh. Merci à vous, Ôgami.
+1130:Oh, OK then. I got it! 
+1131:Hehe. Vous êtes bien drôle,<br>Ôgami.
+1132:Seriously, don't give it another thought. 
+1133:It's fine, Ogami. Don't worry yourself over it. 
+1134:Nice to meet you. You're Ogami, right? I'm Kasumi Fujii, the theater's office manager. 
+1135:I'm sorry to impose, but would you mind coming with me to the secretary's office to fill out some new-hire forms? 
+1136:I'm afraid it's regulation, but it shouldn't take too long. I hope you understand. 
+1137:Um… Did you hear me, Ogami? 
+1138:Then I'll guide you there. This way, please. 
+1139:Non utilisé: 0101TBL.TXT#1139
+1140:Non utilisé: 0101TBL.TXT#1140
+1141:Non utilisé: 0101TBL.TXT#1141
+1142:Non utilisé: 0101TBL.TXT#1142
+1143:S-Stop… Just what's gotten into you? 
+1144:Non utilisé: 0101TBL.TXT#1144
+1145:Non utilisé: 0101TBL.TXT#1145
+1146:Guess whooo~? 
+1147:Non utilisé: 0101TBL.TXT#1147

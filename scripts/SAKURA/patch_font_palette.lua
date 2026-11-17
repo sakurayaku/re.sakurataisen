@@ -58,11 +58,9 @@
 
   IDENTIFICATION
   --------------
-  The codec keys on the bytes at those windows and nothing else: no file name,
-  no file size, no disc flag.  It scores each placement by how many of its two
-  windows read a value it knows (pristine or already patched) and takes the
-  better one; the placement is decided by content, so a disc-2 image is
-  recognised by where the palettes are, not by what the file is called.
+  can_handle() checks for known palette bytes at either placement. decode() and
+  encode() select the placement from the unchanged CD1/CD2 file size, since
+  earlier patches may already have changed the buffer's contents.
 
   PATCH CODEC SHAPE
   -----------------
@@ -85,7 +83,7 @@ codec.description = "Replaces the ADV dialogue and choice text palettes in the "
                  .. "Sakura Taisen (Saturn) executable with the palette of the "
                  .. "US 8x12 font sheet, whose ink is palette index 15. Emits "
                  .. "no artifacts."
-codec.version     = 1
+codec.version     = 2
 codec.kind        = "patch"
 
 local LABEL = "font palette (ADV)"
@@ -106,7 +104,7 @@ local function load_shared(name)
 end
 
 local palettes = load_shared("palettes")
-local args     = load_shared("args_parser")
+local constants = load_shared("constants")
 
 -- ---------------------------------------------------------------------------
 -- Palettes, as hex byte strings (Saturn BGR555, big endian per entry)
@@ -133,16 +131,15 @@ local function bytes(hex)
   return table.concat(out)
 end
 
--- The two placements, as bases.  { base, base + STRIDE }.  The offset shift is
--- SakuraTaisen.cpp's: FixupSakura picks 0x53954 on disc 1 and 0x53A8C on disc 2,
--- +0x138, and nothing in the file says which disc it came from -- hence the
--- required `cd` argument instead of a guess.
+-- The two placements, as bases.  { base, base + STRIDE }.
 local PLACEMENTS = { ["1"] = 0x53954, ["2"] = 0x53A8C }
 local PLACEMENT_ORDER = { "1", "2" }
 
-local ARG_SPEC = {
-  cd = { values = { "1", "2" }, required = true },
-}
+local function disc_for_size(data, stage)
+  if #data == constants.CD1_SAKURA_BYTES then return "1" end
+  if #data == constants.CD2_SAKURA_BYTES then return "2" end
+  error(string.format("%s: unsupported SAKURA size %d", stage, #data), 0)
+end
 
 local function sites_for(base)
   return {
@@ -231,18 +228,13 @@ local function fail_disc(stage, data, sites, disc)
   local _, _, detail, best = detect(data)
   local hint
   if best and best ~= disc then
-    hint = string.format("\n  the file looks like cd=%s; check the cd argument", best)
+    hint = string.format("\n  palette bytes look like cd=%s, but file size selects cd=%s", best, disc)
   elseif not best then
     hint = "\n  neither placement holds a known palette"
   end
   error(string.format(
     "%s: %s: cd=%s expects the palettes at 0x%06X; found:\n%s%s\n  both placements: %s",
     LABEL, stage, disc, PLACEMENTS[disc], report(data, sites), hint, detail), 0)
-end
-
-local function parse_cd(raw, stage)
-  local opts = args.parse(raw, ARG_SPEC, LABEL .. ": " .. stage)
-  return opts.cd
 end
 
 -- ---------------------------------------------------------------------------
@@ -258,14 +250,14 @@ function codec.can_handle(data)
   return "possible"
 end
 
-function codec.decode_name(args)
+function codec.decode_name()
   return "palette"
 end
 
-function codec.decode(data, args)
+function codec.decode(data)
   if type(data) ~= "string" then error(LABEL .. ": decode: expected binary string", 0) end
 
-  local disc = parse_cd(args, "decode")
+  local disc = disc_for_size(data, "decode")
   local sites = sites_for(PLACEMENTS[disc])
   for _, site in ipairs(sites) do
     if not site_state(data, site) then fail_disc("decode", data, sites, disc) end
@@ -275,12 +267,12 @@ function codec.decode(data, args)
   return {}
 end
 
-function codec.encode(original, artifacts, args)
+function codec.encode(original, artifacts)
   if type(original) ~= "string" then
     error(LABEL .. ": encode: expected binary string for `original`", 0)
   end
 
-  local disc = parse_cd(args, "encode")
+  local disc = disc_for_size(original, "encode")
   local sites = sites_for(PLACEMENTS[disc])
   for _, site in ipairs(sites) do
     if not site_state(original, site) then fail_disc("encode", original, sites, disc) end
