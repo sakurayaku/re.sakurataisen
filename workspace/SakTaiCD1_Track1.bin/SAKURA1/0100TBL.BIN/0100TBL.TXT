@@ -54,7 +54,7 @@
 0054:On m'a dit qu'une personne de la<br>Troupe viendrait à ma rencontre.<br>Combien de temps vont-il me<br>faire attendre ?
 0055:Attendez un peu, cette fille…
 0056:Elle vient dans ma direction !
-0057:O-Oui, je suis Ôgami.
+0057:O-oui, je suis Ôgami.
 0058:Ahem. Excusez-moi mais vous<br>êtes…?
 0059:Du Commandant Yoneda ?
 0060:(J'ai été prévenu qu'on viendrait<br>me chercher ici… mais qui aurait<br>cru que ce serait une fille !)
@@ -75,9 +75,9 @@
 0075:O-Oui ! Merci beaucoup !
 0076:(Pourquoi devons-nous nous<br>rendre au théâtre…?)
 0077:(Est-elle vraiment membre de la<br>Troupe d'assaut impériale ?)
-0078:N-Non… ce n'est rien !
+0078:N-non… ce n'est rien !
 0079:(Non, je ne devrais pas me poser<br>autant de questions. Elle connaît<br>mon nom après tout.)
-0080:O-Oui ! Merci beaucoup !
+0080:O-oui ! Merci beaucoup !
 0081:Voilà donc ce fameux théâtre qui<br>fut inauguré l'an dernier,<br>impressionnant. On est en plein<br>milieu du quartier de Ginza.
 0082:C'est un bâtiment vraiment<br>immense!
 0083:Personne ne pourrait soupçonner<br>le fait qu'il cache en réalité un<br>quartier militaire secret…
@@ -98,7 +98,7 @@
 0098:Pourquoi devrais-je faire ça ?<br>Oui, tout de suite !
 0099:Pourquoi devrais-je faire ça ? Je<br>refuse !
 0100:Et dans tous les cas, est-ce une<br>façon de demander de l'aide à<br>quelqu'un ?
-0101:0100TBL.TXT:0101:<br>   Traduction manquante!
+0101:Je suis le Lieutenant de la<br>Marine impériale Ichiro Ôgami.<br>J'ai été transféré à la Troupe<br>d'assaut impériale aujourd'hui.
 0102:Essayez de me faire virer si vous<br>le souhaitez, mais à moins d'un<br>ordre direct du quartier général,<br>je ne pars pas.
 0103:…!
 0104:C'est Ôgami… Pouvez-vous me<br>dire où je pourrais trouver le<br>Commandant Yoneda ?
@@ -146,7 +146,7 @@
 0146:Au rapport !
 0147:(Mais qu'est-ce que… Qui est cet<br>ivrogne ?)
 0148:(Ne me dites pas que c'est…)
-0149:Êtes-vous vraiment le Commandant Yoneda ?<br>Pourquoi buvez-vous comme ça ?
+0149:Vous ? Le Commandant Yoneda ?<br>Pourquoi buvez-vous comme ça ?
 0150:Êtes-vous vraiment… le<br>Commandant Yoneda ?
 0151:Je… Toutes mes excuses !
 0152:Mais enfin, comment pouvez-vous<br>boire de l'alcool en plein milieu<br>de la journée ?
@@ -166,7 +166,7 @@
 0166:Hé, ce n'est pas toi qui a suggéré<br>de vérifier que tout se passe<br>bien ?
 0167:Oui, et puis c'est toi qui as dit<br>que c'était une bonne idée !
 0168:(Ces deux-là… On dirait qu'elles<br>écoutaient à la porte.)
-0169:Vous ne devriez pas écouter aux portes !<br>Où se trouve la réception ?
+0169:On n’écoute pas aux portes !<br>Où se trouve la réception ?
 0170:Hé ! Vous ne devriez pas écouter<br>aux portes comme ça !
 0171:… Je suis désolée.
 0172:Mais quoi ? On voulait juste voir si<br>vous aviez besoin d'aide !
@@ -204,7 +204,7 @@
 0204:Plutôt que de vous chamailler<br>toutes les deux, pouvez-vous<br>m'indiquer où se trouve la<br>réception ?
 0205:Je dois m'y rendre dans le cadre<br>de ma première mission.
 0206:Hé vous deux ! Que faites-vous<br>devant le bureau du directeur ?
-0207:0100TBL.TXT:0207:<br>   Traduction manquante!
+0207:Mais… vous êtes la fille de tout à<br>l'heure.
 0208:Mariaaa ! C'est de la faute de<br>Sakura, elle…
 0209:J'étais juste en train de proposer<br>mon aide à Ôgami, mais Iris…
 0210:Ça suffit vous deux ! Vous n'avez<br>pas une répétition de prévue ?
@@ -252,7 +252,7 @@
 0252:Euh… qu'est-ce que je suis censé<br>faire là au juste ?
 0253:Hein ? Le directeur Yoneda ne<br>vous a pas prévenu ?
 0254:Le nouveau capitaine va travailler<br>comme poinçonneur de billets.<br>C'est ce qu'il nous a dit.
-0255:0100TBL.TXT:0255:<br>   Traduction manquante!
+0255:Poinçonneur de billets ? Mais<br>qu'est-ce que ça veut dire tout<br>ça ?
 0256:Eh bien, les billets des visiteurs<br>bien sûr.
 0257:Hein ? Mais en quoi est-ce une<br>"mission spéciale" ?
 0258:Nous n'en savons pas plus que<br>vous, désolé…
@@ -452,7 +452,7 @@
 0452:Nous ne devrions pas faire<br>attendre le Commandant Yoneda<br>plus longtemps ! Allons-y !
 0453:Puisque c'est la première fois que<br>vous venez ici, entrons par le hall<br>principal.
 0454:Non utilisé: 0100TBL.TXT#0454
-0455:C'est parce qu'il n'y a qu'une<br>représentation nocturne<br>aujourd'hui.
+0455:C’est parce qu’aujourd’hui, nous<br>n’avons que la représentation<br>nocturne…
 0456:Hihihi. Dites Monsieur, c'est<br>ton amoureuse ?
 0457:Iris ! Je t'ai déjà dit de ne pas<br>t'adresser comme ça aux adultes.
 0458:Voici le Lieutenant Ichiro Ôgami,<br>il vient d'être transféré à la<br>Troupe impériale.
@@ -602,4 +602,4 @@
 0602:Non utilisé: 0100TBL.TXT#0602
 0603:Non utilisé: 0100TBL.TXT#0603
 0604:Non utilisé: 0100TBL.TXT#0604
-0605:Mon nom est Sakura Shinguji. Je<br>suis originaire de Sendai et j'ai<br>rejoins la Troupe il y a peu.
+0605:Mon nom est Sakura Shinguji. Je<br>suis originaire de Sendai et j'ai<br>rejoint la Troupe il y a peu.
