@@ -309,14 +309,14 @@
   bytes, all of them below 0x6020 (instructions and their literal pools, which
   moved by 0x140).  The block at 0x25410, the palettes at 0x28F24..0x29924 and
   the sprite table at 0x6260 are byte-identical, so these offsets are disc
-  independent.  can_handle() only has the disc-1 digest in shared/constants.lua
-  and reports "certain" for it; a disc-2 copy is still accepted as "likely"
-  because the block and palettes are the retail ones.
+  independent.  can_handle() recognizes the exact CD1 and CD2 module hashes
+  from shared/constants.lua.
 ]]
 
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
-local constants = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
+
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
 
 local codec = {}
 
@@ -565,15 +565,6 @@ local function decompress(data)
   return decoded
 end
 
--- shared/constants.lua records the retail disc-1 LOGO.SH2: 243,200 bytes with
--- SHA-256 dbe0…cf1d.  Hashing is only worth it for a file of that size --
--- can_handle also sees whole disc images.
-local function known_file(data)
-  if type(data) ~= "string" then return false end
-  if #data ~= constants.CD1_LOGO_SH2_BYTES then return false end
-  return LUDARED.sha256(data) == constants.CD1_LOGO_SH2_SHA256
-end
-
 function be_i16(data, at)
   local value = data:byte(at + 1) * 256 + data:byte(at + 2)
   if value >= 0x8000 then value = value - 0x10000 end
@@ -751,13 +742,7 @@ local function retiled(picture, sheet, cells, turned)
 end
 
 function codec.can_handle(data)
-  if type(data) ~= "string" then return "no" end
-  if known_file(data) then return "certain" end
-  if not pcall(decompress, data) then return "no" end
-  if not swirl_sheet(data) then return "no" end
-  -- Same block and palette, but not the build these offsets were mapped on
-  -- (a rebuilt LOGO.SH2, or the disc-2 copy).
-  return "likely"
+  return can_handle.can_handle_logo_sh2(data)
 end
 
 function codec.decode_name(args)

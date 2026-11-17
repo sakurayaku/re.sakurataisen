@@ -87,6 +87,8 @@ end
 local prs         = LUDARED.codec("std/sega/compression/prs")
 local args_parser = load_shared("args_parser")
 
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
+
 local codec = {}
 
 codec.name        = "Sakura Taisen Subtitle Graphics"
@@ -364,13 +366,7 @@ local function parse_args(args)
 end
 
 function codec.can_handle(data)
-  if type(data) ~= "string" then
-    return "no"
-  end
-  if #data < LOGO_SUBTITLE_PRS_OFFSET + ORIGINAL_COMPRESSED_SIZE then
-    return "no"
-  end
-  return "possible"
+  return can_handle.can_handle_logo_sh2(data)
 end
 
 function codec.decode_name(args)

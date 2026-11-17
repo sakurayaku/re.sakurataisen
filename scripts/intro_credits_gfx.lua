@@ -62,6 +62,8 @@
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
+
 local codec = {}
 
 codec.name        = "Sakura Taisen Intro Credits & Logo"
@@ -236,12 +238,7 @@ local function pack_screen(pixels, flag_map)
 end
 
 function codec.can_handle(data)
-  if type(data) ~= "string" then return "no" end
-  local ok = pcall(function()
-    local blocks = find_blocks(data)
-    check_blocks(blocks)
-  end)
-  return ok and "likely" or "no"
+  return can_handle.can_handle_logo_sh2(data)
 end
 
 function codec.decode_name(args)

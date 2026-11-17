@@ -69,6 +69,8 @@
   * a SAKURA too short to hold both tables
 ]]
 
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
+
 local codec = {}
 
 codec.name        = "Sakura Taisen Subtitle Metadata"
@@ -139,13 +141,7 @@ local MAX_HEIGHT_PX   = 0xFF
 local MAX_BLOCK_UNITS = 0xFFFF   -- the offset field is a u16 of 8-byte units
 
 function codec.can_handle(data)
-  if type(data) ~= "string" then
-    return "no"
-  end
-  if #data < SAKURA_SUBTITLE_PLACEMENT_OFFSET + TABLE_SIZE then
-    return "no"
-  end
-  return "possible"
+  return can_handle.can_handle_sakura1(data)
 end
 
 function codec.decode_name(args)

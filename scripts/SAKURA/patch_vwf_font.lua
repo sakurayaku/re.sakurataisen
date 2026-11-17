@@ -47,7 +47,7 @@
     fnA  (dialogue text)  0x0104DE..0x0104E6     latch X, advance, call
                           0x010510                newline literal
     fnB  (choice/LIPS)    pass 1 0x0105B2..C4    accumulate advance per line
-                          origins 0x01060E/0x010642  X = 8 - width/2
+                          origins 0x01060E/0x010642  X = -width/2
                           pass 2 0x010664..0x01066C
                           0x0106A4                newline literal
     fnC  (secondary text) 0x010740..0x010748     latch X, advance, call
@@ -59,9 +59,8 @@
   four-slot tail `mov r8,rX / add #0x10,rX / exts.w rX,r8` which becomes
   `mov r8,r4 / extu.b r6,r0 / jsr / add r0,r8`.  fnB pass 1 used to count
   characters; it now adds the glyph's advance to the line's running width, and
-  both origin computations become 8 - width/2 so centring is preserved for
-  variable-width lines (the original 8 - 8*count is the special case width =
-  16*count).
+  both origin computations become -width/2, centring each line at X=0 (8 px
+  left of the original X=8 anchor).
 
   The line pitch (0x0104D7, 0x010733) and the choice-menu start rows
   (0x0105FB, 0x010603) are the same 8x12 layout constants patch_8px_font.lua
@@ -152,14 +151,14 @@ local SITES = {
   { 0x0105C2, "7101", "7801", "fnB pass 1: index++" },
   { 0x0105C4, "681F", "0009", "fnB pass 1: nop" },
 
-  -- fnB origins: X = 8 - width/2 (shlr, neg, add #8).  Two slots freed per
-  -- block compared with the original 8 - 8*count sequence.
+  -- fnB origins: X = -width/2 (shlr, neg).  The original add #8 is removed;
+  -- two slots remain nops compared with the original 8 - 8*count sequence.
   { 0x01060E, "611D", "4101", "fnB origin (first line): width / 2" },
-  { 0x010612, "4108", "7108", "fnB origin (first line): 8 - width/2" },
+  { 0x010612, "4108", "0009", "fnB origin (first line): remove original +8" },
   { 0x010614, "311C", "0009", "fnB origin (first line): nop" },
   { 0x010616, "7108", "0009", "fnB origin (first line): nop" },
   { 0x010642, "611D", "4101", "fnB origin (after newline): width / 2" },
-  { 0x010646, "4108", "7108", "fnB origin (after newline): 8 - width/2" },
+  { 0x010646, "4108", "0009", "fnB origin (after newline): remove original +8" },
   { 0x010648, "311C", "0009", "fnB origin (after newline): nop" },
   { 0x01064A, "7108", "0009", "fnB origin (after newline): nop" },
 

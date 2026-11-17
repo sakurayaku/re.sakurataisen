@@ -190,7 +190,7 @@ check("logo map matches apart from the flag", (function()
 end)())
 check("logo map keeps its flagged word", word(logo_map, 15 * 40 + 14) == 0x80000004)
 
-check("can_handle real LOGO.SH2", codec.can_handle(logo) == "likely")
+check("can_handle real LOGO.SH2", codec.can_handle(logo) == "certain")
 check("decode_name default", codec.decode_name(nil) == "INTRO_CREDITS")
 
 local arts = codec.decode(logo, { prefix = "INTRO" })

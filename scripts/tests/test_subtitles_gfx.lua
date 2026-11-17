@@ -149,7 +149,7 @@ local block = make_image_block()
 local logo = make_logo(block)
 local palette = make_palette()
 
-check("can_handle returns possible", codec.can_handle(logo) == "possible")
+check("an unpinned LOGO.SH2 is rejected", codec.can_handle(logo) == "no")
 check("can_handle rejects short input", codec.can_handle("BM") == "no")
 
 local artifacts = codec.decode(logo)

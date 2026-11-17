@@ -346,12 +346,11 @@ check("the shipped file is certain", codec.can_handle(logo) == "certain",
 check("a short file is a no", codec.can_handle(logo:sub(1, 100)) == "no")
 check("a non-string is a no", codec.can_handle(nil) == "no")
 
--- A rebuilt or disc-2 module keeps the same block and palette; only code below
--- 0x6020 moved, so a changed file is still recognised -- as "likely".
+-- The codec only claims the exact CD1 and CD2 modules listed in shared constants.
 local nudge = logo:sub(1, 0x200) .. string.char((logo:byte(0x201) + 1) % 256)
   .. logo:sub(0x202)
-check("a file that is not the shipped build is likely",
-  codec.can_handle(nudge) == "likely", codec.can_handle(nudge))
+check("a modified file does not match the retail hashes",
+  codec.can_handle(nudge) == "no", codec.can_handle(nudge))
 check("a file with a broken fan slot is a no",
   codec.can_handle(logo:sub(1, 0x24B8C) .. string.rep("\xFF", 16)
     .. logo:sub(0x24B8C + 17)) == "no")

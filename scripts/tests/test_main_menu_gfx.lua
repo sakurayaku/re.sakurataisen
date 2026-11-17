@@ -614,17 +614,17 @@ check("the shipped file is certain", codec.can_handle(logo) == "certain",
 local nudged = logo:sub(1, 0x20000)
   .. string.char(logo:byte(0x20001) ~ 0x01)
   .. logo:sub(0x20002)
-check("a file that reads right but hashes differently is likely",
-  codec.can_handle(nudged) == "likely", codec.can_handle(nudged))
+check("a modified file does not match the retail hashes",
+  codec.can_handle(nudged) == "no", codec.can_handle(nudged))
 
 -- The codec's own outputs must be recognised, including the strip layout and a
 -- raised DMA length, not just the glyph atlas it was mapped on.
-check("a rebuilt strip file is likely", codec.can_handle(one_out) == "likely",
+check("a rebuilt strip file does not match the retail hashes", codec.can_handle(one_out) == "no",
   codec.can_handle(one_out))
-check("a rebuilt file with a grown font slot is likely",
-  codec.can_handle(grown_out) == "likely", codec.can_handle(grown_out))
-check("a rebuilt file with a raised DMA length is likely",
-  codec.can_handle(wide_out) == "likely", codec.can_handle(wide_out))
+check("a rebuilt file with a grown font slot does not match the retail hashes",
+  codec.can_handle(grown_out) == "no", codec.can_handle(grown_out))
+check("a rebuilt file with a raised DMA length does not match the retail hashes",
+  codec.can_handle(wide_out) == "no", codec.can_handle(wide_out))
 
 check("a short file is a no", codec.can_handle(logo:sub(1, 100)) == "no")
 check("a non-string is a no", codec.can_handle(nil) == "no")

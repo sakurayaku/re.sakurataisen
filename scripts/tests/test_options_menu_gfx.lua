@@ -1056,9 +1056,9 @@ check("the shipped SAKURA is certain", codec.can_handle(parent) == "certain",
   codec.can_handle(parent))
 local nudged = parent:sub(1, 0x40000) .. string.char(parent:byte(0x40001) ~ 0x01)
   .. parent:sub(0x40002)
-check("a file that reads right but hashes differently is likely",
-  codec.can_handle(nudged) == "likely", codec.can_handle(nudged))
-check("a rebuilt file is likely", codec.can_handle(rebuilt) == "likely",
+check("a modified file does not match the retail hashes",
+  codec.can_handle(nudged) == "no", codec.can_handle(nudged))
+check("a rebuilt file does not match the retail hashes", codec.can_handle(rebuilt) == "no",
   codec.can_handle(rebuilt))
 check("a short file is a no", codec.can_handle(parent:sub(1, 100)) == "no")
 check("a non-string is a no", codec.can_handle(nil) == "no")

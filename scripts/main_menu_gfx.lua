@@ -150,7 +150,8 @@ end
 
 local prs      = LUDARED.codec("std/sega/compression/prs")
 local palettes = load_shared("palettes")
-local CONST    = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
+
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
 
 local codec = {}
 
@@ -180,8 +181,6 @@ local POINTER_BASE   = 0x214808
 local PALETTE_OFFSET = 0x00029324
 local PALETTE_SIZE   = 512
 
-local FILE_BYTES  = CONST.CD1_LOGO_SH2_BYTES
-local FILE_SHA256 = CONST.CD1_LOGO_SH2_SHA256
 -- md5 8d8a7a4affd6bc2e73ccd5ed4a3592a9
 
 -- Label descriptor tables, as file offsets.  Pointers are RAM addresses and
@@ -456,34 +455,8 @@ local function put(s, offset, bytes)
   return s:sub(1, offset) .. bytes .. s:sub(offset + #bytes + 1)
 end
 
--- Read the file the way decode() will and say whether the main menu is really
--- there: the pointer must imply a font slot that fits, the six descriptor
--- tables must read against the decompressed atlas, and the background must
--- decompress to the one pixel count the game uploads.  Cheap, because it only
--- ever looks at 6,222 bytes, and it is what separates a LOGO.SH2 from any
--- other file this size -- including a rebuild whose hash no longer matches.
-local function probe(data)
-  if #data ~= FILE_BYTES then return false end
-
-  local pointer = string.unpack(">I4", data, POINTER_OFFSET + 1)
-  local slot = pointer - POINTER_BASE + FONT_SIZE
-  if slot < FONT_SIZE or FONT_OFFSET + slot >= TAIL_OFFSET then return false end
-
-  local font = prs:decode(data:sub(FONT_OFFSET + 1, FONT_OFFSET + slot))[1].data
-  if #font == 0 then return false end
-  if not read_records(data, font) then return false end
-
-  local bgnd = prs:decode(data:sub(FONT_OFFSET + slot + 1, TAIL_OFFSET))[1].data
-  return #bgnd == BGND_PIXELS
-end
-
 function codec.can_handle(data)
-  if type(data) ~= "string" then return "no" end
-  if not probe(data) then return "no" end
-  if LUDARED.sha256(data) == FILE_SHA256 then return "certain" end
-  -- The main menu reads as this codec expects it to, but the file is not the
-  -- build these offsets were mapped on: same format, unverified edges.
-  return "likely"
+  return can_handle.can_handle_logo_sh2(data)
 end
 
 function codec.decode_name(args)

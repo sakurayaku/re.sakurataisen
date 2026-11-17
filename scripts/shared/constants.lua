@@ -20,4 +20,8 @@ return {
   -- Disc 1 main-menu module, 243,200 bytes.
   CD1_LOGO_SH2_SHA256 = "dbe0c2e777ddbc47a46856e79ee7ccf06b546d3e4a7d7be7dc10d9bb3c32cf1d",
   CD1_LOGO_SH2_BYTES  = 243200,
+
+  -- Disc 2 main-menu module, 243,200 bytes.
+  CD2_LOGO_SH2_SHA256 = "084dac119534d151c86c3b48619bf553f93f161089a8f52a40bf30fa0bc87064",
+  CD2_LOGO_SH2_BYTES  = 243200,
 }

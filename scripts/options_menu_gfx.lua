@@ -105,16 +105,14 @@ end
 local prs         = LUDARED.codec("std/sega/compression/prs")
 local args_parser = load_shared("args_parser")
 
+local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
+
 local codec = {}
 
 codec.name        = "Sakura Taisen Options Menu Graphics"
 codec.description = "PATCH plugin for every Options-screen text list, the panel and the selection marks in SAKURA"
 codec.kind        = "patch"
 codec.version     = 4
-
-local CONST       = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
-local FILE_BYTES  = CONST.CD1_SAKURA_BYTES
-local FILE_SHA256 = CONST.CD1_SAKURA_SHA256
 
 local ATLAS_OFFSET  = 0x05b320
 local ATLAS_SLOT    = 3782              -- fixed compressed slot
@@ -2111,43 +2109,7 @@ function codec.encode(original, artifacts, args)
 end
 
 function codec.can_handle(data)
-  if type(data) ~= "string" then
-    return "no"
-  end
-  if #data < ATLAS_OFFSET + ATLAS_SLOT then
-    return "no"
-  end
-  -- Hash only a file of the right size: can_handle also sees whole disc images,
-  -- and the codec's offsets are meaningless outside this executable.
-  if #data == FILE_BYTES and LUDARED.sha256(data) == FILE_SHA256 then
-    return "certain"
-  end
-
-  -- Weaker, content-based evidence: the five descriptors must look like option
-  -- rows and the atlas must decompress.
-  for _, m in ipairs(MAIN) do
-    if be32(data, m.desc + 20) ~= TEXTURE_BASE then
-      return "no"
-    end
-    local count = be16(data, m.desc + 12)
-    if count < 1 or count > MAX_RECORDS then
-      return "no"
-    end
-    local ptr = be32(data, m.desc + 16)
-    local pos = ptr >= RAM_BASE and ptr - RAM_BASE or ptr
-    if pos + count * RECORD_BYTES > #data then
-      return "no"
-    end
-  end
-
-  local ok, atlas = pcall(function()
-    return prs:decode(data:sub(ATLAS_OFFSET + 1, ATLAS_OFFSET + ATLAS_SLOT))[1].data
-  end)
-  if not ok or type(atlas) ~= "string" or #atlas < 1 then
-    return "no"
-  end
-
-  return "likely"
+  return can_handle.can_handle_sakura1(data)
 end
 
 function codec.decode_name(args)
