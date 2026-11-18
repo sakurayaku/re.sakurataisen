@@ -1809,56 +1809,6 @@
           "SAKURA1/0103KNJ.BIN"
         ],
         "decodes": {
-          "SAKURA1/0103TBL.BIN": [
-            {
-              "name": "0103TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0103KNJ"
-              },
-              "outputs": [
-                "0103TBL.TXT"
-              ],
-              "overrides": [
-                "0103TBL.TXT"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/TITLE1.BIN": [
-            {
-              "name": "TITLE.bmp",
-              "codec": {
-                "id": "scripts/title.lua",
-                "version": 1
-              },
-              "outputs": [
-                "TITLE.bmp"
-              ],
-              "overrides": [
-                "TITLE.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/0100TBL.BIN": [
-            {
-              "name": "0100TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0100KNJ"
-              },
-              "outputs": [
-                "0100TBL.TXT"
-              ],
-              "overrides": [
-                "0100TBL.TXT"
-              ],
-              "decodes": {}
-            }
-          ],
           "SAKURA1/TMAPSP.BIN": [
             {
               "name": "TMAPSP",
@@ -2008,6 +1958,23 @@
               "decodes": {}
             }
           ],
+          "SAKURA1/0103TBL.BIN": [
+            {
+              "name": "0103TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0103KNJ"
+              },
+              "outputs": [
+                "0103TBL.TXT"
+              ],
+              "overrides": [
+                "0103TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
           "SAKURA": [
             {
               "name": "vwf_font",
@@ -2100,6 +2067,56 @@
                 "OPTIONS/BRACKET_LEFT.bmp",
                 "OPTIONS/BRACKET_RIGHT.bmp",
                 "OPTIONS/BRACKET_POSITIONS.json"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0102TBL.BIN": [
+            {
+              "name": "0102TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0102KNJ"
+              },
+              "outputs": [
+                "0102TBL.TXT"
+              ],
+              "overrides": [
+                "0102TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/TITLE1.BIN": [
+            {
+              "name": "TITLE.bmp",
+              "codec": {
+                "id": "scripts/title.lua",
+                "version": 1
+              },
+              "outputs": [
+                "TITLE.bmp"
+              ],
+              "overrides": [
+                "TITLE.bmp"
               ],
               "decodes": {}
             }
@@ -2221,19 +2238,19 @@
               "decodes": {}
             }
           ],
-          "SAKURA1/0102TBL.BIN": [
+          "SAKURA2/M01MES.BIN": [
             {
-              "name": "0102TBL.TXT",
+              "name": "M01MES.TXT",
               "codec": {
                 "id": "scripts/dialogues.lua",
                 "version": 1,
-                "args": "0102KNJ"
+                "args": "M01MES"
               },
               "outputs": [
-                "0102TBL.TXT"
+                "M01MES.TXT"
               ],
               "overrides": [
-                "0102TBL.TXT"
+                "M01MES.TXT"
               ],
               "decodes": {}
             }

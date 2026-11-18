@@ -1,0 +1,195 @@
+0001:﻿﻿﻿﻿Ready~ 
+0002:Pose de la victoire… On ne bouge<br>plus !
+0003:Hahaha…<br>Chaos, terreur, et coup d'état…<br>Qu'est-ce qu'on s'amuse !
+0004:The capital is ours! 
+0005:Let us build a mountain of corpses as a warning to all that would oppose us. What say you, Lord Satan? 
+0006:Hehehehe…
+0007:Ton infamie s'arrête ici !
+0008:Quoi?!
+0009:Vous…!
+0010:…………
+0011:La Troupe d'assaut impériale<br>entre en scène !
+0012:Une troupe d'assaut impériale ?<br>Petits insolents !
+0013:Intéressant…<br>Les filles, laissez-moi m'en<br>charger…
+0014:Hmph…<br>Je te laisse la vedette.
+0015:Montrez-moi donc ce que vous<br>valez !
+0016:Hé hé hé…<br>Pas mal du tout.
+0017:Nous vous ferons l'honneur d'être<br>votre adversaire.
+0018:M01MES:0018: Vérifier contexte<br>Je bats en retraite !
+0019:Troupe d'assaut ! Un jour viendra<br>où nous réglerons nos comptes !
+0020:Youpiiii !!
+0021:Hmph…<br>Une performance à ma hauteur !
+0022:…Pas mal, dis donc.
+0023:Monsieur Ôgami, c'était génial !
+0024:M01MES:0024: Voir contexte<br>Eh bien, vous vous débrouillez<br>plutôt bien !
+0025:Continuez comme ça, Lieutenant<br>Ôgami.
+0026:On ne vous pardonnera jamais<br>d'avoir mis en danger la paix de<br>notre capitale !
+0027:Venez donc ! Je vous attends de<br>pied ferme !
+0028:Je vais maintenant vous expliquer<br>comment piloter vos Kôbu.<br>Écoutez attentivement !
+0029:Sakura, on va commencer par toi.
+0030:Oui, j'y vais !
+0031:Le MOUVEMENT influence l'ordre<br>d'action. Mais un moral élevé<br>permet d'agir plus tôt.
+0032:Le moral influence directement<br>la puissance de combat. Veillez<br>donc au moral de vos troupes.
+0033:Comme Sakura vient de le faire,<br>choisissez une destination parmi<br>les cases accessibles.
+0034:Sakura, à l'attaque !
+0035:Bien reçu !
+0036:Yaaaaaah !
+0037:Ainsi, choisissez une cible à<br>portée, puis attaquez-la.
+0038:Une fois le DÉPLACEMENT et<br>l’ATTAQUE effectués, le tour de<br>l’unité prend fin.
+0039:Sumire, tu es la suivante.
+0040:Hé hé hé… Lieutenant, vous allez<br>enfin voir une véritable vedette<br>entrer sur scène !
+0041:Contemplez donc la noblesse et la<br>splendeur de ma performance.
+0042:Les Kobu peuvent sauter depuis<br>les zones plus hautes sans subir<br>le moindre dommage.
+0043:Par contre, ils ne peuvent gravir<br>qu’un niveau à la fois. Les zones<br>situées deux niveaux au-dessus<br>d'eux leur sont inaccessibles.
+0044:Pour me tenir tête, il faudrait au<br>moins mille ans d'entrainement !
+0045:Quand vient son tour, une unité<br>peut effectuer deux actions.
+0046:Sakura et Sumire se sont<br>déplacées avant d’attaquer,<br>mais…
+0047:À l'inverse, il est aussi possible<br>d'attaquer, puis de se déplacer.
+0048:Là, j'ai attaqué, puis je me suis<br>déplacée.
+0049:Comme vous le voyez, vous<br>pouvez vous déplacer et attaquer<br>dans l'ordre qui vous convient.
+0050:Déplacement, puis attaque.<br>Ou attaque, puis déplacement…
+0051:Adaptez votre stratégie à la<br>situation sur le terrain.
+0052:Toutefois, vous ne pouvez pas<br>effectuer la même action deux<br>fois dans un même tour.
+0053:Vous ne pouvez pas vous déplacer<br>deux fois, ni attaquer deux fois.
+0054:Bien, Lieutenant Ôgami. À votre<br>tour de déplacer votre Kôbu.
+0055:Sakura ! Nous ignorons encore la<br>puissance de l’ennemi. Ne prends<br>pas de risques et adopte une<br>posture défensive.
+0056:Bien reçu !
+0057:Vous avez compris, Lieutenant ?
+0058:Les Kôbu sont dotés d’un système<br>permettant de restaurer leurs<br>points de résistance.
+0059:Ce système permet de restaurer<br>aussi bien votre propre Kôbu que<br>ceux de vos alliés.
+0060:Si vous utilisez la commande<br>DÉFENDRE, vous réduirez les<br>dégâts des attaques ennemies.
+0061:Vermines insignifiantes, comment<br>osez-vous égratigner mon Kôbu…
+0062:Réclamez le pardon du ciel, car<br>vous n'aurez jamais le mien !
+0063:Comme vous pouvez le constater,<br>Lieutenant Ôgami…
+0064:Subir des dégâts augmente votre<br>volonté.
+0065:Comme vient de le faire Sumire,<br>vous pouvez aussi utiliser la<br>commande REPOS pour gagner<br>de la volonté.
+0066:Une fois votre Volonté au max,<br>vous pouvez déclencher une<br>Attaque Spéciale.
+0067:Subissez mon courroux !
+0068:Technique ultime des Kanzaki !<br>Vents divins… paon dansant !
+0069:Ohohohohohoh !<br>Vous ne faites pas le poids !
+0070:Pour terminer, Lieutenant, je vais<br>vous parler des Capacités<br>Spéciales.
+0071:Chaque membre de la Brigade<br>des Fleurs possède un talent<br>unique.
+0072:Les Kôbu amplifient ces talents,<br>nous permettant ainsi de les<br>utiliser au combat.
+0073:Nous appelons ces talents des<br>Capacités Spéciales.
+0074:Toutefois, les Capacités Spéciales<br>éprouvent fortement l’esprit de<br>celles qui les utilisent. Leur usage<br>est donc limité.
+0075:Et voici ma Capacité Spéciale.
+0076:Podozhdi !
+0077:Ma Capacité Spéciale se nomme<br>"Podozhdi".
+0078:Les ennemis touchés par cette<br>attaque sont temporairement<br>paralysés et incapables d’agir.
+0079:Bien, à partir de maintenant, je<br>vous passe le commandement,<br>Lieutenant Ôgami.
+0080:Pour commencer, exterminons<br>ces machines démoniaques, les<br>Wakiji.
+0081:On dirait un général de l'Antre<br>des Ténèbres. Mieux vaut soigner<br>nos blessés pendant le combat.
+0082:Même sans ma protection, elles<br>devraient toutes s’en sortir.
+0083:Sakura… Quoi qu'il arrive, je vous<br>protégerai !
+0084:Sumire… Je serai toujours là<br>pour vous protéger.
+0085:Maria… Laissez-moi protéger vos<br>arrières.
+0086:Iris, je serai toujours là pour te<br>protéger.
+0087:Kôran, c’est moi qui vais vous<br>protéger ! Alors ne vous inquiétez<br>pas !
+0088:Kanna ! Comptez sur moi pour<br>vous protéger !
+0089:Ils ont réussi à s'enfuir… mais<br>nous avons protégé la capitale !!<br>Bien, nous rentrons à la base !
+0090:Attendez, Monsieur Ôgami ! La<br>Brigade des Fleurs n’a pas encore<br>eu droit à son rappel !
+0091:S-son rappel ?
+0092:Lieutenant Ôgami, ces types sont<br>de l'Antre des Ténèbres.
+0093:Allez-y, je vous écoute.<br>Je sais déjà tout ça.
+0094:Je vois, votre réputation n’est pas<br>usurpée. Lieutenant Ôgami, je<br>vous confie le commandement.
+0095:Au combat, une simple erreur de<br>jugement peut coûter des vies !!<br>Restez vigilant, Lieutenant !!
+0096:Chaque tour permet d'effectuer<br>deux actions. Le tour se termine<br>après un déplacement et une<br>attaque.
+0097:C’est à mon tour.
+0098:Une fois votre Volonté au max, il<br>est possible de déclencher une<br>Attaque Spéciale.
+0099:ous pouvez accumuler de la<br>Volonté, comme vous venez de le<br>voir. Vous en gagnez également<br>en subissant des dégâts.
+0100:Les Attaques Spéciales sont très<br>puissantes, mais elles épuisent<br>totalement votre Volonté.
+0101:Attendez, Sumire. Réparez le<br>Kôbu de Sakura, s’il vous plaît.
+0102:C'est pas vrai… C'était mon tour<br>de briller, et voilà que je dois<br>m'occuper de cette paysanne.
+0103:Désolée d'être une paysanne !
+0104:Le nombre d’utilisations est<br>limité, alors faites attention.
+0105:Vous pouvez également utiliser<br>DÉFENSE pour réduire les dégâts<br>subis.
+0106:L'action DÉFENSE vous protège<br>jusqu'à votre prochain tour.
+0107:Au combat, vous pouvez effectuer<br>deux actions par tour, mais pas<br>deux actions du même type.
+0108:Les attaques normales et les<br>Attaques Spéciales sont du même<br>type, donc vous ne pouvez en<br>utiliser qu'une par tour.
+0109:REPOS, DÉFENSE et RÉPARATION<br>sont du même type, vous ne<br>pouvez donc en utiliser qu'une<br>par tour.
+0110:L’ordre des actions est libre :<br>vous pouvez vous déplacer puis<br>attaquer, ou inversement.
+0111:Je vais maintenant vous expliquer<br>comment piloter vos Kôbu.<br>Écoutez attentivement !
+0112:Je dois faire de mon mieux !
+0113:J'y vais !
+0114:Leave it to me!! 
+0115:Regardez-moi bien,<br>Monsieur Ôgami !
+0116:Je…je vais bien…
+0117:Merci !
+0118:Vous pouvez le faire,<br>Monsieur Ôgami !
+0119:Monsieur Ôgami, je compte sur<br>vous !
+0120:Aaaah…
+0121:L-la prochaine fois, je gagnerai !
+0122:Monsieur Ôgami…<br>Je suis vraiment désolée…
+0123:C'est mon tour de briller, n'est-ce pas?
+0124:Ohohohohoh…
+0125:Attention, j’entre en scène !
+0126:Ma performance d’aujourd’hui<br>vous est dédiée !
+0127:Il en faudra plus que ça pour<br>m'arrêter…
+0128:Lieutenant…<br>Vous vous souciez donc vraiment<br>de moi…
+0129:Allez, Lieutenant, c'est à vous<br>d'entrer en scène !
+0130:J'observe votre performance !
+0131:Aaaaaah… !!
+0132:Exceptionnellement, je vais vous<br>faire la faveur de perdre !
+0133:Le Capitaine a besoin de moi !!
+0134:Je vais devoir m’occuper de ces<br>ennemis moi-même !
+0135:Où est la prochaine cible ?
+0136:Si vous voulez mourir, avancez<br>donc…
+0137:J'attends vos ordres !
+0138:Pas encore !! Je n’ai pas dit mon<br>dernier mot !!
+0139:…!!
+0140:Capitaine… tenez bon !
+0141:Capitaine, rentrons tous vivants !
+0142:Ahhh…
+0143:I-ils sont trop forts !!<br>Je me replie !!
+0144:Désolée, Capitaine.<br>Je me replie !
+0145:Moi aussi, je vais donner de mon<br>mieux !
+0146:Iris, c’est partiiii !
+0147:Je suis trop forte, vous savez !
+0148:Monsieur, je vais me donner à<br>fond pour toi !!
+0149:Euh… Y a des étincelles partout…
+0150:Monsieur, t'es trop génial !
+0151:Monsieur ! Sus à l’ennemi !
+0152:Monsieur, je te regarde, hein !
+0153:Aaaaah…
+0154:Méchantes… étoiles…
+0155:Monsieur, pardon…
+0156:Moi aussi, j’vais tout donner !
+0157:Tu f'rais mieux de pas prendre la<br>science à la légère !
+0158:Allez, j'y go !
+0159:R'gardez-moi faire !
+0160:J’me prends trop de dommages !
+0161:J’suis toute émuuue !
+0162:J'suis derrière vous !
+0163:Allez-y à fond, M'sieur Ôgami!
+0164:Ouahhhh…
+0165:Arg…<br>Y m'ont eue…
+0166:Cap'taine, désolée d’vous causer<br>des problèmes…
+0167:Allez !<br>On va leur montrer !!
+0168:Je fais le plein d’énergie ! <br>HIIII-YAH !
+0169:Admirez la technique suprême de<br>l’école Kirishima !
+0170:Allez !!<br>On leur fait leur fête, Capitaine !!
+0171:Tout va bien !<br>C'est juste une égratignure !
+0172:Thanks ! Je vous en dois une !
+0173:En avant, Capitaine !
+0174:Montrez-moi de quoi vous êtes<br>capable, Capitaine !
+0175:Uwaaaaah…
+0176:Grrr…<br>Je me suis pas assez entraînée…
+0177:Pour le Capitaine, je dois<br>continuer à me battre…
+0178:Alleeeez !
+0179:On a réussi !
+0180:Nous avons réussi !
+0181:Pfou !
+0182:Bien joué !
+0183:Youpi ! Youpi !!
+0184:Dîtes, Monsieur Ôgami...
+0185:Oui ?
+0186:Devoir se battre ici… ça me fait<br>tout drôle…
+0187:Pourquoi ?<br>Je vous ai rencontrée ici<br>À cause de l'article du journal ?
+0188:Pourquoi ?
+0189:…Je vois. Ça n’a donc aucune<br>importance pour vous, Monsieur<br>Ôgami…
+0190:C'est ici que je vous ai rencontrée<br>pour la première fois.
+0191:Hihi… C'est ça. Et voilà qu'on y<br>livre notre premier combat<br>ensemble… Serait-ce le destin ?
+0192:Vous avez battu un Wakiji et fini<br>dans le journal. "Une jeune fille<br>mystérieuse tranche un monstre<br>d'un coup de sabre", c'est ça ?
+0193:Oh, mais enfin… Ne me rappelez<br>pas ça, c'est trop gênant !
+0194:Hein…?
+0195:…Je vois. Ça n’a donc aucune<br>importance pour vous, Monsieur<br>Ôgami…

@@ -12,6 +12,7 @@ local FILES = {
   ['0101TBL.TXT'] = { 'SakTaiCD1_Track1.bin/SAKURA1/0101TBL.BIN', },
   ['0102TBL.TXT'] = { 'SakTaiCD1_Track1.bin/SAKURA1/0102TBL.BIN', },
   ['0103TBL.TXT'] = { 'SakTaiCD1_Track1.bin/SAKURA1/0103TBL.BIN', },
+  ['M01MES.TXT'] = { 'SakTaiCD1_Track1.bin/SAKURA2/M01MES.BIN', },
   -- ['M01MES.TXT'] = {
   --   'SakTaiCD1_Track1.bin/SAKURA2/M01MES.BIN',
   -- },
