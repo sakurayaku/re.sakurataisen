@@ -141,7 +141,7 @@
 0141:(Oh là là…)
 0142:(Si gros…)
 0143:…
-0144:…Avec votre permission !
+0144:Avec votre permission !
 0145:Je suis le Lieutenant de la Marine<br>impériale Ichiro Ôgami. À compter<br>de ce jour à midi, je fais partie de<br>la Troupe d'assaut impériale.
 0146:Au rapport !
 0147:(Mais qu'est-ce que… Qui est cet<br>ivrogne ?)
@@ -472,7 +472,7 @@
 0472:Ah ! Vous voilà !
 0473:Vous voyez quelqu'un d'autre à<br>part moi ? Arrêtez de me fixer<br>étrangement du regard et venez<br>par ici !
 0474:Ramassez la fourchette que j'ai<br>laissée tomber là-bas, et allez<br>m'en chercher une nouvelle.
-0475:Comment ? Vous voulez que je la<br>ramasse moi-même ?!
+0475:Comment ? Vous voudriez que je<br>la ramasse moi-même ?!
 0476:La fille unique des industries<br>Kanzaki, l'actrice vedette de ce<br>théâtre, ainsi que…
 0477:…la plus grande dame de la<br>haute société ! Moi, Sumire<br>Kanzaki, je devrais ramasser une<br>fourchette par terre ?!
 0478:Très bien. Vous êtes viré !<br>Je m'en vais de ce pas retrouver<br>le directeur pour vous faire sortir<br>d'ici immédiatement !
@@ -574,7 +574,7 @@
 0574:Non utilisé: 0100TBL.TXT#0574
 0575:Maintenant allons-y. Le<br>Commandant Yoneda nous<br>attend.
 0576:Mais nous n'allons pas tarder à<br>ouvrir. D'ici quelques minutes il y<br>aura beaucoup de visiteurs dans<br>le hall.
-0577:Hey, vous ! N'avez-vous pas<br>entendu ce que j'ai dit ?
+0577:Hé, vous ! N'avez-vous pas<br>entendu ce que j'ai dit ?
 0578:Ne traînez pas et prenez cette<br>fourchette !
 0579:Enfile ça et va à la réception ! Tu<br>vas nous attirer des curieux avec<br>cet attroupement militaire.
 0580:Bonjour ? Excusez-moiii !

@@ -78,11 +78,11 @@
 0078:Troupe de théâtre, troupe<br>d'assaut… Ce théâtre cache bien<br>son jeu.
 0079:Sakura et les autres semblent<br>parfaitement s'accommoder ici.
 0080:Elles ont toutes un rôle à jouer,<br>un rôle qu'elles seules peuvent<br>interprêter, mais qu'en est-il de<br>moi ?
-0081:Does my position here help protect our nation's peace at all? 
+0081:0101TBL.TXT:0081:<br>   Traduction manquante!
 0082:…
 0083:Ôgami…
 0084:…
-0085:All right, let's go! I'll take you as far as your door. Right this way! 
+0085:0101TBL.TXT:0085:<br>   Traduction manquante!
 0086:Woah ! Ralentis un peu !
 0087:Pas le temps de tergiverser !
 0088:Merci pour ton aide. Désolé de<br>t'avoir inquiété.
@@ -90,889 +90,889 @@
 0090:... ?
 0091:Non, rien... oubliez. Bon, euh, je<br>dois aller répéter la pièce...
 0092:Veux-tu entrer ?<br>OK, à plus tard.
-0093:If you have some time, would you like to come in? There's something I'd like to discuss with you. 
-0094:…I'm very sorry. The performance is due to start any minute now. 
-0095:I really would like to spend some more time with you, but duty calls. 
-0096:Oh, I see. That's fine, I understand. 
-0097:Break a leg out there. And thanks again for coming this far with me. 
-0098:You're welcome! I'd better get going. 
-0099:…Yeah, I guess I should rest up a little. 
-0100:Ogami… 
-0101:Huh? Oh, Sakura. Did you need something? 
-0102:I… Well… 
-0103:Cheer up, Ogami! That gloomy expression you're wearing doesn't suit you at all. 
-0104:When I think back to the way you were when we first met, back at Ueno Park, that's the way I… 
-0105:Sorry, I've said too much. I should get going. 
-0106:No, I'm the one who should apologize. 
-0107:It's just… You have your roles to play here, parts only you can perform. 
-0108:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0109:I was so happy when I got the news I was being transferred here. 
-0110:Being promoted to captain of my own squad, straight out of the academy… It was like a dream come true. 
-0111:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0112:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0113:Does my position here help protect our nation's peace at all? 
-0114:Ogami… You look so sad… 
-0115:You were so quiet when I called out to you before, too… 
-0116:Oh, I know! Since I'm here already, how about I come in and spend some more time with you? 
-0117:Thanks, Sakura. The place is a bit messy, but come on in. 
-0118:Make yourself at home. 
-0119:Oh, thank you. 
-0120:To tell you the truth, I've never been inside a man's room before. It makes me a little nervous… 
-0121:Well now… 
-0122:Oh, right. Thanks for seeing me back to my room. 
-0123:I'd better get going. I hope you'll feel better soon! 
-0124:…I'm sorry, Sakura. 
-0125:It's just… You have your roles to play here, parts only you can perform. 
-0126:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0127:I was so happy when I got the news I was being transferred here. 
-0128:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0129:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0130:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0131:Does my position here help protect our nation's peace at all? 
-0132:… 
-0133:Ogami, please don't look so gloomy! 
-0134:What happened to that cheerful young man I met in Ueno Park earlier today? 
-0135:Sakura… 
-0136:…Excuse me. 
-0137:…I'm sorry, Sakura. 
-0138:It's just… You have your roles to play here, parts only you can perform. 
-0139:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0140:I was so happy when I got the news I was being transferred here. 
-0141:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0142:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0143:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0144:Does my position here help protect our nation's peace at all? 
-0145:Ask about the theater <br> Ask Sakura about herself <br> Ask about the Troupe 
-0146:Sakura, what do you do here at the theater? 
-0147:The Troupe puts on a new show at the Imperial Theater every month. 
-0148:This month's performance is "The Eve of Lady Camellia," with Sumire in the lead role. 
-0149:We also put on court plays, musicals, sketch comedies, and various other sorts of performances. 
-0150:Wow… Seems like a lot of fun. 
-0151:Onstage, we can dazzle the audience by leading them into a different world. 
-0152:It makes our work feel tremendously rewarding. 
-0153:… 
-0154:I'm sorry… Just listen to me prattling on. 
-0155:No, it's all right. 
-0156:It lifts my spirits to hear you speak with such passion. 
-0157:Ogami… 
-0158:Huh? …Seems like someone's here. 
-0159:Tell me about yourself, Sakura. What's it like living here? 
-0160:About me, you say? To tell the truth, I'm still fairly new here, too. 
-0161:On performance days, I'm up on stage. Our play for this month is "The Eve of Lady Camellia," with Sumire in the lead role. 
-0162:On our days off… Well, I do a lot of rehearsing. 
-0163:Aside from that, there's cleaning, laundry… and my sword training. 
-0164:Sword training? 
-0165:Yes. Before I came to the capital, I would practice at a dojo in Sendai. 
-0166:Actually, there was something of an uproar the day I first arrived here… 
-0167:Wow, so you can use a sword. Not bad for a woman your age. 
-0168:Oh, no… It's not all that impressive. 
-0169:Huh? …Seems like someone's here. 
-0170:…Actually, there's something I'd like to ask you. 
-0171:Oh, of course. What is it? 
-0172:I was assigned the role of captain of a secret squad called the Imperial Assault Troop. 
+0093:0101TBL.TXT:0093:<br>   Traduction manquante!
+0094:0101TBL.TXT:0094:<br>   Traduction manquante!
+0095:0101TBL.TXT:0095:<br>   Traduction manquante!
+0096:0101TBL.TXT:0096:<br>   Traduction manquante!
+0097:0101TBL.TXT:0097:<br>   Traduction manquante!
+0098:0101TBL.TXT:0098:<br>   Traduction manquante!
+0099:0101TBL.TXT:0099:<br>   Traduction manquante!
+0100:0101TBL.TXT:0100:<br>   Traduction manquante!
+0101:0101TBL.TXT:0101:<br>   Traduction manquante!
+0102:0101TBL.TXT:0102:<br>   Traduction manquante!
+0103:0101TBL.TXT:0103:<br>   Traduction manquante!
+0104:0101TBL.TXT:0104:<br>   Traduction manquante!
+0105:0101TBL.TXT:0105:<br>   Traduction manquante!
+0106:0101TBL.TXT:0106:<br>   Traduction manquante!
+0107:0101TBL.TXT:0107:<br>   Traduction manquante!
+0108:0101TBL.TXT:0108:<br>   Traduction manquante!
+0109:0101TBL.TXT:0109:<br>   Traduction manquante!
+0110:0101TBL.TXT:0110:<br>   Traduction manquante!
+0111:0101TBL.TXT:0111:<br>   Traduction manquante!
+0112:0101TBL.TXT:0112:<br>   Traduction manquante!
+0113:0101TBL.TXT:0113:<br>   Traduction manquante!
+0114:0101TBL.TXT:0114:<br>   Traduction manquante!
+0115:0101TBL.TXT:0115:<br>   Traduction manquante!
+0116:0101TBL.TXT:0116:<br>   Traduction manquante!
+0117:0101TBL.TXT:0117:<br>   Traduction manquante!
+0118:0101TBL.TXT:0118:<br>   Traduction manquante!
+0119:0101TBL.TXT:0119:<br>   Traduction manquante!
+0120:0101TBL.TXT:0120:<br>   Traduction manquante!
+0121:0101TBL.TXT:0121:<br>   Traduction manquante!
+0122:0101TBL.TXT:0122:<br>   Traduction manquante!
+0123:0101TBL.TXT:0123:<br>   Traduction manquante!
+0124:0101TBL.TXT:0124:<br>   Traduction manquante!
+0125:0101TBL.TXT:0125:<br>   Traduction manquante!
+0126:0101TBL.TXT:0126:<br>   Traduction manquante!
+0127:0101TBL.TXT:0127:<br>   Traduction manquante!
+0128:0101TBL.TXT:0128:<br>   Traduction manquante!
+0129:0101TBL.TXT:0129:<br>   Traduction manquante!
+0130:0101TBL.TXT:0130:<br>   Traduction manquante!
+0131:0101TBL.TXT:0131:<br>   Traduction manquante!
+0132:0101TBL.TXT:0132:<br>   Traduction manquante!
+0133:0101TBL.TXT:0133:<br>   Traduction manquante!
+0134:0101TBL.TXT:0134:<br>   Traduction manquante!
+0135:0101TBL.TXT:0135:<br>   Traduction manquante!
+0136:0101TBL.TXT:0136:<br>   Traduction manquante!
+0137:0101TBL.TXT:0137:<br>   Traduction manquante!
+0138:0101TBL.TXT:0138:<br>   Traduction manquante!
+0139:0101TBL.TXT:0139:<br>   Traduction manquante!
+0140:0101TBL.TXT:0140:<br>   Traduction manquante!
+0141:0101TBL.TXT:0141:<br>   Traduction manquante!
+0142:0101TBL.TXT:0142:<br>   Traduction manquante!
+0143:0101TBL.TXT:0143:<br>   Traduction manquante!
+0144:0101TBL.TXT:0144:<br>   Traduction manquante!
+0145:0101TBL.TXT:0145:<br>   Traduction manquante!
+0146:0101TBL.TXT:0146:<br>   Traduction manquante!
+0147:0101TBL.TXT:0147:<br>   Traduction manquante!
+0148:0101TBL.TXT:0148:<br>   Traduction manquante!
+0149:0101TBL.TXT:0149:<br>   Traduction manquante!
+0150:0101TBL.TXT:0150:<br>   Traduction manquante!
+0151:0101TBL.TXT:0151:<br>   Traduction manquante!
+0152:0101TBL.TXT:0152:<br>   Traduction manquante!
+0153:0101TBL.TXT:0153:<br>   Traduction manquante!
+0154:0101TBL.TXT:0154:<br>   Traduction manquante!
+0155:0101TBL.TXT:0155:<br>   Traduction manquante!
+0156:0101TBL.TXT:0156:<br>   Traduction manquante!
+0157:0101TBL.TXT:0157:<br>   Traduction manquante!
+0158:0101TBL.TXT:0158:<br>   Traduction manquante!
+0159:0101TBL.TXT:0159:<br>   Traduction manquante!
+0160:0101TBL.TXT:0160:<br>   Traduction manquante!
+0161:0101TBL.TXT:0161:<br>   Traduction manquante!
+0162:0101TBL.TXT:0162:<br>   Traduction manquante!
+0163:0101TBL.TXT:0163:<br>   Traduction manquante!
+0164:0101TBL.TXT:0164:<br>   Traduction manquante!
+0165:0101TBL.TXT:0165:<br>   Traduction manquante!
+0166:0101TBL.TXT:0166:<br>   Traduction manquante!
+0167:0101TBL.TXT:0167:<br>   Traduction manquante!
+0168:0101TBL.TXT:0168:<br>   Traduction manquante!
+0169:0101TBL.TXT:0169:<br>   Traduction manquante!
+0170:0101TBL.TXT:0170:<br>   Traduction manquante!
+0171:0101TBL.TXT:0171:<br>   Traduction manquante!
+0172:0101TBL.TXT:0172:<br>   Traduction manquante!
 0173:…
-0174:But this place is just a theater where the "Imperial Assault Troupe" holds performances… 
-0175:Sakura, tell me the truth. Does the "Imperial Assault Troop"… really exist? 
-0176:Well… 
-0177:Now, who could THAT be? 
-0178:Um, well… S-Sorry. I'm pretty nervous, myself. 
-0179:N-No, I'm the one who should apologize. What a thing for me to say… 
-0180:But I'm relieved… You seem to be such a sincere man. 
-0181:Huh?… 
-0182:N-No, it's nothing. 
-0183:Now, who could THAT be? 
-0184:Come in, it's open. <br> Ogami's not here right now! 
-0185:Come in, it's open. 
-0186:Maria… what is it? 
-0187:Well, the play will be starting shortly… 
-0188:…and Sakura is nowhere to be found. Have you by chance seen her, Ensign? 
-0189:Oh! I completely forgot! 
-0190:S-Sakura… 
-0191:S-Sakura! Why are you in the Ensign's room? 
-0192:Um, well, you see… 
-0193:…No matter! Hurry on backstage! Unless you were intending to play hooky?! 
-0194:Y-Yes ma'am! 
-0195:Well, please excuse me, Ogami. 
-0196:…Uh, yes? 
-0197:…Ensign. 
-0198:Y-Yes? 
-0199:There's nothing wrong with idle talk, but it would be a problem if you disturb the order of the Flower Division. 
-0200:Ah… Understood. I'll take care not to disturb you all. 
-0201:Then if you'll excuse me, the stage is calling. 
-0202:Undoubtedly, you all have your roles to play here… parts only you can perform. 
-0203:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0204:I was so happy when I got the news I was being transferred here. 
-0205:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0206:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0207:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0208:Does my position here help protect our nation's peace at all? 
-0209:Come in, it's open. 
-0210:Sumire… what is it? 
-0211:Ensign, terribly sorry to bother you while you're off-duty. 
-0212:Truthfully, the play I'm to star in, "The Eve of Lady Camellia," is due to begin quite soon, but… 
-0213:…we've been waiting for Sakura to show up backstage. Would you happen to have seen her? 
-0214:Oh! I completely forgot! 
-0215:S-Sakura… 
-0216:S-Sakura? Why in heaven's name are you in the Ensign's room?! 
-0217:Um, well, you see… 
-0218:A-At any rate! Head backstage posthaste! Everyone is awaiting your arrival! 
-0219:U-Understood! 
-0220:Well, please excuse me, Ogami. 
-0221:…Uh, yes? 
-0222:Ensign… 
-0223:…My my, so that's the sort of man you are. 
-0224:Sumire, it's not like that! 
-0225:Now if you'll pardon me, I've a performance to star in. 
-0226:Sumire! Ah… She's gone. 
-0227:Undoubtedly, you all have your roles to play here… parts only you can perform. 
-0228:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0229:I was so happy when I got the news I was being transferred here. 
-0230:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0231:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0232:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0233:Does my position here help protect our nation's peace at all? 
-0234:Come in, it's open. 
-0235:Oh, Iris… What is it? 
-0236:Um, so, the play's gonna start soon. 
-0237:Sakura didn't show up backstage, so we're all looking for her. Have you seen her, Mon Frère? 
-0238:Oh! I completely forgot! 
-0239:S-Sakura… 
-0240:Oh, you're here! Found you, Sakura! 
-0241:I'm so sorry! I'll come right away. 
-0242:Well, please excuse me, Ogami. 
-0243:…Uh, yes? 
-0244:Yaay! I found Sakura! 
-0245:Huh? But… Why was she in your room, Mon Frère? 
-0246:Ehh?! W-Well… 
-0247:…Mon Frère, what were you and Sakura doing together in here? 
-0248:I-It wasn't anything… We were just talking! 
-0249:Huuh? No fair! I wanna talk to you, too! 
-0250:OK, OK. Sorry, Iris. But don't you need to get back to the stage? 
-0251:…Oh, yeah! Then let's talk another time! Pinky promise, OK? 
-0252:The play's starting, so I better go. Bye-bye, Mon Frère! 
-0253:Phew… That was close. 
-0254:So Iris performs as well… I guess that would make her a child actress. 
-0255:Honestly, I'm envious. You all have your roles to play here… parts only you can perform. 
-0256:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0257:I was so happy when I got the news I was being transferred here. 
-0258:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0259:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0260:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0261:Does my position here help protect our nation's peace at all? 
-0262:Sorry, but Ogami's not in at the moment! 
-0263:… 
-0264:That voice… That IS Ensign Ogami, isn't it? 
-0265:O-Ogami! What are you saying?! 
-0266:Pardon me, Ensign. I'm coming in. 
-0267:S-Sakura! Why are you in the Ensign's room? 
-0268:Um, well, you see… 
-0269:…No matter! Hurry on backstage! Unless you were intending to play hooky?! 
-0270:Y-Yes ma'am! I'm so sorry! 
-0271:Well, please excuse me, Ogami. 
-0272:…Uh, yes? 
-0273:…Ensign. 
-0274:…Uh, yes? 
-0275:There's nothing wrong with idle talk, but it would be a problem if you disturb the order of the Flower Division. 
-0276:Ah… Understood. I'll take care not to disturb you all. 
-0277:Pardon my intrusion, Ensign Ogami. If you'll excuse me, the stage is calling. 
-0278:Undoubtedly, you all have your roles to play here… parts only you can perform. 
-0279:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0280:I was so happy when I got the news I was being transferred here. 
-0281:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0282:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0283:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0284:Does my position here help protect our nation's peace at all? 
-0285:Sorry, but Ogami's not in at the moment! 
-0286:Ohohoh! What an amusing jest. 
-0287:If the Ensign is out, then to whom am I speaking now? 
-0288:Uh… 
-0289:Quite a sense of humor you have, Ensign. I approve. 
-0290:I've come in search of Sakura, since she's yet to show up backstage… 
-0291:…but if you are not here, then I suppose I cannot ask for your help. I'll take my leave. 
+0174:0101TBL.TXT:0174:<br>   Traduction manquante!
+0175:0101TBL.TXT:0175:<br>   Traduction manquante!
+0176:0101TBL.TXT:0176:<br>   Traduction manquante!
+0177:0101TBL.TXT:0177:<br>   Traduction manquante!
+0178:0101TBL.TXT:0178:<br>   Traduction manquante!
+0179:0101TBL.TXT:0179:<br>   Traduction manquante!
+0180:0101TBL.TXT:0180:<br>   Traduction manquante!
+0181:0101TBL.TXT:0181:<br>   Traduction manquante!
+0182:0101TBL.TXT:0182:<br>   Traduction manquante!
+0183:0101TBL.TXT:0183:<br>   Traduction manquante!
+0184:0101TBL.TXT:0184:<br>   Traduction manquante!
+0185:0101TBL.TXT:0185:<br>   Traduction manquante!
+0186:0101TBL.TXT:0186:<br>   Traduction manquante!
+0187:0101TBL.TXT:0187:<br>   Traduction manquante!
+0188:0101TBL.TXT:0188:<br>   Traduction manquante!
+0189:0101TBL.TXT:0189:<br>   Traduction manquante!
+0190:0101TBL.TXT:0190:<br>   Traduction manquante!
+0191:0101TBL.TXT:0191:<br>   Traduction manquante!
+0192:0101TBL.TXT:0192:<br>   Traduction manquante!
+0193:0101TBL.TXT:0193:<br>   Traduction manquante!
+0194:0101TBL.TXT:0194:<br>   Traduction manquante!
+0195:0101TBL.TXT:0195:<br>   Traduction manquante!
+0196:0101TBL.TXT:0196:<br>   Traduction manquante!
+0197:0101TBL.TXT:0197:<br>   Traduction manquante!
+0198:0101TBL.TXT:0198:<br>   Traduction manquante!
+0199:0101TBL.TXT:0199:<br>   Traduction manquante!
+0200:0101TBL.TXT:0200:<br>   Traduction manquante!
+0201:0101TBL.TXT:0201:<br>   Traduction manquante!
+0202:0101TBL.TXT:0202:<br>   Traduction manquante!
+0203:0101TBL.TXT:0203:<br>   Traduction manquante!
+0204:0101TBL.TXT:0204:<br>   Traduction manquante!
+0205:0101TBL.TXT:0205:<br>   Traduction manquante!
+0206:0101TBL.TXT:0206:<br>   Traduction manquante!
+0207:0101TBL.TXT:0207:<br>   Traduction manquante!
+0208:0101TBL.TXT:0208:<br>   Traduction manquante!
+0209:0101TBL.TXT:0209:<br>   Traduction manquante!
+0210:0101TBL.TXT:0210:<br>   Traduction manquante!
+0211:0101TBL.TXT:0211:<br>   Traduction manquante!
+0212:0101TBL.TXT:0212:<br>   Traduction manquante!
+0213:0101TBL.TXT:0213:<br>   Traduction manquante!
+0214:0101TBL.TXT:0214:<br>   Traduction manquante!
+0215:0101TBL.TXT:0215:<br>   Traduction manquante!
+0216:0101TBL.TXT:0216:<br>   Traduction manquante!
+0217:0101TBL.TXT:0217:<br>   Traduction manquante!
+0218:0101TBL.TXT:0218:<br>   Traduction manquante!
+0219:0101TBL.TXT:0219:<br>   Traduction manquante!
+0220:0101TBL.TXT:0220:<br>   Traduction manquante!
+0221:0101TBL.TXT:0221:<br>   Traduction manquante!
+0222:0101TBL.TXT:0222:<br>   Traduction manquante!
+0223:0101TBL.TXT:0223:<br>   Traduction manquante!
+0224:0101TBL.TXT:0224:<br>   Traduction manquante!
+0225:0101TBL.TXT:0225:<br>   Traduction manquante!
+0226:0101TBL.TXT:0226:<br>   Traduction manquante!
+0227:0101TBL.TXT:0227:<br>   Traduction manquante!
+0228:0101TBL.TXT:0228:<br>   Traduction manquante!
+0229:0101TBL.TXT:0229:<br>   Traduction manquante!
+0230:0101TBL.TXT:0230:<br>   Traduction manquante!
+0231:0101TBL.TXT:0231:<br>   Traduction manquante!
+0232:0101TBL.TXT:0232:<br>   Traduction manquante!
+0233:0101TBL.TXT:0233:<br>   Traduction manquante!
+0234:0101TBL.TXT:0234:<br>   Traduction manquante!
+0235:0101TBL.TXT:0235:<br>   Traduction manquante!
+0236:0101TBL.TXT:0236:<br>   Traduction manquante!
+0237:0101TBL.TXT:0237:<br>   Traduction manquante!
+0238:0101TBL.TXT:0238:<br>   Traduction manquante!
+0239:0101TBL.TXT:0239:<br>   Traduction manquante!
+0240:0101TBL.TXT:0240:<br>   Traduction manquante!
+0241:0101TBL.TXT:0241:<br>   Traduction manquante!
+0242:0101TBL.TXT:0242:<br>   Traduction manquante!
+0243:0101TBL.TXT:0243:<br>   Traduction manquante!
+0244:0101TBL.TXT:0244:<br>   Traduction manquante!
+0245:0101TBL.TXT:0245:<br>   Traduction manquante!
+0246:0101TBL.TXT:0246:<br>   Traduction manquante!
+0247:0101TBL.TXT:0247:<br>   Traduction manquante!
+0248:0101TBL.TXT:0248:<br>   Traduction manquante!
+0249:0101TBL.TXT:0249:<br>   Traduction manquante!
+0250:0101TBL.TXT:0250:<br>   Traduction manquante!
+0251:0101TBL.TXT:0251:<br>   Traduction manquante!
+0252:0101TBL.TXT:0252:<br>   Traduction manquante!
+0253:0101TBL.TXT:0253:<br>   Traduction manquante!
+0254:0101TBL.TXT:0254:<br>   Traduction manquante!
+0255:0101TBL.TXT:0255:<br>   Traduction manquante!
+0256:0101TBL.TXT:0256:<br>   Traduction manquante!
+0257:0101TBL.TXT:0257:<br>   Traduction manquante!
+0258:0101TBL.TXT:0258:<br>   Traduction manquante!
+0259:0101TBL.TXT:0259:<br>   Traduction manquante!
+0260:0101TBL.TXT:0260:<br>   Traduction manquante!
+0261:0101TBL.TXT:0261:<br>   Traduction manquante!
+0262:0101TBL.TXT:0262:<br>   Traduction manquante!
+0263:0101TBL.TXT:0263:<br>   Traduction manquante!
+0264:0101TBL.TXT:0264:<br>   Traduction manquante!
+0265:0101TBL.TXT:0265:<br>   Traduction manquante!
+0266:0101TBL.TXT:0266:<br>   Traduction manquante!
+0267:0101TBL.TXT:0267:<br>   Traduction manquante!
+0268:0101TBL.TXT:0268:<br>   Traduction manquante!
+0269:0101TBL.TXT:0269:<br>   Traduction manquante!
+0270:0101TBL.TXT:0270:<br>   Traduction manquante!
+0271:0101TBL.TXT:0271:<br>   Traduction manquante!
+0272:0101TBL.TXT:0272:<br>   Traduction manquante!
+0273:0101TBL.TXT:0273:<br>   Traduction manquante!
+0274:0101TBL.TXT:0274:<br>   Traduction manquante!
+0275:0101TBL.TXT:0275:<br>   Traduction manquante!
+0276:0101TBL.TXT:0276:<br>   Traduction manquante!
+0277:0101TBL.TXT:0277:<br>   Traduction manquante!
+0278:0101TBL.TXT:0278:<br>   Traduction manquante!
+0279:0101TBL.TXT:0279:<br>   Traduction manquante!
+0280:0101TBL.TXT:0280:<br>   Traduction manquante!
+0281:0101TBL.TXT:0281:<br>   Traduction manquante!
+0282:0101TBL.TXT:0282:<br>   Traduction manquante!
+0283:0101TBL.TXT:0283:<br>   Traduction manquante!
+0284:0101TBL.TXT:0284:<br>   Traduction manquante!
+0285:0101TBL.TXT:0285:<br>   Traduction manquante!
+0286:0101TBL.TXT:0286:<br>   Traduction manquante!
+0287:0101TBL.TXT:0287:<br>   Traduction manquante!
+0288:0101TBL.TXT:0288:<br>   Traduction manquante!
+0289:0101TBL.TXT:0289:<br>   Traduction manquante!
+0290:0101TBL.TXT:0290:<br>   Traduction manquante!
+0291:0101TBL.TXT:0291:<br>   Traduction manquante!
 0292:…
-0293:She's gone. 
-0294:Phew… Saved by Sumire's sense of humor. 
-0295:Honestly! What a ridiculous way to hide from people! 
-0296:But… 
-0297:That WAS pretty funny, Ogami! I nearly burst out laughing. 
-0298:R-Really? 
-0299:Ohhh heavens, quite a sense of humor you have, Ensign. I approve! 
-0300:Haha! How did you like my impression of Sumire? 
-0301:Ahahaha! <br> …What was THAT? 
-0302:Ahahaha! That was spot-on, Sakura! 
-0303:Really? Thanks! I was afraid it wouldn't hit the mark. 
-0304:Ogami! 
-0305:I hope you'll keep on smiling like this. 
-0306:That gloomy expression you had earlier doesn't suit you at all. 
-0307:Sakura… 
-0308:Well, I should get going. They need me onstage. 
-0309:I'll get out of your way, Ogami. Excuse me. 
-0310:…I'm sorry, Sakura. 
-0311:It's just… You have your roles to play here, parts only you can perform. 
-0312:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0313:I was so happy when I got the news I was being transferred here. 
-0314:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0315:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0316:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0317:Does my position here help protect our nation's peace at all? 
-0318:…What was THAT? Was that really supposed to be Sumire? 
-0319:Uhh… No good, huh? Ohh, that was just pathetic… 
-0320:S-Sakura, there's no need to cry! 
-0321:Eheheh, just kidding. I'm no good at impressions, but my acting's not bad, right? 
-0322:Sheesh… You had me going for a second, there. 
-0323:Feeling a little better, Ogami? 
-0324:Huh? Sakura, were you trying to cheer me up? 
-0325:How did I do? Well, I should get going. They need me onstage. 
-0326:I'll get out of your way, Ogami. Excuse me. 
-0327:…I'm sorry, Sakura. 
-0328:It's just… You have your roles to play here, parts only you can perform. 
-0329:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0330:I was so happy when I got the news I was being transferred here. 
-0331:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0332:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0333:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0334:Does my position here help protect our nation's peace at all? 
-0335:… 
-0336:Ah… Ogami, you look dazed… Don't tell me it's because of my impression? 
-0337:S-Sakura, there's no need to cry! 
-0338:Eheheh, just kidding. I'm no good at impressions, but my acting's not bad, right? 
-0339:Sheesh… You had me going for a second, there. 
-0340:Feeling a little better, Ogami? 
-0341:Huh?! 
-0342:Sakura, were you trying to cheer me up? 
-0343:How did I do? Well, I should get going. They need me onstage. 
-0344:I'll get out of your way, Ogami. Excuse me. 
-0345:Ogami… Chin up, all right? 
-0346:Sakura… You were trying to cheer me up, weren't you? 
-0347:All this is fine for you. You have a role to play here. 
-0348:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0349:I was so happy when I got the news I was being transferred here. 
-0350:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0351:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0352:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0353:Does my position here help protect our nation's peace at all? 
-0354:Sorry, but Ogami's not in at the moment! 
+0293:0101TBL.TXT:0293:<br>   Traduction manquante!
+0294:0101TBL.TXT:0294:<br>   Traduction manquante!
+0295:0101TBL.TXT:0295:<br>   Traduction manquante!
+0296:0101TBL.TXT:0296:<br>   Traduction manquante!
+0297:0101TBL.TXT:0297:<br>   Traduction manquante!
+0298:0101TBL.TXT:0298:<br>   Traduction manquante!
+0299:0101TBL.TXT:0299:<br>   Traduction manquante!
+0300:0101TBL.TXT:0300:<br>   Traduction manquante!
+0301:0101TBL.TXT:0301:<br>   Traduction manquante!
+0302:0101TBL.TXT:0302:<br>   Traduction manquante!
+0303:0101TBL.TXT:0303:<br>   Traduction manquante!
+0304:0101TBL.TXT:0304:<br>   Traduction manquante!
+0305:0101TBL.TXT:0305:<br>   Traduction manquante!
+0306:0101TBL.TXT:0306:<br>   Traduction manquante!
+0307:0101TBL.TXT:0307:<br>   Traduction manquante!
+0308:0101TBL.TXT:0308:<br>   Traduction manquante!
+0309:0101TBL.TXT:0309:<br>   Traduction manquante!
+0310:0101TBL.TXT:0310:<br>   Traduction manquante!
+0311:0101TBL.TXT:0311:<br>   Traduction manquante!
+0312:0101TBL.TXT:0312:<br>   Traduction manquante!
+0313:0101TBL.TXT:0313:<br>   Traduction manquante!
+0314:0101TBL.TXT:0314:<br>   Traduction manquante!
+0315:0101TBL.TXT:0315:<br>   Traduction manquante!
+0316:0101TBL.TXT:0316:<br>   Traduction manquante!
+0317:0101TBL.TXT:0317:<br>   Traduction manquante!
+0318:0101TBL.TXT:0318:<br>   Traduction manquante!
+0319:0101TBL.TXT:0319:<br>   Traduction manquante!
+0320:0101TBL.TXT:0320:<br>   Traduction manquante!
+0321:0101TBL.TXT:0321:<br>   Traduction manquante!
+0322:0101TBL.TXT:0322:<br>   Traduction manquante!
+0323:0101TBL.TXT:0323:<br>   Traduction manquante!
+0324:0101TBL.TXT:0324:<br>   Traduction manquante!
+0325:0101TBL.TXT:0325:<br>   Traduction manquante!
+0326:0101TBL.TXT:0326:<br>   Traduction manquante!
+0327:0101TBL.TXT:0327:<br>   Traduction manquante!
+0328:0101TBL.TXT:0328:<br>   Traduction manquante!
+0329:0101TBL.TXT:0329:<br>   Traduction manquante!
+0330:0101TBL.TXT:0330:<br>   Traduction manquante!
+0331:0101TBL.TXT:0331:<br>   Traduction manquante!
+0332:0101TBL.TXT:0332:<br>   Traduction manquante!
+0333:0101TBL.TXT:0333:<br>   Traduction manquante!
+0334:0101TBL.TXT:0334:<br>   Traduction manquante!
+0335:0101TBL.TXT:0335:<br>   Traduction manquante!
+0336:0101TBL.TXT:0336:<br>   Traduction manquante!
+0337:0101TBL.TXT:0337:<br>   Traduction manquante!
+0338:0101TBL.TXT:0338:<br>   Traduction manquante!
+0339:0101TBL.TXT:0339:<br>   Traduction manquante!
+0340:0101TBL.TXT:0340:<br>   Traduction manquante!
+0341:0101TBL.TXT:0341:<br>   Traduction manquante!
+0342:0101TBL.TXT:0342:<br>   Traduction manquante!
+0343:0101TBL.TXT:0343:<br>   Traduction manquante!
+0344:0101TBL.TXT:0344:<br>   Traduction manquante!
+0345:0101TBL.TXT:0345:<br>   Traduction manquante!
+0346:0101TBL.TXT:0346:<br>   Traduction manquante!
+0347:0101TBL.TXT:0347:<br>   Traduction manquante!
+0348:0101TBL.TXT:0348:<br>   Traduction manquante!
+0349:0101TBL.TXT:0349:<br>   Traduction manquante!
+0350:0101TBL.TXT:0350:<br>   Traduction manquante!
+0351:0101TBL.TXT:0351:<br>   Traduction manquante!
+0352:0101TBL.TXT:0352:<br>   Traduction manquante!
+0353:0101TBL.TXT:0353:<br>   Traduction manquante!
+0354:0101TBL.TXT:0354:<br>   Traduction manquante!
 0355:…
-0356:Huh… Mon Frère's not here? Guess I gotta look somewhere else. 
-0357:Aww, the play's starting soon… Sakura, where did you go? 
-0358:Phew… That was close. 
-0359:Honestly! What a ridiculous way to hide from people! 
-0360:But… 
-0361:That WAS pretty funny, Ogami! I nearly burst out laughing. 
-0362:R-Really? Hahaha, I'm flattered… 
-0363:Feeling a little better, Ogami? 
-0364:Huh? Sakura, were you trying to cheer me up? 
-0365:How did I do? Well, I should get going. They need me onstage. 
-0366:I'll get out of your way now. 
-0367:Ogami… Chin up, all right? 
-0368:…I'm sorry, Sakura. 
-0369:It's just… You have your roles to play here, parts only you can perform. 
-0370:But what about me? I don't feel like I'm doing anything to safeguard the capital. 
-0371:I was so happy when I got the news I was being transferred here. 
-0372:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0373:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0374:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0375:Does my position here help protect our nation's peace at all? 
-0376:…He doesn't appear to be here. 
-0377:At any rate… Where could Sakura be? 
-0378:…He's of no use, then. I shall search elsewhere. 
-0379:But really… Where on Earth could Sakura have wandered off to? 
-0380:…He's not here. Ohhh, the play's gonna start soon! 
+0356:0101TBL.TXT:0356:<br>   Traduction manquante!
+0357:0101TBL.TXT:0357:<br>   Traduction manquante!
+0358:0101TBL.TXT:0358:<br>   Traduction manquante!
+0359:0101TBL.TXT:0359:<br>   Traduction manquante!
+0360:0101TBL.TXT:0360:<br>   Traduction manquante!
+0361:0101TBL.TXT:0361:<br>   Traduction manquante!
+0362:0101TBL.TXT:0362:<br>   Traduction manquante!
+0363:0101TBL.TXT:0363:<br>   Traduction manquante!
+0364:0101TBL.TXT:0364:<br>   Traduction manquante!
+0365:0101TBL.TXT:0365:<br>   Traduction manquante!
+0366:0101TBL.TXT:0366:<br>   Traduction manquante!
+0367:0101TBL.TXT:0367:<br>   Traduction manquante!
+0368:0101TBL.TXT:0368:<br>   Traduction manquante!
+0369:0101TBL.TXT:0369:<br>   Traduction manquante!
+0370:0101TBL.TXT:0370:<br>   Traduction manquante!
+0371:0101TBL.TXT:0371:<br>   Traduction manquante!
+0372:0101TBL.TXT:0372:<br>   Traduction manquante!
+0373:0101TBL.TXT:0373:<br>   Traduction manquante!
+0374:0101TBL.TXT:0374:<br>   Traduction manquante!
+0375:0101TBL.TXT:0375:<br>   Traduction manquante!
+0376:0101TBL.TXT:0376:<br>   Traduction manquante!
+0377:0101TBL.TXT:0377:<br>   Traduction manquante!
+0378:0101TBL.TXT:0378:<br>   Traduction manquante!
+0379:0101TBL.TXT:0379:<br>   Traduction manquante!
+0380:0101TBL.TXT:0380:<br>   Traduction manquante!
 0381:…
-0382:Seems like they left. 
-0383:Oh my goodness…I thought my heart was going to jump out of my chest! 
-0384:Seems like they were looking for you, Sakura. 
-0385:I'll bet they came looking for me since the play's starting soon. 
-0386:Well, I'll get out of your way now, Ogami. 
-0387:Sakura… You were trying to cheer me up, weren't you? 
-0388:All this is fine for you. You have a role to play here. 
-0389:And this is a part only you can perform. But… What about me? 
-0390:Being promoted to captain of my own squad straight out of the academy was like a dream come true. 
-0391:It didn't even matter what my assignment was. I'd be satisfied with any post if it meant protecting the capital. 
-0392:I thought I was taking control of a crack assault force, so when I found an exclusively female theater troupe, well… 
-0393:Does my position here help protect our nation's peace at all? 
-0394:It looks like this is Sumire's room. 
-0395:Ensign! The door is locked, which means you cannot simply enter as you please! 
-0396:(Sheesh… Doesn't seem like she wants to talk.) 
-0397:Enough of your foolishness. Say something if you want my attention! 
-0398:Sumire! I need to speak with you! 
-0399:I'm terribly sorry, but I'm changing at the moment. 
-0400:…Not here, I guess. 
-0401:…Not here, I guess. 
-0402:Yes? Who's there? 
-0403:Um… It's Ogami. Do you have a minute? 
-0404:I'm right in the middle of changing. Could you wait just one moment, please? 
-0405:Gulp… She's changing? 
-0406:Open the door. 
-0407:…I can't wait any longer. I'm coming inside! 
-0408:E-Ensign! What DO you think you're doing?! 
-0409:S-Sorry… I just got tired of waiting, so - 
-0410:I asked for just one moment, did I not?! 
-0411:How outrageous of you to simply barge into a lady's room! 
-0412:I'm sorry. I got impatient… 
-0413:Had you come in before I'd begun changing, that would be one thing. But… 
-0414:Enough of your excuses! Leave, right this instant! 
-0415:No way around it… I screwed that up. 
-0416:Forget it. I'll go somewhere else. 
-0417:Thank you for waiting, Ensign. 
-0418:Such impeccable patience is nothing less than I'd expect from a military officer. 
-0419:It was nothing, hahaha… 
-0420:By the way… Did you have some need of me? 
-0421:Could you show me your room? <br> Ask about the Troop. <br> Give her the letter. 
-0422:Could you show me your room? <br> Ask about the Troop. 
-0423:Could you show me your room? I'd love to see what it's like in there. 
-0424:Most certainly not. 
-0425:Why, the very thought of allowing a man into my room so casually… 
-0426:Y-Yeah, but - 
-0427:In any case, I refuse. Now, if you will excuse me, I've my own matters to attend to. 
-0428:Ah… She closed the door right in my face. 
-0429:Sumire, please. Can't you tell me more about the Imperial Assault Troop? 
-0430:…This again? You certainly are a persistent fellow, Ensign! 
-0431:I'm begging you! I can't have been sent here just to take tickets all day, right? 
-0432:Aren't I meant to be captain of the Imperial Assault Troop? 
-0433:Gracious me, what a pest you are! I am forbidden to speak of… 
-0434:…!! 
-0435:"Forbidden"? Did you say "forbidden"?! 
-0436:Sumire, what do you mean? What are you forbidden to speak of, and by whom?! 
-0437:…P-Pardon me. There are some pressing matters I must attend to. 
-0438:I hate to leave after you took the time to come and see me, but I must bid you adieu for now. 
-0439:Ah, Sumire, wait! 
-0440:(Hmm… What was all that about?) 
-0441:Sumire, could you tell me about the Imperial Assault Troop? 
-0442:Imperial Assault Troop… 
-0443:By the look of it, this is just an ordinary theater. 
-0444:I have a hard time believing this is the HQ of a secret assault force. Sumire, please tell me what's going on? 
-0445:Well… 
-0446:…Pardon me. There are some pressing matters I must attend to. 
-0447:I hate to leave after you took the time to come and see me, but I must bid you adieu for now. 
-0448:Ah, Sumire, wait! 
-0449:(She seemed awfully flustered… What's going on here?) 
-0450:While taking tickets earlier, I was entrusted this letter by someone calling himself a devoted fan. 
-0451:I figured I should pass it along to you. Here you are. 
-0452:Goodness! You went to such trouble for my sake? 
-0453:You have my deepest thanks, Ensign. 
-0454:Still, why would a member of a secret troop like this receive fan mail? 
-0455:Why, beauty such as mine can hardly be hidden away from the rest of the world. 
-0456:Wherever I go, I have fans. It's not especially surprising. 
-0457:I-I see… 
-0458:I've still some matters of my own to attend to, so I will take my leave. Thank you ever so, Ensign. 
-0459:…I guess that patron ought to be satisfied now. 
-0460:… 
-0461:…Ensign, you grew so silent all of the sudden. Whatever is the matter? 
-0462:Uh… Sorry. I was trying to think of what to say. 
-0463:I'm a busy woman, you know. I simply haven't the time to stroll along at your pace. 
-0464:Now if you will excuse me, I shall take my leave! 
-0465:Ah… She shut the door in my face. 
-0466:This appears to be a salon where the troop members come to relax. 
-0467:Sumire was drinking tea out here earlier… 
-0468:…Seems there's no one here. Better head somewhere else. 
-0469:(Oh! Sumire is here.) 
-0470:Why, Ensign Ogata. What brings you here? 
-0471:…It's Ogami. 
-0472:Oh, pardon me. I know - I'll call you "Ensign" from now on, to simplify things. 
-0473:(This is one daring outfit, all right…) 
-0474:(It's a wonder it hasn't slipped right off her shoulders.) 
-0475:…Is something the matter, Ensign? Your eyes have been fixed upon my body for some time. 
-0476:(This is one daring outfit, all right…) 
-0477:(C-Crap! My eyes are being drawn towards her chest!) 
-0478:(Then again, it's pretty hard NOT to look!) 
-0479:…Ensign, just where do your eyes keep wandering off to? 
-0480:(I'd better quit staring if I don't want to get chewed out again…) 
-0481:(Such silky, perfectly straight hair…) 
-0482:(What would you call this hair color?) 
-0483:(…Looking more closely, there appears to be a beauty mark beneath her eye.) 
-0484:(I think it's called a "tear mark." It's pretty alluring…) 
-0485:Ensign, you've been gazing at my face for some time now. 
-0486:Oh, I, uh… S-Sorry. 
-0487:Not to worry. 
-0488:A man would have to be mad to not be captivated by my beauty. 
-0489:(I'd better stop staring like an idiot.) 
-0490:(…Looking more closely, there appears to be a beauty mark beneath her eye.) 
-0491:What is it, Ensign? Did you wish to speak with me? 
-0492:Drinking tea before a performance is the perfect way to dissolve tension. 
-0493:By the way, Ensign… What was it you needed? 
-0494:(Her hair is gathered back in a hairband.) 
-0495:(…I wonder what her hair would look like without it?) 
-0496:'Scuse me… 
-0497:…! 
-0498:E-Ensign! What on EARTH do you think you're doing, grabbing at a lady's hair?! 
-0499:I-I just wanted to see what your hair is like without the headband… 
-0500:You'd have better luck were you to try such a thing with Iris's ribbon! 
-0501:And here I believed you to be rather mature… How frightfully rude! 
-0502:I'll be going! 
-0503:Guess I pushed Sumire too far… She really let me have it. 
-0504:…Oh well. I'd better go too. 
-0505:Ensign, do you really mean to leave in the middle of our conversation? 
-0506:Ask about the Troop. <br> Ask Sumire about herself. 
-0507:Ask about the Troop. <br> Ask Sumire about herself. <br> Hand her the letter. 
-0508:Sumire, could you tell me about the Imperial Assault Troop? 
-0509:Imperial Assault Troop… 
-0510:By the look of it, this is just an ordinary theater. 
-0511:I have a hard time believing this is the HQ of a secret assault force. Sumire, please tell me what's going on? 
-0512:Well… 
-0513:I hope it's not too forward of me to say, but I'd love to know more about you… 
-0514:My my, Ensign… How unexpectedly straight to the point you are. 
-0515:As I mentioned before, I am the daughter of the Kanzaki family, which controls the Kanzaki Group. 
-0516:Originally, the only stage I stood upon was the stage of high society. 
-0517:Then Kanzaki Heavy Industries and the theater began collaborating with each other, and so I came to live here. 
-0518:Kanzaki Heavy Industries? Why would a theater collaborate with an industrial manufacturing company? 
-0519:Ah, w-well now… 
-0520:While taking tickets earlier, I was entrusted this letter by someone calling himself a devoted fan. 
-0521:I figured I should pass it along to you. Here you are. 
-0522:Goodness! You went to such trouble for my sake? 
-0523:You have my deepest thanks, Ensign. 
-0524:I had been wondering just what sort of man had been assigned to us… 
-0525:…but it puts me at ease to see how attentive you are. 
-0526:I-Is that so… 
-0527:Hang on, there's something strange about this… 
-0528:Why would a member of a secret troop like this receive fan mail? 
-0529:Well, no matter where I go or what I do, I've no shortage of gentleman admirers. 
-0530:I-I see… 
-0531:Whatever is the matter? Has a cat got your tongue? Oh, I do despise an unreliable man. 
-0532:You would do well to straighten up your act, Ensign. 
-0533:Sumireee! …Oh, you're here too, Ogami? 
-0534:Sakura… 
-0535:Sumire, it's almost time for you to go on stage. Please come get ready. 
-0536:How good of you to come for me. I must drop by my room for a moment, then I'll be right there. 
-0537:By the way… May I pose a question to you, Ensign? 
-0538:Eh, to me? 
-0539:Yes. Between myself and Sakura, what sort of woman do you prefer? 
-0540:…! 
-0541:Won't you tell me, Ensign? 
-0542:Girls like Sumire. <br> Girls like Sakura. 
-0543:I suppose… Sumire is my type. 
-0544:…Hmph. 
-0545:Ohohoho! Naturally. You have excellent taste, Ensign. 
-0546:…I'll be going. 
-0547:Oh, Sakura… 
-0548:I don't want to hear it! 
-0549:My, that was rather harsh of her… 
-0550:Well, I shall take my leave now, Ensign. 
-0551:I guess I offended Sakura… 
-0552:I suppose… Sakura is my type. 
-0553:What was that?! Ensign, you simply have no eye for the finer things! 
-0554:How very distasteful! I will be going, now! 
-0555:Ah, Sumire! 
-0556:Ogami, I need to go after her…Please excuse me. 
-0557:I really shouldn't have said anything with both of them there… 
-0558:Oh! …Sakura… 
+0382:0101TBL.TXT:0382:<br>   Traduction manquante!
+0383:0101TBL.TXT:0383:<br>   Traduction manquante!
+0384:0101TBL.TXT:0384:<br>   Traduction manquante!
+0385:0101TBL.TXT:0385:<br>   Traduction manquante!
+0386:0101TBL.TXT:0386:<br>   Traduction manquante!
+0387:0101TBL.TXT:0387:<br>   Traduction manquante!
+0388:0101TBL.TXT:0388:<br>   Traduction manquante!
+0389:0101TBL.TXT:0389:<br>   Traduction manquante!
+0390:0101TBL.TXT:0390:<br>   Traduction manquante!
+0391:0101TBL.TXT:0391:<br>   Traduction manquante!
+0392:0101TBL.TXT:0392:<br>   Traduction manquante!
+0393:0101TBL.TXT:0393:<br>   Traduction manquante!
+0394:0101TBL.TXT:0394:<br>   Traduction manquante!
+0395:0101TBL.TXT:0395:<br>   Traduction manquante!
+0396:0101TBL.TXT:0396:<br>   Traduction manquante!
+0397:0101TBL.TXT:0397:<br>   Traduction manquante!
+0398:0101TBL.TXT:0398:<br>   Traduction manquante!
+0399:0101TBL.TXT:0399:<br>   Traduction manquante!
+0400:0101TBL.TXT:0400:<br>   Traduction manquante!
+0401:0101TBL.TXT:0401:<br>   Traduction manquante!
+0402:0101TBL.TXT:0402:<br>   Traduction manquante!
+0403:0101TBL.TXT:0403:<br>   Traduction manquante!
+0404:0101TBL.TXT:0404:<br>   Traduction manquante!
+0405:0101TBL.TXT:0405:<br>   Traduction manquante!
+0406:0101TBL.TXT:0406:<br>   Traduction manquante!
+0407:0101TBL.TXT:0407:<br>   Traduction manquante!
+0408:0101TBL.TXT:0408:<br>   Traduction manquante!
+0409:0101TBL.TXT:0409:<br>   Traduction manquante!
+0410:0101TBL.TXT:0410:<br>   Traduction manquante!
+0411:0101TBL.TXT:0411:<br>   Traduction manquante!
+0412:0101TBL.TXT:0412:<br>   Traduction manquante!
+0413:0101TBL.TXT:0413:<br>   Traduction manquante!
+0414:0101TBL.TXT:0414:<br>   Traduction manquante!
+0415:0101TBL.TXT:0415:<br>   Traduction manquante!
+0416:0101TBL.TXT:0416:<br>   Traduction manquante!
+0417:0101TBL.TXT:0417:<br>   Traduction manquante!
+0418:0101TBL.TXT:0418:<br>   Traduction manquante!
+0419:0101TBL.TXT:0419:<br>   Traduction manquante!
+0420:0101TBL.TXT:0420:<br>   Traduction manquante!
+0421:0101TBL.TXT:0421:<br>   Traduction manquante!
+0422:0101TBL.TXT:0422:<br>   Traduction manquante!
+0423:0101TBL.TXT:0423:<br>   Traduction manquante!
+0424:0101TBL.TXT:0424:<br>   Traduction manquante!
+0425:0101TBL.TXT:0425:<br>   Traduction manquante!
+0426:0101TBL.TXT:0426:<br>   Traduction manquante!
+0427:0101TBL.TXT:0427:<br>   Traduction manquante!
+0428:0101TBL.TXT:0428:<br>   Traduction manquante!
+0429:0101TBL.TXT:0429:<br>   Traduction manquante!
+0430:0101TBL.TXT:0430:<br>   Traduction manquante!
+0431:0101TBL.TXT:0431:<br>   Traduction manquante!
+0432:0101TBL.TXT:0432:<br>   Traduction manquante!
+0433:0101TBL.TXT:0433:<br>   Traduction manquante!
+0434:0101TBL.TXT:0434:<br>   Traduction manquante!
+0435:0101TBL.TXT:0435:<br>   Traduction manquante!
+0436:0101TBL.TXT:0436:<br>   Traduction manquante!
+0437:0101TBL.TXT:0437:<br>   Traduction manquante!
+0438:0101TBL.TXT:0438:<br>   Traduction manquante!
+0439:0101TBL.TXT:0439:<br>   Traduction manquante!
+0440:0101TBL.TXT:0440:<br>   Traduction manquante!
+0441:0101TBL.TXT:0441:<br>   Traduction manquante!
+0442:0101TBL.TXT:0442:<br>   Traduction manquante!
+0443:0101TBL.TXT:0443:<br>   Traduction manquante!
+0444:0101TBL.TXT:0444:<br>   Traduction manquante!
+0445:0101TBL.TXT:0445:<br>   Traduction manquante!
+0446:0101TBL.TXT:0446:<br>   Traduction manquante!
+0447:0101TBL.TXT:0447:<br>   Traduction manquante!
+0448:0101TBL.TXT:0448:<br>   Traduction manquante!
+0449:0101TBL.TXT:0449:<br>   Traduction manquante!
+0450:0101TBL.TXT:0450:<br>   Traduction manquante!
+0451:0101TBL.TXT:0451:<br>   Traduction manquante!
+0452:0101TBL.TXT:0452:<br>   Traduction manquante!
+0453:0101TBL.TXT:0453:<br>   Traduction manquante!
+0454:0101TBL.TXT:0454:<br>   Traduction manquante!
+0455:0101TBL.TXT:0455:<br>   Traduction manquante!
+0456:0101TBL.TXT:0456:<br>   Traduction manquante!
+0457:0101TBL.TXT:0457:<br>   Traduction manquante!
+0458:0101TBL.TXT:0458:<br>   Traduction manquante!
+0459:0101TBL.TXT:0459:<br>   Traduction manquante!
+0460:0101TBL.TXT:0460:<br>   Traduction manquante!
+0461:0101TBL.TXT:0461:<br>   Traduction manquante!
+0462:0101TBL.TXT:0462:<br>   Traduction manquante!
+0463:0101TBL.TXT:0463:<br>   Traduction manquante!
+0464:0101TBL.TXT:0464:<br>   Traduction manquante!
+0465:0101TBL.TXT:0465:<br>   Traduction manquante!
+0466:0101TBL.TXT:0466:<br>   Traduction manquante!
+0467:0101TBL.TXT:0467:<br>   Traduction manquante!
+0468:0101TBL.TXT:0468:<br>   Traduction manquante!
+0469:0101TBL.TXT:0469:<br>   Traduction manquante!
+0470:0101TBL.TXT:0470:<br>   Traduction manquante!
+0471:0101TBL.TXT:0471:<br>   Traduction manquante!
+0472:0101TBL.TXT:0472:<br>   Traduction manquante!
+0473:0101TBL.TXT:0473:<br>   Traduction manquante!
+0474:0101TBL.TXT:0474:<br>   Traduction manquante!
+0475:0101TBL.TXT:0475:<br>   Traduction manquante!
+0476:0101TBL.TXT:0476:<br>   Traduction manquante!
+0477:0101TBL.TXT:0477:<br>   Traduction manquante!
+0478:0101TBL.TXT:0478:<br>   Traduction manquante!
+0479:0101TBL.TXT:0479:<br>   Traduction manquante!
+0480:0101TBL.TXT:0480:<br>   Traduction manquante!
+0481:0101TBL.TXT:0481:<br>   Traduction manquante!
+0482:0101TBL.TXT:0482:<br>   Traduction manquante!
+0483:0101TBL.TXT:0483:<br>   Traduction manquante!
+0484:0101TBL.TXT:0484:<br>   Traduction manquante!
+0485:0101TBL.TXT:0485:<br>   Traduction manquante!
+0486:0101TBL.TXT:0486:<br>   Traduction manquante!
+0487:0101TBL.TXT:0487:<br>   Traduction manquante!
+0488:0101TBL.TXT:0488:<br>   Traduction manquante!
+0489:0101TBL.TXT:0489:<br>   Traduction manquante!
+0490:0101TBL.TXT:0490:<br>   Traduction manquante!
+0491:0101TBL.TXT:0491:<br>   Traduction manquante!
+0492:0101TBL.TXT:0492:<br>   Traduction manquante!
+0493:0101TBL.TXT:0493:<br>   Traduction manquante!
+0494:0101TBL.TXT:0494:<br>   Traduction manquante!
+0495:0101TBL.TXT:0495:<br>   Traduction manquante!
+0496:0101TBL.TXT:0496:<br>   Traduction manquante!
+0497:0101TBL.TXT:0497:<br>   Traduction manquante!
+0498:0101TBL.TXT:0498:<br>   Traduction manquante!
+0499:0101TBL.TXT:0499:<br>   Traduction manquante!
+0500:0101TBL.TXT:0500:<br>   Traduction manquante!
+0501:0101TBL.TXT:0501:<br>   Traduction manquante!
+0502:0101TBL.TXT:0502:<br>   Traduction manquante!
+0503:0101TBL.TXT:0503:<br>   Traduction manquante!
+0504:0101TBL.TXT:0504:<br>   Traduction manquante!
+0505:0101TBL.TXT:0505:<br>   Traduction manquante!
+0506:0101TBL.TXT:0506:<br>   Traduction manquante!
+0507:0101TBL.TXT:0507:<br>   Traduction manquante!
+0508:0101TBL.TXT:0508:<br>   Traduction manquante!
+0509:0101TBL.TXT:0509:<br>   Traduction manquante!
+0510:0101TBL.TXT:0510:<br>   Traduction manquante!
+0511:0101TBL.TXT:0511:<br>   Traduction manquante!
+0512:0101TBL.TXT:0512:<br>   Traduction manquante!
+0513:0101TBL.TXT:0513:<br>   Traduction manquante!
+0514:0101TBL.TXT:0514:<br>   Traduction manquante!
+0515:0101TBL.TXT:0515:<br>   Traduction manquante!
+0516:0101TBL.TXT:0516:<br>   Traduction manquante!
+0517:0101TBL.TXT:0517:<br>   Traduction manquante!
+0518:0101TBL.TXT:0518:<br>   Traduction manquante!
+0519:0101TBL.TXT:0519:<br>   Traduction manquante!
+0520:0101TBL.TXT:0520:<br>   Traduction manquante!
+0521:0101TBL.TXT:0521:<br>   Traduction manquante!
+0522:0101TBL.TXT:0522:<br>   Traduction manquante!
+0523:0101TBL.TXT:0523:<br>   Traduction manquante!
+0524:0101TBL.TXT:0524:<br>   Traduction manquante!
+0525:0101TBL.TXT:0525:<br>   Traduction manquante!
+0526:0101TBL.TXT:0526:<br>   Traduction manquante!
+0527:0101TBL.TXT:0527:<br>   Traduction manquante!
+0528:0101TBL.TXT:0528:<br>   Traduction manquante!
+0529:0101TBL.TXT:0529:<br>   Traduction manquante!
+0530:0101TBL.TXT:0530:<br>   Traduction manquante!
+0531:0101TBL.TXT:0531:<br>   Traduction manquante!
+0532:0101TBL.TXT:0532:<br>   Traduction manquante!
+0533:0101TBL.TXT:0533:<br>   Traduction manquante!
+0534:0101TBL.TXT:0534:<br>   Traduction manquante!
+0535:0101TBL.TXT:0535:<br>   Traduction manquante!
+0536:0101TBL.TXT:0536:<br>   Traduction manquante!
+0537:0101TBL.TXT:0537:<br>   Traduction manquante!
+0538:0101TBL.TXT:0538:<br>   Traduction manquante!
+0539:0101TBL.TXT:0539:<br>   Traduction manquante!
+0540:0101TBL.TXT:0540:<br>   Traduction manquante!
+0541:0101TBL.TXT:0541:<br>   Traduction manquante!
+0542:0101TBL.TXT:0542:<br>   Traduction manquante!
+0543:0101TBL.TXT:0543:<br>   Traduction manquante!
+0544:0101TBL.TXT:0544:<br>   Traduction manquante!
+0545:0101TBL.TXT:0545:<br>   Traduction manquante!
+0546:0101TBL.TXT:0546:<br>   Traduction manquante!
+0547:0101TBL.TXT:0547:<br>   Traduction manquante!
+0548:0101TBL.TXT:0548:<br>   Traduction manquante!
+0549:0101TBL.TXT:0549:<br>   Traduction manquante!
+0550:0101TBL.TXT:0550:<br>   Traduction manquante!
+0551:0101TBL.TXT:0551:<br>   Traduction manquante!
+0552:0101TBL.TXT:0552:<br>   Traduction manquante!
+0553:0101TBL.TXT:0553:<br>   Traduction manquante!
+0554:0101TBL.TXT:0554:<br>   Traduction manquante!
+0555:0101TBL.TXT:0555:<br>   Traduction manquante!
+0556:0101TBL.TXT:0556:<br>   Traduction manquante!
+0557:0101TBL.TXT:0557:<br>   Traduction manquante!
+0558:0101TBL.TXT:0558:<br>   Traduction manquante!
 0559:Ôgami…
-0560:What you said… It made me happy. 
-0561:Well, see you later, then… 
-0562:Sakura… 
-0563:What sort of woman I prefer… Well… 
-0564:…Ugh, what an indecisive man you are, Ensign! 
-0565:Sumire, don't be like that. You're putting him in an awkward position. 
-0566:I would hardly think there is any room for debate on the matter… 
-0567:I will let it slide for now, I suppose. Well, I must be off. 
-0568:I should go too. See you later, Ogami. 
-0569:Yeah, sure. 
-0570:Ogami… 
-0571:I'm kind of relieved, but also a bit disappointed… What a complicated feeling this is. 
-0572:…Well, I should get going. 
-0573:Sakura… 
-0574:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
-0575:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
-0576:Ensign, you've been restlessly fidgeting during this entire conversation! 
-0577:Oh, I-I'm sorry… 
-0578:Good heavens…I can scarcely believe you'd wish to look away when I'm standing right before you. 
-0579:…Ensign. Just where are your eyes wandering off while I'm speaking to you? 
-0580:All right, time to head for the manager's office. 
-0581:This must be the secretary's office. 
-0582:The pleasure's all mine. 
-0583:If you wouldn't mind, please fill out these forms for me. 
-0584:No problem. Let's see… Will this do? 
-0585:Yes, that's fine. Thanks very much. 
-0586:Manager Yoneda is in his office, right next door. 
-0587:Thank you. 
-0588:(Ah…Someone's here!) 
-0589:The pleasure's all mine. 
-0590:It's nice to meet you. I look forward to working with you. 
-0591:(This is the secretary's office. Yuri and Kasumi are here.) 
-0592:I came by to see you. <br> There's no particular reason. 
-0593:Actually, I did come by to see you. There's a few things I wanted to ask about… 
-0594:Y-Yes, but I wasn't… 
-0595:There's no particular reason. 
-0596:I-It's not that I DON'T want to see you or anything… 
-0597:Ah… Well, I just… 
-0598:N-No, it's… I just meant… 
-0599:(Yuri and Kasumi are here.) 
-0600:I'll come by again later. Keep up the good work. 
-0601:I'll come by again later. Keep up the good work. 
-0602:I'll come by again later. Keep up the good work. 
-0603:By the way, Ogami… 
-0604:The stairway to the basement is off-limits, by order of Manager Yoneda. 
-0605:Please take care that you don't wander into the basement, Ogami. 
-0606:There won't be any performances tomorrow. It's so nice to have a day off. 
-0607:Ogami, I'm quite knowledgeable about this theater. 
-0608:If you ever run into a problem, feel free to ask me! 
-0609:Sumire spends a lot of time in the upstairs lounge. 
-0610:By the way, you heard about that mysterious girl who defeated a monster in Ueno Park a while back, right? 
-0611:You know, that was actually - 
-0612:Yuri! 
-0613:Oh… So~rry! 
-0614:Ogami, go ahead and forget what I just said! 
-0615:Hm…? 
-0616:Maria is an avid book reader! 
-0617:Seems like she's in the library every night picking out books to read. 
-0618:Iris is just the cutest thing! She reminds me of a little doll. 
-0619:But you know… She's rumored to be the daughter of a very rich family. 
-0620:The Flower Division has six members in total. 
-0621:Huh? But I've only met four members so far. 
-0622:The other two aren't here right now. Their names are Kanna and Kohran. 
-0623:They'll be returning to the theater before too long. 
-0624:All right, I'm going to ask Commander Yoneda more about my position. 
-0625:Whoa! You startled me. W-Who might you be? 
-0626:Of course. <br> I'm a little busy… 
-0627:Of course. 
-0628:I'm a little busy at the moment… Could it wait until later? 
-0629:I-I understand. 
-0630:Y-Yes, sorry. I just blanked out for a moment… 
-0631:(Someone's coming up behind me…) 
-0632:Whooaa! Wh-Who's covering my eyes?! 
-0633:Sumire? <br> Sakura? <br> Maria? 
-0634:That voice… is that Sumire? 
-0635:Nope! 
-0636:Oh… It was you, Sakura. You sure startled me. 
-0637:Hehe… I'm a little disappointed though, Ogami. 
-0638:I thought you would've remembered my voice by now… 
-0639:I'm… I'm sorry. 
-0640:Oh, it's fine. Just try to remember it from here on. 
-0641:Well, I should get going. 
-0642:Ah - Sakura, hold on! There's something I wanted to ask you. 
-0643:What is it? 
-0644:That voice… is that you, Sakura? 
-0645:Hehe… You got me. 
-0646:…So it was you. Boy, you sure startled me. 
-0647:Even you have a mischievous side, then, huh? 
-0648:Hehe… Sorry about that. 
-0649:But…it makes me so happy that you remembered my voice. 
-0650:Huh?… 
-0651:Uh… S-Sorry. I guess that was a strange thing to say. 
-0652:W-Well, I should get going… 
-0653:Ah - Sakura, hold on! There's something I wanted to ask you. 
-0654:What is it? 
-0655:That voice… is that Maria? 
-0656:…Wrong. 
-0657:…Oh, it was you, Sakura. 
-0658:How could you mistake my voice for Maria's? We sound completely different! 
-0659:We've spent all this time together, and you can't even remember my voice? 
-0660:S-Sakura… 
-0661:I'll be going! Pardon me for saying such an odd thing. 
-0662:Ah… Looks like I offended her. 
-0663:Oh well. I'd better go. 
-0664:Huh? …Um, uh… 
-0665:Come on… You really don't know, Ogami? 
-0666:Oh, it was you, Sakura? You sure startled me. 
-0667:Sorry… You came up behind me so suddenly, I didn't have time to think. 
-0668:No, it's all right. I should be apologizing to you. 
-0669:I mean… It does seem very like you to be startled by someone's touch. 
-0670:Huh?… 
-0671:Uh… I-I'm sorry. What a strange thing for me to say… 
-0672:W-Well, I should get going… 
-0673:Ah - Sakura, hold on! There's something I wanted to ask you. 
-0674:What is it? 
-0675:Tell me about the Troop! <br> Where are you headed? <br> …Do you have a boyfriend? 
-0676:Sakura, could you please tell me about the Imperial Assault Troop? 
-0677:…! 
-0678:This place is just an ordinary theater. Where exactly is the secret squad, the Assault Troop, supposed to be?! 
-0679:W-Well, uh… 
-0680:I'm sorry… I need to find Sumire. Please excuse me. 
-0681:Sakura, wait! 
+0560:0101TBL.TXT:0560:<br>   Traduction manquante!
+0561:0101TBL.TXT:0561:<br>   Traduction manquante!
+0562:0101TBL.TXT:0562:<br>   Traduction manquante!
+0563:0101TBL.TXT:0563:<br>   Traduction manquante!
+0564:0101TBL.TXT:0564:<br>   Traduction manquante!
+0565:0101TBL.TXT:0565:<br>   Traduction manquante!
+0566:0101TBL.TXT:0566:<br>   Traduction manquante!
+0567:0101TBL.TXT:0567:<br>   Traduction manquante!
+0568:0101TBL.TXT:0568:<br>   Traduction manquante!
+0569:0101TBL.TXT:0569:<br>   Traduction manquante!
+0570:0101TBL.TXT:0570:<br>   Traduction manquante!
+0571:0101TBL.TXT:0571:<br>   Traduction manquante!
+0572:0101TBL.TXT:0572:<br>   Traduction manquante!
+0573:0101TBL.TXT:0573:<br>   Traduction manquante!
+0574:0101TBL.TXT:0574:<br>   Traduction manquante!
+0575:0101TBL.TXT:0575:<br>   Traduction manquante!
+0576:0101TBL.TXT:0576:<br>   Traduction manquante!
+0577:0101TBL.TXT:0577:<br>   Traduction manquante!
+0578:0101TBL.TXT:0578:<br>   Traduction manquante!
+0579:0101TBL.TXT:0579:<br>   Traduction manquante!
+0580:0101TBL.TXT:0580:<br>   Traduction manquante!
+0581:0101TBL.TXT:0581:<br>   Traduction manquante!
+0582:0101TBL.TXT:0582:<br>   Traduction manquante!
+0583:0101TBL.TXT:0583:<br>   Traduction manquante!
+0584:0101TBL.TXT:0584:<br>   Traduction manquante!
+0585:0101TBL.TXT:0585:<br>   Traduction manquante!
+0586:0101TBL.TXT:0586:<br>   Traduction manquante!
+0587:0101TBL.TXT:0587:<br>   Traduction manquante!
+0588:0101TBL.TXT:0588:<br>   Traduction manquante!
+0589:0101TBL.TXT:0589:<br>   Traduction manquante!
+0590:0101TBL.TXT:0590:<br>   Traduction manquante!
+0591:0101TBL.TXT:0591:<br>   Traduction manquante!
+0592:0101TBL.TXT:0592:<br>   Traduction manquante!
+0593:0101TBL.TXT:0593:<br>   Traduction manquante!
+0594:0101TBL.TXT:0594:<br>   Traduction manquante!
+0595:0101TBL.TXT:0595:<br>   Traduction manquante!
+0596:0101TBL.TXT:0596:<br>   Traduction manquante!
+0597:0101TBL.TXT:0597:<br>   Traduction manquante!
+0598:0101TBL.TXT:0598:<br>   Traduction manquante!
+0599:0101TBL.TXT:0599:<br>   Traduction manquante!
+0600:0101TBL.TXT:0600:<br>   Traduction manquante!
+0601:0101TBL.TXT:0601:<br>   Traduction manquante!
+0602:0101TBL.TXT:0602:<br>   Traduction manquante!
+0603:0101TBL.TXT:0603:<br>   Traduction manquante!
+0604:0101TBL.TXT:0604:<br>   Traduction manquante!
+0605:0101TBL.TXT:0605:<br>   Traduction manquante!
+0606:0101TBL.TXT:0606:<br>   Traduction manquante!
+0607:0101TBL.TXT:0607:<br>   Traduction manquante!
+0608:0101TBL.TXT:0608:<br>   Traduction manquante!
+0609:0101TBL.TXT:0609:<br>   Traduction manquante!
+0610:0101TBL.TXT:0610:<br>   Traduction manquante!
+0611:0101TBL.TXT:0611:<br>   Traduction manquante!
+0612:0101TBL.TXT:0612:<br>   Traduction manquante!
+0613:0101TBL.TXT:0613:<br>   Traduction manquante!
+0614:0101TBL.TXT:0614:<br>   Traduction manquante!
+0615:0101TBL.TXT:0615:<br>   Traduction manquante!
+0616:0101TBL.TXT:0616:<br>   Traduction manquante!
+0617:0101TBL.TXT:0617:<br>   Traduction manquante!
+0618:0101TBL.TXT:0618:<br>   Traduction manquante!
+0619:0101TBL.TXT:0619:<br>   Traduction manquante!
+0620:0101TBL.TXT:0620:<br>   Traduction manquante!
+0621:0101TBL.TXT:0621:<br>   Traduction manquante!
+0622:0101TBL.TXT:0622:<br>   Traduction manquante!
+0623:0101TBL.TXT:0623:<br>   Traduction manquante!
+0624:0101TBL.TXT:0624:<br>   Traduction manquante!
+0625:0101TBL.TXT:0625:<br>   Traduction manquante!
+0626:0101TBL.TXT:0626:<br>   Traduction manquante!
+0627:0101TBL.TXT:0627:<br>   Traduction manquante!
+0628:0101TBL.TXT:0628:<br>   Traduction manquante!
+0629:0101TBL.TXT:0629:<br>   Traduction manquante!
+0630:0101TBL.TXT:0630:<br>   Traduction manquante!
+0631:0101TBL.TXT:0631:<br>   Traduction manquante!
+0632:0101TBL.TXT:0632:<br>   Traduction manquante!
+0633:0101TBL.TXT:0633:<br>   Traduction manquante!
+0634:0101TBL.TXT:0634:<br>   Traduction manquante!
+0635:0101TBL.TXT:0635:<br>   Traduction manquante!
+0636:0101TBL.TXT:0636:<br>   Traduction manquante!
+0637:0101TBL.TXT:0637:<br>   Traduction manquante!
+0638:0101TBL.TXT:0638:<br>   Traduction manquante!
+0639:0101TBL.TXT:0639:<br>   Traduction manquante!
+0640:0101TBL.TXT:0640:<br>   Traduction manquante!
+0641:0101TBL.TXT:0641:<br>   Traduction manquante!
+0642:0101TBL.TXT:0642:<br>   Traduction manquante!
+0643:0101TBL.TXT:0643:<br>   Traduction manquante!
+0644:0101TBL.TXT:0644:<br>   Traduction manquante!
+0645:0101TBL.TXT:0645:<br>   Traduction manquante!
+0646:0101TBL.TXT:0646:<br>   Traduction manquante!
+0647:0101TBL.TXT:0647:<br>   Traduction manquante!
+0648:0101TBL.TXT:0648:<br>   Traduction manquante!
+0649:0101TBL.TXT:0649:<br>   Traduction manquante!
+0650:0101TBL.TXT:0650:<br>   Traduction manquante!
+0651:0101TBL.TXT:0651:<br>   Traduction manquante!
+0652:0101TBL.TXT:0652:<br>   Traduction manquante!
+0653:0101TBL.TXT:0653:<br>   Traduction manquante!
+0654:0101TBL.TXT:0654:<br>   Traduction manquante!
+0655:0101TBL.TXT:0655:<br>   Traduction manquante!
+0656:0101TBL.TXT:0656:<br>   Traduction manquante!
+0657:0101TBL.TXT:0657:<br>   Traduction manquante!
+0658:0101TBL.TXT:0658:<br>   Traduction manquante!
+0659:0101TBL.TXT:0659:<br>   Traduction manquante!
+0660:0101TBL.TXT:0660:<br>   Traduction manquante!
+0661:0101TBL.TXT:0661:<br>   Traduction manquante!
+0662:0101TBL.TXT:0662:<br>   Traduction manquante!
+0663:0101TBL.TXT:0663:<br>   Traduction manquante!
+0664:0101TBL.TXT:0664:<br>   Traduction manquante!
+0665:0101TBL.TXT:0665:<br>   Traduction manquante!
+0666:0101TBL.TXT:0666:<br>   Traduction manquante!
+0667:0101TBL.TXT:0667:<br>   Traduction manquante!
+0668:0101TBL.TXT:0668:<br>   Traduction manquante!
+0669:0101TBL.TXT:0669:<br>   Traduction manquante!
+0670:0101TBL.TXT:0670:<br>   Traduction manquante!
+0671:0101TBL.TXT:0671:<br>   Traduction manquante!
+0672:0101TBL.TXT:0672:<br>   Traduction manquante!
+0673:0101TBL.TXT:0673:<br>   Traduction manquante!
+0674:0101TBL.TXT:0674:<br>   Traduction manquante!
+0675:0101TBL.TXT:0675:<br>   Traduction manquante!
+0676:0101TBL.TXT:0676:<br>   Traduction manquante!
+0677:0101TBL.TXT:0677:<br>   Traduction manquante!
+0678:0101TBL.TXT:0678:<br>   Traduction manquante!
+0679:0101TBL.TXT:0679:<br>   Traduction manquante!
+0680:0101TBL.TXT:0680:<br>   Traduction manquante!
+0681:0101TBL.TXT:0681:<br>   Traduction manquante!
 0682:…Et les voilà parties.
-0683:Why do I get the feeling… she was running from me? 
+0683:0101TBL.TXT:0683:<br>   Traduction manquante!
 0684:Je ferais mieux d'aller voir<br>ailleurs…
-0685:Where are you headed, Sakura? 
-0686:The performance is due to begin soon, so I'm looking for Sumire. 
-0687:I'm willing to bet she's somewhere on the second floor… Well, I'll be going. 
-0688:…Shoot, I forgot to ask her about the Imperial Assault Troop. 
-0689:…Oh well. I'd better go too. 
-0690:Where are you headed, Sakura? 
-0691:Me? Rehearsal is about to begin, so I need to get going. 
-0692:Well, I'll be on my way! 
-0693:…Rehearsal? Rehearsal for what? 
-0694:…Oh well. I'd better go too. 
-0695:U-Uh… Sakura, do you have a boyfriend? 
-0696:Huh!? 
+0685:0101TBL.TXT:0685:<br>   Traduction manquante!
+0686:0101TBL.TXT:0686:<br>   Traduction manquante!
+0687:0101TBL.TXT:0687:<br>   Traduction manquante!
+0688:0101TBL.TXT:0688:<br>   Traduction manquante!
+0689:0101TBL.TXT:0689:<br>   Traduction manquante!
+0690:0101TBL.TXT:0690:<br>   Traduction manquante!
+0691:0101TBL.TXT:0691:<br>   Traduction manquante!
+0692:0101TBL.TXT:0692:<br>   Traduction manquante!
+0693:0101TBL.TXT:0693:<br>   Traduction manquante!
+0694:0101TBL.TXT:0694:<br>   Traduction manquante!
+0695:0101TBL.TXT:0695:<br>   Traduction manquante!
+0696:0101TBL.TXT:0696:<br>   Traduction manquante!
 0697:Ôgami…
-0698:No, I don't. But… 
+0698:0101TBL.TXT:0698:<br>   Traduction manquante!
 0699:…
-0700:S-Sorry, I need to go. 
-0701:Ah, Sakura… Did I do something wrong? Maybe that was a strange thing to ask. 
+0700:0101TBL.TXT:0700:<br>   Traduction manquante!
+0701:0101TBL.TXT:0701:<br>   Traduction manquante!
 0702:Je ferais mieux d'aller voir<br>ailleurs…
-0703:Uh, never mind. 
-0704:You're an odd one, Ogami. Well, I'll be on my way! 
-0705:…I never did ask her anything. 
-0706:…Oh well. I'd better go too. 
-0707:Well, keep up the good work. 
-0708:Well, keep up the good work. 
+0703:0101TBL.TXT:0703:<br>   Traduction manquante!
+0704:0101TBL.TXT:0704:<br>   Traduction manquante!
+0705:0101TBL.TXT:0705:<br>   Traduction manquante!
+0706:0101TBL.TXT:0706:<br>   Traduction manquante!
+0707:0101TBL.TXT:0707:<br>   Traduction manquante!
+0708:0101TBL.TXT:0708:<br>   Traduction manquante!
 0709:Je ferais mieux d'aller voir<br>ailleurs…
-0710:You'd like to buy a photo? Thank you! 
-0711:Oh, are you done? 
-0712:Ah, Ogami! The photos are extremely popular items. They always sell out right away. 
-0713:For that reason, I'm afraid I can only sell you one at a time. My apologies. 
-0714:Hmm… By the way, just whose photo is this? 
-0715:Wh-What the - ?! 
-0716:(Why are photos of a secret combat squad… being sold to the public?!) 
-0717:(Wouldn't this reveal their true identities?!) 
-0718:Ogami, what's the matter? 
-0719:Uh, n-nothing. 
-0720:(I suppose I could buy one for now.) 
-0721:Ogami, I appreciate your interest, but… 
-0722:…since the photos are meant for our patrons, I'm afraid I can only sell you one at a time. 
-0723:I'll have more stock by next month, so please wait until then. 
-0724:…I understand. 
-0725:That's a photo of Sakura. That'll be 50 zeni. 
-0726:You'd like to buy that? Thank you! 
-0727:Sakura may be new, but her photos are selling like hotcakes! 
-0728:(Sure enough, that's Sakura. Is it really OK to be selling photos of a secret combat squad like this…?) 
-0729:(But, it IS a cute photo… I guess I'll take it.) 
-0730:That's a photo of Sumire. That'll be 50 zeni. 
-0731:You'd like to buy that? Thank you! 
-0732:Her family runs the Kanzaki Group. 
-0733:Meaning, she's a big name in high society, too! How incredible! 
-0734:(That's Sumire, all right. Is it really OK to be selling photos of a secret combat squad like this…?) 
-0735:(But I guess I could get it, since I'm already here.) 
-0736:That's a photo of Maria. That'll be 50 zeni. 
-0737:You'd like to buy that? Thank you! 
-0738:Maria is from Russia, but I've heard her mother is Japanese. 
-0739:She's got that stoic aura about her, and gorgeous blond hair. Wish I was that cool… 
-0740:(Th-There's even a photo of Maria? Is it really OK to be selling photos of a secret combat squad like this?) 
-0741:(Well, I guess I could get it since I'm already here.) 
-0742:That's a photo of Kohran Li. That'll be 50 zeni. 
-0743:Kohran… Li? Is she Chinese? 
-0744:Yes, she was born in China. She's a brilliant scientist. 
-0745:You'd like to buy that? Thank you! 
-0746:Kohran's always joking around. She's so funny! 
-0747:I believe she's at the Hanayashiki Branch in Asakusa right now. 
-0748:(Hmm… She's wearing a Chinese dress.) 
-0749:(Guess I could get it for now.) 
-0750:That's a photo of Kanna Kirishima. That'll be 50 zeni. 
-0751:Kanna… Kirishima? 
-0752:She's very popular with children. Right now, she's in her hometown in Okinawa. 
-0753:Hmm… 
-0754:You'd like to buy that? Thank you! 
-0755:Kanna is an expert in the art of karate. Plus, she's got an amazing figure! 
-0756:I hear she went back home to Okinawa to continue her karate training. 
-0757:(I can tell she must be strong from the photo alone.) 
-0758:(Guess I could get it for now.) 
-0759:That's a photo of Iris. That'll be 50 zeni. 
-0760:You'd like to buy that? Thank you! 
-0761:Apparently, Iris is the daughter of a very wealthy French family. 
-0762:I hear she came to Japan after being scouted from France. 
-0763:(Th-There's even a photo of Iris? Is it really OK to be selling photos of a secret combat squad like this?) 
-0764:(Still… I already paid for it, so I may as well take it.) 
+0710:0101TBL.TXT:0710:<br>   Traduction manquante!
+0711:0101TBL.TXT:0711:<br>   Traduction manquante!
+0712:0101TBL.TXT:0712:<br>   Traduction manquante!
+0713:0101TBL.TXT:0713:<br>   Traduction manquante!
+0714:0101TBL.TXT:0714:<br>   Traduction manquante!
+0715:0101TBL.TXT:0715:<br>   Traduction manquante!
+0716:0101TBL.TXT:0716:<br>   Traduction manquante!
+0717:0101TBL.TXT:0717:<br>   Traduction manquante!
+0718:0101TBL.TXT:0718:<br>   Traduction manquante!
+0719:0101TBL.TXT:0719:<br>   Traduction manquante!
+0720:0101TBL.TXT:0720:<br>   Traduction manquante!
+0721:0101TBL.TXT:0721:<br>   Traduction manquante!
+0722:0101TBL.TXT:0722:<br>   Traduction manquante!
+0723:0101TBL.TXT:0723:<br>   Traduction manquante!
+0724:0101TBL.TXT:0724:<br>   Traduction manquante!
+0725:0101TBL.TXT:0725:<br>   Traduction manquante!
+0726:0101TBL.TXT:0726:<br>   Traduction manquante!
+0727:0101TBL.TXT:0727:<br>   Traduction manquante!
+0728:0101TBL.TXT:0728:<br>   Traduction manquante!
+0729:0101TBL.TXT:0729:<br>   Traduction manquante!
+0730:0101TBL.TXT:0730:<br>   Traduction manquante!
+0731:0101TBL.TXT:0731:<br>   Traduction manquante!
+0732:0101TBL.TXT:0732:<br>   Traduction manquante!
+0733:0101TBL.TXT:0733:<br>   Traduction manquante!
+0734:0101TBL.TXT:0734:<br>   Traduction manquante!
+0735:0101TBL.TXT:0735:<br>   Traduction manquante!
+0736:0101TBL.TXT:0736:<br>   Traduction manquante!
+0737:0101TBL.TXT:0737:<br>   Traduction manquante!
+0738:0101TBL.TXT:0738:<br>   Traduction manquante!
+0739:0101TBL.TXT:0739:<br>   Traduction manquante!
+0740:0101TBL.TXT:0740:<br>   Traduction manquante!
+0741:0101TBL.TXT:0741:<br>   Traduction manquante!
+0742:0101TBL.TXT:0742:<br>   Traduction manquante!
+0743:0101TBL.TXT:0743:<br>   Traduction manquante!
+0744:0101TBL.TXT:0744:<br>   Traduction manquante!
+0745:0101TBL.TXT:0745:<br>   Traduction manquante!
+0746:0101TBL.TXT:0746:<br>   Traduction manquante!
+0747:0101TBL.TXT:0747:<br>   Traduction manquante!
+0748:0101TBL.TXT:0748:<br>   Traduction manquante!
+0749:0101TBL.TXT:0749:<br>   Traduction manquante!
+0750:0101TBL.TXT:0750:<br>   Traduction manquante!
+0751:0101TBL.TXT:0751:<br>   Traduction manquante!
+0752:0101TBL.TXT:0752:<br>   Traduction manquante!
+0753:0101TBL.TXT:0753:<br>   Traduction manquante!
+0754:0101TBL.TXT:0754:<br>   Traduction manquante!
+0755:0101TBL.TXT:0755:<br>   Traduction manquante!
+0756:0101TBL.TXT:0756:<br>   Traduction manquante!
+0757:0101TBL.TXT:0757:<br>   Traduction manquante!
+0758:0101TBL.TXT:0758:<br>   Traduction manquante!
+0759:0101TBL.TXT:0759:<br>   Traduction manquante!
+0760:0101TBL.TXT:0760:<br>   Traduction manquante!
+0761:0101TBL.TXT:0761:<br>   Traduction manquante!
+0762:0101TBL.TXT:0762:<br>   Traduction manquante!
+0763:0101TBL.TXT:0763:<br>   Traduction manquante!
+0764:0101TBL.TXT:0764:<br>   Traduction manquante!
 0765:(Tsubaki porte sa tenue de<br>vendeuse. Elle lui va à ravir.)
 0766:M-mais, Monsieur Ogami ! Qu'est-<br>ce que vous regardez ? Arrêtez !
 0767:Monsieur Ogami… Cessez de me<br>fixer ainsi, ça me gêne.
-0768:(I know. Maybe if I ask casually, I can weasel the truth about this place out of her.) 
-0769:Tsubaki, could I ask you about this theater? 
-0770:Oh? If you want to know something about the theater, then I'm the girl to ask! 
-0771:Its official title is the Grand Imperial Theater, but most people just call it the Imperial Theater for short. 
-0772:We put on a different kind of performance each month! This month is a play called "The Eve of Lady Camellia." 
-0773:My name means "camellia flower," so hearing the play’s title makes me kind of happy! 
-0774:(That's not exactly what I wanted to ask about…) 
-0775:Um, Tsubaki… 
-0776:Ogami! Since you're here, why not buy a photo? 
-0777:S-Sure… 
-0778:I'll have some new photos in stock next month, so I hope you'll be all right with just the one for now. 
-0779:Hey, Iris. Do you know where everyone else went? 
-0780:Sumire is upstairs. Sakura went to go get her. 
-0781:Maria said she was going to the stage. 
-0782:I see. Thanks. 
-0783:(Oh, Iris is here.) 
-0784:… 
-0785:(…Is she angry with me for what happened earlier?) 
-0786:… 
-0787:Mon Frère, sorry about before… 
-0788:…'Cause it's not good to "eavesdrop." 
-0789:Iris… 
-0790:Maria scolded me earlier. 
-0791:Mon Frère… Please don't hate me. 
-0792:Don't worry. I wouldn't hate you because of something like that. 
-0793:You mean it? OK, then let's make up! 
-0794:By the way, Iris, there's something I wanted to ask. 
-0795:Yeeess? 
-0796:(Oh, Iris is here.) 
-0797:Oh, it's you, Mon Frère. Do you need something? 
-0798:Actually, yeah. There's something I wanted to ask you about real quick. 
-0799:Yeeess? 
-0800:(Oh, Iris is here.) 
-0801:Oh, Mon Frère! I had a lot of fun earlier! 
-0802:Yeah. Thanks for before, Iris. 
-0803:By the way, there's something I wanted to ask you. 
-0804:Yeeess? 
-0805:(Oh, Iris is here.) 
-0806:Oh, it's you, Mon Frère. Do you need something? 
-0807:Actually, yeah. There's something I wanted to ask you about real quick. 
-0808:Yeeess? 
-0809:Ask about the Troop. <br> Ask Iris about herself. 
-0810:I was wondering if you could tell me about the Imperial Assault Troop… 
-0811:Sure, OK. 
-0812:Why is the troop headquartered in a theater? 
-0813:We're in a theater, because that's where the "troop" performs. 
-0814:Isn't that obvious? You're pretty strange, Mon Frère. 
-0815:…? 
-0816:(I don't get it. There's nothing obvious about it!) 
-0817:I'd like to know more about you, Iris. 
-0818:About me? OK! Eheheh, gosh, you're making me blush… 
-0819:So, I used to live in France. 
-0820:I was recruited and came to Japan, and now I live here. 
-0821:I hadn't realized… 
-0822:Thank you for sharing that with me, Iris. Now I know a little more about you. 
-0823:Uh-huh! Next time, you should tell me something about yourself, Mon Frère! 
-0824:What is it, Mon Frère? Didn't you want to ask me something? 
-0825:Huh? Oh, sorry… I blanked out for a second. 
-0826:You're acting so odd. Are you OK? 
-0827:(What adorable clothes. She looks like a doll.) 
-0828:Doesn't this dress look good on me? I have lots of fancy clothes. 
-0829:(What adorable clothes. She looks like a doll.) 
-0830:Mon Frère, do you remember my bear's name? 
-0831:Jean Pierre? <br> Jumper? <br> Jean-Paul? 
-0832:Umm… It's Jean Pierre, right? 
-0833:Noo! It's Jean-Paul! Jean-Paul! 
-0834:S-Sorry. I forgot. 
-0835:…You better remember. He's my very best friend. 
-0836:He's a bear, not a sweater! And his name is Jean-Paul! 
-0837:S-Sorry. I forgot. 
-0838:…You better remember. He's my very best friend. 
-0839:I remember. It's Jean-Paul, isn't it? 
-0840:Yaay! Mon Frère, you really remembered! 
-0841:Of course. He's your very best friend. 
-0842:Thank you, Mon Frère… I'm so happy you remembered. 
-0843:Erm… Sorry. I forgot… 
-0844:You forgot? He's Jean-Paul the bear. 
-0845:Make sure you remember his name, OK, Mon Frère? 
-0846:You got it. 
-0847:Hey, Jean-Paul. Mon Frère here is our new friend. 
-0848:(That's an enormous ribbon… but it looks great on her.) 
-0849:Isn't this ribbon sooo cute? It's my favorite! 
-0850:(She has beautiful blond hair.) 
-0851:You know, tying up this ribbon all nice is hard. 
-0852:(Such pretty blue eyes…) 
-0853:Mon Frère… If you keep looking into my eyes like that, I'm gonna get embarrassed… 
-0854:(Such pretty blue eyes…) 
-0855:Do you know where everyone else is? 
-0856:Sumire is upstairs. Sakura went to go get her. 
-0857:Maria said she was going to the stage. 
-0858:I think Mr. Yoneda is in his room? 
-0859:I see. Thanks. 
-0860:I'm waiting here for everybody else. 
-0861:Bye, Iris. 
-0862:Bye-bye, Mon Frère! 
-0863:Mon Frère, what are you looking at? You should talk to me! 
-0864:Mon Frère, what are you looking at? You should talk to me! 
-0865:Mon Frère, what are you looking at? Are you bored of talking to me?! 
-0866:Mon Frère, what are you looking at? You should talk to me! 
-0867:This is… a library? Huh… It sure is cozy. 
-0868:…Seems there's no one here. Better head somewhere else. 
-0869:The library. Maybe I should drop by at night and see what sort of books they have here. 
-0870:…Seems there's no one here. Better head somewhere else. 
-0871:The library. Maybe I should drop by at night and see what sort of books they have here. 
-0872:…Seems there's no one here. Better head somewhere else. 
-0873:This is… a library? Huh… It sure is cozy. 
-0874:Sumireee… Oh, Ogami. 
-0875:Hey, Sakura. Did you find Sumire? 
-0876:No, not yet. Where on Earth could she be…? 
-0877:Well, I need to hurry. Please excuse me, Ogami. 
-0878:Looks like Sakura's having a hard time, too… 
-0879:Hey, Sakura. Are you looking for Sumire? 
-0880:Yes, I am. Where on Earth could she be…? 
-0881:Well, I need to hurry. Please excuse me, Ogami. 
-0882:Looks like Sakura's having a hard time, too… 
+0768:0101TBL.TXT:0768:<br>   Traduction manquante!
+0769:0101TBL.TXT:0769:<br>   Traduction manquante!
+0770:0101TBL.TXT:0770:<br>   Traduction manquante!
+0771:0101TBL.TXT:0771:<br>   Traduction manquante!
+0772:0101TBL.TXT:0772:<br>   Traduction manquante!
+0773:0101TBL.TXT:0773:<br>   Traduction manquante!
+0774:0101TBL.TXT:0774:<br>   Traduction manquante!
+0775:0101TBL.TXT:0775:<br>   Traduction manquante!
+0776:0101TBL.TXT:0776:<br>   Traduction manquante!
+0777:0101TBL.TXT:0777:<br>   Traduction manquante!
+0778:0101TBL.TXT:0778:<br>   Traduction manquante!
+0779:0101TBL.TXT:0779:<br>   Traduction manquante!
+0780:0101TBL.TXT:0780:<br>   Traduction manquante!
+0781:0101TBL.TXT:0781:<br>   Traduction manquante!
+0782:0101TBL.TXT:0782:<br>   Traduction manquante!
+0783:0101TBL.TXT:0783:<br>   Traduction manquante!
+0784:0101TBL.TXT:0784:<br>   Traduction manquante!
+0785:0101TBL.TXT:0785:<br>   Traduction manquante!
+0786:0101TBL.TXT:0786:<br>   Traduction manquante!
+0787:0101TBL.TXT:0787:<br>   Traduction manquante!
+0788:0101TBL.TXT:0788:<br>   Traduction manquante!
+0789:0101TBL.TXT:0789:<br>   Traduction manquante!
+0790:0101TBL.TXT:0790:<br>   Traduction manquante!
+0791:0101TBL.TXT:0791:<br>   Traduction manquante!
+0792:0101TBL.TXT:0792:<br>   Traduction manquante!
+0793:0101TBL.TXT:0793:<br>   Traduction manquante!
+0794:0101TBL.TXT:0794:<br>   Traduction manquante!
+0795:0101TBL.TXT:0795:<br>   Traduction manquante!
+0796:0101TBL.TXT:0796:<br>   Traduction manquante!
+0797:0101TBL.TXT:0797:<br>   Traduction manquante!
+0798:0101TBL.TXT:0798:<br>   Traduction manquante!
+0799:0101TBL.TXT:0799:<br>   Traduction manquante!
+0800:0101TBL.TXT:0800:<br>   Traduction manquante!
+0801:0101TBL.TXT:0801:<br>   Traduction manquante!
+0802:0101TBL.TXT:0802:<br>   Traduction manquante!
+0803:0101TBL.TXT:0803:<br>   Traduction manquante!
+0804:0101TBL.TXT:0804:<br>   Traduction manquante!
+0805:0101TBL.TXT:0805:<br>   Traduction manquante!
+0806:0101TBL.TXT:0806:<br>   Traduction manquante!
+0807:0101TBL.TXT:0807:<br>   Traduction manquante!
+0808:0101TBL.TXT:0808:<br>   Traduction manquante!
+0809:0101TBL.TXT:0809:<br>   Traduction manquante!
+0810:0101TBL.TXT:0810:<br>   Traduction manquante!
+0811:0101TBL.TXT:0811:<br>   Traduction manquante!
+0812:0101TBL.TXT:0812:<br>   Traduction manquante!
+0813:0101TBL.TXT:0813:<br>   Traduction manquante!
+0814:0101TBL.TXT:0814:<br>   Traduction manquante!
+0815:0101TBL.TXT:0815:<br>   Traduction manquante!
+0816:0101TBL.TXT:0816:<br>   Traduction manquante!
+0817:0101TBL.TXT:0817:<br>   Traduction manquante!
+0818:0101TBL.TXT:0818:<br>   Traduction manquante!
+0819:0101TBL.TXT:0819:<br>   Traduction manquante!
+0820:0101TBL.TXT:0820:<br>   Traduction manquante!
+0821:0101TBL.TXT:0821:<br>   Traduction manquante!
+0822:0101TBL.TXT:0822:<br>   Traduction manquante!
+0823:0101TBL.TXT:0823:<br>   Traduction manquante!
+0824:0101TBL.TXT:0824:<br>   Traduction manquante!
+0825:0101TBL.TXT:0825:<br>   Traduction manquante!
+0826:0101TBL.TXT:0826:<br>   Traduction manquante!
+0827:0101TBL.TXT:0827:<br>   Traduction manquante!
+0828:0101TBL.TXT:0828:<br>   Traduction manquante!
+0829:0101TBL.TXT:0829:<br>   Traduction manquante!
+0830:0101TBL.TXT:0830:<br>   Traduction manquante!
+0831:0101TBL.TXT:0831:<br>   Traduction manquante!
+0832:0101TBL.TXT:0832:<br>   Traduction manquante!
+0833:0101TBL.TXT:0833:<br>   Traduction manquante!
+0834:0101TBL.TXT:0834:<br>   Traduction manquante!
+0835:0101TBL.TXT:0835:<br>   Traduction manquante!
+0836:0101TBL.TXT:0836:<br>   Traduction manquante!
+0837:0101TBL.TXT:0837:<br>   Traduction manquante!
+0838:0101TBL.TXT:0838:<br>   Traduction manquante!
+0839:0101TBL.TXT:0839:<br>   Traduction manquante!
+0840:0101TBL.TXT:0840:<br>   Traduction manquante!
+0841:0101TBL.TXT:0841:<br>   Traduction manquante!
+0842:0101TBL.TXT:0842:<br>   Traduction manquante!
+0843:0101TBL.TXT:0843:<br>   Traduction manquante!
+0844:0101TBL.TXT:0844:<br>   Traduction manquante!
+0845:0101TBL.TXT:0845:<br>   Traduction manquante!
+0846:0101TBL.TXT:0846:<br>   Traduction manquante!
+0847:0101TBL.TXT:0847:<br>   Traduction manquante!
+0848:0101TBL.TXT:0848:<br>   Traduction manquante!
+0849:0101TBL.TXT:0849:<br>   Traduction manquante!
+0850:0101TBL.TXT:0850:<br>   Traduction manquante!
+0851:0101TBL.TXT:0851:<br>   Traduction manquante!
+0852:0101TBL.TXT:0852:<br>   Traduction manquante!
+0853:0101TBL.TXT:0853:<br>   Traduction manquante!
+0854:0101TBL.TXT:0854:<br>   Traduction manquante!
+0855:0101TBL.TXT:0855:<br>   Traduction manquante!
+0856:0101TBL.TXT:0856:<br>   Traduction manquante!
+0857:0101TBL.TXT:0857:<br>   Traduction manquante!
+0858:0101TBL.TXT:0858:<br>   Traduction manquante!
+0859:0101TBL.TXT:0859:<br>   Traduction manquante!
+0860:0101TBL.TXT:0860:<br>   Traduction manquante!
+0861:0101TBL.TXT:0861:<br>   Traduction manquante!
+0862:0101TBL.TXT:0862:<br>   Traduction manquante!
+0863:0101TBL.TXT:0863:<br>   Traduction manquante!
+0864:0101TBL.TXT:0864:<br>   Traduction manquante!
+0865:0101TBL.TXT:0865:<br>   Traduction manquante!
+0866:0101TBL.TXT:0866:<br>   Traduction manquante!
+0867:0101TBL.TXT:0867:<br>   Traduction manquante!
+0868:0101TBL.TXT:0868:<br>   Traduction manquante!
+0869:0101TBL.TXT:0869:<br>   Traduction manquante!
+0870:0101TBL.TXT:0870:<br>   Traduction manquante!
+0871:0101TBL.TXT:0871:<br>   Traduction manquante!
+0872:0101TBL.TXT:0872:<br>   Traduction manquante!
+0873:0101TBL.TXT:0873:<br>   Traduction manquante!
+0874:0101TBL.TXT:0874:<br>   Traduction manquante!
+0875:0101TBL.TXT:0875:<br>   Traduction manquante!
+0876:0101TBL.TXT:0876:<br>   Traduction manquante!
+0877:0101TBL.TXT:0877:<br>   Traduction manquante!
+0878:0101TBL.TXT:0878:<br>   Traduction manquante!
+0879:0101TBL.TXT:0879:<br>   Traduction manquante!
+0880:0101TBL.TXT:0880:<br>   Traduction manquante!
+0881:0101TBL.TXT:0881:<br>   Traduction manquante!
+0882:0101TBL.TXT:0882:<br>   Traduction manquante!
 0883:Je ferais mieux d'aller voir<br>ailleurs…
-0884:Hi, Maria. 
-0885:You appear to have a considerable amount of free time, don't you, Ensign. 
-0886:As I mentioned before, the stage is currently off-limits. Your cooperation is appreciated. 
-0887:Oh well. Guess I'll head somewhere else. 
-0888:It's Maria, right? What are you doing here? 
-0889:I could ask the same of you. What business do you have here? 
-0890:(She looks about as tall as me.) 
-0891:(Her clothes are so prim and proper… her demeanor too, for that matter.) 
-0892:(Her hair color is lovely. Platinum blond, I think it's called?) 
-0893:…Is there something stuck in my hair? 
-0894:(She got angry when I stared at her earlier…) 
-0895:Ensign, I believe I previously instructed you not to leer at people. 
-0896:(Her face shows a dignified, guarded expression…) 
-0897:Ensign, do you need me for something? 
-0898:(Her eyes are keen… I get the sense that she can see right through me with a single gaze.) 
-0899:Ensign, I believe I previously instructed you not to leer at people. 
-0900:Ensign, do you need me for something? 
-0901:…Did you need something from me? 
-0902:Tell me about the Troop. <br> Tell me about yourself, Maria. 
-0903:Maria, tell me something. I was assigned here as the captain of a secret combat squad. 
-0904:…Yes. I heard as much from Manager Yoneda. 
-0905:But the only duty I've been given is that of a ticket puncher. What's the meaning of this? 
-0906:Please tell me… What is my true role in the Imperial Assault Troop?! 
-0907:…Forgive me, but I do not have the authority to answer that question. 
-0908:You had best ask Manager Yoneda directly regarding that matter. 
-0909:Maria… 
-0910:Maria, would you tell me a little about yourself? 
-0911:What…? 
-0912:As captain of the Imperial Assault Troop, I'd like to know how a woman such as yourself came to be here. 
-0913:…I don't believe there's any need for me to answer that. 
-0914:In any case, I hardly acknowledge you to be the captain as it is. 
-0915:E-Excuse me?! 
-0916:Ensign, you're interfering with my duties. Please refrain from speaking with me. 
-0917:If you have no business with me, I must ask you to take yourself elsewhere. 
-0918:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
-0919:The stage, prop room, and large prop room are all off-limits. Take care not to enter. 
-0920:G-Got it. 
-0921:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
-0922:The stage, prop room, and large prop room are all off-limits. Take care not to enter. 
-0923:(It's hard to tell through her clothes, but… that's a fine-looking chest.) 
-0924:Just what are you looking at, Ensign? 
-0925:N-Nothing… 
-0926:I had heard that you were an excellent soldier… 
-0927:…but by the way you act, I'd say you still have a long way to go. 
-0928:(If I keep staring, I'll just make her angry again.) 
-0929:Oh well. Guess I'll head somewhere else. 
-0930:The play is about to begin, so this area is off-limits. Please keep your distance, Ensign. 
-0931:Oh well. Guess I'll head somewhere else. 
-0932:Ensign, you ought to look someone in the eye when you're speaking to them. 
-0933:Ensign, you ought to look someone in the eye when you're speaking to them. 
-0934:You'd do well to compose yourself a little more while conversing with someone, Ensign. 
-0935:Ensign, you ought to look someone in the eye when you're speaking to them. 
+0884:0101TBL.TXT:0884:<br>   Traduction manquante!
+0885:0101TBL.TXT:0885:<br>   Traduction manquante!
+0886:0101TBL.TXT:0886:<br>   Traduction manquante!
+0887:0101TBL.TXT:0887:<br>   Traduction manquante!
+0888:0101TBL.TXT:0888:<br>   Traduction manquante!
+0889:0101TBL.TXT:0889:<br>   Traduction manquante!
+0890:0101TBL.TXT:0890:<br>   Traduction manquante!
+0891:0101TBL.TXT:0891:<br>   Traduction manquante!
+0892:0101TBL.TXT:0892:<br>   Traduction manquante!
+0893:0101TBL.TXT:0893:<br>   Traduction manquante!
+0894:0101TBL.TXT:0894:<br>   Traduction manquante!
+0895:0101TBL.TXT:0895:<br>   Traduction manquante!
+0896:0101TBL.TXT:0896:<br>   Traduction manquante!
+0897:0101TBL.TXT:0897:<br>   Traduction manquante!
+0898:0101TBL.TXT:0898:<br>   Traduction manquante!
+0899:0101TBL.TXT:0899:<br>   Traduction manquante!
+0900:0101TBL.TXT:0900:<br>   Traduction manquante!
+0901:0101TBL.TXT:0901:<br>   Traduction manquante!
+0902:0101TBL.TXT:0902:<br>   Traduction manquante!
+0903:0101TBL.TXT:0903:<br>   Traduction manquante!
+0904:0101TBL.TXT:0904:<br>   Traduction manquante!
+0905:0101TBL.TXT:0905:<br>   Traduction manquante!
+0906:0101TBL.TXT:0906:<br>   Traduction manquante!
+0907:0101TBL.TXT:0907:<br>   Traduction manquante!
+0908:0101TBL.TXT:0908:<br>   Traduction manquante!
+0909:0101TBL.TXT:0909:<br>   Traduction manquante!
+0910:0101TBL.TXT:0910:<br>   Traduction manquante!
+0911:0101TBL.TXT:0911:<br>   Traduction manquante!
+0912:0101TBL.TXT:0912:<br>   Traduction manquante!
+0913:0101TBL.TXT:0913:<br>   Traduction manquante!
+0914:0101TBL.TXT:0914:<br>   Traduction manquante!
+0915:0101TBL.TXT:0915:<br>   Traduction manquante!
+0916:0101TBL.TXT:0916:<br>   Traduction manquante!
+0917:0101TBL.TXT:0917:<br>   Traduction manquante!
+0918:0101TBL.TXT:0918:<br>   Traduction manquante!
+0919:0101TBL.TXT:0919:<br>   Traduction manquante!
+0920:0101TBL.TXT:0920:<br>   Traduction manquante!
+0921:0101TBL.TXT:0921:<br>   Traduction manquante!
+0922:0101TBL.TXT:0922:<br>   Traduction manquante!
+0923:0101TBL.TXT:0923:<br>   Traduction manquante!
+0924:0101TBL.TXT:0924:<br>   Traduction manquante!
+0925:0101TBL.TXT:0925:<br>   Traduction manquante!
+0926:0101TBL.TXT:0926:<br>   Traduction manquante!
+0927:0101TBL.TXT:0927:<br>   Traduction manquante!
+0928:0101TBL.TXT:0928:<br>   Traduction manquante!
+0929:0101TBL.TXT:0929:<br>   Traduction manquante!
+0930:0101TBL.TXT:0930:<br>   Traduction manquante!
+0931:0101TBL.TXT:0931:<br>   Traduction manquante!
+0932:0101TBL.TXT:0932:<br>   Traduction manquante!
+0933:0101TBL.TXT:0933:<br>   Traduction manquante!
+0934:0101TBL.TXT:0934:<br>   Traduction manquante!
+0935:0101TBL.TXT:0935:<br>   Traduction manquante!
 0936:C'est quoi, cette pièce ? On dirait<br>qu'il y a un futon entreposé ici.
 0937:Ah, ça doit être la chambre du<br>gardien de nuit. Il y avait ça aussi<br>dans la marine.
-0938:This looks like a night watchman's room. Whoever is on night watch duty stands guard from here. 
+0938:0101TBL.TXT:0938:<br>   Traduction manquante!
 0939:Il y a tellement de tenues ici... Ça<br>doit être la salle des costumes.
 0940:Des tenues pour une escouade<br>secrète ? Non... ce ne sont rien<br>d'autre que des costumes<br>ordinaires.
 0941:C'est la salle des costumes. Tous<br>les vêtements sont entreposés ici.
 0942:Voilà la salle à manger. Elle est<br>surement réservé aux clients.
-0943:The dining hall. 
-0944:Is this the kitchen? Looks like one you’d find in a restaurant. 
-0945:The kitchen. There's an irresistible smell coming from the soup simmering on the stove. 
-0946:This is the lobby. I was taking tickets here a little while ago. 
-0947:It's the theater's entryway. A steady stream of patrons is flooding inside. 
-0948:So this is the theater's auditorium… What a magnificent structure! 
-0949:The auditorium. Patrons are beginning to trickle in. 
-0950:This is the second-floor hallway. There's a fair amount of patrons here, too. 
-0951:Wow… This theater has two floors' worth of audience seating? 
-0952:You can see the entire stage from here. These are some really great seats. 
-0953:These are the second-floor audience seats. What a fantastic view! 
-0954:Wow, this is spacious. It's even got a desk. This is a pretty nice room. 
-0955:So this is my room from today forward… but I still have to punch tickets at the theater's front desk. 
-0956:I'd love to kick back and relax, but that's not gonna happen right now. 
-0957:Wonder whose room this is… 
-0958:It's the mystery room. 
-0959:…No reply. Seems there's no one inside. 
-0960:Looks like this is Sakura's room. 
-0961:This is Sakura's room. Doesn't seem like anyone is here. 
-0962:…Not here, I guess. 
-0963:Looks like this is Maria's room. 
-0964:This is Maria's room. Doesn't seem like anyone is here. 
-0965:…Not here, I guess. 
-0966:Looks like this is Iris's room. 
-0967:This is Iris's room. Doesn't seem like anyone is here. 
-0968:…Not here, I guess. 
-0969:Wonder whose room this is… 
-0970:It's the mystery room. 
-0971:…No reply. Seems there's no one inside. 
-0972:Wonder whose room this is… 
-0973:It's the mystery room. 
-0974:…No reply. Seems there's no one inside. 
-0975:What beautiful weather. Looking out from here, the capital's springtime scenery appears quite tranquil. 
+0943:0101TBL.TXT:0943:<br>   Traduction manquante!
+0944:0101TBL.TXT:0944:<br>   Traduction manquante!
+0945:0101TBL.TXT:0945:<br>   Traduction manquante!
+0946:0101TBL.TXT:0946:<br>   Traduction manquante!
+0947:0101TBL.TXT:0947:<br>   Traduction manquante!
+0948:0101TBL.TXT:0948:<br>   Traduction manquante!
+0949:0101TBL.TXT:0949:<br>   Traduction manquante!
+0950:0101TBL.TXT:0950:<br>   Traduction manquante!
+0951:0101TBL.TXT:0951:<br>   Traduction manquante!
+0952:0101TBL.TXT:0952:<br>   Traduction manquante!
+0953:0101TBL.TXT:0953:<br>   Traduction manquante!
+0954:0101TBL.TXT:0954:<br>   Traduction manquante!
+0955:0101TBL.TXT:0955:<br>   Traduction manquante!
+0956:0101TBL.TXT:0956:<br>   Traduction manquante!
+0957:0101TBL.TXT:0957:<br>   Traduction manquante!
+0958:0101TBL.TXT:0958:<br>   Traduction manquante!
+0959:0101TBL.TXT:0959:<br>   Traduction manquante!
+0960:0101TBL.TXT:0960:<br>   Traduction manquante!
+0961:0101TBL.TXT:0961:<br>   Traduction manquante!
+0962:0101TBL.TXT:0962:<br>   Traduction manquante!
+0963:0101TBL.TXT:0963:<br>   Traduction manquante!
+0964:0101TBL.TXT:0964:<br>   Traduction manquante!
+0965:0101TBL.TXT:0965:<br>   Traduction manquante!
+0966:0101TBL.TXT:0966:<br>   Traduction manquante!
+0967:0101TBL.TXT:0967:<br>   Traduction manquante!
+0968:0101TBL.TXT:0968:<br>   Traduction manquante!
+0969:0101TBL.TXT:0969:<br>   Traduction manquante!
+0970:0101TBL.TXT:0970:<br>   Traduction manquante!
+0971:0101TBL.TXT:0971:<br>   Traduction manquante!
+0972:0101TBL.TXT:0972:<br>   Traduction manquante!
+0973:0101TBL.TXT:0973:<br>   Traduction manquante!
+0974:0101TBL.TXT:0974:<br>   Traduction manquante!
+0975:0101TBL.TXT:0975:<br>   Traduction manquante!
 0976:...
 0977:On dirait qu'il fait bon<br>aujourd'hui.
 0978:Non utilisé: 0101TBL.TXT#0978
@@ -1069,22 +1069,22 @@
 1069:J'espère avoir pu vous être utile.<br>Merci d'être passé !
 1070:Non utilisé: 0101TBL.TXT#1070
 1071:Allô... ? Oui oui bonjour.
-1072:Yes, he was here… just a little while ago. Well, I'm going to wait a bit longer, see how things shake out… 
-1073:But you know, Hanakoji… the matter of this secret corps is a tough pill to swallow. 
-1074:We force girls onto the battlefield, while all we do is sit back and watch. Frankly… it's humiliating. 
-1075:And yet, right now they are the only ones who can operate the Koubu. 
-1076:That's why I'm making it a point to protect these girls, while giving them as much freedom as possible. 
-1077:If only we could make use of that young one… 
-1078:Oho, looks as though he's come by to complain. Well, goodbye for now… 
-1079:Ah, good morning. You're Ogami, right? I'm Yuri Sakakibara! 
-1080:I do the theater's office work. I'm looking forward to working with you! 
-1081:Oh my, did you come by to see me? Hee hee, only teasing you! 
-1082:Do you need me for anything? 
+1072:0101TBL.TXT:1072:<br>   Traduction manquante!
+1073:0101TBL.TXT:1073:<br>   Traduction manquante!
+1074:0101TBL.TXT:1074:<br>   Traduction manquante!
+1075:0101TBL.TXT:1075:<br>   Traduction manquante!
+1076:0101TBL.TXT:1076:<br>   Traduction manquante!
+1077:0101TBL.TXT:1077:<br>   Traduction manquante!
+1078:0101TBL.TXT:1078:<br>   Traduction manquante!
+1079:0101TBL.TXT:1079:<br>   Traduction manquante!
+1080:0101TBL.TXT:1080:<br>   Traduction manquante!
+1081:0101TBL.TXT:1081:<br>   Traduction manquante!
+1082:0101TBL.TXT:1082:<br>   Traduction manquante!
 1083:Non utilisé: 0101TBL.TXT#1083
 1084:Ravie de vous rencontrer, Ôgami.<br>Je suis Kasumi Fujii.
-1085:I'm the theater's office work manager. 
-1086:Do you need something? 
-1087:Good work today. 
+1085:0101TBL.TXT:1085:<br>   Traduction manquante!
+1086:0101TBL.TXT:1086:<br>   Traduction manquante!
+1087:0101TBL.TXT:1087:<br>   Traduction manquante!
 1088:Non utilisé: 0101TBL.TXT#1088
 1089:Non utilisé: 0101TBL.TXT#1089
 1090:Non utilisé: 0101TBL.TXT#1090
@@ -1125,23 +1125,23 @@
 1125:Non utilisé: 0101TBL.TXT#1125
 1126:Non utilisé: 0101TBL.TXT#1126
 1127:Revenez quand vous voulez !
-1128:Ohh goshhh, I was only joking! 
+1128:0101TBL.TXT:1128:<br>   Traduction manquante!
 1129:Uh uh. Merci à vous, Ôgami.
-1130:Oh, OK then. I got it! 
+1130:0101TBL.TXT:1130:<br>   Traduction manquante!
 1131:Hehe. Vous êtes bien drôle,<br>Ôgami.
-1132:Seriously, don't give it another thought. 
-1133:It's fine, Ogami. Don't worry yourself over it. 
-1134:Nice to meet you. You're Ogami, right? I'm Kasumi Fujii, the theater's office manager. 
-1135:I'm sorry to impose, but would you mind coming with me to the secretary's office to fill out some new-hire forms? 
-1136:I'm afraid it's regulation, but it shouldn't take too long. I hope you understand. 
-1137:Um… Did you hear me, Ogami? 
-1138:Then I'll guide you there. This way, please. 
+1132:0101TBL.TXT:1132:<br>   Traduction manquante!
+1133:0101TBL.TXT:1133:<br>   Traduction manquante!
+1134:0101TBL.TXT:1134:<br>   Traduction manquante!
+1135:0101TBL.TXT:1135:<br>   Traduction manquante!
+1136:0101TBL.TXT:1136:<br>   Traduction manquante!
+1137:0101TBL.TXT:1137:<br>   Traduction manquante!
+1138:0101TBL.TXT:1138:<br>   Traduction manquante!
 1139:Non utilisé: 0101TBL.TXT#1139
 1140:Non utilisé: 0101TBL.TXT#1140
 1141:Non utilisé: 0101TBL.TXT#1141
 1142:Non utilisé: 0101TBL.TXT#1142
-1143:S-Stop… Just what's gotten into you? 
+1143:0101TBL.TXT:1143:<br>   Traduction manquante!
 1144:Non utilisé: 0101TBL.TXT#1144
 1145:Non utilisé: 0101TBL.TXT#1145
-1146:Guess whooo~? 
+1146:0101TBL.TXT:1146:<br>   Traduction manquante!
 1147:Non utilisé: 0101TBL.TXT#1147
