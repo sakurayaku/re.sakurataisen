@@ -145,7 +145,7 @@ function codec.can_handle(data)
 end
 
 function codec.decode_name(args)
-  return "subtitles_metadata.bin"
+  return "subtitles_metadata"
 end
 
 function codec.decode(data, args)

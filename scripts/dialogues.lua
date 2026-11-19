@@ -13,17 +13,18 @@
   `args` names: `args = "0100KNJ"` on 0100TBL.BIN yields 0100TBL.TXT.  See
   "Artifact naming" for why the name has to be derived from `args` at all.
 
-  ENCODE rewrites each entry's glyph payload from its TXT line.  Everything that
-  is not dialogue text is carried over verbatim from the input buffer:
+  ENCODE rewrites each entry's glyph payload from its TXT line. Everything that
+  is not dialogue text is carried over verbatim, except the MES timing index and
+  footer, which must track the encoded glyph count:
 
     * the header string IDs  — never re-derived, never reordered (they are not
       sequential and do not follow the TXT line order: M01MES starts
       186,187,182,183,... and 0100TBL jumps from 0x9C4x to 0xD6Dx);
-    * each entry's 4-byte metadata prefix (two u16 BE words);
-    * the timing footer, byte for byte.
+    * each entry's first metadata u16;
+    * for TBL and non-VWF files, the remaining metadata and timing footer.
 
-  Only the glyph payload, the header offset table and the timing offset (which
-  depends on the payload size) are rebuilt.
+  The glyph payload, header offset table, timing offset, and (for M##MES) timing
+  index/footer are rebuilt.
 
   File format (verified against SakuraTaisen.cpp and against all 69 shipped
   TBL/MES files on disc 1):
@@ -58,10 +59,9 @@
   depends on ACTIVATE_VWF.  Off, each glyph stays its plain u16 ID exactly as
   the historical files store it.  On (the default), each glyph becomes the
   packed word (id << 8) | width and the newline becomes 0x000D — the format
-  scripts/SAKURA/patch_vwf_font.lua reads back.  The packed form is applied only
-  to tables whose font stem names a *patched* engine (VWF_FONT_STEMS): the
-  SAKURA (ADV) tables, never the M##MES tables SLG.BIN renders.  Decode is not
-  affected: it reads whichever of the two formats the bytes actually are.
+  read by the SAKURA ADV and SLG VWF render patches. The packed form is applied only
+  to tables whose font stem names a patched engine (VWF_FONT_STEMS). Decode is
+  not affected: it reads whichever of the two formats the bytes actually are.
 
   Overridable globals (defined by the host *before* loading this codec, and
   never clobbered here — each uses `X = X or <default>`):
@@ -74,13 +74,10 @@
       VWF_FONT_STEMS       font stems whose engine is VWF-patched
 
   ACTIVATE_VWF is on by default and applies the packed format only to tables
-  whose `args` font stem matches one of VWF_FONT_STEMS.  Turn it on only
-  alongside scripts/SAKURA/patch_vwf_font.lua, or an unpatched engine will read
-  packed words as glyph IDs.  The stem split is the engine split, not a
-  preference: SAKURA (ADV) renders its own NNNNKNJ fonts and
-  is the only engine with a VWF patch, while SLG.BIN renders the M##MES tables
-  and has none, so those must keep the historical encoding.  A table outside
-  VWF_FONT_STEMS is encoded exactly as if ACTIVATE_VWF were off.
+  whose `args` font stem matches one of VWF_FONT_STEMS. Turn it on only
+  alongside the matching engine patch, or an unpatched engine will read packed
+  words as glyph IDs. SAKURA (ADV) renders NNNNKNJ. A table
+  outside VWF_FONT_STEMS is encoded exactly as if ACTIVATE_VWF were off.
 
   Round-trip status against all 69 disc-1 TBL/MES files: the framing, the string
   IDs, the per-entry prefixes and the timing footer are exact everywhere, and
@@ -124,9 +121,9 @@ DEFAULT_GLYPH_WIDTH = DEFAULT_GLYPH_WIDTH or 16
 -- format-agnostic either way (it reads whichever the bytes actually are), so
 -- this switch only changes what encode() writes.
 --
--- ON by default, because the manifest pairs this codec with the VWF layout
--- (scripts/SAKURA/patch_vwf_font.lua), whose engine reads the packed word.  It
--- must be turned OFF if the 8px layout is installed instead, or the engine will
+-- ON by default, because the manifest pairs this codec with an ADV or SLG VWF
+-- layout, whose engine reads the packed word. It must be turned OFF if the
+-- fixed 8px layout is installed instead, or the engine will
 -- read packed words as plain IDs.  `X = X or true` would be stuck on (`false or
 -- true` is `true`), so the default is only applied when the host left the global
 -- unset — which keeps an explicit `ACTIVATE_VWF = false` working.
@@ -134,11 +131,8 @@ if ACTIVATE_VWF == nil then ACTIVATE_VWF = true end
 
 -- Which tables use the packed format: a table is VWF-encoded only when
 -- ACTIVATE_VWF is true *and* its `args` font stem matches one of these Lua
--- patterns.  The split is the engine split.  SAKURA (ADV) renders its own
--- NNNNKNJ fonts and is VWF-patched; SLG.BIN renders the M##MES tables and is
--- not, so those must stay legacy.  Add "^M%d+MES$" here only once SLG.BIN
--- carries the same patch.
-VWF_FONT_STEMS = VWF_FONT_STEMS or { "^%d+KNJ$", "^I18N_FONT$" }
+-- patterns.
+VWF_FONT_STEMS = VWF_FONT_STEMS or { "^%d+KNJ$", "^I18N_FONT$", "^M%d+MES$" }
 
 -- ---------------------------------------------------------------------------
 -- Format constants
@@ -150,9 +144,8 @@ local TERMINATOR   = 0x0000   -- end of an entry's glyph payload
 local PREFIX_BYTES = 4        -- two u16 BE words of per-entry metadata
 local NEWLINE_TEXT = "<br>"   -- matches the historical extractor's NewLineWord
 
--- Does this table use the packed format?  Only when the master switch is on
--- *and* the font stem names a VWF-patched engine, so a table the unpatched SLG
--- engine renders is never packed.
+-- Does this table use the packed format? Only when the master switch is on and
+-- the font stem names a VWF-patched engine.
 local function uses_vwf(args)
   if not ACTIVATE_VWF then return false end
   for _, pattern in ipairs(VWF_FONT_STEMS) do
@@ -392,6 +385,8 @@ local function encode_dialogue(line, index, id, reverse, maxLength, tbl, args, v
   local codes = {}
   local lineCount = 1
   local width = 0
+  local lineGlyphs = 0
+  local slgVwf = vwf and args:match("^M%d+MES$") ~= nil
   local newlineCode = vwf and VWF_NEWLINE or NEWLINE_CODE
 
   -- Append one glyph.  Legacy: its plain u16 ID.  VWF: the packed word
@@ -437,6 +432,7 @@ local function encode_dialogue(line, index, id, reverse, maxLength, tbl, args, v
     if s > 1 then
       codes[#codes + 1] = newlineCode
       width = 0
+      lineGlyphs = 0
       lineCount = lineCount + 1
     end
 
@@ -460,22 +456,34 @@ local function encode_dialogue(line, index, id, reverse, maxLength, tbl, args, v
           args, index, id, next_char(segment, i), i - 1, tbl.path), 0)
       end
 
-      local glyphWidth = tbl.widths[glyphId] or DEFAULT_GLYPH_WIDTH
-      if width > 0 and width + glyphWidth > LINE_WIDTH_PX then
+      local glyphWidth = tbl.widths[glyphId]
+        or (slgVwf and 8)
+        or DEFAULT_GLYPH_WIDTH
+      if vwf and glyphWidth > LINE_WIDTH_PX then
+        error(string.format(
+          "encode(%s): dialogue #%d (id=0x%04X) glyph ID 0x%X has width %d, "
+          .. "over the %dpx line limit",
+          args, index, id, glyphId, glyphWidth, LINE_WIDTH_PX), 0)
+      end
+      if (width > 0 and width + glyphWidth > LINE_WIDTH_PX)
+          or (slgVwf and lineGlyphs >= 60) then
         codes[#codes + 1] = newlineCode
         width = 0
+        lineGlyphs = 0
         lineCount = lineCount + 1
       end
       emit(glyphId, glyphWidth)
       width = width + glyphWidth
+      lineGlyphs = lineGlyphs + 1
       i = i + matchedLength
     end
   end
 
-  if lineCount > MAX_LINES then
+  local maxLines = vwf and math.min(MAX_LINES, 4) or MAX_LINES
+  if lineCount > maxLines then
     error(string.format(
       "encode(%s): dialogue #%d (id=0x%04X) needs %d line(s), over MAX_LINES=%d",
-      args, index, id, lineCount, MAX_LINES), 0)
+      args, index, id, lineCount, maxLines), 0)
   end
 
   return codes
@@ -695,6 +703,9 @@ function codec.encode(original, artifacts, args)
   local tbl = load_font_table(ENCODE_FONT, "encode(" .. args .. ")")
   local reverse, maxLength = build_reverse(tbl)
   local vwf = uses_vwf(args)
+  local slgVwf = vwf and args:match("^M%d+MES$") ~= nil
+  local mesTimingCount = 0
+  local mesTiming = {}
 
   local footer = original:sub(parsed.timing + 1)
 
@@ -705,6 +716,29 @@ function codec.encode(original, artifacts, args)
     local prefix = original:sub(entry.start + 1, entry.start + PREFIX_BYTES)
     local codes  = encode_dialogue(lines[i], i, entry.id, reverse, maxLength,
                                    tbl, args, vwf)
+
+    if slgVwf then
+      local timingMarker = u16be(prefix, 0)
+      prefix = prefix:sub(1, 2)
+        .. char_u16be(timingMarker ~= 0 and mesTimingCount or 0)
+
+      if timingMarker ~= 0 then
+        local glyphCount = 0
+        for _, code in ipairs(codes) do
+          if code ~= VWF_NEWLINE then
+            mesTiming[#mesTiming + 1] = string.char(0x6E, 0x2E)
+            glyphCount = glyphCount + 1
+          end
+        end
+        mesTiming[#mesTiming + 1] = "\0"
+        mesTimingCount = mesTimingCount + glyphCount * 2 + 1
+        if mesTimingCount > 0xFFFF then
+          error(string.format(
+            "encode(%s): cumulative MES timing offset after dialogue #%d "
+            .. "overflows a u16", args, i), 0)
+        end
+      end
+    end
 
     offsets[i] = cursor // 2
     if offsets[i] > 0xFFFF then
@@ -728,6 +762,7 @@ function codec.encode(original, artifacts, args)
   end
 
   local body      = table.concat(chunks)
+  if slgVwf then footer = table.concat(mesTiming) end
   local rawTiming = (parsed.headerEnd + #body) // 2
   if rawTiming > 0xFFFF then
     error(string.format(

@@ -22,7 +22,7 @@ function codec.can_handle(data)
 end
 
 function codec.decode_name()
-  return "theater_map_metadata.bin"
+  return "theater_map_metadata"
 end
 
 function codec.decode()

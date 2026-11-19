@@ -1806,43 +1806,10 @@
           "SAKURA1/0100KNJ.BIN",
           "SAKURA1/0101KNJ.BIN",
           "SAKURA1/0102KNJ.BIN",
-          "SAKURA1/0103KNJ.BIN"
+          "SAKURA1/0103KNJ.BIN",
+          "SAKURA2/M01MES.FNT"
         ],
         "decodes": {
-          "SAKURA1/0103TBL.BIN": [
-            {
-              "name": "0103TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0103KNJ"
-              },
-              "outputs": [
-                "0103TBL.TXT"
-              ],
-              "overrides": [
-                "0103TBL.TXT"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/0102TBL.BIN": [
-            {
-              "name": "0102TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0102KNJ"
-              },
-              "outputs": [
-                "0102TBL.TXT"
-              ],
-              "overrides": [
-                "0102TBL.TXT"
-              ],
-              "decodes": {}
-            }
-          ],
           "SAKURA1/LOGO.SH2": [
             {
               "name": "SUBTITLES",
@@ -1960,36 +1927,94 @@
               "decodes": {}
             }
           ],
-          "SAKURA1/0100TBL.BIN": [
+          "SAKURA1/0101TBL.BIN": [
             {
-              "name": "0100TBL.TXT",
+              "name": "0101TBL.TXT",
               "codec": {
                 "id": "scripts/dialogues.lua",
                 "version": 1,
-                "args": "0100KNJ"
+                "args": "0101KNJ"
               },
               "outputs": [
-                "0100TBL.TXT"
+                "0101TBL.TXT"
               ],
               "overrides": [
-                "0100TBL.TXT"
+                "0101TBL.TXT"
               ],
               "decodes": {}
             }
           ],
-          "SAKURA1/TITLE1.BIN": [
+          "SAKURA1/0103TBL.BIN": [
             {
-              "name": "TITLE.bmp",
+              "name": "0103TBL.TXT",
               "codec": {
-                "id": "scripts/title.lua",
-                "version": 1
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0103KNJ"
               },
               "outputs": [
-                "TITLE.bmp"
+                "0103TBL.TXT"
               ],
               "overrides": [
-                "TITLE.bmp"
+                "0103TBL.TXT"
               ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA2/M01MES.BIN": [
+            {
+              "name": "M01MES.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "M01MES"
+              },
+              "outputs": [
+                "M01MES.TXT"
+              ],
+              "overrides": [
+                "M01MES.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA2/SLG.BIN": [
+            {
+              "name": "font_vwf_layout",
+              "codec": {
+                "id": "scripts/SLG/patch_vwf_font.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "palette",
+              "codec": {
+                "id": "scripts/SLG/patch_palette.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            }
+          ],
+          "SAKURA2/0SLG.BIN": [
+            {
+              "name": "font_vwf_layout",
+              "codec": {
+                "id": "scripts/SLG/patch_vwf_font.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "palette",
+              "codec": {
+                "id": "scripts/SLG/patch_palette.lua",
+                "version": 1
+              },
+              "outputs": [],
               "decodes": {}
             }
           ],
@@ -2142,19 +2167,52 @@
               "decodes": {}
             }
           ],
-          "SAKURA2/M01MES.BIN": [
+          "SAKURA1/TITLE1.BIN": [
             {
-              "name": "M01MES.TXT",
+              "name": "TITLE.bmp",
+              "codec": {
+                "id": "scripts/title.lua",
+                "version": 1
+              },
+              "outputs": [
+                "TITLE.bmp"
+              ],
+              "overrides": [
+                "TITLE.bmp"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0102TBL.BIN": [
+            {
+              "name": "0102TBL.TXT",
               "codec": {
                 "id": "scripts/dialogues.lua",
                 "version": 1,
-                "args": "M01MES"
+                "args": "0102KNJ"
               },
               "outputs": [
-                "M01MES.TXT"
+                "0102TBL.TXT"
               ],
               "overrides": [
-                "M01MES.TXT"
+                "0102TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
               ],
               "decodes": {}
             }
@@ -2179,7 +2237,7 @@
               "decodes": {}
             },
             {
-              "name": "subtitles_metadata.bin",
+              "name": "subtitles_metadata",
               "codec": {
                 "id": "scripts/subtitles_metadata.lua",
                 "version": 2
@@ -2246,7 +2304,7 @@
               "decodes": {}
             },
             {
-              "name": "theater_map_metadata.bin",
+              "name": "theater_map_metadata",
               "codec": {
                 "id": "scripts/theater_map_metadata.lua",
                 "version": 3
@@ -2265,23 +2323,6 @@
               ],
               "overrides": [
                 "EMPTY_ROOM/EmptyRoom.bmp"
-              ],
-              "decodes": {}
-            }
-          ],
-          "SAKURA1/0101TBL.BIN": [
-            {
-              "name": "0101TBL.TXT",
-              "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0101KNJ"
-              },
-              "outputs": [
-                "0101TBL.TXT"
-              ],
-              "overrides": [
-                "0101TBL.TXT"
               ],
               "decodes": {}
             }

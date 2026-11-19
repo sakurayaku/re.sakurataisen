@@ -115,9 +115,9 @@ assert(not ok and tostring(err):find("read beyond text buffer", 1, true),
   "the old index-advance bug must fail")
 
 -- Producer/consumer contract with the actual font table, including newline,
--- metadata, terminator, footer and the unpatched SLG encoding.  TXT lines are
--- numbered (NNNN:); 0x0A0D would be a valid packed word, so the newline code is
--- the assertion that tells the two layouts apart.
+-- metadata, terminator, footer and the packed SLG encoding. TXT lines are numbered
+-- (NNNN:); 0x0A0D would be a valid packed word, so the newline code is the
+-- assertion that tells the two layouts apart.
 ACTIVATE_VWF, ENCODE_FONT = true, "I18N_FONT"
 local dialogues = dofile(LUDARED.SCRIPTS .. "/dialogues.lua")
 local input = string.pack(">I2I2I2I2I2I2I2I2", 4, 8, 0x2716, 0, 0xABCD, 2, 0x41, 0) .. "footer"
@@ -128,7 +128,9 @@ assert(output:sub(29) == "footer")
 assert(dialogues.decode(output, "I18N_FONT")[1].data == "0001:A<br>B<br>C<br>4\n")
 assert(dialogues.encode(output, dialogues.decode(output, "I18N_FONT"), "I18N_FONT") == output)
 
--- The unpatched SLG engine keeps the plain-ID layout, whatever ACTIVATE_VWF is.
+-- The SLG patch now consumes the same packed-u16 layout as ADV.
 local slg = dialogues.encode(input, { { name = "M01MES.TXT", data = "0001:A<br>B\n" } }, "M01MES")
-assert(slg:sub(13, 20) == "\x00\x41\x0A\x0D\x00\x42\x00\x00")
+assert(slg:sub(9, 12) == "\xAB\xCD\x00\x00")
+assert(slg:sub(13, 20) == "\x41\x09\x00\x0D\x42\x09\x00\x00")
+assert(slg:sub(21) == "\x6E\x2E\x6E\x2E\0")
 print("VWF: 4 renderer cases per count, original-bug reproduction, patch idempotence and dialogue ABI passed")
