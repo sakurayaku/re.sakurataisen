@@ -16,9 +16,10 @@
   affects display only; pixel indices are authoritative.
 
   Width is stored in 8-pixel tiles and each image start in 8-byte units, so
-  widths must be divisible by 8 and packed image sizes by 8. The input hash
-  identifies the archive during decode; its byte size identifies it during
-  encode.
+  widths must be divisible by 8. Encoded image data is padded to an 8-byte
+  boundary; the companion metadata codec uses the same aligned sizes for LUT
+  addresses. The input hash identifies archives during decode; byte size does
+  so during encode.
 ]]
 
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
@@ -29,12 +30,16 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Theater Map Graphics"
 codec.description = "Rebuilds the 4bpp TMAPSP and FUKAGAWA image archives"
-codec.version     = 7
+codec.version     = 8
 codec.kind        = "rebuild"
 
 -- Per-archive limits used by the game's graphics patcher.
 local GFX_LIMITS = { TMAPSP = 0xD000, FUKAGAWA = 0x6D3F }
 codec.gfx_limits = GFX_LIMITS
+
+function codec.align_size(size)
+  return (size + 7) // 8 * 8
+end
 
 -- {start in 8-byte units, width in 8-pixel tiles, height in pixels}.
 local IMAGE_LAYOUTS = {
@@ -172,11 +177,9 @@ local function parse_image(bmp_data, index)
   end
 
   local pixels = bmp.parse(bmp_data, width, height, 4)
-  local size = #pixels
-  if size % 8 ~= 0 then
-    error(string.format(
-      "theater_map: image %d is %dx%d; packed size must be a multiple of 8 bytes",
-      index, width, height), 0)
+  local size = codec.align_size(#pixels)
+  if size > #pixels then
+    pixels = pixels .. string.rep("\0", size - #pixels)
   end
   return { pixels = pixels, width = width, height = height, size = size }
 end

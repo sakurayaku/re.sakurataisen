@@ -26,9 +26,10 @@ Seuls les fichiers `.bmp` sont importants. Les fichiers `.xcf` (format de travai
 
 ### Déroulement du jeu
 - [Écrans de titres des épisodes](/contenus/TITLE.md)
+- [Cartes de déplacement](/contenus/MAP.md)
 
 # Credits & attributions
 
 - TOUT le travail, TOUTE la recherche, TOUS les putains d'efforts,... c'est le boulot de la team US menée par [NoahSteam](https://github.com/NoahSteam/RomHackingTools). Ses membres méritent tous vos éloges, et sans leur boulot, ce projet n'existerait pas.
 
-- La font utilisée dans le jeu est [DejaVu Sans](https://dejavu-fonts.github.io/).
+- Les polices utilisée dans le jeu sont [DejaVu Sans](https://dejavu-fonts.github.io/) pour les éléments textuels, et [Font Awesome](https://github.com/fortawesome/font-awesome) pour certains symboles.

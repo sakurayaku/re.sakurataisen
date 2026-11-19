@@ -44,10 +44,11 @@
   THE SITES
   ---------
     GLYPH                 0x01036C                packed >> 8
+                          0x01036E                X -= 4 px for every glyph
     fnA  (dialogue text)  0x0104DE..0x0104E6     latch X, advance, call
                           0x010510                newline literal
     fnB  (choice/LIPS)    pass 1 0x0105B2..C4    accumulate advance per line
-                          origins 0x01060E/0x010642  X = -width/2
+                          origins 0x01060E/0x010642  X = 4 - width/2
                           pass 2 0x010664..0x01066C
                           0x0106A4                newline literal
     fnC  (secondary text) 0x010740..0x010748     latch X, advance, call
@@ -58,9 +59,9 @@
   fnA and fnC keep their original shape: the only edited instructions are the
   four-slot tail `mov r8,rX / add #0x10,rX / exts.w rX,r8` which becomes
   `mov r8,r4 / extu.b r6,r0 / jsr / add r0,r8`.  fnB pass 1 used to count
-  characters; it now adds the glyph's advance to the line's running width, and
-  both origin computations become -width/2, centring each line at X=0 (8 px
-  left of the original X=8 anchor).
+  characters; it now adds the glyph's advance to the line's running width. The
+  shared GLYPH routine shifts every glyph 4 px left; fnB adds +4
+  anchor back so LIPS keeps its current position while fnA/fnC move left.
 
   The line pitch (0x0104D7, 0x010733) and the choice-menu start rows
   (0x0105FB, 0x010603) are the same 8x12 layout constants patch_8px_font.lua
@@ -116,10 +117,10 @@ local SITES = {
   { 0x010733, "10", "0C", "line pitch, secondary text renderer" },
 
   -- GLYPH: the packed word arrives with the id in the high byte.  The dead
-  -- extu.w r6,r6 becomes shlr8 r6; everything after (add #-1, *128, +base) is
-  -- the untouched original.  The second dead instruction, extu.w r7,r7, is
-  -- harmless and left as-is.
+  -- extu.w r6,r6 becomes shlr8 r6; extu.w r7,r7 becomes the shared -4px X
+  -- bias.  All callers supply r7 as 0 or 6, so clearing its upper word is moot.
   { 0x01036C, "666D", "4619", "GLYPH: r6 = packed >> 8 (glyph id)" },
+  { 0x01036E, "677D", "74FC", "GLYPH: shift every glyph 4 px left (r4 -= 4)" },
 
   -- fnA, dialogue text: latch X, extract the advance, add it, then call.
   { 0x0104DE, "4D0B", "6483", "fnA: r4 = X (latch before advancing)" },
@@ -151,14 +152,14 @@ local SITES = {
   { 0x0105C2, "7101", "7801", "fnB pass 1: index++" },
   { 0x0105C4, "681F", "0009", "fnB pass 1: nop" },
 
-  -- fnB origins: X = -width/2 (shlr, neg).  The original add #8 is removed;
-  -- two slots remain nops compared with the original 8 - 8*count sequence.
+  -- fnB origins use X = 4 - width/2. GLYPH applies -4 to every glyph, so
+  -- this +4 compensates and preserves the current LIPS placement.
   { 0x01060E, "611D", "4101", "fnB origin (first line): width / 2" },
-  { 0x010612, "4108", "0009", "fnB origin (first line): remove original +8" },
+  { 0x010612, "4108", "7104", "fnB origin (first line): compensate GLYPH -4" },
   { 0x010614, "311C", "0009", "fnB origin (first line): nop" },
   { 0x010616, "7108", "0009", "fnB origin (first line): nop" },
   { 0x010642, "611D", "4101", "fnB origin (after newline): width / 2" },
-  { 0x010646, "4108", "0009", "fnB origin (after newline): remove original +8" },
+  { 0x010646, "4108", "7104", "fnB origin (after newline): compensate GLYPH -4" },
   { 0x010648, "311C", "0009", "fnB origin (after newline): nop" },
   { 0x01064A, "7108", "0009", "fnB origin (after newline): nop" },
 

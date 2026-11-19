@@ -8,7 +8,7 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Theater Map Metadata"
 codec.description = "Patches TMAPSP and FUKAGAWA image dimensions in SAKURA"
-codec.version     = 3
+codec.version     = 4
 codec.kind        = "patch"
 
 local ARCHIVES = {
@@ -83,12 +83,7 @@ function codec.encode(original, artifacts)
         workspace, archive.name, index - 1)
       local width_tiles, height = read_dimensions(path)
       width_tiles, height = width_tiles or record[2], height or record[3]
-      local image_size = width_tiles * 8 * height // 2
-      if image_size % 8 ~= 0 then
-        error(string.format(
-          "theater_map_metadata: %s image %d packs to %d bytes, not an 8-byte multiple",
-          archive.name, index - 1, image_size), 0)
-      end
+      local image_size = theater_map.align_size(width_tiles * 8 * height // 2)
       if width_tiles ~= record[2] or height ~= record[3] then
         resized_from = resized_from or index
       end
