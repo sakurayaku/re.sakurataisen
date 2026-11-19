@@ -31,30 +31,30 @@
 0031:Je ferais mieux d'aller voir<br>ailleurs…
 0032:Ça ne m'avance pas. Je devrais<br>me rendre au bureau du<br>directeur et en parler au<br>Commandant Yoneda.
 0033:Mais… J'ai beau regarder un peu<br>partout autour de moi, ça m'a<br>tout l'air de n'être qu'un banal<br>théâtre.
-0034:Aller sur la scène. Retrouver le<br>Commandant Yoneda. Se rendre à<br>la réception.
+0034:Aller sur la Scène.<br>Retrouver le Commandant Yoneda<br>Se rendre à la réception
 0035:(... Il est déjà bien tard.)
 0036:(Je suis fatigué, mais je n'arrive<br>pas à m'endormir... C'est<br>peut-être parce que je ne suis pas<br>habitué à mon nouveau lit...)
 0037:(Il est déjà presque minuit...)
 0038:...
 0039:(Qu... ? Qui cela peut-il être à<br>cette heure tardive ?)
-0040:Ogami... ? C'est moi, Sakura...
-0041:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0040:Monsieur Ôgami... ? C'est moi, Sakura...
+0041:Sakura ? Attendez un instant, je<br>vous ouvre.
 0042:(Que vient-elle faire à cette<br>heure-ci ?)
-0043:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0043:Hey, Sakura. Comment ça s'est<br>passé sur scène ?
 0044:C'était un grand succès.
 0045:Mais... je suis désolé pour tout à<br>l'heure. Je ne voulais pas faire<br>autant de bruit...
 0046:Non non, ne t'en fais pas, tout va<br>bien maintenant. Plus important<br>encore... Que viens-tu faire à<br>cette heure tardive ?
 0047:Ogami ? C'est moi Sakura. Je suis<br>désolée de vous déranger à cette<br>heure-ci.
-0048:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0048:Sakura ? Attendez un instant, je<br>vous ouvre.
 0049:(Que vient-elle faire à cette<br>heure-ci ?)
-0050:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0050:Hey, Sakura. Comment ça s'est<br>passé sur scène ?
 0051:Grâce à vous, ce fut un grand<br>succès. Oh, et merci pour votre<br>hospitalité tout à l'heure.
 0052:C'est moi qui devrait te<br>remercier. Après tout, c'était bien<br>d'avoir quelqu'un à qui parler...
 0053:Plus important... que viens-tu<br>faire à cette heure tardive ?
 0054:Ogami... ? C'est moi, Sakura...
-0055:Sakura ? Attends une seconde,<br>j'ouvre la porte.
+0055:Sakura ? Attendez un instant, je<br>vous ouvre.
 0056:(Que vient-elle faire à cette<br>heure-ci ?)
-0057:Hey, Sakura. Comment s'est<br>passée la pièce ?
+0057:Hey, Sakura. Comment ça s'est<br>passé sur scène ?
 0058:C'était un grand succès.
 0059:Par ailleurs... que viens-tu faire à<br>cette heure tardive ?
 0060:Eh bien, Ôgami...
