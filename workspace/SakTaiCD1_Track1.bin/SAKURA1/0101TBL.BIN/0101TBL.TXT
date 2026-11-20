@@ -917,7 +917,7 @@
 0917:0101TBL.TXT:0917:<br>   Traduction manquante!
 0918:0101TBL.TXT:0918:<br>   Traduction manquante!
 0919:0101TBL.TXT:0919:<br>   Traduction manquante!
-0920:0101TBL.TXT:0920:<br>   Traduction manquante!
+0920:C-c'est compris.
 0921:0101TBL.TXT:0921:<br>   Traduction manquante!
 0922:0101TBL.TXT:0922:<br>   Traduction manquante!
 0923:0101TBL.TXT:0923:<br>   Traduction manquante!

@@ -69,7 +69,7 @@
 0069:Oui, je vais vraiment y aller.
 0070:... bien. Si vous y tenez tant que<br>ça, alors je vais faire la ronde<br>moi-même.
 0071:Ôgami...
-0072:Vous aviez l'air si enthousiaste<br>lors de notre première rencontre<br>au parc Ueno. Que s'est-il passé<br>pour que vous répondiez de la<br>sorte ?
+0072:Où est passé l’Ôgami si énergique<br>dont j'ai fait la rencontre au parc<br>d’Ueno?
 0073:Je ne peux pas supporter de vous<br>voir comme ça !
 0074:Sakura... Oups, je crois que j'ai<br>été un peu trop têtue.
 0075:... je ne peux rien faire pour<br>l'instant à part dormir.

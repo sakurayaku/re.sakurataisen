@@ -16,7 +16,7 @@
 0016:C'est la boite d'allumettes<br>demandée par Iris. Son<br>illustration est très colorée.
 0017:Des couteaux qu'Iris m'a<br>demandé d'acheter pour elle.<br>Une pièce de ménagère tout à<br>fait ordinaire.
 0018:Une épée et un bouclier fait pour<br>être utilisés sur scène.<br>Ils ressemblent à de vrais armes.
-0019:Cette fausse couronne a été<br>utilisée dans des pièces de<br>théâtre. Les détails complexes<br>ont été réalisés avec une grande<br>habileté.
+0019:Une couronne de théâtre. Ses<br>détails sont remarquablement<br>travaillés.
 0020:Une perruque et un costume<br>utilisés pour la scène. Quel genre<br>de numéro peut avoir besoin<br>de tenues aussi excentriques ?
 0021:Un cliché de Sakura en maillot<br>de bain. Wow, c'est vraiment<br>quelque chose… Je vais le garder<br>précieusement.
 0022:Un cliché de Sumire dans son<br>costume pour la scène.<br>Son maquillage distinctif fait<br>vraiment de l'effet.
@@ -31,15 +31,15 @@
 0031:Je ferais mieux d'aller voir<br>ailleurs…
 0032:Ça ne m'avance pas. Je devrais<br>me rendre au bureau du<br>directeur et en parler au<br>Commandant Yoneda.
 0033:Mais… J'ai beau regarder un peu<br>partout autour de moi, ça m'a<br>tout l'air de n'être qu'un banal<br>théâtre.
-0034:…Donc, aller voir les cerisiers en<br>fleur au parc d'Ueno après la<br>bataille? Ils sont plutôt pas mal la<br>nuit quand ils sont en fleur.
+0034:…Après la bataille, pique-nique<br>sous les cerisiers en fleur au parc<br>d’Ueno, hein… Les cerisiers de<br>nuit, c’est pas mal non plus.
 0035:... Mais monsieur, pourquoi<br>gardez-vous tout sur<br>L'Organisation des Ténèbres<br>top-secret ?
 0036:Je vois. C'est donc ce qui en fait<br>un escadron secret.
-0037:Pas de soucis. Merci à toi aussi,<br>Sakura.
-0038:Tu peux toujours compter sur moi<br>!
-0039:B-Bien reçu.
-0040:Hahahaha, merci.
-0041:(Comment peut-on se saouler en<br>buvant de l'amakaze ? C'est un<br>alcool léger !)
-0042:Hein ?!
+0037:Ah oui. Vous aussi, Sakura, bravo<br>pour votre travail !
+0038:Comptez sur moi, je serai toujours<br>là !
+0039:C-c'est compris.
+0040:Ha ha ha, merci, oui.
+0041:(Mais comment peut-elle être<br>ivre en buvant de l’amazake ?<br>C’est presque sans alcool…)
+0042:Hein !?
 0043:Non utilisé: 0103TBL.TXT#0043
 0044:Non utilisé: 0103TBL.TXT#0044
 0045:Non utilisé: 0103TBL.TXT#0045
@@ -161,21 +161,21 @@
 0161:Non utilisé: 0103TBL.TXT#0161
 0162:Allez, Ôgami. Que pensez-vous<br>qu'il se passerait si nous ne le<br>faisons pas ? Des émeutes !
 0163:Nous jouerions ainsi leur jeu. Quoi<br>qu'il en coûte nous devons les<br>combattre dans le secret le plus<br>absolu !
-0164:Merci beaucoup pour aujourd'hui.
-0165:C'est une bonne chose que vous<br>soyez là Ôgami.
-0166:Meuh, pourquoi chi chérieux ?<br>Relâche-toi un peu tu veux ?
-0167:Hmmm... Pluche près,<br>vous-chêtes vraiment beau ! Hips<br>! Vous-chêtes vraiiiment mon<br>genre, vous chavez ?
-0168:Le combat contre ces ennemis ne<br>fait que commencer. Ne vous<br>emballez pas trop...
+0164:Bravo pour votre travail<br>aujourd’hui !
+0165:Heureusement que vous étiez là<br>avec nous, Monsieur Ôgami !
+0166:Maieuh, pourquoi t’es ausshi<br>shérieux ? Déteeeends-toi un<br>peu, non ?
+0167:Hmmm… De plus près, z'êtes bien<br>mignon, hic ! Z'êtes vraiment<br>mon genre, vous savez ?
+0168:La guerre contre ces ennemis ne<br>fait que commencer. Évitez donc<br>de vous réjouir trop vite…
 0169:Non utilisé: 0103TBL.TXT#0169
 0170:Non utilisé: 0103TBL.TXT#0170
 0171:Non utilisé: 0103TBL.TXT#0171
-0172:Vous savez... Je vous aime<br>énormément, Monsieur Ôgami.
-0173:Je vous laisserez être mon<br>petit-ami, alors ne me trompez<br>pas !
-0174:Avalez, cul sec Ôgami ! Vous êtes<br>de nouveau au service de<br>billetterie demain !
-0175:Ahahahah...
+0172:Tu sais… Je crois que je t’aime<br>bien, Monsieur Ôgami.
+0173:Je veux bien que tu sois mon<br>amoureux, alors pas le droit<br>de regarder les autres filles !
+0174:Allez Ôgami, buvez-moi ça ! À<br>partir de demain, le poinçonnage<br>des billets vous attend !
+0175:Hahahaha……
 0176:Non utilisé: 0103TBL.TXT#0176
 0177:Non utilisé: 0103TBL.TXT#0177
-0178:Ahahahah...
+0178:Hahahaha…………
 0179:Non utilisé: 0103TBL.TXT#0179
 0180:Non utilisé: 0103TBL.TXT#0180
 0181:Non utilisé: 0103TBL.TXT#0181
@@ -206,7 +206,7 @@
 0206:Non utilisé: 0103TBL.TXT#0206
 0207:Non utilisé: 0103TBL.TXT#0207
 0208:Non utilisé: 0103TBL.TXT#0208
-0209:Ravie de pouvoir re-travailler avec<br>vous, Ôgami !
-0210:Uh, uhuhuh... Allez Capitaiiiiine,<br>continuons à boire !
+0209:J'espère que nous pourrons<br>continuer à combattre ensemble,<br>Monsieur Ôgami !
+0210:Héhéhé… Lieutenaaaant, allez,<br>encore un p’tit verre !
 0211:Non utilisé: 0103TBL.TXT#0211
 0212:Non utilisé: 0103TBL.TXT#0212
