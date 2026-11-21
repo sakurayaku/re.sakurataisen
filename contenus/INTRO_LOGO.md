@@ -1,5 +1,13 @@
 # Logo d'introduction
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+└── SAKURA1
+    └── LOGO.SH2
+        └── [decode] INTRO_LOGO — scripts/intro_logo_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA1/LOGO.SH2/INTRO_LOGO/SWIRL.bmp`
 - `SAKURA1/LOGO.SH2/INTRO_LOGO/BACKDROP.bmp`

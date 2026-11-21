@@ -1,5 +1,16 @@
 # Cartouches de lieux des cartes
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+├── SAKURA
+│   ├── [decode] EMPTY_ROOM — scripts/map/empty_room.lua
+│   └── [decode] META_THEATER_MAP - scripts/theater_map_metadata.lua
+└── SAKURA1
+    └── TMAPSP.BIN
+        └── [decode] THEATER_MAP - scripts/theater_map_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA/EMPTY_ROOM/EmptyRoom.bmp`
 - `SAKURA1/TMAPSP.bin/51.bmp`

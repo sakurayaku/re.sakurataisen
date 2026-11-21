@@ -1,5 +1,13 @@
 # Crédits du jeu
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+└── SAKURA1
+    └── LOGO.SH2
+        └── [decode] INTRO_CREDITS — scripts/intro_credits_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA1/LOGO.SH2/INTRO_CREDITS/CREDITS.bmp` 
 - `SAKURA1/LOGO.SH2/INTRO_CREDITS/LOGO.bmp`

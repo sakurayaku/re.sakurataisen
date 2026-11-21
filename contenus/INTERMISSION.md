@@ -4,10 +4,10 @@
 ```
 SakTaiCD1_Track1.bin
 ├── SAKURA
-│   └── META_INTERMISSION — scripts/intermission_screen_metadata.lua
+│   └── [decode] META_INTERMISSION - scripts/intermission_screen_metadata.lua
 └── SAKURA1
     └── ICATALL.DAT
-        └── INTERMISSION — scripts/intermission_screen_gfx.lua
+        └── [decode] INTERMISSION - scripts/intermission_screen_gfx.lua
 ```
 
 **Fichiers concernés:**

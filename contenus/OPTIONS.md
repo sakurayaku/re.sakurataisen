@@ -1,5 +1,12 @@
 # Options du jeu
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+└── SAKURA
+    └── [decode] options - scripts/options_menu_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA/OPTIONS/{nn}_{NOM}.bmp`: Cinq étiquettes d'options principales, avec `nn` de `00` à `04` et `NOM` désignant l'option
 - `SAKURA/OPTIONS/BACKGROUND.bmp`

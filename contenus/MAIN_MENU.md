@@ -1,5 +1,13 @@
 # Menu principal du jeu
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+└── SAKURA1
+    └── LOGO.SH2
+        └── [decode] MAINMENU — scripts/main_menu_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA1/LOGO.SH2/MAINMENU/00_NEW_GAME.bmp`
 - `SAKURA1/LOGO.SH2/MAINMENU/01_OPTIONS.bmp`

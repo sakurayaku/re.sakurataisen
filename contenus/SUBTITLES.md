@@ -1,5 +1,15 @@
 # Sous-titres de la séquence d'introduction
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+├── SAKURA
+│   └── [decode] META_SUBTITLES - scripts/subtitles_metadata.lua
+└── SAKURA1
+    └── LOGO.SH2
+        └── [decode] SUBTITLES - scripts/subtitles_gfx.lua
+```
+
 **Fichiers concernés:**
 - `SAKURA1/LOGO.SH2/SUBTITLES/{nn}.bmp` où `nn` est un décimal de `00` à `16`.
   Des [BMP](https://fr.wikipedia.org/wiki/Windows_bitmap) indexés. La couleur d'index 0 (ce joli jaune criard) indique la transparence. Tout le reste sera visible.

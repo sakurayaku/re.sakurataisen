@@ -1,5 +1,32 @@
 # Textes de dialogue du jeu
 
+**Codecs:**
+```
+SakTaiCD1_Track1.bin
+├── SAKURA
+│   ├── [decode] palette — scripts/SAKURA/patch_font_palette.lua
+│   └── [decode] vwf_font — scripts/SAKURA/patch_vwf_font.lua
+├── SAKURA1
+│   ├── 0100TBL.BIN
+│   │   └── [decode] 0100TBL.TXT — scripts/dialogues.lua
+│   ├── 0101TBL.BIN
+│   │   └── [decode] 0101TBL.TXT — scripts/dialogues.lua
+│   ├── 0102TBL.BIN
+│   │   └── [decode] 0102TBL.TXT — scripts/dialogues.lua
+│   ├── 0103TBL.BIN
+│   │   └── [decode] 0103TBL.TXT — scripts/dialogues.lua
+└── SAKURA2
+    ├── 0SLG.BIN
+    │   ├── [decode] palette — scripts/SLG/patch_palette.lua
+    │   └── [decode] vwf_font — scripts/SLG/patch_vwf_font.lua
+    ├── M01MES.BIN
+    │   └── [decode] M01MES.TXT — scripts/dialogues.lua
+    └── SLG.BIN
+        ├── [decode] palette — scripts/SLG/patch_palette.lua
+        └── [decode] vwf_font — scripts/SLG/patch_vwf_font.lua
+```
+
+
 **Fichiers concernés:**
 - `SAKURA1/{nnnn}TBL.BIN/{nnnn}TBL.TXT` où `nnnn` est un décimal correspondant à la séquence[^sequence] du jeu.
   Des [.txt](https://fr.wikipedia.org/wiki/Fichier_texte) encodés au format unicode, contenant le texte de la séquence.
