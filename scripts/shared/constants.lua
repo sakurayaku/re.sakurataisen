@@ -35,6 +35,12 @@ return {
   CD2_FUKAGAWA_SHA256 = "53e73da1af8119333061cd11e6ef0a7841686c2c4997ed73204dc66b43f7f714",
   CD2_FUKAGAWA_BYTES  = 27968,
 
+  -- Status screen / intermission screen container, 114,688 bytes.  Byte-identical
+  -- on both discs: status background 0x8800, status font 0x13800 and the
+  -- intermission-screen label atlas 0x2800 live at the same offsets.
+  CD1_ICATALL_SHA256 = "2f74b63152d2b83f6f647d937602daba00092afb16ee9f37d484008a287213ef",
+  CD1_ICATALL_BYTES  = 114688,
+
   -- BGRA palette table from the canonical theater-map BMP Data/TMapSP/51.bmp.
   THEATER_MAP_PALETTE_BGRA = "525231ffd6efffffbdc5deffadadceffa59cb5ff9c84a5ff946b8cff845273ff733a52ff631931ff5a0021ff630019ff5a0019ff000000ff000000ff000000ff",
 }

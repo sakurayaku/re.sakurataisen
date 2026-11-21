@@ -2217,6 +2217,22 @@
               "decodes": {}
             }
           ],
+          "SAKURA1/ICATALL.DAT": [
+            {
+              "name": "INTERMISSION",
+              "codec": {
+                "id": "scripts/intermission_screen_gfx.lua",
+                "version": 5
+              },
+              "outputs": [
+                "INTERMISSION_LABELS.bmp"
+              ],
+              "overrides": [
+                "INTERMISSION_LABELS.bmp"
+              ],
+              "decodes": {}
+            }
+          ],
           "SAKURA": [
             {
               "name": "vwf_font",
@@ -2237,7 +2253,7 @@
               "decodes": {}
             },
             {
-              "name": "subtitles_metadata",
+              "name": "META_SUBTITLES",
               "codec": {
                 "id": "scripts/subtitles_metadata.lua",
                 "version": 2
@@ -2304,7 +2320,7 @@
               "decodes": {}
             },
             {
-              "name": "theater_map_metadata",
+              "name": "META_THEATER_MAP",
               "codec": {
                 "id": "scripts/theater_map_metadata.lua",
                 "version": 3
@@ -2324,6 +2340,15 @@
               "overrides": [
                 "EMPTY_ROOM/EmptyRoom.bmp"
               ],
+              "decodes": {}
+            },
+            {
+              "name": "META_INTERMISSION",
+              "codec": {
+                "id": "scripts/intermission_screen_metadata.lua",
+                "version": 3
+              },
+              "outputs": [],
               "decodes": {}
             }
           ]

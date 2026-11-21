@@ -50,9 +50,16 @@ local function can_handle_theater_map(data)
   return identify_theater_map(data) and "certain" or "no"
 end
 
+local function can_handle_icatall(data)
+  return matches(data, constants.CD1_ICATALL_BYTES, constants.CD1_ICATALL_SHA256) and "certain" or "no"
+end
+
+
+
 return {
   can_handle_sakura1 = can_handle_sakura1,
   can_handle_logo_sh2 = can_handle_logo_sh2,
   identify_theater_map = identify_theater_map,
   can_handle_theater_map = can_handle_theater_map,
+  can_handle_icatall = can_handle_icatall,
 }
