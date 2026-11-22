@@ -3,9 +3,17 @@
 **Codecs:**
 ```
 SakTaiCD1_Track1.bin
-└── SAKURA
-    └── [decode] options - scripts/options_menu_gfx.lua
+├── SAKURA
+│   └── [decode] options - scripts/SAKURA/options_menu.lua
+└── SAKURA2
+    ├── 0SLG.BIN
+    │   └── [decode] OPTIONS — scripts/SLG/options_menu.lua
+    └── SLG.BIN
+        └── [decode] OPTIONS — scripts/SLG/options_menu.lua
 ```
+
+> [!NOTE]
+> Le menu d'options est totalement dupliqué dans les fichiers `(0)SLG.BIN` liés au système de combat du jeu. Pour éviter une organisation chiante, il y a deux codecs: un s'applique à `SakTaiCD1_Track1.bin/SAKURA` , extrait les fichiers, et sert de copie de travail pour la réinsertion, tandis que le second codec n'opère pas de `decode()` et utilise les fichiers dans `SakTaiCD1_Track1.bin/SAKURA/OPITONS/` pour reconstruire le menu d'options dans les fichiers `(0)SLG.BIN`.
 
 **Fichiers concernés:**
 - `SAKURA/OPTIONS/{nn}_{NOM}.bmp`: Cinq étiquettes d'options principales, avec `nn` de `00` à `04` et `NOM` désignant l'option

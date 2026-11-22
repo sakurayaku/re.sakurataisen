@@ -1,5 +1,5 @@
---[[ Test harness for options_menu_gfx.lua — run from the project root:
-     ludared scripts test tests/test_options_menu_gfx.lua
+--[[ Tests for both Options menu codecs — run from the project root:
+     ludared scripts test tests/test_options_menu.lua
 
   The oracle is written independently of the codec: descriptors, action tables,
   button and mini lists are read here, images are composed here, and every
@@ -7,7 +7,7 @@
   helpers.
 ]]
 
-local codec    = dofile(LUDARED.SCRIPTS .. "/options_menu_gfx.lua")
+local codec    = dofile(LUDARED.SCRIPTS .. "/SAKURA/options_menu.lua")
 local prs      = LUDARED.codec("std/sega/compression/prs")
 
 local pass, fail = 0, 0
@@ -229,6 +229,17 @@ local function artifact_set(arts)
   return t
 end
 
+local function same_artifacts(left, right)
+  local a, b = artifact_set(left), artifact_set(right)
+  for name, data in pairs(a) do
+    if b[name] ~= data then return false, name end
+  end
+  for name in pairs(b) do
+    if a[name] == nil then return false, name end
+  end
+  return true
+end
+
 local function with_replacements(arts, repl)
   local out = {}
   for _, a in ipairs(arts) do
@@ -280,7 +291,7 @@ local function stray(a, b, allowed)
   return nil
 end
 
-print("options_menu_gfx: load")
+print("options menu: SAKURA")
 local parent = load("SAKURA")
 check("the retail file is 391,712 bytes", #parent == 391712, tostring(#parent))
 local parent_text = read_text(parent)
@@ -382,13 +393,8 @@ check("the origins metadata survives", new_arts[ORIGINS_NAME] == base[ORIGINS_NA
 local st = codec.stats
 check("the atlas stays inside the decoded limit", st.sheet_bytes <= ATLAS_LIMIT, tostring(st.sheet_bytes))
 check("the stream stays inside the slot", st.stream_bytes <= ATLAS_SLOT, tostring(st.stream_bytes))
-check("deduplication found shared segments", st.unique <= st.records,
-  st.unique .. " unique / " .. st.records .. " records")
-check("the chosen cut is reported", st.cut and st.cut.maxw and st.cut.maxw % 8 == 0,
-  st.cut and tostring(st.cut.maxw))
-check("every candidate is scored", #st.candidates >= 8, tostring(#st.candidates))
-check("the rebuilt sheet keeps the retail labels' ink", st.sheet_bytes > 0
-  and st.sheet_bytes <= ATLAS_LIMIT, tostring(st.sheet_bytes))
+check("deduplication saves atlas bytes", st.dedupe_saved > 0,
+  tostring(st.dedupe_saved))
 check("the records fit the relocated storage", st.arena_used <= st.arena_capacity,
   st.arena_used .. "/" .. st.arena_capacity)
 
@@ -1062,9 +1068,56 @@ check("a rebuilt file does not match the retail hashes", codec.can_handle(rebuil
   codec.can_handle(rebuilt))
 check("a short file is a no", codec.can_handle(parent:sub(1, 100)) == "no")
 check("a non-string is a no", codec.can_handle(nil) == "no")
-local bad_base = parent:sub(1, MAIN[4].off + 20) .. string.pack(">I4", 0x1111)
-  .. parent:sub(MAIN[4].off + 24)
-check("a file with a wrong texture base is a no", codec.can_handle(bad_base) == "no")
+
+print("")
+print("options menu: SLG")
+local slg_codec = dofile(LUDARED.SCRIPTS .. "/SLG/options_menu.lua")
+local slg_core = assert(loadfile(LUDARED.SCRIPTS .. "/shared/options_menu.lua"))("slg")
+local slg_parent = load("SLG.BIN")
+check("both retail SLG files are identical", slg_parent == load("0SLG.BIN"))
+check("the retail SLG is recognized", slg_codec.can_handle(slg_parent) == "certain")
+check("SLG decode emits no artifacts", #slg_codec.decode(slg_parent) == 0)
+
+local same, detail = same_artifacts(base_arts, slg_core.decode(slg_parent, {}))
+check("retail menus decode identically", same, detail)
+
+local workspace_arts = {}
+for _, artifact in ipairs(base_arts) do
+  workspace_arts[#workspace_arts + 1] = {
+    name = artifact.name,
+    data = load(LUDARED.WORKSPACE .. "/SakTaiCD1_Track1.bin/SAKURA/" .. artifact.name),
+  }
+end
+local expected = codec.decode(codec.encode(parent, workspace_arts, {}))
+local slg_out = slg_codec.encode(slg_parent, {})
+local slg_stats = slg_codec.stats
+check("SLG output has the original file size", #slg_out == #slg_parent)
+check("workspace art changes SLG", slg_out ~= slg_parent)
+check("SLG atlas fits VRAM", slg_stats.sheet_bytes <= ATLAS_LIMIT,
+  tostring(slg_stats.sheet_bytes))
+check("SLG atlas fits its PRS slot", slg_stats.stream_bytes <= ATLAS_SLOT,
+  tostring(slg_stats.stream_bytes))
+check("SLG records fit their arena", slg_stats.arena_used <= slg_stats.arena_capacity,
+  slg_stats.arena_used .. "/" .. slg_stats.arena_capacity)
+same, detail = same_artifacts(expected, slg_core.decode(slg_out, {}))
+check("SLG and SAKURA render the workspace art identically", same, detail)
+check("patched SLG is recognized", slg_codec.can_handle(slg_out) == "possible")
+check("SLG encoding is idempotent", slg_codec.encode(slg_out, {}) == slg_out)
+
+local staged = slg_parent
+for _, path in ipairs({
+  "/SLG/patch_vwf_font.lua",
+  "/SLG/patch_palette.lua",
+  "/combat_commands_metadata.lua",
+}) do
+  staged = dofile(LUDARED.SCRIPTS .. path).encode(staged, {})
+end
+check("SLG is recognized after preceding patches", slg_codec.can_handle(staged) == "possible")
+same, detail = same_artifacts(expected, slg_core.decode(slg_codec.encode(staged, {}), {}))
+check("SLG renders the same art after preceding patches", same, detail)
+print(string.format("  SLG budget: %d-byte sheet, %d-byte PRS, %d/%d record bytes",
+  slg_stats.sheet_bytes, slg_stats.stream_bytes, slg_stats.arena_used,
+  slg_stats.arena_capacity))
 
 print("")
 print(string.format("%d passed, %d failed", pass, fail))

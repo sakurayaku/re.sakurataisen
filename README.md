@@ -25,9 +25,11 @@ Seuls les fichiers `.bmp` sont importants. Les fichiers `.xcf` (format de travai
 - [Options du jeu](/contenus/OPTIONS.md)
 
 ### Déroulement du jeu
+
 - [Écrans de titres des épisodes](/contenus/TITLE.md)
 - [Écran d'intermission](/contenus/INTERMISSION.md)
 - [Cartes de déplacement](/contenus/MAP.md)
+- [Menus de combat](/contenus/COMBAT.md)
 
 # Credits & attributions
 

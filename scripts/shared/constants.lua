@@ -41,6 +41,12 @@ return {
   CD1_ICATALL_SHA256 = "2f74b63152d2b83f6f647d937602daba00092afb16ee9f37d484008a287213ef",
   CD1_ICATALL_BYTES  = 114688,
 
+  -- Disc 1 strategy-game executable, 309,844 bytes.  SLG.BIN and 0SLG.BIN are
+  -- byte-identical on the disc, so one hash covers both names; the font, VWF
+  -- and battle-menu codecs all patch them.
+  CD1_SLG_SHA256 = "2954133afe85035792763f3a51f7868f22d727170661a47ab40e270f5ab506b8",
+  CD1_SLG_BYTES  = 309844,
+
   -- BGRA palette table from the canonical theater-map BMP Data/TMapSP/51.bmp.
   THEATER_MAP_PALETTE_BGRA = "525231ffd6efffffbdc5deffadadceffa59cb5ff9c84a5ff946b8cff845273ff733a52ff631931ff5a0021ff630019ff5a0019ff000000ff000000ff000000ff",
 }

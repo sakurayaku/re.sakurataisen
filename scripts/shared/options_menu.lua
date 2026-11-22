@@ -1,4 +1,8 @@
---[[ Sakura Taisen Options menu graphics (PATCH codec, version 4)
+--[[ Shared Sakura Taisen Options menu graphics (PATCH codec, version 4)
+
+  The SAKURA and SLG executables carry the same Options art and record layout.
+  Their text tables and compressed graphics move by different file offsets;
+  SLG also uploads the atlas at a different VDP1 address.
 
   Covers the whole Options text subsystem, not just the five main rows.  Every
   text list on the screen reads one PRS atlas at file 0x5B320 (73 retail tiles,
@@ -94,18 +98,25 @@ local function script_dir()
 end
 
 -- Codecs run under Ludared (which knows the scripts root) and standalone under
--- the test harness; both cases have to find shared/ helpers.
+-- the test harness; both cases have to find the shared helpers.
 local function load_shared(name)
   if LUDARED and LUDARED.SCRIPTS then
     return dofile(LUDARED.SCRIPTS .. "/shared/" .. name .. ".lua")
   end
-  return dofile(script_dir() .. "/shared/" .. name .. ".lua")
+  return dofile(script_dir() .. "/" .. name .. ".lua")
 end
+
+local variant = ...
+assert(variant == "sakura" or variant == "slg", "options_menu: expected sakura or slg")
+local is_slg = variant == "slg"
+-- Derived from the byte-identical retail tables, atlas and background.
+local text_shift = is_slg and -0x129c4 or 0
+local gfx_shift = is_slg and -0x10be0 or 0
+local function text_at(offset) return offset + text_shift end
+local function gfx_at(offset) return offset + gfx_shift end
 
 local prs         = LUDARED.codec("std/sega/compression/prs")
 local args_parser = load_shared("args_parser")
-
-local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
 
 local codec = {}
 
@@ -114,17 +125,17 @@ codec.description = "PATCH plugin for every Options-screen text list, the panel 
 codec.kind        = "patch"
 codec.version     = 4
 
-local ATLAS_OFFSET  = 0x05b320
+local ATLAS_OFFSET  = gfx_at(0x05b320)
 local ATLAS_SLOT    = 3782              -- fixed compressed slot
-local ATLAS_LIMIT   = 0x2d00            -- 11,520 bytes before the next texture
-local TEXTURE_BASE  = 0xd860            -- VDP1 0x6c300 >> 3
+local ATLAS_LIMIT   = 0x2d00            -- 11,520 bytes before the next texture/upload end
+local TEXTURE_BASE  = is_slg and 0x9f20 or 0xd860
 local RAM_BASE      = 0x06004000        -- file offset -> RAM address
 
-local PALETTE_OFFSET     = 0x05ad98     -- two 16-colour BGR555 banks
+local PALETTE_OFFSET     = gfx_at(0x05ad98) -- two 16-colour BGR555 banks
 local PALETTE_BANK_BYTES = 32           -- 16 entries x 2 bytes
 local PALETTE_TEXT       = PALETTE_OFFSET + PALETTE_BANK_BYTES
 
-local BACKGROUND_OFFSET = 0x05ae38     -- PRS, fixed 1,256-byte slot
+local BACKGROUND_OFFSET = gfx_at(0x05ae38) -- PRS, fixed 1,256-byte slot
 local BACKGROUND_SLOT   = 1256
 local BACKGROUND_W      = 288
 local BACKGROUND_H      = 144
@@ -133,7 +144,7 @@ local BACKGROUND_END    = 0xc300        -- 49,920 decoded bytes
 local BACKGROUND_CHAIN  = 1024          -- deeper search keeps the slot
 
 -- The two selection marks are the last 128 bytes of the background stream:
--- 8 x 16 4bpp sprites, left then right, texture base 0xd850.
+-- 8 x 16 4bpp sprites, left then right, just before the atlas in VDP1.
 local BRACKET_OFFSET   = 0xc280
 local BRACKET_BYTES    = 64
 local BRACKET_W        = 8
@@ -149,14 +160,14 @@ local ATLAS_CHAIN   = 1024              -- PRS match-chain depth
 local MAX_CHOICES   = 32
 
 -- Key-config tables (research/SAKTAI_OPTIONS_MENU.md 5.3).
-local ACTION_TABLE    = 0x05abbc        -- 12 count bytes
-local ACTION_POINTERS = 0x05abc8        -- 12 BE dwords
+local ACTION_TABLE    = text_at(0x05abbc) -- 12 count bytes
+local ACTION_POINTERS = text_at(0x05abc8) -- 12 BE dwords
 local ACTION_COUNT    = 12
-local ACTION_ARENA    = 0x05a656        -- retired action pool, records 12..43
-local ACTION_ARENA_LEN = 0x05a796 - ACTION_ARENA
-local BUTTON_REC      = 0x05a5de        -- 12 records read by the drawer
+local ACTION_ARENA    = text_at(0x05a656) -- retired action pool, records 12..43
+local ACTION_ARENA_LEN = text_at(0x05a796) - ACTION_ARENA
+local BUTTON_REC      = text_at(0x05a5de) -- 12 records read by the drawer
 local BUTTON_COUNT    = 12
-local MINI_REC        = 0x05acb0        -- 8 records, same icons as the buttons
+local MINI_REC        = text_at(0x05acb0) -- 8 records, same icons as the buttons
 local MINI_COUNT      = 8
 
 -- The button column (12 records at 0x5A5DE) is not an artifact: encode derives
@@ -179,15 +190,15 @@ local EXIT_COLUMN_Y       = 64                 -- in the column's own geometry
 -- The five main rows.  `cap` is the number of records the retail slot holds;
 -- a longer list is relocated instead of overwriting its neighbours.
 local MAIN = {
-  { name = "00_CURSOR_SPEED", desc = 0x05ab68, slot = 0x05aa50, cap = 11,
+  { name = "00_CURSOR_SPEED", desc = text_at(0x05ab68), slot = text_at(0x05aa50), cap = 11,
     anchor = { x = -128, y = -8 } },
-  { name = "01_SOUND",        desc = 0x05aa30, slot = 0x05a974, cap = 12,
+  { name = "01_SOUND",        desc = text_at(0x05aa30), slot = text_at(0x05a974), cap = 12,
     anchor = { x = -128, y = -8 } },
-  { name = "02_VOICE",        desc = 0x05a954, slot = 0x05a8c8, cap = 7,
+  { name = "02_VOICE",        desc = text_at(0x05a954), slot = text_at(0x05a8c8), cap = 7,
     anchor = { x = -128, y = -8 } },
-  { name = "03_CONTROLS",     desc = 0x05a8a8, slot = 0x05a800, cap = 10,
+  { name = "03_CONTROLS",     desc = text_at(0x05a8a8), slot = text_at(0x05a800), cap = 10,
     anchor = { x = -128, y = -8 } },
-  { name = "04_EXIT",         desc = 0x05a7e0, slot = 0x05a796, cap = 4,
+  { name = "04_EXIT",         desc = text_at(0x05a7e0), slot = text_at(0x05a796), cap = 4,
     anchor = { x = -32,  y = -8 },
     -- Four 16-px cells, the same four the button column shows: the EXIT label
     -- is one texture set for both consumers, exactly as in retail.
@@ -2106,10 +2117,6 @@ function codec.encode(original, artifacts, args)
   }
 
   return new_data
-end
-
-function codec.can_handle(data)
-  return can_handle.can_handle_sakura1(data)
 end
 
 function codec.decode_name(args)

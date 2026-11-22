@@ -26,7 +26,7 @@ Les images sont tous des [BMP](https://fr.wikipedia.org/wiki/Windows_bitmap) ind
 
 Ces images contiennent tous les cartouches qui s'affichent sur la carte, lorsque vous contrôlez Ôgami dans le théâtre, ou dans le manoir Fukagawa. Vous pouvez toutes les modifier, tant que vous conservez leurs palettes, que la longueur est un multiple `8px`, et que vous respectez leur budget.. Elles sont réparties entre trois fichiers.
 
-## SAKURA: Pièce vide
+### SAKURA: Pièce vide
 
 Le cartouche de pièce vide se trouve dans `SAKURA` et est commun aux deux cartes. Il contient uniquement `空室` ce qui est littéralement "Pièce vide" et ne rentre pas dans le budget car...c'est la seule image de ce genre, elle est seule dans son slot, et donc son budget de `56x24px` (ou `672 octets`). Le meilleur compromis a été de mettre "Réserve" et lorgner sur la hauteur.
 
@@ -34,7 +34,7 @@ Le cartouche de pièce vide se trouve dans `SAKURA` et est commun aux deux carte
 | --- | --- | --- | --- |
 | `SAKURA/EMPTY_ROOM/EmptyRoom.bmp` | 空室 | Empty Room | Réserve |
 
-## TMAPSP.BIN: Le théâtre
+### TMAPSP.BIN: Le théâtre
 
 Vous pouvez modifier ces images, à condition que leur longueur reste un multiple de `8px` et que leur hauteur soit supérieure à `1px`, et que vous respectiez leur budget total. Le budget total pour TOUTES ces images, en prenant en compte `00.bmp` à `50.bmp` est de `106 496px`.
 
@@ -112,6 +112,6 @@ Ensuite, lancer le script Python à la racine:
 $ uv run --with pillow generate_map_boxes.py workspace/SakTaiCD1_Track1.bin/SAKURA1/TMAPSP.BIN 51 92
 ```
 
-Le script prend chaque ligne, la découpe dès qu'il découvre la première "colonne vide" (donc attention à ne pas foutre d'espace trop violent)
+Le script prend chaque ligne, la découpe dès qu'il découvre la première "colonne vide" (donc attention à ne pas foutre d'espace trop violent).
 
-Le script est modifiable et vous pouvez l'ajuste: par exemple la taille de chaque ligne, ou pour rogner la première ligne (qui fait office de marge dans mes tests). C'est comme ça qu'on est passés de lignes de `15px` à des lignes de `14px`. La team US employait des textes bien plus petit (genre ils font rentrer deux lignes dans `16px`!), donc en théorie on a de la marge, c'est sûrement mon "oeil de gamer Full-HD-1080p-4k60fps" qui est pas habitué à penser en "ça se lira différemment une fois élargi sur un vrai écran".
+Le script est modifiable et vous pouvez l'ajuster: par exemple la taille de chaque ligne, ou pour rogner la première ligne (qui fait office de marge dans mes tests). C'est comme ça qu'on est passés de lignes de `15px` à des lignes de `14px`. La team US employait des textes bien plus petit (genre ils font rentrer deux lignes dans `16px`!), donc en théorie on a de la marge, c'est sûrement mon "oeil de gamer Full-HD-1080p-4k60fps" qui est pas habitué à penser en "ça se lira différemment une fois élargi sur un vrai écran".
