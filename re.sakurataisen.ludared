@@ -1810,6 +1810,57 @@
           "SAKURA2/M01MES.FNT"
         ],
         "decodes": {
+          "SAKURA1/0101TBL.BIN": [
+            {
+              "name": "0101TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0101KNJ"
+              },
+              "outputs": [
+                "0101TBL.TXT"
+              ],
+              "overrides": [
+                "0101TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA1/0100TBL.BIN": [
+            {
+              "name": "0100TBL.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0100KNJ"
+              },
+              "outputs": [
+                "0100TBL.TXT"
+              ],
+              "overrides": [
+                "0100TBL.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
+          "SAKURA2/M01MES.BIN": [
+            {
+              "name": "M01MES.TXT",
+              "codec": {
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "M01MES"
+              },
+              "outputs": [
+                "M01MES.TXT"
+              ],
+              "overrides": [
+                "M01MES.TXT"
+              ],
+              "decodes": {}
+            }
+          ],
           "SAKURA1/TMAPSP.BIN": [
             {
               "name": "THEATER_MAP",
@@ -1959,36 +2010,58 @@
               "decodes": {}
             }
           ],
-          "SAKURA1/ICATALL.DAT": [
+          "SAKURA1/0102TBL.BIN": [
             {
-              "name": "INTERMISSION",
+              "name": "0102TBL.TXT",
               "codec": {
-                "id": "scripts/intermission_screen_gfx.lua",
-                "version": 5
+                "id": "scripts/dialogues.lua",
+                "version": 1,
+                "args": "0102KNJ"
               },
               "outputs": [
-                "INTERMISSION_LABELS.bmp"
+                "0102TBL.TXT"
               ],
               "overrides": [
-                "INTERMISSION_LABELS.bmp"
+                "0102TBL.TXT"
               ],
               "decodes": {}
             }
           ],
-          "SAKURA1/0100TBL.BIN": [
+          "SAKURA2/SLG.BIN": [
             {
-              "name": "0100TBL.TXT",
+              "name": "font_vwf_layout",
               "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0100KNJ"
+                "id": "scripts/SLG/patch_vwf_font.lua",
+                "version": 1
               },
-              "outputs": [
-                "0100TBL.TXT"
-              ],
-              "overrides": [
-                "0100TBL.TXT"
-              ],
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "palette",
+              "codec": {
+                "id": "scripts/SLG/patch_palette.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "combat_commands",
+              "codec": {
+                "id": "scripts/combat_commands_metadata.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "options",
+              "codec": {
+                "id": "scripts/SLG/options_menu.lua",
+                "version": 1
+              },
+              "outputs": [],
               "decodes": {}
             }
           ],
@@ -2009,20 +2082,41 @@
               "decodes": {}
             }
           ],
-          "SAKURA2/M01MES.BIN": [
+          "SAKURA2/0SLG.BIN": [
             {
-              "name": "M01MES.TXT",
+              "name": "font_vwf_layout",
               "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "M01MES"
+                "id": "scripts/SLG/patch_vwf_font.lua",
+                "version": 1
               },
-              "outputs": [
-                "M01MES.TXT"
-              ],
-              "overrides": [
-                "M01MES.TXT"
-              ],
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "palette",
+              "codec": {
+                "id": "scripts/SLG/patch_palette.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "combat_commands",
+              "codec": {
+                "id": "scripts/combat_commands_metadata.lua",
+                "version": 1
+              },
+              "outputs": [],
+              "decodes": {}
+            },
+            {
+              "name": "options",
+              "codec": {
+                "id": "scripts/SLG/options_menu.lua",
+                "version": 1
+              },
+              "outputs": [],
               "decodes": {}
             }
           ],
@@ -2143,55 +2237,6 @@
               "decodes": {}
             }
           ],
-          "SAKURA2/WKL01.BIN": [
-            {
-              "name": "COMBAT",
-              "codec": {
-                "id": "scripts/combat_commands_gfx.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            }
-          ],
-          "SAKURA2/0SLG.BIN": [
-            {
-              "name": "font_vwf_layout",
-              "codec": {
-                "id": "scripts/SLG/patch_vwf_font.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "palette",
-              "codec": {
-                "id": "scripts/SLG/patch_palette.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "combat_commands",
-              "codec": {
-                "id": "scripts/combat_commands_metadata.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "options",
-              "codec": {
-                "id": "scripts/SLG/options_menu.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            }
-          ],
           "SAKURA": [
             {
               "name": "vwf_font",
@@ -2309,39 +2354,62 @@
               },
               "outputs": [],
               "decodes": {}
-            }
-          ],
-          "SAKURA1/0101TBL.BIN": [
+            },
             {
-              "name": "0101TBL.TXT",
+              "name": "LOAD_SCREEN",
               "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0101KNJ"
+                "id": "scripts/load_screen_gfx.lua",
+                "version": 13
               },
               "outputs": [
-                "0101TBL.TXT"
+                "LOAD_SCREEN/LOAD_MENU.bmp",
+                "LOAD_SCREEN/LOAD_MENU_MEMCARD.bmp",
+                "LOAD_SCREEN/LOAD_MENU_COPY_SOURCE.bmp",
+                "LOAD_SCREEN/EPISODE_NUMBERS.bmp",
+                "LOAD_SCREEN/EPISODE_TITLES.bmp",
+                "LOAD_SCREEN/COMMANDS_CONTEXT.bmp",
+                "LOAD_SCREEN/COMMANDS_CONFIRM.bmp",
+                "LOAD_SCREEN/COMMANDS_RESULT.bmp",
+                "LOAD_SCREEN/UNUSED_ALONE_GLYPH.bmp",
+                "LOAD_SCREEN/ERRORS.bmp",
+                "LOAD_SCREEN/UNUSED.bmp",
+                "LOAD_SCREEN/EMPTY_SAVE.bmp",
+                "LOAD_SCREEN/UNUSED_EPISODE_10.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_YES.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_NO.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_COPY.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_DELETE.bmp"
               ],
               "overrides": [
-                "0101TBL.TXT"
+                "LOAD_SCREEN/LOAD_MENU_MEMCARD.bmp",
+                "LOAD_SCREEN/COMMANDS_CONFIRM.bmp",
+                "LOAD_SCREEN/COMMANDS_CONTEXT.bmp",
+                "LOAD_SCREEN/COMMANDS_RESULT.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_YES.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_NO.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_COPY.bmp",
+                "LOAD_SCREEN/COMMANDS_CHOICE_DELETE.bmp",
+                "LOAD_SCREEN/LOAD_MENU_COPY_SOURCE.bmp",
+                "LOAD_SCREEN/UNUSED_ALONE_GLYPH.bmp",
+                "LOAD_SCREEN/EMPTY_SAVE.bmp",
+                "LOAD_SCREEN/UNUSED_EPISODE_10.bmp",
+                "LOAD_SCREEN/EPISODE_NUMBERS.bmp",
+                "LOAD_SCREEN/EPISODE_TITLES.bmp",
+                "LOAD_SCREEN/ERRORS.bmp",
+                "LOAD_SCREEN/LOAD_MENU.bmp",
+                "LOAD_SCREEN/UNUSED.bmp"
               ],
               "decodes": {}
             }
           ],
-          "SAKURA1/0102TBL.BIN": [
+          "SAKURA2/WKL01.BIN": [
             {
-              "name": "0102TBL.TXT",
+              "name": "COMBAT",
               "codec": {
-                "id": "scripts/dialogues.lua",
-                "version": 1,
-                "args": "0102KNJ"
+                "id": "scripts/combat_commands_gfx.lua",
+                "version": 1
               },
-              "outputs": [
-                "0102TBL.TXT"
-              ],
-              "overrides": [
-                "0102TBL.TXT"
-              ],
+              "outputs": [],
               "decodes": {}
             }
           ],
@@ -2361,41 +2429,19 @@
               "decodes": {}
             }
           ],
-          "SAKURA2/SLG.BIN": [
+          "SAKURA1/ICATALL.DAT": [
             {
-              "name": "font_vwf_layout",
+              "name": "INTERMISSION",
               "codec": {
-                "id": "scripts/SLG/patch_vwf_font.lua",
-                "version": 1
+                "id": "scripts/intermission_screen_gfx.lua",
+                "version": 5
               },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "palette",
-              "codec": {
-                "id": "scripts/SLG/patch_palette.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "combat_commands",
-              "codec": {
-                "id": "scripts/combat_commands_metadata.lua",
-                "version": 1
-              },
-              "outputs": [],
-              "decodes": {}
-            },
-            {
-              "name": "options",
-              "codec": {
-                "id": "scripts/SLG/options_menu.lua",
-                "version": 1
-              },
-              "outputs": [],
+              "outputs": [
+                "INTERMISSION_LABELS.bmp"
+              ],
+              "overrides": [
+                "INTERMISSION_LABELS.bmp"
+              ],
               "decodes": {}
             }
           ]
