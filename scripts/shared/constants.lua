@@ -8,6 +8,14 @@
 -- (the load-screen block and its palette match exactly), so a hash only says
 -- which disc -- and therefore which offsets -- a file is.
 
+local function from_hex(hex)
+  local out = {}
+  for i = 1, #hex, 2 do
+    out[#out + 1] = string.char(tonumber(hex:sub(i, i + 1), 16))
+  end
+  return table.concat(out)
+end
+
 return {
   -- Disc 1, 391,712 bytes: load-screen block 0x5E190, options atlas 0x5B320.
   CD1_SAKURA_SHA256 = "1729cd8701fa8da30b203d0bf97e47e2dc9cf06b50ca91589ea760fe0cb8ff87",
@@ -47,6 +55,6 @@ return {
   CD1_SLG_SHA256 = "2954133afe85035792763f3a51f7868f22d727170661a47ab40e270f5ab506b8",
   CD1_SLG_BYTES  = 309844,
 
-  -- BGRA palette table from the canonical theater-map BMP Data/TMapSP/51.bmp.
-  THEATER_MAP_PALETTE_BGRA = "525231ffd6efffffbdc5deffadadceffa59cb5ff9c84a5ff946b8cff845273ff733a52ff631931ff5a0021ff630019ff5a0019ff000000ff000000ff000000ff",
+  -- BGRA palette bytes from the canonical theater-map BMP Data/TMapSP/51.bmp.
+  map_palette = from_hex("525231ffd6efffffbdc5deffadadceffa59cb5ff9c84a5ff946b8cff845273ff733a52ff631931ff5a0021ff630019ff5a0019ff000000ff000000ff000000ff"),
 }

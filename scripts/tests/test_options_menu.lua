@@ -9,6 +9,8 @@
 
 local codec    = dofile(LUDARED.SCRIPTS .. "/SAKURA/options_menu.lua")
 local prs      = LUDARED.codec("std/sega/compression/prs")
+local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 
 local pass, fail = 0, 0
 local function check(name, ok, detail)
@@ -298,6 +300,9 @@ local parent_text = read_text(parent)
 local base_arts = codec.decode(parent, {})
 local base = artifact_set(base_arts)
 check("decode returns the 23 artifacts", #base_arts == 23, tostring(#base_arts))
+local _, _, _, label_pal = parse(base_arts[1].data)
+check("labels use the shared ADV BMP palette",
+  label_pal == bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16))
 
 print("")
 print("decode: artifacts")
@@ -1107,7 +1112,6 @@ check("SLG encoding is idempotent", slg_codec.encode(slg_out, {}) == slg_out)
 local staged = slg_parent
 for _, path in ipairs({
   "/SLG/patch_vwf_font.lua",
-  "/SLG/patch_palette.lua",
   "/combat_commands_metadata.lua",
 }) do
   staged = dofile(LUDARED.SCRIPTS .. path).encode(staged, {})

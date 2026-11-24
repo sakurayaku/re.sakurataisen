@@ -15,9 +15,9 @@
                               constants one below it at 14 -> 29
       line count         3 -> 4 lines (48 px / 12), stored as maxLines - 1
 
-  The advanced-ADV layout is a separate codec (scripts/SAKURA/patch_8px_font.lua)
-  and the glyph *appearance* — the palette — is
-  scripts/SLG/patch_palette.lua.  Each codec patches one thing in one engine.
+  The advanced-ADV layout is a separate codec
+  (scripts/SAKURA/patch_8px_font.lua); glyph appearance is documented in
+  scripts/shared/palettes.lua.  Each codec patches one thing in one engine.
 
   DELIBERATELY NOT APPLIED
   ------------------------

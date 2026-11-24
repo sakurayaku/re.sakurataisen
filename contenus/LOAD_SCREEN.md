@@ -47,14 +47,14 @@ Vous pouvez modifier autant que vous voulez, tant que vous ne changez pas leur d
 
 Tous les textes affichables sont contenus là-dedans. On est sur la même problématique que [le menu d'options](./OPTIONS.md): tous les textes sont découpés en tuiles de `16x16px`, unifiées dans un atlas de symboles, puis chaque étiquette fait intervenir les tuiles qui l'intéressent. Très pratique en Japonais, moins quand vous avez une VWF[^vwf].
 
-Ce qui nous amène au premier budget: 144 tuiles uniques dans le patch US. On a grimpé la limite à 192 et ça fonctionne toujours, donc pour le moment, on croise les doigts. Sachant qu'en plus, cet atlas de tuiles doit tenir dans un block [PRS](https://segaretro.org/PRS_compression) de `6 970 octets`.
+Ce qui nous amène au premier budget: 144 tuiles uniques dans le patch US. On a grimpé la limite à 181 et ça fonctionne toujours, donc pour le moment, on croise les doigts. Sachant qu'en plus, cet atlas de tuiles doit tenir dans un block [PRS](https://segaretro.org/PRS_compression) de `6 970 octets`.
 
-Et enfin, dernier budget: une fois votre atlas employé, les étiquettes de texte (à l'exception des quatre `COMMANDS_CHOICE`) partagent un "budget de déclaration des sprites" de `762 octets` qui correspond à la manière dont le code dira "Pour former cette étiquette, affiche les sprites `0x0001 0x0002 0x0003 0x0025 0x0049 0x0END`" (soit 5 fois `2 octets`, plus `2 octets` pour indiquer la fin de la chaine, un total de `12 octets` pour 5 sprites de `16x16px`), et un dernier marqueur "fin de block" de deux octets, vous laissant donc un budget de "355 références de tuiles". Vous pouvez raccourcir les étiquettes: les espaces vides à droite n'entrent pas dans ce budget.
+Et enfin, dernier budget: une fois votre atlas employé, les étiquettes de texte (à l'exception des cinq `COMMANDS_CHOICE`) partagent un "budget de déclaration des sprites" de `762 octets` qui correspond à la manière dont le code dira "Pour former cette étiquette, affiche les sprites `0x0001 0x0002 0x0003 0x0025 0x0049 0x0END`" (soit 5 fois `2 octets`, plus `2 octets` pour indiquer la fin de la chaine, un total de `12 octets` pour 5 sprites de `16x16px`), et un dernier marqueur "fin de block" de deux octets, vous laissant donc un budget de "335 références de tuiles". Vous pouvez raccourcir les étiquettes: les espaces vides à droite n'entrent pas dans ce budget.
 
 > [!NOTE]
 > Si vous vous retrouvez à dépasser ce budget, vous pouvez (essayer de) modifier le comportement du jeu pour qu'il n'utilise qu'un seul octet par sprite de `16x16px`. La méthode a été documentée [dans le codec](/scripts/load_screen_gfx.lua), à côté de `local STRING_BUDGET`, mais elle n'a PAS été testée, et peut briser d'autres sections du jeu. Étant donné que les étiquettes de la version française rentrent, je n'ai pas creusé ni testé dans cette direction, mais ça peut être utile à l'avenir.
 
-Pour tous ces fichiers, vous ne pouvez PLUS modifier leurs dimensions.
+Les feuilles à plusieurs lignes gardent leurs dimensions. Les étiquettes isolées et les boutons peuvent changer de largeur dans les limites indiquées ci-dessous.
 
 #### EPISODE_NUMBERS
 
@@ -105,17 +105,18 @@ Même principe de tuiles: quatre rangées de `16px` de haut, et `272px` de large
 
 #### COMMANDS_CHOICE_*
 
-Sous la liste de sauvegardes, le jeu vous propose deux options: `COPY` et `DELETE`. Choisissez `DELETE`, sélectionnez une sauvegarde, et ils se transformeront en `YES` et `NO`. Ces quatre boutons occupent le même budget de DIX tuiles totales.
+Sous la liste de sauvegardes, le jeu vous propose `COPY`, `DELETE` et `EXIT`. Choisissez `DELETE`, sélectionnez une sauvegarde, et les deux premiers se transformeront en `YES` et `NO`. Ces cinq boutons occupent le même budget de DOUZE tuiles totales.
 
 Leur répartition Japonaise étaient de "1 caractère par tuile", on avait donc la répartition suivante:
 - `COPY` => 3 tuiles (`コピー`)
 - `DELETE` => 2 tuiles (`消去`)
 - `YES` => 2 tuiles (`はい`)
 - `NO` => 3 tuiles (`いいえ`)
+- `EXIT` => 2 tuiles (`終了`)
 
 Pour arranger, le codec a flippé ça: `NO` perd une tuile, et `DELETE` en gagne une.
 
-Vous avez donc quatre images, aux dimensions fixes: 2 (ou 3) tuiles de `16x16px`.
+Vous avez donc cinq images, avec une largeur modifiable tant que leur somme ne dépasse pas douze tuiles de `16x16px`.
 
 #### Éléments non-utilisés
 

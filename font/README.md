@@ -24,8 +24,33 @@ Le jeu utilise la police [DejaVu Sans](https://fr.wikipedia.org/wiki/DejaVu). Pa
 - [Intel Clear](https://font.download/font/intel-clear)
 - [Helvetica 65](https://fontsgeek.com/fonts/helvetica65-medium-medium)
 
+## 0. Palette et quantification des glyphes
+
+La police utilise une palette de 16 couleurs (4 bpp), mais **tous les indices ne sont pas interchangeables**.
+
+La version américaine utilisait une palette différente de celle du jeu japonais, notamment pour l'index `15`, qui correspondait à un gris foncé (`0x0C63`) au lieu du blanc (`0x7FFF`). Les glyphes générés avec cette palette produisaient donc des artefacts lorsqu'ils étaient affichés avec la palette japonaise.
+
+La police française conserve désormais la palette japonaise originale (`adv_dialogue_jp`), avec les particularités suivantes :
+
+- **Index 0** : blanc, utilisé comme couleur transparente.
+- **Indices 1 à 14** : dégradé de gris (*grayscale ramp*), du plus sombre au plus clair.
+- **Index 15** : blanc dans le jeu original, mais rouge dans le BMP généré pour empêcher GIMP de traiter l'image comme une image en niveaux de gris. Cet index n'est jamais utilisé par les glyphes.
+
+L'analyse des 629 tuiles de la police japonaise originale (`0100KNJ.BIN`) a également révélé que seuls **10 indices** étaient effectivement utilisés pour dessiner les caractères :
+
+`1, 2, 3, 6, 7, 8, 9, 11, 13, 14`
+
+Les indices `4, 5, 10, 12 et 15` ne sont jamais utilisés.
+
+Le générateur reproduit désormais cette distribution grâce à `INK_WEIGHTS`, plutôt que de simplement associer chaque pixel au gris le plus proche.
+
+Cette particularité est importante pour les sélections **LIPS** : le jeu remplace temporairement la palette normale par `adv_lips_jp`, dont certains indices clairs deviennent rosés. En reproduisant les indices de la police originale, les caractères français conservent un rendu cohérent avec les caractères japonais, y compris cet effet rosé intentionnel.
+
 
 ## 1. Étape automatisable
+
+> [!CAUTION]
+> Ce script a été lancé initialement avec [Pillow 12.3.0](https://github.com/python-pillow/Pillow/releases/tag/12.3.0). Lors du passage à 13.0.0, un _breaking change_ (no shit!) dans le calcul des métriques des caractères a modifié les largeurs générées, généralement d’un pixel. Le script a donc été figé sur Pillow 12.3.0, car je n’ai pas envie de revérifier tous les dialogues du jeu traduits jusque-là.
 
 Placez-vous dans ce répertoire, et lancez le script de transformation de police [TrueType](https://fr.wikipedia.org/wiki/TrueType) en atlas de glyphes. Ce script génère ses caractères à partir de la table d'encodage [Windows-1252](https://fr.wikipedia.org/wiki/Windows-1252), qui augmente la [table ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) avec des accents et autres caractères européens.
 
@@ -34,10 +59,10 @@ Utilisez [ttf_to_font.py](./ttf_to_font.py) pour générer votre atlas de glyphe
 Par exemple, pour générer la police actuelle du jeu:
 
 ```bash
-$ python3 ttf_to_font.py DejaVuSans.ttf \
-         --size 12 \
-         --output FONT_DEJA_VU_SANS.bmp \
-         --table I18N_DEJA_VU_SANS.tbl
+$ uv run ttf_to_font.py DejaVu/DejaVuSans.ttf \
+  --size 12 \
+  --output FONT_DEJA_VU_SANS.bmp \
+  --table I18N_DEJA_VU_SANS.tbl
 ```
 
 Dans [ttf_to_font.py](./ttf_to_font.py), vous pouvez utiliser le tableau `OVERRIDE_GLYPHS` pour indiquer qu'un index sera utilisé par un autre caractère de votre choix, que cette font peut fournir. Par défaut, les 32 indexes de 0x00 à 0x19 sont libres, vous pouvez donc y mettre ce que vous voulez, mais vous pouvez remplacer n'importe quel index jusqu'à 0xFF.

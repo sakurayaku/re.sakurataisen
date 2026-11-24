@@ -21,10 +21,9 @@
   shapes and leaves the layout — the gappy "A s  a  s p e c i a l" line, the
   fourth line falling out of the box — exactly as it was.
 
-  Glyph *appearance* is a different concern with its own codec
-  (scripts/SAKURA/patch_font_palette.lua), as is the SLG engine's layout
-  (scripts/SLG/patch_8px_font.lua).  Each codec patches one thing in one
-  engine.
+  Glyph *appearance* is documented in scripts/shared/palettes.lua.  The SLG
+  engine's layout has its own codec (scripts/SLG/patch_8px_font.lua).  Each
+  codec patches one thing in one engine.
 
   DELIBERATELY NOT APPLIED
   ------------------------

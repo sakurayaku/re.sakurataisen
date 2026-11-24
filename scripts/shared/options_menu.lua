@@ -83,10 +83,11 @@
   translation that needs it must first give the list a pointer of its own (the
   encoder writes one for every artifact it does get).
 
-  The BMP palette is the parent's own options label bank; encode compares
-  pixels only, so a palette edit is not a change.  Encode refuses any write
-  outside the atlas slot, the record lists, the text pointers/counts and the
-  independently optional background/mark/position data.
+  Label BMPs carry the shared adv_dialogue_jp_for_bmp palette; the background
+  uses the parent's first bank.  Encode compares pixels only, so a palette edit
+  is not a change.  Encode refuses any write outside the atlas slot, the record
+  lists, the text pointers/counts and the independently optional
+  background/mark/position data.
 ]]
 
 local function script_dir()
@@ -116,14 +117,16 @@ local function text_at(offset) return offset + text_shift end
 local function gfx_at(offset) return offset + gfx_shift end
 
 local prs         = LUDARED.codec("std/sega/compression/prs")
+local bmp         = load_shared("bmp")
 local args_parser = load_shared("args_parser")
+local palettes    = load_shared("palettes")
 
 local codec = {}
 
 codec.name        = "Sakura Taisen Options Menu Graphics"
 codec.description = "PATCH plugin for every Options-screen text list, the panel and the selection marks in SAKURA"
 codec.kind        = "patch"
-codec.version     = 4
+codec.version     = 5
 
 local ATLAS_OFFSET  = gfx_at(0x05b320)
 local ATLAS_SLOT    = 3782              -- fixed compressed slot
@@ -133,7 +136,6 @@ local RAM_BASE      = 0x06004000        -- file offset -> RAM address
 
 local PALETTE_OFFSET     = gfx_at(0x05ad98) -- two 16-colour BGR555 banks
 local PALETTE_BANK_BYTES = 32           -- 16 entries x 2 bytes
-local PALETTE_TEXT       = PALETTE_OFFSET + PALETTE_BANK_BYTES
 
 local BACKGROUND_OFFSET = gfx_at(0x05ae38) -- PRS, fixed 1,256-byte slot
 local BACKGROUND_SLOT   = 1256
@@ -848,16 +850,6 @@ local function parse_args(args)
   }, "options menu gfx")
 end
 
--- BMP palette from the parent's second 16-colour bank (label glyphs).
-local function preview_palette(data, stage)
-  if #data < PALETTE_TEXT + PALETTE_BANK_BYTES then
-    error(string.format("%s: the options palette at 0x%06X is outside the file",
-      stage, PALETTE_TEXT), 0)
-  end
-  local pal = bgr555_to_bmp(data:sub(PALETTE_TEXT + 1, PALETTE_TEXT + PALETTE_BANK_BYTES), 16)
-  return pal:sub(1, 60) .. "\x00\x00\xFF\x00"
-end
-
 -- The background uses the *first* bank of the same 64-byte palette block.
 local function background_palette(data, stage)
   if #data < PALETTE_OFFSET + PALETTE_BANK_BYTES then
@@ -868,8 +860,8 @@ local function background_palette(data, stage)
     data:sub(PALETTE_OFFSET + 1, PALETTE_OFFSET + PALETTE_BANK_BYTES), 16)
 end
 
--- A second, private copy of the project's minimal JSON reader.  font.lua keeps
--- its version local; copying the ~90 lines here avoids changing that codec.
+-- A second, private copy of the project's minimal JSON reader.  Keeping it
+-- local avoids coupling this codec to another file.
 local function json_decode(text)
   local i = 1
   local function skip_ws()
@@ -1302,7 +1294,7 @@ function codec.decode(data, args)
 
   local text = read_text(data, "decode")
   local positions = read_positions(data, "decode")
-  local pal = preview_palette(data, "decode")
+  local pal = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
   local bg_pal = background_palette(data, "decode")
 
   local artifacts = {}

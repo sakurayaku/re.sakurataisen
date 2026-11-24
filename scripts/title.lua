@@ -1,5 +1,5 @@
 --[[
-  Sakura Taisen (Saturn) — TITLE{x}.bin  <->  indexed BMP  <->  TITLE{x}.bin
+  Sakura Taisen (Saturn) — TITLE{x}.bin / LOAD.bin / LOAD01.bin  <->  indexed BMP
 
   Standalone Lua codec for Ludared.  No external dependencies.
 
@@ -37,8 +37,20 @@ local NUM_COLORS    = 256
 
 local PALETTE_BYTES = NUM_COLORS * 2            -- 512
 local REGION_OFF    = 0x0200                    -- opaque region starts here
-local TILES_OFF     = 0x13C0                    -- tile data starts here
-local FILE_BYTES    = TILES_OFF + PIXEL_BYTES   -- 76736
+-- Tile data start (and therefore file size) differs between variants:
+--   TITLE1..10, LOAD01 : 0x13C0 (76736 bytes, 4544-byte opaque region)
+--   LOAD               : 0x1380 (76672 bytes, 4480-byte opaque region)
+-- The codec selects the layout from the input size; see tiles_off_for_size().
+local TILES_OFF_TITLE = 0x13C0
+local TILES_OFF_LOAD  = 0x1380
+local FILE_BYTES_TITLE = TILES_OFF_TITLE + PIXEL_BYTES   -- 76736
+local FILE_BYTES_LOAD  = TILES_OFF_LOAD  + PIXEL_BYTES   -- 76672
+
+local function tiles_off_for_size(n)
+  if n == FILE_BYTES_TITLE then return TILES_OFF_TITLE end
+  if n == FILE_BYTES_LOAD  then return TILES_OFF_LOAD  end
+  return nil
+end
 
 local DEFAULT_NAME  = "TITLE.bmp"
 
@@ -213,7 +225,7 @@ codec.kind        = "patch"
 
 function codec.can_handle(data)
   if type(data) ~= "string" then return "no" end
-  if #data ~= FILE_BYTES then return "no" end
+  if tiles_off_for_size(#data) == nil then return "no" end
   return "possible"
 end
 
@@ -223,18 +235,24 @@ end
 
 function codec.decode(data, args)
   if type(data) ~= "string" then error("decode: expected binary string", 0) end
-  if #data ~= FILE_BYTES then error("decode: file is " .. #data .. " bytes, expected " .. FILE_BYTES, 0) end
+  local tilesOff = tiles_off_for_size(#data)
+  if tilesOff == nil then error("decode: file is " .. #data .. " bytes, expected " .. FILE_BYTES_TITLE .. " (or " .. FILE_BYTES_LOAD .. ")", 0) end
 
   local pal  = sat_palette_to_bmp(data)
-  local img  = detile(data:sub(TILES_OFF + 1))
+  local img  = detile(data:sub(tilesOff + 1))
   local bmp  = build_bmp(img, pal)
 
-  return { { name = artifact_name(args), data = bmp } }
+  -- Default artifact name follows the variant when the caller does not supply one.
+  local name = artifact_name(args)
+  if tilesOff == TILES_OFF_LOAD and name == DEFAULT_NAME then name = "LOAD.bmp" end
+
+  return { { name = name, data = bmp } }
 end
 
 function codec.encode(original, artifacts, args)
   if type(original) ~= "string" then error("encode: expected binary string for `original`", 0) end
-  if #original ~= FILE_BYTES then error("encode: `original` is " .. #original .. " bytes, expected " .. FILE_BYTES, 0) end
+  local tilesOff = tiles_off_for_size(#original)
+  if tilesOff == nil then error("encode: `original` is " .. #original .. " bytes, expected " .. FILE_BYTES_TITLE .. " (or " .. FILE_BYTES_LOAD .. ")", 0) end
   if type(artifacts) ~= "table" or #artifacts == 0 then error("encode: no artifacts supplied", 0) end
 
   local want = artifact_name(args)
@@ -267,7 +285,7 @@ function codec.encode(original, artifacts, args)
 
   if #tiled ~= PIXEL_BYTES then error("encode: retiled " .. #tiled .. " bytes, expected " .. PIXEL_BYTES, 0) end
 
-  return satPal .. original:sub(REGION_OFF + 1, TILES_OFF) .. tiled
+  return satPal .. original:sub(REGION_OFF + 1, tilesOff) .. tiled
 end
 
 return codec

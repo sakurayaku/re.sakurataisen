@@ -4,7 +4,6 @@
 ```
 SakTaiCD1_Track1.bin
 ├── SAKURA
-│   ├── [decode] palette — scripts/SAKURA/patch_font_palette.lua
 │   └── [decode] vwf_font — scripts/SAKURA/patch_vwf_font.lua
 ├── SAKURA1
 │   ├── 0100TBL.BIN
@@ -17,12 +16,10 @@ SakTaiCD1_Track1.bin
 │   │   └── [decode] 0103TBL.TXT — scripts/dialogues.lua
 └── SAKURA2
     ├── 0SLG.BIN
-    │   ├── [decode] palette — scripts/SLG/patch_palette.lua
     │   └── [decode] vwf_font — scripts/SLG/patch_vwf_font.lua
     ├── M01MES.BIN
     │   └── [decode] M01MES.TXT — scripts/dialogues.lua
     └── SLG.BIN
-        ├── [decode] palette — scripts/SLG/patch_palette.lua
         └── [decode] vwf_font — scripts/SLG/patch_vwf_font.lua
 ```
 

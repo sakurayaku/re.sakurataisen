@@ -13,6 +13,7 @@
 
 local codec = dofile(LUDARED.SCRIPTS .. "/intro_credits_gfx.lua")
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
 local pass, fail = 0, 0
@@ -203,7 +204,9 @@ local credits_pixels, credits_palette = bmp.parse(arts[1].data, WIDTH, HEIGHT, 4
 check("credits artifact is a 320x224 screen", #credits_pixels == 35840)
 check("credits screen matches the tiles",
   credits_pixels == screen(credits_tiles, credits_map))
-check("credits screen uses the extractor palette", credits_palette == codec.DISPLAY_PALETTE)
+check("credits screen uses the shared ADV BMP palette", credits_palette == codec.DISPLAY_PALETTE)
+check("display palette is adv_dialogue_jp_for_bmp",
+  codec.DISPLAY_PALETTE == bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16))
 
 local logo_pixels, logo_palette = bmp.parse(arts[2].data, WIDTH, HEIGHT, 4)
 check("logo artifact is a 320x224 screen", #logo_pixels == 35840)

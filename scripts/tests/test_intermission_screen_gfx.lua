@@ -42,12 +42,12 @@ local IMAGE_BYTES = 15 * 128
 
 local raw = prs:decode(icatall:sub(BLOCK_OFFSET + 1, BLOCK_OFFSET + BLOCK_SLOT))[1].data
 
--- The codec's palette: the game's phrase ramp (adv_dialogue_jp, as shipped in
--- the library's IntermediateScreen.bmp) with entry 15 forced red.
-local ramp = palettes.raw("adv_dialogue_jp")
-local expected_palette = bmp.from_bgr555(
-  ramp:sub(1, #ramp - 2) .. string.char(0x00, 0x1F), 16)
+-- The shared display palette: adv_dialogue_jp with entry 15 forced red.
+local expected_palette = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
+local jp = bmp.from_bgr555(palettes.raw("adv_dialogue_jp"), 16)
 local ink = expected_palette:sub(61, 64)
+check("adv_dialogue_jp_for_bmp is adv_dialogue_jp plus red",
+  expected_palette == jp:sub(1, 60) .. string.char(0, 0, 255, 0))
 
 -- The retail slot tables, written out by hand from SAKURA 0x5F5C8 (1-based
 -- glyph indices, 0 = the blank below the atlas).

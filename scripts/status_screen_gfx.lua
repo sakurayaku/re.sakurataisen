@@ -23,16 +23,15 @@
   pixel indices round-trip.  `args` can still override it (bg_palette, or
   bg_palette_path).
 
-  The label canvases use the ADV i18n text palette instead
-  (scripts/shared/palettes.lua), the same display palette main_menu_gfx.lua uses
-  for its labels.  The status screen's own 16-colour ramp at 0x013000 is a
-  white-to-shadow gradient the retail Japanese glyphs are shaded against; over
-  translated art it reads as pale on pale, and an artist cannot see what they
-  are drawing.  The sprites still *display* through the in-file ramp, exactly as
-  the reference's translated build leaves it; only the editor palette changes.
+  The label canvases use adv_dialogue_jp_for_bmp (adv_dialogue_jp with index 15
+  red), the same display palette the other 16-colour BMP codecs use.  The
+  status screen's own 16-colour ramp at 0x013000 is a white-to-shadow gradient
+  the retail Japanese glyphs are shaded against; over translated art it reads as
+  pale on pale, and an artist cannot see what they are drawing.  The sprites
+  still *display* through the in-file ramp; only the editor palette changes.
 
-  Its last colour, index 15, is repainted pure red (FF0000) in the canvases: the
-  retail art uses indices 0..14, so red marks ink that should not be there.
+  Index 15 is the red marker: the retail art uses indices 0..14, so red marks
+  ink that should not be there.
 
   ## Labels
 
@@ -107,7 +106,7 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Status Screen Graphics"
 codec.description = "Patches the 144x384 background and rebuilds the label sheet in SAKURA1/ICATALL.DAT"
-codec.version     = 10
+codec.version     = 11
 codec.kind        = "patch"
 
 local BG_OFFSET    = 0x008800
@@ -122,15 +121,6 @@ local TILE_SIZE    = 128
 
 local BG_PALETTE   = 0x014800
 local BG_PALETTE_BYTES = 512
-
-local LABEL_PALETTE = "adv_dialogue_i18n"
-
--- Index 15 is repainted bright red.  The retail glyph art stops at 14, so the
--- top colour is a marker for stray ink rather than anything the screen draws;
--- the ADV palette itself is shared with scripts/SAKURA/patch_font_palette.lua
--- and is copied, never modified.
-local MARKER_INDEX = 15
-local MARKER_COLOR = 0x001F  -- BGR555: r=31, g=0, b=0, i.e. FF0000
 
 -- The retail sheet is 48 128-byte tiles; a build may grow it within the
 -- shared margin (see status_labels.lua).
@@ -165,14 +155,11 @@ local function palette_arg(args, key, path_key, bytes, colors)
 end
 
 -- The background palette the game uploads with this screen, read from
--- ICATALL.DAT; the labels' editor palette is the ADV one.
+-- ICATALL.DAT; the labels' editor palette is the shared one.
 local function palettes_for(data, args)
-  local marker = palettes.raw(LABEL_PALETTE):sub(1, MARKER_INDEX * 2)
-    .. string.pack(">I2", MARKER_COLOR)
-
   return palette_arg(args, "bg_palette", "bg_palette_path", BG_PALETTE_BYTES, 256)
       or bmp.from_bgr555(data:sub(BG_PALETTE + 1, BG_PALETTE + BG_PALETTE_BYTES), 256),
-    bmp.from_bgr555(marker, 16)
+    bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
 end
 
 local function find_blocks(data)

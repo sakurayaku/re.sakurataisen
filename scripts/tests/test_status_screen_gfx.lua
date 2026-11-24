@@ -7,7 +7,7 @@
   rebuilt from the three label canvases.
 
   The background palette is the file's own at 0x14800; the label canvases use
-  the ADV i18n display palette from scripts/shared/palettes.lua.
+  adv_dialogue_jp_for_bmp, the shared adv_dialogue_jp + red display palette.
 
   The label rows are checked against the retail glyph strings in the SAKURA
   executable, which this test reads itself, so RETAIL is checked against the
@@ -237,10 +237,9 @@ check("artifact names",
 
 --------------------------------------------------------------- the palettes --
 local p_bg = bmp.from_bgr555(icatall:sub(BG_PALETTE + 1, BG_PALETTE + 512), 256)
--- The ADV palette with its last entry repainted bright red (BGR555 0x001F).
-local p_label = bmp.from_bgr555(
-  palettes.raw("adv_dialogue_i18n"):sub(1, 30) .. string.pack(">I2", 0x001F), 16)
-local p_adv = bmp.from_bgr555(palettes.raw("adv_dialogue_i18n"), 16)
+-- The shared label palette: adv_dialogue_jp with its last entry repainted red.
+local p_label = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
+local p_adv = bmp.from_bgr555(palettes.raw("adv_dialogue_jp"), 16)
 
 local bg_pixels, bg_palette = bmp.parse(arts[1].data, 144, 384, 8)
 check("background is 144x384 8bpp", #bg_pixels == 55296)
@@ -282,8 +281,8 @@ check("the text palette's last colour is bright red",
   (p_label:sub(61, 64):gsub(".", function(c) return string.format("%02X ", c:byte()) end)))
 check("only the last colour differs from the ADV palette",
   p_label:sub(1, 60) == p_adv:sub(1, 60) and p_label ~= p_adv)
-check("the shared ADV palette is untouched",
-  palettes.hex("adv_dialogue_i18n"):sub(-4) == "0c63")
+check("adv_dialogue_jp_for_bmp is adv_dialogue_jp plus red",
+  p_label == p_adv:sub(1, 60) .. string.char(0, 0, 255, 0))
 
 check("unmodified encode is byte-identical",
   codec.encode(icatall, arts, { prefix = "STATUS" }) == icatall)

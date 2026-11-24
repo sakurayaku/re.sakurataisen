@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# /// script
+# dependencies = [
+#   "Pillow==12.3.0",
+# ]
+# ///
 
 import argparse
 import math
@@ -15,13 +20,20 @@ BASELINE = 11
 # Décalage horizontal pour conserver une petite marge.
 LEFT_MARGIN = 1
 
-# Palette US, en BGR555 Saturn.
-US_PALETTE = [
-    0x7FFF, 0x14A5, 0x1CE7, 0x2529,
-    0x294A, 0x318C, 0x35AD, 0x4210,
-    0x4631, 0x5294, 0x5AD6, 0x5EF7,
-    0x6739, 0x6F7B, 0x77BD, 0x0C63,
+# adv_dialogue_jp, avec l'index 15 rouge comme marqueur d'éditeur.
+JP_PALETTE = [
+    0x7FFF, 0x0842, 0x1084, 0x18C6,
+    0x2108, 0x294A, 0x318C, 0x39CE,
+    0x4210, 0x4A52, 0x5294, 0x5AD6,
+    0x6318, 0x6B5A, 0x739C, 0x001F,
 ]
+
+# Poids des indices de la police JP d'origine (0100KNJ.BIN, 629 tuiles).
+INK_WEIGHTS = {
+    1: 15736, 2: 1529, 3: 12677, 6: 2663, 7: 14409,
+    8: 721, 9: 3470, 11: 10063, 13: 4587, 14: 1112,
+}
+FONT_INDICES = (0,) + tuple(INK_WEIGHTS)
 
 # Override glyphs by atlas tile index (0x00..0xFE).
 OVERRIDE_GLYPHS = {
@@ -54,7 +66,7 @@ def bgr555_to_rgb(value):
 
 
 def to_indexed_atlas(image):
-    palette = [bgr555_to_rgb(c) for c in US_PALETTE]
+    palette = [bgr555_to_rgb(c) for c in JP_PALETTE]
 
     # Palette Pillow : 256 entrées RGB.
     flat_palette = [
@@ -64,21 +76,25 @@ def to_indexed_atlas(image):
     ]
     flat_palette += [0] * (768 - len(flat_palette))
 
-    # Convertir le rendu en indices de palette.
     indexed = Image.new("P", image.size)
     indexed.putpalette(flat_palette)
 
-    pixels = []
+    gray = [rgb[0] for rgb in image.convert("RGB").getdata()]
+    ink = [pos for pos, value in enumerate(gray) if value < 255]
+    ink.sort(key=lambda pos: gray[pos])
 
-    for rgb in image.convert("RGB").getdata():
-        index = min(
-            range(16),
-            key=lambda i: sum(
-                (rgb[channel] - palette[i][channel]) ** 2
-                for channel in range(3)
-            ),
-        )
-        pixels.append(index)
+    weights = list(INK_WEIGHTS.items())
+    total = sum(weight for _, weight in weights)
+    pixels = [0] * len(gray)
+
+    for rank, pos in enumerate(ink, 1):
+        limit = rank * total // len(ink)
+        cumulative = 0
+        for index, weight in weights:
+            cumulative += weight
+            if limit <= cumulative:
+                pixels[pos] = index
+                break
 
     indexed.putdata(pixels)
 
@@ -199,9 +215,9 @@ def save_bmp_4bpp(image, path):
     assert width == height == 256
 
     pixels = list(image.getdata())
-    assert all(0 <= p < 16 for p in pixels)
+    assert all(p in FONT_INDICES for p in pixels)
 
-    palette = [bgr555_to_rgb(c) for c in US_PALETTE]
+    palette = [bgr555_to_rgb(c) for c in JP_PALETTE]
 
     # Deux pixels par octet.
     row_size = ((width + 7) // 8) * 4

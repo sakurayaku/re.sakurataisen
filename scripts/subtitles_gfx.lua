@@ -112,10 +112,10 @@ BITMAPINFOHEADER, bottom-up or top-down, its width in whole 8-pixel tiles, an
 even height, at most 320 pixels wide. Index 0 is the transparent colour, and
 the palette the decoded canvases carry is the one the file already holds at
 0x00019578: the colours are read out for editing, never written back, so a
-palette change belongs to a palette codec. A canvas whose every pixel is index
-0 is blank, which subtitles_metadata.lua answers by lending it the previous
-visible subtitle's records -- but the blank canvas still owns its bytes here,
-and 8x2, one 8-byte unit, is the cheapest placeholder.
+palette change belongs in the executable, not the BMP. A canvas whose every
+pixel is index 0 is blank, which subtitles_metadata.lua answers by lending it
+the previous visible subtitle's records -- but the blank canvas still owns its
+bytes here, and 8x2, one 8-byte unit, is the cheapest placeholder.
 
 Budget. The compressed block is fixed at 12,673 bytes and padded with zeroes,
 and the images inside it are uncompressed: an image costs width x height / 2

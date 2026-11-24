@@ -4,7 +4,9 @@
 ]]
 
 local codec = dofile(LUDARED.SCRIPTS .. "/theater_map_gfx.lua")
+local empty_room = dofile(LUDARED.SCRIPTS .. "/map/empty_room.lua")
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local constants = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
 local assets = dofile(LUDARED.SCRIPTS .. "/tests/shared/real_assets.lua")
 
 local pass, fail = 0, 0
@@ -88,7 +90,9 @@ check("TMAPSP every image matches raw pixels",
 
 local first_pixels, first_palette = bmp.parse(tmap_arts[1].data, 24, 16, 4)
 check("TMAPSP entry 0 pixels", first_pixels == tmap:sub(1, 192))
-check("game display palette", first_palette == codec.DISPLAY_PALETTE)
+check("game display palette", first_palette == constants.map_palette
+  and codec.DISPLAY_PALETTE == constants.map_palette
+  and empty_room.DISPLAY_PALETTE == constants.map_palette)
 
 local fukagawa_arts = codec.decode(fukagawa)
 check("FUKAGAWA decodes 67 artifacts", #fukagawa_arts == 67, tostring(#fukagawa_arts))

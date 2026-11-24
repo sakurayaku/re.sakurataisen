@@ -16,7 +16,7 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Intermission Screen Labels"
 codec.description = "PATCH plugin for the intermission-screen command labels in SAKURA1/ICATALL.DAT"
-codec.version     = 5
+codec.version     = 6
 codec.kind        = "patch"
 
 local BLOCK_OFFSET = layout.BLOCK_OFFSET
@@ -26,15 +26,9 @@ local CELL = layout.ROW_HEIGHT
 local CELL_ROW_BYTES = CELL // 2
 local CELL_BYTES = CELL * CELL // 2
 
--- The game's palette for these labels: the fifteen-step grey ramp of
--- shared/palettes.lua's adv_dialogue_jp (white #ffffff down to #e6e6e6), which
--- is what the library's IntermediateScreen.bmp ships in its BMP palette.  Its
--- last entry is replaced by 0x001F, pure red, so index 15 is unmistakable in an
--- editor; the shipping labels never use index 15.
-local function label_palette()
-  local raw = palettes.raw("adv_dialogue_jp")
-  return bmp.from_bgr555(raw:sub(1, #raw - 2) .. string.char(0x00, 0x1F), 16)
-end
+-- Display palette: adv_dialogue_jp_for_bmp, the ADV ramp with index 15 forced
+-- red.  The shipping labels never use index 15.
+local DISPLAY_PALETTE = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
 
 -- The decompressed atlas the parent holds, validated against the geometry the
 -- renderer assumes.
@@ -87,7 +81,7 @@ function codec.decode(data)
   return {
     {
       name = layout.NAME,
-      data = bmp.build(detile(read_block(data)), layout.WIDTH, layout.HEIGHT, 4, label_palette()),
+      data = bmp.build(detile(read_block(data)), layout.WIDTH, layout.HEIGHT, 4, DISPLAY_PALETTE),
     },
   }
 end

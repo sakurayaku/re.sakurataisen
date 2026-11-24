@@ -278,10 +278,10 @@
       result: a channel snaps to round(v * 31 / 255).
     * index 0 is the transparency key.  It is what lets the fan and the card
       show through the sprites, so a colour placed there is never drawn.
-    * if a genuinely different grade is ever wanted, it belongs in the file (or
-      in a palette codec like scripts/SLG/patch_palette.lua), not in a BMP
-      header.  The candidates are 0x28F24, 0x29124, 0x29324, 0x29524 and
-      0x29724; 0x29124 is the grading that reproduces the retail look.
+    * if a genuinely different grade is ever wanted, it belongs in the file,
+      not in a BMP header.  The candidates are 0x28F24, 0x29124, 0x29324,
+      0x29524 and 0x29724; 0x29124 is the grading that reproduces the retail
+      look.
 
   ## Rebalancing the block
 

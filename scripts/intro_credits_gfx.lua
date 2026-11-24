@@ -60,6 +60,7 @@
 ]]
 
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
 local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
@@ -68,7 +69,7 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Intro Credits & Logo"
 codec.description = "Patches the intro-credit and logo screens in SAKURA1/LOGO.SH2"
-codec.version     = 4
+codec.version     = 5
 codec.kind        = "patch"
 
 local TILE         = 8
@@ -97,24 +98,9 @@ local SCREENS = {
   { tiles = "logo_tiles",    map = "logo_map",    name = "LOGO.bmp" },
 }
 
-local DISPLAY_PALETTE = (function()
-  local entries = {}
-
-  entries[1] = string.char(255, 255, 255, 255) -- 0: white
-
-  local shades = {
-    16, 33, 49, 66, 82, 99, 115,
-    132, 148, 165, 181, 197, 214, 230,
-  }
-
-  for _, v in ipairs(shades) do
-    entries[#entries + 1] = string.char(v, v, v, 255)
-  end
-
-  entries[16] = string.char(0, 0, 255, 255) -- 15: red
-
-  return table.concat(entries)
-end)()
+-- The same display palette the other 16-colour BMP codecs use: the ADV ramp
+-- with index 15 forced red.  Encode reads pixel indices only.
+local DISPLAY_PALETTE = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
 
 codec.DISPLAY_PALETTE = DISPLAY_PALETTE
 

@@ -10,10 +10,10 @@
       0xA270  not exposed      16 bytes  preserved verbatim
       0xA280   56 x  16      448 bytes  LOAD_MENU_COPY_SOURCE
 
-  The 16-colour palette is the first bank at SAKURA 0x5AD98 (the second bank is
-  the grayscale label bank, used for the text artifacts).  The BMP palette is
-  display-only: the C++ never writes it back for this block, so only pixel
-  indices round-trip.
+  The 16-colour palette is the first bank at SAKURA 0x5AD98.  Text artifacts
+  use the shared adv_dialogue_jp_for_bmp palette instead of reading the second
+  bank.  Both BMP palettes are display-only: the C++ never writes them back, so
+  only pixel indices round-trip.
 
   The episode names are a second PRS block at 0x5C654: 128 16x16 4bpp tiles,
   128 bytes each, drawn from the big-endian glyph-index strings at 0x5A09E.
@@ -27,6 +27,7 @@
 local codec = dofile(LUDARED.SCRIPTS .. "/load_screen_gfx.lua")
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
 local CONST = dofile(LUDARED.SCRIPTS .. "/shared/constants.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
 local pass, fail = 0, 0
@@ -160,10 +161,12 @@ end
 
 local decompressed = prs:decode(sakura:sub(BLOCK + 1, BLOCK + SLOT))[1].data
 local real_palette = bmp.from_bgr555(sakura:sub(PALETTE + 1, PALETTE + 32), 16)
--- The codec swaps the label bank's last colour for bright red.
+-- The shared label palette swaps the retail bank's last colour for bright red.
 local retail_label_palette = bmp.from_bgr555(sakura:sub(PALETTE + 33, PALETTE + 64), 16)
 local label_palette = retail_label_palette:sub(1, #retail_label_palette - 4)
   .. string.char(0, 0, 255, 0)
+check("shared adv_dialogue_jp_for_bmp matches the retail label bank",
+  label_palette == bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16))
 
 print("test_load_screen_gfx.lua")
 
@@ -327,7 +330,7 @@ local copy_pixels = pixels[3]
 check("palette is the first bank, not the label bank", real_palette ~= label_palette)
 check("label BMPs end on bright red", label_palette:sub(-4) == string.char(0, 0, 255, 0),
   (label_palette:sub(-4):gsub(".", function(c) return string.format("%02X ", c:byte()) end)))
-check("the retail label bank ended on a grey",
+check("the retail label bank ended on white",
   retail_label_palette:sub(-4) == string.char(255, 255, 255, 0),
   (retail_label_palette:sub(-4):gsub(".", function(c) return string.format("%02X ", c:byte()) end)))
 check("the picture palette keeps its retail last colour",

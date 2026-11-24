@@ -70,15 +70,7 @@ codec.LUT_OFFSETS = {
   [2] = 0x0001EC0C,
 }
 
-local function from_hex(value)
-  local bytes = {}
-  for i = 1, #value, 2 do
-    bytes[#bytes + 1] = string.char(tonumber(value:sub(i, i + 1), 16))
-  end
-  return table.concat(bytes)
-end
-
-local DISPLAY_PALETTE = from_hex(constants.THEATER_MAP_PALETTE_BGRA)
+local DISPLAY_PALETTE = constants.map_palette
 codec.DISPLAY_PALETTE = DISPLAY_PALETTE
 
 local function disc_for_size(data, stage)

@@ -14,22 +14,26 @@
       0x0000  LoadMenu.bmp      288 x 176   25,344 bytes
       0x6300  not exposed       192 x 140   13,440 bytes  (preserved)
       0x9780  CartridgeRam.bmp  112 x  50    2,800 bytes
-      0xA270  not exposed                     16 bytes    (preserved)
+      0xA200  choice left arrow   8 x 16       64 bytes
+      0xA240  choice right arrow  8 x 16       64 bytes
       0xA280  CopyFile.bmp       56 x  16      448 bytes
+
+  The arrow textures overlap the final 112 bytes of CartridgeRam.bmp.  Encode
+  writes them after that image, preserving the original arrows when no arrow
+  BMP is supplied.
 
   Disc 2 inserts 24 bytes early and another 288 at 0x52E00, so every offset
   past 0x52E00 moves by +0x138: 0x5E190 -> 0x5E2C8 and 0x5AD98 -> 0x5AED0.
   Both blocks decompress to byte-identical pixels.
 
   Each 4bpp VDP1 bitmap is row-major, top-down, two pixels per byte, high
-  nibble first, no row padding.  The regions the C++ never writes (0x6300..
-  0x9780 and the 16 bytes before 0xA280) are carried through byte for byte.
+  nibble first, no row padding.  The region at 0x6300..0x9780 is carried
+  through byte for byte.
   The slot palette at 0x5AD98 is 64 bytes = two 16-colour BGR555 banks; the
-  first is the load-screen bank, the second the label bank.  The C++ does not
-  write this palette back, so the BMP palette is display-only.  The label bank
-  is a grey ramp, so its last colour is replaced by bright red (BGR555 0x001F)
-  in the label artifacts: a colour the artists can see while they draw, which
-  does not exist in the retail ramp.
+  first is the load-screen bank.  Text labels use the shared
+  adv_dialogue_jp_for_bmp palette: its last entry is bright red (BGR555 0x001F)
+  instead of the retail white, a colour the artists can see while they draw.
+  The C++ writes neither bank back, so both BMP palettes are display-only.
 
   Labels (SakuraTaisen.cpp ExtractLoadScreen 8884, PatchLoadScreen 10450)
   ----------------------------------------------------------------------
@@ -74,19 +78,20 @@
       LOAD_SCREEN/EMPTY_SAVE.bmp         64 x  16  entry 26  記録無し
       LOAD_SCREEN/UNUSED_EPISODE_10.bmp  64 x  16  entry 19  第10話
 
-  The four menu buttons have a file each, one 16-pixel row, and nothing else:
+  The five menu buttons have a file each, one 16-pixel row, and nothing else:
 
       LOAD_SCREEN/COMMANDS_CHOICE_YES.bmp     32 x 16  はい
       LOAD_SCREEN/COMMANDS_CHOICE_NO.bmp      48 x 16  いいえ
       LOAD_SCREEN/COMMANDS_CHOICE_COPY.bmp    48 x 16  コピー
       LOAD_SCREEN/COMMANDS_CHOICE_DELETE.bmp  32 x 16  消去
+      LOAD_SCREEN/COMMANDS_CHOICE_EXIT.bmp    32 x 16  終了
 
-  All four buttons are drawn from 10-byte sprite descriptors at disc-1 0x59C70
+  All five buttons are drawn from 10-byte sprite descriptors at disc-1 0x59C70
   (disc-2 0x59DA8), not from the duplicate YES/NO strings.  Their groups have
-  3/2/2/3 cells (COPY/DELETE/YES/NO), and the menu records hold each group's
+  3/2/2/3/2 cells (COPY/DELETE/YES/NO/EXIT), and the menu records hold each group's
   count and pointer.  Encode rebuilds their atlas cells with the other labels,
   rewrites the descriptors' glyph sources, and repacks the groups in the same
-  ten-record area.  DELETE can gain one cell if NO gives one up.
+  twelve-record area.  A button can gain a cell if another gives one up.
 
   The numbers share one five-cell draw area, so that sheet is 5 cells wide.
   The titles have no fixed area and are up to thirteen cells long (entry 10),
@@ -95,10 +100,9 @@
   that stands alone keeps its own `width / 16`-cell file and may be widened,
   up to the 18-cell screen.
 
-  Entry 34 is a dead leftover - no pointer addresses it and the load screen
-  never draws it - and it holds one blank glyph, so it is exposed as
-  UNUSED_ALONE_GLYPH.bmp, one cell, rather than a TEXT name: drawing in that
-  cell turns it into a real glyph, and leaving it blank changes nothing.
+  Entry 34 is not addressed as a string.  Its retail glyph is also drawn by
+  the EXIT button, which has its own descriptors and BMP in this codec.
+  UNUSED_ALONE_GLYPH.bmp therefore edits only that unreferenced string.
 
   A row of EPISODE_NUMBERS holds five cells.  Retail stores three glyphs
   (第1話; four on the tenth row) at cells 1-3, so cells 4 and 5 are the free
@@ -123,12 +127,10 @@
   in the early part of the atlas and drops retail tiles no label uses.
 
   Limits, all measured rather than guessed:
-    * 192 tiles — retail carries 128 (115 used), and 144 is the US patch's own
-      sheet size, not a measured engine ceiling: the reference finds indices
-      up to 144 because that is how many tiles its sheet had. Glyph 143 is
-      proven in-engine, above it is untested. What actually binds first is the
-      6,970-byte compressed slot; the shipped French sheet (159 tiles) is
-      5,113 bytes.
+    * 181 tiles — the load-screen VDP1 layout can hold a relocated sheet of
+      0x5A80 bytes between the preceding picture and the following picture
+      on both discs.
+      Retail uses 128 tiles; the US sheet has 144.
     * 6,970 compressed bytes — the font slot ends at the picture block.
     * 762 bytes of string data — the pointer table follows immediately.  A
       block that would go over that first drops the eight strings no pointer
@@ -139,10 +141,13 @@
 
   Encoding never resizes the executable: picture edits keep the 2,292-byte
   slot, label edits keep the 6,970-byte font slot and the 762-byte string area.
-  Button edits also update the ten sprite descriptors and their menu references.
+  Button edits also update the twelve sprite descriptors and their menu references.
+  Sheets above 144 tiles relocate the font and following picture; CD2 also
+  moves the preceding picture.  Their VDP1 bases and transfer size follow.
 ]]
 
 local bmp = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
 local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
@@ -151,7 +156,7 @@ local codec = {}
 
 codec.name        = "Sakura Taisen Load Screen Graphics"
 codec.description = "Patches the load/memory-card images, glyph sheet and labels in the SAKURA executable"
-codec.version     = 13
+codec.version     = 18
 codec.kind        = "patch"
 
 local DISC1 = {
@@ -161,6 +166,8 @@ local DISC1 = {
   strings = 0x0005A09E,
   format  = 0x00059C70,
   number_x = 0x000397D6,
+  code_delta = 0,
+  data_delta = 0,
 }
 local DISC2 = {
   block   = 0x0005E2C8,
@@ -169,6 +176,8 @@ local DISC2 = {
   strings = 0x0005A1D6,
   format  = 0x00059DA8,
   number_x = 0x000397EE,
+  code_delta = 0x18,
+  data_delta = 0x138,
 }
 
 local COMPRESSED_SIZE = 2292
@@ -180,17 +189,13 @@ local BPP             = 4
 local TILE         = 16
 local TILE_BYTES   = TILE * TILE * BPP // 8      -- 128
 local FONT_SLOT    = 6970                        -- 0x5C654..0x5E18E
--- The sheet is larger than retail's 128 tiles.  144 is the reference patch's
--- own sheet count (its index finder is handed 144), so glyph 143 is the last
--- one proven in this engine; nothing measured says the reader stops there.
--- The real gate is the 6,970-byte compressed slot, which the French sheet
--- clears with room to spare (159 tiles, 5,113 bytes), so the cap sits well
--- above it rather than at the reference's arbitrary count.  RAISE-AND-TEST:
--- a build past glyph 144 still has to be checked in-game.
-local MAX_TILES    = 192
+-- The active screen has 0x4800 bytes before its next texture.  Relocation
+-- uses the free space through 0x060F5800 / VDP1 0x80000 on both discs.
+local MAX_TILES    = 181
+local FONT_WINDOW  = 0x4800
 local STRING_BUDGET = 0x5A398 - 0x5A09E          -- 762, up to the pointer table
 -- If this budget becomes limiting, a u8 string format is a possible experiment:
--- glyphs 1..192 and terminator 0 fit in one byte, allowing 716 glyph references
+-- glyphs 1..181 and terminator 0 fit in one byte, allowing 716 glyph references
 -- across 45 strings instead of 335.  The load-label drawer at CD1 SAKURA
 -- 0x39034 (CD2 0x3904C) reads u16 at CD1 0x3905E/0x3907A and CD2
 -- 0x39076/0x39092.  Change both mov.w loads to mov.b and their extu.w at
@@ -276,24 +281,18 @@ local CHOICE_YES    = "COMMANDS_CHOICE_YES.bmp"
 local CHOICE_NO     = "COMMANDS_CHOICE_NO.bmp"
 local CHOICE_COPY   = "COMMANDS_CHOICE_COPY.bmp"
 local CHOICE_DELETE = "COMMANDS_CHOICE_DELETE.bmp"
+local CHOICE_EXIT   = "COMMANDS_CHOICE_EXIT.bmp"
 
 local CHOICES = {
   { art = CHOICE_YES,    parent = 0x150, refs = 3 },
   { art = CHOICE_NO,     parent = 0x160, refs = 3 },
   { art = CHOICE_COPY,   parent = 0x0A0, refs = 9 },
   { art = CHOICE_DELETE, parent = 0x0B0, refs = 9 },
+  { art = CHOICE_EXIT,   parent = 0x220, refs = 6 },
 }
-local FORMAT_CHOICES = { CHOICES[3], CHOICES[4], CHOICES[1], CHOICES[2] }
+local FORMAT_CHOICES = { CHOICES[3], CHOICES[4], CHOICES[1], CHOICES[2], CHOICES[5] }
 local CHOICE_RECORD_BYTES = 10
-local CHOICE_RECORDS = 10
-
--- BMP palette entries are BGRA bytes.  The label bank's last entry is a grey
--- that the glyphs never use, so it becomes bright red for the artists.
-local LABEL_RED = string.char(0, 0, 255, 0)
-
-local function with_red_last(palette)
-  return palette:sub(1, #palette - #LABEL_RED) .. LABEL_RED
-end
+local CHOICE_RECORDS = 12
 
 -- off is the destination of the matching memcpy_s in FixupSakura; size is
 -- width * height * BPP / 8 and must stay equal to the copied byte counts.
@@ -301,6 +300,10 @@ local REGIONS = {
   { off = 0x0000, width = 288, height = 176, name = "LOAD_MENU.bmp" },
   { off = 0x9780, width = 112, height = 50,  name = "LOAD_MENU_MEMCARD.bmp" },
   { off = 0xA280, width = 56,  height = 16,  name = "LOAD_MENU_COPY_SOURCE.bmp" },
+}
+local ARROWS = {
+  { off = 0xA200, width = 8, height = 16, name = "COMMANDS_CHOICE_ARROW_LEFT.bmp" },
+  { off = 0xA240, width = 8, height = 16, name = "COMMANDS_CHOICE_ARROW_RIGHT.bmp" },
 }
 
 local function be16(data, offset)
@@ -310,6 +313,16 @@ end
 local function be32(data, offset)
   return ((data:byte(offset + 1) * 256 + data:byte(offset + 2)) * 256
     + data:byte(offset + 3)) * 256 + data:byte(offset + 4)
+end
+
+local function patch_u32(data, offset, retail, moved, relocate)
+  local current = be32(data, offset)
+  if current ~= retail and current ~= moved then
+    error(string.format("load_screen: unexpected word at 0x%06X", offset), 0)
+  end
+  local value = relocate and moved or retail
+  return data:sub(1, offset) .. string.pack(">I4", value)
+    .. data:sub(offset + 5)
 end
 
 local function region_size(region)
@@ -577,13 +590,18 @@ function codec.decode(data, args)
   local _, palette_offset, decompressed, spec = find_block(data, args)
   local palette = bmp.from_bgr555(
     data:sub(palette_offset + 1, palette_offset + PALETTE_BYTES), 16)
-  local label_palette = with_red_last(bmp.from_bgr555(
-    data:sub(palette_offset + PALETTE_BYTES + 1,
-      palette_offset + 2 * PALETTE_BYTES), 16))
+  local label_palette = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
   local dir = prefix(args)
   local artifacts = {}
 
   for _, region in ipairs(REGIONS) do
+    local pixels = decompressed:sub(region.off + 1, region.off + region_size(region))
+    artifacts[#artifacts + 1] = {
+      name = string.format("%s/%s", dir, region.name),
+      data = bmp.build(pixels, region.width, region.height, BPP, palette),
+    }
+  end
+  for _, region in ipairs(ARROWS) do
     local pixels = decompressed:sub(region.off + 1, region.off + region_size(region))
     artifacts[#artifacts + 1] = {
       name = string.format("%s/%s", dir, region.name),
@@ -729,7 +747,7 @@ local function trim_cells(cells)
   return out
 end
 
--- Build both the strings and the four button lists from one deduplicated atlas.
+-- Build both the strings and the five button lists from one deduplicated atlas.
 local function build_sheet(all_cells, stage, buttons)
   local index, order = {}, {}
   local function add(tile)
@@ -745,8 +763,7 @@ local function build_sheet(all_cells, stage, buttons)
     return index[tile]
   end
 
-  -- The button sprite path cannot reliably read cells at the end of an
-  -- expanded atlas; put its cells first and let the descriptors follow them.
+  -- Keep the buttons at the beginning of the atlas, as validated in-game.
   local choice_indices = {}
   for _, choice in ipairs(FORMAT_CHOICES) do
     local indices = {}
@@ -829,7 +846,7 @@ local function write_choices(out, original, spec, layouts, indices)
     cursor = cursor + #ids * CHOICE_RECORD_BYTES
   end
   if cursor > spec.format + CHOICE_RECORDS * CHOICE_RECORD_BYTES then
-    error("load_screen: the four buttons need more than ten sprite cells", 0)
+    error("load_screen: the five buttons need more than twelve sprite cells", 0)
   end
 
   local region = table.concat(records)
@@ -877,6 +894,41 @@ local function position_episode_numbers(out, original, spec, strings)
     .. out:sub(spec.number_x + 3)
 end
 
+local FONT_BASE_CODE = { 0x38DD4, 0x3902C, 0x394F8, 0x398AC }
+local FONT_BASE_DATA = { 0x59BEC, 0x59BF4, 0x59BFC }
+local NEXT_BASE_CODE = { 0x393C8, 0x39994 }
+local NEXT_BASE_DATA = { 0x59C04 }
+
+local function position_font(out, spec, size)
+  local relocate = size > FONT_WINDOW
+  local disc2 = spec == DISC2
+  -- CD2's preceding image ends at 0x77F80 after moving it; CD1 needs no move.
+  out = patch_u32(out, 0x394C8 + spec.code_delta,
+    0x75000, 0x74C80, relocate and disc2)
+  for _, offset in ipairs(FONT_BASE_CODE) do
+    out = patch_u32(out, offset + spec.code_delta,
+      0x78800, disc2 and 0x78000 or 0x77F00, relocate)
+  end
+  for _, offset in ipairs(FONT_BASE_DATA) do
+    out = patch_u32(out, offset + spec.data_delta,
+      0x78800, disc2 and 0x78000 or 0x77F00, relocate)
+  end
+  for _, offset in ipairs(NEXT_BASE_CODE) do
+    out = patch_u32(out, offset + spec.code_delta, 0x7D000, 0x7DA80, relocate)
+  end
+  for _, offset in ipairs(NEXT_BASE_DATA) do
+    out = patch_u32(out, offset + spec.data_delta, 0x7D000, 0x7DA80, relocate)
+  end
+  out = patch_u32(out, 0x5A4C0 + spec.data_delta,
+    0x060EA800, 0x060EA480, relocate and disc2)
+  out = patch_u32(out, 0x5A4C8 + spec.data_delta,
+    0x060EE000, disc2 and 0x060ED800 or 0x060ED700, relocate)
+  out = patch_u32(out, 0x5A4D0 + spec.data_delta,
+    0x060F2800, 0x060F3280, relocate)
+  return patch_u32(out, 0x35E28 + spec.code_delta,
+    0x14D80, 0x15800, relocate)
+end
+
 function codec.encode(original, artifacts, args)
   check_layout()
   local block_offset, _, decompressed, spec = find_block(original, args)
@@ -897,6 +949,16 @@ function codec.encode(original, artifacts, args)
         rebuilt = rebuilt:sub(1, region.off) .. pixels
           .. rebuilt:sub(region.off + size + 1)
       end
+    end
+  end
+  for _, region in ipairs(ARROWS) do
+    local size = region_size(region)
+    local bmp_data = by_name[string.format("%s/%s", dir, region.name)]
+    local pixels = bmp_data and bmp.parse(bmp_data, region.width, region.height, BPP)
+      or decompressed:sub(region.off + 1, region.off + size)
+    if pixels ~= rebuilt:sub(region.off + 1, region.off + size) then
+      rebuilt = rebuilt:sub(1, region.off) .. pixels
+        .. rebuilt:sub(region.off + size + 1)
     end
   end
 
@@ -966,7 +1028,7 @@ function codec.encode(original, artifacts, args)
     button_cells = button_cells + #cells
   end
   if button_cells > CHOICE_RECORDS then
-    error(string.format("load_screen: the four buttons need %d sprite cells, over the %d available",
+    error(string.format("load_screen: the five buttons need %d sprite cells, over the %d available",
       button_cells, CHOICE_RECORDS), 0)
   end
 
@@ -1045,6 +1107,7 @@ function codec.encode(original, artifacts, args)
 
       local slot = compressed .. string.rep("\0", FONT_SLOT - #compressed)
       out = out:sub(1, spec.font) .. slot .. out:sub(spec.font + FONT_SLOT + 1)
+      out = position_font(out, spec, #new_sheet)
 
       local offsets, cursor = {}, spec.strings
       for index, indices in ipairs(new_strings) do

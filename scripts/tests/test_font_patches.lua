@@ -1,22 +1,18 @@
 --[[
-  Dependency-free test harness for the font patch codecs:
+  Dependency-free test harness for the font layout patch codecs:
 
       scripts/SAKURA/patch_8px_font.lua       ADV glyph layout
-      scripts/SAKURA/patch_font_palette.lua   ADV text palettes
       scripts/SLG/patch_8px_font.lua          SLG glyph layout
-      scripts/SLG/patch_palette.lua           SLG text palettes
 
-  Run:  ludared codecs test tests/test_font_patches.lua
+  Run:  ludared scripts test tests/test_font_patches.lua
 
   The pristine SAKURA / SLG.BIN / 0SLG.BIN are the inputs under test; when they
   are absent the real-file section is skipped (not failed), so the harness
   still runs on a bare checkout.  The shipped US-patched executables, when
-  present under ../RomHackingTools, confirm that every byte written is the byte
-  the US build holds.
+  present under ../RomHackingTools, are the expected layout result.
 
-  Every codec is also asked about the *other* engine's file: each one has to
-  say "no" and refuse to encode, which is what keeps the four codecs from
-  overlapping.
+  Each codec is also asked about the *other* engine's file: it has to say "no"
+  and refuse to encode, which keeps the two codecs from overlapping.
 ]]
 
 -- ---------------------------------------------------------------------------
@@ -26,10 +22,8 @@
 local PROJECT_ROOT = LUDARED.PROJECT_ROOT
 local US_ROOT      = "/Users/red/Projects/Hashire/RomHackingTools/SakuraTaisen/Data/FromTrekkies"
 
-local sakuraLayout  = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_8px_font.lua")
-local sakuraPalette = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_font_palette.lua")
-local slgLayout     = dofile(LUDARED.SCRIPTS .. "/SLG/patch_8px_font.lua")
-local slgPalette    = dofile(LUDARED.SCRIPTS .. "/SLG/patch_palette.lua")
+local sakuraLayout = dofile(LUDARED.SCRIPTS .. "/SAKURA/patch_8px_font.lua")
+local slgLayout    = dofile(LUDARED.SCRIPTS .. "/SLG/patch_8px_font.lua")
 
 -- ---------------------------------------------------------------------------
 
@@ -66,28 +60,6 @@ local function diff_count(a, b)
   return n
 end
 
-local function diff_outside(a, b, windows)
-  local n = 0
-  for i = 0, #a - 1 do
-    local inside = false
-    for _, w in ipairs(windows) do
-      if i >= w[1] and i < w[1] + w[2] then inside = true break end
-    end
-    if not inside and a:byte(i + 1) ~= b:byte(i + 1) then n = n + 1 end
-  end
-  return n
-end
-
-local function bytes(hex)
-  local out = {}
-  for i = 1, #hex, 2 do out[#out + 1] = string.char(tonumber(hex:sub(i, i + 1), 16)) end
-  return table.concat(out)
-end
-
-local function splice(data, offset, repl)
-  return data:sub(1, offset) .. repl .. data:sub(offset + #repl + 1)
-end
-
 -- ---------------------------------------------------------------------------
 
 local SAKURA_LAYOUT = {
@@ -103,33 +75,6 @@ local SLG_LAYOUT = {
   { 0x0218E1, 0x10, 0x0C }, { 0x0218EB, 0x0F, 0x1E }, { 0x021903, 0x10, 0x08 },
   { 0x021963, 0x0E, 0x1D }, { 0x02196B, 0x0E, 0x1D }, { 0x02196D, 0x02, 0x03 },
   { 0x021975, 0x02, 0x03 }, { 0x021981, 0x0F, 0x1E },
-}
-
-local JP_DIALOGUE = "7fff0842108418c62108294a318c39ce42104a5252945ad663186b5a739c7fff"
-local JP_LIPS     = "7fff08420842108418c62108294a318c39ce3dd041d245d449d64dd851da55dd"
-local US_PALETTE  = "7fff14a51ce72529294a318c35ad4210463152945ad65ef767396f7b77bd0c63"
-
--- SAKURA has one palette pair per disc; CD2 shifts it by 0x138. The codec
--- selects the corresponding pair from the unchanged SAKURA file size.
-local SAKURA_PLACEMENTS = { 0x53954, 0x53A8C }
-
-local function sakura_palette_sites(base, patched)
-  return {
-    { base,         bytes(JP_DIALOGUE), patched, "dialogue text palette" },
-    { base + 0x20,  bytes(JP_LIPS),     patched, "choice (LIPS) text palette" },
-  }
-end
-
-local function mask_7f(data)
-  local out = {}
-  for i = 1, #data do out[i] = string.char(data:byte(i) & 0x7F) end
-  return table.concat(out)
-end
-
-local SLG_PALETTE = mask_7f(bytes(US_PALETTE))
-local SLG_PALETTE_SITES = {
-  { 0x158A4, bytes(JP_DIALOGUE), SLG_PALETTE },
-  { 0x158C4, bytes(JP_LIPS),     SLG_PALETTE },
 }
 
 -- ---------------------------------------------------------------------------
@@ -198,42 +143,6 @@ local function test_layout(label, codec, data, sites, usData, usData2)
   end
 end
 
-local function test_palette(label, codec, data, sites, usData, strict_size)
-  print("")
-  print("palette: " .. label)
-
-  local patched = codec.encode(data, {})
-
-  for _, site in ipairs(sites) do
-    local offset, pristine, want = site[1], site[2], site[3]
-    check(string.format("0x%06X pristine ramp", offset),
-          data:sub(offset + 1, offset + 32) == pristine)
-    check(string.format("0x%06X patched palette", offset),
-          patched:sub(offset + 1, offset + 32) == want)
-    if usData then
-      check(string.format("0x%06X matches the US build", offset),
-            usData:sub(offset + 1, offset + 32) == want)
-    end
-  end
-
-  local windows = {}
-  for _, site in ipairs(sites) do windows[#windows + 1] = { site[1], 32 } end
-  check("only the palette windows change", diff_outside(patched, data, windows) == 0)
-  check("re-running is a no-op", codec.encode(patched, {}) == patched)
-  check("decode emits no artifacts", #codec.decode(data) == 0)
-  check("can_handle: pristine is certain", codec.can_handle(data) == "certain",
-        codec.can_handle(data))
-  check("can_handle: patched is certain", codec.can_handle(patched) == "certain",
-        codec.can_handle(patched))
-  check("can_handle: junk is no", codec.can_handle("not a binary") == "no")
-  if strict_size then
-    check(label .. ": unsupported file size is refused",
-      not pcall(codec.encode, data .. "\0", {}))
-  else
-    check_takes_no_args(label, codec, data)
-  end
-end
-
 -- ---------------------------------------------------------------------------
 
 local sakura   = slurp(PROJECT_ROOT .. "/SAKURA")
@@ -247,49 +156,18 @@ if not sakura then
   check_skip("SAKURA codecs", PROJECT_ROOT .. "/SAKURA not found")
 else
   test_layout("SAKURA", sakuraLayout, sakura, SAKURA_LAYOUT, usSakura, usSakura2)
-  test_palette("SAKURA placement A", sakuraPalette, sakura,
-               sakura_palette_sites(0x53954, bytes(US_PALETTE)), usSakura, true)
-
-  -- The palette pair sits at two possible placements.  Build a copy whose
-  -- placement-A windows are gone and whose placement-B windows hold the
-  -- Japanese ramps, and the codec must find B without being told anything.
-  local moved = string.rep("\0", 392024)
-  moved = splice(moved, 0x53A8C, bytes(JP_DIALOGUE))
-  moved = splice(moved, 0x53AAC, bytes(JP_LIPS))
-
-  print("")
-  print("palette: SAKURA placement B (cd=2)")
-  check("placement B is recognised", sakuraPalette.can_handle(moved) == "certain",
-        sakuraPalette.can_handle(moved))
-  local outB = sakuraPalette.encode(moved, {})
-  check("placement B patched",
-        outB:sub(0x53A8C + 1, 0x53A8C + 32) == bytes(US_PALETTE))
-  check("vacated placement A left alone",
-        outB:sub(0x53954 + 1, 0x53954 + 32) == string.rep("\0", 32))
-  local okB, errB = pcall(sakuraPalette.encode, moved .. "\0", {})
-  check("size mismatch is refused", not okB
-    and tostring(errB):find("unsupported SAKURA size", 1, true) ~= nil, errB)
-
-  if usSakura2 then
-    check("US disc-2 build: palette recognised", sakuraPalette.can_handle(usSakura2) == "certain")
-    check("US disc-2 build: palette already applied",
-          sakuraPalette.encode(usSakura2, {}) == usSakura2)
-  end
 end
 
 if not slg then
   check_skip("SLG codecs", PROJECT_ROOT .. "/SLG.BIN not found")
 else
   test_layout("SLG.BIN", slgLayout, slg, SLG_LAYOUT, usSlg)
-  test_palette("SLG.BIN", slgPalette, slg, SLG_PALETTE_SITES, usSlg)
 
   if slg0 then
     print("")
     print("second copy: 0SLG.BIN")
     check("layout patches identically",
           slgLayout.encode(slg0, {}, nil) == slgLayout.encode(slg, {}, nil))
-    check("palette patches identically",
-          slgPalette.encode(slg0, {}, nil) == slgPalette.encode(slg, {}, nil))
   else
     check_skip("second copy: 0SLG.BIN", "0SLG.BIN not found")
   end
@@ -300,9 +178,7 @@ if sakura and slg then
   print("")
   print("cross-engine: a codec only knows its own bytes")
   check_not_this_codec("ADV layout vs SLG.BIN", sakuraLayout, slg)
-  check_not_this_codec("ADV palette vs SLG.BIN", sakuraPalette, slg)
   check_not_this_codec("SLG layout vs SAKURA", slgLayout, sakura)
-  check_not_this_codec("SLG palette vs SAKURA", slgPalette, sakura)
 end
 
 if sakura and not usSakura then

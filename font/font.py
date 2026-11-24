@@ -53,42 +53,32 @@ import sys
 # ---------------------------------------------------------------------------
 # Palette — edit here
 # ---------------------------------------------------------------------------
-# Sixteen BGR555 colours, index 0 first, in the order the engine's font palette
-# uses them.  These are the values the US build patches into the executable
-# (verified against the shipped release and against the tool's own
-# Data/8x12_SLG.bmp):
+# Sixteen BGR555 colours from adv_dialogue_jp, the game's Japanese text ramp.
+# Index 15 is bright red instead of the retail white: an editor marker for
+# unused ink, matching palettes.adv_dialogue_jp_for_bmp.
 #
-#     index  0       0x7FFF  white        the background
-#     index  1..14           a grey ramp, BGR555 5,5,5 up to 29,29,29
-#     index 15       0x0C63  near black   the ink
+# This list is written into the atlas BMP's colour table.  It is display only:
+# no pixel is mapped through RGB and PALETTE is never read back on import.
 #
-# The US font sheet draws its letter bodies with index 15.  A palette whose
-# index 15 is light renders the text hollow and thin — that is exactly the bug
-# the US build fixes by swapping this palette in.  Keep 15 dark.
-#
-# This list is written into the atlas BMP's colour table so the file opens
-# looking like the game.  It is display only: nothing here maps a pixel through
-# RGB and PALETTE is never read back on import.
-#
-#     as a hex dump: 7FFF 14A5 1CE7 2529 294A 318C 35AD 4210 4631 5294 5AD6
-#                    5EF7 6739 6F7B 77BD 0C63
+#     as a hex dump: 7FFF 0842 1084 18C6 2108 294A 318C 39CE 4210 4A52 5294
+#                    5AD6 6318 6B5A 739C 001F
 PALETTE = [
     0x7FFF,  #  0  background, white
-    0x14A5,  #  1
-    0x1CE7,  #  2
-    0x2529,  #  3
-    0x294A,  #  4
-    0x318C,  #  5
-    0x35AD,  #  6
-    0x4210,  #  7
-    0x4631,  #  8
-    0x5294,  #  9
-    0x5AD6,  # 10
-    0x5EF7,  # 11
-    0x6739,  # 12
-    0x6F7B,  # 13
-    0x77BD,  # 14
-    0x0C63,  # 15  ink, near black
+    0x0842,  #  1  ink
+    0x1084,  #  2
+    0x18C6,  #  3
+    0x2108,  #  4
+    0x294A,  #  5
+    0x318C,  #  6
+    0x39CE,  #  7
+    0x4210,  #  8
+    0x4A52,  #  9
+    0x5294,  # 10
+    0x5AD6,  # 11
+    0x6318,  # 12
+    0x6B5A,  # 13
+    0x739C,  # 14
+    0x001F,  # 15  editor marker, red
 ]
 
 # ---------------------------------------------------------------------------

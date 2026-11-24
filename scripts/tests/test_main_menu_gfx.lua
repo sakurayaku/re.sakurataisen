@@ -2,6 +2,8 @@
      ludared codecs test tests/test_main_menu_gfx.lua ]]
 
 local codec = dofile(LUDARED.SCRIPTS .. "/main_menu_gfx.lua")
+local bmp_util = dofile(LUDARED.SCRIPTS .. "/shared/bmp.lua")
+local palettes = dofile(LUDARED.SCRIPTS .. "/shared/palettes.lua")
 local prs = LUDARED.codec("std/sega/compression/prs")
 
 local pass, fail = 0, 0
@@ -194,6 +196,8 @@ for i = 1, 6 do
     string.format("%dx%d %dbpp", w, h, bpp))
 end
 check("all six label palettes are the 16-colour display ramp", #label_pal == 64, tostring(#label_pal))
+check("labels use the shared ADV BMP palette",
+  label_pal == bmp_util.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16))
 
 -- Every label must equal what its records and the atlas say it is.  This is
 -- the check that catches a wrong bbox, a wrong blit or a shared glyph read

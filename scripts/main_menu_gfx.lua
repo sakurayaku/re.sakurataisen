@@ -78,11 +78,11 @@
 
   ## Palette
 
-  Label BMPs carry the ADV dialogue ramp from shared/palettes.lua
-  (adv_dialogue_i18n) as a display palette and nothing else.  The labels are
-  4bpp indices recoloured by the game; those colours never reach LOGO.SH2, so
-  encode() ignores a label palette completely and a palette-only edit is not a
-  change.  Index 0 is transparency: leave it 0 for the background of a label.
+  Label BMPs carry palettes.adv_dialogue_jp_for_bmp (adv_dialogue_jp with index
+  15 red) as a display palette and nothing else.  The labels are 4bpp indices
+  recoloured by the game; those colours never reach LOGO.SH2, so encode() ignores
+  a label palette completely and a palette-only edit is not a change.  Index 0 is
+  transparency: leave it 0 for the background of a label.
 
   BG.bmp's palette is real: all 256 entries of BGR555 big-endian at 0x29324,
   read from there and written back.  A palette-only background edit is a real
@@ -148,8 +148,9 @@ local function load_shared(name)
   return dofile(script_dir() .. "/shared/" .. name .. ".lua")
 end
 
-local prs      = LUDARED.codec("std/sega/compression/prs")
-local palettes = load_shared("palettes")
+local bmp        = load_shared("bmp")
+local palettes   = load_shared("palettes")
+local prs        = LUDARED.codec("std/sega/compression/prs")
 
 local can_handle = dofile(LUDARED.SCRIPTS .. "/shared/can_handle.lua")
 
@@ -160,7 +161,8 @@ codec.description = "PATCH plugin for the six main-menu labels and the backgroun
 -- 3: FONT.bmp is gone.  The six labels are separate, variable-width BMPs and
 -- the record tables, counts and DMA length are written with them, so cached
 -- decodes from version 2 cannot be re-encoded.
-codec.version     = 3
+-- 4: labels use the shared adv_dialogue_jp + red display palette.
+codec.version     = 4
 codec.kind        = "patch"
 
 local FONT_OFFSET   = 0x0000ff20
@@ -249,18 +251,6 @@ local function bmp_to_bgr555(pal_bgra, colours)
     out[i * 2 + 2] = v & 0xFF
   end
   return string.char(table.unpack(out))
-end
-
--- Label BMPs are drawn with the ADV dialogue palette from shared/palettes.lua,
--- which is the ramp the SAKURA executable applies to menu text.  It is display
--- only: the label carries 4bpp indices, these colours never reach LOGO.SH2, and
--- encode() ignores them.
--- local function default_label_palette()
---   return bgr555_to_bmp(palettes.raw("adv_dialogue_i18n"), 16)
--- end
-local function default_label_palette()
-  local pal = bgr555_to_bmp(palettes.raw("adv_dialogue_i18n"), 16)
-  return pal:sub(1, 60) .. "\x00\x00\xFF\x00"
 end
 
 local function build_bmp(pixels, width, height, pal, bpp)
@@ -492,7 +482,7 @@ function codec.decode(data, args)
   local labels, why = read_records(data, font)
   if not labels then error("decode: " .. why, 0) end
 
-  local palette = default_label_palette()
+  local palette = bmp.from_bgr555(palettes.raw("adv_dialogue_jp_for_bmp"), 16)
   local artifacts = {}
   for i, label in ipairs(labels) do
     local px, w, h = compose_label(label, font)
