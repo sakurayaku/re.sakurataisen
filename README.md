@@ -26,7 +26,7 @@ Seuls les fichiers `.bmp` sont importants. Les fichiers `.xcf` (format de travai
 
 ### Déroulement du jeu
 
-- [Écrans de titres des épisodes](/contenus/TITLE.md)
+- [Écrans de titres des épisodes (& écran de chargement)](/contenus/TITLE.md)
 - [Écran d'intermission](/contenus/INTERMISSION.md)
 - [Cartes de déplacement](/contenus/MAP.md)
 - [Menus de combat](/contenus/COMBAT.md)
@@ -35,4 +35,8 @@ Seuls les fichiers `.bmp` sont importants. Les fichiers `.xcf` (format de travai
 
 - TOUT le travail, TOUTE la recherche, TOUS les putains d'efforts,... c'est le boulot de la team US menée par [NoahSteam](https://github.com/NoahSteam/RomHackingTools). Ses membres méritent tous vos éloges, et sans leur boulot, ce projet n'existerait pas.
 
+- Le background de [l'écran de chargement](/workspace/SakTaiCD1_Track1.bin/SAKURA1/LOAD.BIN/LOAD.bmp) est [celui produit par MatyMeatBoy pour le projet SaturnTaisen](https://github.com/MatyMeatBoy/SaturnTaisen/blob/main/assets/generated/screen-backgrounds/LOADING-v1.png) sous [license GPL-3.0](/workspace/SakTaiCD1_Track1.bin/SAKURA1/LOAD.BIN/LICENSE).
+
 - Les polices utilisée dans le jeu sont [DejaVu Sans](https://dejavu-fonts.github.io/) pour les éléments textuels, et [Font Awesome](https://github.com/fortawesome/font-awesome) pour certains symboles.
+
+-

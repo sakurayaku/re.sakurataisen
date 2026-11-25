@@ -52,7 +52,7 @@ local function tiles_off_for_size(n)
   return nil
 end
 
-local DEFAULT_NAME  = "TITLE.bmp"
+local DEFAULT_NAME  = "TITLE"
 
 -- BMP header constants
 local BMP_FILE_HEADER  = 14

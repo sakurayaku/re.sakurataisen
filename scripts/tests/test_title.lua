@@ -112,7 +112,7 @@ print("")
 print("decode structure")
 local arts = codec.decode(bin)
 check("one artifact returned", #arts == 1)
-check("default name", arts[1].name == "TITLE.bmp", arts[1].name)
+check("default name", arts[1].name == "TITLE", arts[1].name)
 local bmp = arts[1].data
 check("BMP signature", bmp:sub(1, 2) == "BM")
 check("bfSize == 72758", le32(bmp, 3) == 72758, tostring(le32(bmp, 3)))
@@ -149,7 +149,7 @@ print("")
 print("artifact selection and args")
 check("args renames the artifact", codec.decode(bin, "custom.bmp")[1].name == "custom.bmp")
 check("decode_name honours args", codec.decode_name("x.bmp") == "x.bmp")
-check("decode_name defaults", codec.decode_name(nil) == "TITLE.bmp")
+check("decode_name defaults", codec.decode_name(nil) == "TITLE")
 check("rename survives round-trip",
       codec.encode(bin, codec.decode(bin, "custom.bmp")) == bin)
 check("sole unnamed artifact accepted",
